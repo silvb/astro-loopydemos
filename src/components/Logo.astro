@@ -1,0 +1,200 @@
+---
+import { COLORS } from "../constants/colors";
+---
+
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  width="64"
+  height="96"
+  viewBox="0 0 48 64"
+>
+  <g fill="none">
+    <rect
+      width="44"
+      height="60"
+      x="2"
+      y="2"
+      stroke={COLORS.purple}
+      stroke-width="2"
+      rx="4"
+      ry="4"
+      fill={COLORS.dark}></rect>
+    <circle
+      stroke={COLORS.purple}
+      stroke-width="2"
+      r="6"
+      fill="none"
+      cx="14"
+      cy="14"></circle>
+    <line
+      x1="14"
+      y1="8"
+      x2="14"
+      y2="14"
+      stroke={COLORS.purple}
+      stroke-width="2"
+      stroke-linecap="round"
+      transform="rotate(-30 14 14)"></line>
+    <circle
+      stroke={COLORS.pink}
+      stroke-width="2"
+      r="6"
+      fill="none"
+      cx="32"
+      cy="14"></circle>
+    <line
+      x1="32"
+      y1="8"
+      x2="32"
+      y2="14"
+      stroke={COLORS.pink}
+      stroke-width="2"
+      stroke-linecap="round"
+    >
+      <animateTransform
+        id="knob"
+        attributeName="transform"
+        attributeType="XML"
+        type="rotate"
+        values="0 32 14; 60 32 14; 150 32 14; 60 32 14"
+        keyTimes="0; 0.5; 0.75; 1"
+        dur="1s"
+        repeatCount="1"
+        fill="freeze"></animateTransform>
+    </line>
+    <line
+      x1="14"
+      y1="26"
+      x2="14"
+      y2="42"
+      stroke={COLORS.purple}
+      stroke-width="2"
+      stroke-linecap="round"></line>
+    <line
+      x1="12"
+      y1="40"
+      x2="16"
+      y2="40"
+      stroke={COLORS.yellow}
+      stroke-width="2"
+      stroke-linecap="round"
+    >
+      <animate
+        attributeName="y2"
+        values="40;28"
+        keySplines="0.1 0.8 0.2 1"
+        calcMode="spline"
+        dur="0.5s"
+        begin="knob.end"
+        repeatCount="1"
+        fill="freeze"></animate>
+      <animate
+        id="leftslide"
+        attributeName="y1"
+        values="40;28"
+        keySplines="0.1 0.8 0.2 1"
+        calcMode="spline"
+        dur="0.5s"
+        begin="knob.end"
+        repeatCount="1"
+        fill="freeze"></animate>
+    </line>
+
+    <line
+      x1="23"
+      y1="26"
+      x2="23"
+      y2="42"
+      stroke={COLORS.purple}
+      stroke-width="2"
+      stroke-linecap="round"></line>
+    <line
+      x1="21"
+      y1="28"
+      x2="25"
+      y2="28"
+      stroke={COLORS.yellow}
+      stroke-width="2"
+      stroke-linecap="round"
+    >
+      <animate
+        attributeName="y2"
+        values="26;38"
+        keySplines="0.1 0.8 0.2 1"
+        calcMode="spline"
+        dur="0.5s"
+        begin="knob.end"
+        repeatCount="1"
+        fill="freeze"></animate>
+      <animate
+        id="middleslide"
+        attributeName="y1"
+        values="26;38"
+        keySplines="0.1 0.8 0.2 1"
+        calcMode="spline"
+        dur="0.5s"
+        begin="knob.end"
+        repeatCount="1"
+        fill="freeze"></animate>
+    </line>
+    <line
+      x1="32"
+      y1="26"
+      x2="32"
+      y2="42"
+      stroke={COLORS.purple}
+      stroke-width="2"
+      stroke-linecap="round"></line>
+    <line
+      x1="30"
+      y1="40"
+      x2="34"
+      y2="40"
+      stroke={COLORS.yellow}
+      stroke-width="2"
+      stroke-linecap="round"
+    >
+      <animate
+        attributeName="y2"
+        values="40;32"
+        keySplines="0.1 0.8 0.2 1"
+        calcMode="spline"
+        dur="0.5s"
+        begin="knob.end"
+        repeatCount="1"
+        fill="freeze"></animate>
+      <animate
+        id="rightslide"
+        attributeName="y1"
+        values="40;32"
+        keySplines="0.1 0.8 0.2 1"
+        calcMode="spline"
+        dur="0.5s"
+        begin="knob.end"
+        repeatCount="1"
+        fill="freeze"></animate>
+    </line>
+    <circle r="4" cx="16" cy="52" fill={COLORS.purple}>
+      <animate
+        id="leftstomp"
+        attributeName="fill"
+        from={COLORS.purple}
+        to={COLORS.cyan}
+        dur="0.2s"
+        repeatCount="1"
+        begin="rightstomp.end"
+        fill="freeze"></animate>
+    </circle>
+    <circle r="4" cx="32" cy="52" fill={COLORS.cyan}>
+      <animate
+        id="rightstomp"
+        attributeName="fill"
+        from={COLORS.cyan}
+        to={COLORS.purple}
+        dur="0.2s"
+        repeatCount="1"
+        begin="rightslide.end"
+        fill="freeze"></animate>
+    </circle>
+  </g>
+</svg>
