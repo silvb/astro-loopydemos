@@ -17,6 +17,7 @@ export default {
         "loopydemos-highlight-primary": {DEFAULT: "#80ffea"},
         "loopydemos-highlight-secondary": {DEFAULT: "#ff80bf"},
         "loopydemos-highlight-tertiary": {DEFAULT: "#F1FA8C"},
+        "loopydemos-text": {DEFAULT: "#f8f8f2"},
       },
       backgroundImage: {
         noise: 'url("/noise.svg")',
