@@ -1,21 +1,25 @@
 ---
 import Header from "../components/Header.astro"
+import Footer from "../components/Footer.astro"
 import "@fontsource-variable/fira-code"
 import "@fontsource-variable/mulish"
 import "@fontsource/bowlby-one-sc"
 import "@fontsource/vt323"
+import type {MarkdownLayoutProps} from "astro"
 
-interface Props {
-  title: string
-}
+type Props =
+  | MarkdownLayoutProps<{title: string}>
+  | {title?: string; frontmatter?: never}
 
-const {title} = Astro.props
+const {title} = Astro.props.frontmatter || Astro.props
+
+const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
 ---
 
 <!doctype html>
 <html
   lang="en"
-  class="bg-loopydemos-background bg-noise antialiased bg-blend-hard-light"
+  class="bg-loopydemos-background bg-noise text-loopydemos-text antialiased bg-blend-hard-light"
 >
   <head>
     <meta charset="UTF-8" />
@@ -23,14 +27,18 @@ const {title} = Astro.props
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>{title}</title>
+    <title>{pageTitle}</title>
   </head>
   <body>
-    <Header />
-    <main class="mx-auto my-0 max-w-3xl px-8">
-      <slot />
-    </main>
-    <footer></footer>
+    <div class="flex min-h-screen flex-col">
+      <Header />
+      <main class="w-full grow">
+        <div class="mx-auto my-0 max-w-3xl px-8">
+          <slot />
+        </div>
+      </main>
+      <Footer />
+    </div>
   </body>
 </html>
 
@@ -48,10 +56,23 @@ const {title} = Astro.props
   }
 
   main {
-    @apply text-loopydemos-text;
-
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply break-words font-display font-normal text-loopydemos-highlight-tertiary;
+    }
     h2 {
-      @apply font-display text-3xl text-loopydemos-highlight-tertiary;
+      @apply my-8 text-3xl;
+    }
+
+    h3 {
+      @apply mb-6 mt-12 text-xl;
+    }
+
+    h4 {
+      @apply mb-4 mt-8 text-base;
     }
 
     strong {
@@ -59,9 +80,15 @@ const {title} = Astro.props
     }
 
     p {
-      @apply my-4 text-xl;
+      @apply my-4 whitespace-pre-line text-xl;
     }
 
+    a {
+      @apply text-loopydemos-highlight-primary;
+    }
+  }
+
+  footer {
     a {
       @apply text-loopydemos-highlight-primary;
     }

@@ -1,6 +1,8 @@
 ---
 import Logo from "./Logo.astro"
 import {Icon} from "astro-icon/components"
+
+const pathname = Astro.url.pathname
 ---
 
 <header class="z-50 w-full">
@@ -30,13 +32,21 @@ import {Icon} from "astro-icon/components"
             <Icon name="feather:instagram" />
           </a>
         </div>
-        <ul
-          class="flex w-full items-center justify-between font-display text-2xl text-loopydemos-highlight-secondary [&>li:hover]:text-loopydemos-highlight-primary [&>li]:transition-colors"
-        >
-          <li><a href="/demos">Demos</a></li>
-          <li><a href="/posts">Posts</a></li>
-          <li><a href="/about">About</a></li>
-          <li><a href="/contact">Contact</a></li>
+        <ul class="flex w-full items-center justify-between">
+          {
+            [
+              {href: "/demos", text: "Demos"},
+              {href: "/posts", text: "Posts"},
+              {href: "/about", text: "About"},
+              {href: "/contact", text: "Contact"},
+            ].map(({href, text}) => (
+              <li
+                class={`font-display text-2xl ${pathname.startsWith(href) ? "text-loopydemos-highlight-primary" : "text-loopydemos-highlight-secondary"} transition-colors hover:text-loopydemos-highlight-primary`}
+              >
+                <a href={href}>{text}</a>
+              </li>
+            ))
+          }
         </ul>
       </div>
     </div>
