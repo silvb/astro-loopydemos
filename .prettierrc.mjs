@@ -1,7 +1,9 @@
 /** @type {import("prettier").Config} */
 export default {
   plugins: ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
-  pluginSearchDirs: false,
+  semi: false,
+  bracketSpacing: false,
+  trailingComma: "es5",
   overrides: [
     {
       files: "*.astro",
@@ -10,4 +12,4 @@ export default {
       },
     },
   ],
-}
+};

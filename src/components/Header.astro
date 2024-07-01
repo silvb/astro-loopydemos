@@ -1,23 +1,43 @@
 ---
-import Logo from "./Logo.astro";
+import Logo from "./Logo.astro"
+import {Icon} from "astro-icon/components"
 ---
 
-<header class="[& ul z-50 w-full">
+<header class="z-50 w-full">
   <div class="bg-loopydemos-secondary">
     <div
       class="mx-auto my-0 flex max-w-3xl items-center bg-loopydemos-secondary px-4 py-2"
     >
-      <a href="/" aria-label="Logo and home link" class="md:p-4">
+      <a href="/" aria-label="Logo and home link" class="sm:p-4">
         <Logo />
       </a>
       <div
-        class="ml-4 box-border flex h-12 flex-auto flex-col justify-center px-0 py-2 md:ml-8 md:h-24 md:justify-between"
+        class="ml-4 box-border flex h-12 flex-auto flex-col justify-center sm:ml-8 sm:h-24 sm:justify-between"
       >
         <div class="flex items-center justify-between">
           <a href="/" class="flex items-center">
-            <h1 class="">Loopy Demos</h1>
+            <h1 class="font-display text-[2.5rem] text-loopydemos-primary">
+              Loopy Demos
+            </h1>
+          </a>
+          <a
+            href="https://www.instagram.com/loopydemos/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Instagram link"
+            class="text-4xl text-loopydemos-highlight-primary"
+          >
+            <Icon name="feather:instagram" />
           </a>
         </div>
+        <ul
+          class="flex w-full items-center justify-between font-display text-2xl text-loopydemos-highlight-secondary [&>li:hover]:text-loopydemos-highlight-primary [&>li]:transition-colors"
+        >
+          <li><a href="/demos">Demos</a></li>
+          <li><a href="/posts">Posts</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
       </div>
     </div>
   </div>
