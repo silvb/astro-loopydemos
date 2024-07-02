@@ -1,0 +1,14 @@
+---
+import DemoWidget from "@components/DemoWidget.astro"
+import Layout from "./Layout.astro"
+import type {MarkdownLayoutProps} from "astro"
+
+type Props = MarkdownLayoutProps<{slug: string}>
+
+const {slug} = Astro.props.frontmatter
+---
+
+<Layout>
+  <DemoWidget {slug} />
+  <slot />
+</Layout>

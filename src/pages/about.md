@@ -1,6 +1,6 @@
 ---
 title: About
-layout: "../layouts/Layout.astro"
+layout: "@layouts/Layout.astro"
 ---
 
 ## About

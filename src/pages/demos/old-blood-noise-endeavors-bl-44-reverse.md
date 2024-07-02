@@ -1,0 +1,52 @@
+---
+builder: Old Blood Noise Endeavors
+model: BL-44 Reverse
+image: ../images/old-blood-noise-endeavors-bl-44-reverse.png
+ogImage: ../images/seo-preview/old-blood-noise-endeavors-bl-44-reverse.jpeg
+slug: old-blood-noise-endeavors-bl-44-reverse
+pedalData: ../data/pedals/old-blood-noise-endeavors-bl-44-reverse.pedal.json
+presetsData: ../data/presets/old-blood-noise-endeavors-bl-44-reverse.presets.json
+stackedPedals:
+  - exploder:
+    data: ../data/pedals/beautiful-noise-effects-exploder.pedal.json
+    image: ../images/beautiful-noise-effects-exploder.png
+  - sinkhole:
+    data: ../data/pedals/catalinbread-sinkhole.pedal.json
+    image: ../images/catalinbread-sinkhole.png
+type: demo
+isSponsored: true
+hasBackingTrack: true
+volume: 0.65
+date: 2024-04-10
+tags:
+  - reverse delay
+  - shoegaze
+  - ambient
+  - lo-fi
+  - glitch
+relatedSlugs:
+  - beautiful-noise-effects-exploder
+  - catalinbread-sinkhole
+externalLinks:
+  perfectCircuit: old-blood-noise-bl-44-reverse
+  builderLink: https://oldbloodnoise.com/pedals/p/bl-44-reverse
+---
+
+The BL-44 Reverse by Old Blood Noise Endeavors is a reverse delay pedal that can create a wide range of sounds, from subtle reverse echoes to glitchy, lo-fi textures.
+
+To me, the BL-44 is the shoegazer's dream! There are a few genius design choices that make this stand out. The control set is super simple and stripped down, yet it brings so much enjoyment to experiment with.
+
+The **SPEED** and **CLOCK** knobs are very interactive. You can create simple reverse delays, go an octave up or down, introduce glitchy artifacts, do long swells or bouncy, fairy-like textures.
+
+The **MIX** knob is obvious and I'm just keeping that at around 2 o'clock to get a good balance of dry and wet signal.
+
+The **VOLUME** knob seems to give us unity gain at around noon. If you crank it and go into an amp that's already breaking up, you can get some really cool, lo-fi textures.
+
+The BL-44 is truly inspiring to play. I could not stop playing when I recorded the demo track and I'm for sure putting this on my pedalboard.
+
+### Signal Chain
+
+- Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups – both pickups in series mode. This gives a thicker and more compressed tone which fit the lo-fi vibe of this pedal perfectly.
+- BL-44 Reverse
+- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)

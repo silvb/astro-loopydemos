@@ -1,6 +1,6 @@
 ---
 title: Impressum
-layout: "../layouts/Layout.astro"
+layout: "@layouts/Layout.astro"
 ---
 
 ## Impressum

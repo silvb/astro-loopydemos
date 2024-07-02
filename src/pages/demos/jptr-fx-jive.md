@@ -1,0 +1,40 @@
+---
+model: Jive Reel Saturator
+builder: JPTR FX
+slug: jptr-fx-jive
+image: ../images/jptr-fx-jive.png
+ogImage: ../images/seo-preview/jptr-fx-jive.jpeg
+pedalData: ../data/pedals/jptr-fx-jive.pedal.json
+presetsData: ../data/presets/jptr-fx-jive.presets.json
+type: demo
+date: 2021-03-30
+tags:
+  - preamp
+  - boost
+relatedSlugs:
+  - smallsound-bigsound-mini
+  - catalinbread-topanga
+  - overdrive-shootout
+externalLinks:
+  reverb: jptr-fx-jive
+  builderLink: https://www.jptrfx.com/dirt-machines/
+---
+
+The Jive Reel Saturator from JPTR FX is a build-your-own overdrive. It's super versatile. It can do anything from clean boost (40dB!), light, crackly overdrive, lo-fi tape saturation, amp-like, dynamic overdrive to meaty and fuzz-like distortion.
+
+The toggles introduce different clipping options. The asymmetrical germanium diode (top toggle) adds a very subtle and light saturation. The symmetrical silicone diode (middle) on it's own adds even more sparkly gain, while the asymmetrical germanium diode (bottom) sounds the most gritty and filthy.
+
+I have no clue if this pedal truly emulates the kind of saturation you get from a reel-to-reel tape machine. But it definitely has vibe and sounds terrific to my ears.
+
+I just wanted to try a Jive out of curiousity and to add it to the collection of "pedal souls" here on the website. But this thing delivers my perfect live tone (for when gigs become a reality again): amp-in-a-box style, lo-fi overdrive for verse and rhythm parts and velcro fuzz for lead and choruses. You can sense a hint of the velcro fuzz if you turn the gain all the way up in the demo above. But it get's even more velcroy when you put a boost in front of it. On my pedalboard I'll use the [SM/BS Mini](/demos/smallsound-bigsound-mini) for this.
+
+The Jive got me hooked on JPTR FX pedals. This won't be the last "ugliest sound device" that I will put my hands on ;)
+
+### Signal Chain
+
+- Epiphone SG Special (P90, bridge pickup)
+- Jive
+- [Catalinbread Topanga](/demos/catalinbread-topanga) (for some reverb)
+- [Strymon Iridium (Chime)](/demos/strymon-iridium)
+- Focusrite Scarlett 2i2
+- GarageBand

@@ -4,6 +4,7 @@ export default {
   semi: false,
   bracketSpacing: false,
   trailingComma: "es5",
+  astroAllowShorthand: true,
   overrides: [
     {
       files: "*.astro",
@@ -12,4 +13,4 @@ export default {
       },
     },
   ],
-};
+}
