@@ -1,6 +1,6 @@
 ---
 import Logo from "./Logo.astro"
-import {Icon} from "astro-icon/components"
+import { Icon } from "astro-icon/components"
 
 const pathname = Astro.url.pathname
 ---
@@ -35,11 +35,11 @@ const pathname = Astro.url.pathname
         <ul class="flex w-full items-center justify-between">
           {
             [
-              {href: "/demos", text: "Demos"},
-              {href: "/posts", text: "Posts"},
-              {href: "/about", text: "About"},
-              {href: "/contact", text: "Contact"},
-            ].map(({href, text}) => (
+              { href: "/demos", text: "Demos" },
+              { href: "/posts", text: "Posts" },
+              { href: "/about", text: "About" },
+              { href: "/contact", text: "Contact" },
+            ].map(({ href, text }) => (
               <li
                 class={`font-display text-2xl ${pathname.startsWith(href) ? "text-loopydemos-highlight-primary" : "text-loopydemos-highlight-secondary"} transition-colors hover:text-loopydemos-highlight-primary`}
               >

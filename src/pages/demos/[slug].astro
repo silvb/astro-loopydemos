@@ -1,0 +1,23 @@
+---
+import DemoLayout from "@layouts/DemoLayout.astro"
+import type { GetStaticPaths, InferGetStaticPropsType } from "astro"
+import { getCollection, type CollectionEntry } from "astro:content"
+
+export const getStaticPaths = (async () => {
+  const allDemos: CollectionEntry<"demos">[] = await getCollection("demos")
+  return allDemos.map((demo) => ({
+    params: { slug: demo.slug },
+    props: { ...demo.data, content: demo },
+  }))
+}) satisfies GetStaticPaths
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>
+
+const { model, builder, content } = Astro.props
+const { slug } = Astro.params
+const { Content } = await content.render()
+---
+
+<DemoLayout {slug} {model} {builder}>
+  <Content />
+</DemoLayout>

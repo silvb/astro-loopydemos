@@ -1,12 +1,13 @@
 ---
+import type { CollectionEntry } from "astro:content"
+
 interface Props {
-  slug: string
+  slug: CollectionEntry<"demos">["slug"]
 }
 
-const {slug} = Astro.props
+const { slug } = Astro.props
 ---
 
-<h2>This is going to be the widget</h2>
 <p>
   Slug: {slug}
 </p>

@@ -2,7 +2,6 @@
 export default {
   plugins: ["prettier-plugin-astro", "prettier-plugin-tailwindcss"],
   semi: false,
-  bracketSpacing: false,
   trailingComma: "es5",
   astroAllowShorthand: true,
   overrides: [

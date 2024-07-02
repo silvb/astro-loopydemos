@@ -1,9 +1,25 @@
 ---
 import Layout from "@layouts/Layout.astro"
+import { getCollection, type CollectionEntry } from "astro:content"
+
+const allDemos: CollectionEntry<"demos">[] = await getCollection("demos")
+
+console.log({ allDemos })
 ---
 
 <Layout title="Demos">
   <main>
     <h2>Demos</h2>
+    <ul>
+      {
+        allDemos.map((demo) => (
+          <li>
+            <a
+              href={`/demos/${demo.data.slug}`}
+            >{`${demo.data.model} - ${demo.data.builder}`}</a>
+          </li>
+        ))
+      }
+    </ul>
   </main>
 </Layout>

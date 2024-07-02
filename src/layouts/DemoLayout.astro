@@ -1,14 +1,19 @@
 ---
 import DemoWidget from "@components/DemoWidget.astro"
 import Layout from "./Layout.astro"
-import type {MarkdownLayoutProps} from "astro"
+import type { CollectionEntry } from "astro:content"
 
-type Props = MarkdownLayoutProps<{slug: string}>
+interface Props {
+  slug: CollectionEntry<"demos">["slug"]
+  model: string
+  builder: string
+}
 
-const {slug} = Astro.props.frontmatter
+const { slug, model, builder } = Astro.props
 ---
 
 <Layout>
+  <h2>{model} - {builder}</h2>
   <DemoWidget {slug} />
   <slot />
 </Layout>

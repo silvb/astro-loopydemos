@@ -1,6 +1,6 @@
 ---
 builder: Funny Little Boxes
-model: '1991'
+model: "1991"
 image: ../images/funny-little-boxes-1991.png
 ogImage: ../images/seo-preview/funny-little-boxes-1991.jpeg
 slug: funny-little-boxes-1991
