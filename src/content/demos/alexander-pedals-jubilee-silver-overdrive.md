@@ -1,5 +1,4 @@
 ---
-layout: "@layouts/DemoLayout.astro"
 builder: Alexander Pedals
 model: Jubilee Silver Overdrive
 image: ../images/alexander-pedals-jubilee-silver-overdrive.webp

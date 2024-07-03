@@ -30,10 +30,10 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
     <title>{pageTitle}</title>
   </head>
   <body>
-    <div class="flex min-h-screen flex-col">
+    <div class="layout-wrapper flex min-h-screen flex-col">
       <Header />
       <main class="w-full grow">
-        <div class="mx-auto my-0 max-w-3xl px-8">
+        <div class="content-wrapper">
           <slot />
         </div>
       </main>
@@ -43,6 +43,15 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
 </html>
 
 <style is:global>
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+
+  @layer utilities {
+    .content-wrapper {
+      @apply mx-auto max-w-3xl px-8;
+    }
+  }
   :root {
     --accent: 136, 58, 234;
     --accent-light: 224, 204, 250;
@@ -80,11 +89,27 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
     }
 
     p {
-      @apply my-4 whitespace-pre-line text-xl;
+      @apply my-4 text-lg md:text-xl;
+      > img {
+        @apply float-right my-2 ml-4 w-1/2;
+      }
+    }
+
+    ul {
+      @apply list-outside list-[disclosure-closed] pl-8;
+
+      li {
+        @apply pb-2 pl-2 text-lg md:text-xl;
+
+        &::marker {
+          @apply text-loopydemos-primary;
+        }
+      }
     }
 
     a {
-      @apply text-loopydemos-highlight-primary;
+      @apply font-black text-loopydemos-highlight-primary underline underline-offset-2;
+      text-decoration-thickness: 2px;
     }
   }
 

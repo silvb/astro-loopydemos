@@ -10,10 +10,12 @@ interface Props {
 }
 
 const { slug, model, builder } = Astro.props
+
+const title = `${model} - ${builder}`
 ---
 
-<Layout>
-  <h2>{model} - {builder}</h2>
+<Layout {title}>
+  <h2>{title}</h2>
   <DemoWidget {slug} />
   <slot />
 </Layout>
