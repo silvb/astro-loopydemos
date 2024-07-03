@@ -1,0 +1,200 @@
+{
+  "presets": [
+    {
+      "id": "lush_vibrations",
+      "label": "Lush Vibrations",
+      "settings": {
+        "emulsion": 5,
+        "slick": 10,
+        "drip": 8,
+        "viscosity": 7,
+        "grade": 1,
+        "refine": 4,
+        "emulsion_label": "mix",
+        "slick_label": "volume",
+        "drip_label": "speed",
+        "viscosity_label": "depth",
+        "grade_label": "chorus type: light chorus",
+        "refine_label": "low pass filter"
+      }
+    },
+    {
+      "id": "blue_feeling",
+      "label": "Blue Feeling",
+      "settings": {
+        "emulsion": 6,
+        "slick": 10,
+        "drip": 5,
+        "viscosity": 5,
+        "grade": 2,
+        "refine": 5,
+        "grade_label": "medium chorus",
+        "refine_label": "low pass filter"
+      }
+    },
+    {
+      "id": "lofi_dream",
+      "label": "Lo-fi Dream",
+      "settings": {
+        "emulsion": 10,
+        "slick": 10,
+        "drip": 4,
+        "viscosity": 5,
+        "grade": 3,
+        "refine": 7,
+        "grade_label": "large chorus",
+        "refine_label": "low pass filter"
+      }
+    },
+    {
+      "id": "watery_gulp",
+      "label": "Watery Gulp",
+      "settings": {
+        "emulsion": 5,
+        "slick": 10,
+        "drip": 5,
+        "viscosity": 2,
+        "grade": 4,
+        "refine": 5,
+        "grade_label": "XL chorus",
+        "refine_label": "low pass filter"
+      }
+    },
+    {
+      "id": "space_cowboy",
+      "label": "Space Cowboy",
+      "isSweep": true,
+      "target": "refine",
+      "values": [0, 2, 4, 6, 7, 8, 10],
+      "initialValue": 7,
+      "settings": {
+        "emulsion": 10,
+        "slick": 10,
+        "drip": 4,
+        "viscosity": 6,
+        "grade": 5,
+        "grade_label": "double chorus",
+        "refine_label": "2nd chorus speed"
+      }
+    },
+    {
+      "id": "flickering_light",
+      "label": "Flickering Light",
+      "isSweep": true,
+      "target": "refine",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 6,
+      "settings": {
+        "emulsion": 9,
+        "slick": 10,
+        "drip": 5,
+        "viscosity": 4,
+        "grade": 6,
+        "grade_label": "tremolo + chorus",
+        "refine_label": "tremolo speed/depth"
+      }
+    },
+    {
+      "id": "spooky_horror",
+      "label": "Spooky Horror",
+      "isSweep": true,
+      "target": "refine",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 4,
+      "settings": {
+        "emulsion": 8,
+        "slick": 10,
+        "drip": 9,
+        "viscosity": 4,
+        "grade": 7,
+        "grade_label": "pitch chorus",
+        "refine_label": "octave up/down"
+      }
+    },
+    {
+      "id": "old_robot",
+      "label": "Old Robot",
+      "isSweep": true,
+      "target": "refine",
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "initialValue": 4,
+      "settings": {
+        "emulsion": 5,
+        "slick": 10,
+        "drip": 5,
+        "viscosity": 5,
+        "grade": 8,
+        "grade_label": "aliaser chorus",
+        "refine_label": "aliaser frequency"
+      }
+    },
+    {
+      "id": "emulsion_knob",
+      "label": "Emulsion",
+      "isSweep": true,
+      "target": "emulsion",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0,
+      "settings": {
+        "slick": 10,
+        "drip": 5,
+        "viscosity": 5,
+        "grade": 3,
+        "refine": 5,
+        "grade_label": "large chorus",
+        "emulsion_label": "mix"
+      }
+    },
+    {
+      "id": "drip_knob",
+      "label": "Drip",
+      "isSweep": true,
+      "target": "drip",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0,
+      "settings": {
+        "emulsion": 6,
+        "slick": 10,
+        "viscosity": 5,
+        "grade": 4,
+        "refine": 10,
+        "grade_label": "XL chorus",
+        "drip_label": "speed"
+      }
+    },
+    {
+      "id": "viscosity_knob",
+      "label": "Viscosity",
+      "isSweep": true,
+      "target": "viscosity",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0,
+      "settings": {
+        "emulsion": 5,
+        "slick": 10,
+        "drip": 5,
+        "grade": 4,
+        "refine": 8,
+        "grade_label": "XL chorus",
+        "viscosity_label": "depth"
+      }
+    },
+    {
+      "id": "refine_low_pass_knob",
+      "label": "Refine (Grade 1 - 4)",
+      "isSweep": true,
+      "target": "refine",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 10,
+      "settings": {
+        "emulsion": 8,
+        "slick": 10,
+        "drip": 5,
+        "viscosity": 5,
+        "grade": 2,
+        "grade_label": "medium chorus",
+        "refine_label": "low pass filter"
+      }
+    }
+  ]
+}

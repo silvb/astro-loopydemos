@@ -1,0 +1,120 @@
+{
+  "presets": [
+    {
+      "id": "lush_phase",
+      "label": "Lush Phase",
+      "settings": {
+        "mix": 5,
+        "feedback": 5,
+        "depth": 5,
+        "waveform": "ramp up",
+        "rate": 5,
+        "mode": 1,
+        "division": 6
+      }
+    },
+    {
+      "id": "crazy_wobble",
+      "label": "Crazy Wobble",
+      "settings": {
+        "mix": 10,
+        "feedback": 2,
+        "depth": 10,
+        "waveform": "sine wave",
+        "rate": 10,
+        "mode": 1,
+        "division": 6
+      }
+    },
+    {
+      "id": "wooosh",
+      "label": "Wooosh",
+      "settings": {
+        "mix": 6,
+        "feedback": 8,
+        "depth": 2,
+        "waveform": "ramp down",
+        "rate": 5,
+        "mode": 1,
+        "division": 6
+      }
+    },
+    {
+      "id": "ramp_control",
+      "label": "Ramp Control",
+      "settings": {
+        "mix": 5,
+        "feedback": 5,
+        "depth": 7,
+        "waveform": "sine wave",
+        "rate": 10,
+        "mode": 3,
+        "division": 10,
+        "fast_label": "fast rate: 100%"
+      }
+    },
+    {
+      "id": "waveforms",
+      "label": "Waveforms",
+      "isSweep": true,
+      "target": "rate",
+      "initialValue": 0,
+      "values": [0, 3, 5, 7, 10],
+      "settings": {
+        "mix": 6,
+        "feedback": 6,
+        "depth": 6,
+        "mode": 1,
+        "division": 6
+      }
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth Knob",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "mix": 10,
+        "feedback": 0,
+        "mode": 1,
+        "waveform": "ramp up and down",
+        "rate": 5,
+        "division": 6
+      }
+    },
+    {
+      "id": "feedback_knob",
+      "label": "Feedback Knob",
+      "isSweep": true,
+      "target": "feedback",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "mix": 6,
+        "depth": 3,
+        "mode": 1,
+        "waveform": "ramp down",
+        "rate": 8,
+        "division": 6
+      }
+    },
+    {
+      "id": "note_division",
+      "label": "Note Division",
+      "isSweep": true,
+      "target": "division",
+      "initialValue": 7,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "mix": 7,
+        "depth": 7,
+        "feedback": 7,
+        "mode": 1,
+        "waveform": "ramp down",
+        "rate": 8
+      }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "presets": [
+    {
+      "id": "old_dusty_room",
+      "label": "Old Dusty Room",
+      "settings": { "room": 4, "depth": 4, "time": 4, "mix": 4, "age": 6 }
+    },
+    {
+      "id": "scrunched_tape",
+      "label": "Scrunched Tape",
+      "settings": { "room": 0, "depth": 6, "time": 7, "mix": 0, "age": 8 }
+    },
+    {
+      "id": "ghostly_spring",
+      "label": "Ghostly Spring",
+      "settings": { "room": 8, "depth": 8, "time": 5, "mix": 10, "age": 5 }
+    },
+    {
+      "id": "whacky_boost",
+      "label": "Whacky Boost",
+      "settings": { "room": 10, "depth": 5, "time": 0, "mix": 10, "age": 7 }
+    },
+    {
+      "id": "room_knob",
+      "label": "Room",
+      "isSweep": true,
+      "target": "room",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "depth": 5, "time": 5, "mix": 5, "age": 5 }
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "room": 5, "time": 5, "mix": 5, "age": 5 }
+    },
+    {
+      "id": "time_knob",
+      "label": "Time",
+      "isSweep": true,
+      "target": "time",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "room": 5, "depth": 10, "mix": 5, "age": 5 }
+    },
+    {
+      "id": "mix_knob",
+      "label": "Mix",
+      "isSweep": true,
+      "target": "mix",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "room": 0, "depth": 7, "time": 6, "age": 7 }
+    },
+    {
+      "id": "age_knob",
+      "label": "Age",
+      "isSweep": true,
+      "target": "age",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "room": 5, "depth": 5, "time": 7, "mix": 5 }
+    }
+  ]
+}

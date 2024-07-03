@@ -1,0 +1,65 @@
+{
+  "name": "old-blood-noise-endeavors-bl-44-reverse",
+  "width": 185,
+  "height": 325,
+  "controls": {
+    "knobs": [
+      {
+        "id": "mix",
+        "size": 40,
+        "position": { "left": 31, "top": 18 },
+        "type": "brutalist",
+        "colors": { "primary": "#e4dfb2", "tick": "black", "shadow": "#b2b08e" }
+      },
+      {
+        "id": "speed",
+        "size": 54,
+        "position": { "left": 23, "top": 149 },
+        "type": "brutalist",
+        "colors": { "primary": "#e4dfb2", "tick": "black", "shadow": "#b2b08e" }
+      },
+      {
+        "id": "volume",
+        "size": 40,
+        "position": { "left": 111, "top": 47 },
+        "type": "brutalist",
+        "colors": { "primary": "#e4dfb2", "tick": "black", "shadow": "#b2b08e" }
+      }
+    ],
+    "sliders": [
+      {
+        "id": "clock",
+        "size": {
+          "height": 26,
+          "innerWidth": 93,
+          "width": 95,
+          "innerHeight": 8
+        },
+        "position": { "top": 104, "left": 42 },
+        "type": "range",
+        "faderType": "simple",
+        "tilt": 23,
+        "colors": {
+          "enclosure": "#3d0d1b",
+          "face": "#e4dfb2",
+          "tick": "#7e7d5d"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 36,
+        "position": { "left": 72, "top": 35 },
+        "colors": { "on": "#ff6600" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": { "left": 65, "top": 263 }
+      }
+    ]
+  }
+}

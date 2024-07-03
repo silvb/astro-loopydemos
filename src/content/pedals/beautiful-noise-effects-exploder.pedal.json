@@ -1,0 +1,127 @@
+{
+  "name": "beautiful-noise-effects-exploder",
+  "presentationColors": {
+    "background": "ghostwhite",
+    "primary": "#0e0e0f",
+    "primaryHighlight": "#8deeff"
+  },
+  "controls": {
+    "knobs": [
+      {
+        "id": "master",
+        "size": 52,
+        "position": {
+          "left": 17,
+          "top": 166
+        },
+        "colors": {
+          "primary": "ghostwhite",
+          "secondary": "lightgray",
+          "tick": "black"
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "gain",
+        "size": 78,
+        "position": {
+          "left": 82,
+          "top": 44
+        },
+        "colors": {
+          "primary": "ghostwhite",
+          "secondary": "lightgray",
+          "tick": "black"
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "low",
+        "size": 24,
+        "position": {
+          "left": 81,
+          "top": 148
+        },
+        "type": "simple"
+      },
+      {
+        "id": "mid",
+        "size": 24,
+        "position": {
+          "left": 118,
+          "top": 148
+        },
+        "type": "simple"
+      },
+      {
+        "id": "hi",
+        "size": 24,
+        "position": {
+          "left": 155,
+          "top": 148
+        },
+        "type": "simple"
+      },
+      {
+        "id": "white_noise",
+        "size": 24,
+        "position": {
+          "left": 81,
+          "top": 195
+        },
+        "type": "simple"
+      },
+      {
+        "id": "tone",
+        "size": 24,
+        "position": {
+          "left": 118,
+          "top": 195
+        },
+        "type": "simple"
+      },
+      {
+        "id": "env",
+        "size": 24,
+        "position": {
+          "left": 155,
+          "top": 195
+        },
+        "type": "simple"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 19,
+          "top": 269
+        },
+        "colors": {
+          "off": "#000000a1",
+          "on": "#8deeff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 76,
+          "top": 270
+        }
+      },
+      {
+        "id": "clipping",
+        "type": "toggle",
+        "size": 36,
+        "position": {
+          "left": 31,
+          "top": 95
+        }
+      }
+    ]
+  }
+}

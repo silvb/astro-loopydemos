@@ -1,0 +1,109 @@
+{
+  "name": "walrus-audio-mira",
+  "controls": {
+    "knobs": [
+      {
+        "id": "threshold",
+        "size": 46,
+        "position": {
+          "left": 19,
+          "top": 19
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "ratio",
+        "size": 46,
+        "position": {
+          "left": 78,
+          "top": 19
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "make_up",
+        "size": 46,
+        "position": {
+          "left": 137,
+          "top": 18
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "level",
+        "size": 46,
+        "position": {
+          "left": 20,
+          "top": 95
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "blend",
+        "size": 46,
+        "position": {
+          "left": 137,
+          "top": 95
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "attack",
+        "size": 20,
+        "position": {
+          "left": 74,
+          "top": 111
+        },
+        "type": "simple"
+      },
+      {
+        "id": "release",
+        "size": 20,
+        "position": {
+          "left": 109,
+          "top": 111
+        },
+        "type": "simple"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 44,
+        "socket": false,
+        "position": {
+          "left": 133,
+          "top": 283
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff",
+          "socket": "black"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 78,
+          "top": 281
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "hpf_label",
+        "position": {
+          "left": 184,
+          "top": 162
+        },
+        "labelPosition": {
+          "left": 200,
+          "top": 205
+        }
+      }
+    ]
+  }
+}

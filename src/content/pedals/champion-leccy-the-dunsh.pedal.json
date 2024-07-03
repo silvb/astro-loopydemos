@@ -1,0 +1,141 @@
+{
+  "name": "champion-leccy-the-dunsh",
+  "width": 300,
+  "height": 350,
+  "controls": {
+    "knobs": [
+      {
+        "id": "level",
+        "size": 60,
+        "position": {
+          "left": 25,
+          "top": 23
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "bass",
+        "size": 60,
+        "position": {
+          "left": 88,
+          "top": 23
+        },
+        "colors": {
+          "primary": "#edeceb",
+          "secondary": "#b4b4b4",
+          "tick": "#000"
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "treble",
+        "size": 60,
+        "position": {
+          "left": 151,
+          "top": 23
+        },
+        "colors": {
+          "primary": "#edeceb",
+          "secondary": "#b4b4b4",
+          "tick": "#000"
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "bias",
+        "size": 60,
+        "position": {
+          "left": 215,
+          "top": 23
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "dunsh",
+        "size": 60,
+        "position": {
+          "left": 25,
+          "top": 100
+        },
+        "colors": {
+          "primary": "#c70005",
+          "secondary": "#9d0004",
+          "tick": "#edeceb"
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "gain",
+        "size": 60,
+        "position": {
+          "left": 214,
+          "top": 100
+        },
+        "type": "bakelit"
+      }
+    ],
+    "leds": [
+      {
+        "id": "dunsh_led",
+        "size": 43,
+        "position": {
+          "left": 92,
+          "top": 277
+        },
+        "colors": {
+          "on": "#f73333",
+          "off": "#545454aa"
+        }
+      },
+      {
+        "id": "on_led",
+        "size": 43,
+        "position": {
+          "left": 164,
+          "top": 277
+        },
+        "colors": {
+          "on": "#ff4f00",
+          "off": "#545454aa"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 54,
+        "position": {
+          "left": 203,
+          "top": 271
+        }
+      },
+      {
+        "id": "bass_toggle",
+        "type": "toggle",
+        "size": 32,
+        "position": {
+          "left": 102,
+          "top": 114
+        }
+      },
+      {
+        "id": "gate",
+        "type": "toggle",
+        "size": 32,
+        "position": {
+          "left": 134,
+          "top": 114
+        }
+      },
+      {
+        "id": "treble_toggle",
+        "type": "toggle",
+        "size": 32,
+        "position": {
+          "left": 165,
+          "top": 114
+        }
+      }
+    ]
+  }
+}

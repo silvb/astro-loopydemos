@@ -1,0 +1,107 @@
+{
+  "name": "walrus-audio-fundamental-delay",
+  "controls": {
+    "sliders": [
+      {
+        "id": "time",
+        "size": {
+          "height": 22,
+          "innerWidth": 110,
+          "width": 112,
+          "innerHeight": 12
+        },
+        "position": {
+          "top": 44,
+          "left": 45
+        },
+        "type": "range",
+        "colors": {
+          "enclosure": "#433f41"
+        }
+      },
+      {
+        "id": "feedback",
+        "size": {
+          "height": 22,
+          "innerWidth": 110,
+          "width": 112,
+          "innerHeight": 12
+        },
+        "position": {
+          "top": 76,
+          "left": 45
+        },
+        "type": "range",
+        "colors": {
+          "enclosure": "#433f41"
+        }
+      },
+      {
+        "id": "mix",
+        "size": {
+          "height": 22,
+          "innerWidth": 110,
+          "width": 112,
+          "innerHeight": 12
+        },
+        "position": {
+          "top": 108,
+          "left": 45
+        },
+        "type": "range",
+        "colors": {
+          "enclosure": "#433f41"
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "mode_label",
+        "position": {
+          "left": 109,
+          "top": 181
+        },
+        "labelPosition": {
+          "left": 191,
+          "top": 240
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 38,
+        "position": {
+          "left": 135,
+          "top": 285
+        },
+        "colors": {
+          "on": "#c8fffa",
+          "off": "#8f8f8f"
+        },
+        "type": "square",
+        "isBlinking": true,
+        "offOverride": true
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 54,
+        "position": {
+          "left": 71,
+          "top": 278
+        }
+      },
+      {
+        "id": "mode",
+        "type": "threeway",
+        "size": 35,
+        "position": {
+          "left": 83,
+          "top": 134
+        }
+      }
+    ]
+  }
+}

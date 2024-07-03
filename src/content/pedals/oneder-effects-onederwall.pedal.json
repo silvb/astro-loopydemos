@@ -1,0 +1,192 @@
+{
+  "name": "oneder-effects-onederwall",
+  "enclosure": "landscape",
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol_muff",
+        "size": 96,
+        "position": { "left": 250, "top": 17 },
+        "type": "roundchicken",
+        "colors": {
+          "primary": "#edeff6",
+          "secondary": "#d9d6dc",
+          "tick": "#1F1B1C"
+        }
+      },
+      {
+        "id": "tone_muff",
+        "size": 54,
+        "position": { "left": 204, "top": 120 },
+        "type": "bakelit",
+        "colors": {
+          "primary": "#edeff6",
+          "secondary": "#d9d6dc",
+          "tick": "#1F1B1C"
+        }
+      },
+      {
+        "id": "gain_muff",
+        "size": 54,
+        "position": { "left": 276, "top": 120 },
+        "type": "bakelit",
+        "colors": {
+          "primary": "#edeff6",
+          "secondary": "#d9d6dc",
+          "tick": "#1F1B1C"
+        }
+      },
+      {
+        "id": "vol_dist",
+        "size": 96,
+        "type": "roundchicken",
+        "position": { "left": 4, "top": 17 },
+        "colors": {
+          "primary": "#edeff6",
+          "secondary": "#d9d6dc",
+          "tick": "#1F1B1C"
+        }
+      },
+      {
+        "id": "tone_dist",
+        "size": 54,
+        "position": { "left": 25, "top": 121 },
+        "type": "bakelit",
+        "colors": {
+          "primary": "#edeff6",
+          "secondary": "#d9d6dc",
+          "tick": "#1F1B1C"
+        }
+      },
+      {
+        "id": "gain_dist",
+        "size": 54,
+        "position": { "left": 99, "top": 121 },
+        "type": "bakelit",
+        "colors": {
+          "primary": "#edeff6",
+          "secondary": "#d9d6dc",
+          "tick": "#1F1B1C"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 44,
+        "position": { "left": 194, "top": 199 },
+        "colors": { "on": "#d000f5" }
+      },
+      {
+        "id": "dist_led",
+        "size": 44,
+        "position": { "left": 112, "top": 203 },
+        "secondaryCircuitId": "dist_circuit",
+        "colors": { "on": "#8deeff" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": { "left": 268, "top": 212 }
+      },
+      {
+        "id": "dist_switch",
+        "size": 56,
+        "position": { "left": 26, "top": 212 },
+        "secondaryCircuitId": "dist_circuit"
+      },
+      {
+        "id": "bolts_muff",
+        "type": "toggle",
+        "size": 32,
+        "position": { "left": 209, "top": 52 }
+      },
+      {
+        "id": "clip_dist",
+        "type": "toggle",
+        "size": 32,
+        "position": { "left": 108, "top": 52 }
+      },
+      {
+        "id": "boost_dist",
+        "type": "toggle",
+        "size": 24,
+        "position": { "left": 79, "top": 98 }
+      },
+      {
+        "id": "order_switch",
+        "type": "toggle",
+        "orientation": "horizontal",
+        "size": 32,
+        "position": { "left": 161, "top": 131 }
+      }
+    ],
+    "labels": [
+      {
+        "id": "bolts_label",
+        "position": { "left": 224, "top": 85 },
+        "labelPosition": { "left": 314, "top": 320 }
+      },
+      {
+        "id": "clip_label",
+        "position": { "left": 132, "top": 81 },
+        "labelPosition": { "left": 82, "top": 307 }
+      },
+      {
+        "id": "boost_label",
+        "position": { "left": 86, "top": 120 },
+        "labelPosition": { "left": 27, "top": 284 }
+      },
+      {
+        "id": "order_label",
+        "position": { "left": 164, "top": 157 },
+        "labelPosition": { "left": 200, "top": 299 }
+      }
+    ],
+    "dependencies": [
+      {
+        "source": "bolts_muff",
+        "target": {
+          "id": "bolts_label",
+          "values": [
+            { "sourceValue": 1, "value": "(⚡️⚡️⚡️) insane low end + max." },
+            { "sourceValue": 2, "value": "(⚡️⚡️) flat EQ, heavier than ⚡️" },
+            { "sourceValue": 3, "value": "(⚡️) classic scoop" }
+          ]
+        }
+      },
+      {
+        "source": "clip_dist",
+        "target": {
+          "id": "clip_label",
+          "values": [
+            { "sourceValue": 1, "value": "(+) op-amp clipping" },
+            { "sourceValue": 3, "value": "(-) Si/LED hybrid clipping" }
+          ]
+        }
+      },
+      {
+        "source": "boost_dist",
+        "target": {
+          "id": "boost_label",
+          "values": [
+            { "sourceValue": 1, "value": "Not boosted 😴" },
+            { "sourceValue": 3, "value": "Boost 👊" }
+          ]
+        }
+      },
+      {
+        "source": "order_switch",
+        "target": {
+          "id": "order_label",
+          "values": [
+            { "sourceValue": 1, "value": "Distortion/Drive into Muff" },
+            { "sourceValue": 3, "value": "Muff into Drive/Distortion" }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "presets": [
+    {
+      "id": "classic_velcro",
+      "label": "Classic Velcro",
+      "settings": {
+        "more": 10,
+        "feast": 10,
+        "even_more": 10,
+        "stuff": 10,
+        "devour": 1,
+        "choke": 2,
+        "more_label": "volume",
+        "feast_label": "gain",
+        "even_more_label": "EQ",
+        "stuff_label": "thickness",
+        "devour_label": "transistor switch",
+        "choke_label": "bias"
+      }
+    },
+    {
+      "id": "rich_overdrive",
+      "label": "Rich Overdrive",
+      "settings": {
+        "more": 10,
+        "feast": 5,
+        "even_more": 10,
+        "stuff": 5,
+        "devour": 1,
+        "choke": 10
+      }
+    },
+    {
+      "id": "blasting_fuzz",
+      "label": "Blasting Fuzz",
+      "settings": {
+        "more": 7,
+        "feast": 10,
+        "even_more": 10,
+        "stuff": 10,
+        "devour": 3,
+        "choke": 7
+      }
+    },
+    {
+      "id": "feast_knob_two",
+      "label": "Feast (2 transistors)",
+      "isSweep": true,
+      "target": "feast",
+      "initialValue": 5,
+      "values": [0, 3, 5, 7, 10],
+      "settings": {
+        "more": 10,
+        "even_more": 10,
+        "stuff": 10,
+        "devour": 1,
+        "choke": 5,
+        "feast_label": "gain"
+      }
+    },
+    {
+      "id": "feast_knob_three",
+      "label": "Feast (3 transistors)",
+      "isSweep": true,
+      "target": "feast",
+      "initialValue": 5,
+      "values": [0, 3, 5, 7, 10],
+      "settings": {
+        "more": 10,
+        "even_more": 10,
+        "stuff": 10,
+        "devour": 3,
+        "choke": 5,
+        "feast_label": "gain"
+      }
+    },
+    {
+      "id": "even_more_knob",
+      "label": "Even More",
+      "isSweep": true,
+      "target": "even_more",
+      "initialValue": 10,
+      "values": [0, 3, 5, 7, 10],
+      "settings": {
+        "more": 10,
+        "feast": 10,
+        "stuff": 10,
+        "devour": 1,
+        "choke": 3,
+        "even_more_label": "EQ"
+      }
+    },
+    {
+      "id": "stuff_knob",
+      "label": "Stuff",
+      "isSweep": true,
+      "target": "stuff",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "more": 10,
+        "feast": 10,
+        "even_more": 10,
+        "devour": 1,
+        "choke": 5,
+        "stuff_label": "thickness"
+      }
+    },
+    {
+      "id": "choke_knob",
+      "label": "Choke",
+      "isSweep": true,
+      "target": "choke",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "more": 10,
+        "feast": 10,
+        "even_more": 10,
+        "stuff": 10,
+        "devour": 1,
+        "stuff_label": "thickness"
+      }
+    }
+  ]
+}

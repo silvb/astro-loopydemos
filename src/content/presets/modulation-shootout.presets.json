@@ -1,0 +1,157 @@
+{
+  "presets": [
+    {
+      "id": "lush",
+      "label": "Lush",
+      "fairfield-circuitry-shallow-water": {
+        "id": "fairfield_circuitry_shallow_water_lush",
+        "settings": {
+          "rate": 4,
+          "lpg": 5,
+          "damp": 3,
+          "mix": 6,
+          "depth": 4,
+          "vol": 3
+        }
+      },
+      "native-audio-midnight": {
+        "id": "native_audio_midnight_lush",
+        "settings": {
+          "mix": 3,
+          "feedback": 2,
+          "depth": 3,
+          "waveform": "sine",
+          "mode": 3,
+          "division": 1
+        }
+      },
+      "walrus-audio-julia-v2": {
+        "id": "walrus_audio_julia_v2_lush",
+        "settings": {
+          "rate": 3,
+          "depth": 4,
+          "lag": 3,
+          "waveform": 1,
+          "mix": 4,
+          "rate_led": 700
+        }
+      },
+      "walrus-audio-polychrome": {
+        "id": "walrus_audio_polychrome_lush",
+        "settings": {
+          "rate": 2,
+          "depth": 3,
+          "sweep": 2,
+          "feedback": 2,
+          "shape": 1,
+          "voice": 1,
+          "dfv": 4,
+          "rate_led": 800
+        }
+      }
+    },
+    {
+      "id": "wild",
+      "label": "Wild",
+      "fairfield-circuitry-shallow-water": {
+        "id": "fairfield_circuitry_shallow_water_wild",
+        "settings": {
+          "rate": 8,
+          "lpg": 8,
+          "damp": 0,
+          "mix": 4,
+          "depth": 6,
+          "vol": 4
+        }
+      },
+      "native-audio-midnight": {
+        "id": "native_audio_midnight_wild",
+        "settings": {
+          "mix": 6,
+          "feedback": 8,
+          "depth": 6,
+          "waveform": "ramp down",
+          "rate": 8,
+          "mode": 1,
+          "division": 10
+        }
+      },
+      "walrus-audio-julia-v2": {
+        "id": "walrus_audio_julia_v2_wild",
+        "settings": {
+          "rate": 7,
+          "depth": 5,
+          "lag": 8,
+          "waveform": 3,
+          "mix": 8,
+          "rate_led": 300
+        }
+      },
+      "walrus-audio-polychrome": {
+        "id": "walrus_audio_polychrome_wild",
+        "settings": {
+          "rate": 4,
+          "depth": 7,
+          "sweep": 5,
+          "feedback": 10,
+          "shape": 2,
+          "voice": 3,
+          "dfv": 7,
+          "rate_led": 500
+        }
+      }
+    },
+    {
+      "id": "special",
+      "label": "Special",
+      "fairfield-circuitry-shallow-water": {
+        "id": "fairfield_circuitry_shallow_water_special",
+        "settings": {
+          "rate": 9,
+          "lpg": 3,
+          "damp": 0,
+          "mix": 8,
+          "depth": 7,
+          "vol": 3
+        }
+      },
+      "native-audio-midnight": {
+        "id": "native_audio_midnight_special",
+        "settings": {
+          "mix": 5,
+          "feedback": 4,
+          "depth": 6,
+          "waveform": "sine",
+          "rate": 5,
+          "mode": 3,
+          "division": 0,
+          "fast_label": "fast rate: 100%"
+        }
+      },
+      "walrus-audio-julia-v2": {
+        "id": "walrus_audio_julia_v2_special",
+        "settings": {
+          "rate": 6,
+          "depth": 8,
+          "lag": 10,
+          "waveform": 1,
+          "mix": 4,
+          "rate_led": 450
+        }
+      },
+      "walrus-audio-polychrome": {
+        "id": "walrus_audio_polychrome_special",
+        "settings": {
+          "rate": 7,
+          "depth": 6,
+          "sweep": 3,
+          "feedback": 6,
+          "shape": 3,
+          "voice": 1,
+          "dfv": 5,
+          "rate_led": 350
+        }
+      }
+    }
+  ]
+}

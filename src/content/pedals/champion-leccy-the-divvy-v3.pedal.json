@@ -1,0 +1,42 @@
+{
+  "name": "champion-leccy-the-divvy-v3",
+  "controls": {
+    "knobs": [
+      {
+        "id": "level",
+        "size": 80,
+        "position": { "left": 10, "top": 82 },
+        "type": "bakelit"
+      },
+      {
+        "id": "gain",
+        "size": 80,
+        "position": { "left": 109, "top": 82 },
+        "type": "bakelit"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 37,
+        "socket": false,
+        "position": { "left": 33, "top": 287 },
+        "colors": { "on": "#ff810a", "off": "#767676aa" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": { "left": 75, "top": 280 }
+      },
+      {
+        "id": "voice",
+        "size": 32,
+        "type": "toggle",
+        "position": { "left": 84, "top": 37 },
+        "orientation": "horizontal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "presets": [
+    {
+      "id": "light_jab",
+      "label": "Light Jab",
+      "settings": {
+        "haymaker": 3,
+        "jab": 5,
+        "uppercut": 7,
+        "left_hook": 1,
+        "clobber": 3,
+        "right_hook": 1,
+        "haymaker_label": "volume",
+        "jab_label": "gain",
+        "uppercut_label": "high cut filter",
+        "left_hook_label": "clipping mode",
+        "clobber_label": "bass response",
+        "right_hook_label": "clipping diode selection"
+      }
+    },
+    {
+      "id": "open_punch",
+      "label": "Open Punch",
+      "settings": {
+        "haymaker": 2,
+        "jab": 8,
+        "uppercut": 10,
+        "left_hook": 2,
+        "clobber": 0,
+        "right_hook": 2
+      }
+    },
+    {
+      "id": "knockout",
+      "label": "Knockout",
+      "settings": {
+        "haymaker": 5,
+        "jab": 10,
+        "uppercut": 10,
+        "left_hook": 1,
+        "clobber": 8,
+        "right_hook": 3
+      }
+    },
+    {
+      "id": "liver_hook",
+      "label": "Liver Hook",
+      "settings": {
+        "haymaker": 3,
+        "jab": 8,
+        "uppercut": 10,
+        "left_hook": 3,
+        "clobber": 5,
+        "right_hook": 1
+      }
+    },
+    {
+      "id": "jab_knob",
+      "label": "Jab Knob",
+      "isSweep": true,
+      "target": "jab",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "haymaker": 3,
+        "uppercut": 10,
+        "left_hook": 1,
+        "clobber": 5,
+        "right_hook": 2,
+        "jab_label": "gain"
+      }
+    },
+    {
+      "id": "uppercut_knob",
+      "label": "Uppercut Knob",
+      "isSweep": true,
+      "target": "uppercut",
+      "initialValue": 10,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "haymaker": 3,
+        "jab": 7,
+        "left_hook": 1,
+        "clobber": 2,
+        "right_hook": 1,
+        "uppercut_label": "high cut filter"
+      }
+    },
+    {
+      "id": "left_hook_toggle",
+      "label": "Left Hook Toggle",
+      "isSweep": true,
+      "target": "left_hook",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "haymaker": 3,
+        "jab": 6,
+        "uppercut": 8,
+        "clobber": 2,
+        "right_hook": 2,
+        "left_hook_label": "clipping mode"
+      }
+    },
+    {
+      "id": "clobber_knob",
+      "label": "Clobber Knob",
+      "isSweep": true,
+      "target": "clobber",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "haymaker": 3,
+        "jab": 6,
+        "uppercut": 8,
+        "left_hook": 1,
+        "right_hook": 2,
+        "clobber_label": "bass response"
+      }
+    },
+    {
+      "id": "right_hook_toggle",
+      "label": "Right Hook Toggle",
+      "isSweep": true,
+      "target": "right_hook",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "haymaker": 3,
+        "jab": 6,
+        "uppercut": 8,
+        "left_hook": 1,
+        "clobber": 2,
+        "right_hook_label": "clipping diode selection"
+      }
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "presets": [
+    {
+      "id": "drippy_wet",
+      "label": "Drippy Wet",
+      "settings": {
+        "mix": 6,
+        "tone": 6,
+        "volume": 2,
+        "dwell": 7
+      }
+    },
+    {
+      "id": "max_volume",
+      "label": "Max Volume",
+      "settings": {
+        "mix": 5,
+        "tone": 5,
+        "volume": 10,
+        "dwell": 5
+      }
+    },
+    {
+      "id": "long_dark_dwell",
+      "label": "Long Dark Dwell",
+      "settings": {
+        "mix": 6,
+        "tone": 0,
+        "volume": 2,
+        "dwell": 10
+      }
+    },
+    {
+      "id": "tone_sweep",
+      "label": "Tone Sweep",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "mix": 6,
+        "volume": 2,
+        "dwell": 7
+      }
+    },
+    {
+      "id": "mix_sweep",
+      "label": "Mix Sweep",
+      "isSweep": true,
+      "target": "mix",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 9, 10],
+      "settings": {
+        "tone": 5,
+        "volume": 2,
+        "dwell": 5
+      }
+    },
+    {
+      "id": "dwell_sweep",
+      "label": "Dwell Sweep",
+      "isSweep": true,
+      "target": "dwell",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "mix": 8,
+        "volume": 2,
+        "tone": 6
+      }
+    }
+  ]
+}

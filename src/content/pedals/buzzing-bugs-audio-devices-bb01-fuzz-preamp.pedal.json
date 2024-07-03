@@ -1,0 +1,75 @@
+{
+  "name": "buzzing-bugs-audio-devices-bb01-fuzz-preamp",
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol",
+        "size": 48,
+        "position": {
+          "left": 21,
+          "top": 47
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#7396a7",
+          "secondary": "#cff2ff",
+          "edge": "#8db6c6",
+          "tick": "#17191a"
+        }
+      },
+      {
+        "id": "hi_cut",
+        "size": 48,
+        "position": {
+          "left": 77,
+          "top": 47
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#7396a7",
+          "secondary": "#cff2ff",
+          "edge": "#8db6c6",
+          "tick": "#17191a"
+        }
+      },
+      {
+        "id": "gain",
+        "size": 48,
+        "position": {
+          "left": 132,
+          "top": 47
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#7396a7",
+          "secondary": "#cff2ff",
+          "edge": "#8db6c6",
+          "tick": "#17191a"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 56,
+        "position": {
+          "left": 74,
+          "top": 110
+        },
+        "colors": {
+          "on": "#a6f7ff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": {
+          "left": 77,
+          "top": 288
+        }
+      }
+    ]
+  }
+}

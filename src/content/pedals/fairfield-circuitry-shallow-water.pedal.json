@@ -1,0 +1,65 @@
+{
+  "name": "fairfield-circuitry-shallow-water",
+  "enclosure": "landscape",
+  "controls": {
+    "knobs": [
+      {
+        "id": "rate",
+        "size": 68,
+        "position": { "left": 19, "top": 24 },
+        "colors": { "background": "#F0F0F0", "primary": "#1F1B1C" },
+        "type": "fairfield"
+      },
+      {
+        "id": "lpg",
+        "size": 68,
+        "position": { "left": 104, "top": 24 },
+        "colors": { "background": "#C6C6C6", "primary": "#1F1B1C" },
+        "type": "fairfield"
+      },
+      {
+        "id": "damp",
+        "size": 68,
+        "position": { "left": 19, "top": 108 },
+        "colors": { "background": "#C0C0C0", "primary": "#1F1B1C" },
+        "type": "fairfield"
+      },
+      {
+        "id": "mix",
+        "size": 68,
+        "position": { "left": 104, "top": 108 },
+        "colors": { "background": "#B5B5B5", "primary": "#1F1B1C" },
+        "type": "fairfield"
+      },
+      {
+        "id": "depth",
+        "size": 68,
+        "position": { "left": 19, "top": 189 },
+        "colors": { "background": "#B1B1B1", "primary": "#1F1B1C" },
+        "type": "fairfield"
+      },
+      {
+        "id": "vol",
+        "size": 68,
+        "position": { "left": 104, "top": 189 },
+        "colors": { "background": "#A0A0A0", "primary": "#1F1B1C" },
+        "type": "fairfield"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 50,
+        "position": { "left": 215, "top": 147 },
+        "colors": { "on": "#00fffc" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 54,
+        "position": { "left": 268, "top": 200 }
+      }
+    ]
+  }
+}

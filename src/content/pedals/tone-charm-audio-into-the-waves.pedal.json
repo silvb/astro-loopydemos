@@ -1,0 +1,93 @@
+{
+  "name": "tone-charm-audio-into-the-waves",
+  "enclosure": "landscape",
+  "presentationColors": {
+    "background": "#510855",
+    "primary": "#5bcce3"
+  },
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 54,
+        "position": { "left": 25, "top": 39 },
+        "type": "jhs"
+      },
+      {
+        "id": "filter",
+        "size": 54,
+        "position": { "left": 106, "top": 38 },
+        "type": "jhs"
+      },
+      {
+        "id": "gain",
+        "size": 54,
+        "position": { "left": 190, "top": 38 },
+        "type": "jhs"
+      },
+      {
+        "id": "mix",
+        "size": 54,
+        "position": { "left": 272, "top": 38 },
+        "type": "jhs"
+      },
+      {
+        "id": "dive",
+        "size": 54,
+        "position": { "left": 25, "top": 113 },
+        "type": "jhs"
+      },
+      {
+        "id": "feedback",
+        "size": 54,
+        "position": { "left": 106, "top": 113 },
+        "type": "jhs"
+      },
+      {
+        "id": "depth",
+        "size": 54,
+        "position": { "left": 190, "top": 113 },
+        "type": "jhs"
+      },
+      {
+        "id": "delay",
+        "size": 54,
+        "position": { "left": 271, "top": 113 },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 36,
+        "position": { "left": 156, "top": 47 },
+        "colors": { "on": "#a2dbdb" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 44,
+        "position": { "left": 275, "top": 217 }
+      },
+      {
+        "id": "sens",
+        "type": "toggle",
+        "size": 26,
+        "position": { "left": 78, "top": 92 }
+      },
+      {
+        "id": "hpf",
+        "type": "toggle",
+        "size": 26,
+        "position": { "left": 161, "top": 92 }
+      },
+      {
+        "id": "dirt",
+        "type": "toggle",
+        "size": 26,
+        "position": { "left": 246, "top": 92 }
+      }
+    ]
+  }
+}

@@ -1,0 +1,107 @@
+{
+  "presets": [
+    {
+      "id": "tape_like_dotted_eight",
+      "label": "Tape-like Dotted 8th",
+      "settings": {
+        "mix": 4,
+        "feed": 5,
+        "tone": 3,
+        "subdiv": 1,
+        "mod": 6,
+        "msec_label": "no effect b/c tapped tempo"
+      }
+    },
+    {
+      "id": "spooky_reverb",
+      "label": "Spooky Reverb",
+      "settings": {
+        "mix": 6,
+        "feed": 8,
+        "msec": 1,
+        "tone": 2,
+        "mod": 8,
+        "subdiv_label": "no effect b/c tempo set by m/sec knob",
+        "rate_led": 200
+      }
+    },
+    {
+      "id": "slap_back",
+      "label": "Slap Back",
+      "settings": {
+        "mix": 6,
+        "feed": 1,
+        "msec": 0,
+        "tone": 8,
+        "mod": 2,
+        "subdiv_label": "no effect b/c tempo set by m/sec knob",
+        "rate_led": 150
+      }
+    },
+    {
+      "id": "clean_quarter_note",
+      "label": "Clean Quarter Note",
+      "settings": {
+        "mix": 3,
+        "feed": 2,
+        "tone": 1,
+        "mod": 0,
+        "subdiv": 2,
+        "msec_label": "no effect b/c tapped tempo"
+      }
+    },
+    {
+      "id": "triplets_out_of_control",
+      "label": "Triplets out of Control",
+      "settings": {
+        "mix": 5,
+        "feed": 8,
+        "tone": 5,
+        "mod": 5,
+        "subdiv": 3,
+        "msec_label": "no effect b/c tapped tempo"
+      }
+    },
+    {
+      "id": "maximum_delay",
+      "label": "Maximum Delay",
+      "settings": {
+        "mix": 3,
+        "feed": 1,
+        "msec": 10,
+        "tone": 2,
+        "mod": 2,
+        "subdiv_label": "no effect b/c tempo set by m/sec knob",
+        "rate_led": 1400
+      }
+    },
+    {
+      "id": "mod_knob",
+      "label": "Mod Knob",
+      "isSweep": true,
+      "target": "mod",
+      "initialValue": "0",
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "mix": 7,
+        "feed": 5,
+        "tone": 5,
+        "subdiv": 1
+      }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone Knob",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": "0",
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "mix": 8,
+        "feed": 3,
+        "mod": 2,
+        "subdiv": 1
+      }
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "presets": [
+    {
+      "id": "chorus",
+      "label": "Chorus",
+      "noLabels": true,
+      "chain": [
+        {
+          "name": "caroline-guitar-company-meteore",
+          "id": "meteore",
+          "settings": {
+            "level": 3.5,
+            "attack": 0,
+            "regen": 6,
+            "dark_bright": 3
+          }
+        },
+        {
+          "name": "electronic-audio-experiments-limelight-v2",
+          "id": "limelight",
+          "settings": {
+            "volume": 6.5,
+            "tone": 4,
+            "gain": 5,
+            "boost": 4,
+            "focus": 2
+          }
+        },
+        {
+          "name": "oats-and-molasses-panorama-boost",
+          "id": "oam",
+          "settings": { "volume": 6, "gain": 4.5 }
+        }
+      ]
+    }
+  ]
+}

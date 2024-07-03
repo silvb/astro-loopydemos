@@ -1,0 +1,53 @@
+{
+  "name": "boss-ds-1-distortion",
+  "controls": {
+    "knobs": [
+      {
+        "id": "tone",
+        "size": 56,
+        "position": {
+          "left": 27,
+          "top": 15
+        }
+      },
+      {
+        "id": "level",
+        "size": 42,
+        "position": {
+          "left": 79,
+          "top": 56
+        },
+        "type": "knurled"
+      },
+      {
+        "id": "dist",
+        "size": 56,
+        "position": {
+          "left": 118,
+          "top": 16
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 36,
+        "position": {
+          "left": 82,
+          "top": 3
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "variant": "boss",
+        "size": 52,
+        "position": {
+          "left": 77,
+          "top": 256
+        }
+      }
+    ]
+  }
+}

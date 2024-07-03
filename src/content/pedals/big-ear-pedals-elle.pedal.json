@@ -1,0 +1,75 @@
+{
+  "name": "big-ear-pedals-elle",
+  "width": 210,
+  "height": 345,
+  "controls": {
+    "knobs": [
+      {
+        "id": "color",
+        "size": 60,
+        "position": {
+          "left": 25,
+          "top": 9
+        },
+        "colors": {
+          "primary": "#f3f9fd",
+          "secondary": "#bfc8c6",
+          "edge": "#a4afaf",
+          "tick": "#000"
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "dwell",
+        "size": 60,
+        "position": {
+          "left": 125,
+          "top": 10
+        },
+        "colors": {
+          "primary": "#f3f9fd",
+          "secondary": "#bfc8c6",
+          "edge": "#a4afaf",
+          "tick": "#000"
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "blend",
+        "size": 60,
+        "position": {
+          "left": 75,
+          "top": 64
+        },
+        "colors": {
+          "primary": "#f3f9fd",
+          "secondary": "#bfc8c6",
+          "edge": "#a4afaf",
+          "tick": "#000"
+        },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 40,
+        "position": {
+          "left": 85,
+          "top": 30
+        },
+        "colors": { "off": "#d2e1e9a1", "on": "#d4f9ff" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 80,
+          "top": 239
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,56 @@
+{
+  "presets": [
+    {
+      "id": "sweet_spot",
+      "label": "Sweet Spot",
+      "settings": {
+        "tone": 7,
+        "gain": 7
+      }
+    },
+    {
+      "id": "low_gain",
+      "label": "Low Gain",
+      "settings": {
+        "tone": 7,
+        "gain": 1
+      }
+    },
+    {
+      "id": "will_it_shoegaze",
+      "label": "Will it Shoegaze?",
+      "chain": [
+        {
+          "name": "wonderful-audio-technology-apex-distortion",
+          "id": "apex",
+          "settings": { "gain": 7 }
+        },
+        {
+          "name": "walrus_audio_slo",
+          "id": "slo",
+          "settings": {
+            "mode": 3,
+            "mix": 8,
+            "depth": 8
+          }
+        }
+      ]
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain Knob",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10]
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone Knob",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10]
+    }
+  ]
+}

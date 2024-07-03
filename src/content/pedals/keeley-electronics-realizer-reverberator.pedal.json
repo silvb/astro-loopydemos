@@ -1,0 +1,95 @@
+{
+  "name": "keeley-electronics-realizer-reverberator",
+  "controls": {
+    "knobs": [
+      {
+        "id": "warmth",
+        "size": 48,
+        "position": {
+          "left": 23,
+          "top": 38
+        },
+        "type": "jhs",
+        "colors": {
+          "primary": "lightcyan",
+          "secondary": "powderblue",
+          "tick": "#1F1B1C"
+        }
+      },
+      {
+        "id": "blend",
+        "size": 48,
+        "position": {
+          "left": 127,
+          "top": 38
+        },
+        "type": "jhs",
+        "colors": {
+          "primary": "lightcyan",
+          "secondary": "powderblue",
+          "tick": "#1F1B1C"
+        }
+      },
+      {
+        "id": "decay",
+        "size": 48,
+        "position": {
+          "left": 23,
+          "top": 90
+        },
+        "type": "jhs",
+        "colors": {
+          "primary": "lightcyan",
+          "secondary": "powderblue",
+          "tick": "#1F1B1C"
+        }
+      },
+      {
+        "id": "depth",
+        "size": 48,
+        "position": {
+          "left": 127,
+          "top": 90
+        },
+        "type": "jhs",
+        "colors": {
+          "primary": "lightcyan",
+          "secondary": "powderblue",
+          "tick": "#1F1B1C"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 36,
+        "position": {
+          "left": 83,
+          "top": 20
+        },
+        "colors": {
+          "on": "#00b7ff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 52,
+        "position": {
+          "left": 74,
+          "top": 220
+        }
+      },
+      {
+        "id": "reverb_type",
+        "type": "toggle",
+        "size": 32,
+        "position": {
+          "left": 84,
+          "top": 98
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,82 @@
+{
+  "name": "poison-noises-gluttonous-maximus-fuzz",
+  "width": 300,
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 48,
+        "position": {
+          "left": 68,
+          "top": 34
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "gain",
+        "size": 48,
+        "position": {
+          "left": 126,
+          "top": 34
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "tone",
+        "size": 48,
+        "position": {
+          "left": 184,
+          "top": 34
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "bias",
+        "size": 48,
+        "position": {
+          "left": 68,
+          "top": 118
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "clipping",
+        "size": 48,
+        "position": {
+          "left": 184,
+          "top": 118
+        },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 68,
+          "top": 279
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 125,
+          "top": 276
+        }
+      },
+      {
+        "id": "mode",
+        "type": "toggle",
+        "size": 32,
+        "position": {
+          "left": 136,
+          "top": 125
+        }
+      }
+    ]
+  }
+}

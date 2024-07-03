@@ -1,0 +1,28 @@
+{
+  "presets": [
+    {
+      "id": "fat_overdrive",
+      "label": "Fat Overdrive",
+      "settings": { "bark": 5, "howl": 10 }
+    },
+    {
+      "id": "hot_preamp",
+      "label": "Hot Preamp",
+      "settings": { "bark": 7, "howl": 6 }
+    },
+    {
+      "id": "oomph_boost",
+      "label": "Oomph Boost",
+      "settings": { "bark": 10, "howl": 10 }
+    },
+    {
+      "id": "howl_knob",
+      "label": "Howl",
+      "isSweep": true,
+      "target": "howl",
+      "initialValue": 7,
+      "values": [0, 3, 6, 7, 8, 9, 10],
+      "settings": { "bark": 6 }
+    }
+  ]
+}

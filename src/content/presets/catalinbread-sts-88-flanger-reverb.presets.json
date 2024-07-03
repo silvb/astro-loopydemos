@@ -1,0 +1,81 @@
+{
+  "presets": [
+    {
+      "id": "spacey_swoosh",
+      "label": "Spacey Swoosh",
+      "settings": { "depth": 5, "rate": 4, "mix": 6, "reverb": 7 }
+    },
+    {
+      "id": "galaxy_warble",
+      "label": "Galaxy Warble",
+      "settings": { "depth": 7, "rate": 8, "mix": 5, "reverb": 6 }
+    },
+    {
+      "id": "tasteful_flerb",
+      "label": "Tasteful Flerb",
+      "settings": { "depth": 8, "rate": 0, "mix": 4, "reverb": 10 }
+    },
+    {
+      "id": "shoegaze",
+      "label": "You Bet It Shoegazes",
+      "chain": [
+        {
+          "name": "beautiful-noise-effects-exploder",
+          "id": "exploder",
+          "settings": {
+            "master": 6,
+            "gain": 5,
+            "low": 4,
+            "mid": 6,
+            "hi": 7,
+            "white_noise": 3,
+            "tone": 3,
+            "env": 2.5,
+            "clipping": 3
+          }
+        },
+        {
+          "name": "catalinbread-sts-88-flanger-reverb",
+          "id": "sts88",
+          "settings": { "depth": 8, "rate": 0, "mix": 4, "reverb": 10 }
+        }
+      ]
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "rate": 5, "mix": 8, "reverb": 5 }
+    },
+    {
+      "id": "rate_knob",
+      "label": "Rate",
+      "isSweep": true,
+      "target": "rate",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "depth": 8, "mix": 7, "reverb": 6 }
+    },
+    {
+      "id": "mix_knob",
+      "label": "Mix",
+      "isSweep": true,
+      "target": "mix",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "depth": 7, "rate": 4, "reverb": 7 }
+    },
+    {
+      "id": "reverb_knob",
+      "label": "Reverb",
+      "isSweep": true,
+      "target": "reverb",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "depth": 5, "rate": 2, "mix": 10 }
+    }
+  ]
+}

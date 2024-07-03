@@ -1,0 +1,59 @@
+{
+  "name": "keeley-electronics-compressor-mini",
+  "width": 131,
+  "height": 260,
+  "controls": {
+    "knobs": [
+      {
+        "id": "level",
+        "size": 48,
+        "type": "davies",
+        "colors": {
+          "primary": "#ededed",
+          "tick": "#000"
+        },
+        "position": {
+          "left": 18,
+          "top": 11
+        }
+      },
+      {
+        "id": "comp",
+        "size": 48,
+        "type": "davies",
+        "colors": {
+          "primary": "#ededed",
+          "tick": "#000"
+        },
+        "position": {
+          "left": 66,
+          "top": 11
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "position": {
+          "left": 49,
+          "top": 2
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#52e9fd"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 46,
+        "position": {
+          "left": 42,
+          "top": 205
+        }
+      }
+    ]
+  }
+}

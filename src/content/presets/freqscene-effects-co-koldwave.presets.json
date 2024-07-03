@@ -1,0 +1,91 @@
+{
+  "presets": [
+    {
+      "id": "liquid_chorus",
+      "label": "Liquid Chorus",
+      "settings": {
+        "speed": 6,
+        "depth": 4,
+        "warp": 4,
+        "amp": 1,
+        "freq": 2,
+        "mode": 3
+      }
+    },
+    {
+      "id": "tape_vibrato",
+      "label": "Tape Vibrato",
+      "settings": {
+        "speed": 4,
+        "depth": 2,
+        "warp": 8,
+        "amp": 3.5,
+        "freq": 0,
+        "mode": 1
+      }
+    },
+    {
+      "id": "lush_classic",
+      "label": "Lush Classic",
+      "settings": {
+        "speed": 5,
+        "depth": 5,
+        "warp": 1.5,
+        "amp": 2,
+        "freq": 5,
+        "mode": 3
+      }
+    },
+    {
+      "id": "psychedelic_warp",
+      "label": "Psychedelic Warp",
+      "settings": {
+        "speed": 10,
+        "depth": 3,
+        "warp": 10,
+        "amp": 2,
+        "freq": 5,
+        "mode": 3
+      }
+    },
+    {
+      "id": "detuned",
+      "label": "Detuned",
+      "settings": {
+        "speed": 2,
+        "depth": 6,
+        "warp": 3,
+        "amp": 5,
+        "freq": 10,
+        "mode": 1
+      }
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "speed": 5, "warp": 5, "amp": 2, "freq": 5, "mode": 3 }
+    },
+    {
+      "id": "speed_knob",
+      "label": "Speed",
+      "isSweep": true,
+      "target": "speed",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "depth": 5, "warp": 5, "amp": 2, "freq": 5, "mode": 3 }
+    },
+    {
+      "id": "warp_knob",
+      "label": "Warp",
+      "isSweep": true,
+      "target": "warp",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "depth": 5, "speed": 5, "amp": 2, "freq": 5, "mode": 3 }
+    }
+  ]
+}

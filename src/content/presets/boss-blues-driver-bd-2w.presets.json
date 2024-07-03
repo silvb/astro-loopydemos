@@ -1,0 +1,46 @@
+{
+  "presets": [
+    {
+      "id": "edge_of_breakup",
+      "label": "Edge of Breakup",
+      "settings": { "level": 5, "tone": 5, "gain": 3, "mode": 2 }
+    },
+    {
+      "id": "almost_fuzz",
+      "label": "Almost Fuzz",
+      "settings": { "level": 4, "tone": 4, "gain": 10, "mode": 2 }
+    },
+    {
+      "id": "punch_and_crunch",
+      "label": "Punch & Crunch",
+      "settings": { "level": 4, "tone": 7, "gain": 7, "mode": 2 }
+    },
+    {
+      "id": "mode_switch",
+      "label": "Standard vs. Custom Mode",
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 2],
+      "settings": { "level": 4, "tone": 5, "gain": 6 }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain Knob",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 4,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "level": 4, "tone": 5, "mode": 2 }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone Knob",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "level": 4, "gain": 5, "mode": 2 }
+    }
+  ]
+}

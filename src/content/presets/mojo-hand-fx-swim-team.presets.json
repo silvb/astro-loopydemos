@@ -1,0 +1,122 @@
+{
+  "presets": [
+    {
+      "id": "classic_chorus",
+      "label": "Classic Chorus",
+      "settings": {
+        "rate": 5,
+        "depth": 5,
+        "mix_feed": 5,
+        "mode": 1
+      }
+    },
+    {
+      "id": "freaky_flanger",
+      "label": "Freaky Flanger",
+      "settings": {
+        "rate": 8,
+        "depth": 7,
+        "mix_feed": 9,
+        "mode": 2
+      }
+    },
+    {
+      "id": "drowned_lofi",
+      "label": "Drowned Lo-fi",
+      "settings": {
+        "rate": 0,
+        "depth": 8,
+        "mix_feed": 10,
+        "mode": 1
+      }
+    },
+    {
+      "id": "almost_vibrato",
+      "label": "Almost Vibrato",
+      "settings": {
+        "rate": 9,
+        "depth": 2,
+        "mix_feed": 7,
+        "mode": 2
+      }
+    },
+    {
+      "id": "rate_knob_chorus",
+      "label": " Rate Knob (Chorus)",
+      "isSweep": true,
+      "target": "rate",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "depth": 8,
+        "mix_feed": 6,
+        "mode": 1
+      }
+    },
+    {
+      "id": "rate_knob_flanger",
+      "label": " Rate Knob (Flanger)",
+      "isSweep": true,
+      "target": "rate",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "depth": 8,
+        "mix_feed": 6,
+        "mode": 2
+      }
+    },
+    {
+      "id": "depth_knob_chorus",
+      "label": " Depth Knob (Chorus)",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "rate": 5,
+        "mix_feed": 5,
+        "mode": 1
+      }
+    },
+    {
+      "id": "depth_knob_flanger",
+      "label": " Depth Knob (Flanger)",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "rate": 5,
+        "mix_feed": 5,
+        "mode": 2
+      }
+    },
+    {
+      "id": "mix_knob",
+      "label": " Mix Knob",
+      "isSweep": true,
+      "target": "mix_feed",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "rate": 7,
+        "depth": 7,
+        "mode": 1
+      }
+    },
+    {
+      "id": "feed_knob",
+      "label": " Feedback Knob",
+      "isSweep": true,
+      "target": "mix_feed",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "rate": 7,
+        "depth": 7,
+        "mode": 2
+      }
+    }
+  ]
+}

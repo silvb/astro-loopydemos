@@ -1,0 +1,47 @@
+{
+  "presets": [
+    {
+      "id": "amp_push",
+      "label": "Amp Push",
+      "settings": { "rate": 5, "depth": 6, "vol": 8, "mode": 1 }
+    },
+    {
+      "id": "chop_suey",
+      "label": "Chop Suey",
+      "settings": { "rate": 7, "depth": 10, "vol": 8, "mode": 2 }
+    },
+    {
+      "id": "broken_transmission",
+      "label": "Broken Transmission",
+      "settings": { "rate": 6, "depth": 8, "vol": 7, "mode": 3 }
+    },
+
+    {
+      "id": "rate_knob",
+      "label": "Rate",
+      "isSweep": true,
+      "target": "rate",
+      "initialValue": 5,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "depth": 6, "vol": 7, "mode": 1 }
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 5,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "rate": 6, "vol": 7, "mode": 2 }
+    },
+    {
+      "id": "mode_switch",
+      "label": "Mode",
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": { "depth": 7, "rate": 5, "vol": 7 }
+    }
+  ]
+}

@@ -1,0 +1,153 @@
+{
+  "name": "poison-noises-the-narc",
+  "width": 300,
+  "controls": {
+    "knobs": [
+      {
+        "id": "sing",
+        "size": 50,
+        "position": {
+          "left": 66,
+          "top": 32
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "squeal",
+        "size": 50,
+        "position": {
+          "left": 127,
+          "top": 32
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "squeak",
+        "size": 50,
+        "position": {
+          "left": 184,
+          "top": 32
+        },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 67,
+          "top": 288
+        },
+        "colors": {
+          "on": "#8df8ff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 123,
+          "top": 282
+        }
+      },
+      {
+        "id": "back_stab",
+        "type": "toggle",
+        "size": 36,
+        "position": {
+          "left": 73,
+          "top": 120
+        }
+      },
+      {
+        "id": "low_down",
+        "type": "toggle",
+        "size": 36,
+        "position": {
+          "left": 131,
+          "top": 120
+        }
+      },
+      {
+        "id": "two_time",
+        "type": "toggle",
+        "size": 36,
+        "position": {
+          "left": 191,
+          "top": 120
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "sing_label",
+        "position": {
+          "left": 81,
+          "top": 80
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 129
+        }
+      },
+      {
+        "id": "squeal_label",
+        "position": {
+          "left": 141,
+          "top": 80
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 175
+        }
+      },
+      {
+        "id": "squeak_label",
+        "position": {
+          "left": 214,
+          "top": 80
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 129
+        }
+      },
+      {
+        "id": "back_stab_label",
+        "position": {
+          "left": 86,
+          "top": 154
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 207
+        }
+      },
+      {
+        "id": "low_down_label",
+        "position": {
+          "left": 156,
+          "top": 154
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 210
+        }
+      },
+      {
+        "id": "two_time_label",
+        "position": {
+          "left": 214,
+          "top": 130
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 73
+        }
+      }
+    ]
+  }
+}

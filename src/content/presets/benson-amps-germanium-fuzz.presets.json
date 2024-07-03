@@ -1,0 +1,42 @@
+{
+  "presets": [
+    {
+      "id": "mid_gain",
+      "label": "Mid Gain",
+      "settings": { "volume": 2, "gain": 5, "impedance": 5 }
+    },
+    {
+      "id": "creamy_low_gain",
+      "label": "Creamy Low Gain",
+      "settings": { "volume": 2, "gain": 8, "impedance": 8 }
+    },
+    {
+      "id": "full_blown_fuzz",
+      "label": "Full Blown Fuzz",
+      "settings": { "volume": 2, "gain": 10, "impedance": 0 }
+    },
+    {
+      "id": "full_blown_fuzz_no_pickup_sim",
+      "label": "No Pickup Simulation",
+      "settings": { "volume": 2, "gain": 10, "impedance": 0 }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "volume": 2, "impedance": 5 }
+    },
+    {
+      "id": "impedance_knob",
+      "label": "Impedance",
+      "isSweep": true,
+      "target": "impedance",
+      "initialValue": 10,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "volume": 2, "gain": 10 }
+    }
+  ]
+}

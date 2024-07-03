@@ -1,0 +1,200 @@
+{
+  "presets": [
+    {
+      "id": "ominous_delay",
+      "label": "Ominous Delay",
+      "settings": {
+        "feedback": 8,
+        "regen": 8,
+        "mod": 5,
+        "mix": 5,
+        "x": 5,
+        "time": 5,
+        "tone": 4,
+        "program": 1,
+        "tempo_led": 583,
+        "program_label": "reverse delay into reverse reverb"
+      }
+    },
+    {
+      "id": "hypnotic_shimmer",
+      "label": "Hypnotic Shimmer",
+      "settings": {
+        "feedback": 5,
+        "regen": 7,
+        "mod": 7,
+        "mix": 5,
+        "x": 5,
+        "time": 5,
+        "tone": 4,
+        "program": 2,
+        "tempo_led": 583,
+        "program_label": "reverse delay into octave up reverb"
+      }
+    },
+    {
+      "id": "deep_waves",
+      "label": "Deep Waves",
+      "settings": {
+        "feedback": 8,
+        "regen": 10,
+        "mod": 5,
+        "mix": 7,
+        "x": 5,
+        "time": 5,
+        "tone": 4,
+        "program": 3,
+        "tempo_led": 583,
+        "program_label": "reverse delay into octave down reverb"
+      }
+    },
+    {
+      "id": "dark_ambient",
+      "label": "Dark Ambient",
+      "settings": {
+        "feedback": 8,
+        "regen": 7,
+        "mod": 5,
+        "mix": 6,
+        "x": 6,
+        "time": 5,
+        "tone": 4,
+        "program": 4,
+        "tempo_led": 583,
+        "program_label": "reverse reverb into forward reverb",
+        "feedback_label": "controls amount of octave down on the reverse reverb",
+        "regen_label": "controls amount of octave up on the forward reverb"
+      }
+    },
+    {
+      "id": "dangerous_hope",
+      "label": "Dangerous Hope",
+      "settings": {
+        "feedback": 5,
+        "regen": 7,
+        "mod": 2,
+        "mix": 6,
+        "x": 10,
+        "time": 5,
+        "tone": 4,
+        "program": 5,
+        "tempo_led": 583,
+        "program_label": "pitch delay into pitch delay"
+      }
+    },
+    {
+      "id": "x_knob_prog_I",
+      "label": "X Knob Program I",
+      "settings": {
+        "feedback": 5,
+        "regen": 0,
+        "mod": 2,
+        "mix": 7,
+        "time": 5,
+        "tone": 5,
+        "program": 1,
+        "tempo_led": 583,
+        "x_knob_label": "controls how reversed the delay is... right is fully reversed",
+        "program_label": "reverse delay into reverse reverb"
+      },
+      "isSweep": true,
+      "target": "x",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10]
+    },
+    {
+      "id": "x_knob_prog_III",
+      "label": "X Knob Program III",
+      "settings": {
+        "feedback": 2,
+        "regen": 7,
+        "mod": 2,
+        "mix": 8,
+        "time": 5,
+        "tone": 5,
+        "program": 3,
+        "tempo_led": 583,
+        "program_label": "reverse delay into octave down reverb",
+        "x_knob_label": "controls reverb decay for programs II, III and IV"
+      },
+      "isSweep": true,
+      "target": "x",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10]
+    },
+    {
+      "id": "x_knob_prog_V",
+      "label": "X Knob Program V",
+      "settings": {
+        "feedback": 7,
+        "regen": 7,
+        "mod": 2,
+        "mix": 8,
+        "time": 5,
+        "tone": 5,
+        "program": 5,
+        "tempo_led": 583,
+        "program_label": "pitch delay into pitch delay",
+        "x_knob_label": "changes the order of intervals that the pitch delays step through"
+      },
+      "isSweep": true,
+      "target": "x",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10]
+    },
+    {
+      "id": "oct_down_reverse_reverb",
+      "label": "Octave Down Reverse Reverb",
+      "settings": {
+        "feedback": 10,
+        "regen": 0,
+        "mod": 2,
+        "mix": 8,
+        "x": 5,
+        "time": 5,
+        "tone": 5,
+        "program": 4,
+        "tempo_led": 583,
+        "program_label": "reverse reverb into forward reverb",
+        "feedback_label": "controls amount of octave down on the reverse reverb"
+      }
+    },
+    {
+      "id": "oct_up_forward_reverb",
+      "label": "Octave Up Forward Reverb",
+      "settings": {
+        "feedback": 0,
+        "regen": 10,
+        "mod": 2,
+        "mix": 8,
+        "x": 5,
+        "time": 5,
+        "tone": 5,
+        "program": 4,
+        "tempo_led": 583,
+        "program_label": "reverse reverb into forward reverb",
+        "regen_label": "controls amount of octave up on the forward reverb"
+      }
+    },
+    {
+      "id": "feedback_knob",
+      "label": "Feedback Knob",
+      "settings": {
+        "regen": 0,
+        "mod": 5,
+        "mix": 6,
+        "x": 0,
+        "time": 5,
+        "tone": 5,
+        "program": 3,
+        "tempo_led": 583,
+        "program_label": "reverse delay into octave down reverb",
+        "feedback_label": "controls amount of delay repeats for programs I, II, III and V"
+      },
+      "isSweep": true,
+      "target": "feedback",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10]
+    }
+  ]
+}

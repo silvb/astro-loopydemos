@@ -1,0 +1,58 @@
+{
+  "name": "spun-loud-shuksan-fuzz",
+  "controls": {
+    "knobs": [
+      {
+        "id": "sustain",
+        "size": 48,
+        "position": {
+          "left": 34,
+          "top": 89
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "vol",
+        "size": 48,
+        "position": {
+          "left": 117,
+          "top": 53
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "input",
+        "size": 48,
+        "position": {
+          "left": 117,
+          "top": 125
+        },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "position": {
+          "left": 133,
+          "top": 282
+        },
+        "colors": {
+          "on": "#e500ff",
+          "off": "#591b61"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 46,
+        "position": {
+          "left": 77,
+          "top": 279
+        }
+      }
+    ]
+  }
+}

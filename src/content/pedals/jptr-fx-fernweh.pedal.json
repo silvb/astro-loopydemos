@@ -1,0 +1,95 @@
+{
+  "name": "jptr-fx-fernweh",
+  "width": 350,
+  "height": 400,
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol_one",
+        "size": 70,
+        "position": { "left": 38, "top": 57 },
+        "type": "arrow"
+      },
+      {
+        "id": "time_one",
+        "size": 70,
+        "position": { "left": 34, "top": 126 },
+        "type": "arrow"
+      },
+      {
+        "id": "feedback_one",
+        "size": 70,
+        "position": { "left": 33, "top": 195 },
+        "type": "arrow"
+      },
+      {
+        "id": "vol_two",
+        "size": 70,
+        "position": { "left": 244, "top": 56 },
+        "type": "arrow"
+      },
+      {
+        "id": "time_two_alt",
+        "size": 70,
+        "position": { "left": 243, "top": 129 },
+        "type": "arrow"
+      },
+      {
+        "id": "feedback_two",
+        "size": 70,
+        "position": { "left": 244, "top": 196 },
+        "type": "arrow"
+      },
+      {
+        "id": "time_two",
+        "size": 105,
+        "position": { "left": 121, "top": 40 },
+        "type": "arrow"
+      },
+      {
+        "id": "tone",
+        "size": 70,
+        "position": { "left": 140, "top": 159 },
+        "type": "arrow"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "position": { "left": 159, "top": 232 },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff"
+        }
+      },
+      {
+        "id": "on_led_dual",
+        "isOnIndicator": true,
+        "size": 32,
+        "position": { "left": 121, "top": 219 },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff"
+        }
+      },
+      {
+        "id": "on_led_dual_2",
+        "isOnIndicator": true,
+        "size": 32,
+        "position": { "left": 196, "top": 219 },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": { "left": 47, "top": 305 }
+      }
+    ]
+  }
+}

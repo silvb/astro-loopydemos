@@ -1,0 +1,159 @@
+{
+  "presets": [
+    {
+      "id": "psychedelic_swirl",
+      "label": "Psychedelic Swirl",
+      "settings": {
+        "rate": 7,
+        "depth": 9,
+        "sweep": 4,
+        "feedback": 8,
+        "shape": 3,
+        "voice": 3,
+        "dfv": 6,
+        "rate_led": 300
+      }
+    },
+    {
+      "id": "wobbly_vibrato",
+      "label": "Wobbly Vibrato",
+      "settings": {
+        "rate": 7,
+        "depth": 6,
+        "sweep": 2,
+        "feedback": 2,
+        "shape": 1,
+        "voice": 1,
+        "dfv": 10,
+        "rate_led": 300
+      }
+    },
+    {
+      "id": "slow_swoosh",
+      "label": "Slow Swoosh",
+      "settings": {
+        "rate": 1,
+        "depth": 8,
+        "sweep": 5,
+        "feedback": 7,
+        "shape": 1,
+        "voice": 3,
+        "dfv": 5,
+        "rate_led": 1000
+      }
+    },
+    {
+      "id": "fake_bathroom_delay",
+      "label": "Fake Bathroom Delay",
+      "settings": {
+        "rate": 5,
+        "depth": 0,
+        "sweep": 0,
+        "feedback": 10,
+        "shape": 1,
+        "voice": 1,
+        "dfv": 5,
+        "rate_led": 600
+      }
+    },
+    {
+      "id": "almost_chorus",
+      "label": "Almost Chorus",
+      "settings": {
+        "rate": 4,
+        "depth": 3,
+        "sweep": 0,
+        "feedback": 0,
+        "shape": 1,
+        "voice": 1,
+        "dfv": 4,
+        "rate_led": 700
+      }
+    },
+    {
+      "id": "sweep_knob",
+      "label": "Sweep Knob",
+      "isSweep": true,
+      "target": "sweep",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "rate": 5,
+        "depth": 0,
+        "feedback": 6,
+        "shape": 1,
+        "voice": 1,
+        "dfv": 6,
+        "rate_led": 650
+      }
+    },
+    {
+      "id": "shape_switch",
+      "label": "Shape Switch",
+      "isSweep": true,
+      "target": "shape",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "rate": 7,
+        "depth": 10,
+        "sweep": 4,
+        "feedback": 4,
+        "voice": 1,
+        "dfv": 6,
+        "rate_led": 300
+      }
+    },
+    {
+      "id": "voice_switch",
+      "label": "Voice Switch",
+      "isSweep": true,
+      "target": "voice",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "rate": 5,
+        "depth": 8,
+        "sweep": 4,
+        "feedback": 6,
+        "shape": 1,
+        "dfv": 5,
+        "rate_led": 650
+      }
+    },
+    {
+      "id": "dfv_knob",
+      "label": "d-f-v Knob",
+      "isSweep": true,
+      "target": "dfv",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "rate": 5,
+        "depth": 5,
+        "sweep": 5,
+        "feedback": 5,
+        "shape": 1,
+        "voice": 1,
+        "rate_led": 650
+      }
+    },
+    {
+      "id": "feedback_knob",
+      "label": "Feedback Knob",
+      "isSweep": true,
+      "target": "feedback",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "rate": 2,
+        "depth": 8,
+        "sweep": 5,
+        "shape": 1,
+        "voice": 1,
+        "dfv": 6,
+        "rate_led": 800
+      }
+    }
+  ]
+}

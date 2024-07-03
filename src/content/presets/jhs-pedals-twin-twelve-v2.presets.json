@@ -1,0 +1,69 @@
+{
+  "presets": [
+    {
+      "id": "clean_channel",
+      "label": "Clean Channel",
+      "settings": {
+        "volume": 2,
+        "drive": 5,
+        "bass": 5,
+        "treble": 8,
+        "gain": 3,
+        "drive_label": "disengaged on clean channel"
+      }
+    },
+    {
+      "id": "dirt_channel",
+      "label": "Dirt Channel",
+      "settings": {
+        "volume": 2,
+        "drive": 5,
+        "bass": 5,
+        "treble": 8,
+        "gain": 1
+      }
+    },
+    {
+      "id": "drive_knob",
+      "label": "Drive Knob",
+      "isSweep": true,
+      "target": "drive",
+      "initialValue": 4,
+      "values": [0, 1, 2, 4, 6, 8, 10],
+      "settings": {
+        "volume": 2,
+        "bass": 4,
+        "treble": 6,
+        "gain": 1
+      }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass Knob",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 5,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "settings": {
+        "volume": 2,
+        "drive": 7,
+        "treble": 5,
+        "gain": 1
+      }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble Knob",
+      "isSweep": true,
+      "target": "treble",
+      "initialValue": 5,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "settings": {
+        "volume": 2,
+        "drive": 7,
+        "bass": 5,
+        "gain": 1
+      }
+    }
+  ]
+}

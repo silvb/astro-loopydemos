@@ -1,0 +1,99 @@
+{
+  "name": "electronic-audio-experiments-dagger-v2",
+  "presentationColors": {
+    "background": "#392043",
+    "primary": "#ebc38a"
+  },
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 48,
+        "position": {
+          "left": 25,
+          "top": 49
+        },
+        "type": "bakelit",
+        "colors": {
+          "primary": "whitesmoke",
+          "secondary": "gainsboro",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "drive",
+        "size": 48,
+        "position": {
+          "left": 126,
+          "top": 49
+        },
+        "type": "bakelit",
+        "colors": {
+          "primary": "whitesmoke",
+          "secondary": "gainsboro",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "low",
+        "size": 48,
+        "position": {
+          "left": 25,
+          "top": 132
+        },
+        "type": "bakelit",
+        "colors": {
+          "primary": "whitesmoke",
+          "secondary": "gainsboro",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "high",
+        "size": 48,
+        "position": {
+          "left": 126,
+          "top": 132
+        },
+        "type": "bakelit",
+        "colors": {
+          "primary": "whitesmoke",
+          "secondary": "gainsboro",
+          "tick": "black"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 56,
+        "position": {
+          "left": 122,
+          "top": 264
+        },
+        "colors": {
+          "on": "#8dcdff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": {
+          "left": 73,
+          "top": 266
+        }
+      },
+      {
+        "id": "shift",
+        "type": "toggle",
+        "size": 24,
+        "position": {
+          "left": 87,
+          "top": 105
+        }
+      }
+    ]
+  }
+}

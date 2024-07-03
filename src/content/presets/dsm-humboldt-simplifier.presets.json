@@ -1,0 +1,329 @@
+{
+  "presets": [
+    {
+      "id": "british_chime",
+      "label": "British Chime",
+      "settings": {
+        "volume": 6,
+        "gain": 5,
+        "preamp_type": 1,
+        "bass": 4,
+        "mid": 4,
+        "treble": 4,
+        "left_mic": 6,
+        "right_mic": 9,
+        "left_cab": 3,
+        "right_cab": 3,
+        "power_amp_type": 2,
+        "presence": 8,
+        "resonance": 1,
+        "out_label": "both channels summed to mono"
+      }
+    },
+    {
+      "id": "american_clean",
+      "label": "American Clean",
+      "settings": {
+        "volume": 6,
+        "gain": 3,
+        "preamp_type": 2,
+        "bass": 5,
+        "mid": 5,
+        "treble": 7,
+        "left_mic": 8,
+        "right_mic": 9,
+        "left_cab": 1,
+        "right_cab": 1,
+        "power_amp_type": 1,
+        "presence": 10,
+        "resonance": 4,
+        "out_label": "both channels summed to mono"
+      }
+    },
+    {
+      "id": "british_gain",
+      "label": "British Gain",
+      "settings": {
+        "volume": 5,
+        "gain": 7,
+        "preamp_type": 3,
+        "bass": 3,
+        "mid": 5,
+        "treble": 5,
+        "left_mic": 6,
+        "right_mic": 9,
+        "left_cab": 2,
+        "right_cab": 2,
+        "power_amp_type": 3,
+        "presence": 7,
+        "resonance": 2,
+        "out_label": "both channels summed to mono"
+      }
+    },
+    {
+      "id": "ac_gain_knob",
+      "label": "AC Gain Knob",
+      "isSweep": true,
+      "initialValue": 6,
+      "target": "gain",
+      "values": [0, 1, 2, 4, 6, 8, 10],
+      "settings": {
+        "volume": 6,
+        "preamp_type": 1,
+        "bass": 4,
+        "mid": 4,
+        "treble": 5,
+        "left_mic": 6,
+        "right_mic": 9,
+        "left_cab": 1,
+        "right_cab": 3,
+        "power_amp_type": 2,
+        "presence": 9,
+        "resonance": 1,
+        "out_label": "both channels summed to mono"
+      }
+    },
+    {
+      "id": "preamp_types",
+      "label": "Preamp Types",
+      "isSweep": true,
+      "initialValue": 1,
+      "target": "preamp_type",
+      "values": [1, 2, 3],
+      "settings": {
+        "volume": 5,
+        "gain": 7,
+        "bass": 4,
+        "mid": 4,
+        "treble": 5,
+        "left_mic": 6,
+        "right_mic": 9,
+        "left_cab": 1,
+        "right_cab": 3,
+        "power_amp_type": 2,
+        "presence": 9,
+        "resonance": 1,
+        "out_label": "both channels summed to mono"
+      }
+    },
+    {
+      "id": "power_amp_types",
+      "label": "Power Amp Types",
+      "isSweep": true,
+      "initialValue": 1,
+      "target": "power_amp_type",
+      "values": [1, 2, 3],
+      "settings": {
+        "volume": 5,
+        "gain": 7,
+        "preamp_type": 1,
+        "bass": 5,
+        "mid": 5,
+        "treble": 5,
+        "left_mic": 6,
+        "right_mic": 9,
+        "left_cab": 1,
+        "right_cab": 3,
+        "presence": 9,
+        "resonance": 3,
+        "out_label": "both channels summed to mono"
+      }
+    },
+    {
+      "id": "cab_types",
+      "label": "Cabinet Types",
+      "isSweep": true,
+      "initialValue": 1,
+      "target": "right_cab",
+      "values": [1, 2, 3],
+      "settings": {
+        "volume": 5,
+        "gain": 6,
+        "preamp_type": 1,
+        "bass": 5,
+        "mid": 5,
+        "treble": 5,
+        "right_mic": 9,
+        "power_amp_type": 2,
+        "presence": 9,
+        "resonance": 2,
+        "out_label": "Only right channel active"
+      }
+    },
+    {
+      "id": "mic_position",
+      "label": "Mic Position",
+      "isSweep": true,
+      "initialValue": 9,
+      "target": "right_mic",
+      "values": [0, 2, 4, 6, 8, 9, 10],
+      "settings": {
+        "volume": 5,
+        "gain": 6,
+        "preamp_type": 1,
+        "bass": 5,
+        "mid": 5,
+        "treble": 5,
+        "right_cab": 3,
+        "power_amp_type": 2,
+        "presence": 9,
+        "resonance": 2,
+        "out_label": "Only right channel active"
+      }
+    },
+    {
+      "id": "resonance",
+      "label": "Resonance Knob",
+      "isSweep": true,
+      "initialValue": 0,
+      "target": "resonance",
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "volume": 5,
+        "gain": 6,
+        "preamp_type": 1,
+        "bass": 5,
+        "mid": 5,
+        "treble": 5,
+        "left_mic": 6,
+        "right_mic": 9,
+        "left_cab": 1,
+        "right_cab": 3,
+        "power_amp_type": 2,
+        "presence": 9,
+        "out_label": "both channels summed to mono"
+      }
+    },
+    {
+      "id": "presence",
+      "label": "Presence Knob",
+      "isSweep": true,
+      "initialValue": 9,
+      "target": "presence",
+      "values": [0, 2, 4, 6, 8, 9, 10],
+      "settings": {
+        "volume": 5,
+        "gain": 6,
+        "preamp_type": 1,
+        "bass": 5,
+        "mid": 5,
+        "treble": 5,
+        "left_mic": 6,
+        "right_mic": 9,
+        "left_cab": 1,
+        "right_cab": 3,
+        "power_amp_type": 2,
+        "resonance": 2,
+        "out_label": "both channels summed to mono"
+      }
+    },
+    {
+      "id": "spread_off",
+      "label": "Spread Off",
+      "settings": {
+        "volume": 5,
+        "gain": 6,
+        "preamp_type": 1,
+        "bass": 5,
+        "mid": 5,
+        "treble": 5,
+        "left_mic": 6,
+        "right_mic": 9,
+        "left_cab": 1,
+        "right_cab": 3,
+        "power_amp_type": 2,
+        "presence": 9,
+        "resonance": 2,
+        "out_label": "both channels recorded stereo left and right",
+        "spread_label": "spread off"
+      }
+    },
+    {
+      "id": "spread_on",
+      "label": "Spread On",
+      "settings": {
+        "volume": 5,
+        "gain": 6,
+        "preamp_type": 1,
+        "bass": 5,
+        "mid": 5,
+        "treble": 5,
+        "left_mic": 6,
+        "right_mic": 9,
+        "left_cab": 1,
+        "right_cab": 3,
+        "power_amp_type": 2,
+        "presence": 9,
+        "resonance": 2,
+        "out_label": "both channels recorded stereo left and right",
+        "spread_label": "spread on"
+      }
+    },
+    {
+      "id": "with_overdrive",
+      "label": "With Overdrive",
+      "chain": [
+        {
+          "name": "dsm-humboldt-simplifier",
+          "id": "simplifier",
+          "settings": {
+            "volume": 5,
+            "gain": 6,
+            "preamp_type": 1,
+            "bass": 5,
+            "mid": 5,
+            "treble": 5,
+            "left_mic": 6,
+            "right_mic": 9,
+            "left_cab": 1,
+            "right_cab": 3,
+            "power_amp_type": 2,
+            "presence": 9,
+            "resonance": 2
+          }
+        },
+        {
+          "name": "plain-speak-calamity-drive",
+          "id": "calamity",
+          "settings": {
+            "tone": 8,
+            "gain": 5,
+            "voice": 5,
+            "vol": 2,
+            "art": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "with_fuzz",
+      "label": "With Fuzz",
+      "chain": [
+        {
+          "name": "dsm-humboldt-simplifier",
+          "id": "simplifier",
+          "settings": {
+            "volume": 5,
+            "gain": 6,
+            "preamp_type": 1,
+            "bass": 5,
+            "mid": 5,
+            "treble": 5,
+            "left_mic": 6,
+            "right_mic": 9,
+            "left_cab": 1,
+            "right_cab": 3,
+            "power_amp_type": 2,
+            "presence": 9,
+            "resonance": 2
+          }
+        },
+        {
+          "name": "mask-audio-electronics-black-math",
+          "id": "black_math",
+          "settings": { "loud": 5, "tone": 5, "gain": 7, "boost": 9, "mode": 1 }
+        }
+      ]
+    }
+  ]
+}

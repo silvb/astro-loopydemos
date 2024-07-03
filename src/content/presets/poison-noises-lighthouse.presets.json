@@ -1,0 +1,127 @@
+{
+  "presets": [
+    {
+      "id": "good_vibes",
+      "label": "Good Vibes",
+      "settings": {
+        "volume": 7,
+        "depth": 5,
+        "speed": 4,
+        "attack": 9,
+        "drive": 6,
+        "decay": 7
+      }
+    },
+    {
+      "id": "seasick_trem",
+      "label": "Seasick Trem",
+      "settings": {
+        "volume": 5,
+        "depth": 3,
+        "speed": 8,
+        "attack": 2,
+        "drive": 10,
+        "decay": 5
+      }
+    },
+    {
+      "id": "slow_phase",
+      "label": "Slow Phase",
+      "settings": {
+        "volume": 7,
+        "depth": 10,
+        "speed": 0,
+        "attack": 10,
+        "drive": 3,
+        "decay": 10
+      }
+    },
+    {
+      "id": "space_boost",
+      "label": "Space Boost",
+      "settings": {
+        "volume": 8,
+        "depth": 9,
+        "speed": 3,
+        "attack": 10,
+        "drive": 0,
+        "decay": 0
+      }
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "volume": 6,
+        "speed": 4,
+        "attack": 7,
+        "drive": 3,
+        "decay": 5
+      }
+    },
+    {
+      "id": "speed_knob",
+      "label": "Speed",
+      "isSweep": true,
+      "target": "speed",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "volume": 6,
+        "depth": 10,
+        "attack": 10,
+        "drive": 3,
+        "decay": 5
+      }
+    },
+    {
+      "id": "attack_knob",
+      "label": "Attack",
+      "isSweep": true,
+      "target": "attack",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "volume": 6,
+        "depth": 10,
+        "speed": 5,
+        "drive": 3,
+        "decay": 0
+      }
+    },
+    {
+      "id": "drive_knob",
+      "label": "Drive",
+      "isSweep": true,
+      "target": "drive",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "volume": 6,
+        "depth": 10,
+        "speed": 3,
+        "attack": 10,
+        "decay": 10
+      }
+    },
+    {
+      "id": "decay_knob",
+      "label": "Decay",
+      "isSweep": true,
+      "target": "decay",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "volume": 6,
+        "depth": 10,
+        "speed": 3,
+        "attack": 10,
+        "drive": 5
+      }
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "name": "vaderin-pedals-colossus",
+  "width": 300,
+  "height": 350,
+  "controls": {
+    "knobs": [
+      {
+        "id": "bass",
+        "size": 48,
+        "position": { "left": 27, "top": 60 },
+        "colors": {
+          "primary": "#f60031",
+          "secondary": "#41000a",
+          "edge": "#880010",
+          "tick": "#eff2ee"
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "top",
+        "size": 48,
+        "position": { "left": 94, "top": 61 },
+        "colors": {
+          "primary": "#f60031",
+          "secondary": "#41000a",
+          "edge": "#880010",
+          "tick": "#eff2ee"
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "fuzz",
+        "size": 48,
+        "position": { "left": 160, "top": 61 },
+        "colors": {
+          "primary": "#f60031",
+          "secondary": "#41000a",
+          "edge": "#880010",
+          "tick": "#eff2ee"
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "vol",
+        "size": 48,
+        "position": { "left": 227, "top": 61 },
+        "colors": {
+          "primary": "#f60031",
+          "secondary": "#41000a",
+          "edge": "#880010",
+          "tick": "#eff2ee"
+        },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 48, "position": { "left": 77, "top": 269 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": { "left": 123, "top": 265 }
+      }
+    ]
+  }
+}

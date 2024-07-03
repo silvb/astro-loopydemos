@@ -1,0 +1,122 @@
+{
+  "presets": [
+    {
+      "id": "subtle_and_sweet",
+      "label": "Subtle & Sweet",
+      "settings": {
+        "invade": 5,
+        "encounter": 6,
+        "abduct": 2,
+        "warp": 5,
+        "annihilate": 6,
+        "probe": 3,
+        "invade_label": "volume",
+        "encounter_label": "symmetry",
+        "abduct_label": "speed",
+        "warp_label": "shape",
+        "annihilate_label": "ratio",
+        "probe_label": "depth"
+      }
+    },
+    {
+      "id": "get_to_the_chopper",
+      "label": "Get to the Chopper!",
+      "settings": {
+        "invade": 7,
+        "encounter": 5,
+        "abduct": 10,
+        "warp": 0,
+        "annihilate": 6,
+        "probe": 10,
+        "invade_label": "volume",
+        "encounter_label": "symmetry",
+        "abduct_label": "speed",
+        "warp_label": "shape",
+        "annihilate_label": "ratio",
+        "probe_label": "depth"
+      }
+    },
+    {
+      "id": "amp_tickle",
+      "label": "Amp Tickle",
+      "settings": {
+        "invade": 8,
+        "encounter": 10,
+        "abduct": 6,
+        "warp": 10,
+        "annihilate": 7,
+        "probe": 5,
+        "invade_label": "volume",
+        "encounter_label": "symmetry",
+        "abduct_label": "speed",
+        "warp_label": "shape",
+        "annihilate_label": "ratio",
+        "probe_label": "depth"
+      }
+    },
+    {
+      "id": "encounter_knob",
+      "label": "Encounter",
+      "isSweep": true,
+      "target": "encounter",
+      "initialValue": 5,
+      "values": [0, 3, 5, 7, 10],
+      "settings": {
+        "encounter_label": "symmetry",
+        "invade": 6,
+        "abduct": 6,
+        "warp": 5,
+        "annihilate": 5,
+        "probe": 5
+      }
+    },
+    {
+      "id": "warp_knob",
+      "label": "Warp",
+      "isSweep": true,
+      "target": "warp",
+      "initialValue": 5,
+      "values": [0, 3, 5, 7, 10],
+      "settings": {
+        "warp_label": "shape",
+        "invade": 6,
+        "encounter": 5,
+        "abduct": 6,
+        "annihilate": 5,
+        "probe": 4
+      }
+    },
+    {
+      "id": "annihilate_knob",
+      "label": "Annihilate",
+      "isSweep": true,
+      "target": "annihilate",
+      "initialValue": 5,
+      "values": [0, 3, 5, 7, 10],
+      "settings": {
+        "annihilate_label": "ratio",
+        "invade": 6,
+        "encounter": 5,
+        "abduct": 6,
+        "warp": 5,
+        "probe": 4
+      }
+    },
+    {
+      "id": "probe_knob",
+      "label": "Probe",
+      "isSweep": true,
+      "target": "probe",
+      "initialValue": 5,
+      "values": [0, 3, 5, 7, 10],
+      "settings": {
+        "probe_label": "depth",
+        "invade": 6,
+        "encounter": 10,
+        "abduct": 5,
+        "warp": 10,
+        "annihilate": 6
+      }
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "presets": [
+    {
+      "id": "sweet_spot",
+      "label": "Sweet Spot",
+      "settings": { "tone": 8, "freq": 6, "vol": 6, "drive": 10 }
+    },
+    {
+      "id": "mid_boost_into_overdrive",
+      "label": "Mid Boost into SS/BS Mini",
+      "chain": [
+        {
+          "name": "smallsound-bigsound-mini",
+          "id": "mini",
+          "settings": {
+            "gain": 5,
+            "volume": 5,
+            "bias": 5,
+            "bass": 6,
+            "treble": 8
+          }
+        },
+        {
+          "name": "catalinbread-tribute",
+          "id": "tribute",
+          "settings": { "tone": 10, "freq": 5, "vol": 7, "drive": 5 }
+        }
+      ]
+    },
+    {
+      "id": "stacked_after_overdrive",
+      "label": "Stacked after Vaderin HP-X",
+      "chain": [
+        {
+          "name": "catalinbread-tribute",
+          "id": "tribute",
+          "settings": { "tone": 2, "freq": 1, "vol": 5, "drive": 8 }
+        },
+        {
+          "name": "vaderin-pedals-hp-x",
+          "id": "hpx",
+          "settings": {
+            "input": 5,
+            "output": 5,
+            "mode": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "low_cut",
+      "label": "Low Cut",
+      "settings": { "tone": 2, "freq": 9, "vol": 8, "drive": 10 }
+    },
+    {
+      "id": "upper_mid_boost",
+      "label": "Upper Mid Boost",
+      "settings": { "tone": 8, "freq": 3, "vol": 8, "drive": 7 }
+    },
+    {
+      "id": "mid_scoop",
+      "label": "Mid Scoop",
+      "settings": { "tone": 0, "freq": 2, "vol": 8, "drive": 8 }
+    },
+    {
+      "id": "freq_knob",
+      "label": "Freq Knob",
+      "settings": { "tone": 10, "vol": 5, "drive": 6 },
+      "isSweep": true,
+      "target": "freq",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone Knob",
+      "settings": { "freq": 5, "vol": 7, "drive": 6 },
+      "isSweep": true,
+      "target": "tone",
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "initialValue": 0
+    },
+    {
+      "id": "drive_knob",
+      "label": "Drive Knob",
+      "settings": { "tone": 8, "freq": 6, "vol": 6 },
+      "isSweep": true,
+      "target": "drive",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0
+    }
+  ]
+}

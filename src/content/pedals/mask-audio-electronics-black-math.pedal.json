@@ -1,0 +1,107 @@
+{
+  "name": "mask-audio-electronics-black-math",
+  "width": 300,
+  "height": 350,
+  "controls": {
+    "knobs": [
+      {
+        "id": "loud",
+        "size": 57,
+        "position": {
+          "left": 32,
+          "top": 56
+        },
+        "type": "brutalist",
+        "colors": {
+          "primary": "black",
+          "tick": "antiquewhite",
+          "shadow": "darkslategray"
+        }
+      },
+      {
+        "id": "tone",
+        "size": 56,
+        "position": {
+          "left": 92,
+          "top": 56
+        },
+        "type": "brutalist",
+        "colors": {
+          "primary": "black",
+          "tick": "antiquewhite",
+          "shadow": "darkslategray"
+        }
+      },
+      {
+        "id": "gain",
+        "size": 57,
+        "position": {
+          "left": 151,
+          "top": 54
+        },
+        "type": "brutalist",
+        "colors": {
+          "primary": "black",
+          "tick": "antiquewhite",
+          "shadow": "darkslategray"
+        }
+      },
+      {
+        "id": "boost",
+        "size": 57,
+        "position": {
+          "left": 210,
+          "top": 52
+        },
+        "type": "brutalist",
+        "colors": {
+          "primary": "black",
+          "tick": "antiquewhite",
+          "shadow": "darkslategray"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 126,
+          "top": 164
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": {
+          "left": 124,
+          "top": 264
+        }
+      },
+      {
+        "id": "mode",
+        "type": "toggle",
+        "size": 32,
+        "position": {
+          "left": 187,
+          "top": 164
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "mid_label",
+        "position": {
+          "left": 273,
+          "top": 200
+        },
+        "labelPosition": {
+          "left": 306,
+          "top": 100
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,112 @@
+{
+  "name": "ground-control-audio-bread-oath",
+  "width": 300,
+  "height": 350,
+  "presentationColors": {
+    "background": "#c55395",
+    "primary": "#ededf0"
+  },
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol",
+        "size": 44,
+        "position": {
+          "left": 52,
+          "top": 29
+        },
+        "colors": {
+          "primary": "#f1e33f",
+          "tick": "white",
+          "shadow": "#d0bc35"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "gain",
+        "size": 44,
+        "position": {
+          "left": 207,
+          "top": 29
+        },
+        "colors": {
+          "primary": "#f1e33f",
+          "tick": "white",
+          "shadow": "#d0bc35"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "pre",
+        "size": 44,
+        "position": {
+          "left": 52,
+          "top": 104
+        },
+        "colors": {
+          "primary": "#f1e33f",
+          "tick": "white",
+          "shadow": "#d0bc35"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "tone",
+        "size": 44,
+        "position": {
+          "left": 207,
+          "top": 104
+        },
+        "colors": {
+          "primary": "#f1e33f",
+          "tick": "white",
+          "shadow": "#d0bc35"
+        },
+        "type": "brutalist"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "position": {
+          "left": 176,
+          "top": 290
+        },
+        "colors": {
+          "on": "#e6bd00"
+        }
+      },
+      {
+        "id": "pre_led",
+        "size": 32,
+        "position": {
+          "left": 95,
+          "top": 290
+        },
+        "colors": {
+          "on": "#e6bd00"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 202,
+          "top": 282
+        }
+      },
+      {
+        "id": "diodes",
+        "type": "toggle",
+        "size": 32,
+        "position": {
+          "left": 135,
+          "top": 37
+        }
+      }
+    ]
+  }
+}

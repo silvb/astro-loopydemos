@@ -1,0 +1,80 @@
+{
+  "presets": [
+    {
+      "id": "chewy_not_muffled",
+      "label": "Chewy not Muffled",
+      "settings": {
+        "level": 3,
+        "tone": 7,
+        "gain": 4,
+        "mode": 3
+      }
+    },
+    {
+      "id": "mode_sweep",
+      "label": "Clipping Modes",
+      "isSweep": true,
+      "target": "mode",
+      "values": [1, 2, 3],
+      "initialValue": 1,
+      "settings": {
+        "level": 2,
+        "tone": 6,
+        "gain": 7
+      }
+    },
+    {
+      "id": "gainy_but_clear",
+      "label": "Gainy but Clear",
+      "settings": {
+        "level": 2,
+        "tone": 6,
+        "gain": 10,
+        "mode": 1
+      }
+    },
+    {
+      "id": "edge_of_breakup",
+      "label": "Edge of Breakup",
+      "settings": {
+        "level": 5,
+        "tone": 7,
+        "gain": 2,
+        "mode": 3
+      }
+    },
+    {
+      "id": "sparkly_dirt",
+      "label": "Sparkly Dirt",
+      "settings": {
+        "level": 3,
+        "tone": 5,
+        "gain": 5,
+        "mode": 1
+      }
+    },
+    {
+      "id": "meaty_op_amp",
+      "label": "Meaty OpAmp",
+      "settings": {
+        "level": 2,
+        "tone": 3,
+        "gain": 10,
+        "mode": 2
+      }
+    },
+    {
+      "id": "tone_sweep",
+      "label": "Tone Sweep",
+      "isSweep": true,
+      "target": "tone",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0,
+      "settings": {
+        "level": 2,
+        "tone": 6,
+        "gain": 7
+      }
+    }
+  ]
+}

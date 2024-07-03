@@ -1,0 +1,154 @@
+{
+  "name": "poison-noises-the-crook",
+  "width": 300,
+  "controls": {
+    "knobs": [
+      {
+        "id": "breaking",
+        "size": 50,
+        "position": {
+          "left": 66,
+          "top": 33
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "entering",
+        "size": 50,
+        "position": {
+          "left": 129,
+          "top": 33
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "high_tail",
+        "size": 50,
+        "position": {
+          "left": 125,
+          "top": 115
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "lay_low",
+        "size": 50,
+        "position": {
+          "left": 186,
+          "top": 115
+        },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 66,
+          "top": 291
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#e5e300"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 122,
+          "top": 288
+        }
+      },
+      {
+        "id": "the_goods",
+        "type": "toggle",
+        "size": 36,
+        "position": {
+          "left": 189,
+          "top": 41
+        }
+      },
+      {
+        "id": "switcheroo",
+        "type": "toggle",
+        "size": 36,
+        "position": {
+          "left": 73,
+          "top": 122
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "breaking_label",
+        "position": {
+          "left": 81,
+          "top": 82
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 129
+        }
+      },
+      {
+        "id": "entering_label",
+        "position": {
+          "left": 141,
+          "top": 82
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 175
+        }
+      },
+      {
+        "id": "the_goods_label",
+        "position": {
+          "left": 214,
+          "top": 73
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 129
+        }
+      },
+      {
+        "id": "switcheroo_label",
+        "position": {
+          "left": 85,
+          "top": 157
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 207
+        }
+      },
+      {
+        "id": "high_tail_label",
+        "position": {
+          "left": 165,
+          "top": 157
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 210
+        }
+      },
+      {
+        "id": "lay_low_label",
+        "position": {
+          "left": 217,
+          "top": 122
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 73
+        }
+      }
+    ]
+  }
+}

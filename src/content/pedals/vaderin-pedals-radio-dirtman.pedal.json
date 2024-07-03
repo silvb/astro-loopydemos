@@ -1,0 +1,63 @@
+{
+  "name": "vaderin-pedals-radio-dirtman",
+  "controls": {
+    "knobs": [
+      {
+        "id": "bias",
+        "size": 48,
+        "position": {
+          "left": 24,
+          "top": 42
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "dirt",
+        "size": 48,
+        "position": {
+          "left": 122,
+          "top": 41
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "tone",
+        "size": 48,
+        "position": {
+          "left": 23,
+          "top": 129
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "lvl",
+        "size": 48,
+        "position": {
+          "left": 122,
+          "top": 128
+        },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 36,
+        "position": {
+          "left": 45,
+          "top": 288
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": {
+          "left": 73,
+          "top": 281
+        }
+      }
+    ]
+  }
+}

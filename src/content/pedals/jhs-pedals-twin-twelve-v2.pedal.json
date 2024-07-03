@@ -1,0 +1,137 @@
+{
+  "name": "jhs-pedals-twin-twelve-v2",
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 58,
+        "position": {
+          "left": 28,
+          "top": 26
+        },
+        "type": "jhs",
+        "colors": {
+          "primary": "#fff",
+          "secondary": "lightslategray",
+          "tick": "#000"
+        }
+      },
+      {
+        "id": "drive",
+        "size": 58,
+        "position": {
+          "left": 115,
+          "top": 26
+        },
+        "type": "jhs",
+        "colors": {
+          "primary": "#fff",
+          "secondary": "lightslategray",
+          "tick": "#000"
+        }
+      },
+      {
+        "id": "bass",
+        "size": 58,
+        "position": {
+          "left": 28,
+          "top": 101
+        },
+        "type": "jhs",
+        "colors": {
+          "primary": "#fff",
+          "secondary": "lightslategray",
+          "tick": "#000"
+        }
+      },
+      {
+        "id": "treble",
+        "size": 58,
+        "position": {
+          "top": 101,
+          "left": 117
+        },
+        "type": "jhs",
+        "colors": {
+          "primary": "#fff",
+          "secondary": "lightslategray",
+          "tick": "#000"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 46,
+        "position": {
+          "left": 128,
+          "top": 277
+        },
+        "socket": true,
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff",
+          "socket": "black"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 46,
+        "position": {
+          "left": 77,
+          "top": 278
+        }
+      },
+      {
+        "id": "gain",
+        "type": "toggle",
+        "size": 30,
+        "position": {
+          "left": 85,
+          "top": 79
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "drive_label",
+        "position": {
+          "left": 157,
+          "top": 75
+        },
+        "labelPosition": {
+          "left": 193,
+          "top": 128
+        }
+      }
+    ],
+    "dependencies": [
+      {
+        "source": "gain",
+        "target": {
+          "id": "on_led",
+          "values": [
+            {
+              "sourceValue": 1,
+              "colors": {
+                "on": "#f73333",
+                "off": "#800000a1",
+                "socket": "black"
+              }
+            },
+            {
+              "sourceValue": 3,
+              "colors": {
+                "off": "#d2e1e9a1",
+                "on": "#d4f9ff",
+                "socket": "black"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "name": "vaderin-pedals-hp-x",
+  "controls": {
+    "knobs": [
+      {
+        "id": "intensity",
+        "size": 44,
+        "position": {
+          "left": 23,
+          "top": 40
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#006810",
+          "secondary": "#BADA55",
+          "edge": "#97D282",
+          "tick": "mintcream"
+        }
+      },
+      {
+        "id": "volume",
+        "size": 44,
+        "position": {
+          "left": 128,
+          "top": 40
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#006810",
+          "secondary": "#BADA55",
+          "edge": "#97D282",
+          "tick": "mintcream"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 38,
+        "socket": false,
+        "position": {
+          "left": 45,
+          "top": 287
+        },
+        "colors": {
+          "on": "#03ff00"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": {
+          "left": 76,
+          "top": 285
+        }
+      },
+      {
+        "id": "wave_shape",
+        "size": 32,
+        "type": "toggle",
+        "position": {
+          "left": 82,
+          "top": 99
+        },
+        "orientation": "horizontal"
+      }
+    ],
+    "labels": [
+      {
+        "id": "note",
+        "position": {
+          "left": 120,
+          "top": 172
+        },
+        "labelPosition": {
+          "left": 206,
+          "top": 134
+        }
+      }
+    ]
+  }
+}

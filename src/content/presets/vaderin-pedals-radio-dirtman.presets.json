@@ -1,0 +1,46 @@
+{
+  "presets": [
+    {
+      "id": "blasting_velcro",
+      "label": "Blasting Velcro",
+      "settings": { "bias": 3, "dirt": 10, "tone": 6, "lvl": 5 }
+    },
+    {
+      "id": "pushed_console",
+      "label": "Pushed Console",
+      "settings": { "bias": 5, "dirt": 0, "tone": 8, "lvl": 5 }
+    },
+    {
+      "id": "warm_soft_fuzz",
+      "label": "Warm & Soft Fuzz",
+      "settings": { "bias": 7, "dirt": 5, "tone": 5, "lvl": 5 }
+    },
+    {
+      "id": "bias_knob",
+      "label": "Bias",
+      "isSweep": true,
+      "target": "bias",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "dirt": 8, "tone": 6, "lvl": 5 }
+    },
+    {
+      "id": "dirt_knob",
+      "label": "Dirt",
+      "isSweep": true,
+      "target": "dirt",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "bias": 4, "tone": 6, "lvl": 5 }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 0,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "settings": { "bias": 2, "dirt": 8, "lvl": 5 }
+    }
+  ]
+}

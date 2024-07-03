@@ -1,0 +1,83 @@
+{
+  "presets": [
+    {
+      "id": "ripping_fuzz",
+      "label": "Ripping Fuzz",
+      "settings": {
+        "sustain": 6,
+        "volume": 8,
+        "mids": 2,
+        "tone": 6
+      }
+    },
+    {
+      "id": "tamed_overdrive",
+      "label": "Tamed Overdrive",
+      "settings": {
+        "sustain": 0,
+        "volume": 8,
+        "mids": 5,
+        "tone": 5
+      }
+    },
+    {
+      "id": "scooped_and_dimed",
+      "label": "Scooped and Dimed",
+      "settings": {
+        "sustain": 10,
+        "volume": 8,
+        "mids": 0,
+        "tone": 6
+      }
+    },
+    {
+      "id": "mid_pushed_crunch",
+      "label": "Mid-pushed Crunch",
+      "settings": {
+        "sustain": 4,
+        "volume": 8,
+        "mids": 7,
+        "tone": 6
+      }
+    },
+    {
+      "id": "sustain_knob",
+      "label": "Sustain Knob",
+      "isSweep": true,
+      "target": "sustain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "volume": 8,
+        "mids": 2,
+        "tone": 6
+      }
+    },
+    {
+      "id": "mids_knob",
+      "label": "Mids Knob",
+      "isSweep": true,
+      "target": "mids",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "volume": 8,
+        "sustain": 5,
+        "tone": 6
+      }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone Knob",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "volume": 8,
+        "sustain": 7,
+        "mids": 2
+      }
+    }
+  ]
+}

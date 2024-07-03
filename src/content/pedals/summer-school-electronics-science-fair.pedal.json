@@ -1,0 +1,108 @@
+{
+  "name": "summer-school-electronics-science-fair",
+  "controls": {
+    "knobs": [
+      {
+        "id": "drive_rat",
+        "size": 44,
+        "position": {
+          "left": 21,
+          "top": 54
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "vol",
+        "size": 44,
+        "position": {
+          "left": 77,
+          "top": 56
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#ceddf2",
+          "secondary": "#59656e",
+          "edge": "#59656e",
+          "tick": "#000"
+        }
+      },
+      {
+        "id": "drive_ts",
+        "size": 42,
+        "position": {
+          "left": 134,
+          "top": 55
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#2eff77",
+          "secondary": "#277f3a",
+          "edge": "#277f3a",
+          "tick": "#FFF"
+        }
+      },
+      {
+        "id": "tone_rat",
+        "size": 44,
+        "position": {
+          "left": 22,
+          "top": 127
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "blend",
+        "size": 44,
+        "position": {
+          "left": 78,
+          "top": 127
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#ceddf2",
+          "secondary": "#59656e",
+          "edge": "#59656e",
+          "tick": "#000"
+        }
+      },
+      {
+        "id": "tone_ts",
+        "size": 44,
+        "position": {
+          "left": 134,
+          "top": 127
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#2eff77",
+          "secondary": "#277f3a",
+          "edge": "#277f3a",
+          "tick": "#FFF"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 26,
+          "top": 280
+        },
+        "colors": {
+          "on": "#ffdd00"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 78,
+          "top": 279
+        }
+      }
+    ]
+  }
+}

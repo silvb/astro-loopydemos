@@ -1,0 +1,83 @@
+{
+  "name": "catalinbread-callisto-mkii",
+  "controls": {
+    "knobs": [
+      {
+        "id": "rate",
+        "size": 44,
+        "position": {
+          "left": 28,
+          "top": 38
+        },
+        "type": "simpledot",
+        "colors": {
+          "tick": "#1F1B1C",
+          "primary": "#FFFDFE"
+        }
+      },
+      {
+        "id": "fdbk",
+        "size": 44,
+        "position": {
+          "left": 123,
+          "top": 38
+        },
+        "type": "simpledot",
+        "colors": {
+          "tick": "#1F1B1C",
+          "primary": "#FFFDFE"
+        }
+      },
+      {
+        "id": "mix",
+        "size": 44,
+        "position": {
+          "left": 28,
+          "top": 102
+        },
+        "type": "simpledot",
+        "colors": {
+          "tick": "#1F1B1C",
+          "primary": "#FFFDFE"
+        }
+      },
+      {
+        "id": "depth",
+        "size": 44,
+        "position": {
+          "left": 123,
+          "top": 102
+        },
+        "type": "simpledot",
+        "colors": {
+          "tick": "#1F1B1C",
+          "primary": "#FFFDFE"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 60,
+        "position": {
+          "left": 69,
+          "top": 102
+        },
+        "colors": {
+          "on": "#dafffe",
+          "off": "#818C9Aaa"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": {
+          "left": 75,
+          "top": 208
+        }
+      }
+    ]
+  }
+}

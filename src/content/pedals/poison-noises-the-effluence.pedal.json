@@ -1,0 +1,153 @@
+{
+  "name": "poison-noises-the-effluence",
+  "width": 300,
+  "controls": {
+    "knobs": [
+      {
+        "id": "transcend",
+        "size": 48,
+        "position": {
+          "left": 67,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "flow",
+        "size": 48,
+        "position": {
+          "left": 127,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "body",
+        "size": 48,
+        "position": {
+          "left": 186,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "emanate",
+        "size": 48,
+        "position": {
+          "left": 67,
+          "top": 118
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "project",
+        "size": 48,
+        "position": {
+          "left": 127,
+          "top": 118
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "spirit",
+        "size": 48,
+        "position": {
+          "left": 186,
+          "top": 118
+        },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 46,
+        "position": {
+          "left": 68,
+          "top": 291
+        },
+        "colors": {
+          "on": "#68f4ff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 122,
+          "top": 285
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "transcend_label",
+        "position": {
+          "left": 79,
+          "top": 80
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 129
+        }
+      },
+      {
+        "id": "flow_label",
+        "position": {
+          "left": 138,
+          "top": 80
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 175
+        }
+      },
+      {
+        "id": "body_label",
+        "position": {
+          "left": 214,
+          "top": 80
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 129
+        }
+      },
+      {
+        "id": "emanate_label",
+        "position": {
+          "left": 74,
+          "top": 161
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 207
+        }
+      },
+      {
+        "id": "project_label",
+        "position": {
+          "left": 167,
+          "top": 161
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 210
+        }
+      },
+      {
+        "id": "spirit_label",
+        "position": {
+          "left": 218,
+          "top": 129
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 73
+        }
+      }
+    ]
+  }
+}

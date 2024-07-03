@@ -1,0 +1,322 @@
+{
+  "presets": [
+    {
+      "id": "lofi_vibe",
+      "label": "Lo-Fi Vibe",
+      "settings": {
+        "rate": 2,
+        "depth": 4,
+        "lofi": 5,
+        "program": 6,
+        "tweak": 8,
+        "tweak_toggle": 3,
+        "tune": 3,
+        "tune_toggle": 3,
+        "tweak_label": "sine wave",
+        "tune_label": "tone: 50%, sym: 50%",
+        "tweak_lofi_label": "drive: 25%, env: 0%, space: 30%",
+        "tune_lofi_label": "age: 65%, noise: 50%, warble: 25%",
+        "rate_led": 1000
+      }
+    },
+    {
+      "id": "univibe_drive",
+      "label": "Univibe Drive",
+      "settings": {
+        "rate": 3,
+        "depth": 5,
+        "lofi": 5,
+        "program": 3,
+        "tweak": 8,
+        "tweak_toggle": 3,
+        "tune": 5,
+        "tune_toggle": 3,
+        "lofi_label": "just the drive at 50%",
+        "tweak_label": "sine wave",
+        "tune_label": "everything at noon",
+        "rate_led": 900
+      }
+    },
+    {
+      "id": "stereo_tremolo",
+      "label": "Stereo Tremolo",
+      "settings": {
+        "rate": 2,
+        "depth": 5,
+        "lofi": 0,
+        "program": 4,
+        "tweak": 8,
+        "tweak_toggle": 3,
+        "tune": 4,
+        "tune_toggle": 1,
+        "tweak_label": "sine wave",
+        "type_label": "rhythmic pattern tremolo",
+        "tune_label": "tone: 40%, sym and X at noon",
+        "rate_led": 1000
+      }
+    },
+    {
+      "id": "leslie_rotary_speaker",
+      "label": "Leslie Rotary Speaker",
+      "settings": {
+        "rate": 4,
+        "depth": 10,
+        "lofi": 0,
+        "program": 7,
+        "tweak": 8,
+        "tweak_toggle": 3,
+        "tweak_label": "sine wave, type: classic leslie speaker",
+        "tune": 4,
+        "tune_toggle": 1,
+        "tune_label": "tone: 40%, sym: 50%, X (cab sim mix): 0%",
+        "rate_led": 800
+      }
+    },
+    {
+      "id": "filter_wah",
+      "label": "Filter Wah",
+      "settings": {
+        "rate": 6,
+        "depth": 10,
+        "lofi": 0,
+        "program": 9,
+        "tweak": 8,
+        "tweak_toggle": 3,
+        "tweak_label": "triangle wave, type: bandpass",
+        "tune": 2,
+        "tune_toggle": 1,
+        "tune_label": "tone: 25%, sym: 50%, X (resonance): 40%",
+        "rate_led": 400
+      }
+    },
+    {
+      "id": "lofi_mix_knob",
+      "label": "Lo-Fi Mix Knob",
+      "isSweep": true,
+      "target": "lofi",
+      "settings": {
+        "rate": 0,
+        "depth": 0,
+        "program": 5,
+        "tune": 5,
+        "tune_toggle": 1,
+        "tweak_lofi_label": "env: 40%, drive: 25%, space: 50%",
+        "tweak_label": "rate and depth are 0, so no modulation, just lo-fi stuff",
+        "tune_lofi_label": "age: 50%, noise: 50%, warble: 100%",
+        "lofi_label": "Mix of the lo-fi processed signal (noise, warble, age, env, space, drive)"
+      },
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0
+    },
+    {
+      "id": "chorus_types",
+      "label": "Chorus Types",
+      "isSweep": true,
+      "target": "tweak",
+      "settings": {
+        "rate": 5,
+        "depth": 5,
+        "lofi": 0,
+        "program": 1,
+        "tweak_toggle": 3,
+        "tune": 5,
+        "tune_toggle": 1,
+        "tweak_label": "sine wave",
+        "tune_label": "sym: 50%, X (lag): 50%",
+        "rate_led": 600,
+        "type_label": "traditional chorus, series chorus, tri-chorus"
+      },
+      "values": [0, 5, 10],
+      "initialValue": 0
+    },
+    {
+      "id": "phaser_types",
+      "label": "Phaser Types",
+      "isSweep": true,
+      "target": "tweak",
+      "settings": {
+        "rate": 5,
+        "depth": 5,
+        "lofi": 0,
+        "program": 3,
+        "tweak_toggle": 3,
+        "tune": 5,
+        "tune_toggle": 1,
+        "tweak_label": "sine wave",
+        "tune_label": "sym: 50%, X (feedback): 50%",
+        "rate_led": 600,
+        "type_label": "2-stage, 4-stage, univibe"
+      },
+      "values": [0, 5, 10],
+      "initialValue": 0
+    },
+    {
+      "id": "trem_types",
+      "label": "Tremolo Types",
+      "isSweep": true,
+      "target": "tweak",
+      "settings": {
+        "rate": 5,
+        "depth": 5,
+        "lofi": 0,
+        "program": 4,
+        "tweak_toggle": 3,
+        "tune": 5,
+        "tune_toggle": 1,
+        "tweak_label": "sine wave",
+        "tune_label": "sym: 50%, X (stereo phase): 50%",
+        "rate_led": 600,
+        "type_label": "traditional, harmonic, rhythmic pattern"
+      },
+      "values": [0, 5, 10],
+      "initialValue": 0
+    },
+    {
+      "id": "vibe_types",
+      "label": "Vibrato Types",
+      "isSweep": true,
+      "target": "tweak",
+      "settings": {
+        "rate": 5,
+        "depth": 5,
+        "lofi": 0,
+        "program": 6,
+        "tweak_toggle": 3,
+        "tune": 5,
+        "tune_toggle": 1,
+        "tweak_label": "sine wave",
+        "tune_label": "sym: 50%, X (stereo phase for standard and vinyl, flutter for tape): 50%",
+        "rate_led": 600,
+        "type_label": "traditional, vinyl, tape"
+      },
+      "values": [0, 5, 10],
+      "initialValue": 0
+    },
+    {
+      "id": "rotary_types",
+      "label": "Rotary Types",
+      "isSweep": true,
+      "target": "tweak",
+      "settings": {
+        "rate": 5,
+        "depth": 5,
+        "lofi": 0,
+        "program": 7,
+        "tweak_toggle": 3,
+        "tune": 5,
+        "tune_toggle": 1,
+        "tweak_label": "sine wave",
+        "tune_label": "sym: 50%, X (cab sim): 50%",
+        "rate_led": 600,
+        "type_label": "traditional (horn + drum), horn only, drum only"
+      },
+      "values": [0, 5, 10],
+      "initialValue": 0
+    },
+    {
+      "id": "filter_types",
+      "label": "Filter Types",
+      "isSweep": true,
+      "target": "tweak",
+      "settings": {
+        "rate": 5,
+        "depth": 5,
+        "lofi": 0,
+        "program": 9,
+        "tweak_toggle": 3,
+        "tune": 5,
+        "tune_toggle": 1,
+        "tweak_label": "sine wave",
+        "tune_label": "sym: 50%, X (resonance): 50%",
+        "rate_led": 600,
+        "type_label": "lowpass, highpass, bandpass"
+      },
+      "values": [0, 5, 10],
+      "initialValue": 0
+    },
+    {
+      "id": "chorus_lag_control",
+      "label": "Chorus Lag Control",
+      "isSweep": true,
+      "target": "tune",
+      "settings": {
+        "rate": 5,
+        "depth": 5,
+        "lofi": 0,
+        "program": 1,
+        "tweak": 5,
+        "tweak_toggle": 3,
+        "tune_toggle": 3,
+        "tweak_label": "sine wave",
+        "tune_label": "tone and sym at noon",
+        "rate_led": 600,
+        "type_label": "series chorus"
+      },
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0
+    },
+    {
+      "id": "trem_stereo_phase_control",
+      "label": "Tremolo Stereo Phase Control",
+      "isSweep": true,
+      "target": "tune",
+      "settings": {
+        "rate": 4,
+        "depth": 5,
+        "lofi": 0,
+        "program": 4,
+        "tweak": 2,
+        "tweak_toggle": 3,
+        "tune_toggle": 3,
+        "tweak_label": "sine wave",
+        "tune_label": "tone and sym at noon",
+        "rate_led": 700,
+        "type_label": "traditional trem"
+      },
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0
+    },
+    {
+      "id": "tape_flutter_control",
+      "label": "Tape Flutter Control",
+      "isSweep": true,
+      "target": "tune",
+      "settings": {
+        "rate": 4,
+        "depth": 5,
+        "lofi": 0,
+        "program": 6,
+        "tweak": 8,
+        "tweak_toggle": 3,
+        "tune_toggle": 3,
+        "tweak_label": "sine wave",
+        "tune_label": "tone and sym at noon",
+        "rate_led": 700,
+        "type_label": "tape vibrato"
+      },
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0
+    },
+    {
+      "id": "filter_resonance_control",
+      "label": "Filter Resonance Control",
+      "isSweep": true,
+      "target": "tune",
+      "settings": {
+        "rate": 4,
+        "depth": 5,
+        "lofi": 0,
+        "program": 9,
+        "tweak": 8,
+        "tweak_toggle": 3,
+        "tune_toggle": 3,
+        "tweak_label": "sine wave",
+        "tune_label": "tone and sym at noon",
+        "rate_led": 700,
+        "type_label": "bandpass"
+      },
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0
+    }
+  ]
+}

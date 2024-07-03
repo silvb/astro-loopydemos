@@ -1,0 +1,169 @@
+{
+  "presets": [
+    {
+      "id": "rich_distortion",
+      "label": "Rich Distortion",
+      "settings": {
+        "master": 6,
+        "gain": 10,
+        "low": 6,
+        "mid": 4,
+        "hi": 6,
+        "white_noise": 5,
+        "tone": 5,
+        "env": 1.5,
+        "clipping": 3
+      }
+    },
+    {
+      "id": "shoegaze",
+      "label": "Shoegaze? Yes!",
+      "chain": [
+        {
+          "name": "beautiful-noise-effects-exploder",
+          "id": "exploder",
+          "settings": {
+            "master": 7,
+            "gain": 5,
+            "low": 6,
+            "mid": 4,
+            "hi": 6,
+            "white_noise": 5,
+            "tone": 5,
+            "env": 1.5,
+            "clipping": 3
+          }
+        },
+        {
+          "name": "walrus_audio_slo",
+          "id": "slo",
+          "settings": {
+            "decay": 6,
+            "filter": 6,
+            "mix": 6,
+            "x": 10,
+            "depth": 4,
+            "mode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "lofi_noise",
+      "label": "Lo-fi Noise",
+      "settings": {
+        "master": 10,
+        "gain": 4,
+        "low": 0,
+        "mid": 1,
+        "hi": 1,
+        "white_noise": 4,
+        "tone": 2,
+        "env": 1.5,
+        "clipping": 2
+      }
+    },
+    {
+      "id": "low_gain_preamp",
+      "label": "Low Gain Preamp",
+      "settings": {
+        "master": 6.5,
+        "gain": 2,
+        "low": 4,
+        "mid": 7,
+        "hi": 6,
+        "white_noise": 0,
+        "tone": 5,
+        "env": 1.5,
+        "clipping": 3
+      }
+    },
+    {
+      "id": "fizzy_drive",
+      "label": "Fizzy Drive",
+      "settings": {
+        "master": 6,
+        "gain": 5,
+        "low": 5,
+        "mid": 6,
+        "hi": 6,
+        "white_noise": 5,
+        "tone": 10,
+        "env": 10,
+        "clipping": 1
+      }
+    },
+    {
+      "id": "clipping_toggle",
+      "label": "Clipping Options",
+      "isSweep": true,
+      "target": "clipping",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "master": 6,
+        "gain": 5,
+        "low": 5,
+        "mid": 5,
+        "hi": 5,
+        "white_noise": 0,
+        "tone": 5,
+        "env": 1.5
+      }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 1, 2, 4, 6, 8, 10],
+      "settings": {
+        "master": 6.5,
+        "clipping": 3,
+        "low": 5,
+        "mid": 4,
+        "hi": 5,
+        "white_noise": 0,
+        "tone": 5,
+        "env": 1.5
+      }
+    },
+    {
+      "id": "white_noise_knob",
+      "label": "White Noise",
+      "isSweep": true,
+      "target": "white_noise",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "master": 7,
+        "gain": 2,
+        "clipping": 3,
+        "low": 2,
+        "mid": 2,
+        "hi": 2,
+        "tone": 10,
+        "env": 2
+      }
+    },
+    {
+      "id": "tone_knob",
+      "label": "W/N Tone",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "master": 7,
+        "gain": 5,
+        "clipping": 3,
+        "low": 5,
+        "mid": 4,
+        "hi": 5,
+        "white_noise": 10,
+        "env": 1.5
+      }
+    }
+  ]
+}

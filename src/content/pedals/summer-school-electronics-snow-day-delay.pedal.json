@@ -1,0 +1,101 @@
+{
+  "name": "summer-school-electronics-snow-day-delay",
+  "enclosure": "landscape",
+  "controls": {
+    "knobs": [
+      {
+        "id": "mix",
+        "size": 54,
+        "position": { "left": 18, "top": 44 },
+        "type": "walrus",
+        "colors": {
+          "primary": "#00b7ff",
+          "secondary": "#0003ac",
+          "edge": "#000260",
+          "tick": "#FFF"
+        }
+      },
+      {
+        "id": "repeat",
+        "size": 54,
+        "position": { "left": 102, "top": 43 },
+        "type": "walrus",
+        "colors": {
+          "primary": "#00b7ff",
+          "secondary": "#0003ac",
+          "edge": "#000260",
+          "tick": "#FFF"
+        }
+      },
+      {
+        "id": "delay_1",
+        "size": 54,
+        "position": { "left": 188, "top": 43 },
+        "type": "walrus",
+        "colors": {
+          "primary": "#00b7ff",
+          "secondary": "#0003ac",
+          "edge": "#000260",
+          "tick": "#FFF"
+        }
+      },
+      {
+        "id": "delay_2",
+        "size": 54,
+        "position": { "left": 277, "top": 43 },
+        "type": "walrus",
+        "colors": {
+          "primary": "#00b7ff",
+          "secondary": "#0003ac",
+          "edge": "#000260",
+          "tick": "#FFF"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 40,
+        "position": { "left": 42, "top": 174 },
+        "colors": { "off": "#d2e1e9a1", "on": "#d4f9ff" }
+      },
+      {
+        "id": "delay_1_led",
+        "size": 41,
+        "position": { "left": 252, "top": 169 },
+        "colors": { "off": "#d2e1e9a1", "on": "#0050ff" }
+      },
+      {
+        "id": "delay_2_led",
+        "size": 40,
+        "position": { "left": 282, "top": 169 },
+        "colors": { "off": "#d2e1e9a1", "on": "#ff0" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": { "left": 35, "top": 209 }
+      },
+      {
+        "id": "blizzard_mode",
+        "size": 32,
+        "position": { "left": 244, "top": 57 },
+        "type": "toggle"
+      }
+    ],
+    "labels": [
+      {
+        "id": "delay_2_label",
+        "position": { "left": 285, "top": 84 },
+        "labelPosition": { "left": 261, "top": 301 }
+      },
+      {
+        "id": "blizzard_label",
+        "position": { "left": 230, "top": 90 },
+        "labelPosition": { "left": 110, "top": 301 }
+      }
+    ]
+  }
+}

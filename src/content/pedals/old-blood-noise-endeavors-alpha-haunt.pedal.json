@@ -1,0 +1,119 @@
+{
+  "name": "old-blood-noise-endeavors-alpha-haunt",
+  "enclosure": "landscape",
+  "controls": {
+    "knobs": [
+      {
+        "id": "fuzz",
+        "size": 40,
+        "position": { "left": 20, "top": 35 },
+        "type": "obne"
+      },
+      {
+        "id": "tone",
+        "size": 40,
+        "position": { "left": 19, "top": 140 },
+        "type": "obne"
+      },
+      {
+        "id": "gate",
+        "size": 40,
+        "position": { "left": 64, "top": 88 },
+        "type": "obne"
+      },
+      {
+        "id": "fuzz_vol",
+        "size": 40,
+        "position": { "left": 244, "top": 85 },
+        "type": "obne"
+      },
+      {
+        "id": "master",
+        "size": 40,
+        "position": { "left": 291, "top": 35 },
+        "type": "obne"
+      },
+      {
+        "id": "enhance",
+        "size": 40,
+        "position": { "left": 289, "top": 139 },
+        "type": "obne"
+      }
+    ],
+    "sliders": [
+      {
+        "id": "low",
+        "size": {
+          "height": 30,
+          "innerWidth": 120,
+          "width": 124,
+          "innerHeight": 8
+        },
+        "position": { "top": 127, "left": 67 },
+        "type": "range",
+        "faderType": "simple",
+        "tilt": -90,
+        "colors": { "enclosure": "#e2d4bb", "tick": "#eeeae6" }
+      },
+      {
+        "id": "mid",
+        "size": {
+          "height": 30,
+          "innerWidth": 120,
+          "width": 124,
+          "innerHeight": 8
+        },
+        "position": { "top": 127, "left": 113 },
+        "type": "range",
+        "faderType": "simple",
+        "tilt": -90,
+        "colors": { "enclosure": "#e2d4bb", "tick": "#eeeae6" }
+      },
+      {
+        "id": "high",
+        "size": {
+          "height": 30,
+          "innerWidth": 120,
+          "width": 124,
+          "innerHeight": 8
+        },
+        "position": { "left": 160, "top": 127 },
+        "type": "range",
+        "faderType": "simple",
+        "tilt": -90,
+        "colors": { "enclosure": "#e2d4bb", "tick": "#eeeae6" }
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 42, "position": { "left": 249, "top": 183 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": { "left": 150, "top": 223 }
+      },
+      {
+        "id": "bias",
+        "type": "toggle",
+        "orientation": "horizontal",
+        "size": 28,
+        "position": { "left": 114, "top": 30 }
+      },
+      {
+        "id": "distortion",
+        "type": "toggle",
+        "orientation": "horizontal",
+        "size": 28,
+        "position": { "left": 161, "top": 30 }
+      },
+      {
+        "id": "lpf",
+        "type": "toggle",
+        "orientation": "horizontal",
+        "size": 28,
+        "position": { "left": 207, "top": 30 }
+      }
+    ]
+  }
+}

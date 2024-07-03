@@ -1,0 +1,151 @@
+{
+  "presets": [
+    {
+      "id": "pristine_plate",
+      "label": "Pristine Plate",
+      "settings": {
+        "mimic": 5,
+        "magnify": 8,
+        "reflect": 8,
+        "distort": 5,
+        "replicate": 3,
+        "crack": 8,
+        "mimic_label": "mix",
+        "magnify_label": "volume",
+        "reflect_label": "decay",
+        "distort_label": "pre-delay",
+        "replicate_label": "plate (reverb type)",
+        "crack_label": "low pass"
+      }
+    },
+    {
+      "id": "big_hall",
+      "label": "Big Hall",
+      "isSweep": true,
+      "target": "distort",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "mimic": 5,
+        "magnify": 8,
+        "reflect": 5,
+        "replicate": 1,
+        "crack": 10,
+        "distort_label": "pre-delay",
+        "replicate_label": "hall"
+      }
+    },
+    {
+      "id": "expanding_room",
+      "label": "Expanding Room",
+      "isSweep": true,
+      "target": "reflect",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "mimic": 5,
+        "magnify": 8,
+        "distort": 5,
+        "replicate": 2,
+        "crack": 10,
+        "reflect_label": "decay",
+        "replicate_label": "room"
+      }
+    },
+    {
+      "id": "aging_plate",
+      "label": "Aging Plate",
+      "isSweep": true,
+      "target": "crack",
+      "initialValue": 10,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "mimic": 7,
+        "magnify": 8,
+        "reflect": 8,
+        "distort": 2,
+        "replicate": 3,
+        "crack_label": "low pass",
+        "replicate_label": "plate"
+      }
+    },
+    {
+      "id": "trem_verb",
+      "label": "Trem Verb",
+      "isSweep": true,
+      "target": "distort",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "mimic": 5,
+        "magnify": 8,
+        "reflect": 7,
+        "replicate": 4,
+        "crack": 4,
+        "distort_label": "trem depth",
+        "crack_label": "trem speed",
+        "replicate_label": "tremolo reverb"
+      }
+    },
+    {
+      "id": "phaser_verb",
+      "label": "Phaser Verb",
+      "settings": {
+        "mimic": 8,
+        "magnify": 8,
+        "reflect": 7,
+        "distort": 5,
+        "replicate": 5,
+        "crack": 8,
+        "distort_label": "phaser width",
+        "crack_label": "phaser speed",
+        "replicate_label": "phaser reverb"
+      }
+    },
+    {
+      "id": "flanger_verb",
+      "label": "Flanger Verb",
+      "settings": {
+        "mimic": 5,
+        "magnify": 6,
+        "reflect": 8,
+        "distort": 2,
+        "replicate": 6,
+        "crack": 3,
+        "distort_label": "flange feedback",
+        "crack_label": "flange speed",
+        "replicate_label": "flanger reverb"
+      }
+    },
+    {
+      "id": "octave_verb",
+      "label": "Octave Verb",
+      "settings": {
+        "mimic": 6,
+        "magnify": 8,
+        "reflect": 6,
+        "distort": 8,
+        "replicate": 7,
+        "crack": 7,
+        "distort_label": "octave mix",
+        "crack_label": "octave up/down",
+        "replicate_label": "octave reverb"
+      }
+    },
+    {
+      "id": "aliaser_verb",
+      "label": "Aliaser Verb",
+      "settings": {
+        "mimic": 6,
+        "magnify": 8,
+        "reflect": 8,
+        "distort": 5,
+        "replicate": 8,
+        "crack": 4,
+        "distort_label": "aliaser mix",
+        "crack_label": "aliaser frequency",
+        "replicate_label": "aliaser reverb"
+      }
+    }
+  ]
+}

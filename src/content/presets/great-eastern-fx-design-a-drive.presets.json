@@ -1,0 +1,46 @@
+{
+  "presets": [
+    {
+      "id": "thick_hair",
+      "label": "Thick Hair",
+      "settings": { "gain": 7, "edge": 9.5, "level": 7, "width": 4 }
+    },
+    {
+      "id": "slight_edge",
+      "label": "Slight Edge",
+      "settings": { "gain": 4, "edge": 6, "level": 7.6, "width": 1 }
+    },
+    {
+      "id": "fat_fuzz",
+      "label": "Fat Fuzz",
+      "settings": { "gain": 10, "edge": 10, "level": 7, "width": 6 }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "edge": 7, "level": 7, "width": 2 }
+    },
+    {
+      "id": "edge_knob",
+      "label": "Edge",
+      "isSweep": true,
+      "target": "edge",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "gain": 7, "level": 7, "width": 3 }
+    },
+    {
+      "id": "width_knob",
+      "label": "Width",
+      "isSweep": true,
+      "target": "width",
+      "initialValue": 1,
+      "values": [1, 2, 3, 4, 5, 6],
+      "settings": { "edge": 10, "level": 7, "gain": 5 }
+    }
+  ]
+}

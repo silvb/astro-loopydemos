@@ -1,0 +1,42 @@
+{
+  "presets": [
+    {
+      "id": "mid_gain",
+      "label": "Medium Overdrive",
+      "settings": { "gain": 5, "mass": 4, "refine": 5 }
+    },
+    {
+      "id": "max_gain",
+      "label": "Full on Fuzz",
+      "settings": { "gain": 10, "mass": 4, "refine": 10 }
+    },
+    {
+      "id": "guitar_volume_down",
+      "label": "Guitar Volume Down",
+      "settings": { "gain": 5, "mass": 4, "refine": 5 }
+    },
+    {
+      "id": "low_gain",
+      "label": "Low Gain",
+      "settings": { "gain": 0, "mass": 5, "refine": 2 }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "mass": 5, "refine": 8 }
+    },
+    {
+      "id": "refine_knob",
+      "label": "Refine",
+      "isSweep": true,
+      "target": "refine",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "mass": 5, "gain": 5 }
+    }
+  ]
+}

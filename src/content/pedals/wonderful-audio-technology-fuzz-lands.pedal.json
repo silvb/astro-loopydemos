@@ -1,0 +1,85 @@
+{
+  "name": "wonderful-audio-technology-fuzz-lands",
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 72,
+        "colors": {
+          "primary": "oldlace",
+          "background": "#5b4035",
+          "tick": "black"
+        },
+        "position": {
+          "left": 14,
+          "top": 32
+        },
+        "type": "chicken"
+      },
+      {
+        "id": "fuzz",
+        "size": 72,
+        "position": {
+          "left": 115,
+          "top": 32
+        },
+        "type": "chicken",
+        "colors": {
+          "primary": "oldlace",
+          "background": "#5b4035",
+          "tick": "black"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 64,
+        "position": {
+          "left": 19,
+          "top": 264
+        },
+        "colors": {
+          "on": "#adfffe"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": {
+          "left": 75,
+          "top": 274
+        }
+      },
+      {
+        "id": "roots",
+        "type": "toggle",
+        "size": 36,
+        "position": {
+          "left": 29,
+          "top": 122
+        }
+      },
+      {
+        "id": "earth",
+        "type": "toggle",
+        "size": 36,
+        "position": {
+          "left": 81,
+          "top": 122
+        }
+      },
+      {
+        "id": "nature",
+        "type": "toggle",
+        "size": 36,
+        "position": {
+          "left": 136,
+          "top": 121
+        }
+      }
+    ]
+  }
+}

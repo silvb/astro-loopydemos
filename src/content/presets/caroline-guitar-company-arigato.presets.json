@@ -1,0 +1,97 @@
+{
+  "presets": [
+    {
+      "id": "noon",
+      "label": "Everything at Noon",
+      "settings": {
+        "mix": 5,
+        "aim": 5,
+        "feedback": 5,
+        "speed": 5,
+        "mod": 1,
+        "wave": 1
+      }
+    },
+    {
+      "id": "heavy_air",
+      "label": "Heavy Air",
+      "settings": {
+        "mix": 4,
+        "aim": 10,
+        "feedback": 4,
+        "speed": 0,
+        "mod": 1,
+        "wave": 1
+      }
+    },
+    {
+      "id": "cassette_wobble",
+      "label": "Cassette Wobble",
+      "settings": {
+        "mix": 10,
+        "aim": 4,
+        "feedback": 2,
+        "speed": 5,
+        "mod": 3,
+        "wave": 1
+      }
+    },
+    {
+      "id": "cyborg_fugitives",
+      "label": "Cyborg Fugitives",
+      "settings": {
+        "mix": 5,
+        "aim": 5,
+        "feedback": 10,
+        "speed": 7,
+        "mod": 3,
+        "wave": 3
+      }
+    },
+    {
+      "id": "mix_knob",
+      "label": "Mix",
+      "isSweep": true,
+      "target": "mix",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "aim": 5, "feedback": 5, "speed": 5, "mod": 3, "wave": 1 }
+    },
+    {
+      "id": "aim_knob",
+      "label": "Aim",
+      "isSweep": true,
+      "target": "aim",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "mix": 5, "feedback": 7, "speed": 5, "mod": 1, "wave": 1 }
+    },
+    {
+      "id": "feedback_knob",
+      "label": "Feedback",
+      "isSweep": true,
+      "target": "feedback",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "mix": 7, "aim": 10, "speed": 5, "mod": 1, "wave": 1 }
+    },
+    {
+      "id": "mod_toggle",
+      "label": "Mod",
+      "isSweep": true,
+      "target": "mod",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": { "mix": 5, "aim": 5, "feedback": 5, "speed": 5, "wave": 1 }
+    },
+    {
+      "id": "wave_toggle",
+      "label": "Wave",
+      "isSweep": true,
+      "target": "wave",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": { "mix": 5, "aim": 5, "feedback": 5, "speed": 5, "mod": 3 }
+    }
+  ]
+}

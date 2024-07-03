@@ -1,0 +1,46 @@
+{
+  "presets": [
+    {
+      "id": "punch_crunch",
+      "label": "Punch & Crunch",
+      "settings": { "gain": 7, "tone": 5, "vol": 6, "mode": 3 }
+    },
+    {
+      "id": "easy_overdrive",
+      "label": "Easy Overdrive",
+      "settings": { "gain": 0, "tone": 5, "vol": 7, "mode": 1 }
+    },
+    {
+      "id": "classic_distortion",
+      "label": "Classic Distortion",
+      "settings": { "gain": 5, "tone": 5, "vol": 7, "mode": 2 }
+    },
+    {
+      "id": "mode_switch",
+      "label": "Mode",
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": { "tone": 5, "gain": 5, "vol": 6 }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 5,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "tone": 6, "vol": 6, "mode": 2 }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 5,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "gain": 10, "vol": 6, "mode": 3 }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "name": "smallsound-bigsound-mini",
+  "width": 196,
+  "height": 325,
+  "controls": {
+    "knobs": [
+      {
+        "id": "gain",
+        "size": 72,
+        "position": {
+          "left": 14,
+          "top": 6
+        }
+      },
+      {
+        "id": "volume",
+        "size": 72,
+        "position": {
+          "left": 112,
+          "top": 6
+        }
+      },
+      {
+        "id": "bias",
+        "size": 54,
+        "position": {
+          "left": 73,
+          "top": 68
+        }
+      },
+      {
+        "id": "bass",
+        "size": 54,
+        "position": {
+          "left": 24,
+          "top": 121
+        }
+      },
+      {
+        "id": "treble",
+        "size": 54,
+        "position": {
+          "left": 119,
+          "top": 121
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "position": {
+          "left": 82,
+          "top": 133
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 46,
+        "position": {
+          "left": 74,
+          "top": 262
+        }
+      }
+    ]
+  }
+}

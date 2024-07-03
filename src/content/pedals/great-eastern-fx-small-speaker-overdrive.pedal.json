@@ -1,0 +1,67 @@
+{
+  "name": "great-eastern-fx-small-speaker-overdrive",
+  "controls": {
+    "knobs": [
+      {
+        "id": "high",
+        "size": 60,
+        "position": {
+          "left": 69,
+          "top": 22
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "level",
+        "size": 60,
+        "position": {
+          "left": 123,
+          "top": 78
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "low",
+        "size": 60,
+        "position": {
+          "left": 70,
+          "top": 141
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "gain",
+        "size": 60,
+        "position": {
+          "left": 16,
+          "top": 78
+        },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 76,
+          "top": 86
+        },
+        "colors": {
+          "on": "#ffa300",
+          "off": "#2c2c2cee"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 52,
+        "position": {
+          "left": 74,
+          "top": 280
+        }
+      }
+    ]
+  }
+}

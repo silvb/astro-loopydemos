@@ -1,0 +1,153 @@
+{
+  "name": "black-mass-electronics-1312-distortion-v3",
+  "controls": {
+    "knobs": [
+      {
+        "id": "level",
+        "size": 64,
+        "position": {
+          "left": 12,
+          "top": 14
+        },
+        "colors": {
+          "primary": "#D0E8FE",
+          "tick": "black",
+          "shadow": "#C0CBD2"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "filter",
+        "size": 64,
+        "position": {
+          "left": 126,
+          "top": 12
+        },
+        "colors": {
+          "primary": "#D0E8FE",
+          "tick": "black",
+          "shadow": "#C0CBD2"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "gain",
+        "size": 64,
+        "position": {
+          "left": 13,
+          "top": 96
+        },
+        "colors": {
+          "primary": "#D0E8FE",
+          "tick": "black",
+          "shadow": "#C0CBD2"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "clip",
+        "size": 64,
+        "position": {
+          "left": 125,
+          "top": 96
+        },
+        "type": "brutalist",
+        "isRotary": true,
+        "colors": {
+          "primary": "#D0E8FE",
+          "tick": "black",
+          "shadow": "#C0CBD2"
+        },
+        "rotaryAngles": [
+          0,
+          45,
+          90,
+          135,
+          180,
+          225,
+          270,
+          315
+        ]
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 60,
+        "position": {
+          "left": 16,
+          "top": 256
+        },
+        "colors": {
+          "on": "#5bcbe1",
+          "off": "#818C9Aaa"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 71,
+          "top": 262
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "clip_label",
+        "position": {
+          "left": 162,
+          "top": 139
+        },
+        "labelPosition": {
+          "left": 200,
+          "top": 192
+        }
+      }
+    ],
+    "dependencies": [
+      {
+        "source": "clip",
+        "target": {
+          "id": "clip_label",
+          "values": [
+            {
+              "sourceValue": 1,
+              "value": "NOS Germanium"
+            },
+            {
+              "sourceValue": 2,
+              "value": "Red LED"
+            },
+            {
+              "sourceValue": 3,
+              "value": "Silicon"
+            },
+            {
+              "sourceValue": 4,
+              "value": "Asymm. MOSFET"
+            },
+            {
+              "sourceValue": 5,
+              "value": "Silicon/Ge"
+            },
+            {
+              "sourceValue": 6,
+              "value": "MOSFET"
+            },
+            {
+              "sourceValue": 7,
+              "value": "Asymm. Silicon"
+            },
+            {
+              "sourceValue": 8,
+              "value": "Quad Silicon"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

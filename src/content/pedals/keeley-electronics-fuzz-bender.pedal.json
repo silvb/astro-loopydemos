@@ -1,0 +1,53 @@
+{
+  "name": "keeley-electronics-fuzz-bender",
+  "enclosure": "landscape",
+  "controls": {
+    "knobs": [
+      {
+        "id": "level",
+        "size": 90,
+        "position": { "left": 15, "top": 25 },
+        "type": "bakelit"
+      },
+      {
+        "id": "bass",
+        "size": 64,
+        "position": { "left": 80, "top": 106 },
+        "type": "bakelit"
+      },
+      {
+        "id": "bias",
+        "size": 64,
+        "position": { "left": 144, "top": 89 },
+        "type": "bakelit"
+      },
+      {
+        "id": "treble",
+        "size": 64,
+        "position": { "left": 210, "top": 106 },
+        "type": "bakelit"
+      },
+      {
+        "id": "fuzz",
+        "size": 90,
+        "position": { "left": 246, "top": 25 },
+        "type": "bakelit"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": { "left": 263, "top": 171 },
+        "colors": { "on": "#f96534" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": { "left": 262, "top": 216 }
+      }
+    ]
+  }
+}

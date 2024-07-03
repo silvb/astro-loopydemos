@@ -1,0 +1,137 @@
+{
+  "name": "walrus-audio-sloer",
+  "enclosure": "landscape",
+  "controls": {
+    "knobs": [
+      {
+        "id": "decay",
+        "size": 50,
+        "position": { "left": 17, "top": 32 },
+        "type": "walrus"
+      },
+      {
+        "id": "filter",
+        "size": 50,
+        "position": { "left": 108, "top": 33 },
+        "type": "walrus"
+      },
+      {
+        "id": "depth",
+        "size": 50,
+        "position": { "left": 195, "top": 34 },
+        "type": "walrus"
+      },
+      {
+        "id": "mix",
+        "size": 50,
+        "position": { "left": 285, "top": 33 },
+        "type": "walrus"
+      },
+      {
+        "id": "mode",
+        "size": 50,
+        "position": { "left": 285, "top": 114 },
+        "isRotary": true,
+        "rotaryAngles": [-45, -65, -90, -110, -130],
+        "type": "walrus"
+      }
+    ],
+    "sliders": [
+      {
+        "id": "x",
+        "size": {
+          "innerWidth": 85,
+          "width": 102,
+          "height": 18,
+          "innerHeight": 5
+        },
+        "position": { "left": 124, "top": 111 },
+        "type": "range",
+        "colors": { "enclosure": "#0037b5" }
+      },
+      {
+        "id": "stretch",
+        "size": {
+          "innerHeight": 5,
+          "innerWidth": 85,
+          "height": 18,
+          "width": 102
+        },
+        "position": { "top": 139, "left": 124 },
+        "type": "range",
+        "colors": { "enclosure": "#0037b5" }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 44,
+        "position": { "left": 64, "top": 168 },
+        "colors": { "off": "#d2e1e9a1", "on": "#d4f9ff" }
+      },
+      {
+        "id": "mode_led",
+        "size": 44,
+        "position": { "left": 240, "top": 169 },
+        "colors": { "off": "#d2e1e9a1", "on": "#6700ff" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": { "left": 60, "top": 211 }
+      },
+      {
+        "id": "width",
+        "type": "toggle",
+        "size": 30,
+        "position": { "left": 28, "top": 117 }
+      }
+    ],
+    "labels": [
+      {
+        "id": "filter_label",
+        "isLong": true,
+        "position": { "left": 134, "top": 90 },
+        "labelPosition": { "left": 194, "top": 306 }
+      },
+      {
+        "id": "bypass_label",
+        "position": { "left": 106, "top": 250 },
+        "labelPosition": { "left": 216, "top": 306 },
+        "isLong": true
+      },
+      {
+        "id": "mix_label",
+        "position": { "left": 283, "top": 66 },
+        "labelPosition": { "left": 113, "top": 302 },
+        "isLong": true
+      },
+      {
+        "id": "depth_label",
+        "position": { "left": 214, "top": 84 },
+        "labelPosition": { "left": 118, "top": 316 },
+        "isLong": true
+      },
+      {
+        "id": "x_label",
+        "position": { "left": 173, "top": 125 },
+        "labelPosition": { "left": 139, "top": 305 },
+        "isLong": true
+      },
+      {
+        "id": "stretch_label",
+        "position": { "left": 162, "top": 179 },
+        "labelPosition": { "left": 134, "top": 313 },
+        "isLong": true
+      },
+      {
+        "id": "mode_label",
+        "position": { "left": 269, "top": 151 },
+        "labelPosition": { "left": 128, "top": 312 },
+        "isLong": true
+      }
+    ]
+  }
+}

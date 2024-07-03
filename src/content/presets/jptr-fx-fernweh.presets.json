@@ -1,0 +1,174 @@
+{
+  "presets": [
+    {
+      "id": "dual_dance",
+      "label": "Dual Dance",
+      "settings": {
+        "vol_one": 10,
+        "time_one": 4,
+        "feedback_one": 8,
+        "vol_two": 8,
+        "time_two_alt": 5,
+        "feedback_two": 6,
+        "time_two": 2,
+        "tone": 3.5,
+        "on_led_dual": false,
+        "on_led_dual_2": false
+      }
+    },
+    {
+      "id": "slight_out_of_sync",
+      "label": "Slight Out of Sync",
+      "settings": {
+        "vol_one": 8,
+        "time_one": 4.5,
+        "feedback_one": 7,
+        "vol_two": 7,
+        "time_two_alt": 5,
+        "feedback_two": 7,
+        "time_two": 4,
+        "tone": 5,
+        "on_led_dual": false,
+        "on_led_dual_2": false
+      }
+    },
+    {
+      "id": "quarter_spring",
+      "label": "Quarter Spring",
+      "settings": {
+        "vol_one": 10,
+        "time_one": 1.5,
+        "feedback_one": 9,
+        "vol_two": 5,
+        "time_two_alt": 5,
+        "feedback_two": 5,
+        "time_two": 8,
+        "tone": 0,
+        "on_led_dual": false,
+        "on_led_dual_2": false
+      }
+    },
+    {
+      "id": "first_delay_time",
+      "label": "First Delay Time",
+      "settings": {
+        "vol_one": 3,
+        "time_one": 2,
+        "feedback_one": 8.5,
+        "vol_two": 8,
+        "time_two_alt": 10,
+        "feedback_two": 5,
+        "time_two": 4,
+        "tone": 0,
+        "on_led_dual": false,
+        "on_led_dual_2": false
+      }
+    },
+    {
+      "id": "alt_delay_time",
+      "label": "Alternate Delay Time",
+      "settings": {
+        "vol_one": 3,
+        "time_one": 2,
+        "feedback_one": 8.5,
+        "vol_two": 8,
+        "time_two_alt": 10,
+        "feedback_two": 5,
+        "time_two": 4,
+        "tone": 0,
+        "on_led": false
+      }
+    },
+    {
+      "id": "fx_loop",
+      "label": "Shallow Water in FX Loop",
+      "chain": [
+        {
+          "name": "fairfield-circuitry-shallow-water",
+          "id": "shallow",
+          "settings": {
+            "rate": 6,
+            "lpg": 2,
+            "damp": 1,
+            "mix": 10,
+            "depth": 10,
+            "vol": 5
+          }
+        },
+        {
+          "name": "jptr-fx-fernweh",
+          "id": "fernweh",
+          "settings": {
+            "vol_one": 8,
+            "time_one": 4,
+            "feedback_one": 9,
+            "vol_two": 5,
+            "time_two_alt": 5,
+            "feedback_two": 5,
+            "time_two": 1,
+            "tone": 1,
+            "on_led_dual": false,
+            "on_led_dual_2": false
+          }
+        }
+      ]
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "vol_one": 10,
+        "time_one": 4,
+        "feedback_one": 9,
+        "vol_two": 0,
+        "time_two_alt": 0,
+        "feedback_two": 0,
+        "time_two": 0,
+        "on_led_dual": false,
+        "on_led_dual_2": false
+      }
+    },
+    {
+      "id": "feedback_knob",
+      "label": "Feedback",
+      "isSweep": true,
+      "target": "feedback_one",
+      "initialValue": 0,
+      "values": [0, 1, 2, 4, 6, 8, 10],
+      "settings": {
+        "vol_one": 10,
+        "time_one": 4,
+        "tone": 4,
+        "vol_two": 0,
+        "time_two_alt": 0,
+        "feedback_two": 0,
+        "time_two": 0,
+        "on_led_dual": false,
+        "on_led_dual_2": false
+      }
+    },
+    {
+      "id": "time_one_knob",
+      "label": "Time",
+      "isSweep": true,
+      "target": "time_one",
+      "initialValue": 0,
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "settings": {
+        "vol_one": 10,
+        "tone": 0,
+        "feedback_one": 10,
+        "vol_two": 0,
+        "time_two_alt": 0,
+        "feedback_two": 0,
+        "time_two": 0,
+        "on_led_dual": false,
+        "on_led_dual_2": false
+      }
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "presets": [
+    {
+      "id": "full_blast_velcro",
+      "label": "Full Blast Velcro",
+      "settings": {
+        "volume": 5,
+        "fuzz": 9,
+        "roots": 1,
+        "earth": 1,
+        "nature": 1
+      }
+    },
+    {
+      "id": "growling_fuzz",
+      "label": "Growling Fuzz",
+      "settings": {
+        "volume": 6,
+        "fuzz": 2,
+        "roots": 3,
+        "earth": 3,
+        "nature": 2
+      }
+    },
+    {
+      "id": "medium_gain",
+      "label": "Medium Gain",
+      "settings": {
+        "volume": 5,
+        "fuzz": 0,
+        "roots": 3,
+        "earth": 3,
+        "nature": 3
+      }
+    },
+    {
+      "id": "mammoth_fuzz",
+      "label": "Mammoth Fuzz",
+      "settings": {
+        "volume": 5,
+        "fuzz": 3,
+        "roots": 3,
+        "earth": 3,
+        "nature": 1
+      }
+    },
+    {
+      "id": "fuzz_knob_alt",
+      "label": "Fuzz",
+      "isSweep": true,
+      "target": "fuzz",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "volume": 4, "roots": 1, "earth": 1, "nature": 3 }
+    },
+    {
+      "id": "roots_toggle",
+      "label": "Roots",
+      "isSweep": true,
+      "target": "roots",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": { "volume": 5, "fuzz": 7, "earth": 1, "nature": 2 }
+    },
+    {
+      "id": "earth_toggle",
+      "label": "Earth",
+      "isSweep": true,
+      "target": "earth",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": { "volume": 5, "fuzz": 5, "roots": 1, "nature": 2 }
+    },
+    {
+      "id": "nature_toggle",
+      "label": "Nature",
+      "isSweep": true,
+      "target": "nature",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": { "volume": 5, "fuzz": 8, "roots": 1, "earth": 1 }
+    }
+  ]
+}

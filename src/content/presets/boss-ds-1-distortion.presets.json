@@ -1,0 +1,49 @@
+{
+  "presets": [
+    {
+      "id": "perfect_combo",
+      "label": "Perfect Combo",
+      "chain": [
+        {
+          "name": "smallsound-bigsound-mini",
+          "id": "mini",
+          "settings": {
+            "gain": 4,
+            "volume": 3,
+            "bias": 6,
+            "bass": 5,
+            "treble": 8
+          }
+        },
+        {
+          "name": "boss-ds-1-distortion",
+          "id": "ds1",
+          "settings": { "tone": 5, "dist": 2, "level": 8 }
+        }
+      ]
+    },
+    {
+      "id": "rippin_distortion",
+      "label": "Rippin Distortion",
+      "settings": { "tone": 4, "dist": 7, "level": 8 }
+    },
+    {
+      "id": "dist_knob",
+      "label": "Dist Knob",
+      "settings": { "tone": 5, "level": 8 },
+      "isSweep": true,
+      "target": "dist",
+      "initialValue": 0,
+      "values": [0, 2, 4, 5, 6, 8, 10]
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone Knob",
+      "settings": { "dist": 5, "level": 8 },
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 5,
+      "values": [0, 2, 4, 5, 6, 8, 10]
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "name": "mask-audio-electronics-line-blur",
+  "controls": {
+    "knobs": [
+      {
+        "id": "low",
+        "size": 44,
+        "position": {
+          "left": 24,
+          "top": 51
+        },
+        "type": "brutalist",
+        "colors": {
+          "primary": "black",
+          "tick": "antiquewhite",
+          "shadow": "darkslategray"
+        }
+      },
+      {
+        "id": "mid",
+        "size": 44,
+        "position": {
+          "left": 78,
+          "top": 51
+        },
+        "type": "brutalist",
+        "colors": {
+          "primary": "black",
+          "tick": "antiquewhite",
+          "shadow": "darkslategray"
+        }
+      },
+      {
+        "id": "hi",
+        "size": 44,
+        "position": {
+          "left": 133,
+          "top": 51
+        },
+        "type": "brutalist",
+        "colors": {
+          "primary": "black",
+          "tick": "antiquewhite",
+          "shadow": "darkslategray"
+        }
+      },
+      {
+        "id": "loud",
+        "size": 44,
+        "position": {
+          "left": 24,
+          "top": 119
+        },
+        "type": "brutalist",
+        "colors": {
+          "primary": "black",
+          "tick": "antiquewhite",
+          "shadow": "darkslategray"
+        }
+      },
+      {
+        "id": "freq",
+        "size": 44,
+        "position": {
+          "left": 78,
+          "top": 119
+        },
+        "type": "brutalist",
+        "colors": {
+          "primary": "black",
+          "tick": "antiquewhite",
+          "shadow": "darkslategray"
+        }
+      },
+      {
+        "id": "more",
+        "size": 44,
+        "position": {
+          "left": 133,
+          "top": 119
+        },
+        "type": "brutalist",
+        "colors": {
+          "primary": "black",
+          "tick": "antiquewhite",
+          "shadow": "darkslategray"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 36,
+        "position": {
+          "left": 24,
+          "top": 284
+        },
+        "colors": {
+          "off": "#78352c",
+          "on": "#ff3500"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 76,
+          "top": 280
+        }
+      }
+    ]
+  }
+}

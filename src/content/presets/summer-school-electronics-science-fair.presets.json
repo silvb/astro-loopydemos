@@ -1,0 +1,107 @@
+{
+  "presets": [
+    {
+      "id": "woolly_but_articulate",
+      "label": "Woolly but Articulate",
+      "settings": {
+        "drive_rat": 7,
+        "vol": 7.5,
+        "drive_ts": 5,
+        "tone_rat": 0,
+        "blend": 3,
+        "tone_ts": 10
+      }
+    },
+    {
+      "id": "drive_with_extra_fizz",
+      "label": "Drive with Extra Fizz",
+      "settings": {
+        "drive_rat": 5,
+        "vol": 7,
+        "drive_ts": 7,
+        "tone_rat": 5,
+        "blend": 5,
+        "tone_ts": 10
+      }
+    },
+    {
+      "id": "gritty_sparkle",
+      "label": "Gritty Sparkle",
+      "settings": {
+        "drive_rat": 10,
+        "vol": 8,
+        "drive_ts": 5,
+        "tone_rat": 0,
+        "blend": 4,
+        "tone_ts": 6
+      }
+    },
+    {
+      "id": "rat_drive_knob",
+      "label": "Drive (RAT)",
+      "isSweep": true,
+      "target": "drive_rat",
+      "initialValue": 2,
+      "values": [1, 2, 4, 6, 8, 10],
+      "settings": {
+        "vol": 7,
+        "tone_rat": 0,
+        "blend": 0
+      }
+    },
+    {
+      "id": "ts_drive_knob",
+      "label": "Drive (TubeScreamer)",
+      "isSweep": true,
+      "target": "drive_ts",
+      "initialValue": 2,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "vol": 7,
+        "tone_ts": 0,
+        "blend": 10
+      }
+    },
+    {
+      "id": "blend_knob",
+      "label": "Blend",
+      "isSweep": true,
+      "target": "blend",
+      "initialValue": 5,
+      "values": [0, 3, 5, 7, 10],
+      "settings": {
+        "drive_rat": 6,
+        "vol": 7,
+        "drive_ts": 5,
+        "tone_rat": 2,
+        "tone_ts": 10
+      }
+    },
+    {
+      "id": "rat_tone_knob",
+      "label": "Tone (RAT)",
+      "isSweep": true,
+      "target": "tone_rat",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "vol": 7,
+        "drive_rat": 5,
+        "blend": 0
+      }
+    },
+    {
+      "id": "ts_tone_knob",
+      "label": "Tone (TubeScreamer)",
+      "isSweep": true,
+      "target": "tone_ts",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "vol": 7.5,
+        "drive_ts": 5,
+        "blend": 10
+      }
+    }
+  ]
+}

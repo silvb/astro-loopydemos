@@ -1,0 +1,64 @@
+{
+  "presets": [
+    {
+      "id": "crunchy_chime",
+      "label": "Crunchy Chime",
+      "settings": { "level": 5, "gain": 2, "bass": 3.5, "treble": 8, "mode": 3 }
+    },
+    {
+      "id": "meaty_growl",
+      "label": "Meaty Growl",
+      "settings": { "level": 6, "gain": 7, "bass": 7, "treble": 8, "mode": 1 }
+    },
+    {
+      "id": "fat_and_saturated",
+      "label": "Fat & Saturated",
+      "settings": { "level": 5, "gain": 8, "bass": 6, "treble": 7, "mode": 3 }
+    },
+    {
+      "id": "mode_toggle",
+      "label": "Mode",
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": { "level": 6, "gain": 7, "bass": 5, "treble": 6 }
+    },
+    {
+      "id": "gain_one_knob",
+      "label": "Gain (Toggle Up)",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "level": 6, "bass": 4, "treble": 8, "mode": 1 }
+    },
+    {
+      "id": "gain_two_knob",
+      "label": "Gain (Toggle Down)",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "level": 6, "bass": 4, "treble": 8, "mode": 3 }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "level": 6, "gain": 5, "treble": 6, "mode": 3 }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble",
+      "isSweep": true,
+      "target": "treble",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "level": 6, "gain": 3, "bass": 5, "mode": 1 }
+    }
+  ]
+}

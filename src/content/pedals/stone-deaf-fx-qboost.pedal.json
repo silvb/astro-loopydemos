@@ -1,0 +1,69 @@
+{
+  "name": "stone-deaf-fx-qboost",
+  "controls": {
+    "knobs": [
+      {
+        "id": "preamp",
+        "size": 86,
+        "position": {
+          "left": 8,
+          "top": 58
+        },
+        "type": "simple"
+      },
+      {
+        "id": "freq_boost",
+        "size": 86,
+        "position": {
+          "left": 106,
+          "top": 58
+        },
+        "type": "simple"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 60,
+        "position": {
+          "left": 24,
+          "top": 151
+        },
+        "colors": {
+          "on": "#00ff46"
+        }
+      },
+      {
+        "id": "freq_boost_led",
+        "size": 60,
+        "position": {
+          "left": 118,
+          "top": 151
+        },
+        "colors": {
+          "on": "#ff1c00",
+          "off": "#7f7f7faa"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 15,
+          "top": 267
+        }
+      },
+      {
+        "id": "mode",
+        "type": "slide",
+        "size": 40,
+        "position": {
+          "left": 82,
+          "top": 142
+        }
+      }
+    ]
+  }
+}

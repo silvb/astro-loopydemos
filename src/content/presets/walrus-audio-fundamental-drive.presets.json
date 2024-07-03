@@ -1,0 +1,56 @@
+{
+  "presets": [
+    {
+      "id": "sparkle_and_chime",
+      "label": "Sparkle & Chime",
+      "settings": { "gain": 5, "tone": 8, "vol": 5, "mode": 3 }
+    },
+    {
+      "id": "gritty_texture",
+      "label": "Gritty Texture",
+      "settings": { "gain": 2, "tone": 10, "vol": 5, "mode": 2 }
+    },
+    {
+      "id": "edge_of_breakup",
+      "label": "Edge of Breakup",
+      "settings": { "gain": 3, "tone": 10, "vol": 5, "mode": 1 }
+    },
+    {
+      "id": "filthy_distortion",
+      "label": "Filthy Distortion",
+      "settings": { "gain": 10, "tone": 10, "vol": 5, "mode": 2 }
+    },
+    {
+      "id": "clean_boost",
+      "label": "Clean Boost",
+      "settings": { "gain": 0, "tone": 5, "vol": 10, "mode": 3 }
+    },
+    {
+      "id": "mode_switch",
+      "label": "Mode",
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": { "tone": 8, "vol": 5, "gain": 7 }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 6,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "settings": { "tone": 10, "vol": 5, "mode": 2 }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 6,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "settings": { "gain": 5, "vol": 5, "mode": 1 }
+    }
+  ]
+}

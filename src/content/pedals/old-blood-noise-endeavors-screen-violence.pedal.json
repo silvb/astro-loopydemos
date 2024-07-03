@@ -1,0 +1,149 @@
+{
+  "name": "old-blood-noise-endeavors-screen-violence",
+  "width": 300,
+  "height": 350,
+  "controls": {
+    "knobs": [
+      {
+        "id": "mix",
+        "size": 44,
+        "position": {
+          "left": 64,
+          "top": 49
+        },
+        "type": "simple"
+      },
+      {
+        "id": "voice",
+        "size": 44,
+        "position": {
+          "left": 167,
+          "top": 49
+        },
+        "type": "simple"
+      },
+      {
+        "id": "volume",
+        "size": 44,
+        "position": {
+          "left": 235,
+          "top": 49
+        },
+        "type": "simple"
+      },
+      {
+        "id": "screen",
+        "size": 64,
+        "position": {
+          "left": 52,
+          "top": 166
+        },
+        "type": "simple"
+      },
+      {
+        "id": "violence",
+        "size": 64,
+        "position": {
+          "left": 187,
+          "top": 166
+        },
+        "type": "simple"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 30,
+        "position": {
+          "left": 71,
+          "top": 269
+        },
+        "colors": {
+          "on": "#a3fb82"
+        }
+      },
+      {
+        "id": "violence_led",
+        "size": 30,
+        "position": {
+          "left": 206,
+          "top": 269
+        },
+        "colors": {
+          "on": "#fcff8c"
+        },
+        "secondaryCircuitId": "violence_circuit"
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 40,
+        "position": {
+          "left": 65,
+          "top": 298
+        }
+      },
+      {
+        "id": "violence_switch",
+        "size": 40,
+        "position": {
+          "left": 200,
+          "top": 298
+        },
+        "type": "stomp",
+        "secondaryCircuitId": "violence_circuit"
+      },
+      {
+        "id": "mode",
+        "type": "toggle",
+        "size": 28,
+        "position": {
+          "left": 74,
+          "top": 122
+        }
+      },
+      {
+        "id": "gain",
+        "type": "toggle",
+        "size": 28,
+        "position": {
+          "left": 206,
+          "top": 122
+        }
+      },
+      {
+        "id": "first",
+        "type": "toggle",
+        "orientation": "horizontal",
+        "size": 44,
+        "position": {
+          "left": 132,
+          "top": 159
+        }
+      }
+    ],
+    "dependencies": [
+      {
+        "source": "is_stacked",
+        "target": {
+          "id": "violence_led",
+          "values": [
+            {
+              "sourceValue": false,
+              "colors": {
+                "on": "#fcff8c"
+              }
+            },
+            {
+              "sourceValue": true,
+              "colors": {
+                "on": "#f73333"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

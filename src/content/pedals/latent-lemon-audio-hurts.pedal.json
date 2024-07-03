@@ -1,0 +1,57 @@
+{
+  "name": "latent-lemon-audio-hurts",
+  "width": 300,
+  "height": 350,
+  "controls": {
+    "knobs": [
+      {
+        "id": "harmonics",
+        "size": 64,
+        "position": { "left": 21, "top": 29 },
+        "type": "simple",
+        "colors": { "primary": "#c3d7ff", "tick": "#1F1B1C" }
+      },
+      {
+        "id": "sputter",
+        "size": 64,
+        "position": { "left": 119, "top": 33 },
+        "type": "simple",
+        "colors": { "primary": "#c3d7ff", "tick": "#1F1B1C" }
+      },
+      {
+        "id": "balance",
+        "size": 64,
+        "position": { "left": 218, "top": 35 },
+        "type": "simple",
+        "colors": { "primary": "#c3d7ff", "tick": "#1F1B1C" }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 44,
+        "socket": false,
+        "position": { "left": 174, "top": 283 }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": { "left": 123, "top": 278 }
+      },
+      {
+        "id": "deep",
+        "size": 32,
+        "type": "toggle",
+        "position": { "left": 87, "top": 50 }
+      },
+      {
+        "id": "mode",
+        "size": 32,
+        "type": "toggle",
+        "position": { "left": 183, "top": 50 }
+      }
+    ]
+  }
+}

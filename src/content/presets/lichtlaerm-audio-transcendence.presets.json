@@ -1,0 +1,203 @@
+{
+  "presets": [
+    {
+      "id": "ethereal_reverb",
+      "label": "Ethereal Reverb",
+      "settings": {
+        "rate": 7,
+        "effect": 8,
+        "decay": 7,
+        "level": 7,
+        "mix": 7,
+        "dampen": 2,
+        "rmp": 1,
+        "mode": 1,
+        "trails": 3
+      }
+    },
+    {
+      "id": "robot_reverb",
+      "label": "Robot Reverb",
+      "settings": {
+        "rate": 8,
+        "effect": 10,
+        "decay": 5,
+        "level": 7,
+        "mix": 7,
+        "dampen": 0,
+        "rmp": 1,
+        "mode": 2,
+        "trails": 3
+      }
+    },
+    {
+      "id": "grainy_reverb",
+      "label": "Grainy Reverb",
+      "settings": {
+        "rate": 2,
+        "effect": 5,
+        "decay": 7,
+        "level": 7,
+        "mix": 7,
+        "dampen": 0,
+        "rmp": 1,
+        "mode": 3,
+        "trails": 3
+      }
+    },
+    {
+      "id": "simple_and_lush",
+      "label": "Simple & Lush",
+      "settings": {
+        "rate": 0,
+        "effect": 0,
+        "decay": 7,
+        "level": 7,
+        "mix": 7,
+        "dampen": 2,
+        "rmp": 1,
+        "mode": 2,
+        "trails": 3
+      }
+    },
+    {
+      "id": "flerb_done_right",
+      "label": "Flerb Done Right",
+      "chain": [
+        {
+          "name": "walrus-audio-polychrome",
+          "id": "polychrome",
+          "settings": {
+            "rate": 7,
+            "depth": 10,
+            "sweep": 5,
+            "feedback": 5,
+            "voice": 3,
+            "shape": 3,
+            "dfv": 5,
+            "rate_led": 300
+          }
+        },
+        {
+          "name": "lichtlaerm-audio-transcendence",
+          "id": "transcendence",
+          "settings": {
+            "rate": 8,
+            "effect": 10,
+            "decay": 6,
+            "level": 7,
+            "mix": 7,
+            "dampen": 0,
+            "rmp": 1,
+            "mode": 2,
+            "trails": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "shoegated",
+      "label": "Shoegated",
+      "chain": [
+        {
+          "name": "smallsound-bigsound-mini",
+          "id": "mini",
+          "settings": {
+            "gain": 5,
+            "bass": 7,
+            "treble": 7,
+            "bias": 2,
+            "volume": 4
+          }
+        },
+        {
+          "name": "lichtlaerm-audio-transcendence",
+          "id": "transcendence",
+          "settings": {
+            "rate": 0,
+            "effect": 5,
+            "decay": 6,
+            "level": 7,
+            "mix": 7,
+            "dampen": 5,
+            "rmp": 1,
+            "mode": 3,
+            "trails": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "dampen_nova",
+      "label": "Dampen (Nova)",
+      "isSweep": true,
+      "target": "dampen",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "rate": 6,
+        "effect": 10,
+        "decay": 6,
+        "level": 7,
+        "mix": 7,
+        "rmp": 1,
+        "mode": 1,
+        "trails": 3
+      }
+    },
+    {
+      "id": "rate_nova",
+      "label": "Rate (Nova)",
+      "isSweep": true,
+      "target": "rate",
+      "initialValue": 0,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "settings": {
+        "effect": 10,
+        "decay": 6,
+        "level": 7,
+        "mix": 7,
+        "dampen": 0,
+        "rmp": 1,
+        "mode": 1,
+        "trails": 3
+      }
+    },
+    {
+      "id": "rate_sh",
+      "label": "Rate (S/H)",
+      "isSweep": true,
+      "target": "rate",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "effect": 10,
+        "decay": 7,
+        "level": 7,
+        "mix": 7,
+        "dampen": 0,
+        "rmp": 1,
+        "mode": 2,
+        "trails": 3
+      }
+    },
+    {
+      "id": "rate_collapse",
+      "label": "Rate (Collapse)",
+      "isSweep": true,
+      "target": "rate",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "effect": 10,
+        "decay": 7,
+        "level": 7,
+        "mix": 7,
+        "dampen": 0,
+        "rmp": 1,
+        "mode": 3,
+        "trails": 3
+      }
+    }
+  ]
+}

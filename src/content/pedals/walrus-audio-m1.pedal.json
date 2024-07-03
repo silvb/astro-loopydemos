@@ -1,0 +1,190 @@
+{
+  "name": "walrus-audio-m1",
+  "controls": {
+    "knobs": [
+      {
+        "id": "rate",
+        "size": 40,
+        "position": {
+          "left": 25,
+          "top": 28
+        },
+        "type": "knurled"
+      },
+      {
+        "id": "depth",
+        "size": 40,
+        "position": {
+          "left": 80,
+          "top": 28
+        },
+        "type": "knurled"
+      },
+      {
+        "id": "lofi",
+        "size": 40,
+        "position": {
+          "left": 135,
+          "top": 28
+        },
+        "type": "knurled"
+      },
+      {
+        "id": "tweak",
+        "size": 40,
+        "position": {
+          "left": 25,
+          "top": 94
+        },
+        "type": "knurled"
+      },
+      {
+        "id": "program",
+        "size": 40,
+        "position": {
+          "left": 80,
+          "top": 94
+        },
+        "type": "knurled"
+      },
+      {
+        "id": "tune",
+        "size": 40,
+        "position": {
+          "left": 135,
+          "top": 94
+        },
+        "type": "knurled"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 44,
+        "socket": true,
+        "position": {
+          "left": 28,
+          "top": 238
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff",
+          "socket": "black"
+        }
+      },
+      {
+        "id": "rate_led",
+        "size": 44,
+        "socket": true,
+        "position": {
+          "left": 128,
+          "top": 236
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#9c33ff",
+          "socket": "black"
+        },
+        "isBlinking": true
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 26,
+          "top": 276
+        }
+      },
+      {
+        "id": "tweak_toggle",
+        "size": 30,
+        "type": "toggle",
+        "orientation": "horizontal",
+        "position": {
+          "left": 34,
+          "top": 150
+        }
+      },
+      {
+        "id": "tune_toggle",
+        "size": 30,
+        "type": "toggle",
+        "orientation": "horizontal",
+        "position": {
+          "left": 139,
+          "top": 149
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "tweak_label",
+        "position": {
+          "left": 34,
+          "top": 135
+        },
+        "labelPosition": {
+          "left": -2,
+          "top": 185
+        }
+      },
+      {
+        "id": "type_label",
+        "position": {
+          "left": 34,
+          "top": 135
+        },
+        "labelPosition": {
+          "left": -2,
+          "top": 69
+        }
+      },
+      {
+        "id": "tune_label",
+        "position": {
+          "left": 163,
+          "top": 135
+        },
+        "labelPosition": {
+          "left": 206,
+          "top": 185
+        }
+      },
+      {
+        "id": "tweak_lofi_label",
+        "position": {
+          "left": 34,
+          "top": 144
+        },
+        "labelPosition": {
+          "left": -2,
+          "top": 284
+        }
+      },
+      {
+        "id": "tune_lofi_label",
+        "position": {
+          "left": 163,
+          "top": 144
+        },
+        "labelPosition": {
+          "left": 206,
+          "top": 284
+        }
+      },
+      {
+        "id": "lofi_label",
+        "position": {
+          "left": 163,
+          "top": 50
+        },
+        "labelPosition": {
+          "left": 206,
+          "top": 90
+        }
+      }
+    ]
+  }
+}

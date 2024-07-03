@@ -1,0 +1,174 @@
+{
+  "presets": [
+    {
+      "id": "balanced_fuzz",
+      "label": "Balanced Fuzz",
+      "settings": {
+        "bass": 4,
+        "mid": 4,
+        "treble": 7,
+        "volume": 6,
+        "depth": 7,
+        "fuzz": 7,
+        "pre_gain": 10,
+        "stage_i": 1,
+        "stage_ii": 4
+      }
+    },
+    {
+      "id": "sizzlin_silicon",
+      "label": "Sizzlin' Silicon",
+      "settings": {
+        "bass": 5,
+        "mid": 5,
+        "treble": 5,
+        "volume": 6,
+        "depth": 5,
+        "fuzz": 10,
+        "pre_gain": 5,
+        "stage_i": 3,
+        "stage_ii": 4
+      }
+    },
+    {
+      "id": "scooped_led",
+      "label": "Scooped LED",
+      "settings": {
+        "bass": 6,
+        "mid": 0,
+        "treble": 10,
+        "volume": 6,
+        "depth": 6,
+        "fuzz": 7,
+        "pre_gain": 10,
+        "stage_i": 3,
+        "stage_ii": 3
+      }
+    },
+    {
+      "id": "open_lofi",
+      "label": "Open Lo-fi",
+      "settings": {
+        "bass": 4,
+        "mid": 2,
+        "treble": 9,
+        "volume": 5,
+        "depth": 10,
+        "fuzz": 10,
+        "pre_gain": 1,
+        "stage_i": 2,
+        "stage_ii": 1
+      }
+    },
+    {
+      "id": "gnarly_germanium",
+      "label": "Gnarly Germanium",
+      "settings": {
+        "bass": 4,
+        "mid": 10,
+        "treble": 4,
+        "volume": 6,
+        "depth": 8,
+        "fuzz": 10,
+        "pre_gain": 10,
+        "stage_i": 2,
+        "stage_ii": 2
+      }
+    },
+    {
+      "id": "mid_sweep",
+      "label": "Mid Sweep",
+      "isSweep": true,
+      "target": "mid",
+      "initialValue": 0,
+      "values": [0, 1, 2, 3, 4, 5, 7, 8, 10],
+      "settings": {
+        "bass": 5,
+        "treble": 5,
+        "volume": 6,
+        "depth": 5,
+        "fuzz": 10,
+        "pre_gain": 5,
+        "stage_i": 3,
+        "stage_ii": 4
+      }
+    },
+    {
+      "id": "stage_1_sweep",
+      "label": "Stage I Clipping",
+      "isSweep": true,
+      "target": "stage_i",
+      "initialValue": 3,
+      "values": [1, 2, 3],
+      "settings": {
+        "bass": 4,
+        "mid": 2,
+        "treble": 9,
+        "volume": 4,
+        "depth": 5,
+        "fuzz": 10,
+        "pre_gain": 3,
+        "stage_ii": 1
+      }
+    },
+    {
+      "id": "stage_2_sweep",
+      "label": "Stage II Clipping",
+      "isSweep": true,
+      "target": "stage_ii",
+      "initialValue": 4,
+      "values": [1, 2, 3, 4],
+      "sideEffects": [
+        {
+          "id": "volume",
+          "values": [4, 6, 4, 6]
+        }
+      ],
+      "settings": {
+        "bass": 4,
+        "mid": 4,
+        "treble": 6,
+        "depth": 4,
+        "fuzz": 10,
+        "pre_gain": 0,
+        "stage_i": 3
+      }
+    },
+    {
+      "id": "pre_gain_sweep",
+      "label": "Pre-gain Sweep",
+      "isSweep": true,
+      "target": "pre_gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "bass": 4,
+        "mid": 1,
+        "treble": 6,
+        "volume": 5,
+        "depth": 4,
+        "fuzz": 8,
+        "stage_i": 1,
+        "stage_ii": 4
+      }
+    },
+    {
+      "id": "depth_sweep",
+      "label": "Depth Sweep",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "bass": 5,
+        "mid": 1,
+        "treble": 5,
+        "volume": 5,
+        "pre_gain": 6,
+        "fuzz": 8,
+        "stage_i": 2,
+        "stage_ii": 3
+      }
+    }
+  ]
+}

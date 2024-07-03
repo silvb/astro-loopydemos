@@ -1,0 +1,65 @@
+{
+  "name": "earthquaker-devices-plumes",
+  "controls": {
+    "knobs": [
+      {
+        "id": "level",
+        "size": 56,
+        "position": {
+          "top": 50,
+          "left": 18
+        }
+      },
+      {
+        "id": "tone",
+        "size": 60,
+        "position": {
+          "top": 106,
+          "left": 72
+        }
+      },
+      {
+        "id": "gain",
+        "size": 60,
+        "position": {
+          "top": 48,
+          "left": 126
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 38,
+        "position": {
+          "top": 252,
+          "left": 28
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "top": 246,
+          "left": 76
+        }
+      },
+      {
+        "id": "mode",
+        "size": 32,
+        "orientation": "horizontal",
+        "position": {
+          "top": 64,
+          "left": 84
+        },
+        "type": "toggle"
+      }
+    ]
+  }
+}

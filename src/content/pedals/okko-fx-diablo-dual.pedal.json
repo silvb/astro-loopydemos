@@ -1,0 +1,133 @@
+{
+  "name": "okko-fx-diablo",
+  "width": 300,
+  "height": 350,
+  "controls": {
+    "knobs": [
+      {
+        "id": "dyn",
+        "size": 56,
+        "position": {
+          "left": 35,
+          "top": 24
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "feed",
+        "size": 56,
+        "position": {
+          "left": 93,
+          "top": 24
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "body",
+        "size": 56,
+        "position": {
+          "left": 152,
+          "top": 24
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "tone",
+        "size": 56,
+        "position": {
+          "left": 211,
+          "top": 24
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "drive_one",
+        "size": 56,
+        "position": {
+          "left": 34,
+          "top": 112
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "level_one",
+        "size": 56,
+        "position": {
+          "left": 93,
+          "top": 112
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "drive_two",
+        "size": 56,
+        "position": {
+          "left": 152,
+          "top": 112
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "level_two",
+        "size": 56,
+        "position": {
+          "left": 210,
+          "top": 112
+        },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "channel_led",
+        "size": 40,
+        "position": {
+          "left": 72,
+          "top": 161
+        },
+        "colors": {
+          "on": "#aaf8ef"
+        }
+      },
+      {
+        "id": "on_led",
+        "size": 161,
+        "position": {
+          "left": 70,
+          "top": 157
+        },
+        "colors": {
+          "on": "#ffa200"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 220,
+          "top": 261
+        }
+      },
+      {
+        "id": "input",
+        "type": "toggle",
+        "size": 24,
+        "position": {
+          "left": 79,
+          "top": 82
+        }
+      },
+      {
+        "id": "mids",
+        "type": "toggle",
+        "size": 24,
+        "position": {
+          "left": 196,
+          "top": 82
+        }
+      }
+    ]
+  }
+}

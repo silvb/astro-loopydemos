@@ -1,0 +1,72 @@
+{
+  "name": "okko-fx-motorbass",
+  "controls": {
+    "knobs": [
+      {
+        "id": "faster",
+        "size": 72,
+        "position": {
+          "left": 18,
+          "top": 29
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "louder",
+        "size": 72,
+        "position": {
+          "left": 113,
+          "top": 29
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "harder",
+        "size": 32,
+        "position": {
+          "left": 86,
+          "top": 86
+        },
+        "type": "simpledot"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "isOnIndicator": true,
+        "size": 36,
+        "position": {
+          "left": 110,
+          "top": 119
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#92ffff"
+        }
+      },
+      {
+        "id": "on_led_2",
+        "isOnIndicator": true,
+        "size": 36,
+        "position": {
+          "left": 125,
+          "top": 119
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#92ffff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 73,
+          "top": 244
+        }
+      }
+    ]
+  }
+}

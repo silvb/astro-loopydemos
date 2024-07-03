@@ -1,0 +1,115 @@
+{
+  "presets": [
+    {
+      "id": "just_rocks",
+      "label": "Just Rocks",
+      "settings": {
+        "snooze": 5,
+        "bury": 10,
+        "snore": 10,
+        "rot": 1,
+        "decompose": 2,
+        "dig": 1,
+        "snooze_label": "volume",
+        "bury_label": "tone",
+        "snore_label": "gain",
+        "rot_label": "diode selection",
+        "decompose_label": "bass response",
+        "dig_label": "clipping mode"
+      }
+    },
+
+    {
+      "id": "sweet_crackle",
+      "label": "Sweet Crackle",
+      "settings": {
+        "snooze": 5,
+        "bury": 10,
+        "snore": 5,
+        "rot": 1,
+        "decompose": 1,
+        "dig": 3
+      }
+    },
+    {
+      "id": "bury_knob",
+      "label": "Bury",
+      "isSweep": true,
+      "target": "bury",
+      "initialValue": 10,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "snooze": 8,
+        "snore": 10,
+        "rot": 2,
+        "decompose": 2,
+        "dig": 1,
+        "bury_label": "tone"
+      }
+    },
+    {
+      "id": "snore_knob",
+      "label": "Snore",
+      "isSweep": true,
+      "target": "snore",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "snooze": 8,
+        "bury": 10,
+        "rot": 3,
+        "decompose": 2,
+        "dig": 1,
+        "snore_label": "gain"
+      }
+    },
+    {
+      "id": "rot_toggle",
+      "label": "Rot",
+      "isSweep": true,
+      "target": "rot",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "snooze": 6,
+        "bury": 10,
+        "snore": 10,
+        "decompose": 2,
+        "dig": 1,
+        "rot_label": "diode selection"
+      }
+    },
+    {
+      "id": "decompose_toggle",
+      "label": "Decompose",
+      "isSweep": true,
+      "target": "decompose",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "snooze": 5,
+        "bury": 10,
+        "snore": 10,
+        "rot": 1,
+        "dig": 1,
+        "decompose_label": "bass response"
+      }
+    },
+    {
+      "id": "dig_toggle",
+      "label": "Dig",
+      "isSweep": true,
+      "target": "dig",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "snooze": 5,
+        "bury": 10,
+        "snore": 10,
+        "rot": 2,
+        "decompose": 2,
+        "dig_label": "clipping mode"
+      }
+    }
+  ]
+}

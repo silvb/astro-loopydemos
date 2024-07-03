@@ -1,0 +1,113 @@
+{
+  "name": "bleak-district-electric-tapescape",
+  "enclosure": "landscape",
+  "controls": {
+    "knobs": [
+      {
+        "id": "time",
+        "size": 80,
+        "position": { "left": 40, "top": 43 },
+        "type": "roundchicken"
+      },
+      {
+        "id": "feedback",
+        "size": 48,
+        "position": { "left": 145, "top": 48 },
+        "type": "bakelit",
+        "colors": {
+          "primary": "#FFFDFE",
+          "secondary": "#E6E6E6",
+          "tick": "#1F1B1C"
+        }
+      },
+      {
+        "id": "mix",
+        "size": 48,
+        "position": { "left": 204, "top": 48 },
+        "type": "bakelit",
+        "colors": {
+          "primary": "#FFFDFE",
+          "secondary": "#E6E6E6",
+          "tick": "#1F1B1C"
+        }
+      },
+      {
+        "id": "wow",
+        "size": 48,
+        "position": { "left": 266, "top": 48 },
+        "type": "bakelit",
+        "colors": {
+          "primary": "#FFFDFE",
+          "secondary": "#E6E6E6",
+          "tick": "#1F1B1C"
+        }
+      },
+      {
+        "id": "flutter",
+        "size": 48,
+        "position": { "left": 144, "top": 120 },
+        "type": "bakelit",
+        "colors": {
+          "primary": "#FFFDFE",
+          "secondary": "#E6E6E6",
+          "tick": "#1F1B1C"
+        }
+      },
+      {
+        "id": "rate",
+        "size": 48,
+        "position": { "left": 205, "top": 120 },
+        "type": "bakelit",
+        "colors": {
+          "primary": "#FFFDFE",
+          "secondary": "#E6E6E6",
+          "tick": "#1F1B1C"
+        }
+      },
+      {
+        "id": "swell",
+        "size": 48,
+        "position": { "left": 264, "top": 120 },
+        "type": "bakelit",
+        "colors": {
+          "primary": "#dd6719",
+          "secondary": "#b05417",
+          "tick": "#FFFDFE"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 40,
+        "position": { "left": 96, "top": 214 },
+        "colors": { "off": "#000000a1", "on": "#8deeff" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 54,
+        "position": { "left": 35, "top": 206 }
+      },
+      {
+        "id": "dry",
+        "type": "toggle",
+        "size": 26,
+        "position": { "left": 37, "top": 137 }
+      },
+      {
+        "id": "type",
+        "type": "toggle",
+        "size": 26,
+        "position": { "left": 68, "top": 141 }
+      },
+      {
+        "id": "lpf",
+        "type": "toggle",
+        "size": 26,
+        "position": { "left": 100, "top": 141 }
+      }
+    ]
+  }
+}

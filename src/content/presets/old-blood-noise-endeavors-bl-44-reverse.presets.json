@@ -1,0 +1,74 @@
+{
+  "presets": [
+    {
+      "id": "reverse_octave_boost",
+      "label": "Reverse Octave Boost",
+      "settings": { "mix": 7, "speed": 7.5, "volume": 10, "clock": 6 }
+    },
+
+    {
+      "id": "ambient_miniboard",
+      "label": "Ambient Miniboard",
+      "chain": [
+        {
+          "id": "exploder",
+          "name": "beautiful-noise-effects-exploder",
+          "settings": {
+            "master": 5,
+            "gain": 1.5,
+            "low": 6,
+            "mid": 5,
+            "hi": 6,
+            "white_noise": 5,
+            "tone": 3,
+            "env": 1.7,
+            "clipping": 3
+          }
+        },
+        {
+          "id": "sinkhole",
+          "name": "catalinbread-sinkhole",
+          "settings": { "fdbck": 2, "mod": 7, "verb": 8, "mix": 5, "vol": 5 }
+        },
+        {
+          "id": "bl44",
+          "name": "old-blood-noise-endeavors-bl-44-reverse",
+          "settings": { "mix": 7, "speed": 5, "volume": 7, "clock": 0 }
+        }
+      ]
+    },
+    {
+      "id": "tape_from_the_void",
+      "label": "Tape from the Void",
+      "settings": { "mix": 7, "speed": 10, "volume": 8, "clock": 5 }
+    },
+    {
+      "id": "broken_robots_lullaby",
+      "label": "Broken Robot's Lullaby",
+      "settings": { "mix": 7, "speed": 3, "volume": 8, "clock": 3 }
+    },
+    {
+      "id": "memories_from_space",
+      "label": "Memories from Space",
+      "settings": { "mix": 7, "speed": 3, "volume": 8, "clock": 7 }
+    },
+    {
+      "id": "clock_slider",
+      "label": "Clock",
+      "isSweep": true,
+      "target": "clock",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "speed": 8, "volume": 8, "mix": 7 }
+    },
+    {
+      "id": "speed_knob",
+      "label": "Speed",
+      "isSweep": true,
+      "target": "speed",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "clock": 7, "volume": 8, "mix": 7 }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "presets": [
+    {
+      "id": "articulate_dirt",
+      "label": "Articulate Dirt",
+      "settings": { "vol": 5, "pre": 5, "gain": 8, "tone": 8, "diodes": 1 }
+    },
+    {
+      "id": "boosted_chime",
+      "label": "Boosted Chime",
+      "settings": {
+        "vol": 4,
+        "pre": 10,
+        "gain": 7,
+        "tone": 7,
+        "diodes": 1,
+        "pre_led": true
+      }
+    },
+    {
+      "id": "hairy_breakup",
+      "label": "Hairy Breakup",
+      "settings": {
+        "vol": 8,
+        "pre": 5,
+        "gain": 10,
+        "tone": 5,
+        "diodes": 3,
+        "pre_led": true
+      }
+    },
+    {
+      "id": "gain_knob_si",
+      "label": "Gain (Si)",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 8,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "vol": 5, "tone": 8, "diodes": 1 }
+    },
+    {
+      "id": "gain_knob_ge",
+      "label": "Gain (Ge)",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 8,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "vol": 10, "tone": 7, "diodes": 3 }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "vol": 5, "gain": 7, "diodes": 1 }
+    },
+    {
+      "id": "pre_knob",
+      "label": "Pre",
+      "isSweep": true,
+      "target": "pre",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "vol": 4, "gain": 7, "diodes": 1, "pre_led": true }
+    }
+  ]
+}

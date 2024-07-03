@@ -1,0 +1,87 @@
+{
+  "name": "interstellar-audio-machines-fuzzsquatch-fuzzdrive",
+  "presentationColors": {
+    "background": "#121212",
+    "secondary": "#2dba89",
+    "primaryHighlight": "#0f0",
+    "secondaryHighlight": "#f00"
+  },
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol",
+        "size": 56,
+        "position": {
+          "left": 27,
+          "top": 35
+        },
+        "colors": {
+          "primary": "#2dba89",
+          "secondary": "#1e7255",
+          "tick": "oldlace"
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "tone",
+        "size": 56,
+        "position": {
+          "left": 71,
+          "top": 107
+        },
+        "colors": {
+          "primary": "#2dba89",
+          "secondary": "#1e7255",
+          "tick": "oldlace"
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "sustain",
+        "size": 56,
+        "position": {
+          "left": 117,
+          "top": 36
+        },
+        "colors": {
+          "primary": "#2dba89",
+          "secondary": "#1e7255",
+          "tick": "oldlace"
+        },
+        "type": "bakelit"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 52,
+        "position": {
+          "left": 20,
+          "top": 236
+        },
+        "colors": {
+          "on": "#26d833"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 54,
+        "position": {
+          "left": 72,
+          "top": 235
+        }
+      },
+      {
+        "id": "tone_bypass",
+        "type": "toggle",
+        "size": 24,
+        "position": {
+          "left": 28,
+          "top": 123
+        }
+      }
+    ]
+  }
+}

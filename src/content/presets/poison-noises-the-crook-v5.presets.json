@@ -1,0 +1,85 @@
+{
+  "presets": [
+    {
+      "id": "meaty_fuzz",
+      "label": "Meaty Fuzz",
+      "settings": {
+        "vol": 5,
+        "gain": 7,
+        "clip": 2,
+        "bass": 8,
+        "mids": 5,
+        "treble": 6.5
+      }
+    },
+    {
+      "id": "thumpy_boost",
+      "label": "Thumpy Boost",
+      "settings": {
+        "vol": 6,
+        "gain": 5,
+        "clip": 8,
+        "bass": 7,
+        "mids": 8,
+        "treble": 7
+      }
+    },
+    {
+      "id": "scooped_distortion",
+      "label": "Scoop Distortion",
+      "settings": {
+        "vol": 6,
+        "gain": 10,
+        "clip": 0,
+        "bass": 10,
+        "mids": 3,
+        "treble": 9
+      }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "vol": 5, "clip": 2, "bass": 8, "mids": 6, "treble": 7 }
+    },
+    {
+      "id": "clip_knob",
+      "label": "Clip",
+      "isSweep": true,
+      "target": "clip",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "vol": 5, "gain": 5, "bass": 8, "mids": 4, "treble": 8 }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "vol": 5, "gain": 5, "clip": 5, "mids": 5, "treble": 8 }
+    },
+    {
+      "id": "mids_knob",
+      "label": "Mids",
+      "isSweep": true,
+      "target": "mids",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "vol": 5, "gain": 5, "clip": 5, "bass": 7, "treble": 8 }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble",
+      "isSweep": true,
+      "target": "treble",
+      "initialValue": 0,
+      "values": [0, 3, 5, 7, 10],
+      "settings": { "vol": 5, "gain": 5, "clip": 5, "bass": 8, "mids": 5 }
+    }
+  ]
+}

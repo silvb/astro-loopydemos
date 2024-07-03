@@ -1,0 +1,101 @@
+{
+  "presets": [
+    {
+      "id": "crunchy_vox",
+      "label": "Crunchy Vox",
+      "settings": {
+        "drive": 6,
+        "level": 4,
+        "bass": 6,
+        "middle": 4,
+        "treble": 6,
+        "room": 2,
+        "room_size": "small room",
+        "amp": 2,
+        "cab": 1
+      }
+    },
+    {
+      "id": "vox_treble_cut_sweep",
+      "label": "Vox Treble Cut Sweep",
+      "isSweep": true,
+      "target": "middle",
+      "settings": {
+        "level": 4,
+        "room_size": "small room",
+        "amp": 2,
+        "cab": 2
+      },
+      "values": [0, 1, 4, 5, 7, 8, 10],
+      "initialValue": 5
+    },
+    {
+      "id": "fender_clean",
+      "label": "Fender Clean",
+      "settings": {
+        "bass": 4,
+        "middle": 4,
+        "treble": 7,
+        "room": 5,
+        "room_size": "small room",
+        "amp": 1,
+        "cab": 1
+      }
+    },
+    {
+      "id": "fender_middle_sweep",
+      "label": "Fender Middle Sweep",
+      "isSweep": true,
+      "target": "middle",
+      "values": [0, 2, 4, 5, 7, 8, 10],
+      "settings": { "room_size": "small room" },
+      "initialValue": 5
+    },
+    {
+      "id": "marshall_crunch",
+      "label": "Marshall Crunch",
+      "settings": {
+        "drive": 6,
+        "level": 4,
+        "bass": 4,
+        "middle": 4,
+        "treble": 7,
+        "room": 2,
+        "room_size": "small room",
+        "amp": 3,
+        "cab": 3
+      }
+    },
+    {
+      "id": "vox_ambient",
+      "label": "Vox Ambient Clean",
+      "settings": {
+        "level": 4,
+        "bass": 4,
+        "middle": 5,
+        "treble": 6,
+        "room": 8,
+        "room_size": "large room",
+        "amp": 2,
+        "cab": 2
+      }
+    },
+    {
+      "id": "marshall_gain_sweep",
+      "label": "Marshall Gain Sweep",
+      "isSweep": true,
+      "target": "drive",
+      "settings": {
+        "level": 4,
+        "bass": 4,
+        "middle": 6,
+        "room": 3,
+        "room_size": "small room",
+        "amp": 3,
+        "cab": 1
+      },
+      "values": [0, 2, 4, 6, 7, 8, 10],
+      "initialValue": 5
+    }
+  ]
+}

@@ -1,0 +1,186 @@
+{
+  "name": "old-blood-noise-endeavors-beam-splitter",
+  "width": 420,
+  "height": 350,
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol_blue",
+        "size": 40,
+        "position": { "left": 99, "top": 42 },
+        "type": "obne",
+        "colors": {
+          "primary": "#159cf3",
+          "secondary": "#565958",
+          "tick": "#1F1B1C",
+          "background": "#111"
+        }
+      },
+      {
+        "id": "tone_blue",
+        "size": 40,
+        "position": { "left": 68, "top": 104 },
+        "type": "obne",
+        "colors": {
+          "primary": "#159cf3",
+          "secondary": "#565958",
+          "tick": "#1F1B1C",
+          "background": "#111"
+        }
+      },
+      {
+        "id": "time_blue",
+        "size": 40,
+        "position": { "left": 39, "top": 162 },
+        "type": "obne",
+        "colors": {
+          "primary": "#159cf3",
+          "secondary": "#565958",
+          "tick": "#1F1B1C",
+          "background": "#111"
+        }
+      },
+      {
+        "id": "decay_blue",
+        "size": 40,
+        "position": { "left": 69, "top": 223 },
+        "type": "obne",
+        "colors": {
+          "primary": "#159cf3",
+          "secondary": "#565958",
+          "tick": "#1F1B1C",
+          "background": "#111"
+        }
+      },
+      {
+        "id": "deviate",
+        "size": 40,
+        "position": { "left": 132, "top": 163 },
+        "type": "obne",
+        "colors": {
+          "primary": "#e0e0a5",
+          "secondary": "#565958",
+          "tick": "#1F1B1C",
+          "background": "#111"
+        }
+      },
+      {
+        "id": "gain_green",
+        "size": 40,
+        "position": { "left": 162, "top": 42 },
+        "type": "obne",
+        "colors": {
+          "primary": "#90d4a5",
+          "secondary": "#565958",
+          "tick": "#1F1B1C",
+          "background": "#111"
+        }
+      },
+      {
+        "id": "vol_green",
+        "size": 40,
+        "position": { "left": 224, "top": 42 },
+        "type": "obne",
+        "colors": {
+          "primary": "#90d4a5",
+          "secondary": "#565958",
+          "tick": "#1F1B1C",
+          "background": "#111"
+        }
+      },
+      {
+        "id": "tone_green",
+        "size": 40,
+        "position": { "left": 195, "top": 105 },
+        "type": "obne",
+        "colors": {
+          "primary": "#90d4a5",
+          "secondary": "#565958",
+          "tick": "#1F1B1C",
+          "background": "#111"
+        }
+      },
+      {
+        "id": "time_green",
+        "size": 40,
+        "position": { "left": 226, "top": 163 },
+        "type": "obne",
+        "colors": {
+          "primary": "#90d4a5",
+          "secondary": "#565958",
+          "tick": "#1F1B1C",
+          "background": "#111"
+        }
+      },
+      {
+        "id": "decay_green",
+        "size": 40,
+        "position": { "left": 195, "top": 220 },
+        "type": "obne",
+        "colors": {
+          "primary": "#90d4a5",
+          "secondary": "#565958",
+          "tick": "#1F1B1C",
+          "background": "#111"
+        }
+      },
+      {
+        "id": "gain_purple",
+        "size": 40,
+        "position": { "left": 288, "top": 42 },
+        "type": "obne",
+        "colors": {
+          "primary": "#6c6ccf",
+          "secondary": "#565958",
+          "tick": "#1F1B1C",
+          "background": "#111"
+        }
+      },
+      {
+        "id": "vol_purple",
+        "size": 40,
+        "position": { "left": 350, "top": 41 },
+        "type": "obne",
+        "colors": {
+          "primary": "#6c6ccf",
+          "secondary": "#565958",
+          "tick": "#1F1B1C",
+          "background": "#111"
+        }
+      },
+      {
+        "id": "tone_purple",
+        "size": 40,
+        "position": { "left": 319, "top": 102 },
+        "type": "obne",
+        "colors": {
+          "primary": "#6c6ccf",
+          "secondary": "#565958",
+          "tick": "#1F1B1C",
+          "background": "#111"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "position": { "left": 137, "top": 287 },
+        "colors": { "on": "#ffdd00", "off": "#000000aa" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": { "left": 345, "top": 278 }
+      },
+      {
+        "id": "gain_blue",
+        "type": "toggle",
+        "size": 32,
+        "position": { "left": 42, "top": 46 }
+      }
+    ]
+  }
+}

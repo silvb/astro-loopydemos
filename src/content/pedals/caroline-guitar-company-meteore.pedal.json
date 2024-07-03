@@ -1,0 +1,99 @@
+{
+  "name": "caroline-guitar-company-meteore",
+  "width": 300,
+  "height": 345,
+  "controls": {
+    "knobs": [
+      {
+        "id": "level",
+        "size": 56,
+        "position": {
+          "left": 34,
+          "top": 55
+        },
+        "colors": {
+          "primary": "black",
+          "tick": "antiquewhite",
+          "shadow": "darkslategray"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "attack",
+        "size": 56,
+        "position": {
+          "left": 211,
+          "top": 55
+        },
+        "colors": {
+          "primary": "black",
+          "tick": "antiquewhite",
+          "shadow": "darkslategray"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "regen",
+        "size": 56,
+        "position": {
+          "left": 34,
+          "top": 131
+        },
+        "colors": {
+          "primary": "black",
+          "tick": "antiquewhite",
+          "shadow": "darkslategray"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "size",
+        "size": 56,
+        "position": {
+          "left": 211,
+          "top": 131
+        },
+        "colors": {
+          "primary": "black",
+          "tick": "antiquewhite",
+          "shadow": "darkslategray"
+        },
+        "type": "brutalist"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 168,
+          "top": 13
+        },
+        "colors": {
+          "on": "#05bde4",
+          "off": "#545454aa"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "dark_bright",
+        "type": "toggle",
+        "size": 24,
+        "orientation": "horizontal",
+        "position": {
+          "left": 137,
+          "top": 110
+        }
+      },
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 38,
+          "top": 248
+        }
+      }
+    ]
+  }
+}

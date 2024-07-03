@@ -1,0 +1,57 @@
+{
+  "presets": [
+    {
+      "id": "perfect_ambient",
+      "label": "Perfect Ambient",
+      "settings": {
+        "mix": 6,
+        "mode": 2
+      }
+    },
+    {
+      "id": "mode_toggle",
+      "label": "Spring / Hall / Flerb",
+      "isSweep": true,
+      "target": "mode",
+      "values": [1, 2, 3],
+      "initialValue": 1,
+      "settings": {
+        "mix": 7
+      }
+    },
+    {
+      "id": "spring",
+      "label": "Spring",
+      "isSweep": true,
+      "target": "mix",
+      "values": [2, 4, 6, 8, 10],
+      "initialValue": 6,
+      "settings": {
+        "mode": 1
+      }
+    },
+    {
+      "id": "hall",
+      "label": "Hall",
+      "isSweep": true,
+      "target": "mix",
+      "values": [2, 4, 6, 8, 10],
+      "initialValue": 6,
+      "settings": {
+        "mode": 2
+      }
+    },
+    {
+      "id": "flerb",
+      "label": "Flerb",
+      "isSweep": true,
+      "target": "mix",
+      "values": [2, 4, 6, 8, 10],
+      "initialValue": 6,
+      "settings": {
+        "mode": 3,
+        "flerb_joke": "Nobody uses flerb ..."
+      }
+    }
+  ]
+}

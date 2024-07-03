@@ -1,0 +1,118 @@
+{
+  "name": "old-blood-noise-endeavors-excess-v2",
+  "controls": {
+    "knobs": [
+      {
+        "id": "dist_vol",
+        "size": 40,
+        "position": { "left": 27, "top": 32 },
+        "type": "obne",
+        "colors": {
+          "primary": "#515e66",
+          "secondary": "#d4d6d7",
+          "tick": "#d4d6d7",
+          "background": "#91949e"
+        }
+      },
+      {
+        "id": "tone",
+        "size": 40,
+        "position": { "left": 81, "top": 32 },
+        "type": "obne",
+        "colors": {
+          "primary": "#515e66",
+          "secondary": "#d4d6d7",
+          "tick": "#d4d6d7",
+          "background": "#91949e"
+        }
+      },
+      {
+        "id": "gain",
+        "size": 40,
+        "position": { "left": 135, "top": 32 },
+        "type": "obne",
+        "colors": {
+          "primary": "#515e66",
+          "secondary": "#d4d6d7",
+          "tick": "#d4d6d7",
+          "background": "#91949e"
+        }
+      },
+      {
+        "id": "mod_vol",
+        "size": 40,
+        "position": { "left": 27, "top": 99 },
+        "type": "obne",
+        "colors": {
+          "primary": "#515e66",
+          "secondary": "#d4d6d7",
+          "tick": "#d4d6d7",
+          "background": "#91949e"
+        }
+      },
+      {
+        "id": "time",
+        "size": 40,
+        "position": { "left": 81, "top": 99 },
+        "type": "obne",
+        "colors": {
+          "primary": "#515e66",
+          "secondary": "#d4d6d7",
+          "tick": "#d4d6d7",
+          "background": "#91949e"
+        }
+      },
+      {
+        "id": "depth",
+        "size": 40,
+        "position": { "left": 135, "top": 99 },
+        "type": "obne",
+        "colors": {
+          "primary": "#515e66",
+          "secondary": "#d4d6d7",
+          "tick": "#d4d6d7",
+          "background": "#91949e"
+        }
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 36, "position": { "left": 115, "top": 259 } },
+      {
+        "id": "mod_led",
+        "size": 36,
+        "position": { "left": 50, "top": 259 },
+        "secondaryCircuitId": "mod_circuit",
+        "colors": { "on": "#159cf3", "off": "#444444a1" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": { "left": 130, "top": 282 }
+      },
+      {
+        "id": "mod_switch",
+        "size": 48,
+        "position": { "left": 24, "top": 282 },
+        "secondaryCircuitId": "mod_circuit"
+      },
+      {
+        "id": "mod_type",
+        "type": "toggle",
+        "size": 26,
+        "position": { "left": 34, "top": 186 },
+        "highlightColor": "tertiary",
+        "orientation": "horizontal"
+      },
+      {
+        "id": "order",
+        "type": "toggle",
+        "size": 26,
+        "highlightColor": "tertiary",
+        "position": { "left": 86, "top": 186 },
+        "orientation": "horizontal"
+      }
+    ]
+  }
+}

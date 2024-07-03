@@ -1,0 +1,62 @@
+{
+  "name": "jptr-fx-super-weirdo",
+  "width": 350,
+  "height": 400,
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 68,
+        "position": { "left": 47, "top": 57 },
+        "type": "arrow"
+      },
+      {
+        "id": "swell",
+        "size": 105,
+        "position": { "left": 120, "top": 39 },
+        "type": "arrow"
+      },
+      {
+        "id": "tone",
+        "size": 68,
+        "position": { "left": 232, "top": 57 },
+        "type": "arrow"
+      },
+      {
+        "id": "time",
+        "size": 105,
+        "position": { "left": 28, "top": 143 },
+        "type": "arrow"
+      },
+      {
+        "id": "modulation",
+        "size": 105,
+        "position": { "left": 214, "top": 142 },
+        "type": "arrow"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 44,
+        "position": { "left": 152, "top": 174 },
+        "colors": { "off": "#d2e1e9a1", "on": "#d4f9ff" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 44,
+        "position": { "left": 245, "top": 307 }
+      },
+      {
+        "id": "noise_switch",
+        "size": 44,
+        "type": "stomp",
+        "isMomentary": true,
+        "secondaryCircuitId": "noise_circuit",
+        "position": { "left": 60, "top": 305 }
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "presets": [
+    {
+      "id": "ampeg_cab",
+      "label": "OwnHammer AMPG Cabinets",
+      "isSweep": true,
+      "target": "cab",
+      "values": [1, 2, 3],
+      "settings": {
+        "drive": 8,
+        "amp": 1,
+        "level": 2,
+        "bass": 7,
+        "middle": 2,
+        "treble": 4,
+        "room": 2,
+        "room_size": "small room"
+      },
+      "initialValue": 1
+    },
+    {
+      "id": "stock_cab",
+      "label": "Stock Cabinets",
+      "isSweep": true,
+      "target": "cab",
+      "values": [1, 2, 3],
+      "settings": {
+        "drive": 8,
+        "amp": 1,
+        "level": 2,
+        "bass": 7,
+        "middle": 2,
+        "treble": 4,
+        "room": 2,
+        "room_size": "small room"
+      },
+      "initialValue": 1
+    },
+    {
+      "id": "drive_knob",
+      "label": "Drive Knob",
+      "isSweep": true,
+      "target": "drive",
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "amp": 1,
+        "cab": 2,
+        "level": 2,
+        "bass": 7,
+        "middle": 2,
+        "treble": 4,
+        "room": 2,
+        "room_size": "small room"
+      },
+      "initialValue": 0
+    },
+    {
+      "id": "middle_knob",
+      "label": "Middle Knob",
+      "isSweep": true,
+      "target": "middle",
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "settings": {
+        "drive": 8,
+        "amp": 1,
+        "cab": 2,
+        "level": 2,
+        "bass": 7,
+        "treble": 4,
+        "room": 2,
+        "room_size": "small room"
+      },
+      "initialValue": 0
+    }
+  ]
+}

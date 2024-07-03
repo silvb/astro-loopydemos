@@ -1,0 +1,121 @@
+{
+  "presets": [
+    {
+      "id": "mellow_tremolo",
+      "label": "Mellow Tremolo",
+      "settings": {
+        "volume": 6,
+        "tone": 5,
+        "depth": 4,
+        "rate": 0,
+        "mode": 1,
+        "div": 3,
+        "rate_led": 350,
+        "rate_label": "Tapped tempo overwrites rate, sine wave chosen",
+        "div_label": "Tapped tempo with 8th note division"
+      }
+    },
+    {
+      "id": "chopper",
+      "label": "Chopper",
+      "settings": {
+        "volume": 7,
+        "tone": 4,
+        "depth": 8,
+        "rate": 10,
+        "mode": 1,
+        "div": 5,
+        "rate_led": 100,
+        "rate_label": "Rate knob controls tempo, square wave chosen",
+        "div_label": "Has no effect when rate knob was turned"
+      }
+    },
+    {
+      "id": "ramped_triangle",
+      "label": "Ramped Triangle",
+      "settings": {
+        "volume": 6,
+        "tone": 5,
+        "depth": 7,
+        "rate": 9,
+        "mode": 3,
+        "div": 3,
+        "rate_led": 800,
+        "rate_label": "In ramp mode, controls time to ramp up to fast tempo (triangle chosen)",
+        "div_label": "In ramp mode, controls slow and fast tempo"
+      }
+    },
+    {
+      "id": "tapped_note_division_knob",
+      "label": "Tapped Note Division Knob",
+      "isSweep": true,
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "target": "div",
+      "settings": {
+        "volume": 6,
+        "tone": 6,
+        "depth": 7,
+        "rate": 7,
+        "mode": 1,
+        "rate_led": 800,
+        "rate_label": "Declining triangle waveform chosen",
+        "div_label": "Changes note division when tempo is tapped"
+      }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone Knob",
+      "isSweep": true,
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "target": "tone",
+      "settings": {
+        "volume": 6,
+        "depth": 5,
+        "rate": 7,
+        "mode": 1,
+        "div": 5,
+        "rate_led": 300,
+        "rate_label": "Triangle waveform",
+        "div_label": "Rate knob overwrites tempo"
+      }
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth Knob",
+      "isSweep": true,
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "target": "depth",
+      "settings": {
+        "volume": 6,
+        "tone": 5,
+        "rate": 7,
+        "mode": 1,
+        "div": 5,
+        "rate_led": 300,
+        "rate_label": "Triangle waveform",
+        "div_label": "Rate knob overwrites tempo"
+      }
+    },
+    {
+      "id": "waveforms",
+      "label": "Waveform Knob",
+      "isSweep": true,
+      "initialValue": 0,
+      "values": [0, 2, 5, 7, 10],
+      "target": "rate",
+      "settings": {
+        "volume": 6,
+        "tone": 5,
+        "depth": 10,
+        "mode": 1,
+        "div": 5,
+        "rate_led": 350,
+        "rate_label": "Rate is set to 50%. Secondary function is to chose the waveform",
+        "div_label": "Has no effect when rate knob was turned"
+      }
+    }
+  ]
+}

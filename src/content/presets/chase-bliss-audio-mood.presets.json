@@ -1,0 +1,359 @@
+{
+  "presets": [
+    {
+      "id": "lofi_reverse_octave_delay",
+      "label": "Lo-fi Reverse Octave Delay",
+      "settings": {
+        "time": 2,
+        "mode_left": 3,
+        "modify_left": 0,
+        "mix": 5,
+        "clock": 4,
+        "middle_toggle": 1,
+        "microloop_led": 6000
+      }
+    },
+    {
+      "id": "rhythmic_octave_delay",
+      "label": "Rhythmic Pitch Delay",
+      "settings": {
+        "time": 8,
+        "modify_left": 10,
+        "mix": 6,
+        "clock": 8,
+        "mode_left": 3,
+        "middle_toggle": 1,
+        "microloop_led": 800
+      }
+    },
+    {
+      "id": "oomph_fuzz",
+      "label": "Oomph Fuzz",
+      "settings": {
+        "time": 0,
+        "modify_left": 10,
+        "mix": 8,
+        "clock": 10,
+        "mode_left": 2,
+        "middle_toggle": 1,
+        "microloop_led": 500
+      }
+    },
+    {
+      "id": "gooey_modulation",
+      "label": "Gooey Modulation",
+      "settings": {
+        "mode_left": 2,
+        "time": 1,
+        "modify_left": 5,
+        "mix": 4,
+        "clock": 9,
+        "middle_toggle": 1,
+        "microloop_led": 550,
+        "cba_dip_switches": [
+          true,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "id": "grainy_reverb",
+      "label": "Grainy Reverb",
+      "settings": {
+        "mode_left": 2,
+        "modify_left": 10,
+        "time": 2,
+        "mix": 4,
+        "clock": 2,
+        "microloop_led": 12000,
+        "middle_toggle": 1
+      }
+    },
+    {
+      "id": "stretch_micro_loop",
+      "label": "Stretch Micro Loop",
+      "settings": {
+        "time": 2,
+        "modify_left": 3,
+        "mode_left": 3,
+        "mix": 5,
+        "clock": 4,
+        "length": 10,
+        "modify_right": 4,
+        "mode_right": 3,
+        "microloop_led": true,
+        "middle_toggle": 3
+      }
+    },
+    {
+      "id": "grainy_octave_up",
+      "label": "Grainy Octave Up",
+      "settings": {
+        "time": 0,
+        "modify_left": 10,
+        "mode_left": 3,
+        "mix": 5,
+        "clock": 10,
+        "microloop_led": 500,
+        "middle_toggle": 1
+      }
+    },
+    {
+      "id": "bouncy_reverb",
+      "label": "Bouncy Reverb",
+      "settings": {
+        "time": 10,
+        "modify_left": 0,
+        "mode_left": 1,
+        "mix": 5,
+        "clock": 8,
+        "microloop_led": 800,
+        "middle_toggle": 1
+      }
+    },
+    {
+      "id": "level_up_sound",
+      "label": "Pixy Dust",
+      "settings": {
+        "time": 10,
+        "modify_left": 0,
+        "mix": 5,
+        "mode_left": 1,
+        "clock": 10,
+        "microloop_led": 500,
+        "middle_toggle": 1,
+        "cba_dip_switches": [
+          false,
+          false,
+          false,
+          true,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "id": "creepy_harmonics",
+      "label": "Creepy Harmonics",
+      "settings": {
+        "time": 0,
+        "modify_left": 7,
+        "mode_left": 3,
+        "mix": 8,
+        "clock": 9,
+        "microloop_led": 600,
+        "middle_toggle": 1
+      }
+    },
+    {
+      "id": "celery_man",
+      "label": "Celery Man*",
+      "settings": {
+        "time": 2,
+        "modify_left": 9,
+        "mix": 4,
+        "clock": 6,
+        "length": 10,
+        "modify_right": 6,
+        "microloop_led": true,
+        "mode_left": 2,
+        "middle_toggle": 3,
+        "mode_right": 2,
+        "cba_dip_switches": [
+          false,
+          true,
+          true,
+          false,
+          true,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          true,
+          false
+        ]
+      }
+    },
+    {
+      "id": "glow_bones",
+      "label": "Glow Bones*",
+      "settings": {
+        "time": 9,
+        "modify_left": 2,
+        "mix": 6,
+        "clock": 7,
+        "microloop_led": true,
+        "mode_left": 1,
+        "middle_toggle": 1,
+        "mode_right": 2,
+        "length": 4,
+        "modify_right": 7,
+        "cba_dip_switches": [
+          true,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "all_the_food_is_poison",
+      "label": "All The Food Is Poison*",
+      "settings": {
+        "time": 5,
+        "mix": 3,
+        "length": 10,
+        "modify_left": 7,
+        "clock": 10,
+        "modify_right": 0,
+        "mode_left": 3,
+        "middle_toggle": 1,
+        "mode_right": 2,
+        "microloop_led": true,
+        "cba_dip_switches": [
+          false,
+          false,
+          true,
+          false,
+          false,
+          true,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          true
+        ]
+      }
+    },
+    {
+      "id": "nude_tayne",
+      "label": "Nude Tayne*",
+      "settings": {
+        "time": 0,
+        "mix": 2,
+        "length": 4,
+        "modify_left": 10,
+        "clock": 3,
+        "modify_right": 7,
+        "mode_left": 2,
+        "middle_toggle": 1,
+        "mode_right": 2,
+        "microloop_led": true,
+        "cba_dip_switches": [
+          false,
+          false,
+          false,
+          true,
+          false,
+          true,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false,
+          false
+        ]
+      }
+    },
+    {
+      "id": "tittlemans_crest",
+      "label": "Tittleman's Crest*",
+      "settings": {
+        "time": 2,
+        "mix": 8,
+        "length": 10,
+        "modify_left": 6,
+        "clock": 5,
+        "modify_right": 2,
+        "mode_left": 2,
+        "middle_toggle": 3,
+        "mode_right": 1,
+        "microloop_led": true
+      }
+    },
+    {
+      "id": "business_hugs",
+      "label": "Business Hugs*",
+      "settings": {
+        "time": 4,
+        "mix": 8,
+        "length": 10,
+        "modify_left": 7,
+        "clock": 5,
+        "modify_right": 4,
+        "mode_left": 1,
+        "middle_toggle": 2,
+        "mode_right": 2,
+        "microloop_led": true,
+        "cba_dip_switches": [
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          false,
+          true,
+          false
+        ]
+      }
+    }
+  ]
+}

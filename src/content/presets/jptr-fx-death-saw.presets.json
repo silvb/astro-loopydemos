@@ -1,0 +1,51 @@
+{
+  "presets": [
+    { "id": "death_saw", "label": "Ultimate Chainsaw" },
+    {
+      "id": "shoegaze",
+      "label": "Reverb Before (Shoegaze)",
+      "settings": {},
+      "chain": [
+        {
+          "name": "jptr-fx-death-saw",
+          "id": "deathsaw",
+          "settings": {}
+        },
+        {
+          "name": "catalinbread-sinkhole",
+          "id": "sinkhole",
+          "settings": {
+            "fdbck": 6,
+            "mod": 6,
+            "verb": 5,
+            "mix": 6,
+            "vol": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "chug",
+      "label": "EQ After (Chug)",
+      "chain": [
+        {
+          "name": "mask-audio-electronics-line-blur",
+          "id": "lineblur",
+          "settings": {
+            "low": 6,
+            "mid": 0,
+            "hi": 6,
+            "loud": 5,
+            "freq": 10,
+            "more": 5
+          }
+        },
+        {
+          "name": "jptr-fx-death-saw",
+          "id": "deathsaw",
+          "settings": {}
+        }
+      ]
+    }
+  ]
+}

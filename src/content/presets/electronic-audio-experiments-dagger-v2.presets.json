@@ -1,0 +1,60 @@
+{
+  "presets": [
+    {
+      "id": "articulate_drive",
+      "label": "Articulate Drive",
+      "settings": { "volume": 7, "drive": 7, "low": 7, "high": 7, "shift": 3 }
+    },
+    {
+      "id": "wall_of_fuzz",
+      "label": "Wall of Fuzz",
+      "settings": { "volume": 6, "drive": 10, "low": 5, "high": 10, "shift": 1 }
+    },
+    {
+      "id": "tasty_distortion",
+      "label": "Tasty Distortion",
+      "settings": { "volume": 6, "drive": 5, "low": 3, "high": 8, "shift": 1 }
+    },
+    {
+      "id": "sweet_low_gain",
+      "label": "Sweet Low Gain",
+      "settings": { "volume": 6, "drive": 2, "low": 5, "high": 7, "shift": 3 }
+    },
+    {
+      "id": "drive_knob_thick",
+      "label": "Drive (thick shift)",
+      "isSweep": true,
+      "target": "drive",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "volume": 6, "low": 4, "high": 8, "shift": 1 }
+    },
+    {
+      "id": "drive_knob_tight",
+      "label": "Drive (tight shift)",
+      "isSweep": true,
+      "target": "drive",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "volume": 6, "low": 4, "high": 8, "shift": 3 }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Low",
+      "isSweep": true,
+      "target": "low",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "volume": 6, "drive": 8, "high": 8, "shift": 3 }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Highs",
+      "isSweep": true,
+      "target": "high",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "volume": 6, "drive": 7, "low": 4, "shift": 1 }
+    }
+  ]
+}

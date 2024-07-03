@@ -1,0 +1,102 @@
+{
+  "presets": [
+    {
+      "id": "medium_crunch",
+      "label": "Medium Crunch",
+      "settings": {
+        "level": 6,
+        "filter": 8,
+        "gain": 7,
+        "clip": 3
+      }
+    },
+    {
+      "id": "shoegaze",
+      "label": "Will it Shoegaze?",
+      "chain": [
+        {
+          "name": "black-mass-electronics-1312-distortion-v3",
+          "id": "1312",
+          "settings": {
+            "level": 7,
+            "filter": 5,
+            "gain": 7,
+            "clip": 4
+          }
+        },
+        {
+          "name": "walrus_audio_slo",
+          "id": "slo",
+          "settings": {
+            "decay": 6,
+            "filter": 4,
+            "mix": 6,
+            "depth": 7,
+            "mode": 3,
+            "wave": "sink"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sparkly_low_gain",
+      "label": "Sparkly Low Gain",
+      "settings": {
+        "level": 6,
+        "filter": 6,
+        "gain": 1,
+        "clip": 5
+      }
+    },
+
+    {
+      "id": "high_gain",
+      "label": "High Gain",
+      "settings": {
+        "level": 6,
+        "filter": 7,
+        "gain": 10,
+        "clip": 7
+      }
+    },
+    {
+      "id": "clipping_options",
+      "label": "Clipping Options",
+      "isSweep": true,
+      "target": "clip",
+      "initialValue": 1,
+      "values": [1, 2, 3, 4, 5, 6, 7, 8],
+      "settings": {
+        "level": 6,
+        "filter": 7,
+        "gain": 6
+      }
+    },
+    {
+      "id": "gain_range",
+      "label": "Gain Range",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "level": 6,
+        "filter": 7,
+        "clip": 2
+      }
+    },
+    {
+      "id": "filter_sweep",
+      "label": "Filter Sweep",
+      "isSweep": true,
+      "target": "filter",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "level": 6,
+        "gain": 5,
+        "clip": 6
+      }
+    }
+  ]
+}

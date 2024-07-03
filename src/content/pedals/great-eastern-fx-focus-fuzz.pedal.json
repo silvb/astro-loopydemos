@@ -1,0 +1,58 @@
+{
+  "name": "great-eastern-fx-focus-fuzz",
+  "controls": {
+    "knobs": [
+      {
+        "id": "fuzz",
+        "size": 74,
+        "position": {
+          "left": 19,
+          "top": 32
+        },
+        "type": "arrow"
+      },
+      {
+        "id": "focus",
+        "size": 74,
+        "position": {
+          "left": 109,
+          "top": 76
+        },
+        "type": "arrow"
+      },
+      {
+        "id": "level",
+        "size": 74,
+        "position": {
+          "left": 18,
+          "top": 121
+        },
+        "type": "arrow"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 50,
+        "position": {
+          "left": 127,
+          "top": 270
+        },
+        "colors": {
+          "on": "#ffa300",
+          "off": "#2c2c2cee"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 76,
+          "top": 271
+        }
+      }
+    ]
+  }
+}

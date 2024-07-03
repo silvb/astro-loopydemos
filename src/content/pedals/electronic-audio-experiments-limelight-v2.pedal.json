@@ -1,0 +1,90 @@
+{
+  "name": "electronic-audio-experiments-limelight-v2",
+  "width": 300,
+  "height": 350,
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 64,
+        "position": {
+          "left": 37,
+          "top": 39
+        },
+        "type": "fairfield",
+        "colors": {
+          "background": "#16171b",
+          "primary": "#383b49"
+        }
+      },
+      {
+        "id": "tone",
+        "size": 64,
+        "position": {
+          "left": 121,
+          "top": 39
+        },
+        "type": "fairfield",
+        "colors": {
+          "background": "#16171b",
+          "primary": "#383b49"
+        }
+      },
+      {
+        "id": "gain",
+        "size": 64,
+        "position": {
+          "left": 206,
+          "top": 39
+        },
+        "type": "fairfield",
+        "colors": {
+          "background": "#16171b",
+          "primary": "#383b49"
+        }
+      },
+      {
+        "id": "boost",
+        "size": 64,
+        "position": {
+          "left": 204,
+          "top": 123
+        },
+        "type": "fairfield",
+        "colors": {
+          "background": "#16171b",
+          "primary": "#383b49"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 60,
+        "position": {
+          "left": 35,
+          "top": 199
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": {
+          "left": 39,
+          "top": 273
+        }
+      },
+      {
+        "id": "focus",
+        "type": "toggle",
+        "size": 32,
+        "position": {
+          "left": 49,
+          "top": 143
+        }
+      }
+    ]
+  }
+}

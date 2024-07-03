@@ -1,0 +1,124 @@
+{
+  "name": "native-audio-wilderness",
+  "controls": {
+    "knobs": [
+      {
+        "id": "mix",
+        "size": 46,
+        "position": {
+          "left": 13,
+          "top": 32
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "m_depth",
+        "size": 46,
+        "position": {
+          "left": 74,
+          "top": 33
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "m_rate",
+        "size": 46,
+        "position": {
+          "left": 134,
+          "top": 33
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "feedback",
+        "size": 46,
+        "position": {
+          "left": 13,
+          "top": 114
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "div",
+        "size": 46,
+        "position": {
+          "left": 134,
+          "top": 113
+        },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 46,
+        "socket": false,
+        "position": {
+          "left": 57,
+          "top": 268
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff"
+        }
+      },
+      {
+        "id": "rate_led",
+        "size": 46,
+        "socket": false,
+        "position": {
+          "left": 91,
+          "top": 268
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff"
+        },
+        "isBlinking": true
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 16,
+          "top": 268
+        }
+      },
+      {
+        "id": "mode",
+        "size": 30,
+        "type": "toggle",
+        "position": {
+          "left": 82,
+          "top": 120
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "fast_label",
+        "position": {
+          "left": 156,
+          "top": 201
+        },
+        "labelPosition": {
+          "left": 195,
+          "top": 270
+        }
+      },
+      {
+        "id": "rtime_label",
+        "position": {
+          "left": 156,
+          "top": 94
+        },
+        "labelPosition": {
+          "left": 195,
+          "top": 135
+        }
+      }
+    ]
+  }
+}

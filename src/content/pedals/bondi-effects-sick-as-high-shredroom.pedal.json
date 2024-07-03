@@ -1,0 +1,53 @@
+{
+  "name": "bondi-effects-sick-as-high-shredroom",
+  "enclosure": "landscape",
+  "controls": {
+    "knobs": [
+      {
+        "id": "level",
+        "size": 60,
+        "position": { "left": 265, "top": 52 },
+        "type": "bakelit"
+      },
+      {
+        "id": "gain",
+        "size": 60,
+        "position": { "left": 28, "top": 50 },
+        "type": "bakelit"
+      },
+      {
+        "id": "bass",
+        "size": 60,
+        "position": { "left": 107, "top": 50 },
+        "type": "bakelit"
+      },
+      {
+        "id": "treble",
+        "size": 60,
+        "position": { "left": 186, "top": 51 },
+        "type": "bakelit"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "position": { "left": 239, "top": 130 },
+        "colors": { "on": "#ff0efc" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": { "left": 151, "top": 214 }
+      },
+      {
+        "id": "mode",
+        "type": "toggle",
+        "size": 28,
+        "position": { "left": 80, "top": 128 }
+      }
+    ]
+  }
+}

@@ -1,0 +1,74 @@
+{
+  "name": "freqscene-effects-nouveau-riche",
+  "enclosure": "landscape",
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol",
+        "size": 56,
+        "position": { "left": 33, "top": 134 },
+        "type": "bakelit",
+        "colors": {
+          "primary": "#cd85d5",
+          "secondary": "#95619e",
+          "tick": "#151616"
+        }
+      },
+      {
+        "id": "gain",
+        "size": 56,
+        "position": { "left": 107, "top": 134 },
+        "type": "bakelit",
+        "colors": {
+          "primary": "#cd85d5",
+          "secondary": "#95619e",
+          "tick": "#151616"
+        }
+      },
+      {
+        "id": "freq",
+        "size": 56,
+        "position": { "left": 33, "top": 206 },
+        "type": "bakelit",
+        "colors": {
+          "primary": "#cd85d5",
+          "secondary": "#95619e",
+          "tick": "#151616"
+        }
+      },
+      {
+        "id": "voice",
+        "size": 56,
+        "position": { "left": 107, "top": 206 },
+        "type": "bakelit",
+        "colors": {
+          "primary": "#cd85d5",
+          "secondary": "#95619e",
+          "tick": "#151616"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 40,
+        "position": { "left": 79, "top": 226 },
+        "colors": { "on": "#fb00ff" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": { "left": 258, "top": 207 }
+      },
+      {
+        "id": "mode",
+        "type": "threeway",
+        "size": 32,
+        "position": { "left": 193, "top": 180 },
+        "orientation": "vertical"
+      }
+    ]
+  }
+}

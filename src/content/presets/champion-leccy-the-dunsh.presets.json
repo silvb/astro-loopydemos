@@ -1,0 +1,163 @@
+{
+  "presets": [
+    {
+      "id": "extremely_gated",
+      "label": "Extremely Gated",
+      "settings": {
+        "level": 5,
+        "bass": 6,
+        "treble": 8,
+        "bias": 10,
+        "dunsh": 7,
+        "gain": 4,
+        "bass_toggle": 1,
+        "gate": 1,
+        "treble_toggle": 3,
+        "dunsh_led": true
+      }
+    },
+    {
+      "id": "full_bodied_drive",
+      "label": "Full-bodied Drive",
+      "settings": {
+        "level": 5,
+        "bass": 7,
+        "treble": 9,
+        "bias": 2,
+        "dunsh": 5,
+        "gain": 8,
+        "bass_toggle": 3,
+        "gate": 3,
+        "treble_toggle": 3,
+        "dunsh_led": false
+      }
+    },
+    {
+      "id": "fizzy_velcro",
+      "label": "Fizzy Velcro",
+      "settings": {
+        "level": 5,
+        "bass": 3,
+        "treble": 8,
+        "bias": 8,
+        "dunsh": 6,
+        "gain": 7,
+        "bass_toggle": 1,
+        "gate": 1,
+        "treble_toggle": 2,
+        "dunsh_led": true
+      }
+    },
+    {
+      "id": "quacky_fuzz",
+      "label": "Quacky Fuzz",
+      "settings": {
+        "level": 5,
+        "bass": 4,
+        "treble": 8,
+        "bias": 10,
+        "dunsh": 5,
+        "gain": 10,
+        "bass_toggle": 3,
+        "gate": 2,
+        "treble_toggle": 1,
+        "dunsh_led": true
+      }
+    },
+    {
+      "id": "bass_toggle",
+      "label": "B Toggle",
+      "isSweep": true,
+      "target": "bass_toggle",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "level": 5,
+        "bass": 10,
+        "treble": 8,
+        "bias": 5,
+        "dunsh": 5,
+        "gain": 8,
+        "gate": 3,
+        "treble_toggle": 2,
+        "dunsh_led": true
+      }
+    },
+    {
+      "id": "gate_toggle",
+      "label": "Gate Toggle",
+      "isSweep": true,
+      "target": "gate",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "level": 5,
+        "bass": 7,
+        "treble": 7,
+        "bias": 10,
+        "dunsh": 6,
+        "gain": 5,
+        "bass_toggle": 3,
+        "treble_toggle": 3,
+        "dunsh_led": true
+      }
+    },
+    {
+      "id": "treble_toggle",
+      "label": "Treble Toggle",
+      "isSweep": true,
+      "target": "treble_toggle",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "level": 5,
+        "bass": 6,
+        "treble": 10,
+        "bias": 0,
+        "dunsh": 5,
+        "gain": 8,
+        "bass_toggle": 1,
+        "gate_toggle": 1,
+        "dunsh_led": false
+      }
+    },
+    {
+      "id": "bias_knob",
+      "label": "Bias",
+      "isSweep": true,
+      "target": "bias",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "level": 5,
+        "bass": 6,
+        "treble": 6,
+        "dunsh": 5,
+        "gain": 4,
+        "bass_toggle": 3,
+        "gate_toggle": 1,
+        "treble_toggle": 2,
+        "dunsh_led": true
+      }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "level": 5,
+        "bass": 7,
+        "treble": 8,
+        "bias": 0,
+        "dunsh": 5,
+        "bass_toggle": 1,
+        "gate_toggle": 3,
+        "treble_toggle": 2,
+        "dunsh_led": false
+      }
+    }
+  ]
+}

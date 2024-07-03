@@ -1,0 +1,54 @@
+{
+  "presets": [
+    {
+      "id": "eighth_note",
+      "label": "8th Note",
+      "settings": { "rate": 3, "echo": 6, "intensity": 6, "mode": 1 }
+    },
+    {
+      "id": "slap_back",
+      "label": "Slap Back",
+      "settings": { "rate": 7, "echo": 5, "intensity": 0, "mode": 1 }
+    },
+    {
+      "id": "dotted_eighth",
+      "label": "Dotted 8th",
+      "settings": { "rate": 1, "echo": 6, "intensity": 5, "mode": 1 }
+    },
+    {
+      "id": "bathroom_reverb",
+      "label": "Bathroom Delay",
+      "settings": { "rate": 9, "echo": 6, "intensity": 8, "mode": 1 }
+    },
+
+    {
+      "id": "fake_spring_reverb",
+      "label": "Fake Spring Reverb",
+      "settings": { "rate": 7, "echo": 6, "intensity": 6, "mode": 1 }
+    },
+    {
+      "id": "quarter_note",
+      "label": "Quarter Note",
+      "settings": { "rate": 5, "echo": 4, "intensity": 4, "mode": 2 }
+    },
+    {
+      "id": "mode_toggle",
+      "label": "Standard vs. Custom Mode",
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 2],
+      "settings": { "rate": 5, "echo": 5, "intensity": 5 }
+    },
+    {
+      "id": "maximum_delay",
+      "label": "Looong Delay",
+      "settings": { "rate": 0, "echo": 4, "intensity": 3, "mode": 2 }
+    },
+    {
+      "id": "ambient_fast_delay",
+      "label": "Ambient Fast Delay",
+      "settings": { "rate": 6, "echo": 5, "intensity": 7, "mode": 1 }
+    }
+  ]
+}

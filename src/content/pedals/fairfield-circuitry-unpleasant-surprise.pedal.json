@@ -1,0 +1,64 @@
+{
+  "name": "fairfield-circuitry-unpleasant-surprise",
+  "enclosure": "landscape",
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 68,
+        "position": { "left": 22, "top": 65 },
+        "colors": { "background": "#949494", "primary": "#1F1B1C" },
+        "type": "fairfield"
+      },
+      {
+        "id": "onset",
+        "size": 68,
+        "position": { "left": 113, "top": 65 },
+        "colors": { "background": "#999", "primary": "#1F1B1C" },
+        "type": "fairfield"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 60,
+        "position": { "left": 194, "top": 158 },
+        "colors": { "on": "#fd6900" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": { "left": 267, "top": 163 }
+      },
+      {
+        "id": "t",
+        "type": "toggle",
+        "size": 36,
+        "position": {
+          "left": 40,
+          "top": 169
+        }
+      },
+      {
+        "id": "g",
+        "type": "toggle",
+        "size": 36,
+        "position": {
+          "left": 86,
+          "top": 169
+        }
+      },
+      {
+        "id": "c",
+        "type": "toggle",
+        "size": 36,
+        "position": {
+          "left": 128,
+          "top": 169
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,76 @@
+{
+  "name": "bleak-district-electric-rec-head-v2",
+  "presentationColors": {
+    "background": "#414b53",
+    "primary": "#d9d9d6",
+    "primaryHighlight": "#600a06"
+  },
+  "controls": {
+    "knobs": [
+      {
+        "id": "sens",
+        "size": 60,
+        "position": {
+          "left": 27,
+          "top": 47
+        },
+        "colors": {
+          "primary": "#d60608",
+          "tick": "ghostwhite",
+          "secondary": "#960905"
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "character",
+        "size": 60,
+        "position": {
+          "left": 26,
+          "top": 132
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "tape_return",
+        "size": 60,
+        "position": {
+          "left": 25,
+          "top": 214
+        },
+        "type": "bakelit"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 120,
+          "top": 205
+        },
+        "colors": {
+          "on": "#7fc6db"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 116,
+          "top": 274
+        }
+      },
+      {
+        "id": "kill_dry",
+        "type": "toggle",
+        "size": 36,
+        "position": {
+          "left": 125,
+          "top": 142
+        }
+      }
+    ]
+  }
+}

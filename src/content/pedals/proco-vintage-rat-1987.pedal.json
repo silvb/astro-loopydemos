@@ -1,0 +1,75 @@
+{
+  "name": "proco-vintage-rat-1987",
+  "width": 300,
+  "height": 350,
+  "presentationColors": {
+    "primary": "tomato",
+    "background": "#4c4c4c"
+  },
+  "controls": {
+    "knobs": [
+      {
+        "id": "distortion",
+        "size": 66,
+        "position": {
+          "left": 26,
+          "top": 70
+        },
+        "type": "brutalist",
+        "colors": {
+          "primary": "#131313",
+          "tick": "#FFF",
+          "shadow": "#4c4c4c"
+        }
+      },
+      {
+        "id": "filter",
+        "size": 66,
+        "position": {
+          "left": 114,
+          "top": 69
+        },
+        "type": "brutalist",
+        "colors": {
+          "primary": "#131313",
+          "tick": "#FFF",
+          "shadow": "#4c4c4c"
+        }
+      },
+      {
+        "id": "volume",
+        "size": 66,
+        "position": {
+          "left": 202,
+          "top": 69
+        },
+        "type": "brutalist",
+        "colors": {
+          "primary": "#131313",
+          "tick": "#FFF",
+          "shadow": "#4c4c4c"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 42,
+        "position": {
+          "left": 155,
+          "top": 171
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 52,
+        "position": {
+          "left": 126,
+          "top": 244
+        }
+      }
+    ]
+  }
+}

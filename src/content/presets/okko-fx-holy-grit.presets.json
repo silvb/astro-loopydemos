@@ -1,0 +1,126 @@
+{
+  "presets": [
+    {
+      "id": "cranked_tweed",
+      "label": "Cranked Tweed",
+      "settings": {
+        "fuzz": 10,
+        "level": 3,
+        "bass": 6,
+        "treble": 6,
+        "bias": 2
+      }
+    },
+    {
+      "id": "light_breakup",
+      "label": "Light Breakup",
+      "settings": {
+        "fuzz": 4,
+        "level": 3,
+        "bass": 4,
+        "treble": 6,
+        "bias": 3
+      }
+    },
+    {
+      "id": "sweet_fuzz",
+      "label": "Sweet Fuzz",
+      "settings": {
+        "fuzz": 10,
+        "level": 3,
+        "bass": 10,
+        "treble": 8,
+        "bias": 1
+      }
+    },
+    {
+      "id": "boost",
+      "label": "Boost",
+      "settings": {
+        "fuzz": 0,
+        "level": 10,
+        "bass": 7,
+        "treble": 10,
+        "bias": 1
+      }
+    },
+    {
+      "id": "crunchy",
+      "label": "Crunchy",
+      "settings": {
+        "fuzz": 8,
+        "level": 3,
+        "bass": 6,
+        "treble": 10,
+        "bias": 3
+      }
+    },
+    {
+      "id": "light_gain",
+      "label": "Light Gain",
+      "settings": {
+        "fuzz": 8,
+        "level": 3,
+        "bass": 5,
+        "treble": 5,
+        "bias": 1
+      }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass Knob",
+      "isSweep": true,
+      "target": "bass",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0,
+      "settings": {
+        "fuzz": 8,
+        "level": 3,
+        "treble": 5,
+        "bias": 2
+      }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble Knob",
+      "isSweep": true,
+      "target": "treble",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0,
+      "settings": {
+        "fuzz": 7,
+        "level": 3,
+        "bass": 5,
+        "bias": 1
+      }
+    },
+    {
+      "id": "fuzz_knob",
+      "label": "Fuzz Knob",
+      "isSweep": true,
+      "target": "fuzz",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0,
+      "settings": {
+        "level": 3,
+        "bass": 7,
+        "treble": 6,
+        "bias": 2
+      }
+    },
+    {
+      "id": "bias_toggle",
+      "label": "Bias Toggle",
+      "isSweep": true,
+      "target": "bias",
+      "values": [1, 2, 3],
+      "initialValue": 1,
+      "settings": {
+        "fuzz": 7,
+        "level": 3,
+        "bass": 5,
+        "treble": 5
+      }
+    }
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "name": "zvex-effects-woolly-mammoth",
+  "enclosure": "landscape",
+  "controls": {
+    "knobs": [
+      {
+        "id": "output",
+        "size": 60,
+        "position": { "left": 30, "top": 67 },
+        "type": "jhs"
+      },
+      {
+        "id": "eq",
+        "size": 60,
+        "position": { "left": 108, "top": 67 },
+        "type": "jhs"
+      },
+      {
+        "id": "pinch",
+        "size": 60,
+        "position": { "left": 183, "top": 67 },
+        "type": "jhs"
+      },
+      {
+        "id": "wool",
+        "size": 60,
+        "position": { "left": 259, "top": 67 },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 32, "position": { "left": 157, "top": 55 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": { "left": 149, "top": 167 }
+      }
+    ]
+  }
+}

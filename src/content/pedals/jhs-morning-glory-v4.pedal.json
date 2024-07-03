@@ -1,0 +1,123 @@
+{
+  "name": "jhs-morning-glory-v4",
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 58,
+        "position": {
+          "top": 25,
+          "left": 27
+        },
+        "type": "jhs",
+        "colors": {
+          "primary": "#fff",
+          "secondary": "lightslategray",
+          "tick": "#000"
+        }
+      },
+      {
+        "id": "drive",
+        "size": 58,
+        "position": {
+          "top": 25,
+          "left": 116
+        },
+        "type": "jhs",
+        "colors": {
+          "primary": "#fff",
+          "secondary": "lightslategray",
+          "tick": "#000"
+        }
+      },
+      {
+        "id": "tone",
+        "size": 58,
+        "position": {
+          "top": 102,
+          "left": 116
+        },
+        "type": "jhs",
+        "colors": {
+          "primary": "#fff",
+          "secondary": "lightslategray",
+          "tick": "#000"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 46,
+        "position": {
+          "top": 283,
+          "left": 130
+        },
+        "socket": true,
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff",
+          "socket": "black"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 46,
+        "position": {
+          "top": 283,
+          "left": 77
+        }
+      },
+      {
+        "id": "gain",
+        "type": "toggle",
+        "size": 30,
+        "position": {
+          "top": 117,
+          "left": 42
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "high_cut",
+        "position": {
+          "top": 130,
+          "left": 185
+        },
+        "labelPosition": {
+          "top": 50,
+          "left": 205
+        }
+      }
+    ],
+    "dependencies": [
+      {
+        "source": "gain",
+        "target": {
+          "id": "on_led",
+          "values": [
+            {
+              "sourceValue": 1,
+              "colors": {
+                "on": "#f73333",
+                "off": "#800000a1",
+                "socket": "black"
+              }
+            },
+            {
+              "sourceValue": 3,
+              "colors": {
+                "off": "#d2e1e9a1",
+                "on": "#d4f9ff",
+                "socket": "black"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

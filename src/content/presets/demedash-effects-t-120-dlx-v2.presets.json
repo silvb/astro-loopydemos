@@ -1,0 +1,134 @@
+{
+  "presets": [
+    {
+      "id": "subtle_warble",
+      "label": "Subtle Warble",
+      "settings": {
+        "time": 0,
+        "mix": 7,
+        "intensity": 8,
+        "depth": 1,
+        "speed": 4,
+        "tape_quality": 3,
+        "glide": 1,
+        "randomize": 7,
+        "mod_led": 900
+      }
+    },
+    {
+      "id": "vintage_delay",
+      "label": "Vintage Delay",
+      "settings": {
+        "time": 0,
+        "mix": 7,
+        "intensity": 5,
+        "depth": 2,
+        "speed": 1,
+        "tape_quality": 5,
+        "glide": 8,
+        "randomize": 2,
+        "mod_led": 3000
+      }
+    },
+    {
+      "id": "worn_out_tape",
+      "label": "Worn Out Tape",
+      "settings": {
+        "time": 0,
+        "mix": 7,
+        "intensity": 3,
+        "depth": 2,
+        "speed": 4,
+        "tape_quality": 0,
+        "glide": 2,
+        "randomize": 8,
+        "mod_led": 900
+      }
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "time": 0,
+        "mix": 7,
+        "intensity": 5,
+        "speed": 2,
+        "tape_quality": 5,
+        "glide": 2,
+        "randomize": 2
+      }
+    },
+    {
+      "id": "speed_knob",
+      "label": "Speed",
+      "isSweep": true,
+      "target": "speed",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "time": 0,
+        "mix": 7,
+        "intensity": 5,
+        "depth": 2,
+        "tape_quality": 5,
+        "glide": 2,
+        "randomize": 2
+      }
+    },
+    {
+      "id": "glide_knob",
+      "label": "Glide",
+      "isSweep": true,
+      "target": "glide",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "time": 0,
+        "mix": 7,
+        "intensity": 5,
+        "depth": 3,
+        "speed": 3,
+        "tape_quality": 5,
+        "randomize": 10
+      }
+    },
+    {
+      "id": "randomize_knob",
+      "label": "Randomize",
+      "isSweep": true,
+      "target": "randomize",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "time": 0,
+        "mix": 7,
+        "intensity": 5,
+        "depth": 3,
+        "glide": 0,
+        "speed": 3,
+        "tape_quality": 5
+      }
+    },
+    {
+      "id": "tape_quality_knob",
+      "label": "Tape Quality",
+      "isSweep": true,
+      "target": "tape_quality",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "time": 0,
+        "mix": 7,
+        "intensity": 7,
+        "depth": 1,
+        "glide": 0,
+        "speed": 3,
+        "randomize": 10
+      }
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "presets": [
+    {
+      "id": "cranked_inner_speaker",
+      "label": "Cranked InnerSpeaker",
+      "settings": { "cmp": 9, "drt": 10, "lvl": 5 }
+    },
+    {
+      "id": "squashed_boost",
+      "label": "Squashed Boost",
+      "settings": { "cmp": 10, "drt": 0, "lvl": 3 }
+    },
+    {
+      "id": "easy_drive",
+      "label": "Easy Drive",
+      "settings": { "cmp": 5, "drt": 2, "lvl": 5 }
+    },
+    {
+      "id": "clean_boost",
+      "label": "Clean Boost",
+      "settings": { "cmp": 5, "drt": 0, "lvl": 8 }
+    },
+    {
+      "id": "cmp_knob",
+      "label": "CMP",
+      "isSweep": true,
+      "target": "cmp",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 9, 10],
+      "settings": { "drt": 2, "lvl": 3 }
+    },
+    {
+      "id": "drt_knob",
+      "label": "DRT",
+      "isSweep": true,
+      "target": "drt",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "cmp": 8, "lvl": 5 }
+    },
+    {
+      "id": "lvl_knob",
+      "label": "LVL",
+      "isSweep": true,
+      "target": "lvl",
+      "initialValue": 2,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "drt": 7, "cmp": 7 }
+    }
+  ]
+}

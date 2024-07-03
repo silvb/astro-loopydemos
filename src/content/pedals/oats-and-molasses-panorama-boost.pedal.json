@@ -1,0 +1,57 @@
+{
+  "name": "oats-and-molasses-panorama-boost",
+  "width": 195,
+  "height": 310,
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 84,
+        "position": {
+          "left": 18,
+          "top": 6
+        },
+        "type": "fairfield",
+        "colors": {
+          "primary": "#5d2b2c",
+          "tick": "oldlace",
+          "background": "silver"
+        }
+      },
+      {
+        "id": "gain",
+        "size": 84,
+        "position": {
+          "left": 104,
+          "top": 6
+        },
+        "type": "fairfield",
+        "colors": {
+          "primary": "#5d2b2c",
+          "tick": "oldlace",
+          "background": "silver"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 50,
+        "position": {
+          "left": 80,
+          "top": 64
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 76,
+          "top": 197
+        }
+      }
+    ]
+  }
+}

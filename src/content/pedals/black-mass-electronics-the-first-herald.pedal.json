@@ -1,0 +1,145 @@
+{
+  "name": "black-mass-electronics-the-first-herald",
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 44,
+        "position": {
+          "left": 22,
+          "top": 30
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "tone",
+        "size": 44,
+        "position": {
+          "left": 76,
+          "top": 30
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "scoop",
+        "size": 44,
+        "position": {
+          "left": 129,
+          "top": 30
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "sustain",
+        "size": 44,
+        "position": {
+          "left": 22,
+          "top": 114
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "boost",
+        "size": 44,
+        "position": {
+          "left": 129,
+          "top": 114
+        },
+        "type": "walrus"
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 52,
+        "position": {
+          "left": 19,
+          "top": 293
+        }
+      },
+      {
+        "id": "clip",
+        "type": "toggle",
+        "size": 30,
+        "position": {
+          "left": 86,
+          "top": 122
+        },
+        "orientation": "horizontal"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 44,
+        "position": {
+          "left": 24,
+          "top": 255
+        },
+        "colors": {
+          "off": "#ffffff00",
+          "on": "#d4f9ff"
+        }
+      },
+      {
+        "id": "boost_led",
+        "size": 44,
+        "position": {
+          "left": 131,
+          "top": 255
+        },
+        "colors": {
+          "off": "#ffffff00",
+          "on": "#ff2700"
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "clip_label",
+        "position": {
+          "left": 103,
+          "top": 163
+        },
+        "labelPosition": {
+          "left": 198,
+          "top": 230
+        },
+        "color": "salmon"
+      },
+      {
+        "id": "order_label",
+        "position": {
+          "left": 19,
+          "top": 191
+        },
+        "labelPosition": {
+          "left": 1,
+          "top": 135
+        }
+      }
+    ],
+    "dependencies": [
+      {
+        "source": "clip",
+        "target": {
+          "id": "clip_label",
+          "values": [
+            {
+              "sourceValue": 1,
+              "value": "MOSFET/LED hybrid clipping"
+            },
+            {
+              "sourceValue": 2,
+              "value": "open (no clipping)"
+            },
+            {
+              "sourceValue": 3,
+              "value": "silicon diode clipping"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

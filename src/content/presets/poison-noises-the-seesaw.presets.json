@@ -1,0 +1,216 @@
+{
+  "presets": [
+    {
+      "id": "fifth_element",
+      "label": "5th Element",
+      "settings": {
+        "launch": 5,
+        "sway": 8,
+        "shift": 5,
+        "teeter": 10,
+        "wobble": 1,
+        "totter": 10,
+        "launch_label": "mix",
+        "sway_label": "volume",
+        "shift_label": "pitch",
+        "teeter_label": "articulation",
+        "wobble_label": "effect: octave up",
+        "totter_label": "low pass"
+      }
+    },
+    {
+      "id": "low_down",
+      "label": "Low Down",
+      "settings": {
+        "launch": 6,
+        "sway": 8,
+        "shift": 10,
+        "teeter": 5,
+        "wobble": 2,
+        "totter": 10,
+        "teeter_label": "articulation",
+        "wobble_label": "effect: octave down",
+        "totter_label": "high pass"
+      }
+    },
+    {
+      "id": "broken_organ",
+      "label": "Broken Organ",
+      "settings": {
+        "launch": 10,
+        "sway": 8,
+        "shift": 10,
+        "teeter": 10,
+        "wobble": 3,
+        "totter": 10,
+        "teeter_label": "oct up volume",
+        "wobble_label": "effect: oct up/down",
+        "totter_label": "oct down volume"
+      }
+    },
+    {
+      "id": "spooky_tape",
+      "label": "Spooky Tape",
+      "settings": {
+        "launch": 5,
+        "sway": 8,
+        "shift": 10,
+        "teeter": 10,
+        "wobble": 4,
+        "totter": 10,
+        "teeter_label": "oct up volume",
+        "wobble_label": "effect: oct up/13th up",
+        "totter_label": "13th up volume"
+      }
+    },
+    {
+      "id": "fragments_of_glass",
+      "label": "Fragments of Glass",
+      "settings": {
+        "launch": 5,
+        "sway": 8,
+        "shift": 10,
+        "teeter": 5,
+        "wobble": 5,
+        "totter": 4,
+        "teeter_label": "degenerate",
+        "wobble_label": "effect: 2 oct up",
+        "totter_label": "aliaser freq"
+      }
+    },
+    {
+      "id": "chorus_and_octave",
+      "label": "Chorus and Octave",
+      "settings": {
+        "launch": 5,
+        "sway": 8,
+        "shift": 5,
+        "teeter": 5,
+        "wobble": 6,
+        "totter": 10,
+        "shift_label": "pitch 1",
+        "teeter_label": "blend pitch 1/2",
+        "wobble_label": "effect: 2 free pitches",
+        "totter_label": "pitch 2"
+      }
+    },
+    {
+      "id": "sea_sickness",
+      "label": "Sea Sickness",
+      "settings": {
+        "launch": 5,
+        "sway": 8,
+        "shift": 5,
+        "teeter": 5,
+        "wobble": 7,
+        "wobble_label": "effect: auto whammy",
+        "totter": 10,
+        "shift_label": "speed",
+        "teeter_label": "octave blend",
+        "wobble_label": "effect: auto whammy",
+        "totter_label": "width"
+      }
+    },
+    {
+      "id": "noise_machine",
+      "label": "Noise Machine",
+      "settings": {
+        "launch": 5,
+        "sway": 8,
+        "shift": 7,
+        "teeter": 6,
+        "wobble": 8,
+        "totter": 2,
+        "shift_label": "pitch",
+        "teeter_label": "ring mod",
+        "wobble_label": "effect: octave + ring mod + aliaser",
+        "totter_label": "aliaser freq"
+      }
+    },
+    {
+      "id": "teeter_art_knob",
+      "label": "Teeter (articulation)",
+      "isSweep": true,
+      "target": "teeter",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "launch": 8,
+        "sway": 8,
+        "shift": 10,
+        "wobble": 1,
+        "wobble_label": "effect: octave up",
+        "totter": 10,
+        "teeter_label": "articulation"
+      }
+    },
+    {
+      "id": "teeter_degen_knob",
+      "label": "Teeter (degenerate)",
+      "isSweep": true,
+      "target": "teeter",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "launch": 8,
+        "sway": 8,
+        "shift": 10,
+        "wobble": 5,
+        "wobble_label": "effect: 2 oct up",
+        "totter": 3,
+        "teeter_label": "degenerate"
+      }
+    },
+    {
+      "id": "teeter_blend_knob",
+      "label": "Teeter (blend)",
+      "isSweep": true,
+      "target": "teeter",
+      "initialValue": 5,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "launch": 8,
+        "sway": 8,
+        "shift": 0,
+        "wobble": 6,
+        "wobble_label": "effect: 2 free pitches",
+        "totter": 10,
+        "teeter_label": "octave blend"
+      }
+    },
+    {
+      "id": "totter_width_knob",
+      "label": "Totter (width)",
+      "isSweep": true,
+      "target": "totter",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "launch": 8,
+        "sway": 8,
+        "shift": 4,
+        "teeter": 5,
+        "wobble": 7,
+        "wobble_label": "effect: auto whammy",
+        "totter_label": "modulation width"
+      }
+    },
+    {
+      "id": "teeter_ring_mod_knob",
+      "label": "Teeter (ring mod)",
+      "isSweep": true,
+      "target": "teeter",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "launch": 8,
+        "sway": 8,
+        "shift": 0,
+        "wobble": 8,
+        "wobble_label": "effect: octave + ring mod + aliaser",
+        "totter": 3,
+        "teeter_label": "ring mod"
+      }
+    }
+  ]
+}

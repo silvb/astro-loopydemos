@@ -1,0 +1,51 @@
+{
+  "name": "freqscene-effects-co-harmonic-distorter",
+  "enclosure": "landscape",
+  "controls": {
+    "sliders": [
+      {
+        "id": "harmonics",
+        "size": {
+          "width": 221,
+          "innerWidth": 200,
+          "height": 23,
+          "innerHeight": 6
+        },
+        "position": { "top": 131, "left": -2 },
+        "type": "range",
+        "faderType": "simple",
+        "tilt": -90,
+        "colors": { "enclosure": "#ccceca", "tick": "#ddd" }
+      },
+      {
+        "id": "balance",
+        "size": {
+          "innerWidth": 200,
+          "width": 221,
+          "height": 23,
+          "innerHeight": 6
+        },
+        "position": { "left": 131, "top": 133 },
+        "type": "range",
+        "faderType": "simple",
+        "tilt": -90,
+        "colors": { "enclosure": "#ccceca", "tick": "#ddd" }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "socket": false,
+        "position": { "left": 151, "top": 171 }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": { "left": 152, "top": 122 }
+      }
+    ]
+  }
+}

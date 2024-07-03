@@ -1,0 +1,18 @@
+{
+  "presets": [
+    {
+      "id": "neck_gain_knob_6",
+      "label": "Sweet Spot",
+      "settings": { "volume": 5, "gain": 6 }
+    },
+    {
+      "id": "neck_gain_knob",
+      "label": "More",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "settings": { "volume": 5 }
+    }
+  ]
+}

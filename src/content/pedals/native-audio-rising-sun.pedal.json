@@ -1,0 +1,126 @@
+{
+  "name": "native-audio-rising-sun",
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 46,
+        "position": {
+          "left": 14,
+          "top": 33
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "tone",
+        "size": 46,
+        "position": {
+          "left": 73,
+          "top": 33
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "depth",
+        "size": 46,
+        "position": {
+          "left": 132,
+          "top": 33
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "rate",
+        "size": 46,
+        "position": {
+          "left": 14,
+          "top": 113
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "div",
+        "size": 46,
+        "position": {
+          "left": 132,
+          "top": 113
+        },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "socket": false,
+        "position": {
+          "left": 56,
+          "top": 267
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff",
+          "socket": "black"
+        }
+      },
+      {
+        "id": "rate_led",
+        "isBlinking": true,
+        "size": 48,
+        "socket": false,
+        "position": {
+          "left": 90,
+          "top": 267
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff",
+          "socket": "black"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 16,
+          "top": 268
+        }
+      },
+      {
+        "id": "mode",
+        "size": 30,
+        "type": "toggle",
+        "position": {
+          "left": 81,
+          "top": 122
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "rate_label",
+        "position": {
+          "left": 33,
+          "top": 158
+        },
+        "labelPosition": {
+          "left": -6,
+          "top": 217
+        }
+      },
+      {
+        "id": "div_label",
+        "position": {
+          "left": 160,
+          "top": 158
+        },
+        "labelPosition": {
+          "left": 205,
+          "top": 201
+        }
+      }
+    ]
+  }
+}

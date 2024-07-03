@@ -1,0 +1,246 @@
+{
+  "presets": [
+    {
+      "id": "worn_tape",
+      "label": "Worn Tape",
+      "settings": {
+        "time": 3.5,
+        "mix": 10,
+        "feedback": 7,
+        "wow": 3,
+        "flutter": 6,
+        "rate": 5,
+        "swell": 5,
+        "dry": 1,
+        "type": 1,
+        "lpf": 2
+      }
+    },
+    {
+      "id": "clean_analog",
+      "label": "Clean Analog",
+      "settings": {
+        "time": 3.5,
+        "mix": 10,
+        "feedback": 7,
+        "wow": 0,
+        "flutter": 0,
+        "rate": 0,
+        "swell": 5,
+        "dry": 1,
+        "type": 1,
+        "lpf": 1
+      }
+    },
+    {
+      "id": "trembling_flutter",
+      "label": "Trembling Flutter",
+      "settings": {
+        "time": 3.5,
+        "mix": 10,
+        "feedback": 6,
+        "wow": 4,
+        "flutter": 6,
+        "rate": 4,
+        "swell": 5,
+        "dry": 1,
+        "type": 3,
+        "lpf": 2
+      }
+    },
+    {
+      "id": "slick_slap_back",
+      "label": "Slick Slap Back",
+      "settings": {
+        "time": 1.4,
+        "mix": 10,
+        "feedback": 5,
+        "wow": 5,
+        "flutter": 4,
+        "rate": 5,
+        "swell": 5,
+        "dry": 1,
+        "type": 2,
+        "lpf": 3
+      }
+    },
+    {
+      "id": "noise_follower",
+      "label": "Noise Follower",
+      "settings": {
+        "time": 0,
+        "mix": 8,
+        "feedback": 9,
+        "wow": 6,
+        "flutter": 5,
+        "rate": 2,
+        "swell": 5,
+        "dry": 1,
+        "type": 2,
+        "lpf": 2
+      }
+    },
+    {
+      "id": "faux_chorus",
+      "label": "Faux Chorus",
+      "settings": {
+        "time": 0,
+        "mix": 10,
+        "feedback": 5,
+        "wow": 5,
+        "flutter": 5,
+        "rate": 5,
+        "swell": 5,
+        "dry": 1,
+        "type": 1,
+        "lpf": 1
+      }
+    },
+    {
+      "id": "lofi_vibrato",
+      "label": "Lo-fi Vibrato",
+      "settings": {
+        "time": 0,
+        "mix": 10,
+        "feedback": 0,
+        "wow": 4,
+        "flutter": 7,
+        "rate": 4,
+        "swell": 5,
+        "dry": 3,
+        "type": 2,
+        "lpf": 2
+      }
+    },
+    {
+      "id": "max_time",
+      "label": "Max. Time",
+      "settings": {
+        "time": 10,
+        "mix": 10,
+        "feedback": 2,
+        "wow": 2,
+        "flutter": 5,
+        "rate": 2,
+        "swell": 5,
+        "dry": 1,
+        "type": 2,
+        "lpf": 3
+      }
+    },
+    {
+      "id": "feedback_knob",
+      "label": "Feedback",
+      "isSweep": true,
+      "target": "feedback",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "time": 3.5,
+        "mix": 10,
+        "wow": 5,
+        "flutter": 5,
+        "rate": 2,
+        "swell": 5,
+        "dry": 1,
+        "type": 1,
+        "lpf": 1
+      }
+    },
+    {
+      "id": "wow_knob",
+      "label": "Wow",
+      "isSweep": true,
+      "target": "wow",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "time": 3.5,
+        "feedback": 5,
+        "mix": 10,
+        "flutter": 0,
+        "rate": 0,
+        "swell": 5,
+        "dry": 1,
+        "type": 1,
+        "lpf": 3
+      }
+    },
+    {
+      "id": "flutter_knob",
+      "label": "Flutter",
+      "isSweep": true,
+      "target": "flutter",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "time": 3.5,
+        "feedback": 5,
+        "mix": 10,
+        "wow": 0,
+        "rate": 7,
+        "swell": 5,
+        "dry": 1,
+        "type": 1,
+        "lpf": 3
+      }
+    },
+    {
+      "id": "rate_knob",
+      "label": "Rate",
+      "isSweep": true,
+      "target": "rate",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "time": 3.5,
+        "feedback": 5,
+        "mix": 10,
+        "wow": 0,
+        "flutter": 10,
+        "swell": 5,
+        "dry": 1,
+        "type": 1,
+        "lpf": 2
+      }
+    },
+    {
+      "id": "type_toggle",
+      "label": "Type",
+      "isSweep": true,
+      "target": "type",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "time": 3.5,
+        "feedback": 5,
+        "mix": 10,
+        "wow": 0,
+        "flutter": 10,
+        "swell": 5,
+        "dry": 1,
+        "rate": 5,
+        "lpf": 2
+      }
+    },
+    {
+      "id": "lpf_toggle",
+      "label": "LPF",
+      "isSweep": true,
+      "target": "lpf",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "time": 3.5,
+        "feedback": 5,
+        "mix": 10,
+        "wow": 2,
+        "flutter": 5,
+        "swell": 5,
+        "dry": 1,
+        "rate": 5,
+        "type": 1
+      }
+    }
+  ]
+}

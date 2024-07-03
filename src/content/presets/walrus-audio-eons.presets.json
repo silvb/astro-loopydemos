@@ -1,0 +1,100 @@
+{
+  "presets": [
+    {
+      "id": "velcro_fuzz",
+      "label": "Velcro Fuzz",
+      "settings": {
+        "vol": 5,
+        "bias": 5,
+        "gain": 10,
+        "bass": 4,
+        "mode": 1,
+        "treb": 9
+      }
+    },
+    {
+      "id": "smooth_fuzz",
+      "label": "Smooth Fuzz",
+      "settings": {
+        "vol": 5,
+        "bias": 8,
+        "gain": 5,
+        "bass": 5,
+        "mode": 2,
+        "treb": 10
+      }
+    },
+    {
+      "id": "rat_on_steroids",
+      "label": "Rat on Steroids",
+      "settings": {
+        "vol": 5,
+        "bias": 10,
+        "gain": 8,
+        "bass": 4,
+        "mode": 3,
+        "treb": 9
+      }
+    },
+    {
+      "id": "packs_a_punch",
+      "label": "Packs a Punch",
+      "settings": {
+        "vol": 5,
+        "bias": 5,
+        "gain": 10,
+        "bass": 6,
+        "mode": 4,
+        "treb": 10
+      }
+    },
+    {
+      "id": "really_big_muff",
+      "label": "A Really Big Muff",
+      "settings": {
+        "vol": 5,
+        "bias": 8,
+        "gain": 10,
+        "bass": 6,
+        "mode": 5,
+        "treb": 10
+      }
+    },
+    {
+      "id": "bias_knob",
+      "label": "Voltage Knob",
+      "isSweep": true,
+      "target": "bias",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "vol": 5, "gain": 10, "bass": 4, "mode": 2, "treb": 10 }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain Knob",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "vol": 5, "bias": 8, "bass": 2, "mode": 5, "treb": 10 }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass Knob",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "vol": 5, "bias": 5, "gain": 10, "mode": 3, "treb": 10 }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble Knob",
+      "isSweep": true,
+      "target": "treb",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "vol": 5, "bias": 5, "gain": 10, "bass": 5, "mode": 3 }
+    }
+  ]
+}

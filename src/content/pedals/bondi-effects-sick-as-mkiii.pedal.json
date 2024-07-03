@@ -1,0 +1,62 @@
+{
+  "name": "bondi-effects-sick-as-mkiii",
+  "enclosure": "landscape",
+  "presentationColors": {
+    "background": "#76d9db",
+    "primary": "seashell",
+    "primaryHighlight": "gray"
+  },
+  "controls": {
+    "knobs": [
+      {
+        "id": "gain",
+        "size": 64,
+        "position": { "left": 28, "top": 45 },
+        "type": "fairfield",
+        "colors": { "background": "#83DCE2", "primary": "#ECE4D2" }
+      },
+      {
+        "id": "bass",
+        "size": 64,
+        "position": { "left": 106, "top": 46 },
+        "type": "fairfield",
+        "colors": { "background": "#83DCE2", "primary": "#ECE4D2" }
+      },
+      {
+        "id": "treble",
+        "size": 64,
+        "position": { "left": 186, "top": 47 },
+        "type": "fairfield",
+        "colors": { "background": "#83DCE2", "primary": "#ECE4D2" }
+      },
+      {
+        "id": "level",
+        "size": 64,
+        "position": { "left": 264, "top": 47 },
+        "type": "fairfield",
+        "colors": { "background": "#83DCE2", "primary": "#ECE4D2" }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 25,
+        "position": { "left": 243, "top": 134 },
+        "colors": { "on": "#a2fff4" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": { "left": 152, "top": 217 }
+      },
+      {
+        "id": "headroom",
+        "type": "toggle",
+        "size": 24,
+        "position": { "left": 86, "top": 132 }
+      }
+    ]
+  }
+}

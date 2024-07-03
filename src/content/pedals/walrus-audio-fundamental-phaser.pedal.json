@@ -1,0 +1,92 @@
+{
+  "name": "walrus-audio-fundamental-phaser",
+  "controls": {
+    "sliders": [
+      {
+        "id": "rate",
+        "size": {
+          "height": 22,
+          "innerWidth": 110,
+          "width": 112,
+          "innerHeight": 12
+        },
+        "position": {
+          "top": 44,
+          "left": 45
+        },
+        "type": "range",
+        "colors": {
+          "enclosure": "#433f41"
+        }
+      },
+      {
+        "id": "depth",
+        "size": {
+          "height": 22,
+          "innerWidth": 110,
+          "width": 112,
+          "innerHeight": 12
+        },
+        "position": {
+          "top": 76,
+          "left": 45
+        },
+        "type": "range",
+        "colors": {
+          "enclosure": "#433f41"
+        }
+      },
+      {
+        "id": "feedback",
+        "size": {
+          "height": 22,
+          "innerWidth": 110,
+          "width": 112,
+          "innerHeight": 12
+        },
+        "position": {
+          "top": 108,
+          "left": 45
+        },
+        "type": "range",
+        "colors": {
+          "enclosure": "#433f41"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 38,
+        "position": {
+          "left": 135,
+          "top": 285
+        },
+        "colors": {
+          "on": "#c8fffa",
+          "off": "#8f8f8f"
+        },
+        "type": "square"
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 54,
+        "position": {
+          "left": 71,
+          "top": 278
+        }
+      },
+      {
+        "id": "mode",
+        "type": "threeway",
+        "size": 35,
+        "position": {
+          "left": 83,
+          "top": 134
+        }
+      }
+    ]
+  }
+}

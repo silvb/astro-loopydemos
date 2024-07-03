@@ -1,0 +1,32 @@
+{
+  "presets": [
+    {
+      "id": "verse",
+      "label": "Verse",
+      "noLabels": true,
+      "chain": [
+        {
+          "name": "big-ear-pedals-elle",
+          "id": "elle",
+          "settings": { "color": 8.5, "dwell": 8, "blend": 7 }
+        },
+        {
+          "name": "caroline-guitar-company-somersault",
+          "id": "somersault",
+          "settings": {
+            "mix": 4.5,
+            "offset": 3,
+            "depth": 4,
+            "speed": 6.5,
+            "rate_led": 400
+          }
+        },
+        {
+          "name": "bondi-effects-del-mar-mkii",
+          "id": "delmar",
+          "settings": { "bass": 4, "treble": 7.5, "drive": 2, "output": 5.5 }
+        }
+      ]
+    }
+  ]
+}

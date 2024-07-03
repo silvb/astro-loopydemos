@@ -1,0 +1,139 @@
+{
+  "presets": [
+    {
+      "id": "balanced_fuzz",
+      "label": "Balanced Fuzz",
+      "settings": {
+        "choke": 10,
+        "more": 7,
+        "even_more": 6,
+        "flavor": 1,
+        "stuff": 0,
+        "binge_purge": 1,
+        "choke_label": "gain",
+        "more_label": "volume",
+        "even_more_label": "EQ",
+        "flavor_label": "diode switch",
+        "stuff_label": "thickness",
+        "binge_purge_label": "EQ byass"
+      }
+    },
+    {
+      "id": "warm_drive",
+      "label": "Warm Drive",
+      "settings": {
+        "choke": 0,
+        "more": 5,
+        "even_more": 5,
+        "flavor": 3,
+        "stuff": 10,
+        "binge_purge": 3,
+        "choke_label": "gain",
+        "more_label": "volume",
+        "even_more_label": "EQ",
+        "flavor_label": "diode switch",
+        "stuff_label": "thickness",
+        "binge_purge_label": "EQ byass"
+      }
+    },
+
+    {
+      "id": "pumkin_spiced_fuzz",
+      "label": "Pumpkin Spiced Fuzz",
+      "settings": {
+        "choke": 10,
+        "more": 8,
+        "even_more": 6,
+        "flavor": 2,
+        "stuff": 10,
+        "binge_purge": 1,
+        "choke_label": "gain",
+        "more_label": "volume",
+        "even_more_label": "EQ",
+        "flavor_label": "diode switch",
+        "stuff_label": "thickness",
+        "binge_purge_label": "EQ byass"
+      }
+    },
+    {
+      "id": "choke_knob",
+      "label": "Choke",
+      "isSweep": true,
+      "target": "choke",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "more": 7,
+        "even_more": 6,
+        "flavor": 1,
+        "stuff": 5,
+        "binge_purge": 1,
+        "choke_label": "gain"
+      }
+    },
+    {
+      "id": "even_more_knob",
+      "label": "Even More",
+      "isSweep": true,
+      "target": "even_more",
+      "initialValue": 0,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "settings": {
+        "choke": 10,
+        "more": 7,
+        "flavor": 1,
+        "stuff": 5,
+        "binge_purge": 1,
+        "even_more_label": "EQ"
+      }
+    },
+    {
+      "id": "flavor_toggle",
+      "label": "Flavor",
+      "isSweep": true,
+      "target": "flavor",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "choke": 10,
+        "more": 7,
+        "even_more": 6,
+        "stuff": 10,
+        "binge_purge": 1,
+        "flavor_label": "diode switch"
+      }
+    },
+    {
+      "id": "stuff_knob",
+      "label": "Stuff",
+      "isSweep": true,
+      "target": "stuff",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "choke": 10,
+        "more": 7,
+        "even_more": 6,
+        "flavor": 1,
+        "binge_purge": 1,
+        "stuff_label": "thickness"
+      }
+    },
+    {
+      "id": "binge_purge_toggle",
+      "label": "Binge/Purge",
+      "isSweep": true,
+      "target": "binge_purge",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "choke": 10,
+        "more": 6,
+        "even_more": 6,
+        "stuff": 10,
+        "flavor": 3,
+        "binge_purge_label": "EQ byass"
+      }
+    }
+  ]
+}

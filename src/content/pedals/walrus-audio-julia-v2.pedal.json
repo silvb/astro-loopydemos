@@ -1,0 +1,93 @@
+{
+  "name": "walrus-audio-julia-v2",
+  "controls": {
+    "knobs": [
+      {
+        "id": "rate",
+        "size": 46,
+        "position": {
+          "top": 23,
+          "left": 18
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "depth",
+        "size": 46,
+        "position": {
+          "top": 23,
+          "left": 76
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "lag",
+        "size": 46,
+        "position": {
+          "top": 23,
+          "left": 135
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "mix",
+        "size": 46,
+        "position": {
+          "top": 100,
+          "left": 135
+        },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 44,
+        "socket": true,
+        "position": {
+          "top": 241,
+          "left": 28
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff",
+          "socket": "black"
+        }
+      },
+      {
+        "id": "rate_led",
+        "size": 44,
+        "socket": true,
+        "position": {
+          "top": 241,
+          "left": 131
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff",
+          "socket": "black"
+        },
+        "isBlinking": true
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": {
+          "top": 279,
+          "left": 75
+        }
+      },
+      {
+        "id": "waveform",
+        "size": 30,
+        "type": "toggle",
+        "position": {
+          "top": 108,
+          "left": 27
+        }
+      }
+    ]
+  }
+}

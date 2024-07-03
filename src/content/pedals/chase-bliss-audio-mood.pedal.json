@@ -1,0 +1,134 @@
+{
+  "name": "chase-bliss-audio-mood",
+  "height": 440,
+  "width": 200,
+  "controls": {
+    "knobs": [
+      {
+        "id": "time",
+        "size": 50,
+        "position": {
+          "left": 18,
+          "top": 112
+        },
+        "type": "cba"
+      },
+      {
+        "id": "modify_left",
+        "size": 50,
+        "position": {
+          "left": 18,
+          "top": 179
+        },
+        "type": "cba"
+      },
+      {
+        "id": "mix",
+        "size": 50,
+        "position": {
+          "left": 75,
+          "top": 112
+        },
+        "type": "cba"
+      },
+      {
+        "id": "clock",
+        "size": 50,
+        "position": {
+          "left": 75,
+          "top": 179
+        },
+        "type": "cba"
+      },
+      {
+        "id": "length",
+        "size": 50,
+        "position": {
+          "left": 132,
+          "top": 112
+        },
+        "type": "cba"
+      },
+      {
+        "id": "modify_right",
+        "size": 50,
+        "position": {
+          "left": 132,
+          "top": 179
+        },
+        "type": "cba"
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 44,
+        "position": {
+          "left": 25,
+          "top": 381
+        }
+      },
+      {
+        "id": "mode_left",
+        "size": 32,
+        "position": {
+          "left": 29,
+          "top": 244
+        },
+        "type": "toggle",
+        "orientation": "horizontal"
+      },
+      {
+        "id": "middle_toggle",
+        "size": 32,
+        "position": {
+          "left": 85,
+          "top": 244
+        },
+        "type": "toggle",
+        "orientation": "horizontal"
+      },
+      {
+        "id": "mode_right",
+        "size": 32,
+        "position": {
+          "left": 138,
+          "top": 244
+        },
+        "type": "toggle",
+        "orientation": "horizontal"
+      },
+      {
+        "id": "cba_dip_switches",
+        "type": "cba",
+        "position": {
+          "top": 32,
+          "left": 34
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 36,
+        "position": {
+          "left": 33,
+          "top": 340
+        },
+        "colors": {
+          "off": "#34343455",
+          "on": "greenyellow"
+        }
+      },
+      {
+        "id": "microloop_led",
+        "size": 36,
+        "position": {
+          "left": 132,
+          "top": 340
+        },
+        "type": "mood"
+      }
+    ]
+  }
+}

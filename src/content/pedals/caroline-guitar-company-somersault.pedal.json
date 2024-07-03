@@ -1,0 +1,95 @@
+{
+  "name": "caroline-guitar-company-somersault",
+  "width": 300,
+  "height": 350,
+  "controls": {
+    "knobs": [
+      {
+        "id": "mix",
+        "size": 64,
+        "position": {
+          "left": 32,
+          "top": 45
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "offset",
+        "size": 64,
+        "position": {
+          "left": 206,
+          "top": 45
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "depth",
+        "size": 64,
+        "position": {
+          "left": 32,
+          "top": 122
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "speed",
+        "size": 64,
+        "position": {
+          "left": 206,
+          "top": 122
+        },
+        "type": "bakelit"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 60,
+        "position": {
+          "left": 80,
+          "top": 8
+        },
+        "colors": {
+          "on": "#008dff"
+        }
+      },
+      {
+        "id": "rate_led",
+        "size": 60,
+        "position": {
+          "left": 161,
+          "top": 8
+        },
+        "isBlinking": true
+      }
+    ],
+    "switches": [
+      {
+        "id": "tone",
+        "type": "toggle",
+        "size": 32,
+        "position": {
+          "left": 94,
+          "top": 101
+        }
+      },
+      {
+        "id": "wave",
+        "type": "toggle",
+        "size": 32,
+        "position": {
+          "left": 177,
+          "top": 101
+        }
+      },
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 43,
+          "top": 245
+        }
+      }
+    ]
+  }
+}

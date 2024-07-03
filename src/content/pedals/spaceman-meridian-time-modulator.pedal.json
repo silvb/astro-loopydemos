@@ -1,0 +1,165 @@
+{
+  "name": "spaceman-meridian-time-modulator",
+  "width": 300,
+  "height": 350,
+  "presentationColors": {
+    "secondary": "#361c56"
+  },
+  "controls": {
+    "knobs": [
+      {
+        "id": "level",
+        "size": 48,
+        "position": {
+          "left": 35,
+          "top": 21
+        },
+        "colors": {
+          "primary": "#833cca",
+          "tick": "oldlace"
+        },
+        "type": "knurled"
+      },
+      {
+        "id": "time",
+        "size": 48,
+        "position": {
+          "left": 226,
+          "top": 20
+        },
+        "colors": {
+          "primary": "#833cca",
+          "tick": "oldlace"
+        },
+        "type": "knurled"
+      },
+      {
+        "id": "mix",
+        "size": 48,
+        "position": {
+          "left": 86,
+          "top": 71
+        },
+        "colors": {
+          "primary": "#833cca",
+          "tick": "oldlace"
+        },
+        "type": "knurled"
+      },
+      {
+        "id": "rate",
+        "size": 48,
+        "position": {
+          "left": 174,
+          "top": 72
+        },
+        "colors": {
+          "primary": "#833cca",
+          "tick": "oldlace"
+        },
+        "type": "knurled"
+      },
+      {
+        "id": "regen",
+        "size": 48,
+        "position": {
+          "left": 40,
+          "top": 115
+        },
+        "colors": {
+          "primary": "#833cca",
+          "tick": "oldlace"
+        },
+        "type": "knurled"
+      },
+      {
+        "id": "width",
+        "size": 48,
+        "position": {
+          "left": 214,
+          "top": 114
+        },
+        "colors": {
+          "primary": "#833cca",
+          "tick": "oldlace"
+        },
+        "type": "knurled"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 80,
+        "position": {
+          "left": 111,
+          "top": 107
+        },
+        "colors": {
+          "on": "#ff001caa"
+        }
+      },
+      {
+        "id": "rate_led",
+        "size": 56,
+        "position": {
+          "left": 123,
+          "top": 119
+        },
+        "isBlinking": true,
+        "colors": {
+          "on": "#0000ff87"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 124,
+          "top": 251
+        }
+      },
+      {
+        "id": "waveform",
+        "type": "toggle",
+        "size": 32,
+        "position": {
+          "left": 135,
+          "top": 36
+        },
+        "orientation": "horizontal"
+      }
+    ],
+    "dependencies": [
+      {
+        "source": "rate",
+        "target": {
+          "id": "rate_led",
+          "values": [
+            {
+              "sourceValue": 2,
+              "value": 1500
+            },
+            {
+              "sourceValue": 3.5,
+              "value": 800
+            },
+            {
+              "sourceValue": 4,
+              "value": 600
+            },
+            {
+              "sourceValue": 6,
+              "value": 300
+            },
+            {
+              "sourceValue": 7,
+              "value": 200
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

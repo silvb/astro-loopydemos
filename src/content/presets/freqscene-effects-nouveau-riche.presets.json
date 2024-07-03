@@ -1,0 +1,18 @@
+{
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": { "vol": 5, "gain": 5, "freq": 5, "voice": 5, "mode": 1 }
+    },
+    {
+      "id": "vol_knob",
+      "label": "Vol",
+      "isSweep": true,
+      "target": "vol",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "gain": 5, "freq": 5, "voice": 5, "mode": 1 }
+    }
+  ]
+}

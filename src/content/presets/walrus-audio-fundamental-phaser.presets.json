@@ -1,0 +1,55 @@
+{
+  "presets": [
+    {
+      "id": "lush_swirl",
+      "label": "Lush Swirl",
+      "settings": { "rate": 4, "depth": 7, "feedback": 4, "mode": 3 }
+    },
+    {
+      "id": "slow_filter",
+      "label": "Slow Filter",
+      "settings": { "rate": 0, "depth": 8, "feedback": 5, "mode": 2 }
+    },
+    {
+      "id": "trippy_but_subtle",
+      "label": "Trippy but Subtle",
+      "settings": { "rate": 9, "depth": 2.5, "feedback": 10, "mode": 1 }
+    },
+    {
+      "id": "mode_toggle",
+      "label": "Mode",
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": { "depth": 7, "feedback": 7, "rate": 1.5 }
+    },
+    {
+      "id": "rate_knob",
+      "label": "Rate",
+      "isSweep": true,
+      "target": "rate",
+      "initialValue": 0,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "settings": { "depth": 5, "feedback": 5, "mode": 2 }
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 0,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "settings": { "rate": 4, "feedback": 6, "mode": 2 }
+    },
+    {
+      "id": "feedback_knob",
+      "label": "Feedback",
+      "isSweep": true,
+      "target": "feedback",
+      "initialValue": 0,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "settings": { "rate": 4, "depth": 8, "mode": 3 }
+    }
+  ]
+}

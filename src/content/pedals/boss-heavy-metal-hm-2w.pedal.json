@@ -1,0 +1,93 @@
+{
+  "name": "boss-heavy-metal-hm-2w",
+  "controls": {
+    "knobs": [
+      {
+        "id": "level",
+        "size": 26,
+        "position": {
+          "left": 24,
+          "top": 41
+        },
+        "type": "simple",
+        "colors": {
+          "primary": "#f70",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "low",
+        "size": 26,
+        "position": {
+          "left": 64,
+          "top": 41
+        },
+        "type": "simple",
+        "colors": {
+          "primary": "#f70",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "high",
+        "size": 26,
+        "position": {
+          "left": 107,
+          "top": 39
+        },
+        "type": "simple",
+        "colors": {
+          "primary": "#f70",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "dist",
+        "size": 26,
+        "position": {
+          "left": 146,
+          "top": 40
+        },
+        "type": "simple",
+        "colors": {
+          "primary": "#f70",
+          "tick": "black"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 28,
+        "position": {
+          "left": 85,
+          "top": 12
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "variant": "boss",
+        "size": 40,
+        "position": {
+          "left": 81,
+          "top": 236
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "mode_label",
+        "position": {
+          "left": 162,
+          "top": 5
+        },
+        "labelPosition": {
+          "left": 190,
+          "top": 92
+        }
+      }
+    ]
+  }
+}

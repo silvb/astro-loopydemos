@@ -1,0 +1,136 @@
+{
+  "presets": [
+    {
+      "id": "preamp_with_boost",
+      "label": "Preamp with Boost",
+      "secondaryCircuitId": "red_circuit",
+      "secondaryCircuitSlug": "preamp_with_boost_red",
+      "secondaryCircuitOnlySlug": "red_cleanish_boost",
+      "settings": {
+        "gain_blue": 5,
+        "level_blue": 4,
+        "voice_blue": 10,
+        "hicut_blue": 0,
+        "mode_blue": 3,
+        "gain_red": 5,
+        "level_red": 10,
+        "voice_red": 10,
+        "hicut_red": 0,
+        "mode_red": 2
+      }
+    },
+    {
+      "id": "stacked_mediums",
+      "label": "Stacked Mediums",
+      "secondaryCircuitId": "red_circuit",
+      "secondaryCircuitSlug": "stacked_mediums_red",
+      "secondaryCircuitOnlySlug": "red_medium_gain",
+      "settings": {
+        "gain_blue": 8,
+        "level_blue": 3,
+        "voice_blue": 8,
+        "hicut_blue": 0,
+        "mode_blue": 2,
+        "gain_red": 8,
+        "level_red": 3,
+        "voice_red": 8,
+        "hicut_red": 0,
+        "mode_red": 2
+      }
+    },
+    {
+      "id": "both_on_eleven",
+      "label": "Both on Eleven",
+      "secondaryCircuitId": "red_circuit",
+      "secondaryCircuitSlug": "both_on_eleven_red",
+      "secondaryCircuitOnlySlug": "red_high_gain",
+      "settings": {
+        "gain_blue": 10,
+        "level_blue": 2,
+        "voice_blue": 5,
+        "hicut_blue": 2,
+        "mode_blue": 1,
+        "gain_red": 10,
+        "level_red": 2,
+        "voice_red": 10,
+        "hicut_red": 0,
+        "mode_red": 3
+      }
+    },
+    {
+      "id": "twin_screamer",
+      "label": "Twin Screamer",
+      "secondaryCircuitId": "red_circuit",
+      "secondaryCircuitSlug": "twin_screamer_red",
+      "secondaryCircuitOnlySlug": "red_preamp",
+      "settings": {
+        "gain_blue": 3,
+        "level_blue": 4,
+        "voice_blue": 10,
+        "hicut_blue": 2,
+        "mode_blue": 3,
+        "gain_red": 2,
+        "level_red": 5,
+        "voice_red": 10,
+        "hicut_red": 5,
+        "mode_red": 3
+      }
+    },
+    {
+      "id": "gain_blue",
+      "label": "Gain (Blue)",
+      "isSweep": true,
+      "target": "gain_blue",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "level_blue": 4,
+        "voice_blue": 10,
+        "hicut_blue": 0,
+        "mode_blue": 2
+      }
+    },
+    {
+      "id": "voice_blue",
+      "label": "Voice (Blue)",
+      "isSweep": true,
+      "target": "voice_blue",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "level_blue": 4,
+        "gain_blue": 5,
+        "hicut_blue": 0,
+        "mode_blue": 2
+      }
+    },
+    {
+      "id": "hicut_blue",
+      "label": "Hi-Cut (Blue)",
+      "isSweep": true,
+      "target": "hicut_blue",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "level_blue": 4,
+        "gain_blue": 5,
+        "voice_blue": 5,
+        "mode_blue": 2
+      }
+    },
+    {
+      "id": "mode_blue",
+      "label": "Mode (Blue)",
+      "isSweep": true,
+      "target": "mode_blue",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "level_blue": 4,
+        "gain_blue": 5,
+        "voice_blue": 5,
+        "hicut_blue": 2
+      }
+    }
+  ]
+}

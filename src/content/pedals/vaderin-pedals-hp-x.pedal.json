@@ -1,0 +1,72 @@
+{
+  "name": "vaderin-pedals-hp-x",
+  "controls": {
+    "knobs": [
+      {
+        "id": "input",
+        "size": 50,
+        "position": {
+          "left": 21,
+          "top": 53
+        },
+        "colors": {
+          "primary": "#aac4d8",
+          "secondary": "#374446",
+          "edge": "#415462",
+          "tick": "#FFF"
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "output",
+        "size": 50,
+        "position": {
+          "left": 129,
+          "top": 55
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#f6c4ff",
+          "secondary": "#664D60",
+          "edge": "#5A434E",
+          "tick": "#FFF"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 37,
+        "socket": false,
+        "position": {
+          "left": 40,
+          "top": 291
+        },
+        "colors": {
+          "on": "#c709ff",
+          "off": "#767676aa"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 52,
+        "position": {
+          "left": 72,
+          "top": 283
+        }
+      },
+      {
+        "id": "mode",
+        "size": 34,
+        "type": "toggle",
+        "position": {
+          "left": 83,
+          "top": 110
+        },
+        "orientation": "horizontal"
+      }
+    ]
+  }
+}

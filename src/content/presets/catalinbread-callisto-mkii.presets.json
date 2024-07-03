@@ -1,0 +1,133 @@
+{
+  "presets": [
+    {
+      "id": "spacey_chorus",
+      "label": "Spacey Chorus",
+      "settings": {
+        "rate": 3,
+        "fdbk": 8,
+        "mix": 6,
+        "depth": 6
+      }
+    },
+    {
+      "id": "lofi_warble",
+      "label": "Lo-fi Warble",
+      "settings": {
+        "rate": 4,
+        "fdbk": 3,
+        "mix": 10,
+        "depth": 6
+      }
+    },
+    {
+      "id": "tender_chorus",
+      "label": "Tender Chorus",
+      "settings": {
+        "rate": 5,
+        "fdbk": 3,
+        "mix": 8,
+        "depth": 3
+      }
+    },
+    {
+      "id": "wild_vibrato",
+      "label": "Wild Vibrato",
+      "settings": {
+        "rate": 8,
+        "fdbk": 8,
+        "mix": 6,
+        "depth": 6
+      }
+    },
+    {
+      "id": "boomy_feedback",
+      "label": "Boomy Feedback",
+      "settings": {
+        "rate": 2,
+        "fdbk": 10,
+        "mix": 5,
+        "depth": 2
+      }
+    },
+    {
+      "id": "chorus_drive",
+      "label": "Chorus Drive",
+      "chain": [
+        {
+          "name": "catalinbread-callisto-mkii",
+          "id": "callisto",
+          "settings": {
+            "rate": 3,
+            "fdbk": 5,
+            "mix": 6,
+            "depth": 6
+          }
+        },
+        {
+          "name": "smallsound-bigsound-mini",
+          "id": "mini",
+          "settings": {
+            "gain": 6,
+            "volume": 2,
+            "bias": 5,
+            "bass": 4,
+            "treble": 8
+          }
+        }
+      ]
+    },
+    {
+      "id": "fdbk_knob",
+      "label": "Feedback Knob",
+      "isSweep": true,
+      "target": "fdbk",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "rate": 3,
+        "mix": 8,
+        "depth": 8
+      }
+    },
+    {
+      "id": "rate_knob",
+      "label": "Rate Knob",
+      "isSweep": true,
+      "target": "rate",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 9, 10],
+      "settings": {
+        "fdbk": 5,
+        "mix": 5,
+        "depth": 8
+      }
+    },
+    {
+      "id": "mix_knob",
+      "label": "Mix Knob",
+      "isSweep": true,
+      "target": "mix",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "rate": 6,
+        "fdbk": 5,
+        "depth": 8
+      }
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth Knob",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "rate": 7,
+        "fdbk": 5,
+        "mix": 8
+      }
+    }
+  ]
+}

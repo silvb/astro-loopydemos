@@ -1,0 +1,103 @@
+{
+  "presets": [
+    {
+      "id": "watery_space",
+      "label": "Watery Space",
+      "settings": {
+        "warmth": 5,
+        "blend": 8,
+        "decay": 8,
+        "depth": 10,
+        "reverb_type": 1
+      }
+    },
+    {
+      "id": "trem_arm",
+      "label": "Trem Arm",
+      "settings": {
+        "warmth": 0,
+        "blend": 8,
+        "decay": 6,
+        "depth": 8,
+        "reverb_type": 2
+      }
+    },
+    {
+      "id": "organ_in_the_sky",
+      "label": "Organ in the Sky",
+      "settings": {
+        "warmth": 6,
+        "blend": 8,
+        "decay": 8,
+        "depth": 10,
+        "reverb_type": 3
+      }
+    },
+    {
+      "id": "shoegaze",
+      "label": "Oh Yeah, it Shoegazes!",
+      "chain": [
+        {
+          "name": "smallsound-bigsound-mini",
+          "id": "mini",
+          "settings": {
+            "gain": 6,
+            "bass": 6,
+            "treble": 6,
+            "bias": 2,
+            "volume": 4
+          }
+        },
+        {
+          "name": "keeley-electronics-realizer-reverberator",
+          "id": "realizer",
+          "settings": {
+            "warmth": 5,
+            "blend": 10,
+            "decay": 5,
+            "depth": 10,
+            "reverb_type": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "faux_chorus",
+      "label": "Faux Chorus",
+      "settings": {
+        "warmth": 6,
+        "blend": 10,
+        "decay": 0,
+        "depth": 5,
+        "reverb_type": 2
+      }
+    },
+    {
+      "id": "warmth_knob",
+      "label": "Warmth",
+      "isSweep": true,
+      "target": "warmth",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "blend": 10, "decay": 7, "depth": 10, "reverb_type": 3 }
+    },
+    {
+      "id": "decay_knob",
+      "label": "Decay",
+      "isSweep": true,
+      "target": "decay",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "blend": 8, "warmth": 8, "depth": 6, "reverb_type": 1 }
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "blend": 10, "warmth": 2, "decay": 8, "reverb_type": 2 }
+    }
+  ]
+}

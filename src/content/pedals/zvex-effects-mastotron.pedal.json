@@ -1,0 +1,55 @@
+{
+  "name": "zvex-effects-mastotron",
+  "enclosure": "landscape",
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol",
+        "size": 48,
+        "position": { "left": 30, "top": 65 },
+        "type": "davies"
+      },
+      {
+        "id": "tone",
+        "size": 48,
+        "position": { "left": 89, "top": 66 },
+        "type": "davies"
+      },
+      {
+        "id": "pw",
+        "size": 48,
+        "position": { "left": 147, "top": 66 },
+        "type": "davies"
+      },
+      {
+        "id": "fuzz",
+        "size": 48,
+        "position": { "left": 206, "top": 66 },
+        "type": "davies"
+      },
+      {
+        "id": "relax_push",
+        "size": 48,
+        "position": { "left": 265, "top": 67 },
+        "type": "davies"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 32, "position": { "left": 244, "top": 51 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": { "left": 148, "top": 171 }
+      },
+      {
+        "id": "subs",
+        "type": "toggle",
+        "size": 24,
+        "position": { "left": 73, "top": 68 },
+        "orientation": "horizontal"
+      }
+    ]
+  }
+}

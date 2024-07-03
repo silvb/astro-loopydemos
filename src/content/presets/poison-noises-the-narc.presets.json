@@ -1,0 +1,126 @@
+{
+  "presets": [
+    {
+      "id": "throaty_distortion",
+      "label": "Throaty Distortion",
+      "settings": {
+        "sing": 3,
+        "squeal": 7,
+        "squeak": 10,
+        "back_stab": 1,
+        "low_down": 3,
+        "two_time": 1,
+        "sing_label": "volume",
+        "squeal_label": "gain",
+        "squeak_label": "EQ",
+        "back_stab_label": "clipping mode",
+        "low_down_label": "bass response",
+        "two_time_label": "diode selection"
+      }
+    },
+    {
+      "id": "raspy_preamp",
+      "label": "Raspy Preamp",
+      "settings": {
+        "sing": 5,
+        "squeal": 2,
+        "squeak": 10,
+        "back_stab": 1,
+        "low_down": 1,
+        "two_time": 3
+      }
+    },
+    {
+      "id": "sludgy_drive",
+      "label": "Sludgy Drive",
+      "settings": {
+        "sing": 3,
+        "squeal": 10,
+        "squeak": 10,
+        "back_stab": 3,
+        "low_down": 1,
+        "two_time": 2
+      }
+    },
+    {
+      "id": "squeal",
+      "label": "Squeal",
+      "isSweep": true,
+      "target": "squeal",
+      "initialValue": 6,
+      "values": [0, 1, 2, 4, 6, 8, 10],
+      "settings": {
+        "sing": 3,
+        "squeak": 10,
+        "back_stab": 1,
+        "low_down": 3,
+        "two_time": 1,
+        "squeal_label": "gain"
+      }
+    },
+    {
+      "id": "squeak",
+      "label": "Squeak",
+      "isSweep": true,
+      "target": "squeak",
+      "initialValue": 7,
+      "values": [0, 3, 7, 8, 10],
+      "settings": {
+        "sing": 3,
+        "squeal": 7,
+        "back_stab": 1,
+        "low_down": 3,
+        "two_time": 1,
+        "squeak_label": "EQ"
+      }
+    },
+    {
+      "id": "back_stab",
+      "label": "Back Stab",
+      "isSweep": true,
+      "target": "back_stab",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "sing": 3,
+        "squeal": 7,
+        "squeak": 10,
+        "low_down": 3,
+        "two_time": 1,
+        "back_stab_label": "clipping mode"
+      }
+    },
+    {
+      "id": "low_down",
+      "label": "Low-Down",
+      "isSweep": true,
+      "target": "low_down",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "sing": 3,
+        "squeal": 7,
+        "squeak": 10,
+        "back_stab": 3,
+        "two_time": 1,
+        "low_down_label": "bass response"
+      }
+    },
+    {
+      "id": "two_time",
+      "label": "Two-Time",
+      "isSweep": true,
+      "target": "two_time",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "sing": 3,
+        "squeal": 7,
+        "squeak": 10,
+        "back_stab": 1,
+        "low_down": 2,
+        "two_time_label": "diode selection"
+      }
+    }
+  ]
+}

@@ -1,0 +1,117 @@
+{
+  "name": "catalinbread-sinkhole",
+  "width": 185,
+  "height": 325,
+  "controls": {
+    "knobs": [
+      {
+        "id": "fdbck",
+        "size": 36,
+        "position": {
+          "left": 28,
+          "top": 30
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "mod",
+        "size": 36,
+        "position": {
+          "left": 77,
+          "top": 30
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "verb",
+        "size": 36,
+        "position": {
+          "left": 124,
+          "top": 30
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "mix",
+        "size": 36,
+        "position": {
+          "left": 28,
+          "top": 94
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "vol",
+        "size": 36,
+        "position": {
+          "left": 124,
+          "top": 94
+        },
+        "type": "simpledot"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led_3",
+        "size": 60,
+        "defaultTime": 12000,
+        "blinkOffset": 6000,
+        "isBlinking": true,
+        "position": {
+          "left": 63,
+          "top": 92
+        },
+        "colors": {
+          "off": "#d2e1e933",
+          "on": "#00ff00"
+        },
+        "isOnIndicator": true,
+        "offOverride": true
+      },
+      {
+        "id": "on_led_2",
+        "size": 60,
+        "isBlinking": true,
+        "defaultTime": 12000,
+        "blinkOffset": 9000,
+        "position": {
+          "left": 63,
+          "top": 92
+        },
+        "colors": {
+          "off": "#d2e1e933",
+          "on": "#0000ff"
+        },
+        "isOnIndicator": true,
+        "offOverride": true
+      },
+      {
+        "id": "on_led_1",
+        "size": 60,
+        "defaultTime": 12000,
+        "blinkOffset": 12000,
+        "isBlinking": true,
+        "position": {
+          "left": 63,
+          "top": 92
+        },
+        "colors": {
+          "off": "#d2e1e933",
+          "on": "#ff0000"
+        },
+        "isOnIndicator": true,
+        "offOverride": true
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": {
+          "left": 70,
+          "top": 194
+        }
+      }
+    ]
+  }
+}

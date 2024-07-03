@@ -1,0 +1,128 @@
+{
+  "presets": [
+    {
+      "id": "instant_qotsa",
+      "label": "Instant QOTSA",
+      "chain": [
+        {
+          "name": "catalinbread-sft",
+          "id": "sft",
+          "settings": {
+            "treble": 7,
+            "bass": 4,
+            "volume": 2,
+            "gain": 2,
+            "mode": 1
+          }
+        },
+        {
+          "name": "stone-deaf-fx-qboost",
+          "id": "qboost",
+          "settings": {
+            "preamp": 9,
+            "freq_boost": 4,
+            "mode": 2,
+            "freq_boost_led": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "mix_cutter",
+      "label": "Mix Cutter",
+      "chain": [
+        {
+          "name": "smallsound-bigsound-mini",
+          "id": "mini",
+          "settings": {
+            "gain": 3,
+            "bass": 8,
+            "treble": 6,
+            "bias": 5,
+            "volume": 7
+          }
+        },
+        {
+          "name": "stone-deaf-fx-qboost",
+          "id": "qboost",
+          "settings": {
+            "preamp": 6,
+            "freq_boost": 7,
+            "mode": 1,
+            "freq_boost_led": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "modern_gain_sweep",
+      "label": "Modern Preamp Sweep",
+      "chain": [
+        {
+          "name": "catalinbread-sft",
+          "id": "sft",
+          "settings": {
+            "treble": 7,
+            "bass": 4,
+            "volume": 2,
+            "gain": 2,
+            "mode": 1
+          }
+        },
+        {
+          "name": "stone-deaf-fx-qboost",
+          "id": "qboost",
+          "isSweep": true,
+          "target": "preamp",
+          "initialValue": 4,
+          "values": [0, 2, 4, 6, 8, 10],
+          "settings": { "mode": 2 }
+        }
+      ]
+    },
+    {
+      "id": "vintage_vs_modern",
+      "label": "Vintage vs Modern",
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 2],
+      "settings": { "preamp": 7 }
+    },
+    {
+      "id": "vintage_gain_sweep",
+      "label": "Vintage Preamp Sweep",
+      "isSweep": true,
+      "target": "preamp",
+      "initialValue": 4,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "mode": 1 }
+    },
+    {
+      "id": "freq_boost",
+      "label": "Freq Boost Sweep",
+      "chain": [
+        {
+          "name": "smallsound-bigsound-mini",
+          "id": "mini",
+          "settings": {
+            "gain": 3,
+            "bass": 8,
+            "treble": 6,
+            "bias": 5,
+            "volume": 7
+          }
+        },
+        {
+          "name": "stone-deaf-fx-qboost",
+          "id": "qboost",
+          "isSweep": true,
+          "target": "freq_boost",
+          "initialValue": 4,
+          "values": [0, 2, 4, 6, 8, 10],
+          "settings": { "preamp": 7, "mode": 2, "freq_boost_led": true }
+        }
+      ]
+    }
+  ]
+}

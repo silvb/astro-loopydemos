@@ -1,0 +1,56 @@
+{
+  "presets": [
+    {
+      "id": "mystique_shimmer",
+      "label": "Mystique Shimmer",
+      "settings": { "room_size": 8, "high_cut": 7, "mix": 6, "shimmer": 7 }
+    },
+    {
+      "id": "piercing_shimmer",
+      "label": "Piercing Shimmer",
+      "settings": { "room_size": 2, "high_cut": 5, "mix": 7, "shimmer": 5 }
+    },
+    {
+      "id": "drowned_in_reverb",
+      "label": "Drowned In Reverb",
+      "settings": { "room_size": 10, "high_cut": 8, "mix": 8, "shimmer": 0 }
+    },
+    {
+      "id": "sunken_strings",
+      "label": "Sunken Strings",
+      "settings": { "room_size": 9, "high_cut": 3, "mix": 6, "shimmer": 2 }
+    },
+    {
+      "id": "just_creepy_reverb",
+      "label": "Creepy Reverb",
+      "settings": { "room_size": 7, "high_cut": 0, "mix": 7, "shimmer": 0 }
+    },
+    {
+      "id": "high_cut_knob",
+      "label": "High Cut Knob",
+      "settings": { "room_size": 8, "mix": 7, "shimmer": 7 },
+      "isSweep": true,
+      "target": "high_cut",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0
+    },
+    {
+      "id": "room_size_knob",
+      "label": "Room Size Knob",
+      "settings": { "high_cut": 5, "mix": 7, "shimmer": 5 },
+      "isSweep": true,
+      "target": "room_size",
+      "values": [0, 2, 4, 6, 7, 8, 9, 10],
+      "initialValue": 0
+    },
+    {
+      "id": "shimmer_knob",
+      "label": "Shimmer Knob",
+      "settings": { "room_size": 8, "high_cut": 5, "mix": 7 },
+      "isSweep": true,
+      "target": "shimmer",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0
+    }
+  ]
+}

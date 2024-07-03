@@ -1,0 +1,67 @@
+{
+  "name": "catalinbread-topanga",
+  "controls": {
+    "knobs": [
+      {
+        "id": "dwell",
+        "size": 44,
+        "position": {
+          "top": 31,
+          "left": 27
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "tone",
+        "size": 44,
+        "position": {
+          "top": 31,
+          "left": 127
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "mix",
+        "size": 44,
+        "position": {
+          "top": 92,
+          "left": 27
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "volume",
+        "size": 44,
+        "position": {
+          "top": 92,
+          "left": 127
+        },
+        "type": "simpledot"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 60,
+        "position": {
+          "top": 100,
+          "left": 68
+        },
+        "colors": {
+          "on": "#e08e57",
+          "off": "#818C9Aaa"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "top": 208,
+          "left": 71
+        }
+      }
+    ]
+  }
+}

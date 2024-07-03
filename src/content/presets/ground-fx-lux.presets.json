@@ -1,0 +1,70 @@
+{
+  "presets": [
+    {
+      "id": "simple_ambient",
+      "label": "Simple Ambient",
+      "settings": {
+        "decay": 5,
+        "mix": 5,
+        "volume": 2,
+        "predelay": 5,
+        "left_led": true
+      }
+    },
+    {
+      "id": "shoegaze",
+      "label": "Shoegaze, Baby!",
+      "chain": [
+        {
+          "name": "twilight-pulse-audioworks-proxima",
+          "id": "proxima",
+          "settings": {
+            "gain": 2,
+            "mass": 2,
+            "refine": 5
+          }
+        },
+        {
+          "name": "ground-fx-lux",
+          "id": "lux",
+          "settings": {
+            "decay": 7,
+            "mix": 5,
+            "volume": 3,
+            "predelay": 10,
+            "left_led": true
+          }
+        }
+      ]
+    },
+    {
+      "id": "room_hall",
+      "label": "Room Hall",
+      "settings": {
+        "decay": 3,
+        "mix": 6,
+        "volume": 2,
+        "predelay": 10,
+        "left_led": true
+      }
+    },
+    {
+      "id": "decay_knob",
+      "label": "Decay",
+      "isSweep": true,
+      "target": "decay",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "mix": 6, "volume": 2, "predelay": 0, "left_led": true }
+    },
+    {
+      "id": "predelay_knob",
+      "label": "Pre-Delay",
+      "isSweep": true,
+      "target": "predelay",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "mix": 8, "volume": 2, "decay": 5, "left_led": true }
+    }
+  ]
+}

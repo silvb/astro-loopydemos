@@ -1,0 +1,115 @@
+{
+  "presets": [
+    {
+      "id": "garage_fuzz",
+      "label": "Garage Fuzz",
+      "settings": {
+        "volume": 7,
+        "gain": 9,
+        "tone": 7,
+        "bias": 5,
+        "mode": 1,
+        "clipping": 6.5
+      }
+    },
+    {
+      "id": "hard_lofi",
+      "label": "Hard Lo-Fi",
+      "settings": {
+        "volume": 9,
+        "gain": 1,
+        "tone": 2,
+        "bias": 2,
+        "mode": 1,
+        "clipping": 2
+      }
+    },
+    {
+      "id": "mellow_destruction",
+      "label": "Mellow Destruction",
+      "settings": {
+        "volume": 7,
+        "gain": 0,
+        "tone": 8,
+        "bias": 0,
+        "mode": 3,
+        "clipping": 5
+      }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "volume": 7,
+        "tone": 9,
+        "bias": 5,
+        "clipping": 4,
+        "mode": 1
+      }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "volume": 7,
+        "gain": 10,
+        "bias": 7,
+        "clipping": 5,
+        "mode": 1
+      }
+    },
+    {
+      "id": "bias_knob",
+      "label": "Bias",
+      "isSweep": true,
+      "target": "bias",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "volume": 7,
+        "gain": 8,
+        "tone": 8,
+        "clipping": 5,
+        "mode": 1
+      }
+    },
+    {
+      "id": "mode_toggle",
+      "label": "Mode",
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "volume": 7,
+        "gain": 10,
+        "tone": 10,
+        "bias": 5,
+        "clipping": 10
+      }
+    },
+    {
+      "id": "clipping_knob",
+      "label": "Clipping",
+      "isSweep": true,
+      "target": "clipping",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "volume": 7,
+        "gain": 10,
+        "tone": 0,
+        "bias": 5,
+        "mode": 1
+      }
+    }
+  ]
+}

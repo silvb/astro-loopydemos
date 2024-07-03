@@ -1,0 +1,83 @@
+{
+  "presets": [
+    {
+      "id": "sweet_crunch",
+      "label": "Sweet Crunch",
+      "settings": {
+        "vol": 6,
+        "high_pass": 7,
+        "mids": 4,
+        "gain": 8
+      }
+    },
+    {
+      "id": "high_gain_mid_scoop",
+      "label": "High Gain Mid Scoop",
+      "settings": {
+        "vol": 6,
+        "high_pass": 10,
+        "mids": 0,
+        "gain": 10
+      }
+    },
+    {
+      "id": "mid_gain_clarity",
+      "label": "Mid Gain Clarity",
+      "settings": {
+        "vol": 6,
+        "high_pass": 6,
+        "mids": 6,
+        "gain": 6
+      }
+    },
+    {
+      "id": "low_gain_jangle",
+      "label": "Low Gain Jangle",
+      "settings": {
+        "vol": 6,
+        "high_pass": 10,
+        "mids": 6,
+        "gain": 2
+      }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain Knob",
+      "isSweep": true,
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "target": "gain",
+      "settings": {
+        "vol": 6,
+        "high_pass": 8,
+        "mids": 6
+      }
+    },
+    {
+      "id": "high_pass_knob",
+      "label": "Tone Knob",
+      "isSweep": true,
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "target": "high_pass",
+      "settings": {
+        "vol": 6,
+        "mids": 5,
+        "gain": 7
+      }
+    },
+    {
+      "id": "mids_knob",
+      "label": "Mids Knob",
+      "isSweep": true,
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "target": "mids",
+      "settings": {
+        "vol": 6,
+        "high_pass": 8,
+        "gain": 7
+      }
+    }
+  ]
+}

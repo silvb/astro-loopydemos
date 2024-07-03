@@ -1,0 +1,41 @@
+{
+  "name": "benson-amps-germanium-fuzz",
+  "enclosure": "landscape",
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 56,
+        "position": { "left": 29, "top": 102 },
+        "type": "jhs"
+      },
+      {
+        "id": "gain",
+        "size": 56,
+        "position": { "left": 29, "top": 187 },
+        "type": "jhs"
+      },
+      {
+        "id": "impedance",
+        "size": 56,
+        "position": { "left": 114, "top": 190 },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 42,
+        "position": { "left": 212, "top": 167 },
+        "colors": { "on": "#78be3d" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": { "left": 271, "top": 164 }
+      }
+    ]
+  }
+}

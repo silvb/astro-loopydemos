@@ -1,0 +1,126 @@
+{
+  "presets": [
+    {
+      "id": "velcro_fuzz",
+      "label": "Velcro Fuzz",
+      "settings": {
+        "volume": 7,
+        "onset": 3,
+        "t": 1,
+        "g": 1,
+        "c": 3
+      }
+    },
+    {
+      "id": "raunchy_drive",
+      "label": "Raunchy Drive",
+      "settings": {
+        "volume": 7,
+        "onset": 1.5,
+        "t": 3,
+        "g": 3,
+        "c": 3
+      }
+    },
+    {
+      "id": "blistering_splatter",
+      "label": "Blistering Splatter",
+      "settings": {
+        "volume": 6,
+        "onset": 3,
+        "t": 1,
+        "g": 3,
+        "c": 1
+      }
+    },
+    {
+      "id": "super_octave",
+      "label": "Super Octave",
+      "settings": {
+        "volume": 6,
+        "onset": 5,
+        "t": 1,
+        "g": 3,
+        "c": 1
+      }
+    },
+    {
+      "id": "weird_wonderful",
+      "label": "Weird & Wonderful",
+      "settings": {
+        "volume": 7,
+        "onset": 6,
+        "t": 3,
+        "g": 1,
+        "c": 1
+      }
+    },
+    {
+      "id": "thick_fuzz",
+      "label": "Thick Fuzz",
+      "settings": {
+        "volume": 7,
+        "onset": 10,
+        "t": 1,
+        "g": 3,
+        "c": 3
+      }
+    },
+    {
+      "id": "onset_knob",
+      "label": "Onset",
+      "isSweep": true,
+      "target": "onset",
+      "initialValue": 1,
+      "values": [1, 2, 4, 6, 8, 10],
+      "settings": {
+        "volume": 7,
+        "t": 1,
+        "g": 3,
+        "c": 3
+      }
+    },
+    {
+      "id": "t_switch",
+      "label": "T",
+      "isSweep": true,
+      "target": "t",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "volume": 7,
+        "onset": 5,
+        "g": 1,
+        "c": 3
+      }
+    },
+    {
+      "id": "g_switch",
+      "label": "G",
+      "isSweep": true,
+      "target": "g",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "volume": 7,
+        "onset": 2,
+        "t": 1,
+        "c": 3
+      }
+    },
+    {
+      "id": "c_switch",
+      "label": "C",
+      "isSweep": true,
+      "target": "c",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "volume": 7,
+        "onset": 4,
+        "t": 1,
+        "g": 3
+      }
+    }
+  ]
+}

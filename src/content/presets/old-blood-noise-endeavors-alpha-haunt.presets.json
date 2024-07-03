@@ -1,0 +1,220 @@
+{
+  "presets": [
+    {
+      "id": "squeezed_fuzz",
+      "label": "Squeezed Fuzz",
+      "settings": {
+        "fuzz": 5,
+        "tone": 5,
+        "gate": 7,
+        "fuzz_vol": 5,
+        "master": 8,
+        "enhance": 7,
+        "bias": 3,
+        "distortion": 1,
+        "lpf": 2,
+        "low": 6,
+        "mid": 3,
+        "high": 7
+      }
+    },
+    {
+      "id": "classic_velcro_fuzz",
+      "label": "Classic Velcro Fuzz",
+      "settings": {
+        "fuzz": 8,
+        "tone": 5,
+        "gate": 7,
+        "fuzz_vol": 10,
+        "master": 7,
+        "enhance": 6,
+        "bias": 1,
+        "distortion": 1,
+        "lpf": 2,
+        "low": 4,
+        "mid": 7,
+        "high": 6
+      }
+    },
+    {
+      "id": "happy_buzzing",
+      "label": "Happy Buzzing",
+      "settings": {
+        "fuzz": 8,
+        "tone": 2,
+        "gate": 0,
+        "fuzz_vol": 10,
+        "master": 7,
+        "enhance": 5,
+        "bias": 1,
+        "distortion": 3,
+        "lpf": 2,
+        "low": 6,
+        "mid": 6,
+        "high": 5
+      }
+    },
+    {
+      "id": "mids_character",
+      "label": "Mids & Character",
+      "settings": {
+        "fuzz": 5,
+        "tone": 5,
+        "gate": 5,
+        "fuzz_vol": 5,
+        "master": 7,
+        "enhance": 10,
+        "bias": 1,
+        "distortion": 1,
+        "lpf": 2,
+        "low": 3,
+        "mid": 10,
+        "high": 5
+      }
+    },
+    {
+      "id": "fat_mid_scooped",
+      "label": "Fat & Mid-Scooped",
+      "settings": {
+        "fuzz": 5,
+        "tone": 5,
+        "gate": 5,
+        "fuzz_vol": 10,
+        "master": 7,
+        "enhance": 0,
+        "bias": 1,
+        "distortion": 1,
+        "lpf": 2,
+        "low": 8,
+        "mid": 2,
+        "high": 6
+      }
+    },
+    {
+      "id": "fuzz_knob",
+      "label": "Fuzz",
+      "isSweep": true,
+      "target": "fuzz",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "tone": 5,
+        "gate": 5,
+        "fuzz_vol": 10,
+        "master": 7,
+        "enhance": 0,
+        "bias": 1,
+        "distortion": 3,
+        "lpf": 2,
+        "low": 5,
+        "mid": 5,
+        "high": 5
+      }
+    },
+    {
+      "id": "gate_knob",
+      "label": "Gate",
+      "isSweep": true,
+      "target": "gate",
+      "initialValue": 0,
+      "values": [0, 3, 5, 7, 10],
+      "settings": {
+        "tone": 5,
+        "fuzz": 5,
+        "fuzz_vol": 10,
+        "master": 7,
+        "enhance": 0,
+        "bias": 1,
+        "distortion": 3,
+        "lpf": 2,
+        "low": 5,
+        "mid": 5,
+        "high": 5
+      }
+    },
+    {
+      "id": "bias_toggle",
+      "label": "Bias",
+      "isSweep": true,
+      "target": "bias",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "tone": 5,
+        "fuzz": 5,
+        "fuzz_vol": 10,
+        "master": 7,
+        "enhance": 0,
+        "gate": 6,
+        "distortion": 3,
+        "lpf": 2,
+        "low": 5,
+        "mid": 5,
+        "high": 5
+      }
+    },
+    {
+      "id": "distortion_toggle",
+      "label": "Distortion",
+      "isSweep": true,
+      "target": "distortion",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "tone": 5,
+        "fuzz": 8,
+        "fuzz_vol": 10,
+        "master": 7,
+        "enhance": 0,
+        "gate": 0,
+        "bias": 1,
+        "lpf": 2,
+        "low": 5,
+        "mid": 5,
+        "high": 5
+      }
+    },
+    {
+      "id": "lpf_toggle",
+      "label": "LPF",
+      "isSweep": true,
+      "target": "lpf",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "tone": 5,
+        "fuzz": 5,
+        "fuzz_vol": 10,
+        "master": 7,
+        "enhance": 0,
+        "gate": 5,
+        "bias": 1,
+        "distortion": 1,
+        "low": 5,
+        "mid": 5,
+        "high": 5
+      }
+    },
+    {
+      "id": "enhance_knob",
+      "label": "Enhance",
+      "isSweep": true,
+      "target": "enhance",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "tone": 5,
+        "gate": 8,
+        "fuzz_vol": 3,
+        "master": 8,
+        "fuzz": 7,
+        "bias": 1,
+        "distortion": 1,
+        "lpf": 2,
+        "low": 5,
+        "mid": 5,
+        "high": 5
+      }
+    }
+  ]
+}

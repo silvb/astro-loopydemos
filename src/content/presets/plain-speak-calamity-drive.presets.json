@@ -1,0 +1,142 @@
+{
+  "presets": [
+    {
+      "id": "chimey_drive",
+      "secondaryCircuitSlug": "chimey_drive_goosed",
+      "secondaryCircuitOnlySlug": "goose_only_7",
+      "secondaryCircuitId": "goose_circuit",
+      "label": "Chimey Drive",
+      "settings": {
+        "tone": 8,
+        "gain": 7,
+        "voice": 9,
+        "vol": 2,
+        "art": 2,
+        "goose": 7
+      }
+    },
+    {
+      "id": "hint_of_sparkle",
+      "secondaryCircuitSlug": "hint_of_sparkle_goosed",
+      "secondaryCircuitOnlySlug": "goose_only_2",
+      "secondaryCircuitId": "goose_circuit",
+      "label": "Hint of Sparkle",
+      "settings": {
+        "tone": 10,
+        "gain": 2,
+        "voice": 5,
+        "vol": 2,
+        "art": 3,
+        "goose": 2
+      }
+    },
+    {
+      "id": "fat_crunch",
+      "secondaryCircuitSlug": "fat_crunch_goosed",
+      "secondaryCircuitOnlySlug": "goose_only_2",
+      "secondaryCircuitId": "goose_circuit",
+      "label": "Fat Crunch",
+      "settings": {
+        "tone": 10,
+        "gain": 10,
+        "voice": 3,
+        "vol": 2,
+        "art": 2,
+        "goose": 2
+      }
+    },
+    {
+      "id": "mellow_drive",
+      "secondaryCircuitSlug": "mellow_drive_goosed",
+      "secondaryCircuitOnlySlug": "goose_only_5",
+      "secondaryCircuitId": "goose_circuit",
+      "label": "Mellow Drive",
+      "settings": {
+        "tone": 8,
+        "gain": 8,
+        "voice": 7,
+        "vol": 2,
+        "art": 2,
+        "goose": 5
+      }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone Knob",
+      "isSweep": true,
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 10,
+      "target": "tone",
+      "settings": {
+        "gain": 5,
+        "voice": 5,
+        "vol": 2,
+        "art": 2
+      }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain Knob",
+      "isSweep": true,
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0,
+      "target": "gain",
+      "settings": {
+        "tone": 10,
+        "voice": 7,
+        "vol": 2,
+        "art": 2
+      }
+    },
+    {
+      "id": "voice_knob",
+      "label": "Voice Knob",
+      "isSweep": true,
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0,
+      "target": "voice",
+      "settings": {
+        "gain": 5,
+        "voice": 5,
+        "vol": 2,
+        "art": 2
+      }
+    },
+    {
+      "id": "art_toggle",
+      "secondaryCircuitSlug": "art_toggle_goosed",
+      "secondaryCircuitOnlySlug": "goose_only_2",
+      "secondaryCircuitId": "goose_circuit",
+      "label": "Art. Toggle",
+      "isSweep": true,
+      "values": [1, 2, 3],
+      "initialValue": 1,
+      "target": "art",
+      "settings": {
+        "tone": 10,
+        "gain": 5,
+        "voice": 2,
+        "vol": 2,
+        "goose": 2
+      }
+    },
+    {
+      "id": "goose_knob",
+      "secondaryCircuitSlug": "goose_knob_goosed",
+      "secondaryCircuitOnlySlug": "goose_only",
+      "secondaryCircuitId": "goose_circuit",
+      "label": "Goose Knob",
+      "isSweep": true,
+      "values": [0, 1, 2, 4, 6, 8, 10],
+      "initialValue": 6,
+      "target": "goose",
+      "settings": {
+        "tone": 7,
+        "gain": 5,
+        "voice": 5,
+        "vol": 2,
+        "art": 2
+      }
+    }
+  ]
+}

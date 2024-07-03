@@ -1,0 +1,90 @@
+{
+  "name": "gojira-fx-mr-sparkle-808",
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 52,
+        "position": {
+          "left": 19,
+          "top": 24
+        },
+        "type": "gojira",
+        "colors": {
+          "primary": "lightcoral",
+          "background": "lightslategray",
+          "highlights": "silver"
+        }
+      },
+      {
+        "id": "tone",
+        "size": 52,
+        "position": {
+          "left": 113,
+          "top": 26
+        },
+        "type": "gojira",
+        "colors": {
+          "primary": "lightcoral",
+          "background": "lightslategray",
+          "highlights": "silver"
+        }
+      },
+      {
+        "id": "gain",
+        "size": 52,
+        "position": {
+          "left": 20,
+          "top": 122
+        },
+        "type": "gojira",
+        "colors": {
+          "primary": "lightcoral",
+          "background": "lightslategray",
+          "highlights": "silver"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 73,
+          "top": 82
+        },
+        "colors": {
+          "on": "#ff00fc"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 52,
+        "position": {
+          "left": 71,
+          "top": 265
+        }
+      },
+      {
+        "id": "clipping",
+        "type": "toggle",
+        "size": 40,
+        "position": {
+          "left": 88,
+          "top": 130
+        }
+      },
+      {
+        "id": "bass_boost",
+        "type": "toggle",
+        "size": 40,
+        "position": {
+          "left": 139,
+          "top": 130
+        }
+      }
+    ]
+  }
+}

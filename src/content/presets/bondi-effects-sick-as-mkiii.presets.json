@@ -1,0 +1,118 @@
+{
+  "presets": [
+    {
+      "id": "warm_saturation",
+      "label": "Warm Saturation",
+      "settings": {
+        "gain": 5,
+        "bass": 5,
+        "treble": 8,
+        "level": 6,
+        "headroom": 1
+      }
+    },
+    {
+      "id": "sweet_chime",
+      "label": "Sweet Chime",
+      "settings": {
+        "gain": 5,
+        "bass": 3,
+        "treble": 7,
+        "level": 4,
+        "headroom": 3
+      }
+    },
+    {
+      "id": "soft_sparkle",
+      "label": "Soft Sparkle",
+      "settings": {
+        "gain": 3,
+        "bass": 4,
+        "treble": 6,
+        "level": 6,
+        "headroom": 3
+      }
+    },
+    {
+      "id": "heavy_growl",
+      "label": "Heavy Growl",
+      "settings": {
+        "gain": 10,
+        "bass": 3,
+        "treble": 7,
+        "level": 5,
+        "headroom": 1
+      }
+    },
+    {
+      "id": "headroom_toggle",
+      "label": "Headroom Toggle",
+      "isSweep": true,
+      "target": "headroom",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "gain": 7,
+        "bass": 5,
+        "treble": 7,
+        "level": 4
+      }
+    },
+    {
+      "id": "gain_low_headroom",
+      "label": "Gain (Low Headroom)",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 4,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "bass": 4,
+        "treble": 7,
+        "level": 5,
+        "headroom": 1
+      }
+    },
+    {
+      "id": "gain_high_headroom",
+      "label": "Gain (High Headroom)",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 4,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "bass": 3,
+        "treble": 7,
+        "level": 4,
+        "headroom": 3
+      }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass Knob",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 4,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "gain": 5,
+        "treble": 7,
+        "level": 5,
+        "headroom": 1
+      }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble Knob",
+      "isSweep": true,
+      "target": "treble",
+      "initialValue": 4,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "gain": 5,
+        "bass": 5,
+        "level": 4,
+        "headroom": 3
+      }
+    }
+  ]
+}

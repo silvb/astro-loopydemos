@@ -1,0 +1,60 @@
+{
+  "name": "summer-school-electronics-gus-drive",
+  "controls": {
+    "knobs": [
+      {
+        "id": "bark",
+        "size": 48,
+        "position": {
+          "left": 31,
+          "top": 33
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "lightgray",
+          "secondary": "slategray",
+          "edge": "silver",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "howl",
+        "size": 48,
+        "position": {
+          "left": 123,
+          "top": 33
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "lightgray",
+          "secondary": "slategray",
+          "edge": "silver",
+          "tick": "black"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 46,
+        "position": {
+          "left": 79,
+          "top": 35
+        },
+        "colors": {
+          "on": "#00bcff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 52,
+        "position": {
+          "left": 74,
+          "top": 265
+        }
+      }
+    ]
+  }
+}

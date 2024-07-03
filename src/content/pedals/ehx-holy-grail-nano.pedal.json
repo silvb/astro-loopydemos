@@ -1,0 +1,59 @@
+{
+  "name": "ehx-holy-grail-nano",
+  "controls": {
+    "knobs": [
+      {
+        "id": "mix",
+        "size": 56,
+        "type": "simple",
+        "position": {
+          "top": 59,
+          "left": 110
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "top": 121,
+          "left": 76
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 52,
+        "position": {
+          "top": 212,
+          "left": 73
+        }
+      },
+      {
+        "id": "mode",
+        "size": 26,
+        "orientation": "vertical",
+        "position": {
+          "top": 82,
+          "left": 48
+        },
+        "type": "toggle"
+      }
+    ],
+    "labels": [
+      {
+        "id": "flerb_joke",
+        "position": {
+          "top": 96,
+          "left": 48
+        },
+        "labelPosition": {
+          "top": 50,
+          "left": -2
+        }
+      }
+    ]
+  }
+}

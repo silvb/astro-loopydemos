@@ -1,0 +1,48 @@
+{
+  "presets": [
+    {
+      "id": "shoegaze",
+      "label": "Shoegaze",
+      "noLabels": true,
+      "chain": [
+        {
+          "name": "twilight-pulse-audioworks-proxima",
+          "id": "proxima",
+          "settings": { "gain": 8, "mass": 5, "refine": 6 }
+        },
+        {
+          "name": "walrus-audio-polychrome",
+          "id": "polychrome",
+          "settings": {
+            "rate": 6,
+            "depth": 5,
+            "sweep": 6,
+            "feedback": 6,
+            "shape": 3,
+            "voice": 3,
+            "dfv": 4,
+            "rate_led": 500
+          }
+        },
+        {
+          "name": "catalinbread-sinkhole",
+          "id": "sinkhole",
+          "settings": { "fdbck": 5, "mod": 7, "verb": 6, "mix": 6, "vol": 5 }
+        },
+        {
+          "name": "chase-bliss-audio-mood",
+          "id": "mood",
+          "settings": {
+            "time": 5,
+            "mode_left": 3,
+            "modify_left": 0,
+            "mix": 5,
+            "clock": 3,
+            "middle_toggle": 2,
+            "microloop_led": 6000
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,308 @@
+{
+  "presets": [
+    {
+      "id": "saturated_boost",
+      "label": "Saturated Boost",
+      "settings": {
+        "force": true,
+        "eq": true,
+        "pre": true,
+        "light": false,
+        "dark": false,
+        "lofi": false,
+        "master": 50,
+        "saber": 100,
+        "gain": 7,
+        "boost": 4,
+        "eq_i": 40,
+        "eq_ii": 50,
+        "eq_iii": 50
+      }
+    },
+    {
+      "id": "scooped_distortion",
+      "label": "Scooped Distortion",
+      "settings": {
+        "force": false,
+        "eq": true,
+        "pre": false,
+        "light": true,
+        "dark": false,
+        "lofi": false,
+        "master": 50,
+        "saber": 25,
+        "gain": 10,
+        "boost": 10,
+        "eq_i": 0,
+        "eq_ii": 40,
+        "eq_iii": 0
+      }
+    },
+    {
+      "id": "tamed_mid_push",
+      "label": "Tamed Mid Push",
+      "settings": {
+        "force": false,
+        "eq": true,
+        "pre": true,
+        "light": false,
+        "dark": true,
+        "lofi": false,
+        "master": 50,
+        "saber": 50,
+        "gain": 10,
+        "boost": 10,
+        "eq_i": 40,
+        "eq_ii": 0,
+        "eq_iii": 60
+      }
+    },
+    {
+      "id": "aggressive_mid_push",
+      "label": "Aggressive Mid Push",
+      "settings": {
+        "force": true,
+        "eq": true,
+        "pre": true,
+        "light": false,
+        "dark": true,
+        "lofi": false,
+        "master": 50,
+        "saber": 50,
+        "gain": 10,
+        "boost": 10,
+        "eq_i": 40,
+        "eq_ii": 0,
+        "eq_iii": 60
+      }
+    },
+    {
+      "id": "full_aggressive_mid_push",
+      "label": "Full Aggressive Mid Push",
+      "settings": {
+        "force": true,
+        "eq": true,
+        "pre": true,
+        "light": false,
+        "dark": true,
+        "lofi": false,
+        "master": 50,
+        "saber": 100,
+        "gain": 10,
+        "boost": 10,
+        "eq_i": 40,
+        "eq_ii": 0,
+        "eq_iii": 60
+      }
+    },
+    {
+      "id": "unwieldy_mid_push",
+      "label": "Unwieldy Mid Push",
+      "settings": {
+        "force": false,
+        "eq": true,
+        "pre": false,
+        "light": false,
+        "dark": true,
+        "lofi": false,
+        "master": 50,
+        "saber": 100,
+        "gain": 10,
+        "boost": 10,
+        "eq_i": 40,
+        "eq_ii": 0,
+        "eq_iii": 60
+      }
+    },
+    {
+      "id": "simple_preamp",
+      "label": "Simple Preamp",
+      "settings": {
+        "force": true,
+        "eq": false,
+        "pre": true,
+        "light": false,
+        "dark": false,
+        "lofi": false,
+        "master": 100,
+        "saber": 100,
+        "gain": 10,
+        "boost": 10,
+        "eq_i": 50,
+        "eq_ii": 50,
+        "eq_iii": 50
+      }
+    },
+    {
+      "id": "light",
+      "label": "Light",
+      "settings": {
+        "force": false,
+        "eq": false,
+        "pre": false,
+        "light": true,
+        "dark": false,
+        "lofi": false,
+        "master": 100,
+        "saber": 100,
+        "gain": 10,
+        "boost": 10,
+        "eq_i": 50,
+        "eq_ii": 50,
+        "eq_iii": 50
+      }
+    },
+    {
+      "id": "dark",
+      "label": "Dark",
+      "settings": {
+        "force": false,
+        "eq": false,
+        "pre": false,
+        "light": false,
+        "dark": true,
+        "lofi": false,
+        "master": 100,
+        "saber": 100,
+        "gain": 10,
+        "boost": 10,
+        "eq_i": 50,
+        "eq_ii": 50,
+        "eq_iii": 50
+      }
+    },
+    {
+      "id": "light_dark",
+      "label": "Light & Dark",
+      "settings": {
+        "force": false,
+        "eq": false,
+        "pre": false,
+        "light": true,
+        "dark": true,
+        "lofi": false,
+        "master": 100,
+        "saber": 100,
+        "gain": 10,
+        "boost": 10,
+        "eq_i": 50,
+        "eq_ii": 50,
+        "eq_iii": 50
+      }
+    },
+    {
+      "id": "sputtery_fuzz",
+      "label": "Sputtery Fuzz",
+      "settings": {
+        "force": false,
+        "eq": false,
+        "pre": false,
+        "light": true,
+        "dark": true,
+        "lofi": true,
+        "master": 100,
+        "saber": 100,
+        "gain": 10,
+        "boost": 10,
+        "eq_i": 50,
+        "eq_ii": 50,
+        "eq_iii": 50
+      }
+    },
+    {
+      "id": "imploding_fuzz",
+      "label": "Imploding Fuzz",
+      "settings": {
+        "force": false,
+        "eq": true,
+        "pre": false,
+        "light": false,
+        "dark": true,
+        "lofi": true,
+        "master": 100,
+        "saber": 100,
+        "gain": 10,
+        "boost": 10,
+        "eq_i": 50,
+        "eq_ii": 50,
+        "eq_iii": 50
+      }
+    },
+    {
+      "id": "cocked_filter_fuzz",
+      "label": "Cocked Filter Fuzz",
+      "settings": {
+        "force": true,
+        "eq": true,
+        "pre": true,
+        "light": false,
+        "dark": false,
+        "lofi": true,
+        "master": 100,
+        "saber": 100,
+        "gain": 5,
+        "boost": 5,
+        "eq_i": 45,
+        "eq_ii": 0,
+        "eq_iii": 70
+      }
+    },
+    {
+      "id": "treble_boost",
+      "label": "Treble Boost",
+      "settings": {
+        "force": true,
+        "eq": true,
+        "pre": true,
+        "light": false,
+        "dark": false,
+        "lofi": false,
+        "master": 100,
+        "saber": 100,
+        "gain": 5,
+        "boost": 0,
+        "eq_i": 0,
+        "eq_ii": 50,
+        "eq_iii": 50
+      }
+    },
+    {
+      "id": "fuzztortion",
+      "label": "Fuzztortion",
+      "settings": {
+        "force": true,
+        "eq": true,
+        "pre": true,
+        "light": false,
+        "dark": false,
+        "lofi": false,
+        "master": 100,
+        "saber": 100,
+        "gain": 5,
+        "boost": 10,
+        "eq_i": 40,
+        "eq_ii": 60,
+        "eq_iii": 0
+      }
+    },
+    {
+      "id": "tight_distortion",
+      "label": "Tight Distortion",
+      "settings": {
+        "force": true,
+        "eq": true,
+        "pre": false,
+        "light": true,
+        "dark": false,
+        "lofi": false,
+        "master": 100,
+        "saber": 100,
+        "gain": 6,
+        "boost": 10,
+        "eq_i": 30,
+        "eq_ii": 50,
+        "eq_iii": 70
+      }
+    }
+  ]
+}

@@ -1,0 +1,69 @@
+{
+  "name": "tl-pedals-stinger-fuzz",
+  "controls": {
+    "knobs": [
+      {
+        "id": "sustain",
+        "size": 64,
+        "position": {
+          "left": 22,
+          "top": 32
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "volume",
+        "size": 64,
+        "position": {
+          "left": 115,
+          "top": 32
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "mids",
+        "size": 64,
+        "position": {
+          "left": 22,
+          "top": 127
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "tone",
+        "size": 64,
+        "position": {
+          "left": 115,
+          "top": 126
+        },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 44,
+        "position": {
+          "left": 29,
+          "top": 281
+        },
+        "colors": {
+          "off": "#7d7d8766",
+          "on": "#ff7600",
+          "socket": "#98aaa7"
+        },
+        "socket": false
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 64,
+        "position": {
+          "left": 67,
+          "top": 270
+        }
+      }
+    ]
+  }
+}

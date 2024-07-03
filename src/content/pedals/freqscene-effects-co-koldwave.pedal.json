@@ -1,0 +1,98 @@
+{
+  "name": "freqscene-effects-co-koldwave",
+  "width": 300,
+  "height": 350,
+  "controls": {
+    "knobs": [
+      {
+        "id": "depth",
+        "size": 86,
+        "position": { "left": 65, "top": 137 },
+        "type": "roundchicken",
+        "colors": {
+          "primary": "#edeff6",
+          "secondary": "#d9d6dc",
+          "tick": "#1F1B1C"
+        }
+      },
+      {
+        "id": "speed",
+        "size": 86,
+        "position": { "left": 65, "top": 38 },
+        "type": "roundchicken",
+        "colors": {
+          "primary": "#edeff6",
+          "secondary": "#d9d6dc",
+          "tick": "#1F1B1C"
+        }
+      },
+      {
+        "id": "warp",
+        "size": 54,
+        "position": { "left": 201, "top": 53 },
+        "type": "bakelit"
+      },
+      {
+        "id": "amp",
+        "size": 24,
+        "position": { "left": 215, "top": 141 },
+        "type": "simple"
+      },
+      {
+        "id": "freq",
+        "size": 24,
+        "position": { "left": 215, "top": 193 },
+        "type": "simple"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 44,
+        "position": { "left": 139, "top": 182 },
+        "colors": { "on": "#ff00ea" }
+      },
+      {
+        "id": "rate_led",
+        "size": 44,
+        "position": { "left": 140, "top": 83 },
+        "isBlinking": true,
+        "colors": { "on": "#ff00ea" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": { "left": 202, "top": 262 }
+      },
+      {
+        "id": "mode",
+        "type": "toggle",
+        "size": 32,
+        "position": { "left": 162, "top": 138 }
+      }
+    ],
+    "dependencies": [
+      {
+        "source": "speed",
+        "target": {
+          "id": "rate_led",
+          "values": [
+            { "sourceValue": 0, "value": 4000 },
+            { "sourceValue": 1, "value": 3500 },
+            { "sourceValue": 2, "value": 3000 },
+            { "sourceValue": 3, "value": 2500 },
+            { "sourceValue": 4, "value": 2000 },
+            { "sourceValue": 5, "value": 1500 },
+            { "sourceValue": 6, "value": 1000 },
+            { "sourceValue": 7, "value": 800 },
+            { "sourceValue": 8, "value": 600 },
+            { "sourceValue": 9, "value": 400 },
+            { "sourceValue": 10, "value": 200 }
+          ]
+        }
+      }
+    ]
+  }
+}

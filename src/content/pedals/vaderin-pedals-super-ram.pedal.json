@@ -1,0 +1,83 @@
+{
+  "name": "vaderin-pedals-super-ram",
+  "controls": {
+    "knobs": [
+      {
+        "id": "octave",
+        "size": 44,
+        "position": {
+          "left": 28,
+          "top": 51
+        },
+        "type": "brutalist",
+        "colors": {
+          "primary": "black",
+          "tick": "antiquewhite",
+          "shadow": "darkslategray"
+        }
+      },
+      {
+        "id": "volume",
+        "size": 44,
+        "position": {
+          "left": 124,
+          "top": 52
+        },
+        "type": "brutalist",
+        "colors": {
+          "primary": "black",
+          "tick": "antiquewhite",
+          "shadow": "darkslategray"
+        }
+      },
+      {
+        "id": "gate",
+        "size": 44,
+        "position": {
+          "left": 28,
+          "top": 130
+        },
+        "type": "brutalist",
+        "colors": {
+          "primary": "black",
+          "tick": "antiquewhite",
+          "shadow": "darkslategray"
+        }
+      },
+      {
+        "id": "tone",
+        "size": 44,
+        "position": {
+          "left": 124,
+          "top": 130
+        },
+        "type": "brutalist",
+        "colors": {
+          "primary": "black",
+          "tick": "antiquewhite",
+          "shadow": "darkslategray"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 36,
+        "position": {
+          "left": 43,
+          "top": 291
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 75,
+          "top": 287
+        }
+      }
+    ]
+  }
+}

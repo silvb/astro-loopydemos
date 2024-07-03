@@ -1,0 +1,81 @@
+{
+  "name": "poison-noises-glut-cheeks-v3",
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 50,
+        "position": {
+          "left": 15,
+          "top": 40
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "gain",
+        "size": 50,
+        "position": {
+          "left": 77,
+          "top": 40
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "tone",
+        "size": 50,
+        "position": {
+          "left": 138,
+          "top": 40
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "strength",
+        "size": 50,
+        "position": {
+          "left": 15,
+          "top": 123
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "bias",
+        "size": 50,
+        "position": {
+          "left": 139,
+          "top": 123
+        },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 19,
+          "top": 284
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 60,
+        "position": {
+          "left": 72,
+          "top": 279
+        }
+      },
+      {
+        "id": "mode",
+        "type": "toggle",
+        "size": 32,
+        "position": {
+          "left": 83,
+          "top": 130
+        }
+      }
+    ]
+  }
+}

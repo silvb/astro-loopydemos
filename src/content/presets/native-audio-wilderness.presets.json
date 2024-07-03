@@ -1,0 +1,116 @@
+{
+  "presets": [
+    {
+      "id": "dotted_eighth",
+      "label": "Dotted 8th",
+      "settings": {
+        "mix": 6,
+        "m_depth": 6,
+        "m_rate": 2,
+        "feedback": 7,
+        "mode": 1,
+        "div": 6,
+        "rate_led": 800
+      }
+    },
+    {
+      "id": "endless_limbo",
+      "label": "Endless Limbo",
+      "settings": {
+        "mix": 3,
+        "m_depth": 8,
+        "m_rate": 2,
+        "feedback": 8,
+        "mode": 1,
+        "div": 0,
+        "rate_led": 800
+      }
+    },
+    {
+      "id": "drunken_eight",
+      "label": "Drunken 8",
+      "settings": {
+        "mix": 5,
+        "m_depth": 6,
+        "m_rate": 5,
+        "feedback": 5,
+        "mode": 1,
+        "div": 4,
+        "rate_led": 800
+      }
+    },
+    {
+      "id": "straight_triplets",
+      "label": "Straight Triplets",
+      "settings": {
+        "mix": 5,
+        "m_depth": 0,
+        "m_rate": 5,
+        "feedback": 7,
+        "mode": 1,
+        "div": 10,
+        "rate_led": 800
+      }
+    },
+    {
+      "id": "slap_back_chorus",
+      "label": "Slap Back Chorus",
+      "settings": {
+        "mix": 7,
+        "m_depth": 7,
+        "m_rate": 1,
+        "feedback": 6,
+        "mode": 1,
+        "div": 10,
+        "rate_led": 800
+      }
+    },
+    {
+      "id": "ramp_time",
+      "label": "Ramp Time",
+      "settings": {
+        "mix": 5,
+        "m_depth": 5,
+        "m_rate": 5,
+        "feedback": 5,
+        "mode": 3,
+        "div": 0,
+        "rate_led": 800,
+        "fast_label": "fast: max. speed",
+        "rtime_label": "r.time: longest ramp time"
+      }
+    },
+    {
+      "id": "rate_knob",
+      "label": "Rate Knob",
+      "isSweep": true,
+      "initialValue": 4,
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "target": "m_rate",
+      "settings": {
+        "mix": 5,
+        "m_depth": 10,
+        "feedback": 7,
+        "mode": 1,
+        "div": 10,
+        "rate_led": 800
+      }
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth Knob",
+      "isSweep": true,
+      "initialValue": 4,
+      "values": [0, 2, 4, 6, 8, 10],
+      "target": "m_depth",
+      "settings": {
+        "mix": 5,
+        "m_rate": 6,
+        "feedback": 7,
+        "mode": 1,
+        "div": 10,
+        "rate_led": 800
+      }
+    }
+  ]
+}

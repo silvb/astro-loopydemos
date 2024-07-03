@@ -1,0 +1,159 @@
+{
+  "presets": [
+    {
+      "id": "easy_sludge",
+      "label": "Easy Sludge",
+      "secondaryCircuitSlug": "easy_sludge_oct",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitId": "oct_circuit",
+      "settings": {
+        "oct": 8,
+        "bass": 5,
+        "treble": 5,
+        "presence": 5,
+        "volume": 1.5,
+        "gain": 5,
+        "low_cut": 2
+      }
+    },
+    {
+      "id": "gnarly_cut",
+      "label": "Gnarly Cut",
+      "secondaryCircuitSlug": "gnarly_cut_oct",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitId": "oct_circuit",
+      "settings": {
+        "oct": 3,
+        "bass": 2,
+        "treble": 6,
+        "presence": 7,
+        "volume": 1.5,
+        "gain": 10,
+        "low_cut": 6
+      }
+    },
+    {
+      "id": "sludge_hammer",
+      "label": "Sludge Hammer",
+      "secondaryCircuitSlug": "sludge_hammer_oct",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitId": "oct_circuit",
+      "settings": {
+        "oct": 10,
+        "bass": 10,
+        "treble": 5,
+        "presence": 5,
+        "volume": 1.5,
+        "gain": 4,
+        "low_cut": 0
+      }
+    },
+    {
+      "id": "oct_knob",
+      "label": "Octave",
+      "isSweep": true,
+      "target": "oct",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "bass": 2,
+        "treble": 6,
+        "presence": 7,
+        "volume": 1.5,
+        "gain": 5,
+        "low_cut": 5,
+        "oct_led": true
+      }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "treble": 5,
+        "presence": 5,
+        "volume": 1.5,
+        "gain": 5,
+        "low_cut": 2
+      }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble",
+      "isSweep": true,
+      "target": "treble",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "bass": 5,
+        "presence": 5,
+        "volume": 1.5,
+        "gain": 5,
+        "low_cut": 2
+      }
+    },
+    {
+      "id": "presence_knob",
+      "label": "Presence",
+      "isSweep": true,
+      "target": "presence",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "treble": 5,
+        "bass": 5,
+        "volume": 1.5,
+        "gain": 5,
+        "low_cut": 2
+      }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "treble": 5,
+        "bass": 5,
+        "presence": 5,
+        "volume": 1,
+        "low_cut": 2
+      }
+    },
+    {
+      "id": "volume_knob",
+      "label": "Volume",
+      "isSweep": true,
+      "target": "volume",
+      "initialValue": 0,
+      "values": [0, 1, 2, 5, 8, 10],
+      "settings": {
+        "treble": 5,
+        "bass": 5,
+        "presence": 5,
+        "gain": 5,
+        "low_cut": 2
+      }
+    },
+    {
+      "id": "low_cut_knob",
+      "label": "Low Cut",
+      "isSweep": true,
+      "target": "low_cut",
+      "initialValue": 10,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "treble": 5,
+        "bass": 5,
+        "presence": 5,
+        "gain": 5,
+        "volume": 1.5
+      }
+    }
+  ]
+}

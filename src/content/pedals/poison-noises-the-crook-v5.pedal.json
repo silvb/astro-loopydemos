@@ -1,0 +1,85 @@
+{
+  "name": "poison-noises-the-crook-v5",
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol",
+        "size": 48,
+        "position": {
+          "left": 17,
+          "top": 39
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "gain",
+        "size": 50,
+        "position": {
+          "left": 75,
+          "top": 39
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "clip",
+        "size": 48,
+        "position": {
+          "left": 133,
+          "top": 40
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "bass",
+        "size": 48,
+        "position": {
+          "left": 16,
+          "top": 118
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "mids",
+        "size": 48,
+        "position": {
+          "left": 75,
+          "top": 118
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "treble",
+        "size": 48,
+        "position": {
+          "left": 134,
+          "top": 118
+        },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 16,
+          "top": 281
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#e5e300"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 71,
+          "top": 275
+        }
+      }
+    ]
+  }
+}

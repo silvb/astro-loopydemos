@@ -1,0 +1,154 @@
+{
+  "name": "beautiful-noise-effects-when-the-sun-explodes",
+  "width": 400,
+  "height": 280,
+  "controls": {
+    "knobs": [
+      {
+        "id": "master",
+        "size": 40,
+        "position": { "left": 14, "top": 60 },
+        "colors": {
+          "primary": "ghostwhite",
+          "secondary": "lightgray",
+          "tick": "black"
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "reverb",
+        "size": 40,
+        "position": { "left": 68, "top": 60 },
+        "colors": {
+          "primary": "ghostwhite",
+          "secondary": "lightgray",
+          "tick": "black"
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "colour",
+        "size": 40,
+        "position": { "left": 121, "top": 60 },
+        "colors": {
+          "primary": "ghostwhite",
+          "secondary": "lightgray",
+          "tick": "black"
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "decay",
+        "size": 40,
+        "position": { "left": 175, "top": 60 },
+        "colors": {
+          "primary": "ghostwhite",
+          "secondary": "lightgray",
+          "tick": "black"
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "gain",
+        "size": 40,
+        "position": { "left": 15, "top": 133 },
+        "colors": {
+          "primary": "ghostwhite",
+          "secondary": "lightgray",
+          "tick": "black"
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "feedback",
+        "size": 40,
+        "position": { "left": 67, "top": 131 },
+        "colors": {
+          "primary": "ghostwhite",
+          "secondary": "lightgray",
+          "tick": "black"
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "rate",
+        "size": 40,
+        "position": { "left": 178, "top": 130 },
+        "colors": {
+          "primary": "ghostwhite",
+          "secondary": "lightgray",
+          "tick": "black"
+        },
+        "type": "bakelit"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 20,
+        "position": { "left": 302, "top": 217 },
+        "colors": { "off": "#000000a1", "on": "#8deeff" }
+      },
+      {
+        "id": "boost_led",
+        "size": 20,
+        "position": { "left": 76, "top": 216 },
+        "colors": { "off": "#000000a1", "on": "#8deeff" }
+      },
+      {
+        "id": "rate_led",
+        "size": 18,
+        "position": { "left": 158, "top": 125 },
+        "colors": { "off": "#000000a1", "on": "#8deeff" },
+        "isBlinking": true
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 42,
+        "position": { "left": 329, "top": 205 }
+      },
+      {
+        "id": "feedback_shape",
+        "type": "toggle",
+        "orientation": "horizontal",
+        "size": 30,
+        "position": { "left": 130, "top": 136 }
+      }
+    ],
+    "labels": [
+      {
+        "id": "clipping_label",
+        "position": { "left": 263, "top": 27 },
+        "labelPosition": { "left": 137, "top": -6 }
+      },
+      {
+        "id": "dry_wet_label",
+        "position": { "left": 291, "top": 26 },
+        "labelPosition": { "left": 196, "top": 9 }
+      }
+    ],
+    "dependencies": [
+      {
+        "source": "rate",
+        "target": {
+          "id": "rate_led",
+          "values": [
+            { "sourceValue": 0, "value": 1000 },
+            { "sourceValue": 1, "value": 850 },
+            { "sourceValue": 2, "value": 700 },
+            { "sourceValue": 3, "value": 600 },
+            { "sourceValue": 4, "value": 500 },
+            { "sourceValue": 5, "value": 400 },
+            { "sourceValue": 6, "value": 300 },
+            { "sourceValue": 7, "value": 200 },
+            { "sourceValue": 8, "value": 100 },
+            { "sourceValue": 9, "value": 50 },
+            { "sourceValue": 10, "value": 25 }
+          ]
+        }
+      }
+    ]
+  }
+}

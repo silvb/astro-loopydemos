@@ -1,0 +1,153 @@
+{
+  "name": "poison-noises-knuckle-sandwich",
+  "width": 300,
+  "controls": {
+    "knobs": [
+      {
+        "id": "haymaker",
+        "size": 50,
+        "position": {
+          "left": 66,
+          "top": 37
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "jab",
+        "size": 50,
+        "position": {
+          "left": 126,
+          "top": 37
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "uppercut",
+        "size": 50,
+        "position": {
+          "left": 186,
+          "top": 37
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "clobber",
+        "size": 50,
+        "position": {
+          "left": 126,
+          "top": 119
+        },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 66,
+          "top": 293
+        },
+        "colors": {
+          "on": "#29d7ff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 60,
+        "position": {
+          "left": 119,
+          "top": 284
+        }
+      },
+      {
+        "id": "left_hook",
+        "type": "toggle",
+        "size": 40,
+        "position": {
+          "left": 69,
+          "top": 124
+        }
+      },
+      {
+        "id": "right_hook",
+        "type": "toggle",
+        "size": 40,
+        "position": {
+          "left": 193,
+          "top": 124
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "haymaker_label",
+        "position": {
+          "left": 81,
+          "top": 82
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 129
+        }
+      },
+      {
+        "id": "jab_label",
+        "position": {
+          "left": 141,
+          "top": 82
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 175
+        }
+      },
+      {
+        "id": "uppercut_label",
+        "position": {
+          "left": 214,
+          "top": 82
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 129
+        }
+      },
+      {
+        "id": "left_hook_label",
+        "position": {
+          "left": 82,
+          "top": 159
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 207
+        }
+      },
+      {
+        "id": "clobber_label",
+        "position": {
+          "left": 159,
+          "top": 160
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 210
+        }
+      },
+      {
+        "id": "right_hook_label",
+        "position": {
+          "left": 217,
+          "top": 131
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 73
+        }
+      }
+    ]
+  }
+}

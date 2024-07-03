@@ -1,0 +1,27 @@
+{
+  "presets": [
+    {
+      "id": "sweet_spot",
+      "label": "Sweet Spot",
+      "settings": { "volume": 6, "tone": 7, "sustain": 7 }
+    },
+    {
+      "id": "sustain_knob",
+      "label": "Sustain Knob",
+      "settings": { "volume": 6, "tone": 6 },
+      "isSweep": true,
+      "target": "sustain",
+      "initialValue": 4,
+      "values": [0, 1, 2, 4, 6, 8, 10]
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone Knob",
+      "settings": { "volume": 6, "sustain": 8 },
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 5,
+      "values": [0, 2, 4, 5, 6, 8, 10]
+    }
+  ]
+}

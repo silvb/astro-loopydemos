@@ -1,0 +1,80 @@
+{
+  "name": "jptr-fx-katastrophe",
+  "width": 350,
+  "height": 400,
+  "controls": {
+    "knobs": [
+      {
+        "id": "oct",
+        "size": 104,
+        "position": { "left": 54, "top": 84 },
+        "type": "arrow"
+      },
+      {
+        "id": "bass",
+        "size": 40,
+        "position": { "left": 183, "top": 79 },
+        "type": "knurled"
+      },
+      {
+        "id": "treble",
+        "size": 40,
+        "position": { "left": 228, "top": 79 },
+        "type": "knurled"
+      },
+      {
+        "id": "presence",
+        "size": 40,
+        "position": { "left": 275, "top": 79 },
+        "type": "knurled"
+      },
+      {
+        "id": "volume",
+        "size": 40,
+        "position": { "left": 183, "top": 151 },
+        "type": "knurled"
+      },
+      {
+        "id": "gain",
+        "size": 40,
+        "position": { "left": 228, "top": 151 },
+        "type": "knurled"
+      },
+      {
+        "id": "low_cut",
+        "size": 40,
+        "position": { "left": 275, "top": 151 },
+        "type": "knurled"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 44,
+        "position": { "left": 258, "top": 259 },
+        "colors": { "off": "#d2e1e9a1", "on": "#d4f9ff" }
+      },
+      {
+        "id": "oct_led",
+        "secondaryCircuitId": "oct_circuit",
+        "size": 44,
+        "position": { "left": 45, "top": 258 },
+        "colors": { "off": "#d2e1e9a1", "on": "#d4f9ff" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 46,
+        "position": { "left": 257, "top": 301 }
+      },
+      {
+        "id": "oct_switch",
+        "size": 46,
+        "position": { "left": 45, "top": 301 },
+        "type": "stomp",
+        "secondaryCircuitId": "oct_circuit"
+      }
+    ]
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "presets": [
+    {
+      "id": "squashed",
+      "label": "Squashed",
+      "settings": {
+        "threshold": 0,
+        "ratio": 10,
+        "make_up": 10,
+        "level": 5,
+        "attack": 0,
+        "release": 10,
+        "blend": 10,
+        "hpf_label": "sidechain HPF off"
+      }
+    },
+    {
+      "id": "subtle_comp",
+      "label": "Subtle Compression",
+      "settings": {
+        "threshold": 5,
+        "ratio": 5,
+        "make_up": 5,
+        "level": 5,
+        "attack": 5,
+        "release": 5,
+        "blend": 5,
+        "hpf_label": "sidechain HPF off"
+      }
+    },
+    {
+      "id": "limiter",
+      "label": "Limiter",
+      "settings": {
+        "threshold": 9,
+        "ratio": 3,
+        "make_up": 6,
+        "level": 5,
+        "attack": 5,
+        "release": 5,
+        "blend": 10,
+        "hpf_label": "sidechain HPF off"
+      }
+    },
+    {
+      "id": "crisp_attack",
+      "label": "Crisp Attack",
+      "settings": {
+        "threshold": 5,
+        "ratio": 5,
+        "make_up": 7,
+        "level": 5,
+        "attack": 8,
+        "release": 5,
+        "blend": 4,
+        "hpf_label": "sidechain HPF off"
+      }
+    },
+    {
+      "id": "threshold_knob",
+      "label": "Threshold",
+      "isSweep": true,
+      "initialValue": 0,
+      "target": "threshold",
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "ratio": 10,
+        "make_up": 8,
+        "level": 5,
+        "attack": 5,
+        "release": 5,
+        "blend": 10,
+        "hpf_label": "sidechain HPF off"
+      }
+    },
+    {
+      "id": "ratio_knob",
+      "label": "Ratio",
+      "isSweep": true,
+      "initialValue": 0,
+      "target": "ratio",
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "threshold": 5,
+        "make_up": 5,
+        "level": 5,
+        "attack": 5,
+        "release": 5,
+        "blend": 10,
+        "hpf_label": "sidechain HPF off"
+      }
+    },
+    {
+      "id": "attack_knob",
+      "label": "Attack",
+      "isSweep": true,
+      "initialValue": 0,
+      "target": "attack",
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "threshold": 6,
+        "ratio": 7,
+        "make_up": 7,
+        "level": 5,
+        "release": 0,
+        "blend": 10,
+        "hpf_label": "sidechain HPF off"
+      }
+    },
+    {
+      "id": "release_knob",
+      "label": "Release",
+      "isSweep": true,
+      "initialValue": 0,
+      "target": "release",
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "threshold": 7,
+        "ratio": 7,
+        "make_up": 7,
+        "level": 5,
+        "attack": 0,
+        "blend": 10,
+        "hpf_label": "sidechain HPF off"
+      }
+    },
+    {
+      "id": "blend_knob",
+      "label": "Blend",
+      "isSweep": true,
+      "initialValue": 0,
+      "target": "blend",
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "threshold": 3,
+        "ratio": 7,
+        "make_up": 7,
+        "level": 6,
+        "attack": 5,
+        "release": 5,
+        "hpf_label": "sidechain HPF off"
+      }
+    },
+    {
+      "id": "hpf_off",
+      "label": "Side-chain HPF Off",
+      "settings": {
+        "threshold": 2,
+        "ratio": 8,
+        "make_up": 9,
+        "level": 5,
+        "attack": 4,
+        "release": 6,
+        "blend": 10,
+        "hpf_label": "sidechain HPF off"
+      }
+    },
+    {
+      "id": "hpf_on",
+      "label": "Side-chain HPF On",
+      "settings": {
+        "threshold": 2,
+        "ratio": 8,
+        "make_up": 9,
+        "level": 5,
+        "attack": 4,
+        "release": 6,
+        "blend": 10,
+        "hpf_label": "sidechain HPF on"
+      }
+    }
+  ]
+}

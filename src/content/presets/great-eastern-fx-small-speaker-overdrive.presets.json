@@ -1,0 +1,46 @@
+{
+  "presets": [
+    {
+      "id": "pawn_shop_crunch",
+      "label": "Pawn Shop Crunch",
+      "settings": { "high": 8, "level": 6, "low": 6.5, "gain": 7 }
+    },
+    {
+      "id": "soft_crackle",
+      "label": "Soft Crackle",
+      "settings": { "high": 5, "level": 7, "low": 3, "gain": 2 }
+    },
+    {
+      "id": "cranked_speaker",
+      "label": "Cranked Speaker",
+      "settings": { "high": 0, "level": 6.5, "low": 10, "gain": 10 }
+    },
+    {
+      "id": "high_knob",
+      "label": "High",
+      "isSweep": true,
+      "target": "high",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "level": 7, "low": 5, "gain": 5 }
+    },
+    {
+      "id": "low_knob",
+      "label": "Low",
+      "isSweep": true,
+      "target": "low",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "high": 5, "level": 7, "gain": 5 }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "high": 5, "level": 7, "low": 5 }
+    }
+  ]
+}

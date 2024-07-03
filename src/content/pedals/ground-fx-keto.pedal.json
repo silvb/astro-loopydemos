@@ -1,0 +1,148 @@
+{
+  "name": "ground-fx-keto",
+  "controls": {
+    "knobs": [
+      {
+        "id": "room",
+        "size": 36,
+        "position": {
+          "left": 31,
+          "top": 79
+        },
+        "type": "simpledot",
+        "colors": {
+          "primary": "#757267",
+          "tick": "#dedfd7"
+        }
+      },
+      {
+        "id": "rate",
+        "size": 36,
+        "position": {
+          "left": 131,
+          "top": 80
+        },
+        "type": "simpledot",
+        "colors": {
+          "primary": "#757267",
+          "tick": "#dedfd7"
+        }
+      },
+      {
+        "id": "level",
+        "size": 36,
+        "position": {
+          "left": 32,
+          "top": 137
+        },
+        "type": "simpledot",
+        "colors": {
+          "primary": "#757267",
+          "tick": "#dedfd7"
+        }
+      },
+      {
+        "id": "depth",
+        "size": 36,
+        "position": {
+          "left": 131,
+          "top": 137
+        },
+        "type": "simpledot",
+        "colors": {
+          "primary": "#757267",
+          "tick": "#dedfd7"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 36,
+        "position": {
+          "left": 124,
+          "top": 36
+        },
+        "colors": {
+          "on": "#9ff"
+        }
+      },
+      {
+        "id": "rate_led",
+        "isBlinking": true,
+        "size": 36,
+        "colors": {
+          "on": "#9ff"
+        },
+        "position": {
+          "left": 39,
+          "top": 36
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 52,
+        "position": {
+          "left": 75,
+          "top": 287
+        }
+      }
+    ],
+    "dependencies": [
+      {
+        "source": "rate",
+        "target": {
+          "id": "rate_led",
+          "values": [
+            {
+              "sourceValue": 0,
+              "value": 1200
+            },
+            {
+              "sourceValue": 1,
+              "value": 1100
+            },
+            {
+              "sourceValue": 2,
+              "value": 1000
+            },
+            {
+              "sourceValue": 3,
+              "value": 900
+            },
+            {
+              "sourceValue": 4,
+              "value": 800
+            },
+            {
+              "sourceValue": 5,
+              "value": 700
+            },
+            {
+              "sourceValue": 6,
+              "value": 600
+            },
+            {
+              "sourceValue": 7,
+              "value": 500
+            },
+            {
+              "sourceValue": 8,
+              "value": 400
+            },
+            {
+              "sourceValue": 9,
+              "value": 300
+            },
+            {
+              "sourceValue": 10,
+              "value": 200
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

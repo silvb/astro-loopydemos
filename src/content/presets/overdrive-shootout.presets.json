@@ -1,0 +1,343 @@
+{
+  "presets": [
+    {
+      "id": "light",
+      "label": "Light",
+      "jhs-morning-glory-v4": {
+        "id": "morning_glory_light",
+        "settings": {
+          "volume": 5,
+          "drive": 5,
+          "tone": 6,
+          "gain": 3,
+          "high_cut": "high cut OFF"
+        }
+      },
+      "native-audio-kiaayo": {
+        "id": "native_audio_kiaayo_light",
+        "settings": {
+          "volume": 7,
+          "gain": 2,
+          "tone": 6
+        }
+      },
+      "smallsound-bigsound-mini": {
+        "id": "smbs_mini_light",
+        "settings": {
+          "gain": 4,
+          "volume": 4,
+          "bias": 5,
+          "bass": 6,
+          "treble": 6
+        }
+      },
+      "vaderin-pedals-hp-x": {
+        "id": "vaderin_hpx_light",
+        "settings": {
+          "input": 2,
+          "output": 6,
+          "mode": 2
+        }
+      },
+      "jptr-fx-jive": {
+        "id": "jive_light",
+        "settings": {
+          "vol": 5,
+          "gain": 5,
+          "toggle_a": 3,
+          "toggle_b": 3,
+          "toggle_c": 1
+        }
+      },
+      "hungry-robot-lumen": {
+        "id": "hungry_robot_lumen_light",
+        "settings": {
+          "drive": 4,
+          "clean_blend": 4,
+          "level": 6,
+          "high_pass": 10,
+          "band_pass": 7,
+          "low_pass": 4
+        }
+      },
+      "tl-pedals-honker-overdrive": {
+        "id": "tl_honker_light",
+        "settings": {
+          "volume": 2,
+          "tone": 6,
+          "drive": 4,
+          "mode": 3
+        }
+      },
+      "boss-blues-driver-bd-2w": {
+        "id": "blues_driver_light",
+        "settings": { "level": 5, "tone": 6, "gain": 3, "mode": 2 }
+      },
+      "earthquaker-devices-plumes": {
+        "id": "eqd_plumes_light",
+        "settings": {
+          "level": 2,
+          "tone": 1,
+          "gain": 2,
+          "mode": 1
+        }
+      },
+      "mxr-sugar-drive": {
+        "id": "mxr_sugar_drive_light",
+        "settings": {
+          "level": 3,
+          "tone": 6,
+          "drive": 3
+        }
+      },
+      "catalinbread-tribute": {
+        "id": "catalinbread_tribute_light",
+        "settings": { "tone": 7, "freq": 6, "vol": 6, "drive": 4 }
+      },
+      "black-mass-electronics-1312-distortion-v3": {
+        "id": "black_mass_1312_light",
+        "settings": { "level": 7, "filter": 3, "gain": 0, "clip": 7 }
+      },
+      "okko-fx-holy-grit": {
+        "id": "okko_holy_grit_light",
+        "settings": {
+          "fuzz": 4,
+          "level": 4,
+          "bass": 6,
+          "treble": 4,
+          "bias": 1
+        }
+      },
+      "blue-fx-devices-nebula": {
+        "id": "blue_fx_nebula_light",
+        "settings": { "vol": 6, "high_pass": 10, "mids": 6, "gain": 0 }
+      }
+    },
+    {
+      "id": "medium",
+      "label": "Medium",
+      "jhs-morning-glory-v4": {
+        "id": "morning_glory_medium",
+        "settings": {
+          "volume": 5,
+          "drive": 8,
+          "tone": 3,
+          "gain": 3,
+          "high_cut": "high cut OFF"
+        }
+      },
+      "native-audio-kiaayo": {
+        "id": "native_audio_kiaayo_medium",
+        "settings": {
+          "volume": 6,
+          "gain": 6,
+          "tone": 7
+        }
+      },
+      "smallsound-bigsound-mini": {
+        "id": "smbs_mini_medium",
+        "settings": {
+          "gain": 6,
+          "volume": 3,
+          "bias": 4,
+          "bass": 6,
+          "treble": 6
+        }
+      },
+      "vaderin-pedals-hp-x": {
+        "id": "vaderin_hpx_medium",
+        "settings": {
+          "input": 5,
+          "output": 5,
+          "mode": 2
+        }
+      },
+      "jptr-fx-jive": {
+        "id": "jive_medium",
+        "settings": {
+          "vol": 4,
+          "gain": 7,
+          "toggle_a": 3,
+          "toggle_b": 3,
+          "toggle_c": 1
+        }
+      },
+      "hungry-robot-lumen": {
+        "id": "hungry_robot_lumen_medium",
+        "settings": {
+          "drive": 8,
+          "clean_blend": 5,
+          "level": 6,
+          "high_pass": 10,
+          "band_pass": 5,
+          "low_pass": 10
+        }
+      },
+      "tl-pedals-honker-overdrive": {
+        "id": "tl_honker_medium",
+        "settings": {
+          "volume": 2,
+          "tone": 5,
+          "drive": 8,
+          "mode": 3
+        }
+      },
+      "boss-blues-driver-bd-2w": {
+        "id": "blues_driver_medium",
+        "settings": { "level": 4, "tone": 7, "gain": 5, "mode": 2 }
+      },
+      "earthquaker-devices-plumes": {
+        "id": "eqd_plumes_medium",
+        "settings": {
+          "level": 1,
+          "tone": 2,
+          "gain": 9,
+          "mode": 2
+        }
+      },
+      "mxr-sugar-drive": {
+        "id": "mxr_sugar_drive_medium",
+        "settings": {
+          "level": 3,
+          "tone": 5,
+          "drive": 6
+        }
+      },
+      "catalinbread-tribute": {
+        "id": "catalinbread_tribute_medium",
+        "settings": { "tone": 8, "freq": 5, "vol": 5, "drive": 6 }
+      },
+      "black-mass-electronics-1312-distortion-v3": {
+        "id": "black_mass_1312_medium",
+        "settings": { "level": 6, "filter": 3, "gain": 4, "clip": 4 }
+      },
+      "okko-fx-holy-grit": {
+        "id": "okko_holy_grit_medium",
+        "settings": {
+          "fuzz": 10,
+          "level": 3,
+          "bass": 5,
+          "treble": 5,
+          "bias": 3
+        }
+      },
+      "blue-fx-devices-nebula": {
+        "id": "blue_fx_nebula_medium",
+        "settings": { "vol": 6, "high_pass": 8, "mids": 6, "gain": 5 }
+      }
+    },
+    {
+      "id": "hard",
+      "label": "Hard",
+      "jhs-morning-glory-v4": {
+        "id": "morning_glory_hard",
+        "settings": {
+          "volume": 4,
+          "drive": 10,
+          "tone": 4,
+          "gain": 1,
+          "high_cut": "high cut ON"
+        }
+      },
+      "native-audio-kiaayo": {
+        "id": "native_audio_kiaayo_hard",
+        "settings": {
+          "volume": 6,
+          "gain": 10,
+          "tone": 6
+        }
+      },
+      "smallsound-bigsound-mini": {
+        "id": "smbs_mini_hard",
+        "settings": {
+          "gain": 9,
+          "volume": 3,
+          "bias": 5,
+          "bass": 8,
+          "treble": 7
+        }
+      },
+      "vaderin-pedals-hp-x": {
+        "id": "vaderin_hpx_hard",
+        "settings": {
+          "input": 8,
+          "output": 5,
+          "mode": 2
+        }
+      },
+      "jptr-fx-jive": {
+        "id": "jive_hard",
+        "settings": {
+          "vol": 4,
+          "gain": 10,
+          "toggle_a": 3,
+          "toggle_b": 3,
+          "toggle_c": 3
+        }
+      },
+      "hungry-robot-lumen": {
+        "id": "hungry_robot_lumen_hard",
+        "settings": {
+          "drive": 10,
+          "clean_blend": 2,
+          "level": 6,
+          "high_pass": 10,
+          "band_pass": 10,
+          "low_pass": 6
+        }
+      },
+      "tl-pedals-honker-overdrive": {
+        "id": "tl_honker_hard",
+        "settings": {
+          "volume": 4,
+          "tone": 6,
+          "drive": 10,
+          "mode": 1
+        }
+      },
+      "boss-blues-driver-bd-2w": {
+        "id": "blues_driver_hard",
+        "settings": { "level": 3, "tone": 7, "gain": 10, "mode": 2 }
+      },
+      "earthquaker-devices-plumes": {
+        "id": "eqd_plumes_hard",
+        "settings": {
+          "level": 2,
+          "tone": 2,
+          "gain": 10,
+          "mode": 1
+        }
+      },
+      "mxr-sugar-drive": {
+        "id": "mxr_sugar_drive_hard",
+        "settings": {
+          "level": 3,
+          "tone": 4,
+          "drive": 10
+        }
+      },
+      "catalinbread-tribute": {
+        "id": "catalinbread_tribute_hard",
+        "settings": { "tone": 2, "freq": 2, "vol": 6, "drive": 10 }
+      },
+      "black-mass-electronics-1312-distortion-v3": {
+        "id": "black_mass_1312_hard",
+        "settings": { "level": 8, "filter": 4, "gain": 7, "clip": 1 }
+      },
+      "okko-fx-holy-grit": {
+        "id": "okko_holy_grit_hard",
+        "settings": {
+          "fuzz": 10,
+          "level": 3,
+          "bass": 8,
+          "treble": 5,
+          "bias": 2
+        }
+      },
+      "blue-fx-devices-nebula": {
+        "id": "blue_fx_nebula_hard",
+        "settings": { "vol": 6, "high_pass": 7, "mids": 7, "gain": 10 }
+      }
+    }
+  ]
+}

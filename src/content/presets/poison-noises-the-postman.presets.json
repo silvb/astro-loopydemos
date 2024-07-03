@@ -1,0 +1,138 @@
+{
+  "presets": [
+    {
+      "id": "auto_wah",
+      "label": "Auto Wah",
+      "settings": {
+        "send": 10,
+        "swing": 1,
+        "deliver": 4,
+        "lick": 10,
+        "forward": 5,
+        "stamp": 6,
+        "send_label": "volume",
+        "swing_label": "mode",
+        "deliver_label": "sensitivity",
+        "lick_label": "range",
+        "forward_label": "bias",
+        "stamp_label": "attack"
+      }
+    },
+    {
+      "id": "reverse_wah",
+      "label": "Reverse Wah",
+      "settings": {
+        "send": 10,
+        "swing": 3,
+        "deliver": 3,
+        "lick": 10,
+        "forward": 9,
+        "stamp": 4,
+        "send_label": "volume",
+        "swing_label": "mode",
+        "deliver_label": "sensitivity",
+        "lick_label": "range",
+        "forward_label": "bias",
+        "stamp_label": "attack"
+      }
+    },
+    {
+      "id": "parked_wah",
+      "label": "Parked Wah",
+      "settings": {
+        "send": 10,
+        "swing": 1,
+        "deliver": 10,
+        "lick": 1,
+        "forward": 6,
+        "stamp": 5,
+        "send_label": "volume",
+        "swing_label": "mode",
+        "deliver_label": "sensitivity",
+        "lick_label": "range",
+        "forward_label": "bias",
+        "stamp_label": "attack"
+      }
+    },
+    {
+      "id": "swing_toggle",
+      "label": "Swing",
+      "isSweep": true,
+      "target": "swing",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "send": 10,
+        "deliver": 3,
+        "lick": 8,
+        "forward": 4,
+        "stamp": 2,
+        "swing_label": "mode"
+      }
+    },
+    {
+      "id": "deliver_knob",
+      "label": "Deliver",
+      "isSweep": true,
+      "target": "deliver",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "send": 10,
+        "swing": 1,
+        "lick": 10,
+        "forward": 5,
+        "stamp": 5,
+        "deliver_label": "sensitivity"
+      }
+    },
+    {
+      "id": "lick_knob",
+      "label": "Lick",
+      "isSweep": true,
+      "target": "lick",
+      "initialValue": 0,
+      "values": [0, 3, 5, 7, 10],
+      "settings": {
+        "send": 10,
+        "swing": 1,
+        "deliver": 4,
+        "forward": 5,
+        "stamp": 5,
+        "lick_label": "range"
+      }
+    },
+    {
+      "id": "forward_knob",
+      "label": "Forward",
+      "isSweep": true,
+      "target": "forward",
+      "initialValue": 0,
+      "values": [0, 3, 5, 7, 10],
+      "settings": {
+        "send": 10,
+        "swing": 1,
+        "deliver": 4,
+        "lick": 10,
+        "stamp": 5,
+        "forward_label": "bias"
+      }
+    },
+    {
+      "id": "stamp_knob",
+      "label": "Stamp",
+      "isSweep": true,
+      "target": "stamp",
+      "initialValue": 0,
+      "values": [0, 3, 5, 7, 10],
+      "settings": {
+        "send": 10,
+        "swing": 1,
+        "deliver": 6,
+        "forward": 4,
+        "lick": 10,
+        "stamp_label": "attack"
+      }
+    }
+  ]
+}

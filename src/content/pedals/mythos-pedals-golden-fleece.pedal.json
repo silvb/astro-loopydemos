@@ -1,0 +1,38 @@
+{
+  "name": "mythos_pedals_golden_fleece",
+  "alignment": "left",
+  "controls": {
+    "knobs": [
+      {
+        "id": "guitar_volume",
+        "label": "Guitar Volume",
+        "type": "offset",
+        "size": 80,
+        "position": {
+          "left": 199,
+          "top": 110
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 44,
+        "position": {
+          "left": 116,
+          "top": 114
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 64,
+        "position": {
+          "left": 67,
+          "top": 269
+        }
+      }
+    ]
+  }
+}

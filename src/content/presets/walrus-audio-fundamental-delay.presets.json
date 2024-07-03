@@ -1,0 +1,57 @@
+{
+  "presets": [
+    {
+      "id": "digital",
+      "label": "Digital",
+      "settings": {
+        "time": 6,
+        "feedback": 6.5,
+        "mix": 4,
+        "mode": 1
+      }
+    },
+    {
+      "id": "analog",
+      "label": "Analog",
+      "settings": { "time": 6, "feedback": 7, "mix": 6, "mode": 2 }
+    },
+    {
+      "id": "reverse",
+      "label": "Reverse",
+      "settings": { "time": 6, "feedback": 3, "mix": 5, "mode": 3 }
+    },
+    {
+      "id": "feedback",
+      "label": "Feedback",
+      "isSweep": true,
+      "target": "feedback",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "time": 6, "mix": 6, "mode": 2 }
+    },
+    {
+      "id": "mode_slide",
+      "label": "Modes",
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": { "time": 6, "mix": 7, "feedback": 5 }
+    },
+    {
+      "id": "tap_divs",
+      "label": "Tap Divisions",
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "time": 6,
+        "mix": 7,
+        "feedback": 5,
+        "mode_label": "Tap Mode: Tempo is tapped in to the beat. This selects the tap divisions.",
+        "on_led": 600
+      }
+    }
+  ]
+}

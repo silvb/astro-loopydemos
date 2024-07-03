@@ -1,0 +1,161 @@
+{
+  "name": "poison-noises-skipping-stone",
+  "width": 300,
+  "controls": {
+    "knobs": [
+      {
+        "id": "settle",
+        "size": 50,
+        "position": {
+          "left": 68,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "flick",
+        "size": 50,
+        "position": {
+          "left": 126,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "skip",
+        "size": 50,
+        "position": {
+          "left": 183,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "ripple",
+        "size": 50,
+        "position": {
+          "left": 68,
+          "top": 117
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "spin",
+        "size": 50,
+        "position": {
+          "left": 126,
+          "top": 118
+        },
+        "isRotary": true,
+        "rotaryAngles": [-150, -110, -70, -20, 20, 70, 110, 150],
+        "type": "jhs"
+      },
+      {
+        "id": "splash",
+        "size": 50,
+        "position": {
+          "left": 183,
+          "top": 118
+        },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 66,
+          "top": 291
+        },
+        "colors": {
+          "on": "#c1f3ff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 124,
+          "top": 287
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "settle_label",
+        "position": {
+          "left": 81,
+          "top": 82
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 129
+        },
+        "color": "white"
+      },
+      {
+        "id": "flick_label",
+        "position": {
+          "left": 141,
+          "top": 82
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 175
+        },
+        "color": "white"
+      },
+      {
+        "id": "skip_label",
+        "position": {
+          "left": 214,
+          "top": 82
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 129
+        },
+        "color": "white"
+      },
+      {
+        "id": "ripple_label",
+        "position": {
+          "left": 86,
+          "top": 160
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 207
+        },
+        "color": "white"
+      },
+      {
+        "id": "spin_label",
+        "position": {
+          "left": 159,
+          "top": 160
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 210
+        },
+        "color": "white"
+      },
+      {
+        "id": "splash_label",
+        "position": {
+          "left": 217,
+          "top": 131
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 73
+        },
+        "color": "white"
+      }
+    ]
+  }
+}

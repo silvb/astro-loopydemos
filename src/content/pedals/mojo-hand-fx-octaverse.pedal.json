@@ -1,0 +1,71 @@
+{
+  "name": "mojo-hand-fx-octaverse",
+  "presentationColors": {
+    "background": "#10262f",
+    "primary": "#b84fff",
+    "primaryHighlight": "#57ff99"
+  },
+  "controls": {
+    "knobs": [
+      {
+        "id": "rate",
+        "size": 54,
+        "position": {
+          "left": 17,
+          "top": 63
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "mix",
+        "size": 54,
+        "position": {
+          "left": 72,
+          "top": 11
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "feedback",
+        "size": 54,
+        "position": {
+          "left": 125,
+          "top": 63
+        },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 23,
+          "top": 252
+        },
+        "colors": {
+          "on": "#00da68"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 70,
+          "top": 247
+        }
+      },
+      {
+        "id": "octave",
+        "type": "pushbutton",
+        "size": 32,
+        "position": {
+          "left": 82,
+          "top": 75
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "presets": [
+    {
+      "id": "deep_dark_and_looming",
+      "label": "Deep Dark and Looming",
+      "settings": {
+        "decay": 6,
+        "filter": 4,
+        "mix": 7,
+        "x": 10,
+        "depth": 5,
+        "mode": 1,
+        "wave": "sine"
+      }
+    },
+    {
+      "id": "subtle_swell",
+      "label": "Subtle Swell",
+      "settings": {
+        "decay": 5,
+        "filter": 5,
+        "mix": 7,
+        "x": 6,
+        "depth": 5,
+        "mode": 2,
+        "wave": "sink"
+      }
+    },
+    {
+      "id": "spooky_nightmare",
+      "label": "Spooky Nightmare",
+      "settings": {
+        "decay": 4,
+        "filter": 6,
+        "mix": 6,
+        "x": 4,
+        "depth": 7,
+        "mode": 3,
+        "wave": "warp"
+      }
+    },
+    {
+      "id": "latching_dream",
+      "label": "Latching Dream",
+      "settings": {
+        "decay": 5,
+        "filter": 4,
+        "mix": 7,
+        "x": 5,
+        "depth": 6,
+        "mode": 3,
+        "wave": "warp"
+      }
+    },
+    {
+      "id": "swell_reverb_with_sustain",
+      "label": "Swell Reverb with Sustain",
+      "settings": {
+        "decay": 5,
+        "filter": 5,
+        "mix": 7,
+        "x": 5,
+        "depth": 5,
+        "mode": 2,
+        "wave": "sine"
+      }
+    },
+    {
+      "id": "filter_knob",
+      "label": "Filter Knob",
+      "isSweep": true,
+      "values": [0, 2, 4, 6, 8, 10],
+      "target": "filter",
+      "initialValue": 0,
+      "settings": {
+        "decay": 8,
+        "mix": 6,
+        "x": 5,
+        "depth": 1,
+        "mode": 3,
+        "wave": "sink"
+      }
+    }
+  ]
+}

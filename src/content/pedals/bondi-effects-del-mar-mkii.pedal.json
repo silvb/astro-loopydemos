@@ -1,0 +1,99 @@
+{
+  "name": "bondi-effects-del-mar-mkii",
+  "presentationColors": {
+    "primary": "#2a2b2f",
+    "background": "#E9C878"
+  },
+  "controls": {
+    "knobs": [
+      {
+        "id": "bass",
+        "size": 61,
+        "position": {
+          "left": 19,
+          "top": 36
+        },
+        "type": "fairfield",
+        "colors": {
+          "background": "#F6E8BB",
+          "primary": "black"
+        }
+      },
+      {
+        "id": "treble",
+        "size": 61,
+        "position": {
+          "left": 118,
+          "top": 36
+        },
+        "type": "fairfield",
+        "colors": {
+          "background": "#F6E8BB",
+          "primary": "black"
+        }
+      },
+      {
+        "id": "drive",
+        "size": 61,
+        "position": {
+          "left": 20,
+          "top": 112
+        },
+        "type": "fairfield",
+        "colors": {
+          "background": "#E9C878",
+          "primary": "black",
+          "colors": {
+            "background": "#E9C878",
+            "primary": "black"
+          }
+        }
+      },
+      {
+        "id": "output",
+        "size": 61,
+        "position": {
+          "left": 118,
+          "top": 112
+        },
+        "type": "fairfield",
+        "colors": {
+          "background": "#E9C878",
+          "primary": "black"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 31,
+        "position": {
+          "left": 84,
+          "top": 46
+        },
+        "colors": {
+          "on": "#6fe6ff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 75,
+          "top": 274
+        }
+      },
+      {
+        "id": "headroom",
+        "type": "toggle",
+        "size": 31,
+        "position": {
+          "left": 85,
+          "top": 92
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,126 @@
+{
+  "presets": [
+    {
+      "id": "spanky_fuzz",
+      "label": "Spanky Fuzz",
+      "settings": {
+        "more": 10,
+        "feed": 10,
+        "even_more": 7,
+        "flavor": 2,
+        "starve": 2,
+        "binge_purge": 1,
+        "more_label": "volume",
+        "feed_label": "gain",
+        "even_more_label": "tone",
+        "flavor_label": "diode selection",
+        "starve_label": "bias",
+        "binge_purge_label": "tone bypass"
+      }
+    },
+    {
+      "id": "smooth_muff",
+      "label": "Smooth Muff",
+      "settings": {
+        "more": 7,
+        "feed": 10,
+        "even_more": 5,
+        "flavor": 3,
+        "starve": 8,
+        "binge_purge": 1
+      }
+    },
+    {
+      "id": "preamp_clang",
+      "label": "Preamp Clang",
+      "settings": {
+        "more": 4,
+        "feed": 10,
+        "even_more": 5,
+        "flavor": 2,
+        "starve": 9,
+        "binge_purge": 3
+      }
+    },
+    {
+      "id": "feed_knob",
+      "label": "Feed",
+      "isSweep": true,
+      "target": "feed",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "more": 7,
+        "even_more": 6,
+        "flavor": 3,
+        "starve": 10,
+        "binge_purge": 1,
+        "feed_label": "gain"
+      }
+    },
+    {
+      "id": "even_more_knob",
+      "label": "Even More",
+      "isSweep": true,
+      "target": "even_more",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "more": 7,
+        "feed": 7,
+        "flavor": 1,
+        "starve": 8,
+        "binge_purge": 1,
+        "even_more_label": "tone"
+      }
+    },
+    {
+      "id": "starve_knob",
+      "label": "Starve",
+      "isSweep": true,
+      "target": "starve",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "more": 8,
+        "feed": 10,
+        "even_more": 6,
+        "flavor": 3,
+        "binge_purge": 1,
+        "starve_label": "bias"
+      }
+    },
+    {
+      "id": "flavor_toggle",
+      "label": "Flavor",
+      "isSweep": true,
+      "target": "flavor",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "more": 8,
+        "feed": 10,
+        "even_more": 6,
+        "starve": 5,
+        "binge_purge": 1,
+        "flavor_label": "diode selection"
+      }
+    },
+    {
+      "id": "binge_purge_toggle",
+      "label": "Binge/Purge",
+      "isSweep": true,
+      "target": "binge_purge",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "more": 7,
+        "feed": 10,
+        "even_more": 6,
+        "starve": 10,
+        "flavor": 3,
+        "binge_purge_label": "tone bypass"
+      }
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "presets": [
+    {
+      "id": "guitar_volume_sweep",
+      "label": "Guitar Volume Sweep",
+      "isSweep": true,
+      "target": "guitar_volume",
+      "initialValue": 10,
+      "values": [1, 2, 3, 4, 5, 7, 8, 9, 10]
+    }
+  ]
+}

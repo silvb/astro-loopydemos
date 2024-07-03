@@ -1,0 +1,114 @@
+{
+  "name": "electric-love-aquatone",
+  "controls": {
+    "knobs": [
+      {
+        "id": "gain",
+        "size": 40,
+        "position": {
+          "left": 19,
+          "top": 90
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#c6e4ff",
+          "secondary": "#556e83",
+          "edge": "#b1cde7",
+          "tick": "#000"
+        }
+      },
+      {
+        "id": "volume",
+        "size": 40,
+        "position": {
+          "left": 138,
+          "top": 90
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#c6e4ff",
+          "secondary": "#556e83",
+          "edge": "#b1cde7",
+          "tick": "#000"
+        }
+      },
+      {
+        "id": "bass",
+        "size": 40,
+        "position": {
+          "left": 20,
+          "top": 158
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#c6e4ff",
+          "secondary": "#556e83",
+          "edge": "#b1cde7",
+          "tick": "#000"
+        }
+      },
+      {
+        "id": "mids",
+        "size": 40,
+        "position": {
+          "left": 76,
+          "top": 158
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#c6e4ff",
+          "secondary": "#556e83",
+          "edge": "#b1cde7",
+          "tick": "#000"
+        }
+      },
+      {
+        "id": "treble",
+        "size": 40,
+        "position": {
+          "left": 139,
+          "top": 158
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#c6e4ff",
+          "secondary": "#556e83",
+          "edge": "#b1cde7",
+          "tick": "#000"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 130,
+          "top": 276
+        },
+        "colors": {
+          "on": "#f300ff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 74,
+          "top": 293
+        }
+      },
+      {
+        "id": "mode",
+        "type": "toggle",
+        "size": 30,
+        "position": {
+          "left": 84,
+          "top": 94
+        }
+      }
+    ]
+  }
+}

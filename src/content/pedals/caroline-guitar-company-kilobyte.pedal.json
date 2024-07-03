@@ -1,0 +1,78 @@
+{
+  "name": "caroline-guitar-company-kilobyte",
+  "width": 300,
+  "height": 350,
+  "controls": {
+    "knobs": [
+      {
+        "id": "out",
+        "size": 72,
+        "position": {
+          "left": 27,
+          "top": 45
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "in",
+        "size": 72,
+        "position": {
+          "left": 200,
+          "top": 44
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "feedback",
+        "size": 72,
+        "position": {
+          "left": 26,
+          "top": 119
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "rate",
+        "size": 72,
+        "position": {
+          "left": 200,
+          "top": 119
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "modulation",
+        "size": 24,
+        "position": {
+          "left": 137,
+          "top": 110
+        },
+        "type": "simple"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 46,
+        "position": {
+          "left": 167,
+          "top": 14
+        },
+        "colors": {
+          "on": "#edb329",
+          "off": "#57575711"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": {
+          "left": 37,
+          "top": 252
+        }
+      }
+    ]
+  }
+}

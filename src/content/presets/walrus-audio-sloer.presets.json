@@ -1,0 +1,234 @@
+{
+  "presets": [
+    {
+      "id": "hazy_space",
+      "label": "Hazy Space",
+      "settings": {
+        "decay": 8,
+        "filter": 5,
+        "depth": 4,
+        "mix": 6.5,
+        "mode": 1,
+        "width": 1,
+        "x": 5,
+        "stretch": 10,
+        "mode_led": true
+      }
+    },
+    {
+      "id": "fairy_choir",
+      "label": "Fairy Choir",
+      "settings": {
+        "decay": 8,
+        "filter": 7,
+        "depth": 5,
+        "mix": 6.5,
+        "mode": 2,
+        "width": 1,
+        "x": 10,
+        "stretch": 10,
+        "mode_led": true
+      }
+    },
+    {
+      "id": "almost_a_delay",
+      "label": "Almost a Delay",
+      "settings": {
+        "decay": 8,
+        "filter": 10,
+        "depth": 2,
+        "mix": 6.5,
+        "mode": 3,
+        "width": 2,
+        "x": 0,
+        "stretch": 7,
+        "mode_led": true
+      }
+    },
+    {
+      "id": "majestic_and_deep",
+      "label": "Majestic & Deep",
+      "settings": {
+        "decay": 7,
+        "filter": 8,
+        "depth": 5,
+        "mix": 6.5,
+        "mode": 4,
+        "width": 2,
+        "x": 9,
+        "stretch": 5,
+        "mode_led": true
+      }
+    },
+    {
+      "id": "smooth_swell",
+      "label": "Smooth Swell",
+      "settings": {
+        "decay": 6,
+        "filter": 6,
+        "depth": 4,
+        "mix": 6.5,
+        "mode": 5,
+        "width": 1,
+        "x": 3,
+        "stretch": 5,
+        "mode_led": true
+      }
+    },
+    {
+      "id": "filter_knob",
+      "label": "Filter",
+      "isSweep": true,
+      "target": "filter",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "decay": 8,
+        "depth": 2,
+        "mix": 6.5,
+        "mode": 2,
+        "width": 1,
+        "x": 10,
+        "stretch": 10,
+        "filter_label": "Filter: perfect to smooth out those upper octaves in 'light' mode",
+        "mode_led": true
+      }
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "decay": 7,
+        "filter": 6,
+        "mix": 6.5,
+        "mode": 5,
+        "width": 1,
+        "x": 0,
+        "stretch": 10,
+        "depth_label": "Depth of the modulation on the reverb tails",
+        "mode_led": true
+      }
+    },
+    {
+      "id": "rate_knob",
+      "label": "Rate",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "decay": 7,
+        "filter": 6,
+        "mix": 6.5,
+        "mode": 5,
+        "width": 1,
+        "x": 0,
+        "stretch": 10,
+        "depth_label": "Press and hold bypass: now this controls the rate of the modulation",
+        "bypass_label": "Imagine me holding this down for you",
+        "mode_led": true
+      }
+    },
+    {
+      "id": "pan_knob",
+      "label": "Panning",
+      "isSweep": true,
+      "target": "mix",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "decay": 8,
+        "filter": 5,
+        "depth": 8,
+        "mix": 6.5,
+        "mode": 2,
+        "width": 1,
+        "x": 10,
+        "stretch": 0,
+        "mix_label": "Press and hold bypass: now this controls the stereo panning",
+        "bypass_label": "Imagine me holding this down for you",
+        "mode_led": true
+      }
+    },
+    {
+      "id": "x_slider",
+      "label": "X",
+      "isSweep": true,
+      "target": "x",
+      "initialValue": 0,
+      "values": [0, 3, 5, 7, 10],
+      "settings": {
+        "decay": 8,
+        "filter": 5,
+        "depth": 5,
+        "mix": 7,
+        "mode": 4,
+        "width": 2,
+        "stretch": 10,
+        "x_label": "Controls the amount of effect of each mode applied to the reverb tails",
+        "mode_led": true
+      }
+    },
+    {
+      "id": "stretch_slider",
+      "label": "Stretch",
+      "isSweep": true,
+      "target": "stretch",
+      "initialValue": 0,
+      "values": [0, 3, 5, 7, 10],
+      "settings": {
+        "decay": 8,
+        "filter": 5,
+        "depth": 5,
+        "mix": 7,
+        "mode": 4,
+        "width": 2,
+        "x": 10,
+        "stretch_label": "Slide to the left to lower sample rate, lengthening the decay and adding artifacts",
+        "mode_led": true
+      }
+    },
+    {
+      "id": "width_toggle",
+      "label": "Width",
+      "isSweep": true,
+      "target": "width",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "decay": 8,
+        "filter": 6,
+        "depth": 8,
+        "mix": 7,
+        "mode": 2,
+        "x": 5,
+        "stretch": 0,
+        "mode_led": true
+      }
+    },
+    {
+      "id": "waveform_knob",
+      "label": "Waveform",
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 2, 3, 4, 5],
+      "settings": {
+        "decay": 8,
+        "filter": 8,
+        "depth": 10,
+        "mix": 7,
+        "x": 10,
+        "stretch": 10,
+        "width": 1,
+        "mode_label": "Now this controls the waveform of the modulation",
+        "bypass_label": "Imagine me holding this down for you",
+        "mode_led": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "presets": [
+    {
+      "id": "blown_out_fuzz",
+      "label": "Blown Out Fuzz",
+      "settings": { "loud": 5, "tone": 6, "gain": 7, "boost": 8, "mode": 1 }
+    },
+    {
+      "id": "decent_overdrive",
+      "label": "Decent Overdrive",
+      "settings": { "loud": 5, "tone": 5, "gain": 0, "boost": 0, "mode": 1 }
+    },
+    {
+      "id": "simple_pi",
+      "label": "Simple Pi",
+      "settings": { "loud": 5, "tone": 6, "gain": 8, "boost": 0, "mode": 1 }
+    },
+    {
+      "id": "boost_knob",
+      "label": "Boost Knob",
+      "settings": { "loud": 5, "tone": 6, "gain": 7, "mode": 1 },
+      "isSweep": true,
+      "target": "boost",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10]
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain Knob",
+      "settings": { "loud": 5, "tone": 6, "boost": 5, "mode": 1 },
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10]
+    },
+    {
+      "id": "mode_toggle",
+      "label": "Blowout Switch",
+      "settings": { "loud": 5, "tone": 6, "gain": 7, "boost": 5 },
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 3]
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone Knob",
+      "settings": { "loud": 5, "gain": 6, "boost": 6, "mode": 1 },
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10]
+    },
+    {
+      "id": "medium_mids",
+      "label": "Medium Mids",
+      "settings": {
+        "loud": 5,
+        "tone": 5,
+        "gain": 5,
+        "boost": 5,
+        "mode": 1,
+        "mid_label": "internal mids at noon"
+      }
+    },
+    {
+      "id": "scooped_mids",
+      "label": "Scooped Mids",
+      "settings": {
+        "loud": 5,
+        "tone": 5,
+        "gain": 5,
+        "boost": 5,
+        "mode": 1,
+        "mid_label": "internal mids at minimum"
+      }
+    },
+    {
+      "id": "boosted_mids",
+      "label": "Boosted Mids",
+      "settings": {
+        "loud": 5,
+        "tone": 5,
+        "gain": 5,
+        "boost": 5,
+        "mode": 1,
+        "mid_label": "internal mids at maximum"
+      }
+    }
+  ]
+}

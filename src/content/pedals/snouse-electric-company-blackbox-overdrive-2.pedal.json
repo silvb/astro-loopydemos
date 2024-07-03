@@ -1,0 +1,75 @@
+{
+  "name": "snouse-electric-company-blackbox-overdrive-2",
+  "controls": {
+    "knobs": [
+      {
+        "id": "gain",
+        "size": 54,
+        "position": { "left": 32, "top": 47 },
+        "type": "simple",
+        "colors": {
+          "primary": "#ead3ae",
+          "tick": "#302a23"
+        }
+      },
+      {
+        "id": "volume",
+        "size": 54,
+        "position": { "left": 115, "top": 48 },
+        "type": "simple",
+        "colors": {
+          "primary": "#ead3ae",
+          "tick": "#302a23"
+        }
+      },
+      {
+        "id": "tone",
+        "size": 54,
+        "position": { "left": 72, "top": 97 },
+        "type": "simple",
+        "colors": {
+          "primary": "#ead3ae",
+          "tick": "#302a23"
+        }
+      },
+      {
+        "id": "preamp",
+        "size": 48,
+        "position": { "left": 27, "top": 135 },
+        "type": "davies",
+        "colors": {
+          "primary": "#ead3ae",
+          "tick": "#302a23"
+        }
+      },
+      {
+        "id": "presence",
+        "size": 48,
+        "position": { "left": 123, "top": 136 },
+        "type": "davies",
+        "colors": {
+          "primary": "#ead3ae",
+          "tick": "#302a23"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 36,
+        "position": { "left": 33, "top": 247 },
+        "colors": {
+          "on": "#0093ff",
+          "off": "#444444a1"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 44,
+        "position": { "left": 76, "top": 241 }
+      }
+    ]
+  }
+}

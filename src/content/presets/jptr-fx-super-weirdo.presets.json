@@ -1,0 +1,82 @@
+{
+  "presets": [
+    {
+      "id": "no_normal_sound",
+      "label": "No Normal Sound :)",
+      "secondaryCircuitSlug": "no_normal_sound_noise",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitId": "noise_circuit",
+      "settings": {
+        "volume": 4,
+        "swell": 5,
+        "tone": 5,
+        "time": 6,
+        "modulation": 5
+      }
+    },
+    {
+      "id": "fuzz_with_sub",
+      "label": "Fuzz with Momentary Glitch Sub",
+      "secondaryCircuitSlug": "fuzz_with_sub_noise",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitId": "noise_circuit",
+      "settings": {
+        "volume": 4,
+        "swell": 10,
+        "tone": 5,
+        "time": 0,
+        "modulation": 0
+      }
+    },
+    {
+      "id": "slap_back",
+      "label": "Slap Back in Your Face",
+      "secondaryCircuitSlug": "slap_back_noise",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitId": "noise_circuit",
+      "settings": {
+        "volume": 4,
+        "swell": 6,
+        "tone": 5,
+        "time": 8,
+        "modulation": 6.5
+      }
+    },
+    {
+      "id": "swell_knob",
+      "label": "Swell Preset",
+      "isSweep": true,
+      "target": "swell",
+      "secondaryCircuitSlug": "swell_knob_noise",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitId": "noise_circuit",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "volume": 4, "tone": 5, "time": 7, "modulation": 5 }
+    },
+    {
+      "id": "time_knob",
+      "label": "Time Preset",
+      "isSweep": true,
+      "target": "time",
+      "secondaryCircuitSlug": "time_knob_noise",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitId": "noise_circuit",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "volume": 4, "tone": 5, "swell": 5, "modulation": 5 }
+    },
+    {
+      "id": "modulation_knob",
+      "label": "Modulation Preset",
+      "isSweep": true,
+      "target": "modulation",
+      "secondaryCircuitSlug": "modulation_knob_noise",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitId": "noise_circuit",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "volume": 4, "tone": 5, "swell": 5, "time": 8 }
+    }
+  ]
+}

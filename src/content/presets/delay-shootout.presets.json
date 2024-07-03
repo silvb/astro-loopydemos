@@ -1,0 +1,131 @@
+{
+  "presets": [
+    {
+      "id": "dotted_8th",
+      "label": "Cleanish Dotted 8th",
+      "boss-dm-2w-delay": {
+        "id": "boss_dm_2w_delay_dotted_8th",
+        "settings": { "rate": 6, "echo": 5, "intensity": 3, "mode": 2 }
+      },
+      "caroline-guitar-company-kilobyte": {
+        "id": "caroline_guitar_company_kilobyte_dotted_8th",
+        "settings": {
+          "out": 2,
+          "in": 5,
+          "feedback": 7,
+          "rate": 4,
+          "modulation": 2
+        }
+      },
+      "crazy-tube-circuits-time": {
+        "id": "crazy_tube_circuits_time_dotted_8th",
+        "settings": {
+          "mix": 5,
+          "feed": 6,
+          "tone": 6,
+          "subdiv": 1,
+          "mod": 2,
+          "msec_label": "no effect b/c tapped tempo",
+          "rate_led": 600
+        }
+      },
+      "native-audio-wilderness": {
+        "id": "native_audio_wilderness_dotted_8th",
+        "settings": {
+          "mix": 5,
+          "m_depth": 4,
+          "m_rate": 2,
+          "feedback": 6,
+          "mode": 1,
+          "div": 6,
+          "rate_led": 600
+        }
+      }
+    },
+    {
+      "id": "moody",
+      "label": "Long and Moody",
+      "boss-dm-2w-delay": {
+        "id": "boss_dm_2w_delay_moody",
+        "settings": { "rate": 0, "echo": 7, "intensity": 8, "mode": 1 }
+      },
+      "caroline-guitar-company-kilobyte": {
+        "id": "caroline_guitar_company_kilobyte_moody",
+        "settings": {
+          "out": 2,
+          "in": 10,
+          "feedback": 7,
+          "rate": 10,
+          "modulation": 5
+        }
+      },
+      "crazy-tube-circuits-time": {
+        "id": "crazy_tube_circuits_time_moody",
+        "settings": {
+          "mix": 6,
+          "feed": 7,
+          "tone": 3,
+          "subdiv_label": "no effect b/c tempo set by m/sec knob",
+          "mod": 5,
+          "msec": 7,
+          "rate_led": 800
+        }
+      },
+      "native-audio-wilderness": {
+        "id": "native_audio_wilderness_moody",
+        "settings": {
+          "mix": 4,
+          "m_depth": 6,
+          "m_rate": 3,
+          "feedback": 7,
+          "mode": 3,
+          "div": 6,
+          "rate_led": 800
+        }
+      }
+    },
+    {
+      "id": "quick_and_dirty",
+      "label": "Quick and Dirty",
+      "boss-dm-2w-delay": {
+        "id": "boss_dm_2w_delay_quick_and_dirty",
+        "settings": { "rate": 5, "echo": 6, "intensity": 8, "mode": 1 }
+      },
+      "caroline-guitar-company-kilobyte": {
+        "id": "caroline_guitar_company_kilobyte_quick_and_dirty",
+        "settings": {
+          "out": 2,
+          "in": 8,
+          "feedback": 8,
+          "rate": 1,
+          "modulation": 8
+        }
+      },
+      "crazy-tube-circuits-time": {
+        "id": "crazy_tube_circuits_time_quick_and_dirty",
+        "settings": {
+          "mix": 5,
+          "feed": 7,
+          "tone": 8,
+          "subdiv_label": "no effect b/c tempo set by m/sec knob",
+          "mod": 6,
+          "msec": 1,
+          "rate_led": 400
+        }
+      },
+      "native-audio-wilderness": {
+        "id": "native_audio_wilderness_quick_and_dirty",
+        "settings": {
+          "mix": 5,
+          "m_depth": 7,
+          "m_rate": 2,
+          "feedback": 7,
+          "mode": 3,
+          "div": 7,
+          "rate_led": 400,
+          "fast_label": "\"Control\" foot switch is pressed down, so \"fast\" is active"
+        }
+      }
+    }
+  ]
+}

@@ -1,0 +1,86 @@
+{
+  "name": "mojo-hand-fx-swim-team",
+  "controls": {
+    "knobs": [
+      {
+        "id": "rate",
+        "size": 50,
+        "position": {
+          "left": 21,
+          "top": 71
+        },
+        "type": "bakelit",
+        "colors": {
+          "primary": "antiquewhite",
+          "secondary": "gainsboro",
+          "tick": "#000"
+        }
+      },
+      {
+        "id": "depth",
+        "size": 50,
+        "position": {
+          "left": 73,
+          "top": 21
+        },
+        "type": "bakelit",
+        "colors": {
+          "primary": "antiquewhite",
+          "secondary": "gainsboro",
+          "tick": "#000"
+        }
+      },
+      {
+        "id": "mix_feed",
+        "size": 50,
+        "position": {
+          "left": 126,
+          "top": 72
+        },
+        "type": "bakelit",
+        "colors": {
+          "primary": "antiquewhite",
+          "secondary": "gainsboro",
+          "tick": "#000"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 23,
+          "top": 249
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "springgreen"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 69,
+          "top": 248
+        }
+      },
+      {
+        "id": "mode",
+        "type": "pushbutton",
+        "size": 32,
+        "position": {
+          "left": 82,
+          "top": 76
+        },
+        "colors": {
+          "primary": "antiquewhite",
+          "secondary": "gainsboro"
+        }
+      }
+    ]
+  }
+}

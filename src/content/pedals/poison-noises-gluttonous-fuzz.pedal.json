@@ -1,0 +1,153 @@
+{
+  "name": "poison-noises-gluttonous-fuzz",
+  "width": 300,
+  "controls": {
+    "knobs": [
+      {
+        "id": "choke",
+        "size": 48,
+        "position": {
+          "left": 66,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "more",
+        "size": 48,
+        "position": {
+          "left": 126,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "even_more",
+        "size": 48,
+        "position": {
+          "left": 184,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "stuff",
+        "size": 48,
+        "position": {
+          "left": 126,
+          "top": 118
+        },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 66,
+          "top": 290
+        },
+        "colors": {
+          "on": "#ef8838"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 123,
+          "top": 287
+        }
+      },
+      {
+        "id": "flavor",
+        "type": "toggle",
+        "size": 36,
+        "position": {
+          "left": 73,
+          "top": 122
+        }
+      },
+      {
+        "id": "binge_purge",
+        "type": "toggle",
+        "size": 36,
+        "position": {
+          "left": 191,
+          "top": 122
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "choke_label",
+        "position": {
+          "left": 81,
+          "top": 82
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 129
+        }
+      },
+      {
+        "id": "more_label",
+        "position": {
+          "left": 141,
+          "top": 82
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 175
+        }
+      },
+      {
+        "id": "even_more_label",
+        "position": {
+          "left": 214,
+          "top": 82
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 129
+        }
+      },
+      {
+        "id": "flavor_label",
+        "position": {
+          "left": 86,
+          "top": 153
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 207
+        }
+      },
+      {
+        "id": "stuff_label",
+        "position": {
+          "left": 159,
+          "top": 160
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 210
+        }
+      },
+      {
+        "id": "binge_purge_label",
+        "position": {
+          "left": 217,
+          "top": 131
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 73
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,71 @@
+{
+  "name": "jhs-pedals-mini-foot-fuzz-v2",
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 62,
+        "type": "jhs",
+        "colors": {
+          "primary": "#3eb255",
+          "secondary": "#7dce8e",
+          "tick": "white"
+        },
+        "position": {
+          "top": 57,
+          "left": 33
+        }
+      },
+      {
+        "id": "fuzz",
+        "size": 62,
+        "type": "jhs",
+        "colors": {
+          "primary": "#3eb255",
+          "secondary": "#7dce8e",
+          "tick": "white"
+        },
+        "position": {
+          "top": 57,
+          "left": 106
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 46,
+        "socket": true,
+        "position": {
+          "top": 171,
+          "left": 118
+        },
+        "colors": {
+          "off": "green",
+          "on": "springgreen",
+          "socket": "black"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "top": 277,
+          "left": 72
+        }
+      },
+      {
+        "id": "mode",
+        "size": 38,
+        "orientation": "horizontal",
+        "position": {
+          "top": 26,
+          "left": 80
+        },
+        "type": "toggle"
+      }
+    ]
+  }
+}

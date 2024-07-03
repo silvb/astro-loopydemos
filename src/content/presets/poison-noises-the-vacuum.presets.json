@@ -1,0 +1,102 @@
+{
+  "presets": [
+    {
+      "id": "squashed",
+      "label": "Squashed",
+      "settings": {
+        "density": 5,
+        "collapse": 10,
+        "eclipse": 8,
+        "velocity": 0,
+        "magnitude": 10,
+        "drift": 0,
+        "density_label": "volume",
+        "collapse_label": "threshold",
+        "eclipse_label": "tone",
+        "velocity_label": "attack",
+        "magnitude_label": "ratio",
+        "drift_label": "release"
+      }
+    },
+    {
+      "id": "collapse_knob",
+      "label": "Collapse",
+      "isSweep": true,
+      "target": "collapse",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "density": 5,
+        "eclipse": 8,
+        "velocity": 0,
+        "magnitude": 10,
+        "drift": 0,
+        "collapse_label": "threshold"
+      }
+    },
+    {
+      "id": "eclipse_knob",
+      "label": "Eclipse",
+      "isSweep": true,
+      "target": "eclipse",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "density": 5,
+        "collapse": 10,
+        "velocity": 0,
+        "magnitude": 10,
+        "drift": 0,
+        "eclipse_label": "tone"
+      }
+    },
+    {
+      "id": "velocity_knob",
+      "label": "Velocity",
+      "isSweep": true,
+      "target": "velocity",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "density": 5,
+        "collapse": 10,
+        "eclipse": 8,
+        "magnitude": 10,
+        "drift": 0,
+        "velocity_label": "attack"
+      }
+    },
+    {
+      "id": "magnitude_knob",
+      "label": "Magnitude",
+      "isSweep": true,
+      "target": "magnitude",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "density": 5,
+        "collapse": 10,
+        "eclipse": 8,
+        "velocity": 0,
+        "drift": 0,
+        "magnitude_label": "ratio"
+      }
+    },
+    {
+      "id": "drift_knob",
+      "label": "Drift",
+      "isSweep": true,
+      "target": "drift",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "density": 5,
+        "collapse": 10,
+        "eclipse": 8,
+        "velocity": 0,
+        "magnitude": 10,
+        "drift_label": "release"
+      }
+    }
+  ]
+}

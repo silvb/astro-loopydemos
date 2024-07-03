@@ -1,0 +1,127 @@
+{
+  "presets": [
+    {
+      "id": "reverse_twinkles",
+      "label": "Reverse Twinkles",
+      "chain": [
+        {
+          "name": "beautiful-noise-effects-exploder",
+          "id": "exploder",
+          "settings": {
+            "master": 6,
+            "gain": 3,
+            "low": 4,
+            "mid": 6,
+            "hi": 7,
+            "white_noise": 0,
+            "clipping": 3
+          }
+        },
+        {
+          "name": "mojo-hand-fx-octaverse",
+          "id": "octaverse",
+          "settings": { "rate": 6, "mix": 8, "feedback": 5, "octave": 1 }
+        }
+      ]
+    },
+    {
+      "id": "looming_memories",
+      "label": "Looming Memories",
+      "chain": [
+        {
+          "name": "beautiful-noise-effects-exploder",
+          "id": "exploder",
+          "settings": {
+            "master": 6,
+            "gain": 3,
+            "low": 4,
+            "mid": 6,
+            "hi": 7,
+            "white_noise": 0,
+            "clipping": 3
+          }
+        },
+        {
+          "name": "mojo-hand-fx-octaverse",
+          "id": "octaverse",
+          "settings": { "rate": 10, "mix": 3.5, "feedback": 2, "octave": 2 }
+        }
+      ]
+    },
+    {
+      "id": "octave_tremor",
+      "label": "Octave Tremor",
+      "chain": [
+        {
+          "name": "beautiful-noise-effects-exploder",
+          "id": "exploder",
+          "settings": {
+            "master": 6,
+            "gain": 3,
+            "low": 4,
+            "mid": 6,
+            "hi": 7,
+            "white_noise": 0,
+            "clipping": 3
+          }
+        },
+        {
+          "name": "mojo-hand-fx-octaverse",
+          "id": "octaverse",
+          "settings": { "rate": 0, "mix": 6.5, "feedback": 8, "octave": 1 }
+        }
+      ]
+    },
+    {
+      "id": "fully_wet",
+      "label": "Fully Wet",
+      "chain": [
+        {
+          "name": "beautiful-noise-effects-exploder",
+          "id": "exploder",
+          "settings": {
+            "master": 6,
+            "gain": 3,
+            "low": 4,
+            "mid": 6,
+            "hi": 7,
+            "white_noise": 0,
+            "clipping": 3
+          }
+        },
+        {
+          "name": "mojo-hand-fx-octaverse",
+          "id": "octaverse",
+          "settings": { "rate": 6, "mix": 10, "feedback": 5, "octave": 1 }
+        }
+      ]
+    },
+    {
+      "id": "rate_knob",
+      "label": "Rate",
+      "isSweep": true,
+      "target": "rate",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "mix": 7, "feedback": 5, "octave": 1 }
+    },
+    {
+      "id": "octave_switch",
+      "label": "Octave Switch",
+      "isSweep": true,
+      "target": "octave",
+      "initialValue": 1,
+      "values": [1, 2],
+      "settings": { "rate": 5, "mix": 7.5, "feedback": 5 }
+    },
+    {
+      "id": "feedback_knob",
+      "label": "Feedback",
+      "isSweep": true,
+      "target": "feedback",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "mix": 7, "rate": 5, "octave": 1 }
+    }
+  ]
+}

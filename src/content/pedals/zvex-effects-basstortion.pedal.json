@@ -1,0 +1,43 @@
+{
+  "name": "zvex-effects-basstortion",
+  "enclosure": "landscape",
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 60,
+        "position": { "left": 34, "top": 60 },
+        "type": "jhs"
+      },
+      {
+        "id": "tone",
+        "size": 60,
+        "position": { "left": 141, "top": 60 },
+        "type": "jhs"
+      },
+      {
+        "id": "drive",
+        "size": 60,
+        "position": { "left": 249, "top": 60 },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 32, "position": { "left": 290, "top": 48 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": { "left": 147, "top": 169 }
+      },
+      {
+        "id": "mode",
+        "type": "toggle",
+        "size": 24,
+        "position": { "left": 106, "top": 67 },
+        "orientation": "horizontal"
+      }
+    ]
+  }
+}

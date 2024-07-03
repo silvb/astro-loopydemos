@@ -1,0 +1,52 @@
+{
+  "presets": [
+    {
+      "id": "smacking_fuzz",
+      "label": "Smacking Fuzz",
+      "settings": { "tone": 6, "volume": 3, "filter": 7, "trim": 9 }
+    },
+    {
+      "id": "warm_drive",
+      "label": "Warm Drive",
+      "settings": { "tone": 5, "volume": 3.5, "filter": 5, "trim": 5 }
+    },
+    {
+      "id": "bright_fuzz",
+      "label": "Bright Fuzz",
+      "settings": { "tone": 7, "volume": 3.5, "filter": 10, "trim": 2 }
+    },
+
+    {
+      "id": "low_gain_chime",
+      "label": "Low Gain Chime",
+      "settings": { "tone": 6, "volume": 5, "filter": 4, "trim": 4 }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 5,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "volume": 3.5, "filter": 5, "trim": 7 }
+    },
+    {
+      "id": "filter_knob",
+      "label": "Filter",
+      "isSweep": true,
+      "target": "filter",
+      "initialValue": 5,
+      "values": [1, 2, 5, 8, 10],
+      "settings": { "volume": 5, "tone": 5, "trim": 5 }
+    },
+    {
+      "id": "trim_knob",
+      "label": "Trim",
+      "isSweep": true,
+      "target": "trim",
+      "initialValue": 5,
+      "values": [1, 2, 5, 8, 10],
+      "settings": { "volume": 5, "filter": 5, "tone": 5 }
+    }
+  ]
+}

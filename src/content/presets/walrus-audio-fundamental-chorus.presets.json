@@ -1,0 +1,60 @@
+{
+  "presets": [
+    {
+      "id": "eighties_vibe",
+      "label": "80s Vibe",
+      "settings": { "rate": 2.5, "depth": 6, "mix": 5, "mode": 1 }
+    },
+    {
+      "id": "psychedelic_pop",
+      "label": "Psychedelic Pop",
+      "settings": { "rate": 8, "depth": 3.5, "mix": 7, "mode": 2 }
+    },
+    {
+      "id": "lush_and_deep",
+      "label": "Lush & Deep",
+      "settings": { "rate": 2.5, "depth": 10, "mix": 4, "mode": 3 }
+    },
+    {
+      "id": "wiggly_vibrato",
+      "label": "Wiggly Vibrato",
+      "settings": { "rate": 10, "depth": 4, "mix": 10, "mode": 1 }
+    },
+    {
+      "id": "mode_switch",
+      "label": "Mode",
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": { "depth": 5, "mix": 5, "rate": 5 }
+    },
+    {
+      "id": "rate_knob",
+      "label": "Rate",
+      "isSweep": true,
+      "target": "rate",
+      "initialValue": 0,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "settings": { "depth": 6.5, "mix": 6.5, "mode": 1 }
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "rate": 2, "mix": 7, "mode": 2 }
+    },
+    {
+      "id": "mix_knob",
+      "label": "Mix",
+      "isSweep": true,
+      "target": "mix",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "rate": 2, "depth": 7, "mode": 1 }
+    }
+  ]
+}

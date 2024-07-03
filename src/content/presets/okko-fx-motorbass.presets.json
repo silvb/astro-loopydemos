@@ -1,0 +1,42 @@
+{
+  "presets": [
+    {
+      "id": "tamed_beast",
+      "label": "Tamed Beast",
+      "settings": { "faster": 2, "harder": 6, "louder": 4 }
+    },
+    {
+      "id": "bare_teeth",
+      "label": "Bare Teeth",
+      "settings": { "faster": 8, "harder": 10, "louder": 4 }
+    },
+    {
+      "id": "full_roar",
+      "label": "Full Roar",
+      "settings": { "faster": 10, "harder": 5, "louder": 10 }
+    },
+    {
+      "id": "fat_punch",
+      "label": "Fat Punch",
+      "settings": { "faster": 5, "harder": 5, "louder": 5 }
+    },
+    {
+      "id": "faster_knob",
+      "label": "Faster",
+      "isSweep": true,
+      "target": "faster",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "harder": 6, "louder": 5 }
+    },
+    {
+      "id": "harder_knob",
+      "label": "Harder",
+      "isSweep": true,
+      "target": "harder",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "faster": 5, "harder": 5 }
+    }
+  ]
+}

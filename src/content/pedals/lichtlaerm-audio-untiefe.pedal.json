@@ -1,0 +1,95 @@
+{
+  "name": "lichtlaerm-audio-untiefe",
+  "controls": {
+    "knobs": [
+      {
+        "id": "rate",
+        "size": 42,
+        "position": {
+          "left": 21,
+          "top": 38
+        },
+        "type": "lichtlaerm"
+      },
+      {
+        "id": "depth",
+        "size": 42,
+        "position": {
+          "left": 77,
+          "top": 38
+        },
+        "type": "lichtlaerm"
+      },
+      {
+        "id": "decay",
+        "size": 42,
+        "position": {
+          "left": 134,
+          "top": 38
+        },
+        "type": "lichtlaerm"
+      },
+      {
+        "id": "level",
+        "size": 42,
+        "position": {
+          "left": 21,
+          "top": 112
+        },
+        "type": "lichtlaerm"
+      },
+      {
+        "id": "mix",
+        "size": 42,
+        "position": {
+          "left": 77,
+          "top": 112
+        },
+        "type": "lichtlaerm"
+      },
+      {
+        "id": "dampen",
+        "size": 42,
+        "position": {
+          "left": 134,
+          "top": 112
+        },
+        "type": "lichtlaerm"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 35,
+        "position": {
+          "left": 82,
+          "top": 279
+        },
+        "colors": {
+          "on": "#65a8ca"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": {
+          "left": 122,
+          "top": 280
+        },
+        "orientation": "horizontal"
+      },
+      {
+        "id": "mode",
+        "type": "toggle",
+        "size": 24,
+        "position": {
+          "left": 87,
+          "top": 185
+        },
+        "orientation": "horizontal"
+      }
+    ]
+  }
+}

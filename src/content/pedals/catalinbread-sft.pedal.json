@@ -1,0 +1,98 @@
+{
+  "name": "catalinbread-sft",
+  "controls": {
+    "knobs": [
+      {
+        "id": "treble",
+        "size": 44,
+        "position": {
+          "left": 26,
+          "top": 30
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "bass",
+        "size": 44,
+        "position": {
+          "left": 129,
+          "top": 30
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "volume",
+        "size": 44,
+        "position": {
+          "left": 27,
+          "top": 92
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "gain",
+        "size": 44,
+        "position": {
+          "left": 129,
+          "top": 92
+        },
+        "type": "simpledot"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 70,
+        "position": {
+          "left": 65,
+          "top": 97
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": {
+          "left": 75,
+          "top": 209
+        }
+      },
+      {
+        "id": "mode",
+        "type": "pushbutton",
+        "size": 36,
+        "position": {
+          "left": 81,
+          "top": 34
+        }
+      }
+    ],
+    "dependencies": [
+      {
+        "source": "mode",
+        "target": {
+          "id": "on_led",
+          "values": [
+            {
+              "sourceValue": 1,
+              "colors": {
+                "off": "#d2e1e9a1",
+                "on": "#00ff00",
+                "socket": "black"
+              }
+            },
+            {
+              "sourceValue": 2,
+              "colors": {
+                "on": "#f73333",
+                "off": "#800000a1",
+                "socket": "black"
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

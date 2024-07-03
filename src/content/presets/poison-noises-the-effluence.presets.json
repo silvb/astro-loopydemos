@@ -1,0 +1,132 @@
+{
+  "presets": [
+    {
+      "id": "looming_decay",
+      "label": "Looming Decay",
+      "settings": {
+        "transcend": 7,
+        "flow": 8,
+        "body": 6,
+        "emanate": 5,
+        "project": 10,
+        "spirit": 10,
+        "transcend_label": "mix",
+        "flow_label": "length",
+        "body_label": "brightness",
+        "emanate_label": "dwell",
+        "project_label": "decay",
+        "spirit_label": "dampen"
+      }
+    },
+    {
+      "id": "shoegaze",
+      "label": "Does it Shoegaze?",
+      "chain": [
+        {
+          "name": "poison-noises-the-crook",
+          "id": "crook",
+          "settings": {
+            "breaking": 6,
+            "entering": 6,
+            "the_goods": 1,
+            "switcheroo": 3,
+            "high_tail": 8,
+            "lay_low": 5
+          }
+        },
+        {
+          "name": "poison-noises-the-effluence",
+          "id": "effluence",
+          "settings": {
+            "transcend": 8,
+            "flow": 5,
+            "body": 0,
+            "emanate": 5,
+            "project": 5,
+            "spirit": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "flow_knob",
+      "label": "Flow",
+      "isSweep": true,
+      "target": "flow",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "transcend": 8,
+        "body": 5,
+        "emanate": 5,
+        "project": 5,
+        "spirit": 5,
+        "flow_label": "length"
+      }
+    },
+    {
+      "id": "body_knob",
+      "label": "Body",
+      "isSweep": true,
+      "target": "body",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "transcend": 8,
+        "flow": 8,
+        "emanate": 6,
+        "project": 6,
+        "spirit": 5,
+        "body_label": "brightness"
+      }
+    },
+    {
+      "id": "emanate_knob",
+      "label": "Emanate",
+      "isSweep": true,
+      "target": "emanate",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "transcend": 8,
+        "flow": 8,
+        "body": 5,
+        "project": 6,
+        "spirit": 5,
+        "emanate_label": "dwell"
+      }
+    },
+    {
+      "id": "project_knob",
+      "label": "Project",
+      "isSweep": true,
+      "target": "project",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "transcend": 8,
+        "flow": 8,
+        "body": 5,
+        "emanate": 5,
+        "spirit": 5,
+        "project_label": "decay"
+      }
+    },
+    {
+      "id": "spirit_knob",
+      "label": "Spirit",
+      "isSweep": true,
+      "target": "spirit",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "transcend": 8,
+        "flow": 8,
+        "body": 7,
+        "emanate": 6,
+        "project": 6,
+        "spirit_label": "dampen"
+      }
+    }
+  ]
+}

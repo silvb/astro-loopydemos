@@ -1,0 +1,108 @@
+{
+  "name": "funny-little-boxes-1991",
+  "controls": {
+    "knobs": [
+      {
+        "id": "gain_one",
+        "size": 42,
+        "position": {
+          "left": 23,
+          "top": 46
+        },
+        "colors": {
+          "primary": "#c6e4ff",
+          "secondary": "#415462"
+        },
+        "type": "flb"
+      },
+      {
+        "id": "gain_two",
+        "size": 42,
+        "position": {
+          "left": 80,
+          "top": 45
+        },
+        "colors": {
+          "primary": "#c6e4ff",
+          "secondary": "#415462"
+        },
+        "type": "flb"
+      },
+      {
+        "id": "volume",
+        "size": 42,
+        "position": {
+          "left": 137,
+          "top": 46
+        },
+        "colors": {
+          "primary": "#c6e4ff",
+          "secondary": "#415462"
+        },
+        "type": "flb"
+      },
+      {
+        "id": "bass",
+        "size": 42,
+        "position": {
+          "left": 22,
+          "top": 120
+        },
+        "colors": {
+          "primary": "#c6e4ff",
+          "secondary": "#415462"
+        },
+        "type": "flb"
+      },
+      {
+        "id": "middle",
+        "size": 42,
+        "position": {
+          "left": 80,
+          "top": 120
+        },
+        "colors": {
+          "primary": "#c6e4ff",
+          "secondary": "#415462"
+        },
+        "type": "flb"
+      },
+      {
+        "id": "treble",
+        "size": 42,
+        "position": {
+          "left": 138,
+          "top": 120
+        },
+        "colors": {
+          "primary": "#c6e4ff",
+          "secondary": "#415462"
+        },
+        "type": "flb"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 76,
+          "top": 230
+        },
+        "colors": {
+          "on": "#f300ff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 76,
+          "top": 281
+        }
+      }
+    ]
+  }
+}

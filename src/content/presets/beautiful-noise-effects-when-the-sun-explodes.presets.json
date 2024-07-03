@@ -1,0 +1,189 @@
+{
+  "presets": [
+    {
+      "id": "gritty_reverb",
+      "label": "Gritty Reverb",
+      "settings": {
+        "master": 6,
+        "reverb": 6,
+        "colour": 2,
+        "decay": 8,
+        "gain": 8,
+        "feedback": 5,
+        "rate": 5,
+        "feedback_shape": 3,
+        "boost_led": false,
+        "dry_wet_label": "dry/wet",
+        "clipping_label": "asymmetrical clipping"
+      }
+    },
+    {
+      "id": "super_compressed",
+      "label": "Super Compressed",
+      "settings": {
+        "master": 8,
+        "reverb": 5,
+        "colour": 7,
+        "decay": 7,
+        "gain": 10,
+        "feedback": 5,
+        "rate": 5,
+        "feedback_shape": 3,
+        "boost_led": true,
+        "dry_wet_label": "dry/wet",
+        "clipping_label": "symmetrical clipping"
+      }
+    },
+    {
+      "id": "vintage_spring",
+      "label": "Vintage Spring",
+      "settings": {
+        "master": 6,
+        "reverb": 7,
+        "colour": 3,
+        "decay": 6,
+        "gain": 7,
+        "feedback": 5,
+        "rate": 5,
+        "feedback_shape": 3,
+        "boost_led": false,
+        "dry_wet_label": "dry/wet",
+        "clipping_label": "no clipping"
+      }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 1, 2, 4, 6, 8, 10],
+      "settings": {
+        "master": 6,
+        "reverb": 6,
+        "colour": 5,
+        "decay": 6,
+        "feedback": 5,
+        "rate": 5,
+        "feedback_shape": 3,
+        "boost_led": false,
+        "dry_wet_label": "dry/wet",
+        "clipping_label": "asymmetrical clipping"
+      }
+    },
+    {
+      "id": "max_gain_boosted",
+      "label": "Max Gain Boosted",
+      "settings": {
+        "master": 6,
+        "reverb": 6,
+        "colour": 5,
+        "decay": 6,
+        "gain": 10,
+        "feedback": 5,
+        "rate": 5,
+        "feedback_shape": 3,
+        "boost_led": true,
+        "dry_wet_label": "dry/wet",
+        "clipping_label": "asymmetrical clipping"
+      }
+    },
+    {
+      "id": "reverb_knob",
+      "label": "Reverb",
+      "isSweep": true,
+      "target": "reverb",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "master": 7,
+        "gain": 6,
+        "colour": 6,
+        "decay": 7,
+        "feedback": 5,
+        "rate": 5,
+        "feedback_shape": 3,
+        "boost_led": false,
+        "dry_wet_label": "dry/wet",
+        "clipping_label": "asymmetrical clipping"
+      }
+    },
+    {
+      "id": "wet_only",
+      "label": "Wet Only",
+      "settings": {
+        "master": 7,
+        "gain": 6,
+        "reverb": 10,
+        "colour": 6,
+        "decay": 7,
+        "feedback": 5,
+        "rate": 5,
+        "feedback_shape": 3,
+        "boost_led": false,
+        "dry_wet_label": "wet only",
+        "clipping_label": "asymmetrical clipping"
+      }
+    },
+    {
+      "id": "colour_knob",
+      "label": "Colour",
+      "isSweep": true,
+      "target": "colour",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "master": 8,
+        "reverb": 8,
+        "decay": 7,
+        "gain": 4,
+        "feedback": 5,
+        "rate": 5,
+        "feedback_shape": 3,
+        "boost_led": false,
+        "dry_wet_label": "dry/wet",
+        "clipping_label": "asymmetrical clipping"
+      }
+    },
+    {
+      "id": "decay_knob",
+      "label": "Decay",
+      "isSweep": true,
+      "target": "decay",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "master": 8,
+        "reverb": 8,
+        "colour": 5,
+        "gain": 4,
+        "feedback": 5,
+        "rate": 5,
+        "feedback_shape": 3,
+        "boost_led": false,
+        "dry_wet_label": "dry/wet",
+        "clipping_label": "asymmetrical clipping"
+      }
+    },
+    {
+      "id": "feedback_rate_knob",
+      "label": "Feedback Rate",
+      "isSweep": true,
+      "target": "rate",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 9, 10],
+      "settings": {
+        "master": 6,
+        "reverb": 2,
+        "colour": 5,
+        "decay": 5,
+        "gain": 6,
+        "feedback": 7,
+        "feedback_shape": 3,
+        "boost_led": false,
+        "dry_wet_label": "dry/wet",
+        "clipping_label": "asymmetrical clipping"
+      }
+    }
+  ]
+}

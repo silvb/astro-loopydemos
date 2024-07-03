@@ -1,0 +1,206 @@
+{
+  "presets": [
+    {
+      "id": "scifi_verb",
+      "label": "Sci-fi Verb",
+      "settings": {
+        "rate": 2,
+        "depth": 7,
+        "decay": 8,
+        "level": 10,
+        "mix": 8,
+        "dampen": 4,
+        "mode": 2
+      }
+    },
+    {
+      "id": "ominous_space",
+      "label": "Ominous Space",
+      "settings": {
+        "rate": 5,
+        "depth": 5,
+        "decay": 8,
+        "level": 10,
+        "mix": 8,
+        "dampen": 6,
+        "mode": 1
+      }
+    },
+    {
+      "id": "chopped_trails",
+      "label": "Chopped Trails",
+      "settings": {
+        "rate": 10,
+        "depth": 8,
+        "decay": 8,
+        "level": 10,
+        "mix": 8,
+        "dampen": 6,
+        "mode": 3
+      }
+    },
+    {
+      "id": "murky_verb",
+      "label": "Murky Reverb",
+      "chain": [
+        {
+          "name": "fairfield-circuitry-shallow-water",
+          "id": "shallowwater",
+          "settings": {
+            "rate": 6,
+            "lpg": 2,
+            "damp": 1,
+            "mix": 8,
+            "depth": 8,
+            "vol": 3
+          }
+        },
+        {
+          "name": "lichtlaerm-audio-untiefe",
+          "id": "untiefe",
+          "settings": {
+            "rate": 3.5,
+            "depth": 6,
+            "decay": 8,
+            "level": 10,
+            "mix": 8,
+            "dampen": 4,
+            "mode": 2
+          }
+        }
+      ]
+    },
+    {
+      "id": "exploding_reverb",
+      "label": "Exploding Reverb",
+      "chain": [
+        {
+          "name": "beautiful-noise-effects-exploder",
+          "id": "exploder",
+          "settings": {
+            "master": 4,
+            "gain": 4,
+            "low": 9,
+            "mid": 3,
+            "hi": 5,
+            "white_noise": 2,
+            "tone": 3,
+            "env": 1.5,
+            "clipping": 3
+          }
+        },
+        {
+          "name": "lichtlaerm-audio-untiefe",
+          "id": "untiefe",
+          "settings": {
+            "rate": 5,
+            "depth": 10,
+            "decay": 8,
+            "level": 10,
+            "mix": 7,
+            "dampen": 5,
+            "mode": 3
+          }
+        }
+      ]
+    },
+    {
+      "id": "parallel_shoegaze",
+      "label": "Parallel Shoegaze",
+      "chain": [
+        {
+          "name": "beautiful-noise-effects-exploder",
+          "id": "exploder",
+          "settings": {
+            "master": 4,
+            "gain": 4,
+            "low": 9,
+            "mid": 3,
+            "hi": 5,
+            "white_noise": 2,
+            "tone": 3,
+            "env": 1.5,
+            "clipping": 3
+          }
+        },
+        {
+          "name": "lichtlaerm-audio-untiefe",
+          "id": "untiefe",
+          "settings": {
+            "rate": 4,
+            "depth": 7,
+            "decay": 8,
+            "level": 10,
+            "mix": 7,
+            "dampen": 0,
+            "mode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "mode_toggle",
+      "label": "Modulation Type",
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "rate": 4,
+        "depth": 8,
+        "decay": 8,
+        "level": 10,
+        "mix": 8,
+        "dampen": 5
+      }
+    },
+    {
+      "id": "rate_knob",
+      "label": "Rate",
+      "isSweep": true,
+      "target": "rate",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "depth": 8,
+        "decay": 8,
+        "level": 10,
+        "mix": 8,
+        "dampen": 5,
+        "mode": 2
+      }
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 5,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "rate": 4,
+        "decay": 8,
+        "level": 10,
+        "mix": 8,
+        "dampen": 5,
+        "mode": 1
+      }
+    },
+    {
+      "id": "dampen_knob",
+      "label": "Dampen",
+      "isSweep": true,
+      "target": "dampen",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "rate": 6,
+        "depth": 8,
+        "decay": 8,
+        "level": 10,
+        "mix": 8,
+        "mode": 3
+      }
+    }
+  ]
+}

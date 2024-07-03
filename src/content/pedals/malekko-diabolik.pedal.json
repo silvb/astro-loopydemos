@@ -1,0 +1,68 @@
+{
+  "name": "malekko-diabolik",
+  "width": 199,
+  "height": 325,
+  "controls": {
+    "knobs": [
+      {
+        "id": "fuzz",
+        "size": 48,
+        "type": "davies",
+        "colors": {
+          "primary": "#ededed",
+          "tick": "#000"
+        },
+        "position": {
+          "left": 20,
+          "top": 45
+        }
+      },
+      {
+        "id": "clean",
+        "size": 48,
+        "type": "davies",
+        "colors": {
+          "primary": "#ededed",
+          "tick": "#000"
+        },
+        "position": {
+          "left": 75,
+          "top": 45
+        }
+      },
+      {
+        "id": "squish",
+        "size": 48,
+        "type": "davies",
+        "colors": {
+          "primary": "#ededed",
+          "tick": "#000"
+        },
+        "position": {
+          "left": 129,
+          "top": 45
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "position": {
+          "left": 84,
+          "top": 170
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 75,
+          "top": 202
+        }
+      }
+    ]
+  }
+}

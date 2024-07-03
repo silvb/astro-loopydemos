@@ -1,0 +1,51 @@
+{
+  "name": "dirty-sock-harmonic-percolator",
+  "controls": {
+    "knobs": [
+      {
+        "id": "bal",
+        "size": 84,
+        "position": { "left": 15, "top": 38 },
+        "type": "roundchicken",
+        "colors": {
+          "primary": "#322b31",
+          "secondary": "#1F1B1C",
+          "tick": "#d9d6dc"
+        }
+      },
+      {
+        "id": "harm",
+        "size": 84,
+        "position": { "left": 105, "top": 38 },
+        "type": "roundchicken",
+        "colors": {
+          "primary": "#3c343a",
+          "secondary": "#1F1B1C",
+          "tick": "#d9d6dc"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 37,
+        "socket": false,
+        "position": { "left": 25, "top": 275 }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": { "left": 76, "top": 268 }
+      },
+      {
+        "id": "mode",
+        "size": 32,
+        "type": "toggle",
+        "position": { "left": 84, "top": 133 },
+        "orientation": "vertical"
+      }
+    ]
+  }
+}

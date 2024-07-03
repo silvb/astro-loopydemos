@@ -1,0 +1,81 @@
+{
+  "name": "hungry-robot-lumen",
+  "width": 300,
+  "height": 350,
+  "controls": {
+    "knobs": [
+      {
+        "id": "level",
+        "size": 100,
+        "position": {
+          "left": 175,
+          "top": 24
+        }
+      },
+      {
+        "id": "drive",
+        "size": 100,
+        "position": {
+          "left": 25,
+          "top": 24
+        }
+      },
+      {
+        "id": "clean_blend",
+        "size": 48,
+        "position": {
+          "left": 126,
+          "top": 50
+        }
+      },
+      {
+        "id": "high_pass",
+        "size": 70,
+        "position": {
+          "left": 96,
+          "top": 119
+        }
+      },
+      {
+        "id": "band_pass",
+        "size": 70,
+        "position": {
+          "left": 144,
+          "top": 185
+        }
+      },
+      {
+        "id": "low_pass",
+        "size": 70,
+        "position": {
+          "left": 192,
+          "top": 251
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 50,
+        "position": {
+          "left": 205,
+          "top": 159
+        },
+        "colors": {
+          "on": "#5cb9ff",
+          "off": "#2249b944"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 47,
+          "top": 277
+        }
+      }
+    ]
+  }
+}

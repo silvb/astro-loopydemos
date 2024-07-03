@@ -1,0 +1,47 @@
+{
+  "presets": [
+    {
+      "id": "fuzz_with_bite",
+      "label": "Fuzz with Bite",
+      "settings": { "fuzz": 10, "focus": 10, "level": 8 }
+    },
+    {
+      "id": "smooth_fuzz",
+      "label": "Smooth Fuzz",
+      "settings": { "fuzz": 5, "focus": 0, "level": 8 }
+    },
+    {
+      "id": "just_really_good_fuzz",
+      "label": "Just Really Good Fuzz",
+      "settings": { "fuzz": 5, "focus": 5, "level": 8 }
+    },
+    {
+      "id": "guitar_volume_rolled_off",
+      "label": "Guitar Volume Rolled Back",
+      "settings": { "fuzz": 5, "focus": 5, "level": 8 }
+    },
+    {
+      "id": "mellow_fuzz",
+      "label": "Mellow Fuzz",
+      "settings": { "fuzz": 0, "focus": 0, "level": 8 }
+    },
+    {
+      "id": "fuzz_knob",
+      "label": "Fuzz Knob",
+      "isSweep": true,
+      "target": "fuzz",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "focus": 5, "level": 8 }
+    },
+    {
+      "id": "focus_knob",
+      "label": "Focus Knob",
+      "isSweep": true,
+      "target": "focus",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "fuzz": 5, "level": 8 }
+    }
+  ]
+}

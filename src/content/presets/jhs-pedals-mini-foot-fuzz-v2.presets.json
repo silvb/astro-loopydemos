@@ -1,0 +1,37 @@
+{
+  "presets": [
+    {
+      "id": "broken_speaker_fuzz",
+      "label": "Broken Speaker Fuzz",
+      "settings": {
+        "volume": 5,
+        "fuzz": 6,
+        "mode": 3
+      }
+    },
+    {
+      "id": "plus_mode_fuzz_sweep",
+      "label": "High Gain Fuzz Sweep",
+      "isSweep": true,
+      "target": "fuzz",
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "initialValue": 5,
+      "settings": {
+        "volume": 5,
+        "mode": 1
+      }
+    },
+    {
+      "id": "minus_mode_fuzz_sweep",
+      "label": "Low Gain Fuzz Sweep",
+      "isSweep": true,
+      "target": "fuzz",
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "initialValue": 5,
+      "settings": {
+        "volume": 5,
+        "mode": 3
+      }
+    }
+  ]
+}

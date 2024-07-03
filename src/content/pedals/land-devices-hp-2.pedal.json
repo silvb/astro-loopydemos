@@ -1,0 +1,54 @@
+{
+  "name": "land-devices-hp-2",
+  "enclosure": "landscape",
+  "controls": {
+    "knobs": [
+      {
+        "id": "harmonics",
+        "size": 90,
+        "position": { "left": 21, "top": 59 },
+        "type": "roundchicken",
+        "colors": {
+          "primary": "#322b31",
+          "secondary": "#1F1B1C",
+          "tick": "#d9d6dc"
+        }
+      },
+      {
+        "id": "balance",
+        "size": 90,
+        "position": { "left": 131, "top": 59 },
+        "type": "roundchicken",
+        "colors": {
+          "primary": "#322b31",
+          "secondary": "#1F1B1C",
+          "tick": "#d9d6dc"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "socket": false,
+        "position": { "left": 52, "top": 217 },
+        "colors": { "on": "#ffbf00", "off": "#767676aa" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 52,
+        "position": { "left": 256, "top": 206 }
+      },
+      {
+        "id": "mode",
+        "size": 49,
+        "type": "rocker",
+        "position": { "left": 259, "top": 91 },
+        "color": "#f22e0d",
+        "orientation": "horizontal"
+      }
+    ]
+  }
+}

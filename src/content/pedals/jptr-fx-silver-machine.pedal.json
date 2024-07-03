@@ -1,0 +1,40 @@
+{
+  "name": "jptr-fx-silver-machine",
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol",
+        "size": 72,
+        "position": { "left": 66, "top": 65 },
+        "type": "arrow"
+      },
+      {
+        "id": "gain_one",
+        "size": 72,
+        "position": { "left": 19, "top": 142 },
+        "type": "arrow"
+      },
+      {
+        "id": "gain_two",
+        "size": 72,
+        "position": { "left": 112, "top": 142 },
+        "type": "arrow"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 44,
+        "position": { "left": 79, "top": 241 },
+        "colors": { "off": "#d2e1e9a1", "on": "#d4f9ff", "socket": "black" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": { "left": 77, "top": 276 }
+      }
+    ]
+  }
+}

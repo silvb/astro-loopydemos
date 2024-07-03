@@ -1,0 +1,37 @@
+{
+  "presets": [
+    {
+      "id": "buzzing_fuzz",
+      "label": "Buzzing Fuzz",
+      "settings": { "vol": 6, "hi_cut": 1, "gain": 3 }
+    },
+    {
+      "id": "smooth_filth",
+      "label": "Smooth Filth",
+      "settings": { "vol": 7, "hi_cut": 2, "gain": 6 }
+    },
+    {
+      "id": "chimey_drive",
+      "label": "Chimey Drive",
+      "settings": { "vol": 8, "hi_cut": 0, "gain": 1.5 }
+    },
+    {
+      "id": "hi_cut_knob",
+      "label": "Hi Cut",
+      "isSweep": true,
+      "target": "hi_cut",
+      "initialValue": 0,
+      "values": [0, 1, 2, 4, 7, 10],
+      "settings": { "vol": 7, "gain": 5 }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 1, 2, 4, 7, 10],
+      "settings": { "vol": 6, "hi_cut": 1 }
+    }
+  ]
+}

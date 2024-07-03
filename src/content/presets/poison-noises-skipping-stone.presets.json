@@ -1,0 +1,222 @@
+{
+  "presets": [
+    {
+      "id": "digital_ripple",
+      "label": "Digital Ripple",
+      "settings": {
+        "settle": 6,
+        "flick": 10,
+        "skip": 2,
+        "ripple": 6,
+        "spin": 1,
+        "splash": 10,
+        "settle_label": "mix",
+        "flick_label": "volume",
+        "skip_label": "rate",
+        "ripple_label": "feedback",
+        "spin_label": "digital delay",
+        "splash_label": "low pass"
+      }
+    },
+    {
+      "id": "double_skip",
+      "label": "Double Skip",
+      "settings": {
+        "settle": 5,
+        "flick": 10,
+        "skip": 2,
+        "ripple": 5,
+        "spin": 2,
+        "splash": 5,
+        "spin_label": "double delay",
+        "splash_label": "2nd delay rate"
+      }
+    },
+    {
+      "id": "ducking_stone",
+      "label": "Ducking Stone",
+      "settings": {
+        "settle": 4,
+        "flick": 10,
+        "skip": 6,
+        "ripple": 6,
+        "spin": 3,
+        "splash": 3,
+        "spin_label": "tremolo delay",
+        "splash_label": "trem speed"
+      }
+    },
+    {
+      "id": "floating_drop",
+      "label": "Floating Drop",
+      "settings": {
+        "settle": 6,
+        "flick": 10,
+        "skip": 4,
+        "ripple": 5,
+        "spin": 4,
+        "splash": 5,
+        "spin_label": "oil can delay",
+        "splash_label": "modulation speed"
+      }
+    },
+    {
+      "id": "space_splash",
+      "label": "Space Splash",
+      "settings": {
+        "settle": 6,
+        "flick": 10,
+        "skip": 4,
+        "ripple": 2,
+        "spin": 5,
+        "splash": 6,
+        "spin_label": "phaser delay",
+        "splash_label": "phaser speed"
+      }
+    },
+    {
+      "id": "sinking_stone",
+      "label": "Sinking Stone",
+      "settings": {
+        "settle": 6,
+        "flick": 10,
+        "skip": 4,
+        "ripple": 6,
+        "spin": 6,
+        "splash": 6,
+        "spin_label": "octave delay",
+        "splash_label": "octave down/up"
+      }
+    },
+    {
+      "id": "phone_under_water",
+      "label": "Phone under Water",
+      "settings": {
+        "settle": 2,
+        "flick": 10,
+        "skip": 4,
+        "ripple": 5,
+        "spin": 7,
+        "splash": 7,
+        "spin_label": "ring mod delay",
+        "splash_label": "ring mod frequency"
+      }
+    },
+    {
+      "id": "whirlwind",
+      "label": "Whirlwind",
+      "settings": {
+        "settle": 3,
+        "flick": 10,
+        "skip": 4,
+        "ripple": 4,
+        "spin": 8,
+        "splash": 2,
+        "spin_label": "dream delay",
+        "splash_label": "tremolo speed"
+      }
+    },
+    {
+      "id": "splash_knob_digital",
+      "label": "Splash (Digital)",
+      "isSweep": true,
+      "target": "splash",
+      "initialValue": 4,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "settle": 6,
+        "flick": 10,
+        "skip": 4,
+        "ripple": 7,
+        "spin": 1,
+        "spin_label": "digital delay",
+        "splash_label": "low pass"
+      }
+    },
+    {
+      "id": "splash_knob_trem",
+      "label": "Splash (Tremolo)",
+      "isSweep": true,
+      "target": "splash",
+      "initialValue": 4,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "settle": 5,
+        "flick": 10,
+        "skip": 4,
+        "ripple": 5,
+        "spin": 3,
+        "spin_label": "tremolo delay",
+        "splash_label": "trem speed"
+      }
+    },
+    {
+      "id": "splash_knob_oil_can",
+      "label": "Splash (Oil Can)",
+      "isSweep": true,
+      "target": "splash",
+      "initialValue": 4,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "settle": 5,
+        "flick": 10,
+        "skip": 4,
+        "ripple": 5,
+        "spin": 4,
+        "spin_label": "oil can delay",
+        "splash_label": "modulation speed"
+      }
+    },
+    {
+      "id": "splash_knob_phaser",
+      "label": "Splash (Phaser)",
+      "isSweep": true,
+      "target": "splash",
+      "initialValue": 4,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "settle": 5,
+        "flick": 10,
+        "skip": 4,
+        "ripple": 5,
+        "spin": 5,
+        "spin_label": "phaser delay",
+        "splash_label": "phaser speed"
+      }
+    },
+    {
+      "id": "splash_knob_octaves",
+      "label": "Splash (Octaves)",
+      "isSweep": true,
+      "target": "splash",
+      "initialValue": 4,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "settle": 5,
+        "flick": 10,
+        "skip": 4,
+        "ripple": 5,
+        "spin": 6,
+        "spin_label": "octave delay",
+        "splash_label": "octave down/up"
+      }
+    },
+    {
+      "id": "splash_knob_ring_mod",
+      "label": "Splash (Ring Mod)",
+      "isSweep": true,
+      "target": "splash",
+      "initialValue": 4,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "settle": 5,
+        "flick": 10,
+        "skip": 4,
+        "ripple": 5,
+        "spin": 7,
+        "spin_label": "ring mod delay",
+        "splash_label": "ring mod frequency"
+      }
+    }
+  ]
+}

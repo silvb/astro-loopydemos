@@ -1,0 +1,106 @@
+{
+  "presets": [
+    {
+      "id": "sweet_spot",
+      "label": "Sweet Spot",
+      "settings": {
+        "low": 7,
+        "mid": 8,
+        "hi": 6,
+        "loud": 5,
+        "freq": 10,
+        "more": 10
+      }
+    },
+    {
+      "id": "low_knob",
+      "label": "Low",
+      "isSweep": true,
+      "target": "low",
+      "initialValue": 8,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "mid": 8,
+        "hi": 6,
+        "loud": 5,
+        "freq": 10,
+        "more": 5
+      }
+    },
+    {
+      "id": "mid_knob",
+      "label": "Mid",
+      "isSweep": true,
+      "target": "mid",
+      "initialValue": 8,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "low": 7,
+        "hi": 6,
+        "loud": 5,
+        "freq": 10,
+        "more": 10
+      }
+    },
+    {
+      "id": "hi_knob",
+      "label": "Hi",
+      "isSweep": true,
+      "target": "hi",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "low": 6,
+        "mid": 8,
+        "loud": 5,
+        "freq": 10,
+        "more": 10
+      }
+    },
+    {
+      "id": "loud_knob",
+      "label": "Loud",
+      "isSweep": true,
+      "target": "loud",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "low": 7,
+        "mid": 0,
+        "hi": 6,
+        "freq": 3,
+        "more": 10
+      }
+    },
+    {
+      "id": "freq_knob",
+      "label": "Freq",
+      "isSweep": true,
+      "target": "freq",
+      "initialValue": 0,
+      "values": [0, 3, 5, 7, 10],
+      "settings": {
+        "low": 7,
+        "mid": 10,
+        "hi": 6,
+        "loud": 5,
+        "more": 10
+      }
+    },
+    {
+      "id": "more_knob",
+      "label": "More",
+      "isSweep": true,
+      "target": "more",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "low": 7,
+        "mid": 8,
+        "hi": 6,
+        "loud": 5,
+        "freq": 10
+      }
+    }
+  ]
+}

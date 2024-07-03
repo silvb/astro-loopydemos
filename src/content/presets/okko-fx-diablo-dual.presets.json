@@ -1,0 +1,190 @@
+{
+  "presets": [
+    {
+      "id": "cozy_saturation",
+      "label": "Cozy Saturation",
+      "settings": {
+        "dyn": 5,
+        "feed": 9,
+        "body": 6.5,
+        "tone": 8,
+        "drive_one": 3,
+        "level_one": 3,
+        "input": 3,
+        "mids": 3,
+        "channel_led": true
+      }
+    },
+    {
+      "id": "edge_of_breakup",
+      "label": "Edge of Breakup",
+      "settings": {
+        "dyn": 7,
+        "feed": 5,
+        "body": 8,
+        "tone": 7,
+        "drive_one": 3,
+        "level_one": 3,
+        "input": 2,
+        "mids": 2,
+        "channel_led": true
+      }
+    },
+    {
+      "id": "articulate_fuzz",
+      "label": "Articulate Fuzz",
+      "settings": {
+        "dyn": 0,
+        "feed": 10,
+        "body": 10,
+        "tone": 10,
+        "drive_one": 10,
+        "level_one": 4,
+        "input": 1,
+        "mids": 1,
+        "channel_led": true
+      }
+    },
+    {
+      "id": "crunch_with_attitude",
+      "label": "Crunch with Attitude",
+      "settings": {
+        "dyn": 2,
+        "feed": 8,
+        "body": 6,
+        "tone": 8,
+        "drive_one": 6,
+        "level_one": 4,
+        "input": 1,
+        "mids": 1,
+        "channel_led": true
+      }
+    },
+    {
+      "id": "drive_knob",
+      "label": "Drive",
+      "isSweep": true,
+      "target": "drive_one",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "dyn": 5,
+        "feed": 5,
+        "body": 7,
+        "tone": 6,
+        "level_one": 5,
+        "input": 3,
+        "mids": 3,
+        "channel_led": true
+      }
+    },
+    {
+      "id": "dyn_knob",
+      "label": "Dyn",
+      "isSweep": true,
+      "target": "dyn",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "drive_one": 7,
+        "feed": 7,
+        "body": 5,
+        "tone": 7,
+        "level_one": 5,
+        "input": 3,
+        "mids": 3,
+        "channel_led": true
+      }
+    },
+    {
+      "id": "feed_knob",
+      "label": "Feed",
+      "isSweep": true,
+      "target": "feed",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "drive_one": 5,
+        "dyn": 5,
+        "body": 5,
+        "tone": 7,
+        "level_one": 4,
+        "input": 3,
+        "mids": 3,
+        "channel_led": true
+      }
+    },
+    {
+      "id": "body_knob",
+      "label": "Body",
+      "isSweep": true,
+      "target": "body",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "drive_one": 6,
+        "dyn": 4,
+        "feed": 7,
+        "tone": 7,
+        "level_one": 5,
+        "input": 3,
+        "mids": 3,
+        "channel_led": true
+      }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "drive_one": 5,
+        "dyn": 5,
+        "feed": 4,
+        "body": 5,
+        "level_one": 5,
+        "input": 3,
+        "mids": 3,
+        "channel_led": true
+      }
+    },
+    {
+      "id": "input_toggle",
+      "label": "Input",
+      "isSweep": true,
+      "target": "input",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "drive_one": 6,
+        "dyn": 5,
+        "feed": 6,
+        "body": 7,
+        "level_one": 6,
+        "tone": 7,
+        "mids": 3,
+        "channel_led": true
+      }
+    },
+    {
+      "id": "mids_toggle",
+      "label": "Mids",
+      "isSweep": true,
+      "target": "mids",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "drive_one": 6,
+        "dyn": 5,
+        "feed": 6,
+        "body": 7,
+        "level_one": 5,
+        "tone": 7,
+        "input": 3,
+        "channel_led": true
+      }
+    }
+  ]
+}

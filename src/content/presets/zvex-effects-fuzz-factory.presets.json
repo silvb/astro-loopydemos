@@ -1,0 +1,55 @@
+{
+  "presets": [
+    {
+      "id": "noice_fuzz",
+      "label": "Noice Fuzz",
+      "settings": { "vol": 4, "gate": 7, "comp": 4, "drive": 5, "stab": 2 }
+    },
+    {
+      "id": "super_compressed",
+      "label": "Super Compressed",
+      "settings": { "vol": 2, "gate": 0, "comp": 9, "drive": 7, "stab": 4 }
+    },
+    {
+      "id": "garage_rock",
+      "label": "Garage Rock",
+      "settings": { "vol": 2, "gate": 0, "comp": 0, "drive": 10, "stab": 5 }
+    },
+    {
+      "id": "gate_knob",
+      "label": "Gate",
+      "isSweep": true,
+      "target": "gate",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "vol": 3, "comp": 0, "drive": 8, "stab": 5 }
+    },
+    {
+      "id": "comp_knob",
+      "label": "Comp",
+      "isSweep": true,
+      "target": "comp",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "vol": 3, "gate": 5, "drive": 4, "stab": 0 }
+    },
+    {
+      "id": "drive_knob",
+      "label": "Drive",
+      "isSweep": true,
+      "target": "drive",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "vol": 3, "gate": 2, "comp": 2, "stab": 3 }
+    },
+    {
+      "id": "stab_knob",
+      "label": "Stab",
+      "isSweep": true,
+      "target": "stab",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "vol": 3, "gate": 4, "comp": 4, "drive": 10 }
+    }
+  ]
+}

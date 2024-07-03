@@ -1,0 +1,89 @@
+{
+  "name": "mxr-joshua-ambient-echo",
+  "controls": {
+    "knobs": [
+      {
+        "id": "delay",
+        "size": 42,
+        "type": "simple",
+        "colors": { "primary": "#c3d7ff", "tick": "#1F1B1C" },
+        "position": { "left": 26, "top": 42 }
+      },
+      {
+        "id": "mod",
+        "size": 42,
+        "type": "simple",
+        "colors": { "primary": "#c3d7ff", "tick": "#1F1B1C" },
+        "position": { "left": 81, "top": 42 }
+      },
+      {
+        "id": "voice",
+        "size": 42,
+        "type": "simple",
+        "colors": { "primary": "#c3d7ff", "tick": "#1F1B1C" },
+        "position": { "left": 135, "top": 43 }
+      },
+      {
+        "id": "regen",
+        "size": 42,
+        "type": "simple",
+        "colors": { "primary": "#c3d7ff", "tick": "#1F1B1C" },
+        "position": { "left": 24, "top": 98 }
+      },
+      {
+        "id": "division",
+        "size": 42,
+        "type": "simple",
+        "colors": { "primary": "#c3d7ff", "tick": "#1F1B1C" },
+        "position": { "left": 79, "top": 98 }
+      },
+      {
+        "id": "mix",
+        "size": 42,
+        "type": "simple",
+        "colors": { "primary": "#c3d7ff", "tick": "#1F1B1C" },
+        "position": { "left": 136, "top": 99 }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": { "left": 77, "top": 176 },
+        "isBlinking": true,
+        "offOverride": true,
+        "colors": { "on": "#0091ff" }
+      },
+      {
+        "id": "echo_led",
+        "size": 48,
+        "isBlinking": true,
+        "position": { "left": 49, "top": 9 },
+        "colors": { "on": "#0091ff" }
+      },
+      { "id": "trails_led", "size": 48, "position": { "left": 104, "top": 10 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 52,
+        "position": { "left": 75, "top": 217 }
+      }
+    ],
+    "dependencies": [
+      {
+        "source": "division",
+        "target": {
+          "id": "on_led",
+          "values": [
+            { "sourceValue": 0, "value": 500 },
+            { "sourceValue": 3, "value": 400 },
+            { "sourceValue": 5, "value": 300 },
+            { "sourceValue": 7, "value": 200 },
+            { "sourceValue": 10, "value": 350 }
+          ]
+        }
+      }
+    ]
+  }
+}

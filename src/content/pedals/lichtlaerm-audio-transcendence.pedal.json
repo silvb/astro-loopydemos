@@ -1,0 +1,121 @@
+{
+  "name": "lichtlaerm-audio-transcendence",
+  "presentationColors": {
+    "background": "#191919",
+    "primary": "#ead76e",
+    "primaryHighlight": "#69237d",
+    "secondaryHighlight": "#9f2fba"
+  },
+  "controls": {
+    "knobs": [
+      {
+        "id": "rate",
+        "size": 42,
+        "position": {
+          "left": 27,
+          "top": 41
+        },
+        "type": "lichtlaerm"
+      },
+      {
+        "id": "effect",
+        "size": 42,
+        "position": {
+          "left": 79,
+          "top": 41
+        },
+        "type": "lichtlaerm"
+      },
+      {
+        "id": "decay",
+        "size": 42,
+        "position": {
+          "left": 134,
+          "top": 41
+        },
+        "type": "lichtlaerm"
+      },
+      {
+        "id": "level",
+        "size": 42,
+        "position": {
+          "left": 27,
+          "top": 115
+        },
+        "type": "lichtlaerm"
+      },
+      {
+        "id": "mix",
+        "size": 42,
+        "position": {
+          "left": 79,
+          "top": 115
+        },
+        "type": "lichtlaerm"
+      },
+      {
+        "id": "dampen",
+        "size": 42,
+        "position": {
+          "left": 134,
+          "top": 115
+        },
+        "type": "lichtlaerm"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 36,
+        "position": {
+          "left": 82,
+          "top": 278
+        },
+        "colors": {
+          "on": "#65a8ca"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 123,
+          "top": 280
+        },
+        "orientation": "horizontal"
+      },
+      {
+        "id": "rmp",
+        "type": "toggle",
+        "size": 24,
+        "position": {
+          "left": 36,
+          "top": 187
+        },
+        "orientation": "horizontal"
+      },
+      {
+        "id": "mode",
+        "type": "toggle",
+        "size": 24,
+        "position": {
+          "left": 89,
+          "top": 187
+        },
+        "orientation": "horizontal"
+      },
+      {
+        "id": "trails",
+        "type": "toggle",
+        "size": 24,
+        "position": {
+          "left": 140,
+          "top": 187
+        },
+        "orientation": "horizontal"
+      }
+    ]
+  }
+}

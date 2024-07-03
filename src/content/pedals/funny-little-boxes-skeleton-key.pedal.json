@@ -1,0 +1,35 @@
+{
+  "name": "funny-little-boxes-skeleton-key",
+  "controls": {
+    "knobs": [
+      {
+        "id": "gain",
+        "size": 56,
+        "position": { "left": 14, "top": 42 },
+        "type": "jhs"
+      },
+      {
+        "id": "tone",
+        "size": 56,
+        "position": { "left": 129, "top": 41 },
+        "type": "jhs"
+      },
+      {
+        "id": "volume",
+        "size": 56,
+        "position": { "left": 129, "top": 113 },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 44, "position": { "left": 78, "top": 232 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": { "left": 76, "top": 282 }
+      }
+    ]
+  }
+}

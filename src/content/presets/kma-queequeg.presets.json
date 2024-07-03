@@ -1,0 +1,61 @@
+{
+  "presets": [
+    {
+      "id": "sweet_spot",
+      "label": "Sweet Spot",
+      "chain": [
+        {
+          "name": "tone-electronix-animalizzer",
+          "id": "animalizzer",
+          "settings": {
+            "bass": 7,
+            "mid": 4,
+            "treble": 8,
+            "volume": 5,
+            "depth": 7,
+            "fuzz": 8,
+            "pre_gain": 8,
+            "stage_i": 1,
+            "stage_ii": 3
+          }
+        },
+        {
+          "name": "kma-queequeg",
+          "id": "queequeg",
+          "settings": { "blend": 3 }
+        }
+      ]
+    },
+    {
+      "id": "blend_sweep",
+      "label": "Blend Sweep",
+
+      "chain": [
+        {
+          "name": "tone-electronix-animalizzer",
+          "id": "animalizzer",
+          "settings": {
+            "bass": 7,
+            "mid": 4,
+            "treble": 8,
+            "volume": 5,
+            "depth": 7,
+            "fuzz": 8,
+            "pre_gain": 8,
+            "stage_i": 1,
+            "stage_ii": 3
+          }
+        },
+        {
+          "name": "kma-queequeg",
+          "id": "queequeg",
+          "isSweep": true,
+          "target": "blend",
+          "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+          "initialValue": 0,
+          "settings": {}
+        }
+      ]
+    }
+  ]
+}

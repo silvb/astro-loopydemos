@@ -1,0 +1,41 @@
+{
+  "name": "mask-audio-electronics-laran",
+  "width": 300,
+  "height": 350,
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 60,
+        "position": { "top": 37, "left": 40 },
+        "type": "brutalist",
+        "colors": {
+          "primary": "#151515",
+          "tick": "#f3f3f3",
+          "shadow": "#363636"
+        }
+      },
+      {
+        "id": "gain",
+        "size": 60,
+        "position": { "top": 37, "left": 197 },
+        "type": "brutalist",
+        "colors": {
+          "primary": "#151515",
+          "tick": "#f3f3f3",
+          "shadow": "#363636"
+        }
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 40, "position": { "top": 280, "left": 68 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": { "top": 278, "left": 128 }
+      }
+    ]
+  }
+}

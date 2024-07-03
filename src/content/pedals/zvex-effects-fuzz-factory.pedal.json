@@ -1,0 +1,48 @@
+{
+  "name": "zvex-effects-fuzz-factory",
+  "enclosure": "landscape",
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol",
+        "size": 60,
+        "position": { "left": 21, "top": 62 },
+        "type": "jhs"
+      },
+      {
+        "id": "gate",
+        "size": 60,
+        "position": { "left": 81, "top": 62 },
+        "type": "jhs"
+      },
+      {
+        "id": "comp",
+        "size": 60,
+        "position": { "left": 142, "top": 62 },
+        "type": "jhs"
+      },
+      {
+        "id": "drive",
+        "size": 60,
+        "position": { "left": 203, "top": 62 },
+        "type": "jhs"
+      },
+      {
+        "id": "stab",
+        "size": 60,
+        "position": { "left": 264, "top": 62 },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 36, "position": { "left": 246, "top": 48 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": { "left": 149, "top": 169 }
+      }
+    ]
+  }
+}

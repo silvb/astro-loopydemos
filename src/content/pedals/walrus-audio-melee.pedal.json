@@ -1,0 +1,163 @@
+{
+  "name": "walrus-audio-melee",
+  "width": 300,
+  "height": 350,
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol",
+        "size": 50,
+        "position": {
+          "left": 26,
+          "top": 23
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "mix_dist",
+        "size": 174,
+        "position": {
+          "left": 107,
+          "top": 13
+        },
+        "type": "joystick"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 32,
+          "top": 232
+        },
+        "colors": {
+          "on": "#93b1cf"
+        }
+      },
+      {
+        "id": "reverb_mode_led",
+        "size": 48,
+        "position": {
+          "left": 219,
+          "top": 233
+        },
+        "colors": {
+          "on": "#93b1cf"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 28,
+          "top": 279
+        }
+      },
+      {
+        "id": "tone",
+        "type": "toggle",
+        "size": 33,
+        "orientation": "horizontal",
+        "position": {
+          "left": 38,
+          "top": 90
+        }
+      },
+      {
+        "id": "decay",
+        "type": "toggle",
+        "size": 33,
+        "orientation": "horizontal",
+        "position": {
+          "left": 38,
+          "top": 134
+        }
+      },
+      {
+        "id": "order",
+        "type": "toggle",
+        "size": 33,
+        "orientation": "horizontal",
+        "position": {
+          "left": 39,
+          "top": 180
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "reverb_mode_label",
+        "position": {
+          "left": 246,
+          "top": 239
+        },
+        "labelPosition": {
+          "left": 293,
+          "top": 171
+        }
+      },
+      {
+        "id": "decay_label",
+        "position": {
+          "left": 40,
+          "top": 170
+        },
+        "labelPosition": {
+          "left": 9,
+          "top": 211
+        }
+      }
+    ],
+    "dependencies": [
+      {
+        "source": "reverb_mode",
+        "target": {
+          "id": "reverb_mode_led",
+          "values": [
+            {
+              "sourceValue": 1,
+              "colors": {
+                "on": "#f0f"
+              }
+            },
+            {
+              "sourceValue": 2,
+              "colors": {
+                "on": "#fcd319"
+              }
+            },
+            {
+              "sourceValue": 3,
+              "colors": {
+                "on": "#1ec6fe"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "source": "reverb_mode",
+        "target": {
+          "id": "reverb_mode_label",
+          "values": [
+            {
+              "sourceValue": 1,
+              "value": "ambient reverb"
+            },
+            {
+              "sourceValue": 2,
+              "value": "octave down reverb"
+            },
+            {
+              "sourceValue": 3,
+              "value": "reverse reverb with feedback"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

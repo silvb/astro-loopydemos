@@ -1,0 +1,60 @@
+{
+  "presets": [
+    {
+      "id": "gnarly_bite",
+      "label": "Gnarly Bite",
+      "settings": { "level": 5, "bass": 5, "bias": 8, "treble": 2, "fuzz": 5 }
+    },
+    {
+      "id": "spitty_fuzz",
+      "label": "Spitty Fuzz",
+      "settings": { "level": 5, "bass": 8, "bias": 9, "treble": 2, "fuzz": 10 }
+    },
+    {
+      "id": "warm_and_present",
+      "label": "Warm & Present",
+      "settings": { "level": 6, "bass": 7, "bias": 0, "treble": 5, "fuzz": 8 }
+    },
+    {
+      "id": "full_drive",
+      "label": "Full Drive",
+      "settings": { "level": 7, "bass": 8, "bias": 0, "treble": 0, "fuzz": 2 }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "level": 5, "bias": 2, "treble": 4, "fuzz": 8 }
+    },
+    {
+      "id": "bias_knob",
+      "label": "Bias",
+      "isSweep": true,
+      "target": "bias",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "level": 5, "bass": 5, "treble": 5, "fuzz": 8 }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble",
+      "isSweep": true,
+      "target": "treble",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "level": 5, "bias": 5, "bass": 5, "fuzz": 8 }
+    },
+    {
+      "id": "fuzz_knob",
+      "label": "Fuzz",
+      "isSweep": true,
+      "target": "fuzz",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "level": 5, "bias": 5, "treble": 3.5, "bass": 7 }
+    }
+  ]
+}

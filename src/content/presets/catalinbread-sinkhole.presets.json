@@ -1,0 +1,66 @@
+{
+  "presets": [
+    {
+      "id": "lush_swirl",
+      "label": "Lush Swirl",
+      "settings": { "fdbck": 6, "mod": 6, "verb": 7, "mix": 6, "vol": 5 }
+    },
+    {
+      "id": "psychedelic_hall",
+      "label": "Psychedelic Hall",
+      "settings": { "fdbck": 7, "mod": 9, "verb": 2, "mix": 6, "vol": 5 }
+    },
+    {
+      "id": "subtle_ambience",
+      "label": "Subtle Ambience",
+      "settings": { "fdbck": 2, "mod": 10, "verb": 9, "mix": 4, "vol": 5 }
+    },
+    {
+      "id": "shoegaze",
+      "label": "This was made for Shoegaze!",
+      "chain": [
+        {
+          "name": "twilight-pulse-audioworks-proxima",
+          "id": "proxima",
+          "settings": {
+            "gain": 9,
+            "mass": 5,
+            "refine": 2
+          }
+        },
+        {
+          "name": "catalinbread-sinkhole",
+          "id": "sinkhole",
+          "settings": { "fdbck": 8, "mod": 5, "verb": 5, "mix": 6, "vol": 5 }
+        }
+      ]
+    },
+    {
+      "id": "fdbck_knob",
+      "label": "Fdbck Preset",
+      "isSweep": true,
+      "target": "fdbck",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "mod": 7, "verb": 5, "mix": 7, "vol": 5 }
+    },
+    {
+      "id": "mod_knob",
+      "label": "Mod Preset",
+      "isSweep": true,
+      "target": "mod",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "fdbck": 7, "verb": 7, "mix": 7, "vol": 5 }
+    },
+    {
+      "id": "verb_knob",
+      "label": "Verb Preset",
+      "isSweep": true,
+      "target": "verb",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "fdbck": 6, "mod": 6, "mix": 6, "vol": 5 }
+    }
+  ]
+}

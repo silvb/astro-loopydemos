@@ -1,0 +1,63 @@
+{
+  "name": "boss-dm-2w-delay",
+  "controls": {
+    "knobs": [
+      {
+        "id": "rate",
+        "size": 56,
+        "position": {
+          "top": 21,
+          "left": 27
+        }
+      },
+      {
+        "id": "echo",
+        "size": 42,
+        "position": {
+          "top": 65,
+          "left": 79
+        },
+        "type": "knurled"
+      },
+      {
+        "id": "intensity",
+        "size": 56,
+        "position": {
+          "top": 21,
+          "left": 119
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 36,
+        "position": {
+          "top": 7,
+          "left": 83
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "mode",
+        "type": "slide",
+        "size": 26,
+        "position": {
+          "top": 34,
+          "left": 88
+        }
+      },
+      {
+        "id": "bypass_switch",
+        "variant": "boss",
+        "size": 52,
+        "color": "#252525",
+        "position": {
+          "left": 77,
+          "top": 256
+        }
+      }
+    ]
+  }
+}

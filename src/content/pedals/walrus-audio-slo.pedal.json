@@ -1,0 +1,100 @@
+{
+  "name": "walrus_audio_slo",
+  "controls": {
+    "knobs": [
+      {
+        "id": "decay",
+        "size": 46,
+        "position": {
+          "top": 28,
+          "left": 20
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "filter",
+        "size": 46,
+        "position": {
+          "top": 28,
+          "left": 80
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "mix",
+        "size": 46,
+        "position": {
+          "top": 28,
+          "left": 136
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "x",
+        "size": 46,
+        "position": {
+          "top": 105,
+          "left": 20
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "depth",
+        "size": 46,
+        "position": {
+          "top": 105,
+          "left": 136
+        },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 44,
+        "socket": true,
+        "position": {
+          "top": 241,
+          "left": 28
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff",
+          "socket": "black"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "top": 284,
+          "left": 28
+        }
+      },
+      {
+        "id": "mode",
+        "size": 30,
+        "type": "toggle",
+        "position": {
+          "top": 111,
+          "left": 86
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "wave",
+        "position": {
+          "top": 140,
+          "left": 125
+        },
+        "labelPosition": {
+          "top": 250,
+          "left": 205
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "name": "catalinbread-cloak",
+  "controls": {
+    "knobs": [
+      {
+        "id": "room_size",
+        "size": 40,
+        "position": {
+          "left": 31,
+          "top": 32
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "high_cut",
+        "size": 40,
+        "position": {
+          "left": 133,
+          "top": 32
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "mix",
+        "size": 40,
+        "position": {
+          "left": 31,
+          "top": 104
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "shimmer",
+        "size": 40,
+        "position": {
+          "left": 133,
+          "top": 104
+        },
+        "type": "simpledot"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 62,
+        "position": {
+          "left": 70,
+          "top": 100
+        },
+        "colors": {
+          "on": "#ff9b00"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 52,
+        "position": {
+          "left": 76,
+          "top": 214
+        }
+      }
+    ]
+  }
+}

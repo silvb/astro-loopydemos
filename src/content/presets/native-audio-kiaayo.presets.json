@@ -1,0 +1,43 @@
+{
+  "presets": [
+    {
+      "id": "soft_crunch",
+      "label": "Soft Crunch",
+      "settings": { "tone": 7, "gain": 2, "volume": 7 }
+    },
+    {
+      "id": "creamy_drive",
+      "label": "Creamy Drive",
+      "settings": { "tone": 5, "gain": 5, "volume": 6 }
+    },
+    {
+      "id": "heavy_growl",
+      "label": "Heavy Growl",
+      "settings": { "tone": 2, "gain": 10, "volume": 8 }
+    },
+    {
+      "id": "drive_knob",
+      "label": "Gain Knob",
+      "isSweep": true,
+      "target": "gain",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 6,
+      "settings": {
+        "tone": 6,
+        "volume": 6
+      }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone Knob",
+      "isSweep": true,
+      "target": "tone",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 6,
+      "settings": {
+        "gain": 7,
+        "volume": 6
+      }
+    }
+  ]
+}

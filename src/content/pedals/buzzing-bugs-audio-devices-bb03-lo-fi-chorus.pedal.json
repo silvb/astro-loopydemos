@@ -1,0 +1,130 @@
+{
+  "name": "buzzing-bugs-audio-devices-bb03-lo-fi-chorus",
+  "controls": {
+    "knobs": [
+      {
+        "id": "room",
+        "size": 44,
+        "position": {
+          "left": 26,
+          "top": 17
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "depth",
+        "size": 44,
+        "position": {
+          "left": 78,
+          "top": 17
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "time",
+        "size": 44,
+        "position": {
+          "left": 132,
+          "top": 17
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "mix",
+        "size": 44,
+        "position": {
+          "left": 26,
+          "top": 94
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "age",
+        "size": 44,
+        "position": {
+          "left": 131,
+          "top": 94
+        },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 56,
+        "position": {
+          "left": 71,
+          "top": 91
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 54,
+        "position": {
+          "left": 72,
+          "top": 282
+        }
+      }
+    ],
+    "dependencies": [
+      {
+        "source": "time",
+        "target": {
+          "id": "on_led",
+          "values": [
+            {
+              "sourceValue": 10,
+              "value": 1800
+            },
+            {
+              "sourceValue": 9,
+              "value": 1650
+            },
+            {
+              "sourceValue": 8,
+              "value": 1500
+            },
+            {
+              "sourceValue": 7,
+              "value": 1350
+            },
+            {
+              "sourceValue": 6,
+              "value": 1100
+            },
+            {
+              "sourceValue": 5,
+              "value": 950
+            },
+            {
+              "sourceValue": 4,
+              "value": 800
+            },
+            {
+              "sourceValue": 3,
+              "value": 650
+            },
+            {
+              "sourceValue": 2,
+              "value": 500
+            },
+            {
+              "sourceValue": 1,
+              "value": 350
+            },
+            {
+              "sourceValue": 0,
+              "value": 200
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,66 @@
+{
+  "presets": [
+    {
+      "id": "gooey_fuzz",
+      "label": "Gooey Fuzz",
+      "secondaryCircuitSlug": "gooey_fuzz_phaser",
+      "secondaryCircuitOnlySlug": "gooey_phaser_only",
+      "secondaryCircuitId": "phaser_circuit",
+      "initialSecondaryCircuits": ["phaser_circuit"],
+      "settings": { "depth": 10, "speed": 2, "volume": 5, "fuzz": 5 }
+    },
+    {
+      "id": "jittery_wings",
+      "label": "Jittery Wings",
+      "secondaryCircuitSlug": "jittery_wings_phaser",
+      "secondaryCircuitOnlySlug": "jittery_phaser_only",
+      "secondaryCircuitId": "phaser_circuit",
+      "initialSecondaryCircuits": ["phaser_circuit"],
+      "settings": { "depth": 2, "speed": 10, "volume": 6, "fuzz": 0 }
+    },
+    {
+      "id": "slow_crush",
+      "label": "Slow Crush",
+      "secondaryCircuitSlug": "slow_crush_phaser",
+      "secondaryCircuitOnlySlug": "slow_phaser_only",
+      "secondaryCircuitId": "phaser_circuit",
+      "initialSecondaryCircuits": ["phaser_circuit"],
+      "settings": { "depth": 8, "speed": 0, "volume": 5, "fuzz": 10 }
+    },
+    {
+      "id": "fuzz_knob",
+      "label": "Fuzz",
+      "isSweep": true,
+      "target": "fuzz",
+      "initialValue": 0,
+      "values": [0, 3, 5, 7, 10],
+      "settings": { "speed": 5, "volume": 5, "depth": 5 }
+    },
+    {
+      "id": "depth_knob",
+      "secondaryCircuitSlug": "depth_knob_phaser",
+      "secondaryCircuitOnlySlug": "depth_phaser_only",
+      "secondaryCircuitId": "phaser_circuit",
+      "initialSecondaryCircuits": ["phaser_circuit"],
+      "label": "Depth",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "speed": 2, "volume": 5, "fuzz": 5 }
+    },
+    {
+      "id": "speed_knob",
+      "secondaryCircuitSlug": "speed_knob_phaser",
+      "secondaryCircuitOnlySlug": "speed_phaser_only",
+      "secondaryCircuitId": "phaser_circuit",
+      "initialSecondaryCircuits": ["phaser_circuit"],
+      "label": "Speed",
+      "isSweep": true,
+      "target": "speed",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "depth": 8, "volume": 5, "fuzz": 5 }
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "name": "native-audio-ghost-ridge",
+  "alignment": "left",
+  "controls": {
+    "knobs": [
+      {
+        "id": "mix",
+        "size": 58,
+        "position": {
+          "left": 27,
+          "top": 45
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "depth",
+        "size": 58,
+        "position": {
+          "left": 116,
+          "top": 45
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "reverb",
+        "label": "(reverb)",
+        "size": 58,
+        "position": {
+          "left": 193,
+          "top": 45
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "mod",
+        "label": "(mod)",
+        "size": 58,
+        "position": {
+          "left": 253,
+          "top": 45
+        },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 40,
+        "position": {
+          "left": 80,
+          "top": 272
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff"
+        }
+      },
+      {
+        "id": "mode_1_led",
+        "size": 40,
+        "position": {
+          "left": 37,
+          "top": 122
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff"
+        }
+      },
+      {
+        "id": "mode_2_led",
+        "size": 40,
+        "position": {
+          "left": 65,
+          "top": 122
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff"
+        }
+      },
+      {
+        "id": "mode_3_led",
+        "size": 40,
+        "position": {
+          "left": 94,
+          "top": 122
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff"
+        }
+      },
+      {
+        "id": "mode_4_led",
+        "size": 40,
+        "position": {
+          "left": 123,
+          "top": 122
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 22,
+          "top": 268
+        }
+      }
+    ],
+    "dependencies": [
+      {
+        "source": "reverb",
+        "target": {
+          "id": "mode_1_led",
+          "values": [
+            {
+              "sourceValue": 0,
+              "isOn": true
+            }
+          ]
+        }
+      },
+      {
+        "source": "reverb",
+        "target": {
+          "id": "mode_2_led",
+          "values": [
+            {
+              "sourceValue": 3,
+              "isOn": true
+            }
+          ]
+        }
+      },
+      {
+        "source": "reverb",
+        "target": {
+          "id": "mode_3_led",
+          "values": [
+            {
+              "sourceValue": 7,
+              "isOn": true
+            }
+          ]
+        }
+      },
+      {
+        "source": "reverb",
+        "target": {
+          "id": "mode_4_led",
+          "values": [
+            {
+              "sourceValue": 10,
+              "isOn": true
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

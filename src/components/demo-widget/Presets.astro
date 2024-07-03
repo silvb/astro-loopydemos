@@ -1,0 +1,16 @@
+---
+import { getEntry, type CollectionEntry } from "astro:content"
+
+interface Props {
+  slug: CollectionEntry<"demos">["slug"]
+}
+
+const { slug } = Astro.props
+
+const presetsData: CollectionEntry<"presets"> = await getEntry(
+  "presets",
+  `${slug}.presets`
+)
+
+console.log({ presetsData })
+---

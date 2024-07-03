@@ -1,0 +1,85 @@
+{
+  "name": "ground-fx-lux",
+  "controls": {
+    "knobs": [
+      {
+        "id": "decay",
+        "size": 36,
+        "position": {
+          "left": 20,
+          "top": 32
+        },
+        "type": "simpledot",
+        "colors": {
+          "primary": "#c4c4c4",
+          "tick": "#595959"
+        }
+      },
+      {
+        "id": "mix",
+        "size": 36,
+        "position": {
+          "left": 23,
+          "top": 91
+        },
+        "type": "simpledot",
+        "colors": {
+          "primary": "#878588",
+          "tick": "#afafaf"
+        }
+      },
+      {
+        "id": "volume",
+        "size": 20,
+        "position": {
+          "left": 35,
+          "top": 156
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "predelay",
+        "size": 20,
+        "position": {
+          "left": 151,
+          "top": 156
+        },
+        "type": "simpledot"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 36,
+        "position": {
+          "left": 37,
+          "top": 229
+        },
+        "colors": {
+          "on": "#9ff"
+        }
+      },
+      {
+        "id": "left_led",
+        "size": 36,
+        "position": {
+          "left": 68,
+          "top": 44
+        },
+        "colors": {
+          "on": "#9ff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 26,
+          "top": 274
+        }
+      }
+    ]
+  }
+}

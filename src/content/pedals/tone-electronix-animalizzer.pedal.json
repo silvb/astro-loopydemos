@@ -1,0 +1,119 @@
+{
+  "name": "tone-electronix-animalizzer",
+  "width": 300,
+  "height": 350,
+  "controls": {
+    "knobs": [
+      {
+        "id": "bass",
+        "size": 64,
+        "position": {
+          "left": 22,
+          "top": 25
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "mid",
+        "size": 64,
+        "position": {
+          "left": 119,
+          "top": 25
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "treble",
+        "size": 64,
+        "position": {
+          "left": 216,
+          "top": 25
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "volume",
+        "size": 46,
+        "position": {
+          "left": 28,
+          "top": 118
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "depth",
+        "size": 46,
+        "position": {
+          "left": 230,
+          "top": 118
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "fuzz",
+        "size": 46,
+        "position": {
+          "left": 28,
+          "top": 177
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "stage_ii",
+        "size": 46,
+        "isRotary": true,
+        "rotaryAngles": [-106, -150, 150, 106],
+        "position": {
+          "left": 127,
+          "top": 177
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "pre_gain",
+        "size": 46,
+        "position": {
+          "left": 230,
+          "top": 177
+        },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 34,
+        "position": {
+          "left": 77,
+          "top": 287
+        },
+        "socket": true,
+        "colors": {
+          "socket": "black",
+          "on": "#ff0400",
+          "off": "#800000a1"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": {
+          "left": 128,
+          "top": 277
+        }
+      },
+      {
+        "id": "stage_i",
+        "type": "toggle",
+        "size": 30,
+        "position": {
+          "left": 135,
+          "top": 124
+        },
+        "orientation": "horizontal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,155 @@
+{
+  "name": "poison-noises-the-gaia",
+  "width": 300,
+  "controls": {
+    "knobs": [
+      {
+        "id": "grow",
+        "size": 50,
+        "position": {
+          "left": 67,
+          "top": 33
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "erupt",
+        "size": 50,
+        "position": {
+          "left": 127,
+          "top": 33
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "unearth",
+        "size": 50,
+        "position": {
+          "left": 185,
+          "top": 33
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "preserve",
+        "size": 50,
+        "position": {
+          "left": 127,
+          "top": 115
+        },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 67,
+          "top": 292
+        },
+        "socket": false,
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#21e76d"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 121,
+          "top": 288
+        }
+      },
+      {
+        "id": "terraform",
+        "type": "toggle",
+        "size": 36,
+        "position": {
+          "left": 72,
+          "top": 123
+        }
+      },
+      {
+        "id": "quake",
+        "type": "toggle",
+        "size": 36,
+        "position": {
+          "left": 190,
+          "top": 123
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "grow_label",
+        "position": {
+          "left": 81,
+          "top": 82
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 129
+        }
+      },
+      {
+        "id": "erupt_label",
+        "position": {
+          "left": 141,
+          "top": 82
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 175
+        }
+      },
+      {
+        "id": "unearth_label",
+        "position": {
+          "left": 214,
+          "top": 82
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 129
+        }
+      },
+      {
+        "id": "terraform_label",
+        "position": {
+          "left": 86,
+          "top": 155
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 207
+        }
+      },
+      {
+        "id": "preserve_label",
+        "position": {
+          "left": 159,
+          "top": 160
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 210
+        }
+      },
+      {
+        "id": "quake_label",
+        "position": {
+          "left": 217,
+          "top": 135
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 73
+        }
+      }
+    ]
+  }
+}

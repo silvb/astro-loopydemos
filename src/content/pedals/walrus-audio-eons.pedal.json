@@ -1,0 +1,175 @@
+{
+  "name": "walrus-audio-eons",
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol",
+        "size": 48,
+        "position": {
+          "left": 18,
+          "top": 21
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "bias",
+        "size": 48,
+        "position": {
+          "left": 75,
+          "top": 21
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "gain",
+        "size": 48,
+        "position": {
+          "left": 132,
+          "top": 21
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "bass",
+        "size": 48,
+        "position": {
+          "left": 18,
+          "top": 99
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "mode",
+        "size": 48,
+        "position": {
+          "left": 75,
+          "top": 100
+        },
+        "isRotary": true,
+        "rotaryAngles": [
+          -60,
+          -30,
+          0,
+          30,
+          60
+        ],
+        "type": "walrus"
+      },
+      {
+        "id": "treb",
+        "size": 48,
+        "position": {
+          "left": 132,
+          "top": 99
+        },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 128,
+          "top": 277
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 76,
+          "top": 279
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "mode_label",
+        "position": {
+          "left": 110,
+          "top": 137
+        },
+        "labelPosition": {
+          "left": 199,
+          "top": 240
+        }
+      },
+      {
+        "id": "clipping_label",
+        "position": {
+          "left": 89,
+          "top": 137
+        },
+        "labelPosition": {
+          "left": 1,
+          "top": 240
+        }
+      }
+    ],
+    "dependencies": [
+      {
+        "source": "mode",
+        "target": {
+          "id": "mode_label",
+          "values": [
+            {
+              "sourceValue": 1,
+              "value": "smooth, compressed, well-rounded"
+            },
+            {
+              "sourceValue": 2,
+              "value": "crunchy, more compressed"
+            },
+            {
+              "sourceValue": 3,
+              "value": "love child of distortion and fuzz"
+            },
+            {
+              "sourceValue": 4,
+              "value": "dynamically dark"
+            },
+            {
+              "sourceValue": 5,
+              "value": "rowdiest mode - angry, loud and compressed"
+            }
+          ]
+        }
+      },
+      {
+        "source": "mode",
+        "target": {
+          "id": "clipping_label",
+          "values": [
+            {
+              "sourceValue": 1,
+              "value": "soft clipping silicon diodes"
+            },
+            {
+              "sourceValue": 2,
+              "value": "soft clipping silicon diodes with added bass"
+            },
+            {
+              "sourceValue": 3,
+              "value": "soft clipping germanium diodes"
+            },
+            {
+              "sourceValue": 4,
+              "value": "LED clipping diodes with slight high-cut"
+            },
+            {
+              "sourceValue": 5,
+              "value": "combination of hard clipping transistors and LED and silicon soft clipping"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

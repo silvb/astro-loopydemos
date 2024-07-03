@@ -1,0 +1,146 @@
+{
+  "name": "walrus-audio-polychrome",
+  "controls": {
+    "knobs": [
+      {
+        "id": "rate",
+        "size": 48,
+        "position": {
+          "left": 18,
+          "top": 21
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "depth",
+        "size": 48,
+        "position": {
+          "left": 78,
+          "top": 21
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "sweep",
+        "size": 48,
+        "position": {
+          "left": 134,
+          "top": 21
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "feedback",
+        "size": 48,
+        "position": {
+          "left": 18,
+          "top": 96
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "dfv",
+        "size": 48,
+        "position": {
+          "left": 133,
+          "top": 96
+        },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 44,
+        "socket": true,
+        "position": {
+          "left": 26,
+          "top": 231
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff",
+          "socket": "black"
+        }
+      },
+      {
+        "id": "rate_led",
+        "size": 44,
+        "socket": true,
+        "position": {
+          "left": 130,
+          "top": 231
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff",
+          "socket": "black"
+        },
+        "isBlinking": true
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": {
+          "left": 74,
+          "top": 272
+        }
+      },
+      {
+        "id": "shape",
+        "size": 30,
+        "type": "toggle",
+        "position": {
+          "left": 69,
+          "top": 105
+        }
+      },
+      {
+        "id": "voice",
+        "size": 30,
+        "type": "toggle",
+        "position": {
+          "left": 99,
+          "top": 105
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "shape_label",
+        "position": {
+          "left": 74,
+          "top": 139
+        },
+        "labelPosition": {
+          "left": 0,
+          "top": 217
+        }
+      }
+    ],
+    "dependencies": [
+      {
+        "source": "shape",
+        "target": {
+          "id": "shape_label",
+          "values": [
+            {
+              "sourceValue": 1,
+              "value": "sine waveform"
+            },
+            {
+              "sourceValue": 2,
+              "value": "triangle waveform"
+            },
+            {
+              "sourceValue": 3,
+              "value": "random modulation"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

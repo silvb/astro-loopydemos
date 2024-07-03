@@ -1,0 +1,190 @@
+{
+  "presets": [
+    {
+      "id": "chime",
+      "label": "Chime",
+      "settings": {
+        "boom": 4,
+        "blast": 4,
+        "bang": 6,
+        "whip": 6,
+        "heat": 8,
+        "smoke": 6,
+        "boom_label": "100 Hz",
+        "blast_label": "200 Hz",
+        "bang_label": "400 Hz",
+        "whip_label": "800 Hz",
+        "heat_label": "1.6 kHz",
+        "smoke_label": "3.2 kHz"
+      }
+    },
+    {
+      "id": "qotsa_mids",
+      "label": "QOTSA Mids",
+      "settings": {
+        "boom": 4,
+        "blast": 6,
+        "bang": 10,
+        "whip": 10,
+        "heat": 8,
+        "smoke": 7,
+        "boom_label": "100 Hz",
+        "blast_label": "200 Hz",
+        "bang_label": "400 Hz",
+        "whip_label": "800 Hz",
+        "heat_label": "1.6 kHz",
+        "smoke_label": "3.2 kHz"
+      }
+    },
+    {
+      "id": "scooped",
+      "label": "Scooped",
+      "settings": {
+        "boom": 6,
+        "blast": 5,
+        "bang": 4,
+        "whip": 1,
+        "heat": 7,
+        "smoke": 6,
+        "boom_label": "100 Hz",
+        "blast_label": "200 Hz",
+        "bang_label": "400 Hz",
+        "whip_label": "800 Hz",
+        "heat_label": "1.6 kHz",
+        "smoke_label": "3.2 kHz"
+      }
+    },
+    {
+      "id": "boost",
+      "label": "Boost",
+      "settings": {
+        "boom": 5,
+        "blast": 10,
+        "bang": 10,
+        "whip": 10,
+        "heat": 10,
+        "smoke": 10,
+        "boom_label": "100 Hz",
+        "blast_label": "200 Hz",
+        "bang_label": "400 Hz",
+        "whip_label": "800 Hz",
+        "heat_label": "1.6 kHz",
+        "smoke_label": "3.2 kHz"
+      }
+    },
+    {
+      "id": "top_boost",
+      "label": "Top Boost",
+      "settings": {
+        "boom": 4,
+        "blast": 6,
+        "bang": 6,
+        "whip": 10,
+        "heat": 10,
+        "smoke": 10,
+        "boom_label": "100 Hz",
+        "blast_label": "200 Hz",
+        "bang_label": "400 Hz",
+        "whip_label": "800 Hz",
+        "heat_label": "1.6 kHz",
+        "smoke_label": "3.2 kHz"
+      }
+    },
+    {
+      "id": "boom_knob",
+      "label": "Boom",
+      "isSweep": true,
+      "target": "boom",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "blast": 5,
+        "bang": 5,
+        "whip": 5,
+        "heat": 5,
+        "smoke": 5,
+        "boom_label": "100 Hz"
+      }
+    },
+    {
+      "id": "blast_knob",
+      "label": "Blast",
+      "isSweep": true,
+      "target": "blast",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "boom": 5,
+        "bang": 5,
+        "whip": 5,
+        "heat": 5,
+        "smoke": 5,
+        "blast_label": "200 Hz"
+      }
+    },
+    {
+      "id": "bang_knob",
+      "label": "Bang",
+      "isSweep": true,
+      "target": "bang",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "boom": 5,
+        "blast": 5,
+        "whip": 5,
+        "heat": 5,
+        "smoke": 5,
+        "bang_label": "400 Hz"
+      }
+    },
+    {
+      "id": "whip_knob",
+      "label": "Whip",
+      "isSweep": true,
+      "target": "whip",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "blast": 5,
+        "bang": 5,
+        "boom": 5,
+        "heat": 5,
+        "smoke": 5,
+        "whip_label": "800 Hz"
+      }
+    },
+    {
+      "id": "heat_knob",
+      "label": "Heat",
+      "isSweep": true,
+      "target": "heat",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "blast": 5,
+        "bang": 5,
+        "whip": 5,
+        "boom": 5,
+        "smoke": 5,
+        "heat_label": "1.6 kHz"
+      }
+    },
+    {
+      "id": "smoke_knob",
+      "label": "Smoke",
+      "isSweep": true,
+      "target": "smoke",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "blast": 5,
+        "bang": 5,
+        "whip": 5,
+        "heat": 5,
+        "boom": 5,
+        "smoke_label": "3.2 kHz"
+      }
+    }
+  ]
+}

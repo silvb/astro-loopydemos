@@ -1,0 +1,73 @@
+{
+  "name": "wonderful-audio-technology-apex-distortion",
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "type": "brutalist",
+        "size": 60,
+        "position": {
+          "left": 14,
+          "top": 16
+        },
+        "colors": {
+          "primary": "#c8c8d8",
+          "tick": "black",
+          "shadow": "slategray"
+        }
+      },
+      {
+        "id": "gain",
+        "type": "brutalist",
+        "colors": {
+          "primary": "#c8c8d8",
+          "tick": "black",
+          "shadow": "slategray"
+        },
+        "size": 60,
+        "position": {
+          "left": 127,
+          "top": 17
+        }
+      },
+      {
+        "id": "tone",
+        "type": "brutalist",
+        "colors": {
+          "primary": "#c8c8d8",
+          "tick": "black",
+          "shadow": "slategray"
+        },
+        "size": 60,
+        "position": {
+          "left": 72,
+          "top": 82
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 64,
+        "position": {
+          "left": 16,
+          "top": 267
+        },
+        "colors": {
+          "off": "#a5a5a599",
+          "on": "#ff6b00"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 73,
+          "top": 272
+        }
+      }
+    ]
+  }
+}

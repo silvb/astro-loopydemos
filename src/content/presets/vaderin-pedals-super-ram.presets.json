@@ -1,0 +1,46 @@
+{
+  "presets": [
+    {
+      "id": "sludge_fest",
+      "label": "Sludge Fest",
+      "settings": { "octave": 7, "volume": 5, "gate": 2, "tone": 6 }
+    },
+    {
+      "id": "stoner_grind",
+      "label": "Stoner Grind",
+      "settings": { "octave": 2, "volume": 4, "gate": 5, "tone": 5 }
+    },
+    {
+      "id": "splatter_doom",
+      "label": "Splatter Doom",
+      "settings": { "octave": 10, "volume": 3.5, "gate": 10, "tone": 3 }
+    },
+    {
+      "id": "octave_knob",
+      "label": "Octave",
+      "isSweep": true,
+      "target": "octave",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "volume": 5, "gate": 5, "tone": 5 }
+    },
+    {
+      "id": "gate_knob",
+      "label": "Gate",
+      "isSweep": true,
+      "target": "gate",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "volume": 5, "octave": 5, "tone": 5 }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 5,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "settings": { "volume": 4, "octave": 5, "gate": 5 }
+    }
+  ]
+}

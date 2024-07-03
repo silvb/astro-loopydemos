@@ -1,0 +1,106 @@
+{
+  "name": "dsm-humboldt-simplifier",
+  "width": 350,
+  "height": 200,
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "type": "walrus",
+        "size": 40,
+        "position": { "left": 197, "top": 40 }
+      },
+      {
+        "id": "gain",
+        "type": "walrus",
+        "size": 40,
+        "position": { "left": 271, "top": 40 }
+      },
+      {
+        "id": "left_mic",
+        "type": "walrus",
+        "size": 40,
+        "position": { "left": 40, "top": 77 }
+      },
+      {
+        "id": "right_mic",
+        "type": "walrus",
+        "size": 40,
+        "position": { "left": 98, "top": 76 }
+      },
+      {
+        "id": "presence",
+        "type": "walrus",
+        "size": 40,
+        "position": { "left": 148, "top": 40 }
+      },
+      {
+        "id": "resonance",
+        "type": "walrus",
+        "size": 40,
+        "position": { "left": 148, "top": 91 }
+      },
+      {
+        "id": "treble",
+        "type": "simple",
+        "size": 20,
+        "position": { "left": 209, "top": 110 }
+      },
+      {
+        "id": "mid",
+        "type": "simple",
+        "size": 20,
+        "position": { "left": 246, "top": 110 }
+      },
+      {
+        "id": "bass",
+        "type": "simple",
+        "size": 20,
+        "position": { "left": 281, "top": 110 }
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 36, "position": { "left": 167, "top": 5 } }
+    ],
+    "switches": [
+      {
+        "id": "preamp_type",
+        "size": 26,
+        "type": "toggle",
+        "orientation": "horizontal",
+        "position": { "left": 242, "top": 57 }
+      },
+      {
+        "id": "power_amp_type",
+        "size": 26,
+        "type": "toggle",
+        "orientation": "horizontal",
+        "position": { "left": 154, "top": 135 }
+      },
+      {
+        "id": "left_cab",
+        "size": 26,
+        "type": "toggle",
+        "position": { "left": 47, "top": 131 }
+      },
+      {
+        "id": "right_cab",
+        "size": 26,
+        "type": "toggle",
+        "position": { "left": 97, "top": 131 }
+      }
+    ],
+    "labels": [
+      {
+        "id": "out_label",
+        "position": { "left": 274, "top": 13 },
+        "labelPosition": { "left": 133, "top": 221 }
+      },
+      {
+        "id": "spread_label",
+        "position": { "left": 323, "top": 88 },
+        "labelPosition": { "left": 214, "top": 241 }
+      }
+    ]
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": { "volume": 5, "tone": 5, "drive": 5, "mode": 1 }
+    },
+    {
+      "id": "volume_knob",
+      "label": "Volume",
+      "isSweep": true,
+      "target": "volume",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "tone": 5, "drive": 5, "mode": 1 }
+    }
+  ]
+}

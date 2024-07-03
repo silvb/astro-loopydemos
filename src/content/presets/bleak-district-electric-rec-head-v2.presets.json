@@ -1,0 +1,61 @@
+{
+  "presets": [
+    {
+      "id": "gentle_lofi",
+      "label": "Gentle Lo-fi",
+      "settings": { "sens": 0, "character": 5, "tape_return": 8, "kill_dry": 1 }
+    },
+    {
+      "id": "tape_chorus",
+      "label": "Tape Chorus",
+      "settings": { "sens": 4, "character": 2, "tape_return": 5, "kill_dry": 3 }
+    },
+    {
+      "id": "dirty_dirty_boost",
+      "label": "Dirty, Dirty Boost",
+      "settings": {
+        "sens": 0,
+        "character": 10,
+        "tape_return": 10,
+        "kill_dry": 1
+      }
+    },
+    {
+      "id": "busted_recorder",
+      "label": "Busted Recorder",
+      "settings": {
+        "sens": 6,
+        "character": 2,
+        "tape_return": 8,
+        "kill_dry": 1
+      }
+    },
+    {
+      "id": "sens_knob",
+      "label": "Sensitivity",
+      "isSweep": true,
+      "target": "sens",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "character": 0, "tape_return": 8, "kill_dry": 1 }
+    },
+    {
+      "id": "character_knob",
+      "label": "Character",
+      "isSweep": true,
+      "target": "character",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "sens": 0, "tape_return": 8, "kill_dry": 1 }
+    },
+    {
+      "id": "tape_return_knob",
+      "label": "Tape Return",
+      "isSweep": true,
+      "target": "tape_return",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "character": 5, "sens": 5, "kill_dry": 3 }
+    }
+  ]
+}

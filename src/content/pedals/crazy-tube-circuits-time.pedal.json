@@ -1,0 +1,145 @@
+{
+  "name": "crazy-tube-circuits-time",
+  "controls": {
+    "knobs": [
+      {
+        "id": "mix",
+        "size": 44,
+        "position": {
+          "left": 22,
+          "top": 42
+        },
+        "colors": {
+          "primary": "#FFF",
+          "tick": "#131313"
+        },
+        "type": "knurled"
+      },
+      {
+        "id": "feed",
+        "size": 44,
+        "position": {
+          "left": 79,
+          "top": 43
+        },
+        "colors": {
+          "primary": "#FFF",
+          "tick": "#131313"
+        },
+        "type": "knurled"
+      },
+      {
+        "id": "msec",
+        "size": 44,
+        "position": {
+          "left": 135,
+          "top": 43
+        },
+        "colors": {
+          "primary": "#FFF",
+          "tick": "#131313"
+        },
+        "type": "knurled"
+      },
+      {
+        "id": "tone",
+        "size": 44,
+        "position": {
+          "left": 22,
+          "top": 130
+        },
+        "colors": {
+          "primary": "#FFF",
+          "tick": "#131313"
+        },
+        "type": "knurled"
+      },
+      {
+        "id": "mod",
+        "size": 44,
+        "position": {
+          "left": 135,
+          "top": 130
+        },
+        "colors": {
+          "primary": "#FFF",
+          "tick": "#131313"
+        },
+        "type": "knurled"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 40,
+        "socket": false,
+        "position": {
+          "left": 58,
+          "top": 272
+        },
+        "colors": {
+          "off": "#b3a43433",
+          "on": "#d4f9ff"
+        }
+      },
+      {
+        "id": "rate_led",
+        "size": 40,
+        "socket": false,
+        "position": {
+          "left": 103,
+          "top": 272
+        },
+        "colors": {
+          "off": "#b3a43433",
+          "on": "#d4f9ff"
+        },
+        "isBlinking": true,
+        "defaultTime": "800"
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 16,
+          "top": 272
+        }
+      },
+      {
+        "id": "subdiv",
+        "size": 20,
+        "type": "toggle",
+        "position": {
+          "left": 92,
+          "top": 142
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "subdiv_label",
+        "position": {
+          "left": 91,
+          "top": 162
+        },
+        "labelPosition": {
+          "left": 15,
+          "top": 200
+        }
+      },
+      {
+        "id": "msec_label",
+        "position": {
+          "left": 153,
+          "top": 101
+        },
+        "labelPosition": {
+          "left": 200,
+          "top": 136
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "name": "poison-noises-lighthouse",
+  "width": 300,
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 48,
+        "position": {
+          "left": 68,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "depth",
+        "size": 48,
+        "position": {
+          "left": 128,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "speed",
+        "size": 48,
+        "position": {
+          "left": 184,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "attack",
+        "size": 48,
+        "position": {
+          "left": 68,
+          "top": 114
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "drive",
+        "size": 48,
+        "position": {
+          "left": 128,
+          "top": 114
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "decay",
+        "size": 48,
+        "position": {
+          "left": 184,
+          "top": 114
+        },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 68,
+          "top": 280
+        },
+        "colors": {
+          "on": "#e643ff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 125,
+          "top": 280
+        }
+      }
+    ]
+  }
+}

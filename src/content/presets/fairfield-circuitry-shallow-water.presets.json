@@ -1,0 +1,124 @@
+{
+  "presets": [
+    {
+      "id": "old_tape_lofi",
+      "label": "Old Tape Lo-fi",
+      "settings": {
+        "rate": 5,
+        "lpg": 5,
+        "damp": 2,
+        "mix": 10,
+        "depth": 5,
+        "vol": 2
+      }
+    },
+    {
+      "id": "watery_chorus",
+      "label": "Watery Chorus",
+      "settings": {
+        "rate": 5,
+        "lpg": 6,
+        "damp": 4,
+        "mix": 5,
+        "depth": 6,
+        "vol": 4
+      }
+    },
+    {
+      "id": "random_vibrato",
+      "label": "Random Vibrato",
+      "settings": {
+        "rate": 7,
+        "lpg": 8,
+        "damp": 4,
+        "mix": 10,
+        "depth": 7,
+        "vol": 2
+      }
+    },
+    {
+      "id": "drowning_modulation",
+      "label": "Drowning Modulation",
+      "settings": {
+        "rate": 10,
+        "lpg": 4,
+        "damp": 0,
+        "mix": 6,
+        "depth": 8,
+        "vol": 3
+      }
+    },
+    {
+      "id": "mellow_warble",
+      "label": "Mellow Warble",
+      "settings": {
+        "rate": 8,
+        "lpg": 4,
+        "damp": 0,
+        "mix": 9,
+        "depth": 3,
+        "vol": 3
+      }
+    },
+    {
+      "id": "lpg_knob",
+      "label": "LPG Knob",
+      "isSweep": true,
+      "target": "lpg",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "rate": 5,
+        "damp": 4,
+        "mix": 10,
+        "depth": 5,
+        "vol": 3
+      }
+    },
+    {
+      "id": "damp_knob",
+      "label": "Damp Knob",
+      "isSweep": true,
+      "target": "damp",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "rate": 7,
+        "lpg": 7,
+        "mix": 8,
+        "depth": 7,
+        "vol": 2
+      }
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth Knob",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "rate": 8,
+        "lpg": 6,
+        "damp": 2,
+        "mix": 8,
+        "vol": 3
+      }
+    },
+    {
+      "id": "rate_knob",
+      "label": "Rate Knob",
+      "isSweep": true,
+      "target": "rate",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "lpg": 6,
+        "damp": 1,
+        "mix": 6,
+        "depth": 8,
+        "vol": 3
+      }
+    }
+  ]
+}

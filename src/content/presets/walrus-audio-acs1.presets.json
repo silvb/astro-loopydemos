@@ -1,0 +1,138 @@
+{
+  "presets": [
+    {
+      "id": "fullerton",
+      "label": "Fullerton",
+      "settings": {
+        "vol": 7,
+        "gain": 7,
+        "room": 2,
+        "cab": 1,
+        "amp": 1
+      }
+    },
+    {
+      "id": "london",
+      "label": "London",
+      "settings": {
+        "vol": 7,
+        "gain": 7,
+        "room": 2,
+        "cab": 2,
+        "amp": 2
+      }
+    },
+    {
+      "id": "dartford",
+      "label": "Dartford",
+      "settings": {
+        "vol": 7,
+        "gain": 7,
+        "room": 2,
+        "cab": 3,
+        "amp": 3
+      }
+    },
+    {
+      "id": "fullerton_dartford",
+      "label": "Fullerton + Dartford",
+      "settings": {
+        "bass": 4,
+        "mid": 6,
+        "treb": 6,
+        "vol": 6,
+        "gain": 6,
+        "room": 5,
+        "cab": 3,
+        "amp": 3,
+        "left_label": "Fullerton on the left",
+        "right_label": "Dartford on the right"
+      }
+    },
+    {
+      "id": "dartford_london",
+      "label": "Dartford + London",
+      "settings": {
+        "bass": 4,
+        "mid": 5,
+        "treb": 6,
+        "vol": 6,
+        "gain": 10,
+        "room": 1,
+        "cab": 3,
+        "amp": 3,
+        "left_label": "Dartford on the left",
+        "right_label": "London on the right"
+      }
+    },
+    {
+      "id": "closed_cab_sweep",
+      "label": "Closed Back Cabs",
+      "isSweep": true,
+      "target": "cab",
+      "settings": {
+        "bass": 4,
+        "mid": 6,
+        "treb": 6,
+        "vol": 7,
+        "gain": 10,
+        "room": 2,
+        "amp": 3
+      },
+      "values": [1, 2, 3],
+      "initialValue": 1
+    },
+    {
+      "id": "open_cab_sweep",
+      "label": "Open Back Cabs",
+      "isSweep": true,
+      "target": "cab",
+      "settings": {
+        "bass": 4,
+        "mid": 6,
+        "treb": 6,
+        "vol": 7,
+        "gain": 10,
+        "room": 2,
+        "amp": 3,
+        "cab_label": "Choose open back cabs by holding down the bypass switch"
+      },
+      "values": [1, 2, 3],
+      "initialValue": 1
+    },
+    {
+      "id": "gain_sweep",
+      "label": "London Gain Sweep",
+      "isSweep": true,
+      "target": "gain",
+      "settings": {
+        "bass": 6,
+        "mid": 4,
+        "treb": 8,
+        "vol": 7,
+        "room": 2,
+        "amp": 2,
+        "cab": 2
+      },
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 6
+    },
+    {
+      "id": "room_sweep",
+      "label": "Fullerton Room Sweep",
+      "isSweep": true,
+      "target": "room",
+      "settings": {
+        "bass": 6,
+        "mid": 4,
+        "treb": 6,
+        "vol": 7,
+        "gain": 7,
+        "amp": 1,
+        "cab": 1
+      },
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 6
+    }
+  ]
+}

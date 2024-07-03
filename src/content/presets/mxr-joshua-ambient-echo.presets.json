@@ -1,0 +1,152 @@
+{
+  "presets": [
+    {
+      "id": "quarter_drunk",
+      "label": "Quarter Drunk",
+      "settings": {
+        "delay": 3,
+        "mod": 8,
+        "voice": 0,
+        "regen": 7,
+        "division": 0,
+        "mix": 8,
+        "echo_led": 500,
+        "trails_led": true
+      }
+    },
+    {
+      "id": "dotted_eighth_gallop",
+      "label": "Dotted 8th Gallop",
+      "settings": {
+        "delay": 3,
+        "mod": 2,
+        "voice": 7,
+        "regen": 7,
+        "division": 3,
+        "mix": 8,
+        "echo_led": 500,
+        "trails_led": true
+      }
+    },
+    {
+      "id": "eighth_vibrato",
+      "label": "8th Vibrato",
+      "settings": {
+        "delay": 3,
+        "mod": 10,
+        "voice": 2,
+        "regen": 7,
+        "division": 5,
+        "mix": 8,
+        "echo_led": 500,
+        "trails_led": true
+      }
+    },
+    {
+      "id": "rumbling_triplets",
+      "label": "Rumbling Triplets",
+      "settings": {
+        "delay": 3,
+        "mod": 6,
+        "voice": 10,
+        "regen": 7,
+        "division": 7,
+        "mix": 8,
+        "echo_led": 500,
+        "trails_led": true
+      }
+    },
+    {
+      "id": "dancing_dots",
+      "label": "Dancing Dots",
+      "settings": {
+        "delay": 3,
+        "mod": 5,
+        "voice": 5,
+        "regen": 8,
+        "division": 10,
+        "mix": 8,
+        "echo_led": 500,
+        "trails_led": true
+      }
+    },
+    {
+      "id": "two_echos",
+      "label": "Two Echos",
+      "settings": {
+        "delay": 3,
+        "mod": 5,
+        "voice": 5,
+        "regen": 7,
+        "division": 3,
+        "mix": 8,
+        "echo_led": 500,
+        "trails_led": true
+      }
+    },
+    {
+      "id": "one_echo",
+      "label": "One Echo",
+      "settings": {
+        "delay": 3,
+        "mod": 5,
+        "voice": 5,
+        "regen": 7,
+        "division": 3,
+        "mix": 8,
+        "trails_led": true
+      }
+    },
+    {
+      "id": "mod_knob",
+      "label": "Mod",
+      "isSweep": true,
+      "target": "mod",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 9, 10],
+      "settings": {
+        "delay": 3,
+        "voice": 5,
+        "regen": 7,
+        "division": 5,
+        "mix": 8,
+        "echo_led": 500,
+        "trails_led": true
+      }
+    },
+    {
+      "id": "voice_knob",
+      "label": "Voice",
+      "isSweep": true,
+      "target": "voice",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "delay": 3,
+        "mod": 2,
+        "regen": 7,
+        "division": 10,
+        "mix": 8,
+        "echo_led": 500,
+        "trails_led": true
+      }
+    },
+    {
+      "id": "regen_knob",
+      "label": "Regen",
+      "isSweep": true,
+      "target": "regen",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "delay": 3,
+        "mod": 5,
+        "voice": 5,
+        "division": 10,
+        "mix": 8,
+        "echo_led": 500,
+        "trails_led": true
+      }
+    }
+  ]
+}

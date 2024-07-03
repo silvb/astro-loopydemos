@@ -1,0 +1,42 @@
+{
+  "presets": [
+    {
+      "id": "octave_squeezer",
+      "label": "Octave Squeeze",
+      "settings": { "vol": 4, "gain_one": 5, "gain_two": 5 }
+    },
+    {
+      "id": "ear_destroyer",
+      "label": "Ear Destroyer",
+      "settings": { "vol": 4, "gain_one": 0, "gain_two": 10 }
+    },
+    {
+      "id": "sweet_note_clash",
+      "label": "Sweet Note Clash",
+      "settings": { "vol": 4, "gain_one": 0, "gain_two": 0 }
+    },
+    {
+      "id": "full_monty",
+      "label": "Full Monty",
+      "settings": { "vol": 5, "gain_one": 10, "gain_two": 10 }
+    },
+    {
+      "id": "gain_one_sweep",
+      "label": "Gain 1",
+      "isSweep": true,
+      "target": "gain_one",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "vol": 4, "gain_two": 5 }
+    },
+    {
+      "id": "gain_two_sweep",
+      "label": "Gain 2",
+      "isSweep": true,
+      "target": "gain_two",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "vol": 4, "gain_one": 2 }
+    }
+  ]
+}

@@ -1,0 +1,242 @@
+{
+  "presets": [
+    {
+      "id": "fat_triple_tracker_trereo",
+      "label": "Fat Triple Tracker (Trereo)",
+      "settings": {
+        "gain_blue": 3,
+        "vol_blue": 8,
+        "tone_blue": 5,
+        "time_blue": 2,
+        "decay_blue": 0,
+        "deviate": 10,
+        "gain_green": 8,
+        "vol_green": 5,
+        "tone_green": 5,
+        "time_green": 5,
+        "decay_green": 0,
+        "gain_purple": 5,
+        "vol_purple": 5,
+        "tone_purple": 5
+      }
+    },
+    {
+      "id": "spaced_out_slapback_trereo",
+      "label": "Spaced Out Slapback (Trereo)",
+      "settings": {
+        "gain_blue": 1,
+        "vol_blue": 5,
+        "tone_blue": 5,
+        "time_blue": 8,
+        "decay_blue": 8,
+        "deviate": 5,
+        "gain_green": 2,
+        "vol_green": 5,
+        "tone_green": 2,
+        "time_green": 8,
+        "decay_green": 8,
+        "gain_purple": 0,
+        "vol_purple": 7,
+        "tone_purple": 8
+      }
+    },
+    {
+      "id": "double_vibrato_and_fuzz_trereo",
+      "label": "Double Vibrato & Fuzz (Trereo)",
+      "settings": {
+        "gain_blue": 3,
+        "vol_blue": 8,
+        "tone_blue": 8,
+        "time_blue": 10,
+        "decay_blue": 7,
+        "deviate": 10,
+        "gain_green": 10,
+        "vol_green": 4,
+        "tone_green": 4,
+        "time_green": 10,
+        "decay_green": 7,
+        "gain_purple": 10,
+        "vol_purple": 10,
+        "tone_purple": 10
+      }
+    },
+    {
+      "id": "simple_double_tracker_stereo",
+      "label": "Simple Double Tracker (Stereo)",
+      "settings": {
+        "gain_blue": 3,
+        "vol_blue": 8,
+        "tone_blue": 8,
+        "time_blue": 2,
+        "decay_blue": 0,
+        "deviate": 5,
+        "gain_green": 5,
+        "vol_green": 7,
+        "tone_green": 2,
+        "time_green": 0,
+        "decay_green": 0,
+        "gain_purple": 5,
+        "vol_purple": 0,
+        "tone_purple": 5
+      }
+    },
+    {
+      "id": "fake_flanger_mono",
+      "label": "Fake Flanger (Mono)",
+      "settings": {
+        "gain_blue": 1,
+        "vol_blue": 6,
+        "tone_blue": 5,
+        "time_blue": 2,
+        "decay_blue": 10,
+        "deviate": 10,
+        "gain_green": 2,
+        "vol_green": 6,
+        "tone_green": 0,
+        "time_green": 3,
+        "decay_green": 10,
+        "gain_purple": 0,
+        "vol_purple": 2,
+        "tone_purple": 5
+      }
+    },
+    {
+      "id": "gain_blue_mono",
+      "label": "Blue Gain (Mono)",
+      "isSweep": true,
+      "target": "gain_blue",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "vol_blue": 5,
+        "tone_blue": 8,
+        "time_blue": 0,
+        "decay_blue": 0,
+        "deviate": 0,
+        "gain_green": 5,
+        "vol_green": 0,
+        "tone_green": 5,
+        "time_green": 0,
+        "decay_green": 0,
+        "gain_purple": 5,
+        "vol_purple": 0,
+        "tone_purple": 5
+      }
+    },
+    {
+      "id": "gain_green_mono",
+      "label": "Green Gain (Mono)",
+      "isSweep": true,
+      "target": "gain_green",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "gain_blue": 1,
+        "vol_blue": 0,
+        "tone_blue": 8,
+        "time_blue": 0,
+        "decay_blue": 0,
+        "deviate": 0,
+        "vol_green": 5,
+        "tone_green": 5,
+        "time_green": 0,
+        "decay_green": 0,
+        "gain_purple": 5,
+        "vol_purple": 0,
+        "tone_purple": 5
+      }
+    },
+    {
+      "id": "gain_purple_mono",
+      "label": "Purple Gain (Mono)",
+      "isSweep": true,
+      "target": "gain_purple",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "gain_blue": 1,
+        "vol_blue": 0,
+        "tone_blue": 8,
+        "time_blue": 0,
+        "decay_blue": 0,
+        "deviate": 0,
+        "vol_green": 0,
+        "gain_green": 5,
+        "tone_green": 5,
+        "time_green": 0,
+        "decay_green": 0,
+        "vol_purple": 5,
+        "tone_purple": 2
+      }
+    },
+    {
+      "id": "deviate_knob_mono",
+      "label": "Deviate (Mono)",
+      "isSweep": true,
+      "target": "deviate",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "gain_blue": 1,
+        "vol_blue": 5,
+        "tone_blue": 8,
+        "time_blue": 6,
+        "decay_blue": 5,
+        "gain_green": 0,
+        "vol_green": 6,
+        "tone_green": 5,
+        "time_green": 6,
+        "decay_green": 5,
+        "gain_purple": 0,
+        "vol_purple": 6,
+        "tone_purple": 8
+      }
+    },
+    {
+      "id": "purple_green_mix_mono",
+      "label": "Purple + Green (Mono)",
+      "isSweep": true,
+      "target": "vol_green",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "deviate": 0,
+        "gain_blue": 1,
+        "vol_blue": 0,
+        "tone_blue": 8,
+        "time_blue": 0,
+        "decay_blue": 0,
+        "gain_green": 3,
+        "tone_green": 5,
+        "time_green": 0,
+        "decay_green": 0,
+        "gain_purple": 5,
+        "vol_purple": 5,
+        "tone_purple": 2
+      }
+    },
+    {
+      "id": "time_green_knob_mono",
+      "label": "Time (Mono)",
+      "isSweep": true,
+      "target": "time_green",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "deviate": 5,
+        "gain_blue": 3,
+        "vol_blue": 7,
+        "tone_blue": 8,
+        "time_blue": 0,
+        "decay_blue": 0,
+        "gain_green": 2,
+        "vol_green": 4,
+        "tone_green": 5,
+        "decay_green": 8,
+        "gain_purple": 5,
+        "vol_purple": 0,
+        "tone_purple": 2
+      }
+    }
+  ]
+}

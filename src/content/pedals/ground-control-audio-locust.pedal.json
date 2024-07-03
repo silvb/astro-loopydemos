@@ -1,0 +1,68 @@
+{
+  "name": "ground-control-audio-locust",
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 40,
+        "position": {
+          "left": 37,
+          "top": 24
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "gain",
+        "size": 40,
+        "position": {
+          "left": 123,
+          "top": 24
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "tone",
+        "size": 40,
+        "position": {
+          "left": 80,
+          "top": 92
+        },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "socket": false,
+        "position": {
+          "left": 83,
+          "top": 58
+        },
+        "colors": {
+          "on": "#00fe83"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 77,
+          "top": 268
+        }
+      },
+      {
+        "id": "mode",
+        "size": 30,
+        "type": "toggle",
+        "position": {
+          "left": 42,
+          "top": 99
+        },
+        "orientation": "horizontal"
+      }
+    ]
+  }
+}

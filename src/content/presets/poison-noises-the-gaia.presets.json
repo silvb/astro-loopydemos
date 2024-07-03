@@ -1,0 +1,125 @@
+{
+  "presets": [
+    {
+      "id": "eruptive_chime",
+      "label": "Eruptive Chime",
+      "settings": {
+        "grow": 2,
+        "erupt": 8,
+        "unearth": 9,
+        "terraform": 3,
+        "preserve": 4,
+        "quake": 1,
+        "grow_label": "volume",
+        "erupt_label": "gain",
+        "unearth_label": "tone",
+        "terraform_label": "clipping mode",
+        "preserve_label": "clean/drive mix",
+        "quake_label": "diode selector"
+      }
+    },
+    {
+      "id": "tiny_rumble",
+      "label": "Tiny Rumble",
+      "settings": {
+        "grow": 5,
+        "erupt": 4,
+        "unearth": 8,
+        "terraform": 1,
+        "preserve": 2,
+        "quake": 2
+      }
+    },
+    {
+      "id": "earth_shaker",
+      "label": "Earth Shaker",
+      "settings": {
+        "grow": 2,
+        "erupt": 10,
+        "unearth": 9,
+        "terraform": 2,
+        "preserve": 6
+      }
+    },
+    {
+      "id": "erupt_knob",
+      "label": "Erupt",
+      "isSweep": true,
+      "target": "erupt",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 4,
+      "settings": {
+        "grow": 5,
+        "unearth": 9,
+        "terraform": 3,
+        "preserve": 0,
+        "quake": 1,
+        "erupt_label": "gain"
+      }
+    },
+    {
+      "id": "unearth_knob",
+      "label": "Unearth",
+      "isSweep": true,
+      "target": "unearth",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 4,
+      "settings": {
+        "grow": 5,
+        "erupt": 6,
+        "terraform": 3,
+        "preserve": 5,
+        "quake": 2,
+        "unearth_label": "tone"
+      }
+    },
+    {
+      "id": "terraform_toggle",
+      "label": "Terraform",
+      "isSweep": true,
+      "target": "terraform",
+      "values": [1, 2, 3],
+      "initialValue": 1,
+      "settings": {
+        "grow": 5,
+        "erupt": 6,
+        "unearth": 9,
+        "preserve": 5,
+        "quake": 2,
+        "terraform_label": "clipping mode"
+      }
+    },
+    {
+      "id": "preserve_knob",
+      "label": "Preserve",
+      "isSweep": true,
+      "target": "preserve",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 4,
+      "settings": {
+        "grow": 5,
+        "erupt": 6,
+        "unearth": 9,
+        "terraform": 3,
+        "quake": 2,
+        "preserve_label": "clean/drive mix"
+      }
+    },
+    {
+      "id": "quake_toggle",
+      "label": "Quake",
+      "isSweep": true,
+      "target": "quake",
+      "values": [1, 2, 3],
+      "initialValue": 1,
+      "settings": {
+        "grow": 5,
+        "erupt": 6,
+        "unearth": 9,
+        "terraform": 3,
+        "preserve": 5,
+        "quake_label": "diode selector"
+      }
+    }
+  ]
+}

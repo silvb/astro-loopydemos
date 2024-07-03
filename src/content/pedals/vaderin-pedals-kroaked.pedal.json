@@ -1,0 +1,69 @@
+{
+  "name": "vaderin-pedals-kroaked",
+  "controls": {
+    "knobs": [
+      {
+        "id": "cmp",
+        "size": 54,
+        "position": {
+          "left": 11,
+          "top": 38
+        },
+        "type": "brutalist",
+        "colors": {
+          "primary": "black",
+          "shadow": "darkslategray",
+          "tick": "white"
+        }
+      },
+      {
+        "id": "drt",
+        "size": 54,
+        "position": {
+          "left": 73,
+          "top": 38
+        },
+        "type": "brutalist",
+        "colors": {
+          "primary": "black",
+          "shadow": "darkslategray",
+          "tick": "white"
+        }
+      },
+      {
+        "id": "lvl",
+        "size": 54,
+        "position": {
+          "left": 133,
+          "top": 38
+        },
+        "type": "brutalist",
+        "colors": {
+          "primary": "black",
+          "shadow": "darkslategray",
+          "tick": "white"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 36,
+        "position": {
+          "left": 46,
+          "top": 288
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 52,
+        "position": {
+          "left": 72,
+          "top": 283
+        }
+      }
+    ]
+  }
+}

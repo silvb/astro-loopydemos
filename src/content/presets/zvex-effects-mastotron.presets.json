@@ -1,0 +1,76 @@
+{
+  "presets": [
+    {
+      "id": "soft_velcro",
+      "label": "Soft Velcro",
+      "settings": {
+        "vol": 5,
+        "tone": 4,
+        "pw": 4,
+        "fuzz": 6,
+        "relax_push": 7,
+        "subs": 1
+      }
+    },
+    {
+      "id": "tweed_drive",
+      "label": "Tweed Drive",
+      "settings": {
+        "vol": 7,
+        "tone": 5,
+        "pw": 0,
+        "fuzz": 5,
+        "relax_push": 2,
+        "subs": 2
+      }
+    },
+    {
+      "id": "bulky_distortion",
+      "label": "Bulky Distortion",
+      "settings": {
+        "vol": 6,
+        "tone": 5,
+        "pw": 2,
+        "fuzz": 8,
+        "relax_push": 3,
+        "subs": 3
+      }
+    },
+    {
+      "id": "subs_switch",
+      "label": "Subs",
+      "isSweep": true,
+      "target": "subs",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": { "tone": 5, "pw": 5, "fuzz": 5, "relax_push": 5, "vol": 6 }
+    },
+    {
+      "id": "pw_knob",
+      "label": "Pulse Width",
+      "isSweep": true,
+      "target": "pw",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "tone": 4, "subs": 1, "fuzz": 8, "relax_push": 8, "vol": 6 }
+    },
+    {
+      "id": "fuzz_knob",
+      "label": "Fuzz",
+      "isSweep": true,
+      "target": "fuzz",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "tone": 5, "subs": 1, "pw": 5, "relax_push": 5, "vol": 6 }
+    },
+    {
+      "id": "relax_push_knob",
+      "label": "Relax/Push",
+      "isSweep": true,
+      "target": "relax_push",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "tone": 5, "subs": 1, "pw": 5, "fuzz": 5, "vol": 6 }
+    }
+  ]
+}

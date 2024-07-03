@@ -1,0 +1,154 @@
+{
+  "name": "catalinbread-many-worlds",
+  "controls": {
+    "knobs": [
+      {
+        "id": "freq",
+        "size": 40,
+        "position": {
+          "left": 31,
+          "top": 32
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "depth",
+        "size": 40,
+        "position": {
+          "left": 80,
+          "top": 32
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "feedback",
+        "size": 40,
+        "position": {
+          "left": 131,
+          "top": 32
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "mix",
+        "size": 40,
+        "position": {
+          "left": 29,
+          "top": 101
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "waveforms",
+        "size": 40,
+        "position": {
+          "left": 130,
+          "top": 100
+        },
+        "isRotary": true,
+        "rotaryAngles": [-125, -90, -45, 0, 45, 90, 125, 180],
+        "type": "simpledot"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 62,
+        "position": {
+          "left": 69,
+          "top": 101
+        },
+        "colors": {
+          "on": "#ff9b00"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 52,
+        "position": {
+          "left": 73,
+          "top": 213
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "waveforms_label",
+        "position": {
+          "left": 149,
+          "top": 125
+        },
+        "labelPosition": {
+          "left": 203,
+          "top": 50
+        }
+      },
+      {
+        "id": "attack_label",
+        "position": {
+          "left": 49,
+          "top": 55
+        },
+        "labelPosition": {
+          "left": 0,
+          "top": 150
+        }
+      },
+      {
+        "id": "sens_label",
+        "position": {
+          "left": 96,
+          "top": 55
+        },
+        "labelPosition": {
+          "left": 207,
+          "top": 189
+        }
+      }
+    ],
+    "dependencies": [
+      {
+        "source": "waveforms",
+        "target": {
+          "id": "waveforms_label",
+          "values": [
+            {
+              "sourceValue": 1,
+              "value": "sine"
+            },
+            {
+              "sourceValue": 2,
+              "value": "square"
+            },
+            {
+              "sourceValue": 3,
+              "value": "triangle"
+            },
+            {
+              "sourceValue": 4,
+              "value": "sawtooth"
+            },
+            {
+              "sourceValue": 5,
+              "value": "sawtooth reversed"
+            },
+            {
+              "sourceValue": 6,
+              "value": "envelope up"
+            },
+            {
+              "sourceValue": 7,
+              "value": "envelope down"
+            },
+            {
+              "sourceValue": 8,
+              "value": "battle mode"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

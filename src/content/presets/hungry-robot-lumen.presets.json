@@ -1,0 +1,127 @@
+{
+  "presets": [
+    {
+      "id": "subtle_breakup",
+      "label": "Subtle Breakup",
+      "settings": {
+        "drive": 7,
+        "clean_blend": 5,
+        "level": 5,
+        "high_pass": 5,
+        "band_pass": 7,
+        "low_pass": 5
+      }
+    },
+    {
+      "id": "open_and_dimed",
+      "label": "Open and Dimed",
+      "settings": {
+        "drive": 10,
+        "clean_blend": 0,
+        "level": 5,
+        "high_pass": 10,
+        "band_pass": 10,
+        "low_pass": 10
+      }
+    },
+    {
+      "id": "sweet_to_woolly",
+      "label": "Sweet to Woolly",
+      "settings": {
+        "drive": 10,
+        "clean_blend": 4,
+        "level": 5,
+        "high_pass": 2,
+        "band_pass": 2,
+        "low_pass": 10
+      }
+    },
+    {
+      "id": "mid_pushed",
+      "label": "Mid-pushed",
+      "settings": {
+        "drive": 8,
+        "clean_blend": 6,
+        "level": 5,
+        "high_pass": 4,
+        "band_pass": 10,
+        "low_pass": 6
+      }
+    },
+    {
+      "id": "drive_knob",
+      "label": "Drive Knob",
+      "isSweep": true,
+      "target": "drive",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "clean_blend": 0,
+        "level": 5,
+        "high_pass": 6,
+        "band_pass": 10,
+        "low_pass": 8
+      }
+    },
+    {
+      "id": "high_pass_knob",
+      "label": "High Pass Knob",
+      "isSweep": true,
+      "target": "high_pass",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "drive": 8,
+        "clean_blend": 4,
+        "level": 5,
+        "band_pass": 5,
+        "low_pass": 5
+      }
+    },
+    {
+      "id": "band_pass_knob",
+      "label": "Band Pass Knob",
+      "isSweep": true,
+      "target": "band_pass",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "drive": 6,
+        "clean_blend": 2,
+        "level": 5,
+        "high_pass": 5,
+        "low_pass": 5
+      }
+    },
+    {
+      "id": "low_pass_knob",
+      "label": "Low Pass Knob",
+      "isSweep": true,
+      "target": "low_pass",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "drive": 10,
+        "clean_blend": 7,
+        "level": 5,
+        "high_pass": 5,
+        "band_pass": 5
+      }
+    },
+    {
+      "id": "clean_blend",
+      "label": "Clean Blend",
+      "isSweep": true,
+      "target": "clean_blend",
+      "initialValue": 0,
+      "values": [0, 3, 7, 9],
+      "settings": {
+        "drive": 10,
+        "level": 4,
+        "high_pass": 5,
+        "band_pass": 5,
+        "low_pass": 5
+      }
+    }
+  ]
+}

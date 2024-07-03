@@ -1,0 +1,153 @@
+{
+  "name": "poison-noises-tractor-beam",
+  "width": 300,
+  "controls": {
+    "knobs": [
+      {
+        "id": "invade",
+        "size": 50,
+        "position": {
+          "left": 66,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "encounter",
+        "size": 50,
+        "position": {
+          "left": 126,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "abduct",
+        "size": 50,
+        "position": {
+          "left": 184,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "warp",
+        "size": 50,
+        "position": {
+          "left": 66,
+          "top": 116
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "annihilate",
+        "size": 50,
+        "position": {
+          "left": 126,
+          "top": 116
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "probe",
+        "size": 50,
+        "position": {
+          "left": 184,
+          "top": 116
+        },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 46,
+        "position": {
+          "left": 67,
+          "top": 291
+        },
+        "colors": {
+          "on": "#de2aea"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 123,
+          "top": 286
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "invade_label",
+        "position": {
+          "left": 78,
+          "top": 82
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 129
+        }
+      },
+      {
+        "id": "encounter_label",
+        "position": {
+          "left": 138,
+          "top": 82
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 175
+        }
+      },
+      {
+        "id": "abduct_label",
+        "position": {
+          "left": 220,
+          "top": 82
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 129
+        }
+      },
+      {
+        "id": "warp_label",
+        "position": {
+          "left": 74,
+          "top": 160
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 207
+        }
+      },
+      {
+        "id": "annihilate_label",
+        "position": {
+          "left": 165,
+          "top": 160
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 210
+        }
+      },
+      {
+        "id": "probe_label",
+        "position": {
+          "left": 222,
+          "top": 127
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 73
+        }
+      }
+    ]
+  }
+}

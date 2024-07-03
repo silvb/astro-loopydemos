@@ -1,0 +1,69 @@
+{
+  "name": "twilight-pulse-audioworks-proxima",
+  "controls": {
+    "knobs": [
+      {
+        "id": "gain",
+        "size": 80,
+        "position": {
+          "left": 19,
+          "top": 35
+        },
+        "type": "roundchicken",
+        "colors": {
+          "primary": "#edeff6",
+          "secondary": "#d9d6dc",
+          "tick": "#1F1B1C"
+        }
+      },
+      {
+        "id": "mass",
+        "size": 80,
+        "position": {
+          "left": 104,
+          "top": 35
+        },
+        "type": "roundchicken",
+        "colors": {
+          "primary": "#edeff6",
+          "secondary": "#d9d6dc",
+          "tick": "#1F1B1C"
+        }
+      },
+      {
+        "id": "refine",
+        "size": 54,
+        "position": {
+          "left": 75,
+          "top": 123
+        },
+        "type": "bakelit",
+        "colors": {
+          "primary": "#edeff6",
+          "secondary": "#d9d6dc",
+          "tick": "#1F1B1C"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 43,
+        "position": {
+          "left": 79,
+          "top": 25
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 53,
+        "position": {
+          "left": 75,
+          "top": 262
+        }
+      }
+    ]
+  }
+}

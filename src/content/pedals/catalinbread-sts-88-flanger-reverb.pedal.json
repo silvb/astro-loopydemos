@@ -1,0 +1,82 @@
+{
+  "name": "catalinbread-sts-88-flanger-reverb",
+  "controls": {
+    "knobs": [
+      {
+        "id": "depth",
+        "size": 40,
+        "position": {
+          "left": 29,
+          "top": 29
+        },
+        "type": "simpledot",
+        "colors": {
+          "primary": "#c3d7ff",
+          "tick": "#1F1B1C"
+        }
+      },
+      {
+        "id": "rate",
+        "size": 40,
+        "position": {
+          "left": 129,
+          "top": 29
+        },
+        "type": "simpledot",
+        "colors": {
+          "primary": "#c3d7ff",
+          "tick": "#1F1B1C"
+        }
+      },
+      {
+        "id": "mix",
+        "size": 40,
+        "position": {
+          "left": 29,
+          "top": 95
+        },
+        "type": "simpledot",
+        "colors": {
+          "primary": "#c3d7ff",
+          "tick": "#1F1B1C"
+        }
+      },
+      {
+        "id": "reverb",
+        "size": 40,
+        "position": {
+          "left": 129,
+          "top": 95
+        },
+        "type": "simpledot",
+        "colors": {
+          "primary": "#c3d7ff",
+          "tick": "#1F1B1C"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 64,
+        "position": {
+          "left": 68,
+          "top": 97
+        },
+        "colors": {
+          "on": "#4583ff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": {
+          "left": 74,
+          "top": 211
+        }
+      }
+    ]
+  }
+}

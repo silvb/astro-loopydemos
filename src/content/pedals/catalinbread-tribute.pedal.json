@@ -1,0 +1,67 @@
+{
+  "name": "catalinbread-tribute",
+  "controls": {
+    "knobs": [
+      {
+        "id": "tone",
+        "size": 40,
+        "position": {
+          "left": 30,
+          "top": 33
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "freq",
+        "size": 40,
+        "position": {
+          "left": 131,
+          "top": 33
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "vol",
+        "size": 40,
+        "position": {
+          "left": 30,
+          "top": 100
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "drive",
+        "size": 40,
+        "position": {
+          "left": 131,
+          "top": 100
+        },
+        "type": "simpledot"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 58,
+        "position": {
+          "left": 71,
+          "top": 102
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 52,
+        "position": {
+          "left": 74,
+          "top": 211
+        }
+      }
+    ]
+  }
+}

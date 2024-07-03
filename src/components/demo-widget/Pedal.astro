@@ -1,0 +1,68 @@
+---
+import { getImageFromSlug } from "@utils/getImageFromSlug"
+import { type PedalProps } from "@types"
+import { Image } from "astro:assets"
+import { getEntry, type CollectionEntry } from "astro:content"
+import {
+  POTRAIT_DEFAULT_ENCLOSURE,
+  LANDSCAPE_DEFAULT_ENCLOSURE,
+} from "@constants/sizes"
+
+type Props = PedalProps
+
+const { slug, model, builder } = Astro.props
+
+const pedalData: CollectionEntry<"pedals"> = await getEntry(
+  "pedals",
+  `${slug}.pedal`
+)
+
+if (!pedalData) {
+  throw new Error(`Pedal not found: ${slug}`)
+}
+
+const { controls, width, height, enclosure } = pedalData.data
+
+const enclosureWidth =
+  width ||
+  (enclosure === "landscape"
+    ? LANDSCAPE_DEFAULT_ENCLOSURE.width
+    : POTRAIT_DEFAULT_ENCLOSURE.width)
+const enclosureHeight =
+  height ||
+  (enclosure === "landscape"
+    ? LANDSCAPE_DEFAULT_ENCLOSURE.height
+    : POTRAIT_DEFAULT_ENCLOSURE.height)
+---
+
+<!-- Enclosure -->
+<div
+  class="relative box-border select-none"
+  style={{
+    width: `${enclosureWidth}px`,
+    height: `${enclosureHeight}px`,
+  }}
+>
+  <Image
+    src={getImageFromSlug(slug)}
+    alt={`${model} - ${builder}`}
+    class="absolute h-full w-full"
+  />
+  <!-- Control Layout -->
+  <div class="relative h-full w-full">
+    {
+      controls.knobs?.map(({ id, type, position, size }) => (
+        <div
+          id={id}
+          class="absolute border border-loopydemos-highlight-primary"
+          style={{
+            width: `${size}px`,
+            height: `${size}px`,
+            left: `${position.left}px`,
+            top: `${position.top}px`,
+          }}
+        />
+      ))
+    }
+  </div>
+</div>

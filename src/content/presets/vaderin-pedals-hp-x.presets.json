@@ -1,0 +1,88 @@
+{
+  "presets": [
+    {
+      "id": "raunchy_drive",
+      "label": "Raunchy Drive",
+      "settings": {
+        "input": 8,
+        "output": 6,
+        "mode": 2
+      }
+    },
+    {
+      "id": "tight_fuzz",
+      "label": "Tight Fuzz",
+      "settings": {
+        "input": 7,
+        "output": 7,
+        "mode": 3
+      }
+    },
+    {
+      "id": "transparent_overdrive",
+      "label": "Transparent Overdrive",
+      "settings": {
+        "input": 5,
+        "output": 5,
+        "mode": 2
+      }
+    },
+    {
+      "id": "spitty_fuzz",
+      "label": "Spitty Fuzz",
+      "settings": {
+        "input": 10,
+        "output": 7,
+        "mode": 1
+      }
+    },
+    {
+      "id": "clipping_options",
+      "label": "Clipping Options",
+      "initialValue": 1,
+      "isSweep": true,
+      "values": [1, 2, 3],
+      "target": "mode",
+      "settings": {
+        "input": 8,
+        "output": 6
+      }
+    },
+    {
+      "id": "mode_1_input_knob",
+      "label": "Ge-Diode Gain Range",
+      "initialValue": 10,
+      "isSweep": true,
+      "values": [1, 2, 4, 6, 8, 10],
+      "target": "input",
+      "settings": {
+        "output": 7,
+        "mode": 1
+      }
+    },
+    {
+      "id": "mode_2_input_knob",
+      "label": "Transistor-only Gain Range",
+      "initialValue": 10,
+      "isSweep": true,
+      "values": [1, 2, 4, 6, 8, 10],
+      "target": "input",
+      "settings": {
+        "output": 5,
+        "mode": 2
+      }
+    },
+    {
+      "id": "mode_3_input_knob",
+      "label": "Si-Diode Gain Range",
+      "initialValue": 10,
+      "isSweep": true,
+      "values": [1, 2, 4, 6, 8, 10],
+      "target": "input",
+      "settings": {
+        "output": 7,
+        "mode": 3
+      }
+    }
+  ]
+}

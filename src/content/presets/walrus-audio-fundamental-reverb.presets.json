@@ -1,0 +1,46 @@
+{
+  "presets": [
+    {
+      "id": "lush_space",
+      "label": "Lush Space",
+      "settings": { "decay": 7, "tone": 6, "mix": 6, "mode": 1 }
+    },
+    {
+      "id": "springy_room",
+      "label": "Springy Room",
+      "settings": { "decay": 8, "tone": 8, "mix": 7, "mode": 2 }
+    },
+    {
+      "id": "expansive_plate",
+      "label": "Expansive Plate",
+      "settings": { "decay": 7, "tone": 10, "mix": 6, "mode": 3 }
+    },
+    {
+      "id": "decay_knob",
+      "label": "Decay",
+      "isSweep": true,
+      "target": "decay",
+      "initialValue": 5,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "tone": 5, "mix": 7, "mode": 1 }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 5,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "decay": 8, "mix": 8, "mode": 3 }
+    },
+    {
+      "id": "mode_switch",
+      "label": "Mode",
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": { "decay": 8, "mix": 7, "tone": 8 }
+    }
+  ]
+}

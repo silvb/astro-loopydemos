@@ -1,0 +1,142 @@
+{
+  "presets": [
+    {
+      "id": "deep_sine_phaser",
+      "label": "Deep Sine Phaser",
+      "settings": {
+        "freq": 7,
+        "depth": 8,
+        "feedback": 7,
+        "mix": 10,
+        "waveforms": 1
+      }
+    },
+    {
+      "id": "blinking_square",
+      "label": "Blinking Square",
+      "settings": {
+        "freq": 8,
+        "depth": 4,
+        "feedback": 4,
+        "mix": 5,
+        "waveforms": 2
+      }
+    },
+    {
+      "id": "honky_auto_wah",
+      "label": "Honky Auto-wah",
+      "settings": {
+        "freq": 10,
+        "depth": 4,
+        "feedback": 10,
+        "mix": 10,
+        "waveforms": 6,
+        "attack_label": "ATTACK: controls low-pass filter frequency in the envelope detection alogrithm",
+        "sens_label": "SENS: controls the input gain into the envelope detection algorithm"
+      }
+    },
+    {
+      "id": "smooth_auto_wah",
+      "label": "Smooth Auto-wah",
+      "settings": {
+        "freq": 10,
+        "depth": 2,
+        "feedback": 10,
+        "mix": 10,
+        "waveforms": 7,
+        "attack_label": "ATTACK: controls low-pass filter frequency in the envelope detection alogrithm",
+        "sens_label": "SENS: controls the input gain into the envelope detection algorithm"
+      }
+    },
+    {
+      "id": "battling_lfos",
+      "label": "Battling LFOs",
+      "settings": {
+        "freq": 4,
+        "depth": 8,
+        "feedback": 5,
+        "mix": 5,
+        "waveforms": 8,
+        "attack_label": "first frequency",
+        "sens_label": "second frequency"
+      }
+    },
+    {
+      "id": "fake_delay",
+      "label": "Fake Delay",
+      "settings": {
+        "freq": 8,
+        "depth": 6,
+        "feedback": 6,
+        "mix": 7,
+        "waveforms": 4
+      }
+    },
+    {
+      "id": "slippery_phaser",
+      "label": "Slippery Phaser",
+      "settings": {
+        "freq": 4,
+        "depth": 8,
+        "feedback": 5,
+        "mix": 10,
+        "waveforms": 5
+      }
+    },
+    {
+      "id": "lush_triangle",
+      "label": "Lush Triangle",
+      "settings": {
+        "freq": 2,
+        "depth": 10,
+        "feedback": 8,
+        "mix": 5,
+        "waveforms": 3
+      }
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth Knob",
+      "settings": {
+        "freq": 7,
+        "feedback": 5,
+        "mix": 10,
+        "waveforms": 1
+      },
+      "isSweep": true,
+      "target": "depth",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 2
+    },
+    {
+      "id": "feedback_knob",
+      "label": "Feedback Knob",
+      "settings": {
+        "freq": 7,
+        "depth": 5,
+        "mix": 10,
+        "waveforms": 1
+      },
+      "isSweep": true,
+      "target": "feedback",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 2
+    },
+    {
+      "id": "battle_freq_sweep",
+      "label": "Battle Frequency Sweep",
+      "settings": {
+        "freq": 8,
+        "feedback": 65,
+        "mix": 5,
+        "waveforms": 8,
+        "attack_label": "first frequency",
+        "sens_label": "second frequency"
+      },
+      "isSweep": true,
+      "target": "depth",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 2
+    }
+  ]
+}

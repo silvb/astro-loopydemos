@@ -1,0 +1,46 @@
+{
+  "name": "blue-fx-devices-nebula",
+  "enclosure": "landscape",
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol",
+        "size": 48,
+        "position": { "left": 243, "top": 0 },
+        "type": "simpledot",
+        "label": "volume"
+      },
+      {
+        "id": "high_pass",
+        "size": 48,
+        "position": { "left": 180, "top": 0 },
+        "type": "simpledot",
+        "label": "tone"
+      },
+      {
+        "id": "mids",
+        "size": 48,
+        "position": { "left": 119, "top": 0 },
+        "type": "simpledot",
+        "label": "mids"
+      },
+      {
+        "id": "gain",
+        "size": 48,
+        "position": { "left": 57, "top": 0 },
+        "type": "simpledot",
+        "label": "gain"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 32, "position": { "left": 219, "top": 119 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": { "left": 151, "top": 205 }
+      }
+    ]
+  }
+}

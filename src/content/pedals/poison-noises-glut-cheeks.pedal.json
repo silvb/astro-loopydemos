@@ -1,0 +1,153 @@
+{
+  "name": "poison-noises-glut-cheeks",
+  "width": 300,
+  "controls": {
+    "knobs": [
+      {
+        "id": "more",
+        "size": 50,
+        "position": {
+          "left": 65,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "feast",
+        "size": 50,
+        "position": {
+          "left": 127,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "even_more",
+        "size": 50,
+        "position": {
+          "left": 185,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "stuff",
+        "size": 50,
+        "position": {
+          "left": 67,
+          "top": 121
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "choke",
+        "size": 50,
+        "position": {
+          "left": 185,
+          "top": 121
+        },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 66,
+          "top": 292
+        },
+        "colors": {
+          "on": "#ff0029"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 122,
+          "top": 287
+        }
+      },
+      {
+        "id": "devour",
+        "size": 36,
+        "position": {
+          "left": 135,
+          "top": 125
+        },
+        "type": "toggle"
+      }
+    ],
+    "labels": [
+      {
+        "id": "more_label",
+        "position": {
+          "left": 75,
+          "top": 80
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 129
+        }
+      },
+      {
+        "id": "feast_label",
+        "position": {
+          "left": 136,
+          "top": 80
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 175
+        }
+      },
+      {
+        "id": "even_more_label",
+        "position": {
+          "left": 223,
+          "top": 80
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 129
+        }
+      },
+      {
+        "id": "stuff_label",
+        "position": {
+          "left": 72,
+          "top": 160
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 207
+        }
+      },
+      {
+        "id": "devour_label",
+        "position": {
+          "left": 151,
+          "top": 160
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 210
+        }
+      },
+      {
+        "id": "choke_label",
+        "position": {
+          "left": 226,
+          "top": 132
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 73
+        }
+      }
+    ]
+  }
+}

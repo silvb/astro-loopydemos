@@ -1,0 +1,72 @@
+{
+  "name": "catalinbread-soft-focus",
+  "controls": {
+    "knobs": [
+      {
+        "id": "symph",
+        "size": 44,
+        "position": {
+          "left": 26,
+          "top": 26
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "mod",
+        "size": 44,
+        "position": {
+          "left": 78,
+          "top": 26
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "verb",
+        "size": 44,
+        "position": {
+          "left": 129,
+          "top": 26
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "mix",
+        "size": 44,
+        "position": {
+          "left": 26,
+          "top": 97
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "vol",
+        "size": 44,
+        "position": {
+          "left": 129,
+          "top": 97
+        },
+        "type": "simpledot"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 64,
+        "position": {
+          "left": 68,
+          "top": 98
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 52,
+        "position": {
+          "left": 72,
+          "top": 211
+        }
+      }
+    ]
+  }
+}

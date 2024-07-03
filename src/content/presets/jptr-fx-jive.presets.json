@@ -1,0 +1,93 @@
+{
+  "presets": [
+    {
+      "id": "light_crackle",
+      "label": "Light Crackle",
+      "settings": {
+        "vol": 7,
+        "gain": 3,
+        "toggle_a": 3,
+        "toggle_b": 1,
+        "toggle_c": 3
+      }
+    },
+    {
+      "id": "meaty_gain",
+      "label": "Meaty Gain",
+      "settings": {
+        "vol": 3,
+        "gain": 10,
+        "toggle_a": 3,
+        "toggle_b": 3,
+        "toggle_c": 1
+      }
+    },
+    {
+      "id": "only_opamp",
+      "label": "JFET-Only Clipping",
+      "settings": {
+        "vol": 2,
+        "gain": 10,
+        "toggle_a": 1,
+        "toggle_b": 1,
+        "toggle_c": 1
+      }
+    },
+    {
+      "id": "gain_sweep",
+      "label": "Gain Range",
+      "isSweep": true,
+      "target": "gain",
+      "settings": {
+        "vol": 5,
+        "toggle_a": 3,
+        "toggle_b": 3,
+        "toggle_c": 3
+      },
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "initialValue": 4
+    },
+    {
+      "id": "toggle_a",
+      "label": "Asym. Ge-Diode",
+      "isSweep": true,
+      "target": "toggle_a",
+      "settings": {
+        "vol": 5,
+        "gain": 6,
+        "toggle_b": 1,
+        "toggle_c": 1
+      },
+      "values": [1, 3],
+      "initialValue": 3
+    },
+    {
+      "id": "toggle_b",
+      "label": "Sym. Si-Diode",
+      "isSweep": true,
+      "target": "toggle_b",
+      "settings": {
+        "vol": 5,
+        "gain": 6,
+        "toggle_a": 1,
+        "toggle_c": 1
+      },
+      "values": [1, 3],
+      "initialValue": 3
+    },
+    {
+      "id": "toggle_c",
+      "label": "Sym. Ge-Diode",
+      "isSweep": true,
+      "target": "toggle_c",
+      "settings": {
+        "vol": 5,
+        "gain": 6,
+        "toggle_a": 1,
+        "toggle_b": 1
+      },
+      "values": [1, 3],
+      "initialValue": 3
+    }
+  ]
+}

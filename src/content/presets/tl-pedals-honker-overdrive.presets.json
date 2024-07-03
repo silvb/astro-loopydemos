@@ -1,0 +1,73 @@
+{
+  "presets": [
+    {
+      "id": "i_love_opamp_distortion",
+      "label": "I ♥ OpAmp Distortion",
+      "settings": {
+        "volume": 1,
+        "tone": 5,
+        "drive": 10,
+        "mode": 2
+      }
+    },
+    {
+      "id": "sweet_crunch",
+      "label": "Sweet Crunch",
+      "settings": {
+        "volume": 2,
+        "drive": 7,
+        "tone": 6,
+        "mode": 3
+      }
+    },
+    {
+      "id": "mild_breakup",
+      "label": "Mild Breakup",
+      "settings": {
+        "volume": 4,
+        "drive": 3,
+        "tone": 7,
+        "mode": 1
+      }
+    },
+    {
+      "id": "mode_switch",
+      "label": "Mode Switch",
+      "isSweep": true,
+      "target": "mode",
+      "values": [1, 2, 3],
+      "initialValue": 1,
+      "settings": {
+        "volume": 2,
+        "drive": 6,
+        "tone": 5
+      }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone Knob",
+      "isSweep": true,
+      "target": "tone",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0,
+      "settings": {
+        "volume": 3,
+        "drive": 4,
+        "mode": 3
+      }
+    },
+    {
+      "id": "drive_knob",
+      "label": "Drive Knob",
+      "isSweep": true,
+      "target": "drive",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0,
+      "settings": {
+        "volume": 4,
+        "tone": 7,
+        "mode": 1
+      }
+    }
+  ]
+}

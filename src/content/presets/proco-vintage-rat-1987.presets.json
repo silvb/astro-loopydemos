@@ -1,0 +1,37 @@
+{
+  "presets": [
+    {
+      "id": "low_gain",
+      "label": "Low Gain",
+      "settings": { "distortion": 2.5, "filter": 5, "volume": 7 }
+    },
+    {
+      "id": "medium_gain",
+      "label": "Medium Gain",
+      "settings": { "distortion": 5, "filter": 4, "volume": 7 }
+    },
+    {
+      "id": "high_gain",
+      "label": "High Gain",
+      "settings": { "distortion": 10, "filter": 0, "volume": 7 }
+    },
+    {
+      "id": "distortion_knob",
+      "label": "Distortion",
+      "isSweep": true,
+      "target": "distortion",
+      "initialValue": 0,
+      "values": [0, 2, 3, 4, 6, 8, 10],
+      "settings": { "filter": 4, "volume": 7 }
+    },
+    {
+      "id": "filter_knob",
+      "label": "Filter",
+      "isSweep": true,
+      "target": "filter",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "distortion": 7, "volume": 7 }
+    }
+  ]
+}

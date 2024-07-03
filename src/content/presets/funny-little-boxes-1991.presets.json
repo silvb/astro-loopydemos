@@ -1,0 +1,139 @@
+{
+  "presets": [
+    {
+      "id": "mild_crunch",
+      "label": "Mild Crunch",
+      "settings": {
+        "gain_one": 1,
+        "gain_two": 2.5,
+        "volume": 7,
+        "bass": 1.5,
+        "middle": 6,
+        "treble": 7
+      }
+    },
+    {
+      "id": "fat_distortion",
+      "label": "Fat Distortion",
+      "settings": {
+        "gain_one": 4,
+        "gain_two": 10,
+        "volume": 7,
+        "bass": 10,
+        "middle": 7,
+        "treble": 8
+      }
+    },
+    {
+      "id": "sweet_scoop",
+      "label": "Sweet Scoop",
+      "settings": {
+        "gain_one": 0,
+        "gain_two": 0,
+        "volume": 8,
+        "bass": 8,
+        "middle": 2,
+        "treble": 9
+      }
+    },
+    {
+      "id": "dimed_chug",
+      "label": "Dimed Chug",
+      "settings": {
+        "gain_one": 10,
+        "gain_two": 10,
+        "volume": 8,
+        "bass": 10,
+        "middle": 1.5,
+        "treble": 10
+      }
+    },
+    {
+      "id": "mid_push",
+      "label": "Mid Push",
+      "settings": {
+        "gain_one": 5,
+        "gain_two": 8,
+        "volume": 8,
+        "bass": 0,
+        "middle": 10,
+        "treble": 6
+      }
+    },
+    {
+      "id": "gain_one_knob",
+      "label": "Gain 1",
+      "isSweep": true,
+      "target": "gain_one",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "gain_two": 0,
+        "volume": 8,
+        "bass": 5,
+        "middle": 5,
+        "treble": 10
+      }
+    },
+    {
+      "id": "gain_two_knob",
+      "label": "Gain 2",
+      "isSweep": true,
+      "target": "gain_two",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "gain_one": 0,
+        "volume": 8,
+        "bass": 5,
+        "middle": 5,
+        "treble": 10
+      }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "gain_one": 0,
+        "gain_two": 5,
+        "volume": 8,
+        "middle": 5,
+        "treble": 10
+      }
+    },
+    {
+      "id": "middle_knob",
+      "label": "Middle",
+      "isSweep": true,
+      "target": "middle",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "gain_one": 0,
+        "gain_two": 5,
+        "volume": 8,
+        "bass": 5,
+        "treble": 10
+      }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble",
+      "isSweep": true,
+      "target": "treble",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "gain_one": 0,
+        "gain_two": 5,
+        "volume": 8,
+        "bass": 5,
+        "middle": 5
+      }
+    }
+  ]
+}

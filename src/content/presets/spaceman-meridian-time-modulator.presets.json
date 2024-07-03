@@ -1,0 +1,120 @@
+{
+  "presets": [
+    {
+      "id": "lush_chorus",
+      "label": "Lush Chorus",
+      "settings": {
+        "level": 5,
+        "mix": 4,
+        "regen": 3,
+        "rate": 4,
+        "time": 4,
+        "width": 7,
+        "waveform": 1
+      }
+    },
+    {
+      "id": "flange_vibrato",
+      "label": "Flange Vibrato",
+      "settings": {
+        "level": 5,
+        "mix": 3,
+        "regen": 8,
+        "rate": 7,
+        "time": 7,
+        "width": 7,
+        "waveform": 2
+      }
+    },
+    {
+      "id": "old_cassette_vibrato",
+      "label": "Old Cassette Vibrato",
+      "settings": {
+        "level": 5,
+        "mix": 10,
+        "regen": 0,
+        "rate": 6,
+        "time": 6,
+        "width": 7,
+        "waveform": 3
+      }
+    },
+    {
+      "id": "tasty_flanger",
+      "label": "Tasty Flanger",
+      "settings": {
+        "level": 5,
+        "mix": 8,
+        "regen": 10,
+        "rate": 2,
+        "time": 0,
+        "width": 10,
+        "waveform": 1
+      }
+    },
+    {
+      "id": "regen_knob",
+      "label": "Regen",
+      "isSweep": true,
+      "target": "regen",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "level": 5,
+        "time": 3.5,
+        "mix": 5,
+        "rate": 2,
+        "width": 7,
+        "waveform": 1
+      }
+    },
+    {
+      "id": "time_knob",
+      "label": "Time",
+      "isSweep": true,
+      "target": "time",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "level": 5,
+        "mix": 5,
+        "regen": 3,
+        "rate": 3.5,
+        "width": 7,
+        "waveform": 1
+      }
+    },
+    {
+      "id": "width_knob",
+      "label": "Width",
+      "isSweep": true,
+      "target": "width",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "level": 5,
+        "mix": 5,
+        "regen": 3,
+        "rate": 3.5,
+        "time": 5,
+        "waveform": 1
+      }
+    },
+    {
+      "id": "waveform_toggle",
+      "label": "Waveform",
+      "isSweep": true,
+      "target": "waveform",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "level": 5,
+        "mix": 5,
+        "regen": 8,
+        "rate": 3.5,
+        "time": 5,
+        "width": 7
+      }
+    }
+  ]
+}

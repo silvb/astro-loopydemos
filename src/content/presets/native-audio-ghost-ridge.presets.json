@@ -1,0 +1,83 @@
+{
+  "presets": [
+    {
+      "id": "ghostly_hall",
+      "label": "Ghostly Hall",
+      "settings": {
+        "reverb": 0,
+        "mix": 5,
+        "depth": 10,
+        "mod": 8
+      }
+    },
+    {
+      "id": "spooky_room",
+      "label": "Spooky Room",
+      "settings": {
+        "reverb": 7,
+        "mix": 10,
+        "depth": 5,
+        "mod": 10
+      }
+    },
+    {
+      "id": "does_it_drip",
+      "label": "Does it drip?",
+      "settings": {
+        "reverb": 10,
+        "mix": 10,
+        "depth": 10,
+        "mod": 0
+      }
+    },
+    {
+      "id": "atmospheric_plate",
+      "label": "Atmospheric Plate",
+      "settings": {
+        "reverb": 3,
+        "mix": 8,
+        "depth": 7,
+        "mod": 5
+      }
+    },
+    {
+      "id": "reverb_mode",
+      "label": "All the Reverbs",
+      "isSweep": true,
+      "target": "reverb",
+      "values": [0, 3, 7, 10],
+      "initialValue": 0,
+      "settings": {
+        "mix": 8,
+        "depth": 8,
+        "mod": 0
+      }
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth Knob",
+      "isSweep": true,
+      "target": "depth",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 6,
+      "settings": {
+        "mix": 5,
+        "reverb": 3,
+        "mod": 5
+      }
+    },
+    {
+      "id": "mod_knob",
+      "label": "Mod Knob",
+      "isSweep": true,
+      "target": "mod",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 6,
+      "settings": {
+        "mix": 7,
+        "reverb": 7,
+        "depth": 8
+      }
+    }
+  ]
+}

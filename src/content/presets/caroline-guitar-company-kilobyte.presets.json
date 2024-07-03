@@ -1,0 +1,76 @@
+{
+  "presets": [
+    {
+      "id": "lofi_ambience",
+      "label": "Lo-fi Ambience",
+      "settings": {
+        "out": 2,
+        "in": 6,
+        "feedback": 7,
+        "rate": 6,
+        "modulation": 5
+      }
+    },
+    {
+      "id": "tape_spring",
+      "label": "Tape Spring",
+      "settings": {
+        "out": 2,
+        "in": 8,
+        "feedback": 8,
+        "rate": 1,
+        "modulation": 8
+      }
+    },
+    {
+      "id": "crunchy_slap_back",
+      "label": "Slap Back",
+      "settings": {
+        "out": 2,
+        "in": 4,
+        "feedback": 6,
+        "rate": 1,
+        "modulation": 2
+      }
+    },
+    {
+      "id": "max_delay_with_havoc",
+      "label": "Max Delay with Havoc",
+      "settings": {
+        "out": 2,
+        "in": 5,
+        "feedback": 4,
+        "rate": 10,
+        "modulation": 6
+      }
+    },
+    {
+      "id": "mod_knob",
+      "label": "Mod Knob",
+      "isSweep": true,
+      "target": "modulation",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "out": 2,
+        "in": 5,
+        "feedback": 7,
+        "rate": 8
+      }
+    },
+    {
+      "id": "input_knob",
+      "label": "Input Knob",
+      "isSweep": true,
+      "target": "in",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "out": 2,
+        "feedback": 7,
+        "rate": 5,
+        "modulation": 5
+      }
+    }
+  ]
+}

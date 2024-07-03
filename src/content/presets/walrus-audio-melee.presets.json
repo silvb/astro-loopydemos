@@ -1,0 +1,160 @@
+{
+  "presets": [
+    {
+      "id": "addictive_shoegaze",
+      "label": "Addictive Shoegaze",
+      "settings": {
+        "vol": 7,
+        "tone": 3,
+        "decay": 1,
+        "order": 3,
+        "reverb_mode": 3,
+        "mix_dist": { "angle": 0, "radius": 0.7 },
+        "reverb_mode_led": true
+      }
+    },
+    {
+      "id": "cinematic_vibes",
+      "label": "Cinematic Vibes",
+      "settings": {
+        "vol": 7,
+        "tone": 1,
+        "decay": 2,
+        "order": 1,
+        "reverb_mode": 2,
+        "mix_dist": { "angle": 45, "radius": 1 },
+        "reverb_mode_led": true
+      }
+    },
+    {
+      "id": "excessive_post_rock",
+      "label": "Excessive Post-Rock",
+      "settings": {
+        "vol": 7,
+        "tone": 1,
+        "decay": 3,
+        "order": 1,
+        "reverb_mode": 1,
+        "mix_dist": { "angle": 150, "radius": 0.9 },
+        "reverb_mode_led": true
+      }
+    },
+    {
+      "id": "tone_toggle",
+      "label": "Tone",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "vol": 7,
+        "decay": 1,
+        "order": 1,
+        "reverb_mode": 3,
+        "mix_dist": { "angle": 0, "radius": 0 },
+        "reverb_mode_led": true
+      }
+    },
+    {
+      "id": "decay_toggle",
+      "label": "Decay",
+      "isSweep": true,
+      "target": "decay",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "vol": 8,
+        "tone": 1,
+        "order": 1,
+        "reverb_mode": 2,
+        "mix_dist": { "angle": 80, "radius": 1.1 },
+        "reverb_mode_led": true
+      }
+    },
+    {
+      "id": "mod_toggle",
+      "label": "Modulation",
+      "isSweep": true,
+      "target": "decay",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "vol": 8,
+        "tone": 1,
+        "order": 3,
+        "reverb_mode": 1,
+        "decay_label": "hold down bypass switch and this controls the amount of modulation",
+        "mix_dist": { "angle": 60, "radius": 1.4 },
+        "reverb_mode_led": true
+      }
+    },
+    {
+      "id": "order_toggle",
+      "label": "D>R // R>D",
+      "isSweep": true,
+      "target": "order",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "vol": 7,
+        "tone": 3,
+        "decay": 1,
+        "reverb_mode": 2,
+        "mix_dist": { "angle": -65, "radius": 0.5 },
+        "reverb_mode_led": true
+      }
+    },
+    {
+      "id": "dry_distortion",
+      "label": "Dry Distortion",
+      "settings": {
+        "vol": 7,
+        "tone": 3,
+        "decay": 1,
+        "order": 1,
+        "reverb_mode": 1,
+        "mix_dist": { "angle": 200, "radius": 1.4 },
+        "reverb_mode_led": true
+      }
+    },
+    {
+      "id": "wet_ambient",
+      "label": "Wet Ambient",
+      "settings": {
+        "vol": 7,
+        "tone": 1,
+        "decay": 2,
+        "order": 3,
+        "reverb_mode": 1,
+        "mix_dist": { "angle": 60, "radius": 1.4 },
+        "reverb_mode_led": true
+      }
+    },
+    {
+      "id": "wet_dark_octave",
+      "label": "Wet Dark Octave",
+      "settings": {
+        "vol": 7,
+        "tone": 1,
+        "decay": 2,
+        "order": 3,
+        "reverb_mode": 2,
+        "mix_dist": { "angle": 60, "radius": 1.4 },
+        "reverb_mode_led": true
+      }
+    },
+    {
+      "id": "wet_reverse",
+      "label": "Wet Reverse",
+      "settings": {
+        "vol": 7,
+        "tone": 1,
+        "decay": 2,
+        "order": 3,
+        "reverb_mode": 3,
+        "mix_dist": { "angle": 60, "radius": 1.4 },
+        "reverb_mode_led": true
+      }
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "presets": [
+    {
+      "id": "edgy_repeats",
+      "label": "Edgy Repeats",
+      "settings": {
+        "mix": 6,
+        "repeat": 6,
+        "delay_1": 4,
+        "delay_1_led": true,
+        "blizzard_mode": 3
+      }
+    },
+    {
+      "id": "crisp_delay",
+      "label": "Crisp Delay",
+      "settings": {
+        "mix": 8,
+        "repeat": 2,
+        "delay_1": 4,
+        "blizzard_mode": 3,
+        "delay_1_led": true
+      }
+    },
+    {
+      "id": "max_delay",
+      "label": "Maximum Delay",
+      "settings": {
+        "mix": 5,
+        "repeat": 5,
+        "delay_2": 10,
+        "delay_2_led": true,
+        "blizzard_mode": 3
+      }
+    },
+    {
+      "id": "quarter_note_snow",
+      "label": "Quarter Note Snow",
+      "settings": {
+        "mix": 5,
+        "repeat": 5,
+        "delay_2": 8,
+        "blizzard_mode": 3,
+        "delay_2_led": true
+      }
+    },
+    {
+      "id": "crunchy_blizzard",
+      "label": "Crunchy Blizzard",
+      "settings": {
+        "mix": 6,
+        "repeat": 6,
+        "delay_2": 7,
+        "blizzard_mode": 1,
+        "delay_2_led": true,
+        "blizzard_label": "blizzard mode active",
+        "delay_2_label": "both delays are controlled by this knob now"
+      }
+    },
+    {
+      "id": "dancing_blizzard",
+      "label": "Dancing Blizzard",
+      "settings": {
+        "mix": 6,
+        "repeat": 6,
+        "delay_2": 7,
+        "blizzard_mode": 1,
+        "delay_1_led": true,
+        "blizzard_label": "blue light is on: both delays run independently in blizzard mode"
+      },
+      "isSweep": true,
+      "target": "delay_1",
+      "initialValue": 0,
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    },
+    {
+      "id": "repeat_knob",
+      "label": "Repeat Knob",
+      "settings": {
+        "mix": 6,
+        "delay_1": 4,
+        "blizzard_mode": 3,
+        "delay_1_led": true
+      },
+      "isSweep": true,
+      "target": "repeat",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10]
+    }
+  ]
+}

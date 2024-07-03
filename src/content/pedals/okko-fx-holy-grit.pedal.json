@@ -1,0 +1,92 @@
+{
+  "name": "okko-fx-holy-grit",
+  "controls": {
+    "knobs": [
+      {
+        "id": "fuzz",
+        "size": 60,
+        "position": {
+          "left": 28,
+          "top": 27
+        },
+        "type": "chicken",
+        "colors": {
+          "tick": "ghostwhite",
+          "primary": "black",
+          "background": "#741B1D"
+        }
+      },
+      {
+        "id": "level",
+        "size": 60,
+        "position": {
+          "left": 108,
+          "top": 27
+        },
+        "type": "chicken",
+        "colors": {
+          "tick": "ghostwhite",
+          "primary": "black",
+          "background": "#A01513"
+        }
+      },
+      {
+        "id": "bass",
+        "size": 60,
+        "position": {
+          "left": 28,
+          "top": 98
+        },
+        "type": "chicken",
+        "colors": {
+          "tick": "ghostwhite",
+          "primary": "black",
+          "background": "#A01513"
+        }
+      },
+      {
+        "id": "treble",
+        "size": 60,
+        "position": {
+          "left": 108,
+          "top": 98
+        },
+        "type": "chicken",
+        "colors": {
+          "tick": "ghostwhite",
+          "primary": "black",
+          "background": "#A01513"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 75,
+          "top": 126
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 52,
+        "position": {
+          "left": 72,
+          "top": 232
+        }
+      },
+      {
+        "id": "bias",
+        "type": "toggle",
+        "size": 32,
+        "position": {
+          "left": 83,
+          "top": 84
+        }
+      }
+    ]
+  }
+}

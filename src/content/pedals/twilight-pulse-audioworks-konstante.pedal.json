@@ -1,0 +1,123 @@
+{
+  "name": "twilight-pulse-audioworks-konstante",
+  "controls": {
+    "knobs": [
+      {
+        "id": "loud",
+        "size": 70,
+        "position": {
+          "left": 19,
+          "top": 44
+        },
+        "type": "arrow"
+      },
+      {
+        "id": "gain",
+        "size": 70,
+        "position": {
+          "left": 111,
+          "top": 44
+        },
+        "type": "arrow"
+      },
+      {
+        "id": "freq",
+        "size": 70,
+        "position": {
+          "left": 20,
+          "top": 137
+        },
+        "type": "arrow"
+      },
+      {
+        "id": "pre",
+        "size": 70,
+        "position": {
+          "left": 112,
+          "top": 137
+        },
+        "type": "arrow"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 42,
+        "position": {
+          "left": 25,
+          "top": 241
+        },
+        "colors": {
+          "on": "#0093ff",
+          "off": "#444444a1"
+        }
+      },
+      {
+        "id": "pre_led",
+        "size": 42,
+        "position": {
+          "left": 132,
+          "top": 242
+        },
+        "secondaryCircuitId": "pre_circuit",
+        "colors": {
+          "on": "#ff8300",
+          "off": "#444444a1"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 50,
+        "position": {
+          "left": 21,
+          "top": 270
+        }
+      },
+      {
+        "id": "pre_switch",
+        "size": 50,
+        "position": {
+          "left": 129,
+          "top": 270
+        },
+        "secondaryCircuitId": "pre_circuit"
+      },
+      {
+        "id": "ord",
+        "type": "toggle",
+        "orientation": "horizontal",
+        "size": 30,
+        "position": {
+          "left": 85,
+          "top": 114
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "ord_label",
+        "position": {
+          "left": 98,
+          "top": 144
+        },
+        "labelPosition": {
+          "left": 200,
+          "top": 235
+        }
+      },
+      {
+        "id": "pre_label",
+        "position": {
+          "left": 154,
+          "top": 149
+        },
+        "labelPosition": {
+          "left": 200,
+          "top": 88
+        }
+      }
+    ]
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "name": "okko-fx-twin-sonic-mkii",
+  "width": 300,
+  "height": 350,
+  "controls": {
+    "knobs": [
+      {
+        "id": "gain_blue",
+        "size": 40,
+        "position": {
+          "left": 41,
+          "top": 35
+        },
+        "type": "simple",
+        "colors": {
+          "primary": "maroon",
+          "tick": "white"
+        }
+      },
+      {
+        "id": "level_blue",
+        "size": 40,
+        "position": {
+          "left": 100,
+          "top": 36
+        },
+        "type": "simple",
+        "colors": {
+          "primary": "maroon",
+          "tick": "white"
+        }
+      },
+      {
+        "id": "voice_blue",
+        "size": 40,
+        "position": {
+          "left": 40,
+          "top": 124
+        },
+        "type": "simple",
+        "colors": {
+          "primary": "maroon",
+          "tick": "white"
+        }
+      },
+      {
+        "id": "hicut_blue",
+        "size": 40,
+        "position": {
+          "left": 99,
+          "top": 124
+        },
+        "type": "simple",
+        "colors": {
+          "primary": "maroon",
+          "tick": "white"
+        }
+      },
+      {
+        "id": "gain_red",
+        "size": 40,
+        "position": {
+          "left": 159,
+          "top": 35
+        },
+        "type": "simple",
+        "colors": {
+          "primary": "slategray",
+          "tick": "white"
+        }
+      },
+      {
+        "id": "level_red",
+        "size": 40,
+        "position": {
+          "left": 219,
+          "top": 35
+        },
+        "type": "simple",
+        "colors": {
+          "primary": "slategray",
+          "tick": "white"
+        }
+      },
+      {
+        "id": "voice_red",
+        "size": 40,
+        "position": {
+          "left": 159,
+          "top": 124
+        },
+        "type": "simple",
+        "colors": {
+          "primary": "slategray",
+          "tick": "white"
+        }
+      },
+      {
+        "id": "hicut_red",
+        "size": 40,
+        "position": {
+          "left": 218,
+          "top": 124
+        },
+        "type": "simple",
+        "colors": {
+          "primary": "slategray",
+          "tick": "white"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 67,
+          "top": 162
+        },
+        "colors": {
+          "on": "#0095f8",
+          "off": "#375b81a1"
+        }
+      },
+      {
+        "id": "red_led",
+        "size": 48,
+        "position": {
+          "left": 184,
+          "top": 162
+        },
+        "secondaryCircuitId": "red_circuit"
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 23,
+          "top": 267
+        }
+      },
+      {
+        "id": "red_switch",
+        "size": 56,
+        "position": {
+          "left": 221,
+          "top": 267
+        },
+        "type": "stomp",
+        "secondaryCircuitId": "red_circuit"
+      },
+      {
+        "id": "mode_blue",
+        "type": "toggle",
+        "size": 28,
+        "position": {
+          "left": 76,
+          "top": 83
+        }
+      },
+      {
+        "id": "mode_red",
+        "type": "toggle",
+        "size": 28,
+        "position": {
+          "left": 193,
+          "top": 83
+        }
+      }
+    ]
+  }
+}

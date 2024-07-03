@@ -1,0 +1,127 @@
+{
+  "presets": [
+    {
+      "id": "dinosaur_fuzz",
+      "label": "Dinosaur Fuzz",
+      "settings": {
+        "volume": 5,
+        "tone": 5,
+        "scoop": 5,
+        "sustain": 7,
+        "clip": 1,
+        "boost": 10,
+        "boost_led": true,
+        "order_label": "boost into fuzz"
+      }
+    },
+    {
+      "id": "biting_overdrive",
+      "label": "Biting Overdrive",
+      "settings": {
+        "volume": 7,
+        "tone": 6,
+        "scoop": 8,
+        "sustain": 3,
+        "clip": 1
+      }
+    },
+    {
+      "id": "charming_broken_speaker",
+      "label": "Charming Broken Speaker",
+      "settings": {
+        "volume": 3,
+        "tone": 4,
+        "scoop": 0,
+        "sustain": 5,
+        "clip": 2
+      }
+    },
+    {
+      "id": "fuzz_wall",
+      "label": "Fuzz Wall",
+      "settings": {
+        "volume": 5,
+        "tone": 4,
+        "scoop": 0,
+        "sustain": 10,
+        "clip": 1,
+        "boost": 10,
+        "boost_led": true,
+        "order_label": "boost into fuzz"
+      }
+    },
+    {
+      "id": "fuzz_slamming_the_boost",
+      "label": "Fuzz Slamming the Boost",
+      "settings": {
+        "volume": 10,
+        "tone": 5,
+        "scoop": 8,
+        "sustain": 10,
+        "clip": 2,
+        "boost": 5,
+        "boost_led": true,
+        "order_label": "fuzz into boost"
+      }
+    },
+    {
+      "id": "scoop_knob",
+      "label": "Scoop Knob",
+      "isSweep": true,
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "target": "scoop",
+      "settings": {
+        "volume": 7,
+        "tone": 5,
+        "sustain": 10,
+        "clip": 3
+      }
+    },
+    {
+      "id": "sustain_knob",
+      "label": "Sustain Knob",
+      "isSweep": true,
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "target": "sustain",
+      "settings": {
+        "volume": 6,
+        "tone": 5,
+        "scoop": 5,
+        "clip": 1
+      }
+    },
+    {
+      "id": "boost_knob",
+      "label": "Boost Knob",
+      "isSweep": true,
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "target": "boost",
+      "settings": {
+        "volume": 6,
+        "tone": 5,
+        "scoop": 5,
+        "sustain": 5,
+        "clip": 1,
+        "boost_led": true,
+        "order_label": "boost into fuzz"
+      }
+    },
+    {
+      "id": "clipping_options",
+      "label": "Clipping Options",
+      "isSweep": true,
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "target": "clip",
+      "settings": {
+        "volume": 6,
+        "tone": 5,
+        "scoop": 5,
+        "sustain": 5
+      }
+    }
+  ]
+}

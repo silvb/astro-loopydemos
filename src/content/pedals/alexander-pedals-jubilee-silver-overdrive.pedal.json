@@ -1,0 +1,72 @@
+{
+  "name": "alexander-pedals-jubilee-silver-overdrive",
+  "controls": {
+    "knobs": [
+      {
+        "id": "loudness",
+        "size": 54,
+        "position": {
+          "left": 16,
+          "top": 23
+        },
+        "type": "knurled"
+      },
+      {
+        "id": "drive",
+        "size": 54,
+        "position": {
+          "left": 131,
+          "top": 23
+        },
+        "type": "knurled"
+      },
+      {
+        "id": "treble",
+        "size": 54,
+        "position": {
+          "left": 15,
+          "top": 111
+        },
+        "type": "knurled"
+      },
+      {
+        "id": "mid",
+        "size": 54,
+        "position": {
+          "left": 72,
+          "top": 111
+        },
+        "type": "knurled"
+      },
+      {
+        "id": "bass",
+        "size": 54,
+        "position": {
+          "left": 129,
+          "top": 111
+        },
+        "type": "knurled"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 50,
+        "position": {
+          "left": 73,
+          "top": 12
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 51,
+        "position": {
+          "left": 74,
+          "top": 261
+        }
+      }
+    ]
+  }
+}

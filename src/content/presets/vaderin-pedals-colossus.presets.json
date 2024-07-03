@@ -1,0 +1,46 @@
+{
+  "presets": [
+    {
+      "id": "finest_velcro",
+      "label": "Finest Velcro",
+      "settings": { "bass": 1.5, "top": 1, "fuzz": 9, "vol": 5 }
+    },
+    {
+      "id": "smooth_distortion",
+      "label": "Smooth Distortion",
+      "settings": { "bass": 0, "top": 10, "fuzz": 0, "vol": 4 }
+    },
+    {
+      "id": "fuzz_bite",
+      "label": "Fuzz Bite",
+      "settings": { "bass": 5, "top": 5, "fuzz": 5, "vol": 5 }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "top": 0, "fuzz": 0, "vol": 5 }
+    },
+    {
+      "id": "top_knob",
+      "label": "Top",
+      "isSweep": true,
+      "target": "top",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "bass": 10, "fuzz": 5, "vol": 4 }
+    },
+    {
+      "id": "fuzz_knob",
+      "label": "Fuzz",
+      "isSweep": true,
+      "target": "fuzz",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "top": 5, "bass": 2, "vol": 4 }
+    }
+  ]
+}

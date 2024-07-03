@@ -1,0 +1,153 @@
+{
+  "name": "native-audio-midnight",
+  "controls": {
+    "knobs": [
+      {
+        "id": "mix",
+        "size": 46,
+        "position": {
+          "left": 14,
+          "top": 33
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "feedback",
+        "size": 46,
+        "position": {
+          "left": 73,
+          "top": 33
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "depth",
+        "size": 46,
+        "position": {
+          "left": 132,
+          "top": 33
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "rate",
+        "size": 46,
+        "position": {
+          "left": 14,
+          "top": 112
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "division",
+        "size": 46,
+        "position": {
+          "left": 132,
+          "top": 112
+        },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 56,
+          "top": 267
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff"
+        }
+      },
+      {
+        "id": "rate_led",
+        "defaultTime": "800",
+        "size": 48,
+        "position": {
+          "left": 89,
+          "top": 267
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff"
+        },
+        "isBlinking": true
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 16,
+          "top": 268
+        }
+      },
+      {
+        "id": "mode",
+        "size": 30,
+        "type": "toggle",
+        "position": {
+          "left": 82,
+          "top": 122
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "waveform",
+        "position": {
+          "left": 41,
+          "top": 190
+        },
+        "labelPosition": {
+          "left": 15,
+          "top": 237
+        }
+      },
+      {
+        "id": "fast_label",
+        "position": {
+          "left": 153,
+          "top": 203
+        },
+        "labelPosition": {
+          "left": 180,
+          "top": 253
+        }
+      }
+    ],
+    "dependencies": [
+      {
+        "source": "rate",
+        "target": {
+          "id": "waveform",
+          "values": [
+            {
+              "sourceValue": 0,
+              "value": "sine wave"
+            },
+            {
+              "sourceValue": 3,
+              "value": "ramp up"
+            },
+            {
+              "sourceValue": 5,
+              "value": "ramp up and down"
+            },
+            {
+              "sourceValue": 7,
+              "value": "ramp down"
+            },
+            {
+              "sourceValue": 10,
+              "value": "random"
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

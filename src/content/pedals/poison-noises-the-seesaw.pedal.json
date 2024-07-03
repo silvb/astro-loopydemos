@@ -1,0 +1,155 @@
+{
+  "name": "poison-noises-the-seesaw",
+  "width": 300,
+  "controls": {
+    "knobs": [
+      {
+        "id": "launch",
+        "size": 50,
+        "position": {
+          "left": 66,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "sway",
+        "size": 50,
+        "position": {
+          "left": 126,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "shift",
+        "size": 50,
+        "position": {
+          "left": 184,
+          "top": 35
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "teeter",
+        "size": 50,
+        "position": {
+          "left": 66,
+          "top": 118
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "wobble",
+        "size": 50,
+        "position": {
+          "left": 126,
+          "top": 118
+        },
+        "isRotary": true,
+        "rotaryAngles": [-150, -110, -70, -20, 20, 70, 110, 150],
+        "type": "jhs"
+      },
+      {
+        "id": "totter",
+        "size": 50,
+        "position": {
+          "left": 184,
+          "top": 118
+        },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 67,
+          "top": 294
+        },
+        "colors": {
+          "on": "#ffe082"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 56,
+        "position": {
+          "left": 122,
+          "top": 289
+        }
+      }
+    ],
+    "labels": [
+      {
+        "id": "launch_label",
+        "position": {
+          "left": 78,
+          "top": 84
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 129
+        }
+      },
+      {
+        "id": "sway_label",
+        "position": {
+          "left": 138,
+          "top": 85
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 175
+        }
+      },
+      {
+        "id": "shift_label",
+        "position": {
+          "left": 220,
+          "top": 85
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 129
+        }
+      },
+      {
+        "id": "teeter_label",
+        "position": {
+          "left": 74,
+          "top": 160
+        },
+        "labelPosition": {
+          "left": 49,
+          "top": 207
+        }
+      },
+      {
+        "id": "wobble_label",
+        "position": {
+          "left": 165,
+          "top": 160
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 210
+        }
+      },
+      {
+        "id": "totter_label",
+        "position": {
+          "left": 222,
+          "top": 127
+        },
+        "labelPosition": {
+          "left": 250,
+          "top": 73
+        }
+      }
+    ]
+  }
+}

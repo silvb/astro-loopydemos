@@ -1,0 +1,94 @@
+{
+  "presets": [
+    {
+      "id": "soft_chime",
+      "label": "Soft Chime",
+      "settings": {
+        "gain": 3,
+        "volume": 5,
+        "bass": 5,
+        "mids": 6,
+        "treble": 7,
+        "mode": 3
+      }
+    },
+    {
+      "id": "scooped_distortion",
+      "label": "Scooped Distortion",
+      "settings": {
+        "gain": 5,
+        "volume": 5,
+        "bass": 6,
+        "mids": 3,
+        "treble": 6,
+        "mode": 1
+      }
+    },
+    {
+      "id": "fat_crunch",
+      "label": "Fat Crunch",
+      "settings": {
+        "gain": 8,
+        "volume": 5,
+        "bass": 4,
+        "mids": 5,
+        "treble": 6,
+        "mode": 3
+      }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain (Overdrive)",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "settings": { "volume": 5, "bass": 5, "mids": 5, "treble": 5, "mode": 3 }
+    },
+    {
+      "id": "gain_knob_dist",
+      "label": "Gain (Distortion)",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "volume": 5, "bass": 5, "mids": 5, "treble": 5, "mode": 1 }
+    },
+    {
+      "id": "mode_toggle",
+      "label": "Mode",
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": { "volume": 5, "bass": 6, "mids": 4, "treble": 6, "gain": 4 }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "volume": 5, "gain": 5, "mids": 4, "treble": 6, "mode": 3 }
+    },
+    {
+      "id": "mids_knob",
+      "label": "Mids",
+      "isSweep": true,
+      "target": "mids",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "volume": 5, "gain": 5, "bass": 6, "treble": 6, "mode": 3 }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble",
+      "isSweep": true,
+      "target": "treble",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "volume": 5, "gain": 5, "mids": 4, "bass": 6, "mode": 3 }
+    }
+  ]
+}

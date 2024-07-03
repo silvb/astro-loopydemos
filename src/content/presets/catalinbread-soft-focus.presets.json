@@ -1,0 +1,111 @@
+{
+  "presets": [
+    {
+      "id": "washy_mod_reverb",
+      "label": "Washy, Modulated Reverb",
+      "settings": { "symph": 10, "mod": 10, "verb": 6, "mix": 8, "vol": 2 }
+    },
+    {
+      "id": "space_pad_verb",
+      "label": "Space Pad Verb",
+      "settings": {
+        "symph": 2,
+        "mod": 2,
+        "verb": 10,
+        "mix": 8,
+        "vol": 2
+      }
+    },
+    {
+      "id": "magic_room",
+      "label": "Magic Room",
+      "settings": {
+        "symph": 5,
+        "mod": 8,
+        "verb": 0,
+        "mix": 8,
+        "vol": 2
+      }
+    },
+    {
+      "id": "symph_knob",
+      "label": "Symph Knob",
+      "isSweep": true,
+      "target": "symph",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "mod": 8,
+        "verb": 7,
+        "mix": 8,
+        "vol": 2
+      }
+    },
+    {
+      "id": "mod_knob",
+      "label": "Mod Knob",
+      "isSweep": true,
+      "target": "mod",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "symph": 8,
+        "verb": 6,
+        "mix": 8,
+        "vol": 2
+      }
+    },
+    {
+      "id": "verb_knob",
+      "label": "Verb Knob",
+      "isSweep": true,
+      "target": "verb",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "symph": 5,
+        "mod": 5,
+        "mix": 8,
+        "vol": 2
+      }
+    },
+    {
+      "id": "fully_wet",
+      "label": "Fully Wet",
+      "settings": {
+        "symph": 10,
+        "mod": 10,
+        "verb": 10,
+        "mix": 10,
+        "vol": 2
+      }
+    },
+    {
+      "id": "shoegaze",
+      "label": "Obviously it Shoegazes",
+      "chain": [
+        {
+          "name": "black-mass-electronics-1312-distortion-v3",
+          "id": "1312",
+          "settings": {
+            "level": 7,
+            "filter": 6,
+            "gain": 6,
+            "clip": 1
+          }
+        },
+        {
+          "name": "catalinbread-soft-focus",
+          "id": "softfocus",
+          "settings": {
+            "symph": 10,
+            "mod": 10,
+            "verb": 5,
+            "mix": 8,
+            "vol": 2
+          }
+        }
+      ]
+    }
+  ]
+}

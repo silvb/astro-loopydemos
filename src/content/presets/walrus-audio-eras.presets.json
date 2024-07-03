@@ -1,0 +1,67 @@
+{
+  "presets": [
+    {
+      "id": "chimey_drive",
+      "label": "Chimey Drive",
+      "settings": {
+        "vol": 6,
+        "blend": 5,
+        "gain": 3,
+        "bass": 5,
+        "mode": 2,
+        "treb": 8
+      }
+    },
+    {
+      "id": "fat_distortion",
+      "label": "Fat Distortion",
+      "settings": {
+        "vol": 6,
+        "blend": 10,
+        "gain": 7,
+        "bass": 6,
+        "mode": 5,
+        "treb": 10
+      }
+    },
+    {
+      "id": "tight_rhythm",
+      "label": "Tight Rhythm",
+      "settings": {
+        "vol": 6,
+        "blend": 8,
+        "gain": 7,
+        "bass": 6,
+        "mode": 4,
+        "treb": 8
+      }
+    },
+    {
+      "id": "blend_knob",
+      "label": "Blend Knob",
+      "settings": { "vol": 6, "gain": 5, "bass": 4, "mode": 3, "treb": 7 },
+      "isSweep": true,
+      "target": "blend",
+      "initialValue": 0,
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+    },
+    {
+      "id": "clipping_modes",
+      "label": "Clipping Modes",
+      "settings": { "vol": 6, "blend": 10, "gain": 7, "bass": 5, "treb": 8 },
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 2, 3, 4, 5]
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain Knob",
+      "settings": { "vol": 6, "blend": 10, "bass": 4, "mode": 4, "treb": 7 },
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10]
+    }
+  ]
+}

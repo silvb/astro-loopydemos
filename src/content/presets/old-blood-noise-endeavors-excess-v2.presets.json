@@ -1,0 +1,136 @@
+{
+  "presets": [
+    {
+      "id": "angry_elves",
+      "label": "Fairy Dust",
+      "secondaryCircuitSlug": "angry_elves_mod",
+      "secondaryCircuitOnlySlug": "angry_elves_mod_only",
+      "initialSecondaryCircuits": ["mod_circuit"],
+      "secondaryCircuitId": "mod_circuit",
+      "settings": {
+        "dist_vol": 5,
+        "tone": 5,
+        "gain": 1,
+        "mod_vol": 8,
+        "time": 7,
+        "depth": 6,
+        "mod_type": 1,
+        "order": 3
+      }
+    },
+    {
+      "id": "grunge_chorus",
+      "label": "Grunge Chorus",
+      "secondaryCircuitSlug": "grunge_chorus_mod",
+      "secondaryCircuitOnlySlug": "grunge_chorus_mod_only",
+      "initialSecondaryCircuits": ["mod_circuit"],
+      "secondaryCircuitId": "mod_circuit",
+      "settings": {
+        "dist_vol": 5,
+        "tone": 6,
+        "gain": 1.5,
+        "mod_vol": 4,
+        "time": 6,
+        "depth": 7,
+        "mod_type": 2,
+        "order": 1
+      }
+    },
+    {
+      "id": "slamming_slap_back",
+      "label": "Slammin' Slap Back",
+      "secondaryCircuitSlug": "slamming_slap_back_mod",
+      "secondaryCircuitOnlySlug": "slamming_slap_back_mod_only",
+      "initialSecondaryCircuits": ["mod_circuit"],
+      "secondaryCircuitId": "mod_circuit",
+      "settings": {
+        "dist_vol": 5,
+        "tone": 5,
+        "gain": 1,
+        "mod_vol": 10,
+        "time": 10,
+        "depth": 5,
+        "mod_type": 3,
+        "order": 1
+      }
+    },
+    {
+      "id": "ring_mod_drone",
+      "label": "Ring Mod Drone",
+      "secondaryCircuitSlug": "ring_mod_drone_mod",
+      "secondaryCircuitOnlySlug": "ring_mod_drone_mod_only",
+      "initialSecondaryCircuits": ["mod_circuit"],
+      "secondaryCircuitId": "mod_circuit",
+      "settings": {
+        "dist_vol": 2,
+        "tone": 6,
+        "gain": 5,
+        "mod_vol": 6,
+        "time": 3,
+        "depth": 10,
+        "mod_type": 3,
+        "order": 2
+      }
+    },
+    {
+      "id": "magic_dirt",
+      "label": "Magic Dirt",
+      "secondaryCircuitSlug": "magic_dirt_mod",
+      "secondaryCircuitOnlySlug": "magic_dirt_mod_only",
+      "initialSecondaryCircuits": ["mod_circuit"],
+      "secondaryCircuitId": "mod_circuit",
+      "settings": {
+        "dist_vol": 3,
+        "tone": 6,
+        "gain": 3,
+        "mod_vol": 8,
+        "time": 0,
+        "depth": 5,
+        "mod_type": 1,
+        "order": 3
+      }
+    },
+    {
+      "id": "order_switch",
+      "secondaryCircuitSlug": "order_switch_mod",
+      "secondaryCircuitOnlySlug": "order_switch_mod_only",
+      "initialSecondaryCircuits": ["mod_circuit"],
+      "secondaryCircuitId": "mod_circuit",
+      "label": "Order Switch",
+      "isSweep": true,
+      "target": "order",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "dist_vol": 3,
+        "tone": 5,
+        "gain": 1.5,
+        "mod_vol": 7.7,
+        "time": 5,
+        "depth": 5,
+        "mod_type": 2
+      }
+    },
+    {
+      "id": "mod_type_switch",
+      "secondaryCircuitSlug": "mod_type_switch_mod",
+      "secondaryCircuitOnlySlug": "mod_type_switch_mod_only",
+      "initialSecondaryCircuits": ["mod_circuit"],
+      "secondaryCircuitId": "mod_circuit",
+      "label": "Modulation Type",
+      "isSweep": true,
+      "target": "mod_type",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "dist_vol": 3,
+        "tone": 5,
+        "gain": 1.5,
+        "mod_vol": 6,
+        "time": 7,
+        "depth": 6,
+        "order": 1
+      }
+    }
+  ]
+}

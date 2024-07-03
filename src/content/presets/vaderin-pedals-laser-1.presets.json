@@ -1,0 +1,89 @@
+{
+  "presets": [
+    {
+      "id": "velcro_fuzz",
+      "label": "Velcro Fuzz",
+      "settings": {
+        "intensity": 0,
+        "volume": 5,
+        "wave_shape": 1
+      }
+    },
+    {
+      "id": "pew_pew",
+      "label": "Pew Pew",
+      "settings": {
+        "intensity": 10,
+        "volume": 5,
+        "wave_shape": 2
+      }
+    },
+    {
+      "id": "harsh_fuzz",
+      "label": "Harsh Fuzz",
+      "settings": {
+        "intensity": 8,
+        "volume": 5,
+        "wave_shape": 1
+      }
+    },
+    {
+      "id": "guitar_tone_rolled_off",
+      "label": "Smooth Fuzz",
+      "settings": {
+        "intensity": 8,
+        "volume": 5,
+        "wave_shape": 1,
+        "note": "guitar tone rolled off 100%"
+      }
+    },
+    {
+      "id": "wave_shape_toggle",
+      "label": "Wave Shape Toggle",
+      "initialValue": 1,
+      "isSweep": true,
+      "values": [1, 2, 3],
+      "target": "wave_shape",
+      "settings": {
+        "intensity": 5,
+        "volume": 5
+      }
+    },
+    {
+      "id": "smooth_mode_gain_range",
+      "label": "Smooth Mode Gain Range",
+      "initialValue": 8,
+      "isSweep": true,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "target": "intensity",
+      "settings": {
+        "output": 5,
+        "wave_shape": 1
+      }
+    },
+    {
+      "id": "harsh_mode_gain_range",
+      "label": "Harsh Mode Gain Range",
+      "initialValue": 8,
+      "isSweep": true,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "target": "intensity",
+      "settings": {
+        "output": 5,
+        "wave_shape": 2
+      }
+    },
+    {
+      "id": "combo_mode_gain_range",
+      "label": "Combo Mode Gain Range",
+      "initialValue": 8,
+      "isSweep": true,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "target": "intensity",
+      "settings": {
+        "output": 5,
+        "wave_shape": 3
+      }
+    }
+  ]
+}

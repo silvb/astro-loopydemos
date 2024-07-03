@@ -1,0 +1,138 @@
+{
+  "name": "recovery-effects-cutting-room-floor",
+  "controls": {
+    "knobs": [
+      {
+        "id": "tape_level",
+        "size": 48,
+        "position": {
+          "left": 13,
+          "top": 55
+        },
+        "colors": {
+          "primary": "#aac4d8",
+          "secondary": "#374446",
+          "edge": "#415462",
+          "tick": "#FFF"
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "delay_level",
+        "size": 48,
+        "position": {
+          "left": 76,
+          "top": 55
+        },
+        "colors": {
+          "primary": "#aac4d8",
+          "secondary": "#374446",
+          "edge": "#415462",
+          "tick": "#FFF"
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "delay_time",
+        "size": 48,
+        "position": {
+          "left": 139,
+          "top": 56
+        },
+        "colors": {
+          "primary": "#aac4d8",
+          "secondary": "#374446",
+          "edge": "#415462",
+          "tick": "#FFF"
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "flutter",
+        "size": 48,
+        "position": {
+          "left": 16,
+          "top": 133
+        },
+        "colors": {
+          "primary": "#aac4d8",
+          "secondary": "#374446",
+          "edge": "#415462",
+          "tick": "#FFF"
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "shape",
+        "size": 48,
+        "position": {
+          "left": 77,
+          "top": 133
+        },
+        "colors": {
+          "primary": "#aac4d8",
+          "secondary": "#374446",
+          "edge": "#415462",
+          "tick": "#FFF"
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "wow",
+        "size": 48,
+        "position": {
+          "left": 139,
+          "top": 133
+        },
+        "colors": {
+          "primary": "#aac4d8",
+          "secondary": "#374446",
+          "edge": "#415462",
+          "tick": "#FFF"
+        },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 77,
+          "top": 203
+        },
+        "colors": {
+          "on": "#fbff00"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 64,
+        "position": {
+          "left": 117,
+          "top": 269
+        }
+      },
+      {
+        "id": "s_slash_r",
+        "type": "toggle",
+        "size": 32,
+        "position": {
+          "left": 37,
+          "top": 208
+        }
+      },
+      {
+        "id": "stabil",
+        "type": "toggle",
+        "size": 32,
+        "position": {
+          "left": 134,
+          "top": 208
+        }
+      }
+    ]
+  }
+}

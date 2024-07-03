@@ -1,0 +1,153 @@
+{
+  "presets": [
+    {
+      "id": "grimey_waves",
+      "label": "Grimey Waves",
+      "settings": {
+        "volume": 10,
+        "filter": 0,
+        "gain": 4,
+        "mix": 4,
+        "feedback": 6,
+        "depth": 2,
+        "delay": 3.5,
+        "sens": 1,
+        "hpf": 1,
+        "dirt": 1
+      }
+    },
+    {
+      "id": "sens_toggle",
+      "label": "Sens",
+      "isSweep": true,
+      "target": "sens",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "volume": 10,
+        "filter": 0,
+        "gain": 4,
+        "mix": 4,
+        "feedback": 6,
+        "depth": 10,
+        "delay": 3.5,
+        "hpf": 1,
+        "dirt": 1
+      }
+    },
+    {
+      "id": "hpf_toggle",
+      "label": "HPF",
+      "isSweep": true,
+      "target": "hpf",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "volume": 10,
+        "filter": 0,
+        "gain": 4,
+        "mix": 6,
+        "feedback": 6,
+        "depth": 2,
+        "delay": 3.5,
+        "sens": 1,
+        "dirt": 1
+      }
+    },
+    {
+      "id": "dirt_toggle",
+      "label": "Dirt",
+      "isSweep": true,
+      "target": "dirt",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "volume": 10,
+        "filter": 0,
+        "gain": 7,
+        "mix": 4,
+        "feedback": 6,
+        "depth": 2,
+        "delay": 3.5,
+        "sens": 1,
+        "hpf": 1
+      }
+    },
+    {
+      "id": "filter_knob",
+      "label": "Filter",
+      "isSweep": true,
+      "target": "filter",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "volume": 10,
+        "gain": 5,
+        "mix": 4,
+        "feedback": 6,
+        "depth": 2,
+        "delay": 3.5,
+        "sens": 1,
+        "hpf": 1,
+        "dirt": 1
+      }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "volume": 10,
+        "filter": 0,
+        "mix": 4,
+        "feedback": 6,
+        "depth": 2,
+        "delay": 3.5,
+        "sens": 1,
+        "hpf": 1,
+        "dirt": 1
+      }
+    },
+    {
+      "id": "feedback_knob",
+      "label": "Feedback",
+      "isSweep": true,
+      "target": "feedback",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "volume": 10,
+        "filter": 0,
+        "gain": 5,
+        "mix": 4,
+        "depth": 2,
+        "delay": 3.5,
+        "sens": 1,
+        "hpf": 1,
+        "dirt": 1
+      }
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "volume": 10,
+        "filter": 0,
+        "gain": 5,
+        "mix": 4,
+        "feedback": 6,
+        "delay": 3.5,
+        "sens": 1,
+        "hpf": 1,
+        "dirt": 1
+      }
+    }
+  ]
+}

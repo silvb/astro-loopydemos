@@ -1,0 +1,136 @@
+{
+  "presets": [
+    {
+      "id": "phased_out",
+      "label": "Phased Out",
+      "settings": {
+        "charge": 10,
+        "zap": 8,
+        "stun": 6,
+        "shrink": 5,
+        "vaporize": 5,
+        "freeze": 5,
+        "charge_label": "mix",
+        "zap_label": "volume",
+        "stun_label": "speed",
+        "shrink_label": "width",
+        "vaporize_label": "phaser type",
+        "freeze_label": "low pass"
+      }
+    },
+    {
+      "id": "octave_blaster",
+      "label": "Octave Blaster",
+      "settings": {
+        "charge": 10,
+        "zap": 8,
+        "stun": 4,
+        "shrink": 5,
+        "vaporize": 6,
+        "freeze": 6,
+        "vaporize_label": "octave phaser",
+        "freeze_label": "mix upper/lower octave"
+      }
+    },
+    {
+      "id": "flangy_phase",
+      "label": "Flangy Phase",
+      "settings": {
+        "charge": 7,
+        "zap": 8,
+        "stun": 2,
+        "shrink": 8,
+        "vaporize": 7,
+        "freeze": 10,
+        "vaporize_label": "flange phaser",
+        "freeze_label": "flanger speed",
+        "shrink_label": "phaser width and flanger feedback"
+      }
+    },
+    {
+      "id": "charge_knob",
+      "label": "Charge",
+      "isSweep": true,
+      "target": "charge",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "zap": 8,
+        "stun": 8,
+        "shrink": 8,
+        "vaporize": 2,
+        "freeze": 6,
+        "charge_label": "mix",
+        "vaporize_label": "4 stage phaser"
+      }
+    },
+    {
+      "id": "bit_crushed_freeze",
+      "label": "Bit Crushed Freeze",
+      "isSweep": true,
+      "target": "freeze",
+      "initialValue": 2,
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "settings": {
+        "charge": 10,
+        "zap": 8,
+        "stun": 0,
+        "shrink": 10,
+        "vaporize": 8,
+        "freeze_label": "aliaser frequency",
+        "vaporize_label": "aliaser phaser"
+      }
+    },
+    {
+      "id": "freeze_as_low_pass",
+      "label": "Phased Freeze",
+      "isSweep": true,
+      "target": "freeze",
+      "initialValue": 6,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "charge": 10,
+        "zap": 8,
+        "stun": 8,
+        "shrink": 8,
+        "vaporize": 1,
+        "vaporize_label": "2 stage phaser",
+        "freeze_label": "low pass"
+      }
+    },
+    {
+      "id": "stun_knob",
+      "label": "Stun",
+      "isSweep": true,
+      "target": "stun",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "charge": 10,
+        "zap": 8,
+        "shrink": 8,
+        "vaporize": 3,
+        "freeze": 6,
+        "vaporize_label": "6 stage phaser",
+        "stun_label": "speed"
+      }
+    },
+    {
+      "id": "shrink_knob",
+      "label": "Shrink",
+      "isSweep": true,
+      "target": "shrink",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "charge": 10,
+        "zap": 8,
+        "stun": 8,
+        "vaporize": 4,
+        "freeze": 6,
+        "vaporize_label": "8 stage phaser",
+        "shrink_label": "width"
+      }
+    }
+  ]
+}

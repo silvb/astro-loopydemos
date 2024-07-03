@@ -1,0 +1,94 @@
+{
+  "name": "gear-ant-cicada",
+  "controls": {
+    "knobs": [
+      {
+        "id": "depth",
+        "size": 44,
+        "position": {
+          "left": 22,
+          "top": 40
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "speed",
+        "size": 44,
+        "position": {
+          "left": 130,
+          "top": 42
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "volume",
+        "size": 44,
+        "position": {
+          "left": 22,
+          "top": 131
+        },
+        "type": "walrus"
+      },
+      {
+        "id": "fuzz",
+        "size": 44,
+        "position": {
+          "left": 131,
+          "top": 132
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#36a7b6",
+          "secondary": "#16424a",
+          "edge": "#1f6976",
+          "tick": "#FFF"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 28,
+        "position": {
+          "left": 139,
+          "top": 240
+        },
+        "colors": {
+          "on": "#0043ff"
+        }
+      },
+      {
+        "id": "phaser_led",
+        "size": 28,
+        "position": {
+          "left": 31,
+          "top": 240
+        },
+        "colors": {
+          "on": "#ff4f00"
+        },
+        "secondaryCircuitId": "phaser_circuit"
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 131,
+          "top": 283
+        }
+      },
+      {
+        "id": "phaser_switch",
+        "size": 48,
+        "position": {
+          "left": 20,
+          "top": 283
+        },
+        "type": "stomp",
+        "secondaryCircuitId": "phaser_circuit"
+      }
+    ]
+  }
+}

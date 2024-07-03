@@ -1,0 +1,72 @@
+{
+  "presets": [
+    {
+      "id": "qotsa_tone",
+      "label": "QOTSA Tone",
+      "initialSecondaryCircuits": ["pre_circuit"],
+      "chain": [
+        {
+          "name": "boss-dm-2w-delay",
+          "id": "dm2",
+          "settings": { "rate": 6, "echo": 5, "intensity": 8, "mode": 1 }
+        },
+        {
+          "name": "funny-little-boxes-skeleton-key",
+          "id": "skelkey",
+          "settings": {
+            "gain": 10,
+            "tone": 3,
+            "volume": 8
+          }
+        },
+        {
+          "name": "twilight-pulse-audioworks-konstante",
+          "id": "konstante",
+          "secondaryCircuitOnlySlug": "pre_only",
+          "secondaryCircuitSlug": "konstante_pre",
+          "secondaryCircuitId": "pre_circuit",
+          "settings": {
+            "loud": 5,
+            "gain": 10,
+            "freq": 5,
+            "pre": 10,
+            "ord": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "distortion_with_bite",
+      "label": "Distortion with Bite",
+      "settings": { "gain": 10, "tone": 7, "volume": 10 }
+    },
+    {
+      "id": "character_boost",
+      "label": "Character Boost",
+      "settings": { "gain": 1, "tone": 8, "volume": 10 }
+    },
+    {
+      "id": "edgy_crunch",
+      "label": "Edgy Crunch",
+      "settings": { "gain": 6, "tone": 4, "volume": 6 }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "tone": 5, "volume": 8 }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "gain": 7, "volume": 8 }
+    }
+  ]
+}

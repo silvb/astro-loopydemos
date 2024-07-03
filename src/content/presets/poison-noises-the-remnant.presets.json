@@ -1,0 +1,110 @@
+{
+  "presets": [
+    {
+      "id": "quarter_goo",
+      "label": "Quarter Goo",
+      "settings": {
+        "desecrate": 8,
+        "recollect": 5,
+        "ravage": 4,
+        "corrupt": 5,
+        "fragment": 8,
+        "seize": 7,
+        "desecrate_label": "mix",
+        "recollect_label": "delay time",
+        "ravage_label": "feedback",
+        "corrupt_label": "mod speed",
+        "fragment_label": "mod depth",
+        "seize_label": "mod symmetry"
+      }
+    },
+    {
+      "id": "slippery_slap_back",
+      "label": "Slippery Slap Back",
+      "settings": {
+        "desecrate": 10,
+        "recollect": 2,
+        "ravage": 3,
+        "corrupt": 8,
+        "fragment": 3,
+        "seize": 2
+      }
+    },
+    {
+      "id": "chaos_ensues",
+      "label": "Chaos Ensues",
+      "settings": {
+        "desecrate": 8,
+        "recollect": 7,
+        "ravage": 5,
+        "corrupt": 10,
+        "fragment": 8,
+        "seize": 0
+      }
+    },
+    {
+      "id": "ravage_knob",
+      "label": "Ravage",
+      "isSweep": true,
+      "target": "ravage",
+      "initialValue": 0,
+      "values": [0, 2, 4, 5, 8, 10],
+      "settings": {
+        "desecrate": 8,
+        "recollect": 6,
+        "corrupt": 5,
+        "fragment": 5,
+        "seize": 5,
+        "ravage_label": "feedback"
+      }
+    },
+    {
+      "id": "corrupt_knob",
+      "label": "Corrupt",
+      "isSweep": true,
+      "target": "corrupt",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "desecrate": 8,
+        "recollect": 6,
+        "ravage": 4,
+        "fragment": 10,
+        "seize": 5,
+        "corrupt_label": "mod speed"
+      }
+    },
+    {
+      "id": "fragment_knob",
+      "label": "Fragment",
+      "isSweep": true,
+      "target": "fragment",
+      "initialValue": 0,
+      "values": [0, 3, 5, 7, 10],
+      "settings": {
+        "desecrate": 8,
+        "recollect": 6,
+        "ravage": 4,
+        "corrupt": 8,
+        "seize": 5,
+        "fragment_label": "mod depth"
+      }
+    },
+    {
+      "id": "seize_knob",
+      "label": "Seize",
+      "isSweep": true,
+      "target": "seize",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "desecrate": 8,
+        "recollect": 6,
+        "ravage": 4,
+        "corrupt": 5,
+        "fragment": 10,
+        "seize_label": "mod symmetry"
+      }
+    }
+  ]
+}

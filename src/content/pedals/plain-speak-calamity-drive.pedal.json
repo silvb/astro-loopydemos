@@ -1,0 +1,139 @@
+{
+  "name": "plain-speak-calamity-drive",
+  "controls": {
+    "knobs": [
+      {
+        "id": "tone",
+        "size": 44,
+        "position": {
+          "left": 25,
+          "top": 26
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#e8bf92",
+          "secondary": "#8c5c3a",
+          "edge": "#7F593A",
+          "tick": "#FFF"
+        }
+      },
+      {
+        "id": "gain",
+        "size": 44,
+        "position": {
+          "left": 79,
+          "top": 26
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#e8bf92",
+          "secondary": "#8c5c3a",
+          "edge": "#7F593A",
+          "tick": "#FFF"
+        }
+      },
+      {
+        "id": "voice",
+        "size": 44,
+        "position": {
+          "left": 132,
+          "top": 26
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#e8bf92",
+          "secondary": "#8c5c3a",
+          "edge": "#7F593A",
+          "tick": "#FFF"
+        }
+      },
+      {
+        "id": "vol",
+        "size": 44,
+        "position": {
+          "left": 25,
+          "top": 91
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#e8bf92",
+          "secondary": "#8c5c3a",
+          "edge": "#7F593A",
+          "tick": "#FFF"
+        }
+      },
+      {
+        "id": "goose",
+        "size": 44,
+        "position": {
+          "left": 132,
+          "top": 91
+        },
+        "type": "walrus",
+        "colors": {
+          "primary": "#f6c4ff",
+          "secondary": "#664D60",
+          "edge": "#5A434E",
+          "tick": "#FFF"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 30,
+        "position": {
+          "left": 53,
+          "top": 252
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#fdc913"
+        }
+      },
+      {
+        "id": "goose_led",
+        "size": 30,
+        "position": {
+          "left": 117,
+          "top": 252
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d000f5"
+        },
+        "secondaryCircuitId": "goose_circuit"
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "position": {
+          "left": 23,
+          "top": 278
+        }
+      },
+      {
+        "id": "goose_switch",
+        "size": 48,
+        "position": {
+          "left": 128,
+          "top": 278
+        },
+        "type": "stomp",
+        "secondaryCircuitId": "goose_circuit"
+      },
+      {
+        "id": "art",
+        "size": 30,
+        "position": {
+          "left": 85,
+          "top": 100
+        },
+        "type": "toggle",
+        "orientation": "horizontal"
+      }
+    ]
+  }
+}

@@ -1,0 +1,37 @@
+{
+  "presets": [
+    {
+      "id": "low_gain",
+      "label": "Low Gain",
+      "settings": { "vol": 5, "drv": 2, "tone": 5 }
+    },
+    {
+      "id": "mid_gain",
+      "label": "Mid Gain",
+      "settings": { "vol": 5, "drv": 7, "tone": 4 }
+    },
+    {
+      "id": "high_gain",
+      "label": "High Gain",
+      "settings": { "vol": 4, "drv": 10, "tone": 2 }
+    },
+    {
+      "id": "tone_knob",
+      "label": "TON",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 5,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "settings": { "drv": 5, "vol": 5 }
+    },
+    {
+      "id": "drv_knob",
+      "label": "DRV",
+      "isSweep": true,
+      "target": "drv",
+      "initialValue": 4,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "vol": 5, "tone": 5 }
+    }
+  ]
+}

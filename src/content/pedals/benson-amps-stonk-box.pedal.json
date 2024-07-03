@@ -1,0 +1,68 @@
+{
+  "name": "benson-amps-stonk-box",
+  "enclosure": "landscape",
+  "controls": {
+    "knobs": [
+      {
+        "id": "tone",
+        "size": 64,
+        "position": {
+          "left": 26,
+          "top": 97
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "volume",
+        "size": 64,
+        "position": {
+          "left": 101,
+          "top": 97
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "filter",
+        "size": 64,
+        "position": {
+          "left": 26,
+          "top": 186
+        },
+        "type": "jhs"
+      },
+      {
+        "id": "trim",
+        "size": 64,
+        "position": {
+          "left": 106,
+          "top": 186
+        },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 40,
+        "position": {
+          "left": 214,
+          "top": 172
+        },
+        "colors": {
+          "on": "#b6e60a",
+          "off": "#545454aa"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 54,
+        "position": {
+          "left": 263,
+          "top": 164
+        }
+      }
+    ]
+  }
+}

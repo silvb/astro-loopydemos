@@ -1,0 +1,127 @@
+{
+  "presets": [
+    {
+      "id": "medium_saturation",
+      "label": "Medium Saturation",
+      "settings": {
+        "breaking": 5,
+        "entering": 4,
+        "the_goods": 2,
+        "switcheroo": 1,
+        "high_tail": 5,
+        "lay_low": 0,
+        "lay_low_label": "bass response",
+        "breaking_label": "gain",
+        "entering_label": "volume",
+        "the_goods_label": "diode selection",
+        "switcheroo_label": "clipping mode",
+        "high_tail_label": "tone"
+      }
+    },
+    {
+      "id": "light_breakup",
+      "label": "Light Breakup",
+      "settings": {
+        "breaking": 1,
+        "entering": 4,
+        "the_goods": 2,
+        "switcheroo": 2,
+        "high_tail": 5,
+        "lay_low": 5
+      }
+    },
+    {
+      "id": "meaty_fuzz",
+      "label": "Meaty Fuzz",
+      "settings": {
+        "breaking": 8,
+        "entering": 4,
+        "the_goods": 1,
+        "switcheroo": 3,
+        "high_tail": 7,
+        "lay_low": 5
+      }
+    },
+    {
+      "id": "breaking_knob",
+      "label": "Breaking",
+      "isSweep": true,
+      "target": "breaking",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0,
+      "settings": {
+        "breaking": 8,
+        "entering": 4,
+        "the_goods": 1,
+        "switcheroo": 3,
+        "high_tail": 7,
+        "lay_low": 5,
+        "breaking_label": "gain"
+      }
+    },
+    {
+      "id": "the_goods_switch",
+      "label": "The Goods",
+      "isSweep": true,
+      "target": "the_goods",
+      "values": [1, 2, 3],
+      "initialValue": 1,
+      "settings": {
+        "breaking": 7,
+        "entering": 4,
+        "switcheroo": 3,
+        "high_tail": 6,
+        "lay_low": 2,
+        "the_goods_label": "diode selection"
+      }
+    },
+    {
+      "id": "switcheroo_switch",
+      "label": "Switcheroo",
+      "isSweep": true,
+      "target": "switcheroo",
+      "values": [1, 2, 3],
+      "initialValue": 1,
+      "settings": {
+        "breaking": 10,
+        "entering": 4,
+        "the_goods": 1,
+        "high_tail": 8,
+        "lay_low": 5,
+        "switcheroo_label": "clipping mode"
+      }
+    },
+    {
+      "id": "high_tail_knob",
+      "label": "High Tail",
+      "isSweep": true,
+      "target": "high_tail",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0,
+      "settings": {
+        "breaking": 5,
+        "entering": 4,
+        "the_goods": 1,
+        "switcheroo": 2,
+        "lay_low": 0,
+        "high_tail_label": "tone"
+      }
+    },
+    {
+      "id": "lay_low_knob",
+      "label": "Lay Low",
+      "isSweep": true,
+      "target": "lay_low",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0,
+      "settings": {
+        "breaking": 5,
+        "entering": 4,
+        "the_goods": 2,
+        "switcheroo": 2,
+        "high_tail": 5,
+        "lay_low_label": "bass response"
+      }
+    }
+  ]
+}
