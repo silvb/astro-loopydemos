@@ -1,0 +1,31 @@
+---
+import type { PedalProps } from "@types"
+import { Image } from "astro:assets"
+import { getImageFromSlug } from "@utils/get-image-from-slug"
+
+type Props = Pick<PedalProps, "builder" | "model" | "slug">
+const { builder, model, slug } = Astro.props
+---
+
+<article
+  id={slug}
+  class="relative box-border flex h-full items-center justify-center rounded-lg bg-loopydemos-primary p-4"
+>
+  <a
+    class="link-none inline-block h-full w-full max-w-[200px]"
+    href={`/demos/${slug}`}
+  >
+    <Image
+      src={getImageFromSlug(slug)}
+      alt={`${model} - ${builder}`}
+      class="h-full w-full object-contain"
+    />
+    <div
+      class="absolute left-0 top-0 z-10 box-border flex h-full w-full flex-col items-center justify-center break-words bg-loopydemos-secondary/70 p-4 text-center font-display font-black text-loopydemos-highlight-tertiary opacity-0 transition-opacity hover:opacity-100"
+    >
+      <span>{model}</span>
+      <span>{` - `}</span>
+      <span>{builder}</span>
+    </div>
+  </a>
+</article>

@@ -36,12 +36,28 @@ const demos = defineCollection({
   schema: z.object({
     model: z.string(),
     builder: z.string(),
+    date: z.date(),
   }),
 })
 
 const presets = defineCollection({
   type: "data",
-  schema: z.object({}),
+  schema: z.object({
+    presets: z.array(
+      z.object({
+        id: z.string(),
+        label: z.string(),
+        isSweep: z.boolean().optional(),
+        target: z.string().optional(),
+        initialValue: z.number().optional(),
+        values: z.array(z.number()).optional(),
+        settings: z.record(
+          z.string(),
+          z.number().or(z.string()).or(z.boolean())
+        ),
+      })
+    ),
+  }),
 })
 
 const pedals = defineCollection({

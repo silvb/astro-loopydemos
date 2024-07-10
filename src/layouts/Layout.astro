@@ -64,6 +64,28 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
     );
   }
 
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: theme(colors.loopydemos-highlight-primary.DEFAULT)
+      theme(colors.loopydemos-background.DEFAULT);
+  }
+
+  body {
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: theme(colors.loopydemos-background.DEFAULT);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: theme(colors.loopydemos-highlight-primary.DEFAULT);
+      border-radius: 6px;
+      border: 3px solid theme(colors.loopydemos-background.DEFAULT);
+    }
+  }
+
   main {
     h2,
     h3,
@@ -95,7 +117,7 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
       }
     }
 
-    ul {
+    ul:not(.list-none) {
       @apply list-outside list-[disclosure-closed] pl-8;
 
       li {
@@ -107,7 +129,7 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
       }
     }
 
-    a {
+    a:not(.link-none) {
       @apply font-black text-loopydemos-highlight-primary underline underline-offset-2;
       text-decoration-thickness: 2px;
     }

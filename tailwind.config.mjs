@@ -18,9 +18,17 @@ export default {
         "loopydemos-highlight-secondary": { DEFAULT: "#ff80bf" },
         "loopydemos-highlight-tertiary": { DEFAULT: "#F1FA8C" },
         "loopydemos-text": { DEFAULT: "#f8f8f2" },
+        "loopydemos-green": { DEFAULT: "#50FA7B" },
+        "loopydemos-red": { DEFAULT: "#FF5555" },
+        "loopydemos-orange": { DEFAULT: "#FFB86C" },
+        "loopydemos-gray": { DEFAULT: "#bcc2cd" },
+        "loopydemos-black": { DEFAULT: "#121212" },
       },
       backgroundImage: {
         noise: 'url("/noise.svg")',
+      },
+      gridTemplateColumns: {
+        "3-min-repeat": "repeat(auto-fit, minmax(10rem, 1fr))",
       },
     },
   },

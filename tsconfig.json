@@ -3,13 +3,29 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@components/*": ["./src/components/*"],
-      "@data/*": ["./src/data/*"],
-      "@layouts/*": ["./src/layouts/*"],
-      "@images/*": ["./src/images/*"],
-      "@utils/*": ["./src/utils/*"],
-      "@types": ["./src/types.ts"],
-      "@constants/*": ["./src/constants/*"]
-    }
+      "@components/*": [
+        "./src/components/*"
+      ],
+      "@data/*": [
+        "./src/data/*"
+      ],
+      "@layouts/*": [
+        "./src/layouts/*"
+      ],
+      "@images/*": [
+        "./src/images/*"
+      ],
+      "@utils/*": [
+        "./src/utils/*"
+      ],
+      "@types": [
+        "./src/types.ts"
+      ],
+      "@constants/*": [
+        "./src/constants/*"
+      ]
+    },
+    "jsx": "preserve",
+    "jsxImportSource": "solid-js"
   }
 }
