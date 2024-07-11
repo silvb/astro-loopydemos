@@ -1,5 +1,5 @@
 ---
-import DemoLayout from "@layouts/DemoLayout.astro"
+import DemoLayout from "@layouts/demo-layout.astro"
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro"
 import { getCollection, type CollectionEntry } from "astro:content"
 
@@ -13,11 +13,11 @@ export const getStaticPaths = (async () => {
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>
 
-const { model, builder, content } = Astro.props
+const { model, builder, content, date } = Astro.props
 const { slug } = Astro.params
 const { Content } = await content.render()
 ---
 
-<DemoLayout {slug} {model} {builder}>
+<DemoLayout {slug} {model} {builder} {date}>
   <Content />
 </DemoLayout>

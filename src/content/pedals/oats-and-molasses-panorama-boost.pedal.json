@@ -15,7 +15,7 @@
         "colors": {
           "primary": "#5d2b2c",
           "tick": "oldlace",
-          "background": "silver"
+          "secondary": "silver"
         }
       },
       {
@@ -29,7 +29,7 @@
         "colors": {
           "primary": "#5d2b2c",
           "tick": "oldlace",
-          "background": "silver"
+          "secondary": "silver"
         }
       }
     ],

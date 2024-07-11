@@ -12,7 +12,7 @@
         "type": "brutalist",
         "colors": {
           "primary": "black",
-          "shadow": "darkslategray",
+          "secondary": "darkslategray",
           "tick": "white"
         }
       },
@@ -26,7 +26,7 @@
         "type": "brutalist",
         "colors": {
           "primary": "black",
-          "shadow": "darkslategray",
+          "secondary": "darkslategray",
           "tick": "white"
         }
       },
@@ -40,7 +40,7 @@
         "type": "brutalist",
         "colors": {
           "primary": "black",
-          "shadow": "darkslategray",
+          "secondary": "darkslategray",
           "tick": "white"
         }
       }

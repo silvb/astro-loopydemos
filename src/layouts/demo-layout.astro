@@ -1,0 +1,24 @@
+---
+import DemoWidget from "@components/demo-widget"
+import Layout from "./layout.astro"
+import type { CollectionEntry } from "astro:content"
+import DateTag from "./date-tag.astro"
+
+type Props = Pick<CollectionEntry<"demos">, "slug"> &
+  Pick<CollectionEntry<"demos">["data"], "model" | "builder" | "date">
+
+const { slug, model, builder, date } = Astro.props
+
+const title = `${model} - ${builder}`
+
+console.log({ date })
+---
+
+<Layout {title}>
+  <h2>{title}</h2>
+  <div class="mb-3">
+    <DateTag {date} />
+  </div>
+  <DemoWidget {slug} {model} {builder} />
+  <slot />
+</Layout>

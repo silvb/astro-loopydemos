@@ -31,12 +31,25 @@ const knobTypeEnum = z.enum([
   "obne",
 ])
 
+export const knobSchema = controlElementSchema.extend({
+  type: knobTypeEnum,
+  colors: z
+    .object({
+      primary: z.string().optional(),
+      secondary: z.string().optional(),
+      tick: z.string().optional(),
+      edge: z.string().optional(),
+    })
+    .optional(),
+})
+
 const demos = defineCollection({
   type: "content",
   schema: z.object({
     model: z.string(),
     builder: z.string(),
     date: z.date(),
+    type: z.enum(["demo", "post", "none"]),
   }),
 })
 
@@ -53,7 +66,10 @@ const presets = defineCollection({
         values: z.array(z.number()).optional(),
         settings: z.record(
           z.string(),
-          z.number().or(z.string()).or(z.boolean())
+          z
+            .number()
+            .or(z.string())
+            .or(z.boolean().or(z.array(z.boolean())))
         ),
       })
     ),
@@ -67,13 +83,7 @@ const pedals = defineCollection({
     width: z.number().optional(),
     height: z.number().optional(),
     controls: z.object({
-      knobs: z
-        .array(
-          controlElementSchema.extend({
-            type: knobTypeEnum,
-          })
-        )
-        .optional(),
+      knobs: z.array(knobSchema).optional(),
     }),
   }),
 })

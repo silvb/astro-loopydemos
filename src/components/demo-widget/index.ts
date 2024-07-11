@@ -1,1 +1,1 @@
-export { default } from "./DemoWidget.astro"
+export { default } from "./demo-widget.astro"

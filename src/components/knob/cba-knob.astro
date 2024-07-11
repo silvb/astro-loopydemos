@@ -1,0 +1,65 @@
+---
+import type { Knob } from "@types"
+
+type Props = Pick<Knob, "colors" | "size">
+
+const { size, colors = { primary: "#E58075" } } = Astro.props
+---
+
+<svg
+  width={size}
+  height={size}
+  viewBox="0 0 426 425"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <g fill="none">
+    <circle
+      cx="213"
+      cy="212.361"
+      r="150"
+      transform="rotate(45 213 212.361)"
+      fill="url(#a)"></circle>
+    <circle
+      cx="213"
+      cy="212.254"
+      r="152"
+      stroke="#6A6A6A"
+      stroke-width="6"
+      stroke-dasharray="5 10"></circle>
+    <circle
+      cx="213"
+      cy="212.355"
+      r="130"
+      transform="rotate(-45 213 212.355)"
+      stroke="url(#b)"
+      stroke-width="40"></circle>
+    <path fill="#fff" d="M199 82h28v130h-28z"></path>
+    <path fill={colors.primary} d="M199 57h28v25h-28z"></path>
+    <defs>
+      <linearGradient
+        id="a"
+        x1="213"
+        y1="62.361"
+        x2="213"
+        y2="362.361"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop offset=".49" stop-color="#575757"></stop>
+        <stop offset="1" stop-color="#EFEFEF"></stop>
+      </linearGradient>
+      <linearGradient
+        id="b"
+        x1="213"
+        y1="62.355"
+        x2="213"
+        y2="362.355"
+        gradientUnits="userSpaceOnUse"
+      >
+        <stop stop-color="#7D7D7D"></stop>
+        <stop offset=".516" stop-color="#fff"></stop>
+        <stop offset="1" stop-color="#838383"></stop>
+      </linearGradient>
+    </defs>
+  </g>
+</svg>

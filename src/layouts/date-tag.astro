@@ -1,0 +1,15 @@
+---
+import type { CollectionEntry } from "astro:content"
+
+type Props = Pick<CollectionEntry<"demos">["data"], "date">
+
+const { date } = Astro.props
+
+const dateString = date.toLocaleDateString("en-US", {
+  year: "numeric",
+  month: "short",
+  day: "numeric",
+})
+---
+
+<span class="text-base text-loopydemos-gray md:text-lg">{dateString}</span>

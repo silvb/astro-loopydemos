@@ -13,7 +13,7 @@
         "colors": {
           "tick": "#1F1B1C",
           "primary": "#FFFDFE",
-          "background": "#2B1A19"
+          "secondary": "#2B1A19"
         }
       },
       {
@@ -27,7 +27,7 @@
         "colors": {
           "tick": "#1F1B1C",
           "primary": "#FFFDFE",
-          "background": "#2B1A19"
+          "secondary": "#2B1A19"
         }
       },
       {
@@ -41,7 +41,7 @@
         "colors": {
           "tick": "#1F1B1C",
           "primary": "#FFFDFE",
-          "background": "#2B1A19"
+          "secondary": "#2B1A19"
         }
       }
     ],

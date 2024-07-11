@@ -13,7 +13,7 @@
         "colors": {
           "primary": "#c8c8d8",
           "tick": "black",
-          "shadow": "slategray"
+          "secondary": "slategray"
         }
       },
       {
@@ -22,7 +22,7 @@
         "colors": {
           "primary": "#c8c8d8",
           "tick": "black",
-          "shadow": "slategray"
+          "secondary": "slategray"
         },
         "size": 60,
         "position": {
@@ -36,7 +36,7 @@
         "colors": {
           "primary": "#c8c8d8",
           "tick": "black",
-          "shadow": "slategray"
+          "secondary": "slategray"
         },
         "size": 60,
         "position": {

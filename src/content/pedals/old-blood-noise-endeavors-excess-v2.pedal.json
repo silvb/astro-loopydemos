@@ -11,7 +11,7 @@
           "primary": "#515e66",
           "secondary": "#d4d6d7",
           "tick": "#d4d6d7",
-          "background": "#91949e"
+          "edge": "#91949e"
         }
       },
       {
@@ -23,7 +23,7 @@
           "primary": "#515e66",
           "secondary": "#d4d6d7",
           "tick": "#d4d6d7",
-          "background": "#91949e"
+          "edge": "#91949e"
         }
       },
       {
@@ -35,7 +35,7 @@
           "primary": "#515e66",
           "secondary": "#d4d6d7",
           "tick": "#d4d6d7",
-          "background": "#91949e"
+          "edge": "#91949e"
         }
       },
       {
@@ -47,7 +47,7 @@
           "primary": "#515e66",
           "secondary": "#d4d6d7",
           "tick": "#d4d6d7",
-          "background": "#91949e"
+          "edge": "#91949e"
         }
       },
       {
@@ -59,7 +59,7 @@
           "primary": "#515e66",
           "secondary": "#d4d6d7",
           "tick": "#d4d6d7",
-          "background": "#91949e"
+          "edge": "#91949e"
         }
       },
       {
@@ -71,7 +71,7 @@
           "primary": "#515e66",
           "secondary": "#d4d6d7",
           "tick": "#d4d6d7",
-          "background": "#91949e"
+          "edge": "#91949e"
         }
       }
     ],

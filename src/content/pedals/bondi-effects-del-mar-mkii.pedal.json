@@ -2,7 +2,7 @@
   "name": "bondi-effects-del-mar-mkii",
   "presentationColors": {
     "primary": "#2a2b2f",
-    "background": "#E9C878"
+    "secondary": "#E9C878"
   },
   "controls": {
     "knobs": [
@@ -15,7 +15,7 @@
         },
         "type": "fairfield",
         "colors": {
-          "background": "#F6E8BB",
+          "secondary": "#F6E8BB",
           "primary": "black"
         }
       },
@@ -28,7 +28,7 @@
         },
         "type": "fairfield",
         "colors": {
-          "background": "#F6E8BB",
+          "secondary": "#F6E8BB",
           "primary": "black"
         }
       },
@@ -41,10 +41,10 @@
         },
         "type": "fairfield",
         "colors": {
-          "background": "#E9C878",
+          "secondary": "#E9C878",
           "primary": "black",
           "colors": {
-            "background": "#E9C878",
+            "secondary": "#E9C878",
             "primary": "black"
           }
         }
@@ -58,7 +58,7 @@
         },
         "type": "fairfield",
         "colors": {
-          "background": "#E9C878",
+          "secondary": "#E9C878",
           "primary": "black"
         }
       }

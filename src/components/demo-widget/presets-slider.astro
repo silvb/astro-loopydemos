@@ -41,7 +41,6 @@ const presetIds = presets.map(({ id }) => id)
     if (typeof window === "undefined" || !element) return
 
     const backgroundColor = window.getComputedStyle(element).backgroundColor
-    console.log({ backgroundColor })
     // Extract RGB values from the input string
     const rgbValues = backgroundColor.match(/\d+/g)
     if (!rgbValues || rgbValues.length !== 3) {
@@ -58,7 +57,6 @@ const presetIds = presets.map(({ id }) => id)
     const textColor =
       luminance > 128 ? "text-loopydemos-black" : "text-loopydemos-text"
 
-    console.log({ textColor })
     element.classList.add(textColor)
   })
 </script>

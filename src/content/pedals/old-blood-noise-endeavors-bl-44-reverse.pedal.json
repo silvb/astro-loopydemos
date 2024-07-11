@@ -9,21 +9,33 @@
         "size": 40,
         "position": { "left": 31, "top": 18 },
         "type": "brutalist",
-        "colors": { "primary": "#e4dfb2", "tick": "black", "shadow": "#b2b08e" }
+        "colors": {
+          "primary": "#e4dfb2",
+          "tick": "black",
+          "secondary": "#b2b08e"
+        }
       },
       {
         "id": "speed",
         "size": 54,
         "position": { "left": 23, "top": 149 },
         "type": "brutalist",
-        "colors": { "primary": "#e4dfb2", "tick": "black", "shadow": "#b2b08e" }
+        "colors": {
+          "primary": "#e4dfb2",
+          "tick": "black",
+          "secondary": "#b2b08e"
+        }
       },
       {
         "id": "volume",
         "size": 40,
         "position": { "left": 111, "top": 47 },
         "type": "brutalist",
-        "colors": { "primary": "#e4dfb2", "tick": "black", "shadow": "#b2b08e" }
+        "colors": {
+          "primary": "#e4dfb2",
+          "tick": "black",
+          "secondary": "#b2b08e"
+        }
       }
     ],
     "sliders": [

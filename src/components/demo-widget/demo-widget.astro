@@ -1,9 +1,9 @@
 ---
 import type { CollectionEntry } from "astro:content"
 
-import AudioPlayer from "./AudioPlayer.astro"
-import Pedal from "./Pedal.astro"
-import Presets from "./Presets.astro"
+import AudioPlayer from "./audio-player.astro"
+import Pedal from "./pedal.astro"
+import PresetsSlider from "./presets-slider.astro"
 
 interface Props {
   slug: CollectionEntry<"demos">["slug"]
@@ -16,7 +16,7 @@ const { slug, model, builder } = Astro.props
 
 <div class="flex flex-col gap-4">
   <AudioPlayer />
-  <Presets {slug} />
+  <PresetsSlider {slug} />
 </div>
 <!-- Pedals/Pedal -->
 <div class="mb-24 mt-8 flex items-center justify-center">

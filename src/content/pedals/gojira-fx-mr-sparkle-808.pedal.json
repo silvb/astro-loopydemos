@@ -12,8 +12,8 @@
         "type": "gojira",
         "colors": {
           "primary": "lightcoral",
-          "background": "lightslategray",
-          "highlights": "silver"
+          "secondary": "lightslategray",
+          "edge": "silver"
         }
       },
       {
@@ -26,8 +26,8 @@
         "type": "gojira",
         "colors": {
           "primary": "lightcoral",
-          "background": "lightslategray",
-          "highlights": "silver"
+          "secondary": "lightslategray",
+          "edge": "silver"
         }
       },
       {
@@ -40,8 +40,8 @@
         "type": "gojira",
         "colors": {
           "primary": "lightcoral",
-          "background": "lightslategray",
-          "highlights": "silver"
+          "secondary": "lightslategray",
+          "edge": "silver"
         }
       }
     ],

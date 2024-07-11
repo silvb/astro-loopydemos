@@ -12,7 +12,7 @@
         "colors": {
           "primary": "#D0E8FE",
           "tick": "black",
-          "shadow": "#C0CBD2"
+          "secondary": "#C0CBD2"
         },
         "type": "brutalist"
       },
@@ -26,7 +26,7 @@
         "colors": {
           "primary": "#D0E8FE",
           "tick": "black",
-          "shadow": "#C0CBD2"
+          "secondary": "#C0CBD2"
         },
         "type": "brutalist"
       },
@@ -40,7 +40,7 @@
         "colors": {
           "primary": "#D0E8FE",
           "tick": "black",
-          "shadow": "#C0CBD2"
+          "secondary": "#C0CBD2"
         },
         "type": "brutalist"
       },
@@ -56,18 +56,9 @@
         "colors": {
           "primary": "#D0E8FE",
           "tick": "black",
-          "shadow": "#C0CBD2"
+          "secondary": "#C0CBD2"
         },
-        "rotaryAngles": [
-          0,
-          45,
-          90,
-          135,
-          180,
-          225,
-          270,
-          315
-        ]
+        "rotaryAngles": [0, 45, 90, 135, 180, 225, 270, 315]
       }
     ],
     "leds": [

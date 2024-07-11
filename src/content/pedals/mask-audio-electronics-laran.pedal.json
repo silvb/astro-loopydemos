@@ -12,7 +12,7 @@
         "colors": {
           "primary": "#151515",
           "tick": "#f3f3f3",
-          "shadow": "#363636"
+          "secondary": "#363636"
         }
       },
       {
@@ -23,7 +23,7 @@
         "colors": {
           "primary": "#151515",
           "tick": "#f3f3f3",
-          "shadow": "#363636"
+          "secondary": "#363636"
         }
       }
     ],

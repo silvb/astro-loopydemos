@@ -13,7 +13,7 @@
           "primary": "#159cf3",
           "secondary": "#565958",
           "tick": "#1F1B1C",
-          "background": "#111"
+          "edge": "#111"
         }
       },
       {
@@ -25,7 +25,7 @@
           "primary": "#159cf3",
           "secondary": "#565958",
           "tick": "#1F1B1C",
-          "background": "#111"
+          "edge": "#111"
         }
       },
       {
@@ -37,7 +37,7 @@
           "primary": "#159cf3",
           "secondary": "#565958",
           "tick": "#1F1B1C",
-          "background": "#111"
+          "edge": "#111"
         }
       },
       {
@@ -49,7 +49,7 @@
           "primary": "#159cf3",
           "secondary": "#565958",
           "tick": "#1F1B1C",
-          "background": "#111"
+          "edge": "#111"
         }
       },
       {
@@ -61,7 +61,7 @@
           "primary": "#e0e0a5",
           "secondary": "#565958",
           "tick": "#1F1B1C",
-          "background": "#111"
+          "edge": "#111"
         }
       },
       {
@@ -73,7 +73,7 @@
           "primary": "#90d4a5",
           "secondary": "#565958",
           "tick": "#1F1B1C",
-          "background": "#111"
+          "edge": "#111"
         }
       },
       {
@@ -85,7 +85,7 @@
           "primary": "#90d4a5",
           "secondary": "#565958",
           "tick": "#1F1B1C",
-          "background": "#111"
+          "edge": "#111"
         }
       },
       {
@@ -97,7 +97,7 @@
           "primary": "#90d4a5",
           "secondary": "#565958",
           "tick": "#1F1B1C",
-          "background": "#111"
+          "edge": "#111"
         }
       },
       {
@@ -109,7 +109,7 @@
           "primary": "#90d4a5",
           "secondary": "#565958",
           "tick": "#1F1B1C",
-          "background": "#111"
+          "edge": "#111"
         }
       },
       {
@@ -121,7 +121,7 @@
           "primary": "#90d4a5",
           "secondary": "#565958",
           "tick": "#1F1B1C",
-          "background": "#111"
+          "edge": "#111"
         }
       },
       {
@@ -133,7 +133,7 @@
           "primary": "#6c6ccf",
           "secondary": "#565958",
           "tick": "#1F1B1C",
-          "background": "#111"
+          "edge": "#111"
         }
       },
       {
@@ -145,7 +145,7 @@
           "primary": "#6c6ccf",
           "secondary": "#565958",
           "tick": "#1F1B1C",
-          "background": "#111"
+          "edge": "#111"
         }
       },
       {
@@ -157,7 +157,7 @@
           "primary": "#6c6ccf",
           "secondary": "#565958",
           "tick": "#1F1B1C",
-          "background": "#111"
+          "edge": "#111"
         }
       }
     ],

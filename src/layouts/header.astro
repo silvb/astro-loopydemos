@@ -1,5 +1,5 @@
 ---
-import Logo from "./Logo.astro"
+import Logo from "./logo.astro"
 import { Icon } from "astro-icon/components"
 
 const pathname = Astro.url.pathname
@@ -36,6 +36,7 @@ const pathname = Astro.url.pathname
               { href: "/demos", text: "Demos" },
               { href: "/posts", text: "Posts" },
               { href: "/about", text: "About" },
+              { href: "/uses", text: "Uses" },
               { href: "/contact", text: "Contact" },
             ].map(({ href, text }) => (
               <li

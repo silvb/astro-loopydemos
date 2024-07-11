@@ -7,14 +7,14 @@
         "id": "volume",
         "size": 68,
         "position": { "left": 22, "top": 65 },
-        "colors": { "background": "#949494", "primary": "#1F1B1C" },
+        "colors": { "secondary": "#949494", "primary": "#1F1B1C" },
         "type": "fairfield"
       },
       {
         "id": "onset",
         "size": 68,
         "position": { "left": 113, "top": 65 },
-        "colors": { "background": "#999", "primary": "#1F1B1C" },
+        "colors": { "secondary": "#999", "primary": "#1F1B1C" },
         "type": "fairfield"
       }
     ],

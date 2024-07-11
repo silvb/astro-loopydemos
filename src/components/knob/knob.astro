@@ -1,0 +1,44 @@
+---
+import type { Knob } from "@types"
+import SimpleKnob from "./simple-knob.astro"
+import CbaKnob from "./cba-knob.astro"
+import BrutalistKnob from "./brutalist-knob.astro"
+import ChickenHeadKnob from "./chicken-head-knob.astro"
+import SimpleDotKnob from "./simple-dot-knob.astro"
+import DaviesKnob from "./davies-knob.astro"
+import FairfieldKnob from "./fairfield-knob.astro"
+import GojiraKnob from "./gojira-knob.astro"
+import OffsetKnob from "./offset-knob.astro"
+import JhsKnob from "./jhs-knob.astro"
+import ObneKnob from "./obne-knob.astro"
+
+type Props = Pick<Knob, "size" | "type" | "colors">
+
+const { size, type, colors } = Astro.props
+---
+
+<div>
+  {
+    {
+      bakelit: <div />,
+      knurled: <div />,
+      offset: <OffsetKnob {size} />,
+      walrus: <div />,
+      lichtlaerm: <div />,
+      jhs: <JhsKnob {size} {colors} />,
+      fairfield: <FairfieldKnob {size} {colors} />,
+      simpledot: <SimpleDotKnob {size} {colors} />,
+      chicken: <ChickenHeadKnob {size} {colors} />,
+      roundchicken: <div />,
+      gojira: <GojiraKnob {size} {colors} />,
+      arrow: <div />,
+      brutalist: <BrutalistKnob {size} {colors} />,
+      cba: <CbaKnob {size} {colors} />,
+      davies: <DaviesKnob {size} {colors} />,
+      joystick: <div />,
+      flb: <div />,
+      obne: <ObneKnob {size} {colors} />,
+      simple: <SimpleKnob {size} {colors} />,
+    }[type]
+  }
+</div>

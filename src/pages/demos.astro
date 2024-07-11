@@ -1,6 +1,6 @@
 ---
-import Layout from "@layouts/Layout.astro"
-import DemoPreviewCard from "@components/DemoPreviewCard.astro"
+import Layout from "@layouts/layout.astro"
+import DemoPreviewCard from "@components/demo-preview-card.astro"
 import { getCollection, type CollectionEntry } from "astro:content"
 
 const allDemos: CollectionEntry<"demos">[] = await getCollection("demos")
@@ -14,10 +14,11 @@ const allDemos: CollectionEntry<"demos">[] = await getCollection("demos")
       or piece of gear.
     </p>
   </section>
-  <section class="grid-cols-3-min-repeat grid auto-rows-[200px] gap-2">
+  <section class="grid auto-rows-[200px] grid-cols-3-min-repeat gap-2">
     {
       allDemos
         .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+        .filter((demo) => demo.data.type === "demo")
         .map((demo) => (
           <DemoPreviewCard
             slug={demo.slug}
