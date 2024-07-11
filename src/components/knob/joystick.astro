@@ -1,0 +1,154 @@
+---
+import type { Knob } from "@types"
+
+interface Props extends Pick<Knob, "size"> {
+  angle?: number
+  radius?: number
+}
+
+const { size, angle = 90, radius = 1 } = Astro.props
+
+const VIEWBOX_SIZE = 912
+const STICK_RADIUS = 72
+const VIEWBOX_CENTER = VIEWBOX_SIZE / 2
+const STICK_RANGE = 328 - STICK_RADIUS
+
+const stickCoords = {
+  x: radius * Math.cos(angle * (Math.PI / 180)) * STICK_RANGE + VIEWBOX_CENTER,
+  y: radius * Math.sin(angle * (Math.PI / 180)) * STICK_RANGE + VIEWBOX_CENTER,
+}
+---
+
+<svg
+  width={size}
+  height={size}
+  viewBox="0 0 912 912"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <circle cx="456" cy="456" r="456" fill="#2E2E2E"></circle>
+  <circle cx="456" cy="456" r="328" stroke="#232323" stroke-width="4"></circle>
+  <circle
+    cx="456"
+    cy="456"
+    r="278"
+    fill="url(#paint0_radial_1_23)"
+    stroke="#232323"
+    stroke-width="4"></circle>
+  <circle
+    cx="738"
+    cy="178"
+    r="30"
+    fill="#292929"
+    stroke="#232323"
+    stroke-width="4"></circle>
+  <line
+    x1="728.828"
+    y1="167.087"
+    x2="748.627"
+    y2="186.886"
+    stroke="#4A4949"
+    stroke-width="4"
+    stroke-linecap="round"></line>
+  <line
+    x1="728"
+    y1="186.799"
+    x2="747.799"
+    y2="167"
+    stroke="#4A4949"
+    stroke-width="4"
+    stroke-linecap="round"></line>
+  <circle
+    cx="181"
+    cy="179"
+    r="30"
+    fill="#292929"
+    stroke="#232323"
+    stroke-width="4"></circle>
+  <line
+    x1="171.828"
+    y1="168.087"
+    x2="191.627"
+    y2="187.886"
+    stroke="#4A4949"
+    stroke-width="4"
+    stroke-linecap="round"></line>
+  <line
+    x1="171"
+    y1="187.799"
+    x2="190.799"
+    y2="168"
+    stroke="#4A4949"
+    stroke-width="4"
+    stroke-linecap="round"></line>
+  <circle
+    cx="173"
+    cy="732"
+    r="30"
+    fill="#292929"
+    stroke="#232323"
+    stroke-width="4"></circle>
+  <line
+    x1="163.828"
+    y1="721.087"
+    x2="183.627"
+    y2="740.886"
+    stroke="#4A4949"
+    stroke-width="4"
+    stroke-linecap="round"></line>
+  <line
+    x1="163"
+    y1="740.799"
+    x2="182.799"
+    y2="721"
+    stroke="#4A4949"
+    stroke-width="4"
+    stroke-linecap="round"></line>
+  <circle
+    cx="727"
+    cy="742"
+    r="30"
+    fill="#292929"
+    stroke="#232323"
+    stroke-width="4"></circle>
+  <line
+    x1="717.828"
+    y1="731.087"
+    x2="737.627"
+    y2="750.886"
+    stroke="#4A4949"
+    stroke-width="4"
+    stroke-linecap="round"></line>
+  <line
+    x1="717"
+    y1="750.799"
+    x2="736.799"
+    y2="731"
+    stroke="#4A4949"
+    stroke-width="4"
+    stroke-linecap="round"></line>
+  <circle
+    cx={stickCoords.x}
+    cy={stickCoords.y}
+    r={STICK_RADIUS}
+    fill="url(#stick_head_radial)"
+    class="stroke-loopydemos-highlight-primary"
+    stroke-width="16"></circle>
+  <defs>
+    <radialGradient
+      id="paint0_radial_1_23"
+      cx="0"
+      cy="0"
+      r="1"
+      gradientUnits="userSpaceOnUse"
+      gradientTransform="translate(456 456) rotate(90) scale(280)"
+    >
+      <stop stop-color="#6C6C6C" stop-opacity="0"></stop>
+      <stop offset="1" stop-color="#1E1E1E"></stop>
+    </radialGradient>
+    <radialGradient id="stick_head_radial">
+      <stop stop-color="#767676"></stop>
+      <stop stop-color="#232323" offset="1"></stop>
+    </radialGradient>
+  </defs>
+</svg>

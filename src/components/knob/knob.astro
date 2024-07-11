@@ -11,6 +11,14 @@ import GojiraKnob from "./gojira-knob.astro"
 import OffsetKnob from "./offset-knob.astro"
 import JhsKnob from "./jhs-knob.astro"
 import ObneKnob from "./obne-knob.astro"
+import ArrowKnob from "./arrow-knob.astro"
+import BakelitKnob from "./bakelit-knob.astro"
+import WalrusAudioKnob from "./walrus-audio-knob.astro"
+import FlbKnob from "./flb-knob.astro"
+import Joystick from "./joystick.astro"
+import KnurledKnob from "./knurled-knob.astro"
+import LichtlaermAudioKnob from "./lichtlaerm-audio-knob.astro"
+import RoundChickenHeadKnob from "./round-chicken-head-knob.astro"
 
 type Props = Pick<Knob, "size" | "type" | "colors">
 
@@ -20,25 +28,25 @@ const { size, type, colors } = Astro.props
 <div>
   {
     {
-      bakelit: <div />,
-      knurled: <div />,
-      offset: <OffsetKnob {size} />,
-      walrus: <div />,
-      lichtlaerm: <div />,
-      jhs: <JhsKnob {size} {colors} />,
-      fairfield: <FairfieldKnob {size} {colors} />,
-      simpledot: <SimpleDotKnob {size} {colors} />,
-      chicken: <ChickenHeadKnob {size} {colors} />,
-      roundchicken: <div />,
-      gojira: <GojiraKnob {size} {colors} />,
-      arrow: <div />,
+      arrow: <ArrowKnob {size} />,
+      bakelit: <BakelitKnob {size} {colors} />,
       brutalist: <BrutalistKnob {size} {colors} />,
       cba: <CbaKnob {size} {colors} />,
+      chicken: <ChickenHeadKnob {size} {colors} />,
       davies: <DaviesKnob {size} {colors} />,
-      joystick: <div />,
-      flb: <div />,
+      fairfield: <FairfieldKnob {size} {colors} />,
+      flb: <FlbKnob {size} {colors} />,
+      gojira: <GojiraKnob {size} {colors} />,
+      jhs: <JhsKnob {size} {colors} />,
+      joystick: <Joystick {size} />, //todo: pass down angle and radius from state
+      knurled: <KnurledKnob {size} {colors} />,
+      lichtlaerm: <LichtlaermAudioKnob {size} {colors} />,
       obne: <ObneKnob {size} {colors} />,
+      offset: <OffsetKnob {size} />,
+      roundchicken: <RoundChickenHeadKnob {size} {colors} />,
       simple: <SimpleKnob {size} {colors} />,
+      simpledot: <SimpleDotKnob {size} {colors} />,
+      walrus: <WalrusAudioKnob {size} {colors} />,
     }[type]
   }
 </div>

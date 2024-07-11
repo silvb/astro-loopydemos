@@ -69,6 +69,7 @@ const presets = defineCollection({
           z
             .number()
             .or(z.string())
+            .or(z.object({ radius: z.number(), angle: z.number() }))
             .or(z.boolean().or(z.array(z.boolean())))
         ),
       })

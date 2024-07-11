@@ -47,11 +47,6 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
   @tailwind components;
   @tailwind utilities;
 
-  @layer utilities {
-    .content-wrapper {
-      @apply mx-auto max-w-3xl px-8;
-    }
-  }
   :root {
     --accent: 136, 58, 234;
     --accent-light: 224, 204, 250;
@@ -138,6 +133,48 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
   footer {
     a {
       @apply text-loopydemos-highlight-primary;
+    }
+  }
+
+  /* CUSTOM CLASSES */
+  @layer utilities {
+    .content-wrapper {
+      @apply mx-auto max-w-3xl px-8;
+    }
+
+    .bg-shiny-knob-gradient {
+      background: conic-gradient(
+        from 120deg,
+        #8a8a8a,
+        #fff,
+        #fff,
+        #8a8a8a,
+        #fff,
+        #fff,
+        #8a8a8a
+      );
+    }
+
+    .bg-shiny-knob-gradient-lg {
+      background: conic-gradient(
+        from 30deg,
+        #8a8a8a,
+        #fff,
+        #fff,
+        #8a8a8a,
+        #fff,
+        #fff,
+        #8a8a8a,
+        #8a8a8a,
+        #fff,
+        #8a8a8a,
+        #fff,
+        #fff,
+        #8a8a8a,
+        #8a8a8a,
+        #fff,
+        #8a8a8a
+      );
     }
   }
 </style>
