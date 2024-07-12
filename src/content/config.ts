@@ -31,6 +31,16 @@ const knobTypeEnum = z.enum([
   "obne",
 ])
 
+const switchTypeEnum = z.enum([
+  "stomp",
+  "toggle",
+  "rocker",
+  "slide",
+  "threeway",
+  "pushbutton",
+  "cba",
+])
+
 export const knobSchema = controlElementSchema.extend({
   type: knobTypeEnum,
   colors: z
@@ -43,6 +53,13 @@ export const knobSchema = controlElementSchema.extend({
     .optional(),
 })
 
+export const switchSchema = controlElementSchema.extend({
+  type: switchTypeEnum,
+  secondaryCircuitId: z.string().optional(),
+  isMomentary: z.boolean().optional(),
+  orientation: z.enum(["horizontal", "vertical"]).optional(),
+})
+
 const demos = defineCollection({
   type: "content",
   schema: z.object({
@@ -53,27 +70,29 @@ const demos = defineCollection({
   }),
 })
 
+export const presetSchema = z.object({
+  id: z.string(),
+  label: z.string(),
+  isSweep: z.boolean().optional(),
+  target: z.string().optional(),
+  initialValue: z.number().optional(),
+  values: z.array(z.number()).optional(),
+  settings: z
+    .record(
+      z.string(),
+      z
+        .number()
+        .or(z.string())
+        .or(z.object({ radius: z.number(), angle: z.number() }))
+        .or(z.boolean().or(z.array(z.boolean())))
+    )
+    .optional(),
+})
+
 const presets = defineCollection({
   type: "data",
   schema: z.object({
-    presets: z.array(
-      z.object({
-        id: z.string(),
-        label: z.string(),
-        isSweep: z.boolean().optional(),
-        target: z.string().optional(),
-        initialValue: z.number().optional(),
-        values: z.array(z.number()).optional(),
-        settings: z.record(
-          z.string(),
-          z
-            .number()
-            .or(z.string())
-            .or(z.object({ radius: z.number(), angle: z.number() }))
-            .or(z.boolean().or(z.array(z.boolean())))
-        ),
-      })
-    ),
+    presets: z.array(presetSchema),
   }),
 })
 
@@ -85,6 +104,7 @@ const pedals = defineCollection({
     height: z.number().optional(),
     controls: z.object({
       knobs: z.array(knobSchema).optional(),
+      switches: z.array(switchSchema).optional(),
     }),
   }),
 })

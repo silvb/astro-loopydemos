@@ -1,0 +1,13 @@
+---
+interface Props {
+  id: string
+  top: number
+  left: number
+}
+
+const { id, top, left } = Astro.props
+---
+
+<div {id} class="absolute" style={{ left: `${left}px`, top: `${top}px` }}>
+  <slot />
+</div>

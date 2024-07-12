@@ -1,20 +1,14 @@
 ---
 import { Icon } from "astro-icon/components"
 import { getEntry, type CollectionEntry } from "astro:content"
+import { PresetButton } from "./preset-button"
+import type { Preset } from "@types"
 
 interface Props {
-  slug: CollectionEntry<"demos">["slug"]
+  presets: Preset[]
 }
 
-const { slug } = Astro.props
-
-const { data }: CollectionEntry<"presets"> = await getEntry(
-  "presets",
-  `${slug}.presets`
-)
-
-const { presets } = data
-const presetIds = presets.map(({ id }) => id)
+const { presets } = Astro.props
 ---
 
 <div class="custom-scrollbar">
@@ -22,44 +16,14 @@ const presetIds = presets.map(({ id }) => id)
     {
       presets.map(({ id, isSweep, label }) => (
         <li class="h-full flex-shrink-0 flex-grow-0 basis-auto">
-          <button
-            id={id}
-            class={`${isSweep ? "bg-loopydemos-highlight-secondary" : "bg-loopydemos-highlight-primary"} flex h-full items-center gap-1 rounded-md px-2 font-black text-loopydemos-background opacity-40`}
-          >
-            <span>{label}</span>
+          <PresetButton client:load {id} {isSweep} {label}>
             <Icon name="ph:faders" />
-          </button>
+          </PresetButton>
         </li>
       ))
     }
   </ul>
 </div>
-
-<script define:vars={{ presetIds }}>
-  presetIds.forEach((id) => {
-    const element = document.getElementById(id)
-    if (typeof window === "undefined" || !element) return
-
-    const backgroundColor = window.getComputedStyle(element).backgroundColor
-    // Extract RGB values from the input string
-    const rgbValues = backgroundColor.match(/\d+/g)
-    if (!rgbValues || rgbValues.length !== 3) {
-      // Invalid input, return
-      return
-    }
-
-    const [red, green, blue] = rgbValues.map(Number)
-
-    // Calculate relative luminance
-    const luminance = 0.299 * red + 0.587 * green + 0.114 * blue
-
-    // Choose text color based on luminance
-    const textColor =
-      luminance > 128 ? "text-loopydemos-black" : "text-loopydemos-text"
-
-    element.classList.add(textColor)
-  })
-</script>
 
 <style>
   .custom-scrollbar {

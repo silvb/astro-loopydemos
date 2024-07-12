@@ -37,14 +37,7 @@
           "top": 107
         },
         "isRotary": true,
-        "rotaryAngles": [
-          -70,
-          -45,
-          -15,
-          15,
-          45,
-          70
-        ],
+        "rotaryAngles": [-70, -45, -15, 15, 45, 70],
         "type": "chicken",
         "colors": {
           "primary": "#444",
@@ -70,6 +63,7 @@
     "switches": [
       {
         "id": "bypass_switch",
+        "type": "stomp",
         "size": 52,
         "position": {
           "left": 77,

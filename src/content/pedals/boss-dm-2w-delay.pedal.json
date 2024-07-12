@@ -50,6 +50,7 @@
       },
       {
         "id": "bypass_switch",
+        "type": "stomp",
         "variant": "boss",
         "size": 52,
         "color": "#252525",

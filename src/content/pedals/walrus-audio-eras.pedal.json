@@ -46,13 +46,7 @@
           "top": 102
         },
         "isRotary": true,
-        "rotaryAngles": [
-          -60,
-          -30,
-          0,
-          30,
-          60
-        ],
+        "rotaryAngles": [-60, -30, 0, 30, 60],
         "type": "walrus"
       },
       {
@@ -82,6 +76,7 @@
     "switches": [
       {
         "id": "bypass_switch",
+        "type": "stomp",
         "size": 56,
         "position": {
           "left": 71,

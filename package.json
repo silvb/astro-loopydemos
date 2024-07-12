@@ -20,6 +20,7 @@
     "@fontsource/vt323": "^5.0.13",
     "astro": "^4.11.3",
     "astro-icon": "^1.1.0",
+    "class-variance-authority": "^0.7.0",
     "rehype-external-links": "^3.0.0",
     "solid-js": "^1.8.18",
     "tailwindcss": "^3.4.4",

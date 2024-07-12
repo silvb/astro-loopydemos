@@ -8,6 +8,8 @@ import {
   LANDSCAPE_DEFAULT_ENCLOSURE,
 } from "@constants/sizes"
 import Knob from "@components/knob"
+import AbsolutePosition from "@components/AbsolutePosition.astro"
+import Switch from "@components/switch"
 
 type Props = PedalProps
 
@@ -53,17 +55,33 @@ const enclosureHeight =
   <div class="relative h-full w-full">
     {
       controls.knobs?.map(({ id, type, position, size, colors }) => (
-        <div
-          id={id}
-          class="absolute"
-          style={{
-            left: `${position.left}px`,
-            top: `${position.top}px`,
-          }}
-        >
+        <AbsolutePosition {id} {...position}>
           <Knob {type} {size} {colors} />
-        </div>
+        </AbsolutePosition>
       ))
+    }
+    {
+      controls.switches?.map(
+        ({
+          id,
+          type,
+          position,
+          size,
+          orientation,
+          isMomentary,
+          secondaryCircuitId,
+        }) => (
+          <AbsolutePosition {id} {...position}>
+            <Switch
+              {type}
+              {size}
+              {orientation}
+              {isMomentary}
+              {secondaryCircuitId}
+            />
+          </AbsolutePosition>
+        )
+      )
     }
   </div>
 </div>

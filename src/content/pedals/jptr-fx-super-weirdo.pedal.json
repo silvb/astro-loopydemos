@@ -46,6 +46,7 @@
     "switches": [
       {
         "id": "bypass_switch",
+        "type": "stomp",
         "size": 44,
         "position": { "left": 245, "top": 307 }
       },
