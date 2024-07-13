@@ -8,7 +8,8 @@
         "position": {
           "left": 28,
           "top": 24
-        }
+        },
+        "type": "bakelit"
       },
       {
         "id": "tone",
@@ -25,7 +26,8 @@
         "position": {
           "left": 117,
           "top": 24
-        }
+        },
+        "type": "bakelit"
       }
     ],
     "leds": [

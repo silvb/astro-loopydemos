@@ -54,14 +54,16 @@ const enclosureHeight =
   <!-- Control Layout -->
   <div class="relative h-full w-full">
     {
-      controls.knobs?.map(({ id, type, position, size, colors }) => (
-        <AbsolutePosition {id} {...position}>
-          <Knob {type} {size} {colors} />
-        </AbsolutePosition>
-      ))
+      controls?.knobs?.map(
+        ({ id, type, position, size, colors, isRotary, rotaryAngles }) => (
+          <AbsolutePosition {id} {...position}>
+            <Knob {id} {type} {size} {colors} {isRotary} {rotaryAngles} />
+          </AbsolutePosition>
+        )
+      )
     }
     {
-      controls.switches?.map(
+      controls?.switches?.map(
         ({
           id,
           type,

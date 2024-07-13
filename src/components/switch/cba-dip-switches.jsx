@@ -1,6 +1,3 @@
-import React from 'react'
-import styled from 'styled-components'
-
 const DipContainer = styled.div`
   background: #aa232f;
   height: ${({ height }) => height}px;
@@ -33,7 +30,7 @@ const Dip = styled.div`
   z-index: 0;
 
   :before {
-    content: ' ';
+    content: " ";
     width: var(--nippleWidth);
     height: var(--nippleHeight);
     position: absolute;
@@ -52,7 +49,7 @@ const Divider = styled.div`
   background: black;
 `
 
-const lineArray = num => Array.from(Array(num).keys())
+const lineArray = (num) => Array.from(Array(num).keys())
 
 export const CBADipSwitches = ({
   dimensions = { width: 131, height: 30 },
@@ -82,13 +79,13 @@ export const CBADipSwitches = ({
       height={dimensions.height * scale}
     >
       <DipRow>
-        {lineArray(8).map(i => (
+        {lineArray(8).map((i) => (
           <Dip key={i} value={dipValues[i]} scale={scale} />
         ))}
       </DipRow>
       <Divider />
       <DipRow>
-        {lineArray(8).map(i => (
+        {lineArray(8).map((i) => (
           <Dip key={i} value={dipValues[i + 8]} scale={scale} />
         ))}
       </DipRow>

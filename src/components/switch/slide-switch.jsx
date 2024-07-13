@@ -1,9 +1,6 @@
-import React from 'react'
-import styled from 'styled-components'
-
 const AnimatedCircle = styled.circle`
   transition: transform 0.1s ease-in;
-  transform: translateX(${props => (props.state === 1 ? 10 : 50)}%);
+  transform: translateX(${(props) => (props.state === 1 ? 10 : 50)}%);
 `
 
 const StyledAbsoluteSvg = styled.svg`
@@ -15,7 +12,7 @@ const StyledAbsoluteSvg = styled.svg`
 export const SlideSwitch = ({
   size = 64,
   state = 1,
-  orientation = 'horizontal',
+  orientation = "horizontal",
 }) => (
   <StyledAbsoluteSvg
     xmlns="http://www.w3.org/2000/svg"
@@ -32,7 +29,7 @@ export const SlideSwitch = ({
     </defs>
     <g
       fill="none"
-      transform={`rotate(${orientation === 'vertical' ? -90 : 0} 32 32)`}
+      transform={`rotate(${orientation === "vertical" ? -90 : 0} 32 32)`}
     >
       <rect width={64} height={24} fill="black" x="0" y="20" rx="12" ry="12" />
       <AnimatedCircle

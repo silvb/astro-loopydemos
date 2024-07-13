@@ -78,6 +78,7 @@
       },
       {
         "id": "pre_switch",
+        "type": "stomp",
         "size": 50,
         "position": {
           "left": 129,

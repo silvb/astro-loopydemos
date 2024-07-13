@@ -1,5 +1,5 @@
 import type { CollectionEntry } from "astro:content"
-import { defineCollection, z } from "astro:content"
+import { z } from "astro:content"
 import type { knobSchema, presetSchema, switchSchema } from "./content/config"
 
 export interface PedalProps {

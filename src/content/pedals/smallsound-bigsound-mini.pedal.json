@@ -6,6 +6,7 @@
     "knobs": [
       {
         "id": "gain",
+        "type": "bakelit",
         "size": 72,
         "position": {
           "left": 14,
@@ -14,6 +15,7 @@
       },
       {
         "id": "volume",
+        "type": "bakelit",
         "size": 72,
         "position": {
           "left": 112,
@@ -22,6 +24,7 @@
       },
       {
         "id": "bias",
+        "type": "bakelit",
         "size": 54,
         "position": {
           "left": 73,
@@ -30,6 +33,7 @@
       },
       {
         "id": "bass",
+        "type": "bakelit",
         "size": 54,
         "position": {
           "left": 24,
@@ -38,6 +42,7 @@
       },
       {
         "id": "treble",
+        "type": "bakelit",
         "size": 54,
         "position": {
           "left": 119,

@@ -4,12 +4,42 @@
   "height": 300,
   "controls": {
     "knobs": [
-      { "id": "drive", "size": 54, "position": { "left": 33, "top": 29 } },
-      { "id": "level", "size": 54, "position": { "left": 214, "top": 29 } },
-      { "id": "bass", "size": 54, "position": { "left": 33, "top": 100 } },
-      { "id": "middle", "size": 54, "position": { "left": 89, "top": 80 } },
-      { "id": "treble", "size": 54, "position": { "left": 155, "top": 80 } },
-      { "id": "room", "size": 54, "position": { "left": 213, "top": 100 } }
+      {
+        "id": "drive",
+        "type": "bakelit",
+        "size": 54,
+        "position": { "left": 33, "top": 29 }
+      },
+      {
+        "id": "level",
+        "type": "bakelit",
+        "size": 54,
+        "position": { "left": 214, "top": 29 }
+      },
+      {
+        "id": "bass",
+        "type": "bakelit",
+        "size": 54,
+        "position": { "left": 33, "top": 100 }
+      },
+      {
+        "id": "middle",
+        "type": "bakelit",
+        "size": 54,
+        "position": { "left": 89, "top": 80 }
+      },
+      {
+        "id": "treble",
+        "type": "bakelit",
+        "size": 54,
+        "position": { "left": 155, "top": 80 }
+      },
+      {
+        "id": "room",
+        "type": "bakelit",
+        "size": 54,
+        "position": { "left": 213, "top": 100 }
+      }
     ],
     "leds": [
       { "id": "on_led", "size": 30, "position": { "left": 217, "top": 185 } }

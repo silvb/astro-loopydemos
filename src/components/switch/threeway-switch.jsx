@@ -1,16 +1,13 @@
-import React from 'react'
-import styled from 'styled-components'
-
 const AnimatedHandle = styled.g`
   transition: transform 0.1s ease-in;
-  transform: translateX(${props => ({ 1: 0, 2: 24, 3: 48 }[props.$state])}%);
+  transform: translateX(${(props) => ({ 1: 0, 2: 24, 3: 48 })[props.$state]}%);
 `
 
 export const ThreewaySwitch = ({
   size = 64,
   state = 1,
-  orientation = 'horizontal',
-  colors = { enclosure: '#312e2f' },
+  orientation = "horizontal",
+  colors = { enclosure: "#312e2f" },
 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
@@ -20,12 +17,12 @@ export const ThreewaySwitch = ({
   >
     <g
       fill="none"
-      transform={`rotate(${orientation === 'vertical' ? -90 : 0} 32 32)`}
+      transform={`rotate(${orientation === "vertical" ? -90 : 0} 32 32)`}
     >
       <rect
         width={64}
         height={32}
-        fill={colors?.enclosure || 'black'}
+        fill={colors?.enclosure || "black"}
         x="0"
         y="16"
         rx="2"

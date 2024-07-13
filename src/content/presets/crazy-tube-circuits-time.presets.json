@@ -80,7 +80,7 @@
       "label": "Mod Knob",
       "isSweep": true,
       "target": "mod",
-      "initialValue": "0",
+      "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
       "settings": {
         "mix": 7,
@@ -94,7 +94,7 @@
       "label": "Tone Knob",
       "isSweep": true,
       "target": "tone",
-      "initialValue": "0",
+      "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
       "settings": {
         "mix": 8,

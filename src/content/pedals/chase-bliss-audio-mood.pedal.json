@@ -102,6 +102,7 @@
       {
         "id": "cba_dip_switches",
         "type": "cba",
+        "size": 64,
         "position": {
           "top": 32,
           "left": 34

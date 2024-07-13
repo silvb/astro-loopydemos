@@ -19,13 +19,17 @@ import Joystick from "./joystick.astro"
 import KnurledKnob from "./knurled-knob.astro"
 import LichtlaermAudioKnob from "./lichtlaerm-audio-knob.astro"
 import RoundChickenHeadKnob from "./round-chicken-head-knob.astro"
+import { KnobStateContainer } from "./knob-state-container"
 
-type Props = Pick<Knob, "size" | "type" | "colors">
+type Props = Pick<
+  Knob,
+  "size" | "type" | "colors" | "isRotary" | "rotaryAngles" | "id"
+>
 
-const { size, type, colors } = Astro.props
+const { size, type, colors, id, isRotary, rotaryAngles } = Astro.props
 ---
 
-<div>
+<KnobStateContainer {id} {isRotary} {rotaryAngles} client:load>
   {
     {
       arrow: <ArrowKnob {size} />,
@@ -49,4 +53,4 @@ const { size, type, colors } = Astro.props
       walrus: <WalrusAudioKnob {size} {colors} />,
     }[type]
   }
-</div>
+</KnobStateContainer>

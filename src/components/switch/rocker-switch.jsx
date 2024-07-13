@@ -1,6 +1,3 @@
-import React from 'react'
-import styled from 'styled-components'
-
 const StyledSVG = styled.svg`
   position: absolute;
   top: 0;

@@ -94,6 +94,7 @@
       },
       {
         "id": "dist_switch",
+        "type": "stomp",
         "size": 56,
         "position": { "left": 26, "top": 212 },
         "secondaryCircuitId": "dist_circuit"

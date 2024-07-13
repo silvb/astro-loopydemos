@@ -3,6 +3,12 @@ import { defineCollection, z } from "astro:content"
 const controlElementSchema = z.object({
   id: z.string(),
   size: z.number(),
+  dimensions: z
+    .object({
+      width: z.number(),
+      height: z.number(),
+    })
+    .optional(),
   position: z.object({
     top: z.number(),
     left: z.number(),
@@ -51,6 +57,8 @@ export const knobSchema = controlElementSchema.extend({
       edge: z.string().optional(),
     })
     .optional(),
+  isRotary: z.boolean().optional(),
+  rotaryAngles: z.array(z.number()).optional(),
 })
 
 export const switchSchema = controlElementSchema.extend({
@@ -102,10 +110,12 @@ const pedals = defineCollection({
     enclosure: z.enum(["portrait", "landscape"]).optional(),
     width: z.number().optional(),
     height: z.number().optional(),
-    controls: z.object({
-      knobs: z.array(knobSchema).optional(),
-      switches: z.array(switchSchema).optional(),
-    }),
+    controls: z
+      .object({
+        knobs: z.array(knobSchema).optional(),
+        switches: z.array(switchSchema).optional(),
+      })
+      .optional(),
   }),
 })
 

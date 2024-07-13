@@ -1,14 +1,7 @@
-import throttle from 'lodash/throttle'
-import React, { useEffect, useState } from 'react'
-
-import useDebouncedEffect from '../../helpers/use-debounced-effect'
-import { useDemoStateReducer } from '../demo-container/demo-state-context'
-import { InteractionContainer } from '../interaction-container'
-
 const isBrowser = typeof window !== `undefined`
 
 const DragSweepControl = ({
-  id = '',
+  id = "",
   render = () => {},
   size = 64,
   isRotary = false,
@@ -16,7 +9,7 @@ const DragSweepControl = ({
   const [{ activePreset, sweepSetting }, dispatch] = useDemoStateReducer()
 
   const sweepPreset =
-    activePreset?.chain?.find(pedal => pedal.isSweep) || activePreset
+    activePreset?.chain?.find((pedal) => pedal.isSweep) || activePreset
 
   const { initialValue } = sweepPreset
 
@@ -31,7 +24,7 @@ const DragSweepControl = ({
   useDebouncedEffect(
     () => {
       dispatch({
-        type: 'SELECT_SWEEP_SETTING',
+        type: "SELECT_SWEEP_SETTING",
         payload: { id, value: level },
       })
     },
@@ -39,7 +32,7 @@ const DragSweepControl = ({
     100
   )
 
-  const startDrag = downEvent => {
+  const startDrag = (downEvent) => {
     if (!isBrowser || isRotary) return
     downEvent.preventDefault()
 
@@ -47,7 +40,7 @@ const DragSweepControl = ({
     const isTouch = Boolean(downEvent.touches)
     const startLevel = level
 
-    const handleDrag = moveEvent => {
+    const handleDrag = (moveEvent) => {
       moveEvent.preventDefault()
 
       const clientY = moveEvent.clientY || moveEvent.touches[0].clientY
@@ -61,14 +54,14 @@ const DragSweepControl = ({
     const throttledHandleDrag = throttle(handleDrag, 100)
 
     if (isTouch) {
-      document.addEventListener('touchmove', throttledHandleDrag)
-      document.addEventListener('touchend', () => {
-        document.removeEventListener('touchmove', throttledHandleDrag)
+      document.addEventListener("touchmove", throttledHandleDrag)
+      document.addEventListener("touchend", () => {
+        document.removeEventListener("touchmove", throttledHandleDrag)
       })
     } else {
-      document.addEventListener('mousemove', throttledHandleDrag)
-      document.addEventListener('mouseup', () => {
-        document.removeEventListener('mousemove', throttledHandleDrag)
+      document.addEventListener("mousemove", throttledHandleDrag)
+      document.addEventListener("mouseup", () => {
+        document.removeEventListener("mousemove", throttledHandleDrag)
       })
     }
   }
@@ -78,13 +71,13 @@ const DragSweepControl = ({
 
     const numValues = activePreset.values.length
     const currentValIndex = activePreset.values.findIndex(
-      val => val === sweepSetting[id]
+      (val) => val === sweepSetting[id]
     )
 
     const nextIndex = (currentValIndex + 1) % numValues
     const nextValue = activePreset.values.slice().sort()[nextIndex]
     dispatch({
-      type: 'SELECT_SWEEP_SETTING',
+      type: "SELECT_SWEEP_SETTING",
       payload: { id, value: nextValue },
     })
     setLevel(nextValue)

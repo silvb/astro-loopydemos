@@ -8,7 +8,8 @@
         "position": {
           "top": 21,
           "left": 27
-        }
+        },
+        "type": "bakelit"
       },
       {
         "id": "echo",
@@ -25,7 +26,8 @@
         "position": {
           "top": 21,
           "left": 119
-        }
+        },
+        "type": "bakelit"
       }
     ],
     "leds": [

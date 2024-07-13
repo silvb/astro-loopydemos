@@ -1,7 +1,8 @@
 import type { Preset } from "@types"
 import { onMount, type ParentComponent } from "solid-js"
-import { useDemoState } from "./demo-state-provider"
 import { cva } from "class-variance-authority"
+import { $activePresetId } from "./demo-state-store"
+import { useStore } from "@nanostores/solid"
 
 const buttonClass = cva(
   "flex h-full items-center gap-1 rounded-md px-2 font-black text-loopydemos-background",
@@ -22,8 +23,10 @@ const buttonClass = cva(
 type PresetButtonProps = Pick<Preset, "id" | "isSweep" | "label">
 
 export const PresetButton: ParentComponent<PresetButtonProps> = (props) => {
-  const [{ activePreset }, { selectPreset }] = useDemoState()
+  const activePresetId = useStore($activePresetId)
   let buttonEl!: HTMLButtonElement
+
+  const isActive = () => activePresetId() === props.id
 
   onMount(() => {
     const backgroundColor = window.getComputedStyle(buttonEl).backgroundColor
@@ -44,10 +47,17 @@ export const PresetButton: ParentComponent<PresetButtonProps> = (props) => {
     <button
       id={props.id}
       ref={buttonEl}
-      onClick={() => selectPreset(props.id)}
+      onClick={() => {
+        $activePresetId.set(props.id)
+        buttonEl.scrollIntoView({
+          behavior: "smooth",
+          inline: "center",
+          block: "nearest",
+        })
+      }}
       class={buttonClass({
-        isSweep: props.isSweep,
-        isActive: activePreset.id === props.id,
+        isSweep: Boolean(props.isSweep),
+        isActive: isActive(),
       })}
     >
       <span>{props.label}</span>

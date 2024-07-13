@@ -5,7 +5,7 @@ import AudioPlayer from "./audio-player.astro"
 import Pedal from "./pedal.astro"
 import PresetsSlider from "./presets-slider.astro"
 
-import { DemoStateProvider } from "./demo-state-provider"
+import { DemoStateInitializer } from "./demo-state-initializer"
 
 interface Props {
   slug: CollectionEntry<"demos">["slug"]
@@ -20,13 +20,12 @@ const {
 }: CollectionEntry<"presets"> = await getEntry("presets", `${slug}.presets`)
 ---
 
-<DemoStateProvider {slug} {presets}>
-  <div class="flex flex-col gap-4">
-    <AudioPlayer />
-    <PresetsSlider {presets} />
-  </div>
-  <!-- Pedals/Pedal -->
-  <div class="mb-24 mt-8 flex items-center justify-center">
-    <Pedal {slug} {model} {builder} />
-  </div>
-</DemoStateProvider>
+<DemoStateInitializer client:load {presets} />
+<div class="flex flex-col gap-4">
+  <AudioPlayer />
+  <PresetsSlider {presets} />
+</div>
+<!-- Pedals/Pedal -->
+<div class="mb-24 mt-8 flex items-center justify-center">
+  <Pedal {slug} {model} {builder} />
+</div>

@@ -1,6 +1,3 @@
-import React, { useEffect, useState } from "react"
-import styled from "styled-components"
-
 const StyledMomentaryAnimation = styled.div`
   position: absolute;
   width: ${({ $size }) => $size}px;

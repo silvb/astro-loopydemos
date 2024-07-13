@@ -1,9 +1,7 @@
-import React from 'react'
-
 export const PushButton = ({
   size = 64,
   state = 1,
-  colors = { primary: '#222', secondary: '#555' },
+  colors = { primary: "#222", secondary: "#555" },
 }) => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
