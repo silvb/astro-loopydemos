@@ -1,1 +1,1 @@
-export { default } from "./switch.astro"
+export { Switch } from "./switch"

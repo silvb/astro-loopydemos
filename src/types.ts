@@ -10,8 +10,8 @@ export interface PedalProps {
 
 export type Knob = z.infer<typeof knobSchema>
 
-export interface Switch extends z.infer<typeof switchSchema> {
-  state?: 1 | 2 | 3
-}
+export type Switch = z.infer<typeof switchSchema>
+
+export type SwitchState = 1 | 2 | 3
 
 export type Preset = z.infer<typeof presetSchema>

@@ -15,7 +15,7 @@ import ArrowKnob from "./arrow-knob.astro"
 import BakelitKnob from "./bakelit-knob.astro"
 import WalrusAudioKnob from "./walrus-audio-knob.astro"
 import FlbKnob from "./flb-knob.astro"
-import Joystick from "./joystick.astro"
+import { Joystick } from "./joystick"
 import KnurledKnob from "./knurled-knob.astro"
 import LichtlaermAudioKnob from "./lichtlaerm-audio-knob.astro"
 import RoundChickenHeadKnob from "./round-chicken-head-knob.astro"
@@ -42,7 +42,7 @@ const { size, type, colors, id, isRotary, rotaryAngles } = Astro.props
       flb: <FlbKnob {size} {colors} />,
       gojira: <GojiraKnob {size} {colors} />,
       jhs: <JhsKnob {size} {colors} />,
-      joystick: <Joystick {size} />, //todo: pass down angle and radius from state
+      joystick: <Joystick {id} client:load {size} />,
       knurled: <KnurledKnob {size} {colors} />,
       lichtlaerm: <LichtlaermAudioKnob {size} {colors} />,
       obne: <ObneKnob {size} {colors} />,

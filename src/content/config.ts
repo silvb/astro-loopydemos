@@ -47,16 +47,16 @@ const switchTypeEnum = z.enum([
   "cba",
 ])
 
+export const colorsSchema = z.object({
+  primary: z.string().optional(),
+  secondary: z.string().optional(),
+  tick: z.string().optional(),
+  edge: z.string().optional(),
+})
+
 export const knobSchema = controlElementSchema.extend({
   type: knobTypeEnum,
-  colors: z
-    .object({
-      primary: z.string().optional(),
-      secondary: z.string().optional(),
-      tick: z.string().optional(),
-      edge: z.string().optional(),
-    })
-    .optional(),
+  colors: colorsSchema.optional(),
   isRotary: z.boolean().optional(),
   rotaryAngles: z.array(z.number()).optional(),
 })
@@ -66,6 +66,7 @@ export const switchSchema = controlElementSchema.extend({
   secondaryCircuitId: z.string().optional(),
   isMomentary: z.boolean().optional(),
   orientation: z.enum(["horizontal", "vertical"]).optional(),
+  colors: colorsSchema.optional(),
 })
 
 const demos = defineCollection({

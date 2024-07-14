@@ -9,7 +9,7 @@ import {
 } from "@constants/sizes"
 import Knob from "@components/knob"
 import AbsolutePosition from "@components/AbsolutePosition.astro"
-import Switch from "@components/switch"
+import { Switch } from "@components/switch"
 
 type Props = PedalProps
 
@@ -38,7 +38,6 @@ const enclosureHeight =
     : POTRAIT_DEFAULT_ENCLOSURE.height)
 ---
 
-<!-- Enclosure -->
 <div
   class="relative box-border select-none"
   style={{
@@ -51,7 +50,6 @@ const enclosureHeight =
     alt={`${model} - ${builder}`}
     class="absolute h-full w-full object-contain"
   />
-  <!-- Control Layout -->
   <div class="relative h-full w-full">
     {
       controls?.knobs?.map(
@@ -75,6 +73,8 @@ const enclosureHeight =
         }) => (
           <AbsolutePosition {id} {...position}>
             <Switch
+              client:load
+              {id}
               {type}
               {size}
               {orientation}
