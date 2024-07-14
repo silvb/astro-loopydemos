@@ -1,7 +1,6 @@
-import { $activePreset } from "@components/demo-widget/demo-state-store"
-import { useStore } from "@nanostores/solid"
+import { demoState } from "@components/demo-widget/demo-state-store"
 import { cva } from "class-variance-authority"
-import { createEffect, type ParentComponent } from "solid-js"
+import { type ParentComponent } from "solid-js"
 
 interface KnobStateContainerProps {
   id: string
@@ -21,7 +20,7 @@ const containerClass = cva("relative origin-center", {
 export const KnobStateContainer: ParentComponent<KnobStateContainerProps> = (
   props
 ) => {
-  const activePreset = useStore($activePreset)
+  const { activePreset } = demoState
 
   const level = () => (activePreset()?.settings?.[props.id] as number) || 5
 

@@ -1,12 +1,17 @@
 import type { Preset } from "@types"
-import { atom, computed } from "nanostores"
+import { createSignal, createMemo, createRoot } from "solid-js"
 
-export const $activePresetId = atom<string | undefined>(undefined)
+function createDemoState() {
+  const [activePresetId, selectPreset] = createSignal<string | undefined>(
+    undefined
+  )
+  const [presets, setPresets] = createSignal<Preset[]>([])
 
-export const $presets = atom<Preset[]>([])
+  const activePreset = createMemo(() =>
+    presets().find((preset) => preset.id === activePresetId())
+  )
 
-export const $activePreset = computed(
-  [$activePresetId, $presets],
-  (activePresetId, presets) =>
-    presets.find((preset) => preset.id === activePresetId)
-)
+  return { activePresetId, setPresets, selectPreset, activePreset }
+}
+
+export const demoState = createRoot(createDemoState)

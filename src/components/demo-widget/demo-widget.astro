@@ -18,6 +18,8 @@ const { slug, model, builder } = Astro.props
 const {
   data: { presets },
 }: CollectionEntry<"presets"> = await getEntry("presets", `${slug}.presets`)
+
+console.log({ presets })
 ---
 
 <DemoStateInitializer client:load {presets} />
@@ -25,7 +27,6 @@ const {
   <AudioPlayer />
   <PresetsSlider {presets} />
 </div>
-<!-- Pedals/Pedal -->
 <div class="mb-24 mt-8 flex items-center justify-center">
   <Pedal {slug} {model} {builder} />
 </div>
