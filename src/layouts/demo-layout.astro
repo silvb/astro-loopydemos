@@ -10,8 +10,6 @@ type Props = Pick<CollectionEntry<"demos">, "slug"> &
 const { slug, model, builder, date } = Astro.props
 
 const title = `${model} - ${builder}`
-
-console.log({ date })
 ---
 
 <Layout {title}>

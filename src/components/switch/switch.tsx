@@ -3,6 +3,7 @@ import { ToggleSwitch } from "./toggle-switch"
 import { Match, Switch as RenderSwitch, type Component } from "solid-js"
 import { demoState } from "@components/demo-widget/demo-state-store"
 import { ThreewaySwitch } from "./threeway-switch"
+import { RockerSwitch } from "./rocker-switch"
 
 type SwitchProps = Pick<
   SwitchType,
@@ -37,7 +38,14 @@ export const Switch: Component<SwitchProps> = (props) => {
           state={state()}
         />
       </Match>
-      {/* <Match></Match> */}
+      <Match when={props.type === "rocker"}>
+        <RockerSwitch
+          size={props.size}
+          orientation={props.orientation}
+          colors={props.colors}
+          state={state()}
+        />
+      </Match>
     </RenderSwitch>
   )
 }
