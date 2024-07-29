@@ -67,6 +67,7 @@ export const switchSchema = controlElementSchema.extend({
   isMomentary: z.boolean().optional(),
   orientation: z.enum(["horizontal", "vertical"]).optional(),
   colors: colorsSchema.optional(),
+  variant: z.enum(["boss", "dark"]).optional(),
 })
 
 const demos = defineCollection({
@@ -77,6 +78,21 @@ const demos = defineCollection({
     date: z.date(),
     type: z.enum(["demo", "post", "none"]),
   }),
+})
+
+export const settingsSchema = z.record(
+  z.string(),
+  z
+    .number()
+    .or(z.string())
+    .or(z.object({ radius: z.number(), angle: z.number() }))
+    .or(z.boolean().or(z.array(z.boolean())))
+)
+
+export const presetChainElementSchema = z.object({
+  name: z.string(),
+  id: z.string(),
+  settings: settingsSchema,
 })
 
 export const presetSchema = z.object({
@@ -96,6 +112,7 @@ export const presetSchema = z.object({
         .or(z.boolean().or(z.array(z.boolean())))
     )
     .optional(),
+  chain: z.array(presetChainElementSchema).optional(),
 })
 
 const presets = defineCollection({
@@ -108,6 +125,7 @@ const presets = defineCollection({
 const pedals = defineCollection({
   type: "data",
   schema: z.object({
+    name: z.string(),
     enclosure: z.enum(["portrait", "landscape"]).optional(),
     width: z.number().optional(),
     height: z.number().optional(),

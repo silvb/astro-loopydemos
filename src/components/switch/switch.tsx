@@ -7,20 +7,25 @@ import { RockerSwitch } from "./rocker-switch"
 import { PushButton } from "./push-button"
 import { SlideSwitch } from "./slide-switch"
 import { CBADipSwitches } from "./cba-dip-switches"
+import { StompSwitch } from "./stomp-switch"
 
-type SwitchProps = Pick<
-  SwitchType,
-  | "size"
-  | "orientation"
-  | "type"
-  | "isMomentary"
-  | "secondaryCircuitId"
-  | "id"
-  | "colors"
->
+interface SwitchProps
+  extends Pick<
+    SwitchType,
+    | "size"
+    | "orientation"
+    | "type"
+    | "isMomentary"
+    | "secondaryCircuitId"
+    | "id"
+    | "colors"
+    | "variant"
+  > {
+  pedalId: string
+}
 
 export const Switch: Component<SwitchProps> = (props) => {
-  const { activePreset } = demoState
+  const { activePreset, toggleBypass } = demoState
 
   const state = () => (activePreset()?.settings?.[props.id] || 1) as SwitchState
 
@@ -61,6 +66,20 @@ export const Switch: Component<SwitchProps> = (props) => {
       </Match>
       <Match when={props.type === "cba"}>
         <CBADipSwitches state={state() as CBASwitchSate} />
+      </Match>
+      <Match when={props.type === "stomp"}>
+        <StompSwitch
+          id={props.id}
+          isDark={props.variant === "dark"}
+          isMomentary={props.isMomentary}
+          size={props.size}
+          aria-label="pedal bypass switch"
+          onClick={() => {
+            if (props.id === "bypass_switch") {
+              toggleBypass(props.pedalId)
+            }
+          }}
+        />
       </Match>
     </RenderSwitch>
   )

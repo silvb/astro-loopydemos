@@ -1,5 +1,5 @@
 import type { Preset } from "@types"
-import { createSignal, createMemo, createRoot } from "solid-js"
+import { createSignal, createMemo, createRoot, createEffect } from "solid-js"
 
 const findClosestValue = (value: number, valueArray: number[]) =>
   valueArray.reduce((acc, curr) => {
@@ -10,6 +10,10 @@ const findClosestValue = (value: number, valueArray: number[]) =>
   }, valueArray[0])
 
 function createDemoState() {
+  const [demoType, setDemoType] = createSignal<"single" | "comparison">(
+    "single"
+  )
+  const [mainPedal, setMainPedal] = createSignal<string>("")
   const [activePresetId, selectPreset] = createSignal<string | undefined>(
     undefined
   )
@@ -17,10 +21,27 @@ function createDemoState() {
   const [sweepSetting, setSweepSetting] = createSignal<Record<string, number>>(
     {}
   )
+  const [pedalsOn, setPedalsOn] = createSignal<string[]>([])
 
   const activePreset = createMemo(() =>
     presets().find((preset) => preset.id === activePresetId())
   )
+
+  const activePedals = createMemo(() => {
+    if (demoType() === "single") {
+      return (
+        activePreset()?.chain?.map((chainElement) => chainElement.name) || [
+          mainPedal(),
+        ]
+      )
+    }
+
+    return []
+  })
+
+  createEffect(() => {
+    setPedalsOn(activePedals())
+  })
 
   const selectSweepSetting = (id: string, value: number) => {
     if (!activePreset()?.isSweep) return
@@ -32,13 +53,29 @@ function createDemoState() {
     setSweepSetting({ [id]: closestValue })
   }
 
+  const toggleBypass = (pedalId: string) => {
+    const pedals = pedalsOn()
+
+    if (pedals.includes(pedalId)) {
+      setPedalsOn(pedals.filter((id) => id !== pedalId))
+    } else {
+      setPedalsOn([...pedals, pedalId])
+    }
+  }
+
   return {
-    activePresetId,
-    setPresets,
-    selectPreset,
+    activePedals,
     activePreset,
-    sweepSetting,
+    activePresetId,
+    pedalsOn,
+    selectPreset,
     selectSweepSetting,
+    setPedalsOn,
+    setPresets,
+    sweepSetting,
+    toggleBypass,
+    setDemoType,
+    setMainPedal,
   }
 }
 

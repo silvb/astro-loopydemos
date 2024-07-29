@@ -24,7 +24,7 @@ if (!pedalData) {
   throw new Error(`Pedal not found: ${slug}`)
 }
 
-const { controls, width, height, enclosure } = pedalData.data
+const { controls, width, height, enclosure, name } = pedalData.data
 
 const enclosureWidth =
   width ||
@@ -80,6 +80,7 @@ const enclosureHeight =
               {orientation}
               {isMomentary}
               {secondaryCircuitId}
+              pedalId={name}
             />
           </AbsolutePosition>
         )
