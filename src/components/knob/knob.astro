@@ -20,6 +20,7 @@ import KnurledKnob from "./knurled-knob.astro"
 import LichtlaermAudioKnob from "./lichtlaerm-audio-knob.astro"
 import RoundChickenHeadKnob from "./round-chicken-head-knob.astro"
 import { KnobStateContainer } from "./knob-state-container"
+import SweepIndicator from "@components/sweep-indicator.astro"
 
 type Props = Pick<
   Knob,
@@ -29,7 +30,7 @@ type Props = Pick<
 const { size, type, colors, id, isRotary, rotaryAngles } = Astro.props
 ---
 
-<KnobStateContainer {id} {isRotary} {rotaryAngles} client:load>
+<KnobStateContainer {id} {isRotary} {rotaryAngles} {size} client:load>
   {
     {
       arrow: <ArrowKnob {size} />,
@@ -53,4 +54,5 @@ const { size, type, colors, id, isRotary, rotaryAngles } = Astro.props
       walrus: <WalrusAudioKnob {size} {colors} />,
     }[type]
   }
+  <SweepIndicator {size} slot="sweep-indicator" />
 </KnobStateContainer>

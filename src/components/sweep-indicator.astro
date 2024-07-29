@@ -1,0 +1,32 @@
+---
+interface Props {
+  size: number
+}
+
+const { size } = Astro.props
+const pixelSize = `${size}px`
+---
+
+<div class="sweep-indicator"></div>
+
+<style define:vars={{ size: pixelSize, scaleX: 1, scaleY: 1 }}>
+  .sweep-indicator {
+    @apply absolute left-0 top-0 box-border rounded-full border-dashed border-loopydemos-highlight-secondary content-none;
+    border-width: calc(var(--size) / 12);
+    width: var(--size);
+    height: var(--size);
+    z-index: -1;
+    transform: scale(calc(1.2 * var(--scaleX)), calc(1.2 * var(--scaleY)));
+    animation: 30s linear infinite spinKeepScale;
+  }
+
+  @keyframes spinKeepScale {
+    0% {
+      transform: scale(calc(1.2 * var(--scaleX)), calc(1.2 * var(--scaleY)));
+    }
+    100% {
+      transform: scale(calc(1.2 * var(--scaleX)), calc(1.2 * var(--scaleY)))
+        rotate(360deg);
+    }
+  }
+</style>
