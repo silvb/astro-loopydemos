@@ -10,7 +10,7 @@ import {
 import Knob from "@components/knob"
 import AbsolutePosition from "@components/absolute-position.astro"
 import { Switch } from "@components/switch"
-import Led from "@components/led"
+import { Led } from "@components/led"
 
 type Props = PedalProps
 
@@ -103,6 +103,7 @@ const enclosureHeight =
         }) => (
           <AbsolutePosition {id} {...position}>
             <Led
+              client:load
               {id}
               {size}
               {colors}

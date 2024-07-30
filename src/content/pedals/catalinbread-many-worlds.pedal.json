@@ -76,7 +76,6 @@
     ],
     "labels": [
       {
-        "id": "waveforms_label",
         "position": {
           "left": 149,
           "top": 125
@@ -84,6 +83,43 @@
         "labelPosition": {
           "left": 203,
           "top": 50
+        },
+        "dependency": {
+          "source": "waveforms",
+          "values": [
+            {
+              "sourceValue": 1,
+              "targetValue": "sine"
+            },
+            {
+              "sourceValue": 2,
+              "targetValue": "square"
+            },
+            {
+              "sourceValue": 3,
+              "targetValue": "triangle"
+            },
+            {
+              "sourceValue": 4,
+              "targetValue": "sawtooth"
+            },
+            {
+              "sourceValue": 5,
+              "targetValue": "sawtooth reversed"
+            },
+            {
+              "sourceValue": 6,
+              "targetValue": "envelope up"
+            },
+            {
+              "sourceValue": 7,
+              "targetValue": "envelope down"
+            },
+            {
+              "sourceValue": 8,
+              "targetValue": "battle mode"
+            }
+          ]
         }
       },
       {
@@ -106,48 +142,6 @@
         "labelPosition": {
           "left": 207,
           "top": 189
-        }
-      }
-    ],
-    "dependencies": [
-      {
-        "source": "waveforms",
-        "target": {
-          "id": "waveforms_label",
-          "values": [
-            {
-              "sourceValue": 1,
-              "value": "sine"
-            },
-            {
-              "sourceValue": 2,
-              "value": "square"
-            },
-            {
-              "sourceValue": 3,
-              "value": "triangle"
-            },
-            {
-              "sourceValue": 4,
-              "value": "sawtooth"
-            },
-            {
-              "sourceValue": 5,
-              "value": "sawtooth reversed"
-            },
-            {
-              "sourceValue": 6,
-              "value": "envelope up"
-            },
-            {
-              "sourceValue": 7,
-              "value": "envelope down"
-            },
-            {
-              "sourceValue": 8,
-              "value": "battle mode"
-            }
-          ]
         }
       }
     ]

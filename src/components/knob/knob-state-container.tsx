@@ -23,15 +23,12 @@ const containerClass = cva("relative origin-center", {
 export const KnobStateContainer: ParentComponent<KnobStateContainerProps> = (
   props
 ) => {
-  const { activePreset, sweepSetting } = demoState
+  const { activePreset, getSetting } = demoState
 
   const isSweepTarget = () =>
     activePreset()?.isSweep && activePreset()?.target === props.id
 
-  const level = () =>
-    (isSweepTarget()
-      ? sweepSetting()[props.id]
-      : (activePreset()?.settings?.[props.id] as number)) ?? 5
+  const level = () => (getSetting(props.id) as number) ?? 5
 
   return (
     <div

@@ -16,6 +16,11 @@ export const settingsValueSchema = z
 
 export const settingsSchema = z.record(z.string(), settingsValueSchema)
 
+export const ledColorsSchema = z.object({
+  on: z.string(),
+  off: z.string().optional(),
+})
+
 export const controlElementSchema = z.object({
   id: z.string(),
   size: z.number(),
@@ -35,8 +40,8 @@ export const controlElementSchema = z.object({
       values: z.array(
         z.object({
           sourceValue: z.number(),
-          targetValue: settingsValueSchema,
-          colors: colorsSchema.optional(),
+          targetValue: settingsValueSchema.optional(),
+          colors: ledColorsSchema.optional(),
           isOn: z.boolean().optional(),
         })
       ),
@@ -84,7 +89,7 @@ export const knobSchema = controlElementSchema.extend({
 })
 
 export const ledSchema = controlElementSchema.extend({
-  colors: z.object({ on: z.string(), off: z.string().optional() }).optional(),
+  colors: ledColorsSchema.optional(),
   isBlinking: z.boolean().optional(),
   secondaryCircuitId: z.string().optional(),
   type: z.enum(["round", "square", "mood"]).optional(),

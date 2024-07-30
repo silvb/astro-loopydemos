@@ -89,27 +89,6 @@
         "size": 32,
         "position": { "left": 162, "top": 138 }
       }
-    ],
-    "dependencies": [
-      {
-        "source": "speed",
-        "target": {
-          "id": "rate_led",
-          "values": [
-            { "sourceValue": 0, "value": 4000 },
-            { "sourceValue": 1, "value": 3500 },
-            { "sourceValue": 2, "value": 3000 },
-            { "sourceValue": 3, "value": 2500 },
-            { "sourceValue": 4, "value": 2000 },
-            { "sourceValue": 5, "value": 1500 },
-            { "sourceValue": 6, "value": 1000 },
-            { "sourceValue": 7, "value": 800 },
-            { "sourceValue": 8, "value": 600 },
-            { "sourceValue": 9, "value": 400 },
-            { "sourceValue": 10, "value": 200 }
-          ]
-        }
-      }
     ]
   }
 }

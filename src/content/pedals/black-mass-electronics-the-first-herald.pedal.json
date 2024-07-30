@@ -106,7 +106,24 @@
           "left": 198,
           "top": 230
         },
-        "color": "salmon"
+        "color": "salmon",
+        "dependency": {
+          "source": "clip",
+          "values": [
+            {
+              "sourceValue": 1,
+              "targetValue": "MOSFET/LED hybrid clipping"
+            },
+            {
+              "sourceValue": 2,
+              "targetValue": "open (no clipping)"
+            },
+            {
+              "sourceValue": 3,
+              "targetValue": "silicon diode clipping"
+            }
+          ]
+        }
       },
       {
         "id": "order_label",
@@ -117,28 +134,6 @@
         "labelPosition": {
           "left": 1,
           "top": 135
-        }
-      }
-    ],
-    "dependencies": [
-      {
-        "source": "clip",
-        "target": {
-          "id": "clip_label",
-          "values": [
-            {
-              "sourceValue": 1,
-              "value": "MOSFET/LED hybrid clipping"
-            },
-            {
-              "sourceValue": 2,
-              "value": "open (no clipping)"
-            },
-            {
-              "sourceValue": 3,
-              "value": "silicon diode clipping"
-            }
-          ]
         }
       }
     ]

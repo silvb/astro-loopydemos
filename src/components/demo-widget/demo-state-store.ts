@@ -46,6 +46,12 @@ function createDemoState() {
     setPedalsOn(activePedals())
   })
 
+  createEffect(() => {
+    if (!activePreset()?.isSweep) {
+      setSweepSetting({})
+    }
+  })
+
   const selectSweepSetting = (id: string, value: number) => {
     if (!activePreset()?.isSweep) return
 
@@ -73,7 +79,9 @@ function createDemoState() {
   ): SettingsValue | undefined => {
     if (!id) return
     const name = pedalName || mainPedal()
+
     return (
+      sweepSetting()?.[id] ??
       activePreset()?.chain?.find((chainItem) => chainItem.name === name)
         ?.settings?.[id] ??
       activePreset()?.comparison?.find((compItem) => compItem.pedalId === name)

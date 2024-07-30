@@ -96,46 +96,41 @@
         "labelPosition": {
           "left": 200,
           "top": 192
-        }
-      }
-    ],
-    "dependencies": [
-      {
-        "source": "clip",
-        "target": {
-          "id": "clip_label",
+        },
+        "dependency": {
+          "source": "clip",
           "values": [
             {
               "sourceValue": 1,
-              "value": "NOS Germanium"
+              "targetValue": "NOS Germanium"
             },
             {
               "sourceValue": 2,
-              "value": "Red LED"
+              "targetValue": "Red LED"
             },
             {
               "sourceValue": 3,
-              "value": "Silicon"
+              "targetValue": "Silicon"
             },
             {
               "sourceValue": 4,
-              "value": "Asymm. MOSFET"
+              "targetValue": "Asymm. MOSFET"
             },
             {
               "sourceValue": 5,
-              "value": "Silicon/Ge"
+              "targetValue": "Silicon/Ge"
             },
             {
               "sourceValue": 6,
-              "value": "MOSFET"
+              "targetValue": "MOSFET"
             },
             {
               "sourceValue": 7,
-              "value": "Asymm. Silicon"
+              "targetValue": "Asymm. Silicon"
             },
             {
               "sourceValue": 8,
-              "value": "Quad Silicon"
+              "targetValue": "Quad Silicon"
             }
           ]
         }

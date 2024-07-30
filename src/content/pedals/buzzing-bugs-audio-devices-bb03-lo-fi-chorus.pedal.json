@@ -59,6 +59,56 @@
         "colors": {
           "off": "#d2e1e9a1",
           "on": "#d4f9ff"
+        },
+        "isBlinking": true,
+        "dependency": {
+          "source": "time",
+          "values": [
+            {
+              "sourceValue": 10,
+              "targetValue": 1800
+            },
+            {
+              "sourceValue": 9,
+              "targetValue": 1650
+            },
+            {
+              "sourceValue": 8,
+              "targetValue": 1500
+            },
+            {
+              "sourceValue": 7,
+              "targetValue": 1350
+            },
+            {
+              "sourceValue": 6,
+              "targetValue": 1100
+            },
+            {
+              "sourceValue": 5,
+              "targetValue": 950
+            },
+            {
+              "sourceValue": 4,
+              "targetValue": 800
+            },
+            {
+              "sourceValue": 3,
+              "targetValue": 650
+            },
+            {
+              "sourceValue": 2,
+              "targetValue": 500
+            },
+            {
+              "sourceValue": 1,
+              "targetValue": 350
+            },
+            {
+              "sourceValue": 0,
+              "targetValue": 200
+            }
+          ]
         }
       }
     ],
@@ -70,60 +120,6 @@
         "position": {
           "left": 72,
           "top": 282
-        }
-      }
-    ],
-    "dependencies": [
-      {
-        "source": "time",
-        "target": {
-          "id": "on_led",
-          "values": [
-            {
-              "sourceValue": 10,
-              "value": 1800
-            },
-            {
-              "sourceValue": 9,
-              "value": 1650
-            },
-            {
-              "sourceValue": 8,
-              "value": 1500
-            },
-            {
-              "sourceValue": 7,
-              "value": 1350
-            },
-            {
-              "sourceValue": 6,
-              "value": 1100
-            },
-            {
-              "sourceValue": 5,
-              "value": 950
-            },
-            {
-              "sourceValue": 4,
-              "value": 800
-            },
-            {
-              "sourceValue": 3,
-              "value": 650
-            },
-            {
-              "sourceValue": 2,
-              "value": 500
-            },
-            {
-              "sourceValue": 1,
-              "value": 350
-            },
-            {
-              "sourceValue": 0,
-              "value": 200
-            }
-          ]
         }
       }
     ]
