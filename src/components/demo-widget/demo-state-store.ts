@@ -1,4 +1,4 @@
-import type { Preset } from "@types"
+import type { ControlElement, Preset, SettingsValue } from "@types"
 import { createSignal, createMemo, createRoot, createEffect } from "solid-js"
 
 const findClosestValue = (value: number, valueArray: number[]) =>
@@ -22,6 +22,9 @@ function createDemoState() {
     {}
   )
   const [pedalsOn, setPedalsOn] = createSignal<string[]>([])
+  const [secondaryCircuitsOn, setSecondaryCircuitsOn] = createSignal<string[]>(
+    []
+  )
 
   const activePreset = createMemo(() =>
     presets().find((preset) => preset.id === activePresetId())
@@ -63,6 +66,26 @@ function createDemoState() {
     }
   }
 
+  const getSetting = (
+    id?: string,
+    pedalName?: string,
+    dependency?: ControlElement["dependency"]
+  ): SettingsValue | undefined => {
+    if (!id) return
+    const name = pedalName || mainPedal()
+    return (
+      activePreset()?.chain?.find((chainItem) => chainItem.name === name)
+        ?.settings?.[id] ??
+      activePreset()?.comparison?.find((compItem) => compItem.pedalId === name)
+        ?.settings?.[id] ??
+      activePreset()?.settings?.[id] ??
+      dependency?.values?.find(
+        ({ sourceValue }) =>
+          sourceValue === getSetting(dependency?.source, name)
+      )?.targetValue
+    )
+  }
+
   return {
     activePedals,
     activePreset,
@@ -76,6 +99,8 @@ function createDemoState() {
     toggleBypass,
     setDemoType,
     setMainPedal,
+    secondaryCircuitsOn,
+    getSetting,
   }
 }
 

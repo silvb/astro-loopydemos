@@ -17,7 +17,6 @@ const DIMENSIONS = {
 }
 
 export const CBADipSwitches: Component<CBADipSwitchesProps> = (props) => {
-  console.log({ props })
   const finalProps = mergeProps(
     {
       state: [
@@ -42,8 +41,6 @@ export const CBADipSwitches: Component<CBADipSwitchesProps> = (props) => {
     },
     props
   )
-
-  console.log({ finalProps })
 
   const dipInlineStyle = {
     "--width": 6 * finalProps.scale + "px",

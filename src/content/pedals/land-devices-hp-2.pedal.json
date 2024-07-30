@@ -30,7 +30,6 @@
       {
         "id": "on_led",
         "size": 32,
-        "socket": false,
         "position": { "left": 52, "top": 217 },
         "colors": { "on": "#ffbf00", "off": "#767676aa" }
       }

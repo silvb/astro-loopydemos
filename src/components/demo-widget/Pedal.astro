@@ -10,6 +10,7 @@ import {
 import Knob from "@components/knob"
 import AbsolutePosition from "@components/absolute-position.astro"
 import { Switch } from "@components/switch"
+import Led from "@components/led"
 
 type Props = PedalProps
 
@@ -80,6 +81,37 @@ const enclosureHeight =
               {orientation}
               {isMomentary}
               {secondaryCircuitId}
+              pedalId={name}
+            />
+          </AbsolutePosition>
+        )
+      )
+    }
+    {
+      controls?.leds?.map(
+        ({
+          id,
+          position,
+          size,
+          colors,
+          type,
+          defaultTime,
+          blinkOffset,
+          offOverride,
+          dependency,
+          isBlinking,
+        }) => (
+          <AbsolutePosition {id} {...position}>
+            <Led
+              {id}
+              {size}
+              {colors}
+              {type}
+              {defaultTime}
+              {blinkOffset}
+              {offOverride}
+              {dependency}
+              {isBlinking}
               pedalId={name}
             />
           </AbsolutePosition>

@@ -1,0 +1,170 @@
+---
+import type { Led } from "@types"
+
+const MOOD_COLORS = {
+  on: "greenyellow",
+  off: "#f73333",
+}
+
+const DEFAULT_COLORS = {
+  on: "#f73333",
+  off: "#545454aa",
+}
+
+interface Props extends Pick<Led, "size" | "colors" | "type" | "id"> {
+  isOn?: boolean
+}
+
+const { size, id, colors, type = "round", isOn } = Astro.props
+const isMood = type === "mood"
+const mergedColors = isMood ? MOOD_COLORS : { ...DEFAULT_COLORS, ...colors }
+
+const isMoodOn = typeof isOn !== "number" && Boolean(isOn)
+---
+
+{
+  isMood ? (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      viewBox="0 0 48 48"
+      id={id}
+      style={{ "z-index": 10 }}
+    >
+      <defs>
+        <radialGradient id={`${id}-mood-on-gradient`}>
+          <stop offset="5%" stop-color="white" />
+          <stop
+            offset="90%"
+            stop-color={isMoodOn ? mergedColors.on : mergedColors.off}
+          />
+        </radialGradient>
+      </defs>
+      <g fill="none">
+        <g class="blinkAnimation moodBlink" fill="none">
+          <circle
+            cx="24"
+            cy="24"
+            r="16"
+            fill={isMoodOn ? mergedColors.on : mergedColors.off}
+            fill-opacity=".2"
+          />
+          <circle
+            cx="24"
+            cy="24"
+            r="24"
+            fill={isMoodOn ? mergedColors.on : mergedColors.off}
+            fill-opacity=".4"
+          />
+          <circle
+            cx="24"
+            cy="24"
+            r="8"
+            fill={`url('#${id}-mood-on-gradient')`}
+            fill-opacity=".8"
+          />
+        </g>
+      </g>
+    </svg>
+  ) : (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={size}
+      height={size}
+      viewBox="0 0 48 48"
+      id={id}
+      style={{ zIndex: 10 }}
+    >
+      <defs>
+        <radialGradient id={`${id}-on-gradient`}>
+          <stop offset="5%" stop-color="white" />
+          <stop offset="90%" stop-color={mergedColors.on} />
+        </radialGradient>
+        <radialGradient id={`${id}-off-gradient`}>
+          <stop offset="5%" stop-color="white" />
+          <stop offset="90%" stop-color={mergedColors.off || "#e1e1e1"} />
+        </radialGradient>
+      </defs>
+      <g fill="none">
+        {isOn ? (
+          <g class="blinkAnimation" fill="none">
+            {
+              {
+                round: (
+                  <>
+                    <circle
+                      cx="24"
+                      cy="24"
+                      r="24"
+                      fill={mergedColors.on}
+                      fill-opacity=".4"
+                    />
+                    <circle
+                      cx="24"
+                      cy="24"
+                      r="16"
+                      fill={mergedColors.on}
+                      fill-opacity=".2"
+                    />
+                    <circle
+                      cx="24"
+                      cy="24"
+                      r="8"
+                      fill={`url('#${id}-on-gradient')`}
+                      fill-opacity=".8"
+                    />
+                  </>
+                ),
+                square: (
+                  <>
+                    <circle
+                      cx="24"
+                      cy="24"
+                      r="24"
+                      fill={mergedColors.on}
+                      fill-opacity=".4"
+                    />
+                    <circle
+                      cx="24"
+                      cy="24"
+                      r="16"
+                      fill={mergedColors.on}
+                      fill-opacity=".2"
+                    />
+                    <rect
+                      x="14"
+                      y="14"
+                      width="20"
+                      height="20"
+                      fill-opacity="1"
+                      rx={4}
+                      ry={4}
+                      fill={`url('#${id}-on-gradient')`}
+                    />
+                  </>
+                ),
+              }[type]
+            }
+          </g>
+        ) : (
+          {
+            round: <circle cx="24" cy="24" r="8" fill={mergedColors.off} />,
+            square: (
+              <rect
+                x="14"
+                y="14"
+                width="20"
+                height="20"
+                fill-opacity="1"
+                rx={4}
+                ry={4}
+                fill={`url('#${id}-off-gradient')`}
+              />
+            ),
+          }[type]
+        )}
+      </g>
+    </svg>
+  )
+}

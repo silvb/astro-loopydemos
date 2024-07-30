@@ -79,16 +79,14 @@
               "sourceValue": 1,
               "colors": {
                 "off": "#d2e1e9a1",
-                "on": "#00ff00",
-                "socket": "black"
+                "on": "#00ff00"
               }
             },
             {
               "sourceValue": 2,
               "colors": {
                 "on": "#f73333",
-                "off": "#800000a1",
-                "socket": "black"
+                "off": "#800000a1"
               }
             }
           ]

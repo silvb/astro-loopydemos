@@ -52,7 +52,6 @@
       {
         "id": "on_led",
         "size": 46,
-        "socket": false,
         "position": {
           "left": 57,
           "top": 268
@@ -65,7 +64,6 @@
       {
         "id": "rate_led",
         "size": 46,
-        "socket": false,
         "position": {
           "left": 91,
           "top": 268

@@ -165,6 +165,38 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
         }
       }
     }
+
+    .blinking-led {
+      animation: var(--blinkTime) ease-in-out var(--blinkOffset) infinite blink;
+
+      &.mood-blink {
+        animation: var(--blinkTime) cubic-bezier(0, 1, 0, 1) infinite microblink;
+      }
+    }
+
+    @keyframes blink {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    @keyframes microblink {
+      0% {
+        opacity: 0;
+      }
+      20% {
+        opacity: 1;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
   }
 
   @layer utilities {

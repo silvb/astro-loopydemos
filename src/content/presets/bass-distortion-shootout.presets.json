@@ -3,109 +3,131 @@
     {
       "id": "growl",
       "label": "Growl",
-      "jptr-fx-warlow": {
-        "id": "warlow_growl",
-        "settings": { "volume": 4, "tone": 6, "sustain": 5, "mode": 2 }
-      },
-      "jptr-fx-jive": {
-        "id": "jive_growl",
-        "settings": {
-          "vol": 2,
-          "gain": 8,
-          "toggle_a": 3,
-          "toggle_b": 1,
-          "toggle_c": 1
+      "comparison": [
+        {
+          "id": "warlow_growl",
+          "pedalId": "jptr-fx-warlow",
+          "settings": { "volume": 4, "tone": 6, "sustain": 5, "mode": 2 }
+        },
+        {
+          "id": "jive_growl",
+          "pedalId": "jptr-fx-jive",
+          "settings": {
+            "vol": 2,
+            "gain": 8,
+            "toggle_a": 3,
+            "toggle_b": 1,
+            "toggle_c": 1
+          }
+        },
+        {
+          "id": "diabolik_growl",
+          "pedalId": "malekko-diabolik",
+          "settings": {
+            "fuzz": 7,
+            "clean": 8,
+            "squish": 5
+          }
+        },
+        {
+          "id": "divvy_growl",
+          "pedalId": "champion-leccy-the-divvy-v3",
+          "settings": {
+            "level": 6,
+            "gain": 7,
+            "voice": 3
+          }
+        },
+        {
+          "id": "proxima_growl",
+          "pedalId": "twilight-pulse-audioworks-proxima",
+          "settings": {
+            "gain": 4,
+            "mass": 6.5,
+            "refine": 5
+          }
+        },
+        {
+          "id": "motorbass_growl",
+          "pedalId": "okko-fx-motorbass",
+          "settings": { "faster": 7, "harder": 2, "louder": 3 }
+        },
+        {
+          "id": "mini_growl",
+          "pedalId": "smallsound-bigsound-mini",
+          "settings": {
+            "gain": 7,
+            "bass": 6,
+            "treble": 5,
+            "bias": 8,
+            "volume": 5
+          }
+        },
+        {
+          "id": "exploder_growl",
+          "pedalId": "beautiful-noise-effects-exploder",
+          "settings": {
+            "master": 6,
+            "gain": 5,
+            "low": 6,
+            "mid": 6,
+            "hi": 6,
+            "white_noise": 4,
+            "tone": 4,
+            "env": 1.5,
+            "clipping": 3
+          }
+        },
+        {
+          "id": "riche_growl",
+          "pedalId": "freqscene-effects-nouveau-riche",
+          "settings": {
+            "vol": 5,
+            "gain": 6.5,
+            "freq": 5,
+            "voice": 8,
+            "mode": 3
+          }
+        },
+        {
+          "id": "shuksan_growl",
+          "pedalId": "spun-loud-shuksan-fuzz",
+          "settings": { "vol": 6, "sustain": 3.5, "input": 1 }
+        },
+        {
+          "id": "mammoth_growl",
+          "pedalId": "zvex-effects-woolly-mammoth",
+          "settings": { "output": 5, "eq": 6, "pinch": 6, "wool": 2 }
+        },
+        {
+          "id": "basstortion_growl",
+          "pedalId": "zvex-effects-basstortion",
+          "settings": { "volume": 6, "tone": 8, "drive": 8, "mode": 3 }
+        },
+        {
+          "id": "mastotron_growl",
+          "pedalId": "zvex-effects-mastotron",
+          "settings": {
+            "vol": 10,
+            "tone": 8,
+            "pw": 0,
+            "fuzz": 9,
+            "relax_push": 2,
+            "subs": 1
+          }
+        },
+        {
+          "id": "surprise_growl",
+          "pedalId": "fairfield-circuitry-unpleasant-surprise",
+          "settings": {
+            "volume": 7,
+            "onset": 5,
+            "t": 1,
+            "g": 1,
+            "c": 1
+          }
         }
-      },
-      "malekko-diabolik": {
-        "id": "diabolik_growl",
-        "settings": {
-          "fuzz": 7,
-          "clean": 8,
-          "squish": 5
-        }
-      },
-      "champion-leccy-the-divvy-v3": {
-        "id": "divvy_growl",
-        "settings": {
-          "level": 6,
-          "gain": 7,
-          "voice": 3
-        }
-      },
-      "twilight-pulse-audioworks-proxima": {
-        "id": "proxima_growl",
-        "settings": {
-          "gain": 4,
-          "mass": 6.5,
-          "refine": 5
-        }
-      },
-      "okko-fx-motorbass": {
-        "id": "motorbass_growl",
-        "settings": { "faster": 7, "harder": 2, "louder": 3 }
-      },
-      "smallsound-bigsound-mini": {
-        "id": "mini_growl",
-        "settings": {
-          "gain": 7,
-          "bass": 6,
-          "treble": 5,
-          "bias": 8,
-          "volume": 5
-        }
-      },
-      "beautiful-noise-effects-exploder": {
-        "id": "exploder_growl",
-        "settings": {
-          "master": 6,
-          "gain": 5,
-          "low": 6,
-          "mid": 6,
-          "hi": 6,
-          "white_noise": 4,
-          "tone": 4,
-          "env": 1.5,
-          "clipping": 3
-        }
-      },
-      "freqscene-effects-nouveau-riche": {
-        "id": "riche_growl",
-        "settings": { "vol": 5, "gain": 6.5, "freq": 5, "voice": 8, "mode": 3 }
-      },
-      "spun-loud-shuksan-fuzz": {
-        "id": "shuksan_growl",
-        "settings": { "vol": 6, "sustain": 3.5, "input": 1 }
-      },
-      "zvex-effects-woolly-mammoth": {
-        "id": "mammoth_growl",
-        "settings": { "output": 5, "eq": 6, "pinch": 6, "wool": 2 }
-      },
-      "zvex-effects-basstortion": {
-        "id": "basstortion_growl",
-        "settings": { "volume": 6, "tone": 8, "drive": 8, "mode": 3 }
-      },
-      "zvex-effects-mastotron": {
-        "id": "mastotron_growl",
-        "settings": {
-          "vol": 10,
-          "tone": 8,
-          "pw": 0,
-          "fuzz": 9,
-          "relax_push": 2,
-          "subs": 1
-        }
-      },
-      "fairfield-circuitry-unpleasant-surprise": {
-        "id": "surprise_growl",
-        "settings": {
-          "volume": 7,
-          "onset": 5,
-          "t": 1,
-          "g": 1,
-          "c": 1
-        }
-      }
+      ]
     }
   ]
 }

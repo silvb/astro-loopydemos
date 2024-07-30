@@ -35,15 +35,13 @@
       {
         "id": "on_led",
         "size": 46,
-        "socket": true,
         "position": {
-          "top": 171,
-          "left": 118
+          "top": 170,
+          "left": 117
         },
         "colors": {
           "off": "green",
-          "on": "springgreen",
-          "socket": "black"
+          "on": "springgreen"
         }
       }
     ],

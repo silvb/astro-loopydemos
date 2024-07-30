@@ -23,8 +23,7 @@
         "colors": {
           "on": "#ffd226",
           "off": "#eabf0022"
-        },
-        "socket": false
+        }
       }
     ],
     "switches": [

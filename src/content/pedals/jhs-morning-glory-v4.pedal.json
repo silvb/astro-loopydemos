@@ -50,14 +50,12 @@
         "id": "on_led",
         "size": 46,
         "position": {
-          "top": 283,
-          "left": 130
+          "top": 282,
+          "left": 129
         },
-        "socket": true,
         "colors": {
           "off": "#d2e1e9a1",
-          "on": "#d4f9ff",
-          "socket": "black"
+          "on": "#d4f9ff"
         }
       }
     ],
@@ -104,16 +102,14 @@
               "sourceValue": 1,
               "colors": {
                 "on": "#f73333",
-                "off": "#800000a1",
-                "socket": "black"
+                "off": "#800000a1"
               }
             },
             {
               "sourceValue": 3,
               "colors": {
                 "off": "#d2e1e9a1",
-                "on": "#d4f9ff",
-                "socket": "black"
+                "on": "#d4f9ff"
               }
             }
           ]

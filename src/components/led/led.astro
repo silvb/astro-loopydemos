@@ -1,0 +1,39 @@
+---
+import type { Led } from "@types"
+import { LedStateContainer } from "./led-state-container"
+import LedDisplay from "./led-display.astro"
+
+interface Props extends Omit<Led, "position"> {
+  pedalId: string
+}
+
+const {
+  isBlinking,
+  id,
+  pedalId,
+  size,
+  colors,
+  type,
+  offOverride,
+  blinkOffset,
+  dependency,
+  defaultTime,
+} = Astro.props
+
+const uniqueOnLedId = id === "on_led" ? `${id}-${pedalId}` : id
+---
+
+<LedStateContainer
+  {isBlinking}
+  {pedalId}
+  {id}
+  {type}
+  {offOverride}
+  {blinkOffset}
+  {dependency}
+  {defaultTime}
+  client:load
+>
+  <LedDisplay id={uniqueOnLedId} {size} {colors} slot="led-on" isOn />
+  <LedDisplay id={uniqueOnLedId} {size} {colors} slot="led-off" />
+</LedStateContainer>

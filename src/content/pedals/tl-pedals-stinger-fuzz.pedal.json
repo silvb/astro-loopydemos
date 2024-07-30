@@ -49,10 +49,8 @@
         },
         "colors": {
           "off": "#7d7d8766",
-          "on": "#ff7600",
-          "socket": "#98aaa7"
-        },
-        "socket": false
+          "on": "#ff7600"
+        }
       }
     ],
     "switches": [

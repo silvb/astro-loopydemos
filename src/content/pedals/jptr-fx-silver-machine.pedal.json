@@ -25,8 +25,8 @@
       {
         "id": "on_led",
         "size": 44,
-        "position": { "left": 79, "top": 241 },
-        "colors": { "off": "#d2e1e9a1", "on": "#d4f9ff", "socket": "black" }
+        "position": { "left": 79, "top": 242 },
+        "colors": { "off": "#d2e1e9a1", "on": "#d4f9ff" }
       }
     ],
     "switches": [

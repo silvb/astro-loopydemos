@@ -61,29 +61,25 @@
       {
         "id": "on_led",
         "size": 44,
-        "socket": true,
         "position": {
-          "left": 28,
-          "top": 238
+          "left": 29,
+          "top": 236
         },
         "colors": {
           "off": "#d2e1e9a1",
-          "on": "#d4f9ff",
-          "socket": "black"
+          "on": "#d4f9ff"
         }
       },
       {
         "id": "rate_led",
         "size": 44,
-        "socket": true,
         "position": {
           "left": 128,
           "top": 236
         },
         "colors": {
           "off": "#d2e1e9a1",
-          "on": "#9c33ff",
-          "socket": "black"
+          "on": "#9c33ff"
         },
         "isBlinking": true
       }

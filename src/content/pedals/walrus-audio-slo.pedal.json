@@ -1,5 +1,5 @@
 {
-  "name": "walrus_audio_slo",
+  "name": "walrus-audio-slo",
   "controls": {
     "knobs": [
       {
@@ -52,15 +52,13 @@
       {
         "id": "on_led",
         "size": 44,
-        "socket": true,
         "position": {
           "top": 241,
           "left": 28
         },
         "colors": {
           "off": "#d2e1e9a1",
-          "on": "#d4f9ff",
-          "socket": "black"
+          "on": "#d4f9ff"
         }
       }
     ],

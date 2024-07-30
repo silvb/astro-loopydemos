@@ -118,12 +118,6 @@
       "target": "stage_ii",
       "initialValue": 4,
       "values": [1, 2, 3, 4],
-      "sideEffects": [
-        {
-          "id": "volume",
-          "values": [4, 6, 4, 6]
-        }
-      ],
       "settings": {
         "bass": 4,
         "mid": 4,

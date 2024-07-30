@@ -25,15 +25,13 @@
       {
         "id": "on_led",
         "size": 44,
-        "socket": true,
         "position": {
-          "left": 80,
-          "top": 231
+          "left": 79,
+          "top": 230
         },
         "colors": {
           "off": "#d2e1e9a1",
-          "on": "#d4f9ff",
-          "socket": "black"
+          "on": "#d4f9ff"
         }
       }
     ],

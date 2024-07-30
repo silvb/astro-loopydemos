@@ -1,6 +1,22 @@
 import { defineCollection, z } from "astro:content"
 
-const controlElementSchema = z.object({
+export const colorsSchema = z.object({
+  primary: z.string().optional(),
+  secondary: z.string().optional(),
+  tick: z.string().optional(),
+  edge: z.string().optional(),
+})
+
+export const settingsValueSchema = z
+  .number()
+  .or(z.string())
+  .or(z.object({ radius: z.number(), angle: z.number() }))
+  .or(z.boolean())
+  .or(z.array(z.boolean()))
+
+export const settingsSchema = z.record(z.string(), settingsValueSchema)
+
+export const controlElementSchema = z.object({
   id: z.string(),
   size: z.number(),
   dimensions: z
@@ -13,6 +29,19 @@ const controlElementSchema = z.object({
     top: z.number(),
     left: z.number(),
   }),
+  dependency: z
+    .object({
+      source: z.string(),
+      values: z.array(
+        z.object({
+          sourceValue: z.number(),
+          targetValue: settingsValueSchema,
+          colors: colorsSchema.optional(),
+          isOn: z.boolean().optional(),
+        })
+      ),
+    })
+    .optional(),
 })
 
 const knobTypeEnum = z.enum([
@@ -47,18 +76,22 @@ const switchTypeEnum = z.enum([
   "cba",
 ])
 
-export const colorsSchema = z.object({
-  primary: z.string().optional(),
-  secondary: z.string().optional(),
-  tick: z.string().optional(),
-  edge: z.string().optional(),
-})
-
 export const knobSchema = controlElementSchema.extend({
   type: knobTypeEnum,
   colors: colorsSchema.optional(),
   isRotary: z.boolean().optional(),
   rotaryAngles: z.array(z.number()).optional(),
+})
+
+export const ledSchema = controlElementSchema.extend({
+  colors: z.object({ on: z.string(), off: z.string().optional() }).optional(),
+  isBlinking: z.boolean().optional(),
+  secondaryCircuitId: z.string().optional(),
+  type: z.enum(["round", "square", "mood"]).optional(),
+  isOnIndicator: z.boolean().optional(),
+  offOverride: z.boolean().optional(),
+  blinkOffset: z.number().optional(),
+  defaultTime: z.number().optional(),
 })
 
 export const switchSchema = controlElementSchema.extend({
@@ -80,15 +113,6 @@ const demos = defineCollection({
   }),
 })
 
-export const settingsSchema = z.record(
-  z.string(),
-  z
-    .number()
-    .or(z.string())
-    .or(z.object({ radius: z.number(), angle: z.number() }))
-    .or(z.boolean().or(z.array(z.boolean())))
-)
-
 export const presetChainElementSchema = z.object({
   name: z.string(),
   id: z.string(),
@@ -102,17 +126,17 @@ export const presetSchema = z.object({
   target: z.string().optional(),
   initialValue: z.number().optional(),
   values: z.array(z.number()).optional(),
-  settings: z
-    .record(
-      z.string(),
-      z
-        .number()
-        .or(z.string())
-        .or(z.object({ radius: z.number(), angle: z.number() }))
-        .or(z.boolean().or(z.array(z.boolean())))
+  settings: settingsSchema.optional(),
+  chain: z.array(presetChainElementSchema).optional(),
+  comparison: z
+    .array(
+      z.object({
+        id: z.string(),
+        pedalId: z.string(),
+        settings: settingsSchema.optional(),
+      })
     )
     .optional(),
-  chain: z.array(presetChainElementSchema).optional(),
 })
 
 const presets = defineCollection({
@@ -133,6 +157,7 @@ const pedals = defineCollection({
       .object({
         knobs: z.array(knobSchema).optional(),
         switches: z.array(switchSchema).optional(),
+        leds: z.array(ledSchema).optional(),
       })
       .optional(),
   }),

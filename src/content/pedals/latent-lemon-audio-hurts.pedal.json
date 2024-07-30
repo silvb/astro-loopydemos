@@ -30,7 +30,6 @@
       {
         "id": "on_led",
         "size": 44,
-        "socket": false,
         "position": { "left": 174, "top": 283 }
       }
     ],

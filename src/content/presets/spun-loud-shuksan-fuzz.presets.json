@@ -20,7 +20,7 @@
           "settings": { "vol": 4, "sustain": 5, "input": 7 }
         },
         {
-          "name": "walrus_audio_slo",
+          "name": "walrus-audio-slo",
           "id": "slo",
           "settings": {
             "decay": 5,

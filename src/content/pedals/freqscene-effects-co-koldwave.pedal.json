@@ -57,7 +57,23 @@
         "size": 44,
         "position": { "left": 140, "top": 83 },
         "isBlinking": true,
-        "colors": { "on": "#ff00ea" }
+        "colors": { "on": "#ff00ea" },
+        "dependency": {
+          "source": "speed",
+          "values": [
+            { "sourceValue": 0, "targetValue": 4000 },
+            { "sourceValue": 1, "targetValue": 3500 },
+            { "sourceValue": 2, "targetValue": 3000 },
+            { "sourceValue": 3, "targetValue": 2500 },
+            { "sourceValue": 4, "targetValue": 2000 },
+            { "sourceValue": 5, "targetValue": 1500 },
+            { "sourceValue": 6, "targetValue": 1000 },
+            { "sourceValue": 7, "targetValue": 800 },
+            { "sourceValue": 8, "targetValue": 600 },
+            { "sourceValue": 9, "targetValue": 400 },
+            { "sourceValue": 10, "targetValue": 200 }
+          ]
+        }
       }
     ],
     "switches": [
