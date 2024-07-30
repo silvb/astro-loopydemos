@@ -22,10 +22,7 @@ import RoundChickenHeadKnob from "./round-chicken-head-knob.astro"
 import { KnobStateContainer } from "./knob-state-container"
 import SweepIndicator from "@components/sweep-indicator.astro"
 
-type Props = Pick<
-  Knob,
-  "size" | "type" | "colors" | "isRotary" | "rotaryAngles" | "id"
->
+type Props = Knob
 
 const { size, type, colors, id, isRotary, rotaryAngles } = Astro.props
 ---

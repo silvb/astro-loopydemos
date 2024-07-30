@@ -13,21 +13,7 @@ const DEFAULT_COLORS = {
   off: "#545454aa",
 }
 
-interface LedProps
-  extends Pick<
-    LedType,
-    | "id"
-    | "secondaryCircuitId"
-    | "isBlinking"
-    | "type"
-    | "isOnIndicator"
-    | "blinkOffset"
-    | "defaultTime"
-    | "offOverride"
-    | "dependency"
-    | "size"
-    | "colors"
-  > {
+interface LedProps extends LedType {
   pedalId: string
 }
 

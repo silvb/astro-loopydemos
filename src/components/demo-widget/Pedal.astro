@@ -53,75 +53,25 @@ const enclosureHeight =
   />
   <div class="relative h-full w-full">
     {
-      controls?.knobs?.map(
-        ({ id, type, position, size, colors, isRotary, rotaryAngles }) => (
-          <AbsolutePosition {id} {...position}>
-            <Knob {id} {type} {size} {colors} {isRotary} {rotaryAngles} />
-          </AbsolutePosition>
-        )
-      )
+      controls?.knobs?.map((knob) => (
+        <AbsolutePosition id={knob.id} {...knob.position}>
+          <Knob {...knob} />
+        </AbsolutePosition>
+      ))
     }
     {
-      controls?.switches?.map(
-        ({
-          id,
-          type,
-          position,
-          size,
-          orientation,
-          isMomentary,
-          secondaryCircuitId,
-        }) => (
-          <AbsolutePosition {id} {...position}>
-            <Switch
-              client:load
-              {id}
-              {type}
-              {size}
-              {orientation}
-              {isMomentary}
-              {secondaryCircuitId}
-              pedalId={name}
-            />
-          </AbsolutePosition>
-        )
-      )
+      controls?.switches?.map((switchEl) => (
+        <AbsolutePosition id={switchEl.id} {...switchEl.position}>
+          <Switch client:load {...switchEl} pedalId={name} />
+        </AbsolutePosition>
+      ))
     }
     {
-      controls?.leds?.map(
-        ({
-          id,
-          position,
-          size,
-          colors,
-          type,
-          defaultTime,
-          blinkOffset,
-          offOverride,
-          dependency,
-          isBlinking,
-          secondaryCircuitId,
-          isOnIndicator,
-        }) => (
-          <AbsolutePosition {id} {...position}>
-            <Led
-              client:load
-              {id}
-              {size}
-              {colors}
-              {type}
-              {defaultTime}
-              {blinkOffset}
-              {offOverride}
-              {dependency}
-              {isBlinking}
-              {secondaryCircuitId}
-              {isOnIndicator}
-              pedalId={name}
-            />
-          </AbsolutePosition>
-        )
-      )
+      controls?.leds?.map((led) => (
+        <AbsolutePosition id={led.id} {...led.position}>
+          <Led client:load {...led} pedalId={name} />
+        </AbsolutePosition>
+      ))
     }
   </div>
 </div>

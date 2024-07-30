@@ -9,18 +9,7 @@ import { SlideSwitch } from "./slide-switch"
 import { CBADipSwitches } from "./cba-dip-switches"
 import { StompSwitch } from "./stomp-switch"
 
-interface SwitchProps
-  extends Pick<
-    SwitchType,
-    | "size"
-    | "orientation"
-    | "type"
-    | "isMomentary"
-    | "secondaryCircuitId"
-    | "id"
-    | "colors"
-    | "variant"
-  > {
+interface SwitchProps extends SwitchType {
   pedalId: string
 }
 
