@@ -127,6 +127,10 @@ export const presetChainElementSchema = z.object({
 export const presetSchema = z.object({
   id: z.string(),
   label: z.string(),
+  secondaryCircuitId: z.string().optional(),
+  secondaryCircuitSlug: z.string().optional(),
+  secondaryCircuitOnlySlug: z.string().optional(),
+  initialSecondaryCircuits: z.array(z.string()).optional(),
   isSweep: z.boolean().optional(),
   target: z.string().optional(),
   initialValue: z.number().optional(),

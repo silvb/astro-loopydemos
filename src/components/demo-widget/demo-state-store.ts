@@ -42,16 +42,6 @@ function createDemoState() {
     return []
   })
 
-  createEffect(() => {
-    setPedalsOn(activePedals())
-  })
-
-  createEffect(() => {
-    if (!activePreset()?.isSweep) {
-      setSweepSetting({})
-    }
-  })
-
   const selectSweepSetting = (id: string, value: number) => {
     if (!activePreset()?.isSweep) return
 
@@ -69,6 +59,16 @@ function createDemoState() {
       setPedalsOn(pedals.filter((id) => id !== pedalId))
     } else {
       setPedalsOn([...pedals, pedalId])
+    }
+  }
+
+  const toggleSecondaryCircuit = (circuitId: string) => {
+    const circuits = secondaryCircuitsOn()
+
+    if (circuits.includes(circuitId)) {
+      setSecondaryCircuitsOn(circuits.filter((id) => id !== circuitId))
+    } else {
+      setSecondaryCircuitsOn([...circuits, circuitId])
     }
   }
 
@@ -94,6 +94,23 @@ function createDemoState() {
     )
   }
 
+  createEffect(() => {
+    setPedalsOn(activePedals())
+  })
+
+  createEffect(() => {
+    if (!activePreset()?.isSweep) {
+      setSweepSetting({})
+    }
+    setSecondaryCircuitsOn(activePreset()?.initialSecondaryCircuits || [])
+  })
+
+  createEffect(() => {
+    if (presets().length > 0) {
+      selectPreset(presets()[0].id)
+    }
+  })
+
   return {
     activePedals,
     activePreset,
@@ -108,6 +125,7 @@ function createDemoState() {
     setDemoType,
     setMainPedal,
     secondaryCircuitsOn,
+    toggleSecondaryCircuit,
     getSetting,
   }
 }

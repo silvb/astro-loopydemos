@@ -22,7 +22,8 @@ const buttonClass = cva(
 type PresetButtonProps = Pick<Preset, "id" | "isSweep" | "label">
 
 export const PresetButton: ParentComponent<PresetButtonProps> = (props) => {
-  const { activePresetId, selectPreset, activePedals, pedalsOn } = demoState
+  const { activePresetId, selectPreset, activePedals, pedalsOn, setPedalsOn } =
+    demoState
   let buttonEl!: HTMLButtonElement
 
   onMount(() => {
@@ -51,6 +52,8 @@ export const PresetButton: ParentComponent<PresetButtonProps> = (props) => {
           inline: "center",
           block: "nearest",
         })
+
+        setPedalsOn(activePedals())
       }}
       class={buttonClass({
         isSweep: Boolean(props.isSweep),

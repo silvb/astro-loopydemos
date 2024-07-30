@@ -25,9 +25,9 @@ interface SwitchProps
 }
 
 export const Switch: Component<SwitchProps> = (props) => {
-  const { activePreset, toggleBypass } = demoState
+  const { getSetting, toggleBypass, toggleSecondaryCircuit } = demoState
 
-  const state = () => (activePreset()?.settings?.[props.id] || 1) as SwitchState
+  const state = () => (getSetting(props.id, props.pedalId) ?? 1) as SwitchState
 
   return (
     <RenderSwitch>
@@ -65,7 +65,7 @@ export const Switch: Component<SwitchProps> = (props) => {
         />
       </Match>
       <Match when={props.type === "cba"}>
-        <CBADipSwitches state={state() as CBASwitchSate} />
+        <CBADipSwitches state={state() as unknown as CBASwitchSate} />
       </Match>
       <Match when={props.type === "stomp"}>
         <StompSwitch
@@ -77,6 +77,9 @@ export const Switch: Component<SwitchProps> = (props) => {
           onClick={() => {
             if (props.id === "bypass_switch") {
               toggleBypass(props.pedalId)
+            }
+            if (props.secondaryCircuitId) {
+              toggleSecondaryCircuit(props.secondaryCircuitId)
             }
           }}
         />

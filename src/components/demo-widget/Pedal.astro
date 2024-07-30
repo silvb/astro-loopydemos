@@ -100,6 +100,7 @@ const enclosureHeight =
           offOverride,
           dependency,
           isBlinking,
+          secondaryCircuitId,
         }) => (
           <AbsolutePosition {id} {...position}>
             <Led
@@ -113,6 +114,7 @@ const enclosureHeight =
               {offOverride}
               {dependency}
               {isBlinking}
+              {secondaryCircuitId}
               pedalId={name}
             />
           </AbsolutePosition>

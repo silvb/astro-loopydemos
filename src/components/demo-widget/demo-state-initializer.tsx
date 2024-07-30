@@ -11,16 +11,14 @@ interface DemoStateInitializerProps {
 export const DemoStateInitializer: Component<DemoStateInitializerProps> = (
   props
 ) => {
-  const { selectPreset, setPresets, setPedalsOn, setMainPedal, setDemoType } =
-    demoState
+  const { setPresets, setPedalsOn, setMainPedal, setDemoType } = demoState
   onMount(() => {
     setTimeout(() => {
-      selectPreset(props.presets[0].id)
+      setMainPedal(props.demoType === "single" ? props.pedals[0] : "")
       setPresets(props.presets)
       setPedalsOn(props.pedals)
       setDemoType(props.demoType)
-      setMainPedal(props.demoType === "single" ? props.pedals[0] : "")
-    }, 0)
+    }, 200)
   })
 
   return null
