@@ -1,6 +1,6 @@
 import type { CBASwitchSate, SwitchState, Switch as SwitchType } from "@types"
 import { ToggleSwitch } from "./toggle-switch"
-import { Match, Switch as RenderSwitch, type Component } from "solid-js"
+import { Match, Switch as RenderSwitch, Show, type Component } from "solid-js"
 import { demoState } from "@components/demo-widget/demo-state-store"
 import { ThreewaySwitch } from "./threeway-switch"
 import { RockerSwitch } from "./rocker-switch"
@@ -25,7 +25,8 @@ interface SwitchProps
 }
 
 export const Switch: Component<SwitchProps> = (props) => {
-  const { getSetting, toggleBypass, toggleSecondaryCircuit } = demoState
+  const { getSetting, toggleBypass, toggleSecondaryCircuit, activePreset } =
+    demoState
 
   const state = () => (getSetting(props.id, props.pedalId) ?? 1) as SwitchState
 
@@ -68,21 +69,28 @@ export const Switch: Component<SwitchProps> = (props) => {
         <CBADipSwitches state={state() as unknown as CBASwitchSate} />
       </Match>
       <Match when={props.type === "stomp"}>
-        <StompSwitch
-          id={props.id}
-          isDark={props.variant === "dark"}
-          isMomentary={props.isMomentary}
-          size={props.size}
-          aria-label="pedal bypass switch"
-          onClick={() => {
-            if (props.id === "bypass_switch") {
-              toggleBypass(props.pedalId)
-            }
-            if (props.secondaryCircuitId) {
-              toggleSecondaryCircuit(props.secondaryCircuitId)
-            }
-          }}
-        />
+        <Show
+          when={
+            !props.secondaryCircuitId ||
+            props.secondaryCircuitId === activePreset()?.secondaryCircuitId
+          }
+        >
+          <StompSwitch
+            id={props.id}
+            isDark={props.variant === "dark"}
+            isMomentary={props.isMomentary}
+            size={props.size}
+            aria-label="pedal bypass switch"
+            onClick={() => {
+              if (props.id === "bypass_switch") {
+                toggleBypass(props.pedalId)
+              }
+              if (props.secondaryCircuitId) {
+                toggleSecondaryCircuit(props.secondaryCircuitId)
+              }
+            }}
+          />
+        </Show>
       </Match>
     </RenderSwitch>
   )

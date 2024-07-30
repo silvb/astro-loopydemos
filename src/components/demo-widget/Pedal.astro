@@ -101,6 +101,7 @@ const enclosureHeight =
           dependency,
           isBlinking,
           secondaryCircuitId,
+          isOnIndicator,
         }) => (
           <AbsolutePosition {id} {...position}>
             <Led
@@ -115,6 +116,7 @@ const enclosureHeight =
               {dependency}
               {isBlinking}
               {secondaryCircuitId}
+              {isOnIndicator}
               pedalId={name}
             />
           </AbsolutePosition>
