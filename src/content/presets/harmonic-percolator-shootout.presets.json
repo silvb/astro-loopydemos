@@ -4,109 +4,125 @@
       "id": "low_gain",
       "label": "Low Gain",
       "noLabels": true,
-      "vaderin-pedals-hp-x": {
-        "id": "hpx_low",
-        "settings": {
-          "input": 3,
-          "output": 7,
-          "mode": 2
+      "comparison": [
+        {
+          "id": "hpx_low",
+          "pedalSlug": "vaderin-pedals-hp-x",
+          "settings": {
+            "input": 3,
+            "output": 7,
+            "mode": 2
+          }
+        },
+        {
+          "id": "hp2_low",
+          "pedalSlug": "land-devices-hp-2",
+          "settings": {
+            "harmonics": 7,
+            "balance": 7,
+            "mode": 2
+          }
+        },
+        {
+          "id": "freqhd_low",
+          "pedalSlug": "freqscene-effects-co-harmonic-distorter",
+          "settings": {
+            "harmonics": 4,
+            "balance": 5
+          }
+        },
+        {
+          "id": "divvy_low",
+          "pedalSlug": "champion-leccy-the-divvy-v3",
+          "settings": {
+            "level": 6.5,
+            "gain": 5,
+            "voice": 2
+          }
+        },
+        {
+          "id": "hurts_low",
+          "pedalSlug": "latent-lemon-audio-hurts",
+          "settings": {
+            "harmonics": 5,
+            "sputter": 2,
+            "balance": 6,
+            "deep": 3,
+            "mode": 2
+          }
+        },
+        {
+          "id": "sock_low",
+          "pedalSlug": "dirty-sock-harmonic-percolator",
+          "settings": {
+            "bal": 6,
+            "harm": 3.5,
+            "mode": 2
+          }
         }
-      },
-      "land-devices-hp-2": {
-        "id": "hp2_low",
-        "settings": {
-          "harmonics": 7,
-          "balance": 7,
-          "mode": 2
-        }
-      },
-      "freqscene-effects-co-harmonic-distorter": {
-        "id": "freqhd_low",
-        "settings": {
-          "harmonics": 4,
-          "balance": 5
-        }
-      },
-      "champion-leccy-the-divvy-v3": {
-        "id": "divvy_low",
-        "settings": {
-          "level": 6.5,
-          "gain": 5,
-          "voice": 2
-        }
-      },
-      "latent-lemon-audio-hurts": {
-        "id": "hurts_low",
-        "settings": {
-          "harmonics": 5,
-          "sputter": 2,
-          "balance": 6,
-          "deep": 3,
-          "mode": 2
-        }
-      },
-      "dirty-sock-harmonic-percolator": {
-        "id": "sock_low",
-        "settings": {
-          "bal": 6,
-          "harm": 3.5,
-          "mode": 2
-        }
-      }
+      ]
     },
     {
       "id": "high_gain",
       "label": "High Gain",
       "noLabels": true,
-      "vaderin-pedals-hp-x": {
-        "id": "hpx_high",
-        "settings": {
-          "input": 7,
-          "output": 8.5,
-          "mode": 3
+      "comparison": [
+        {
+          "id": "hpx_high",
+          "pedalSlug": "vaderin-pedals-hp-x",
+          "settings": {
+            "input": 7,
+            "output": 8.5,
+            "mode": 3
+          }
+        },
+        {
+          "id": "hp2_high",
+          "pedalSlug": "land-devices-hp-2",
+          "settings": {
+            "harmonics": 10,
+            "balance": 10,
+            "mode": 1
+          }
+        },
+        {
+          "id": "freqhd_high",
+          "pedalSlug": "freqscene-effects-co-harmonic-distorter",
+          "settings": {
+            "harmonics": 8.5,
+            "balance": 3
+          }
+        },
+        {
+          "id": "divvy_high",
+          "pedalSlug": "champion-leccy-the-divvy-v3",
+          "settings": {
+            "level": 6,
+            "gain": 9,
+            "voice": 3
+          }
+        },
+        {
+          "id": "hurts_high",
+          "pedalSlug": "latent-lemon-audio-hurts",
+          "settings": {
+            "harmonics": 9,
+            "sputter": 2,
+            "balance": 10,
+            "deep": 3,
+            "mode": 1
+          }
+        },
+        {
+          "id": "sock_high",
+          "pedalSlug": "dirty-sock-harmonic-percolator",
+          "settings": {
+            "bal": 8.5,
+            "harm": 8,
+            "mode": 1
+          }
         }
-      },
-      "land-devices-hp-2": {
-        "id": "hp2_high",
-        "settings": {
-          "harmonics": 10,
-          "balance": 10,
-          "mode": 1
-        }
-      },
-      "freqscene-effects-co-harmonic-distorter": {
-        "id": "freqhd_high",
-        "settings": {
-          "harmonics": 8.5,
-          "balance": 3
-        }
-      },
-      "champion-leccy-the-divvy-v3": {
-        "id": "divvy_high",
-        "settings": {
-          "level": 6,
-          "gain": 9,
-          "voice": 3
-        }
-      },
-      "latent-lemon-audio-hurts": {
-        "id": "hurts_high",
-        "settings": {
-          "harmonics": 9,
-          "sputter": 2,
-          "balance": 10,
-          "deep": 3,
-          "mode": 1
-        }
-      },
-      "dirty-sock-harmonic-percolator": {
-        "id": "sock_high",
-        "settings": {
-          "bal": 8.5,
-          "harm": 8,
-          "mode": 1
-        }
-      }
+      ]
     }
   ]
 }

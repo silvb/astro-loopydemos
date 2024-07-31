@@ -3,197 +3,221 @@
     {
       "id": "sweet_spot",
       "label": "Sweet Spot",
-      "ehx-big-muff-nyc": {
-        "id": "ehx_big_muff_sweet_spot",
-        "settings": {
-          "volume": 7,
-          "tone": 7,
-          "sustain": 7
+      "comparison": [
+        {
+          "id": "ehx_big_muff_sweet_spot",
+          "pedalSlug": "ehx-big-muff-nyc",
+          "settings": {
+            "volume": 7,
+            "tone": 7,
+            "sustain": 7
+          }
+        },
+        {
+          "id": "warlow_sweet_spot",
+          "pedalSlug": "jptr-fx-warlow",
+          "settings": {
+            "volume": 3,
+            "tone": 3,
+            "sustain": 10
+          }
+        },
+        {
+          "id": "black_math_sweet_spot",
+          "pedalSlug": "mask-audio-electronics-black-math",
+          "settings": {
+            "loud": 5,
+            "tone": 6,
+            "gain": 7,
+            "boost": 8,
+            "mode": 1
+          }
+        },
+        {
+          "id": "stinger_fuzz_sweet_spot",
+          "pedalSlug": "tl-pedals-stinger-fuzz",
+          "settings": {
+            "sustain": 8,
+            "volume": 7,
+            "mids": 2,
+            "tone": 6
+          }
+        },
+        {
+          "id": "animalizzer_sweet_spot",
+          "pedalSlug": "tone-electronix-animalizzer",
+          "settings": {
+            "bass": 2,
+            "mid": 1,
+            "treble": 8,
+            "volume": 7,
+            "depth": 5,
+            "fuzz": 7,
+            "pre_gain": 8,
+            "stage_i": 3,
+            "stage_ii": 4
+          }
+        },
+        {
+          "id": "first_herald_sweet_spot",
+          "pedalSlug": "black-mass-electronics-the-first-herald",
+          "settings": {
+            "volume": 5,
+            "tone": 5,
+            "scoop": 5,
+            "sustain": 7,
+            "clip": 1,
+            "boost": 10,
+            "boost_led": true,
+            "order_label": "boost into fuzz"
+          }
         }
-      },
-      "jptr-fx-warlow": {
-        "id": "warlow_sweet_spot",
-        "settings": {
-          "volume": 3,
-          "tone": 3,
-          "sustain": 10
-        }
-      },
-      "mask-audio-electronics-black-math": {
-        "id": "black_math_sweet_spot",
-        "settings": {
-          "loud": 5,
-          "tone": 6,
-          "gain": 7,
-          "boost": 8,
-          "mode": 1
-        }
-      },
-      "tl-pedals-stinger-fuzz": {
-        "id": "stinger_fuzz_sweet_spot",
-        "settings": {
-          "sustain": 8,
-          "volume": 7,
-          "mids": 2,
-          "tone": 6
-        }
-      },
-      "tone-electronix-animalizzer": {
-        "id": "animalizzer_sweet_spot",
-        "settings": {
-          "bass": 2,
-          "mid": 1,
-          "treble": 8,
-          "volume": 7,
-          "depth": 5,
-          "fuzz": 7,
-          "pre_gain": 8,
-          "stage_i": 3,
-          "stage_ii": 4
-        }
-      },
-      "black-mass-electronics-the-first-herald": {
-        "id": "first_herald_sweet_spot",
-        "settings": {
-          "volume": 5,
-          "tone": 5,
-          "scoop": 5,
-          "sustain": 7,
-          "clip": 1,
-          "boost": 10,
-          "boost_led": true,
-          "order_label": "boost into fuzz"
-        }
-      }
+      ]
     },
     {
       "id": "low_gain",
       "label": "Low Gain",
-      "ehx-big-muff-nyc": {
-        "id": "ehx_big_muff_low_gain",
-        "settings": {
-          "volume": 7,
-          "tone": 7,
-          "sustain": 1
+      "comparison": [
+        {
+          "id": "ehx_big_muff_low_gain",
+          "pedalSlug": "ehx-big-muff-nyc",
+          "settings": {
+            "volume": 7,
+            "tone": 7,
+            "sustain": 1
+          }
+        },
+        {
+          "id": "warlow_low_gain",
+          "pedalSlug": "jptr-fx-warlow",
+          "settings": {
+            "volume": 6,
+            "tone": 4,
+            "sustain": 0
+          }
+        },
+        {
+          "id": "black_math_low_gain",
+          "pedalSlug": "mask-audio-electronics-black-math",
+          "settings": {
+            "loud": 5,
+            "tone": 5,
+            "gain": 0,
+            "boost": 5,
+            "mode": 1
+          }
+        },
+        {
+          "id": "stinger_fuzz_low_gain",
+          "pedalSlug": "tl-pedals-stinger-fuzz",
+          "settings": {
+            "sustain": 1,
+            "volume": 6,
+            "mids": 8,
+            "tone": 5
+          }
+        },
+        {
+          "id": "animalizzer_low_gain",
+          "pedalSlug": "tone-electronix-animalizzer",
+          "settings": {
+            "bass": 0,
+            "mid": 10,
+            "treble": 10,
+            "volume": 7,
+            "depth": 4,
+            "fuzz": 5,
+            "pre_gain": 2,
+            "stage_i": 2,
+            "stage_ii": 2
+          }
+        },
+        {
+          "id": "first_herald_low_gain",
+          "pedalSlug": "black-mass-electronics-the-first-herald",
+          "settings": {
+            "volume": 5,
+            "tone": 6,
+            "scoop": 7,
+            "sustain": 2,
+            "clip": 2
+          }
         }
-      },
-      "jptr-fx-warlow": {
-        "id": "warlow_low_gain",
-        "settings": {
-          "volume": 6,
-          "tone": 4,
-          "sustain": 0
-        }
-      },
-      "mask-audio-electronics-black-math": {
-        "id": "black_math_low_gain",
-        "settings": {
-          "loud": 5,
-          "tone": 5,
-          "gain": 0,
-          "boost": 5,
-          "mode": 1
-        }
-      },
-      "tl-pedals-stinger-fuzz": {
-        "id": "stinger_fuzz_low_gain",
-        "settings": {
-          "sustain": 1,
-          "volume": 6,
-          "mids": 8,
-          "tone": 5
-        }
-      },
-      "tone-electronix-animalizzer": {
-        "id": "animalizzer_low_gain",
-        "settings": {
-          "bass": 0,
-          "mid": 10,
-          "treble": 10,
-          "volume": 7,
-          "depth": 4,
-          "fuzz": 5,
-          "pre_gain": 2,
-          "stage_i": 2,
-          "stage_ii": 2
-        }
-      },
-      "black-mass-electronics-the-first-herald": {
-        "id": "first_herald_low_gain",
-        "settings": {
-          "volume": 5,
-          "tone": 6,
-          "scoop": 7,
-          "sustain": 2,
-          "clip": 2
-        }
-      }
+      ]
     },
     {
       "id": "weird",
       "label": "Weird",
-      "ehx-big-muff-nyc": {
-        "id": "ehx_big_muff_weird",
-        "settings": {
-          "volume": 7,
-          "tone": 4,
-          "sustain": 10
+      "comparison": [
+        {
+          "id": "ehx_big_muff_weird",
+          "pedalSlug": "ehx-big-muff-nyc",
+          "settings": {
+            "volume": 7,
+            "tone": 4,
+            "sustain": 10
+          }
+        },
+        {
+          "id": "warlow_weird",
+          "pedalSlug": "jptr-fx-warlow",
+          "settings": {
+            "volume": 3,
+            "tone": 5,
+            "sustain": 5
+          }
+        },
+        {
+          "id": "black_math_weird",
+          "pedalSlug": "mask-audio-electronics-black-math",
+          "settings": {
+            "loud": 3,
+            "tone": 3,
+            "gain": 10,
+            "boost": 5,
+            "mode": 3
+          }
+        },
+        {
+          "id": "stinger_fuzz_weird",
+          "pedalSlug": "tl-pedals-stinger-fuzz",
+          "settings": {
+            "sustain": 10,
+            "volume": 6,
+            "mids": 10,
+            "tone": 6
+          }
+        },
+        {
+          "id": "animalizzer_weird",
+          "pedalSlug": "tone-electronix-animalizzer",
+          "settings": {
+            "bass": 4,
+            "mid": 2,
+            "treble": 10,
+            "volume": 3,
+            "depth": 10,
+            "fuzz": 10,
+            "pre_gain": 10,
+            "stage_i": 1,
+            "stage_ii": 1
+          }
+        },
+        {
+          "id": "first_herald_weird",
+          "pedalSlug": "black-mass-electronics-the-first-herald",
+          "settings": {
+            "volume": 10,
+            "tone": 5,
+            "scoop": 8,
+            "sustain": 10,
+            "clip": 2,
+            "boost": 2,
+            "boost_led": true,
+            "order_label": "fuzz into boost"
+          }
         }
-      },
-      "jptr-fx-warlow": {
-        "id": "warlow_weird",
-        "settings": {
-          "volume": 3,
-          "tone": 5,
-          "sustain": 5
-        }
-      },
-      "mask-audio-electronics-black-math": {
-        "id": "black_math_weird",
-        "settings": {
-          "loud": 3,
-          "tone": 3,
-          "gain": 10,
-          "boost": 5,
-          "mode": 3
-        }
-      },
-      "tl-pedals-stinger-fuzz": {
-        "id": "stinger_fuzz_weird",
-        "settings": {
-          "sustain": 10,
-          "volume": 6,
-          "mids": 10,
-          "tone": 6
-        }
-      },
-      "tone-electronix-animalizzer": {
-        "id": "animalizzer_weird",
-        "settings": {
-          "bass": 4,
-          "mid": 2,
-          "treble": 10,
-          "volume": 3,
-          "depth": 10,
-          "fuzz": 10,
-          "pre_gain": 10,
-          "stage_i": 1,
-          "stage_ii": 1
-        }
-      },
-      "black-mass-electronics-the-first-herald": {
-        "id": "first_herald_weird",
-        "settings": {
-          "volume": 10,
-          "tone": 5,
-          "scoop": 8,
-          "sustain": 10,
-          "clip": 2,
-          "boost": 2,
-          "boost_led": true,
-          "order_label": "fuzz into boost"
-        }
-      }
+      ]
     }
   ]
 }

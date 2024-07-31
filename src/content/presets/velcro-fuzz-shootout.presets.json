@@ -4,213 +4,245 @@
       "id": "velcro",
       "label": "Velcro Fuzz",
       "noLabels": true,
-      "smallsound-bigsound-mini": {
-        "id": "mini_velcro",
-        "settings": {
-          "gain": 10,
-          "bass": 8,
-          "treble": 6,
-          "bias": 1,
-          "volume": 5
+      "comparison": [
+        {
+          "id": "mini_velcro",
+          "pedalSlug": "smallsound-bigsound-mini",
+          "settings": {
+            "gain": 10,
+            "bass": 8,
+            "treble": 6,
+            "bias": 1,
+            "volume": 5
+          }
+        },
+        {
+          "id": "blackmath_velcro",
+          "pedalSlug": "mask-audio-electronics-black-math",
+          "settings": {
+            "loud": 8,
+            "tone": 7,
+            "gain": 8,
+            "boost": 9,
+            "mode": 1
+          }
+        },
+        {
+          "id": "colossus_velcro",
+          "pedalSlug": "vaderin-pedals-colossus",
+          "settings": { "bass": 0, "top": 5, "fuzz": 8, "vol": 5 }
+        },
+        {
+          "id": "fuzzbender_velcro",
+          "pedalSlug": "keeley-electronics-fuzz-bender",
+          "settings": {
+            "level": 5,
+            "bass": 7,
+            "bias": 10,
+            "treble": 5,
+            "fuzz": 8
+          }
+        },
+        {
+          "id": "fuzzfactory_velcro",
+          "pedalSlug": "zvex-effects-fuzz-factory",
+          "settings": {
+            "vol": 4,
+            "gate": 6,
+            "comp": 6.5,
+            "drive": 10,
+            "stab": 4
+          }
+        },
+        {
+          "id": "mastotron_velcro",
+          "pedalSlug": "zvex-effects-mastotron",
+          "settings": {
+            "vol": 10,
+            "tone": 7,
+            "pw": 5,
+            "fuzz": 10,
+            "relax_push": 5,
+            "subs": 3
+          }
+        },
+        {
+          "id": "fuzzlands_velcro",
+          "pedalSlug": "wonderful-audio-technology-fuzz-lands",
+          "settings": {
+            "volume": 6,
+            "fuzz": 8,
+            "roots": 1,
+            "earth": 1,
+            "nature": 1
+          }
+        },
+        {
+          "id": "shuksan_velcro",
+          "pedalSlug": "spun-loud-shuksan-fuzz",
+          "settings": { "vol": 6, "sustain": 2, "input": 8 }
+        },
+        {
+          "id": "unpleasantsurprise_velcro",
+          "pedalSlug": "fairfield-circuitry-unpleasant-surprise",
+          "settings": {
+            "volume": 7,
+            "onset": 3,
+            "t": 1,
+            "g": 1,
+            "c": 3
+          }
+        },
+        {
+          "id": "eons_velcro",
+          "pedalSlug": "walrus-audio-eons",
+          "settings": {
+            "vol": 8,
+            "bias": 0,
+            "gain": 8,
+            "bass": 6,
+            "mode": 1,
+            "treb": 5
+          }
+        },
+        {
+          "id": "alphahaunt_velcro",
+          "pedalSlug": "old-blood-noise-endeavors-alpha-haunt",
+          "settings": {
+            "fuzz": 8,
+            "tone": 5,
+            "gate": 7,
+            "fuzz_vol": 10,
+            "master": 7,
+            "enhance": 6,
+            "bias": 1,
+            "distortion": 1,
+            "lpf": 2,
+            "low": 4,
+            "mid": 7,
+            "high": 6
+          }
         }
-      },
-      "mask-audio-electronics-black-math": {
-        "id": "blackmath_velcro",
-        "settings": {
-          "loud": 8,
-          "tone": 7,
-          "gain": 8,
-          "boost": 9,
-          "mode": 1
-        }
-      },
-      "vaderin-pedals-colossus": {
-        "id": "colossus_velcro",
-        "settings": { "bass": 0, "top": 5, "fuzz": 8, "vol": 5 }
-      },
-      "keeley-electronics-fuzz-bender": {
-        "id": "fuzzbender_velcro",
-        "settings": {
-          "level": 5,
-          "bass": 7,
-          "bias": 10,
-          "treble": 5,
-          "fuzz": 8
-        }
-      },
-      "zvex-effects-fuzz-factory": {
-        "id": "fuzzfactory_velcro",
-        "settings": { "vol": 4, "gate": 6, "comp": 6.5, "drive": 10, "stab": 4 }
-      },
-      "zvex-effects-mastotron": {
-        "id": "mastotron_velcro",
-        "settings": {
-          "vol": 10,
-          "tone": 7,
-          "pw": 5,
-          "fuzz": 10,
-          "relax_push": 5,
-          "subs": 3
-        }
-      },
-      "wonderful-audio-technology-fuzz-lands": {
-        "id": "fuzzlands_velcro",
-        "settings": {
-          "volume": 6,
-          "fuzz": 8,
-          "roots": 1,
-          "earth": 1,
-          "nature": 1
-        }
-      },
-      "spun-loud-shuksan-fuzz": {
-        "id": "shuksan_velcro",
-        "settings": { "vol": 6, "sustain": 2, "input": 8 }
-      },
-      "fairfield-circuitry-unpleasant-surprise": {
-        "id": "unpleasantsurprise_velcro",
-        "settings": {
-          "volume": 7,
-          "onset": 3,
-          "t": 1,
-          "g": 1,
-          "c": 3
-        }
-      },
-      "walrus-audio-eons": {
-        "id": "eons_velcro",
-        "settings": {
-          "vol": 8,
-          "bias": 0,
-          "gain": 8,
-          "bass": 6,
-          "mode": 1,
-          "treb": 5
-        }
-      },
-      "old-blood-noise-endeavors-alpha-haunt": {
-        "id": "alphahaunt_velcro",
-        "settings": {
-          "fuzz": 8,
-          "tone": 5,
-          "gate": 7,
-          "fuzz_vol": 10,
-          "master": 7,
-          "enhance": 6,
-          "bias": 1,
-          "distortion": 1,
-          "lpf": 2,
-          "low": 4,
-          "mid": 7,
-          "high": 6
-        }
-      }
+      ]
     },
     {
       "id": "alternative",
       "label": "Alternative Sound",
       "noLabels": true,
-      "smallsound-bigsound-mini": {
-        "id": "mini_alt",
-        "settings": {
-          "gain": 7,
-          "bass": 5,
-          "treble": 5,
-          "bias": 5,
-          "volume": 6
+      "comparison": [
+        {
+          "id": "mini_alt",
+          "pedalSlug": "smallsound-bigsound-mini",
+          "settings": {
+            "gain": 7,
+            "bass": 5,
+            "treble": 5,
+            "bias": 5,
+            "volume": 6
+          }
+        },
+        {
+          "id": "blackmath_alt",
+          "pedalSlug": "mask-audio-electronics-black-math",
+          "settings": {
+            "loud": 8,
+            "tone": 7.5,
+            "gain": 10,
+            "boost": 5,
+            "mode": 1
+          }
+        },
+        {
+          "id": "colossus_alt",
+          "pedalSlug": "vaderin-pedals-colossus",
+          "settings": { "bass": 8, "top": 5, "fuzz": 5, "vol": 5 }
+        },
+        {
+          "id": "fuzzbender_alt",
+          "pedalSlug": "keeley-electronics-fuzz-bender",
+          "settings": {
+            "level": 5,
+            "bass": 4,
+            "bias": 4,
+            "treble": 8,
+            "fuzz": 8
+          }
+        },
+        {
+          "id": "fuzzfactory_alt",
+          "pedalSlug": "zvex-effects-fuzz-factory",
+          "settings": { "vol": 4, "gate": 2, "comp": 7, "drive": 10, "stab": 3 }
+        },
+        {
+          "id": "mastotron_alt",
+          "pedalSlug": "zvex-effects-mastotron",
+          "settings": {
+            "vol": 10,
+            "tone": 6,
+            "pw": 2,
+            "fuzz": 6.5,
+            "relax_push": 10,
+            "subs": 1
+          }
+        },
+        {
+          "id": "fuzzlands_alt",
+          "pedalSlug": "wonderful-audio-technology-fuzz-lands",
+          "settings": {
+            "volume": 6,
+            "fuzz": 10,
+            "roots": 3,
+            "earth": 3,
+            "nature": 3
+          }
+        },
+        {
+          "id": "shuksan_alt",
+          "pedalSlug": "spun-loud-shuksan-fuzz",
+          "settings": { "vol": 6, "sustain": 10, "input": 7 }
+        },
+        {
+          "id": "unpleasantsurprise_alt",
+          "pedalSlug": "fairfield-circuitry-unpleasant-surprise",
+          "settings": {
+            "volume": 8,
+            "onset": 10,
+            "t": 3,
+            "g": 3,
+            "c": 3
+          }
+        },
+        {
+          "id": "eons_alt",
+          "pedalSlug": "walrus-audio-eons",
+          "settings": {
+            "vol": 8,
+            "bias": 2,
+            "gain": 8,
+            "bass": 4,
+            "mode": 3,
+            "treb": 6
+          }
+        },
+        {
+          "id": "alphahaunt_alt",
+          "pedalSlug": "old-blood-noise-endeavors-alpha-haunt",
+          "settings": {
+            "fuzz": 5,
+            "tone": 6,
+            "gate": 4,
+            "fuzz_vol": 10,
+            "master": 7,
+            "enhance": 6,
+            "bias": 3,
+            "distortion": 1,
+            "lpf": 1,
+            "low": 6,
+            "mid": 4,
+            "high": 10
+          }
         }
-      },
-      "mask-audio-electronics-black-math": {
-        "id": "blackmath_alt",
-        "settings": {
-          "loud": 8,
-          "tone": 7.5,
-          "gain": 10,
-          "boost": 5,
-          "mode": 1
-        }
-      },
-      "vaderin-pedals-colossus": {
-        "id": "colossus_alt",
-        "settings": { "bass": 8, "top": 5, "fuzz": 5, "vol": 5 }
-      },
-      "keeley-electronics-fuzz-bender": {
-        "id": "fuzzbender_alt",
-        "settings": {
-          "level": 5,
-          "bass": 4,
-          "bias": 4,
-          "treble": 8,
-          "fuzz": 8
-        }
-      },
-      "zvex-effects-fuzz-factory": {
-        "id": "fuzzfactory_alt",
-        "settings": { "vol": 4, "gate": 2, "comp": 7, "drive": 10, "stab": 3 }
-      },
-      "zvex-effects-mastotron": {
-        "id": "mastotron_alt",
-        "settings": {
-          "vol": 10,
-          "tone": 6,
-          "pw": 2,
-          "fuzz": 6.5,
-          "relax_push": 10,
-          "subs": 1
-        }
-      },
-      "wonderful-audio-technology-fuzz-lands": {
-        "id": "fuzzlands_alt",
-        "settings": {
-          "volume": 6,
-          "fuzz": 10,
-          "roots": 3,
-          "earth": 3,
-          "nature": 3
-        }
-      },
-      "spun-loud-shuksan-fuzz": {
-        "id": "shuksan_alt",
-        "settings": { "vol": 6, "sustain": 10, "input": 7 }
-      },
-      "fairfield-circuitry-unpleasant-surprise": {
-        "id": "unpleasantsurprise_alt",
-        "settings": {
-          "volume": 8,
-          "onset": 10,
-          "t": 3,
-          "g": 3,
-          "c": 3
-        }
-      },
-      "walrus-audio-eons": {
-        "id": "eons_alt",
-        "settings": {
-          "vol": 8,
-          "bias": 2,
-          "gain": 8,
-          "bass": 4,
-          "mode": 3,
-          "treb": 6
-        }
-      },
-      "old-blood-noise-endeavors-alpha-haunt": {
-        "id": "alphahaunt_alt",
-        "settings": {
-          "fuzz": 5,
-          "tone": 6,
-          "gate": 4,
-          "fuzz_vol": 10,
-          "master": 7,
-          "enhance": 6,
-          "bias": 3,
-          "distortion": 1,
-          "lpf": 1,
-          "low": 6,
-          "mid": 4,
-          "high": 10
-        }
-      }
+      ]
     }
   ]
 }

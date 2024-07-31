@@ -3,188 +3,209 @@
     {
       "id": "light",
       "label": "Light",
-      "plain-speak-calamity-drive": {
-        "secondaryCircuitSlug": "calamity_light_goosed",
-        "secondaryCircuitOnlySlug": "calamity_goose_2",
-        "secondaryCircuitId": "goose_circuit",
-        "id": "calamity_light",
-        "settings": {
-          "tone": 9,
-          "gain": 2,
-          "voice": 4,
-          "vol": 3,
-          "art": 2,
-          "goose": 2
+      "comparison": [
+        {
+          "id": "calamity_light",
+          "pedalSlug": "plain-speak-calamity-drive",
+          "secondaryCircuitSlug": "calamity_light_goosed",
+          "secondaryCircuitOnlySlug": "calamity_goose_2",
+          "secondaryCircuitId": "goose_circuit",
+          "settings": {
+            "tone": 9,
+            "gain": 2,
+            "voice": 4,
+            "vol": 3,
+            "art": 2,
+            "goose": 2
+          }
+        },
+        {
+          "id": "blackbox_light",
+          "pedalSlug": "snouse-electric-company-blackbox-overdrive-2",
+          "settings": {
+            "gain": 3,
+            "volume": 6.5,
+            "tone": 9,
+            "preamp": 5,
+            "presence": 7
+          }
+        },
+        {
+          "id": "konstante_light",
+          "pedalSlug": "twilight-pulse-audioworks-konstante",
+          "secondaryCircuitSlug": "konstante_light_pre",
+          "secondaryCircuitOnlySlug": "konstante_pre_5",
+          "secondaryCircuitId": "pre_circuit",
+          "settings": {
+            "loud": 6,
+            "gain": 5,
+            "freq": 5,
+            "pre": 5,
+            "ord": 3
+          }
+        },
+        {
+          "id": "sickas_light",
+          "pedalSlug": "bondi-effects-sick-as-mkiii",
+          "settings": {
+            "gain": 3.5,
+            "bass": 5,
+            "treble": 7,
+            "level": 5,
+            "headroom": 3
+          }
+        },
+        {
+          "id": "aquatone_light",
+          "pedalSlug": "electric-love-aquatone",
+          "settings": {
+            "gain": 3,
+            "volume": 6,
+            "bass": 4,
+            "mids": 4,
+            "treble": 7,
+            "mode": 3
+          }
         }
-      },
-      "snouse-electric-company-blackbox-overdrive-2": {
-        "id": "blackbox_light",
-        "settings": {
-          "gain": 3,
-          "volume": 6.5,
-          "tone": 9,
-          "preamp": 5,
-          "presence": 7
-        }
-      },
-      "twilight-pulse-audioworks-konstante": {
-        "secondaryCircuitSlug": "konstante_light_pre",
-        "secondaryCircuitOnlySlug": "konstante_pre_5",
-        "secondaryCircuitId": "pre_circuit",
-        "id": "konstante_light",
-        "settings": {
-          "loud": 6,
-          "gain": 5,
-          "freq": 5,
-          "pre": 5,
-          "ord": 3
-        }
-      },
-      "bondi-effects-sick-as-mkiii": {
-        "id": "sickas_light",
-        "settings": {
-          "gain": 3.5,
-          "bass": 5,
-          "treble": 7,
-          "level": 5,
-          "headroom": 3
-        }
-      },
-      "electric-love-aquatone": {
-        "id": "aquatone_light",
-        "settings": {
-          "gain": 3,
-          "volume": 6,
-          "bass": 4,
-          "mids": 4,
-          "treble": 7,
-          "mode": 3
-        }
-      }
+      ]
     },
     {
       "id": "medium",
       "label": "Medium",
-      "plain-speak-calamity-drive": {
-        "secondaryCircuitSlug": "calamity_medium_goosed",
-        "secondaryCircuitOnlySlug": "calamity_goose_2",
-        "secondaryCircuitId": "goose_circuit",
-        "id": "calamity_medium",
-        "settings": {
-          "tone": 9,
-          "gain": 6,
-          "voice": 6,
-          "vol": 2,
-          "art": 3,
-          "goose": 2
+      "comparison": [
+        {
+          "id": "calamity_medium",
+          "pedalSlug": "plain-speak-calamity-drive",
+          "secondaryCircuitSlug": "calamity_medium_goosed",
+          "secondaryCircuitOnlySlug": "calamity_goose_2",
+          "secondaryCircuitId": "goose_circuit",
+          "settings": {
+            "tone": 9,
+            "gain": 6,
+            "voice": 6,
+            "vol": 2,
+            "art": 3,
+            "goose": 2
+          }
+        },
+        {
+          "id": "blackbox_medium",
+          "pedalSlug": "snouse-electric-company-blackbox-overdrive-2",
+          "settings": {
+            "gain": 5,
+            "volume": 6,
+            "tone": 8,
+            "preamp": 8,
+            "presence": 5
+          }
+        },
+        {
+          "id": "konstante_medium",
+          "pedalSlug": "twilight-pulse-audioworks-konstante",
+          "secondaryCircuitSlug": "konstante_medium_pre",
+          "secondaryCircuitOnlySlug": "konstante_pre_8",
+          "secondaryCircuitId": "pre_circuit",
+          "settings": {
+            "loud": 5,
+            "gain": 8,
+            "freq": 8,
+            "pre": 8,
+            "ord": 3
+          }
+        },
+        {
+          "id": "sickas_medium",
+          "pedalSlug": "bondi-effects-sick-as-mkiii",
+          "settings": {
+            "gain": 7,
+            "bass": 7,
+            "treble": 8,
+            "level": 5,
+            "headroom": 3
+          }
+        },
+        {
+          "id": "aquatone_medium",
+          "pedalSlug": "electric-love-aquatone",
+          "settings": {
+            "gain": 5,
+            "volume": 6,
+            "bass": 4,
+            "mids": 5,
+            "treble": 6,
+            "mode": 3
+          }
         }
-      },
-      "snouse-electric-company-blackbox-overdrive-2": {
-        "id": "blackbox_medium",
-        "settings": {
-          "gain": 5,
-          "volume": 6,
-          "tone": 8,
-          "preamp": 8,
-          "presence": 5
-        }
-      },
-      "twilight-pulse-audioworks-konstante": {
-        "secondaryCircuitSlug": "konstante_medium_pre",
-        "secondaryCircuitOnlySlug": "konstante_pre_8",
-        "secondaryCircuitId": "pre_circuit",
-        "id": "konstante_medium",
-        "settings": {
-          "loud": 5,
-          "gain": 8,
-          "freq": 8,
-          "pre": 8,
-          "ord": 3
-        }
-      },
-      "bondi-effects-sick-as-mkiii": {
-        "id": "sickas_medium",
-        "settings": {
-          "gain": 7,
-          "bass": 7,
-          "treble": 8,
-          "level": 5,
-          "headroom": 3
-        }
-      },
-      "electric-love-aquatone": {
-        "id": "aquatone_medium",
-        "settings": {
-          "gain": 5,
-          "volume": 6,
-          "bass": 4,
-          "mids": 5,
-          "treble": 6,
-          "mode": 3
-        }
-      }
+      ]
     },
     {
       "id": "hard",
       "label": "Heavy",
-      "plain-speak-calamity-drive": {
-        "secondaryCircuitSlug": "calamity_hard_goosed",
-        "secondaryCircuitOnlySlug": "calamity_goose_7",
-        "secondaryCircuitId": "goose_circuit",
-        "id": "calamity_hard",
-        "settings": {
-          "tone": 8,
-          "gain": 10,
-          "voice": 8,
-          "vol": 3,
-          "art": 2,
-          "goose": 7
+      "comparison": [
+        {
+          "id": "calamity_hard",
+          "pedalSlug": "plain-speak-calamity-drive",
+          "secondaryCircuitSlug": "calamity_hard_goosed",
+          "secondaryCircuitOnlySlug": "calamity_goose_7",
+          "secondaryCircuitId": "goose_circuit",
+          "settings": {
+            "tone": 8,
+            "gain": 10,
+            "voice": 8,
+            "vol": 3,
+            "art": 2,
+            "goose": 7
+          }
+        },
+        {
+          "id": "blackbox_hard",
+          "pedalSlug": "snouse-electric-company-blackbox-overdrive-2",
+          "settings": {
+            "gain": 10,
+            "volume": 5,
+            "tone": 5,
+            "preamp": 10,
+            "presence": 10
+          }
+        },
+        {
+          "id": "konstante_hard",
+          "pedalSlug": "twilight-pulse-audioworks-konstante",
+          "secondaryCircuitSlug": "konstante_hard_pre",
+          "secondaryCircuitOnlySlug": "konstante_pre_10",
+          "secondaryCircuitId": "pre_circuit",
+          "settings": {
+            "loud": 5,
+            "gain": 10,
+            "freq": 10,
+            "pre": 10,
+            "ord": 3
+          }
+        },
+        {
+          "id": "sickas_hard",
+          "pedalSlug": "bondi-effects-sick-as-mkiii",
+          "settings": {
+            "gain": 10,
+            "bass": 5,
+            "treble": 6,
+            "level": 5,
+            "headroom": 3
+          }
+        },
+        {
+          "id": "aquatone_hard",
+          "pedalSlug": "electric-love-aquatone",
+          "settings": {
+            "gain": 10,
+            "volume": 6,
+            "bass": 5,
+            "mids": 8,
+            "treble": 7,
+            "mode": 3
+          }
         }
-      },
-      "snouse-electric-company-blackbox-overdrive-2": {
-        "id": "blackbox_hard",
-        "settings": {
-          "gain": 10,
-          "volume": 5,
-          "tone": 5,
-          "preamp": 10,
-          "presence": 10
-        }
-      },
-      "twilight-pulse-audioworks-konstante": {
-        "secondaryCircuitSlug": "konstante_hard_pre",
-        "secondaryCircuitOnlySlug": "konstante_pre_10",
-        "secondaryCircuitId": "pre_circuit",
-        "id": "konstante_hard",
-        "settings": {
-          "loud": 5,
-          "gain": 10,
-          "freq": 10,
-          "pre": 10,
-          "ord": 3
-        }
-      },
-      "bondi-effects-sick-as-mkiii": {
-        "id": "sickas_hard",
-        "settings": {
-          "gain": 10,
-          "bass": 5,
-          "treble": 6,
-          "level": 5,
-          "headroom": 3
-        }
-      },
-      "electric-love-aquatone": {
-        "id": "aquatone_hard",
-        "settings": {
-          "gain": 10,
-          "volume": 6,
-          "bass": 5,
-          "mids": 8,
-          "treble": 7,
-          "mode": 3
-        }
-      }
+      ]
     }
   ]
 }
