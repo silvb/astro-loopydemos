@@ -9,6 +9,7 @@ interface KnobStateContainerProps {
   size: number
   rotaryAngles?: number[]
   "sweep-indicator"?: JSXElement
+  pedalSlug: string
 }
 
 const containerClass = cva("relative origin-center", {
@@ -28,7 +29,7 @@ export const KnobStateContainer: ParentComponent<KnobStateContainerProps> = (
   const isSweepTarget = () =>
     activePreset()?.isSweep && activePreset()?.target === props.id
 
-  const level = () => (getSetting(props.id) as number) ?? 5
+  const level = () => (getSetting(props.id, props.pedalSlug) as number) ?? 5
 
   return (
     <div

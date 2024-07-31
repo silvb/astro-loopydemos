@@ -63,7 +63,7 @@
       },
       {
         "id": "rate_led",
-        "defaultTime": "800",
+        "defaultTime": 800,
         "size": 48,
         "position": {
           "left": 89,

@@ -5,19 +5,20 @@ import { demoState } from "./demo-state-store"
 interface DemoStateInitializerProps {
   presets: Preset[]
   pedals: string[]
-  demoType: "single" | "comparison"
 }
 
 export const DemoStateInitializer: Component<DemoStateInitializerProps> = (
   props
 ) => {
-  const { setPresets, setPedalsOn, setMainPedal, setDemoType } = demoState
+  const { setPresets, setPedalsOn, setMainPedal } = demoState
+  const isComparison = props.presets.some(({ comparison }) =>
+    Boolean(comparison)
+  )
   onMount(() => {
     setTimeout(() => {
-      setMainPedal(props.demoType === "single" ? props.pedals[0] : "")
+      setMainPedal(isComparison ? "" : props.pedals[0])
       setPresets(props.presets)
       setPedalsOn(props.pedals)
-      setDemoType(props.demoType)
     }, 200)
   })
 

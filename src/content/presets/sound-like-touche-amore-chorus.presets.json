@@ -6,7 +6,7 @@
       "noLabels": true,
       "chain": [
         {
-          "name": "caroline-guitar-company-meteore",
+          "pedalSlug": "caroline-guitar-company-meteore",
           "id": "meteore",
           "settings": {
             "level": 3.5,
@@ -16,7 +16,7 @@
           }
         },
         {
-          "name": "electronic-audio-experiments-limelight-v2",
+          "pedalSlug": "electronic-audio-experiments-limelight-v2",
           "id": "limelight",
           "settings": {
             "volume": 6.5,
@@ -27,7 +27,7 @@
           }
         },
         {
-          "name": "oats-and-molasses-panorama-boost",
+          "pedalSlug": "oats-and-molasses-panorama-boost",
           "id": "oam",
           "settings": { "volume": 6, "gain": 4.5 }
         }

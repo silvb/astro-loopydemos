@@ -6,12 +6,12 @@
       "initialSecondaryCircuits": ["pre_circuit"],
       "chain": [
         {
-          "name": "boss-dm-2w-delay",
+          "pedalSlug": "boss-dm-2w-delay",
           "id": "dm2",
           "settings": { "rate": 6, "echo": 5, "intensity": 8, "mode": 1 }
         },
         {
-          "name": "funny-little-boxes-skeleton-key",
+          "pedalSlug": "funny-little-boxes-skeleton-key",
           "id": "skelkey",
           "settings": {
             "gain": 10,
@@ -20,7 +20,7 @@
           }
         },
         {
-          "name": "twilight-pulse-audioworks-konstante",
+          "pedalSlug": "twilight-pulse-audioworks-konstante",
           "id": "konstante",
           "secondaryCircuitOnlySlug": "pre_only",
           "secondaryCircuitSlug": "konstante_pre",

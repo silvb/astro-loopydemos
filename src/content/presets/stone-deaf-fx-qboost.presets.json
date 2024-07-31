@@ -5,7 +5,7 @@
       "label": "Instant QOTSA",
       "chain": [
         {
-          "name": "catalinbread-sft",
+          "pedalSlug": "catalinbread-sft",
           "id": "sft",
           "settings": {
             "treble": 7,
@@ -16,7 +16,7 @@
           }
         },
         {
-          "name": "stone-deaf-fx-qboost",
+          "pedalSlug": "stone-deaf-fx-qboost",
           "id": "qboost",
           "settings": {
             "preamp": 9,
@@ -32,7 +32,7 @@
       "label": "Mix Cutter",
       "chain": [
         {
-          "name": "smallsound-bigsound-mini",
+          "pedalSlug": "smallsound-bigsound-mini",
           "id": "mini",
           "settings": {
             "gain": 3,
@@ -43,7 +43,7 @@
           }
         },
         {
-          "name": "stone-deaf-fx-qboost",
+          "pedalSlug": "stone-deaf-fx-qboost",
           "id": "qboost",
           "settings": {
             "preamp": 6,
@@ -59,7 +59,7 @@
       "label": "Modern Preamp Sweep",
       "chain": [
         {
-          "name": "catalinbread-sft",
+          "pedalSlug": "catalinbread-sft",
           "id": "sft",
           "settings": {
             "treble": 7,
@@ -70,7 +70,7 @@
           }
         },
         {
-          "name": "stone-deaf-fx-qboost",
+          "pedalSlug": "stone-deaf-fx-qboost",
           "id": "qboost",
           "isSweep": true,
           "target": "preamp",
@@ -103,7 +103,7 @@
       "label": "Freq Boost Sweep",
       "chain": [
         {
-          "name": "smallsound-bigsound-mini",
+          "pedalSlug": "smallsound-bigsound-mini",
           "id": "mini",
           "settings": {
             "gain": 3,
@@ -114,7 +114,7 @@
           }
         },
         {
-          "name": "stone-deaf-fx-qboost",
+          "pedalSlug": "stone-deaf-fx-qboost",
           "id": "qboost",
           "isSweep": true,
           "target": "freq_boost",

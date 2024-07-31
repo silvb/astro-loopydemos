@@ -38,7 +38,7 @@
       "label": "Oh Yeah, it Shoegazes!",
       "chain": [
         {
-          "name": "smallsound-bigsound-mini",
+          "pedalSlug": "smallsound-bigsound-mini",
           "id": "mini",
           "settings": {
             "gain": 6,
@@ -49,7 +49,7 @@
           }
         },
         {
-          "name": "keeley-electronics-realizer-reverberator",
+          "pedalSlug": "keeley-electronics-realizer-reverberator",
           "id": "realizer",
           "settings": {
             "warmth": 5,

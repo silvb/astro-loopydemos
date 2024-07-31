@@ -14,7 +14,7 @@ const DEFAULT_COLORS = {
 }
 
 interface LedProps extends LedType {
-  pedalId: string
+  pedalSlug: string
 }
 
 const containerClass = cva("", {
@@ -41,17 +41,17 @@ export const Led: Component<LedProps> = (props) => {
     if (!props.dependency) return mergedProps.colors
     const dependencyColors = props.dependency?.values?.find(
       ({ sourceValue }) =>
-        sourceValue === getSetting(props.dependency?.source, props.pedalId)
+        sourceValue === getSetting(props.dependency?.source, props.pedalSlug)
     )?.colors
 
     return { ...mergedProps.colors, ...dependencyColors }
   }
 
-  const setting = () => getSetting(props.id, props.pedalId, props.dependency)
+  const setting = () => getSetting(props.id, props.pedalSlug, props.dependency)
 
   const isOn = () =>
     props.id === "on_led" || props.isOnIndicator
-      ? pedalsOn().includes(props.pedalId) && setting() !== false
+      ? pedalsOn().includes(props.pedalSlug) && setting() !== false
       : Boolean(setting()) ||
         (props.secondaryCircuitId &&
           secondaryCircuitsOn().includes(props.secondaryCircuitId)) ||
@@ -60,7 +60,7 @@ export const Led: Component<LedProps> = (props) => {
   const blinkTime = () => (setting() || props.defaultTime) ?? 0
 
   const uniqueOnLedId =
-    props.id === "on_led" ? `${props.id}-${props.pedalId}` : props.id
+    props.id === "on_led" ? `${props.id}-${props.pedalSlug}` : props.id
 
   return (
     <div

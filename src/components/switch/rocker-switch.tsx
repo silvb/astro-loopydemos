@@ -30,7 +30,7 @@ interface RockerSwitchProps
 }
 
 export const RockerSwitch: Component<RockerSwitchProps> = (props) => {
-  const finalProps = mergeProps(
+  const mergedProps = mergeProps(
     {
       size: 64,
       state: 1,
@@ -43,16 +43,16 @@ export const RockerSwitch: Component<RockerSwitchProps> = (props) => {
   const a = 64
   const b = 36
   const width =
-    finalProps.orientation === "horizontal"
-      ? finalProps.size
-      : (finalProps.size / a) * b
+    mergedProps.orientation === "horizontal"
+      ? mergedProps.size
+      : (mergedProps.size / a) * b
   const height =
-    finalProps.orientation === "horizontal"
-      ? (finalProps.size / a) * b
-      : finalProps.size
+    mergedProps.orientation === "horizontal"
+      ? (mergedProps.size / a) * b
+      : mergedProps.size
 
-  const viewboxWidth = finalProps.orientation === "horizontal" ? a : b
-  const viewboxHeight = finalProps.orientation === "horizontal" ? b : a
+  const viewboxWidth = mergedProps.orientation === "horizontal" ? a : b
+  const viewboxHeight = mergedProps.orientation === "horizontal" ? b : a
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
@@ -63,33 +63,42 @@ export const RockerSwitch: Component<RockerSwitchProps> = (props) => {
       <g
         fill="none"
         transform={`rotate(${
-          finalProps.orientation === "horizontal"
+          mergedProps.orientation === "horizontal"
             ? "0 0 0"
             : `90 ${b / 2} ${b / 2}`
         })`}
       >
-        {finalProps.state === 1 ? (
+        {mergedProps.state === 1 ? (
           <>
             <rect
               x="0"
               y="0"
               width={a * 0.4}
               height={b}
-              fill={adjustBrightness(finalProps.colors.primary, 0.9)}
+              fill={
+                mergedProps.colors.primary &&
+                adjustBrightness(mergedProps.colors.primary, 0.9)
+              }
             />
             <rect
               x={a * 0.4}
               y="0"
               width={a * 0.3}
               height={b}
-              fill={adjustBrightness(finalProps.colors.primary, 2)}
+              fill={
+                mergedProps.colors.primary &&
+                adjustBrightness(mergedProps.colors.primary, 2)
+              }
             />
             <rect
               x={a * 0.7}
               y="0"
               width={a * 0.3}
               height={b}
-              fill={adjustBrightness(finalProps.colors.primary, 0.7)}
+              fill={
+                mergedProps.colors.primary &&
+                adjustBrightness(mergedProps.colors.primary, 0.7)
+              }
             />
           </>
         ) : (
@@ -99,21 +108,27 @@ export const RockerSwitch: Component<RockerSwitchProps> = (props) => {
               y="0"
               width={a * 0.3}
               height={b}
-              fill={adjustBrightness(finalProps.colors.primary, 1.5)}
+              fill={
+                mergedProps.colors.primary &&
+                adjustBrightness(mergedProps.colors.primary, 1.5)
+              }
             />
             <rect
               x={a * 0.3}
               y="0"
               width={a * 0.3}
               height={b}
-              fill={adjustBrightness(finalProps.colors.primary, 0.7)}
+              fill={
+                mergedProps.colors.primary &&
+                adjustBrightness(mergedProps.colors.primary, 0.7)
+              }
             />
             <rect
               x={a * 0.6}
               y="0"
               width={a * 0.4}
               height={b}
-              fill={finalProps.colors.primary}
+              fill={mergedProps.colors.primary}
             />
           </>
         )}

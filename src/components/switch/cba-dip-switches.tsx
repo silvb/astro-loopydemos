@@ -17,7 +17,7 @@ const DIMENSIONS = {
 }
 
 export const CBADipSwitches: Component<CBADipSwitchesProps> = (props) => {
-  const finalProps = mergeProps(
+  const mergedProps = mergeProps(
     {
       state: [
         false,
@@ -43,17 +43,17 @@ export const CBADipSwitches: Component<CBADipSwitchesProps> = (props) => {
   )
 
   const dipInlineStyle = {
-    "--width": 6 * finalProps.scale + "px",
-    "--height": 12 * finalProps.scale + "px",
-    "--nippleWidth": 5 * finalProps.scale + "px",
-    "--nippleHeight": 6 * finalProps.scale + "px",
+    "--width": 6 * mergedProps.scale + "px",
+    "--height": 12 * mergedProps.scale + "px",
+    "--nippleWidth": 5 * mergedProps.scale + "px",
+    "--nippleHeight": 6 * mergedProps.scale + "px",
   }
   return (
     <div
       class="box-border flex bg-[#aa232f] px-0.5 py-0"
       style={{
-        width: DIMENSIONS.width * finalProps.scale + "px",
-        height: DIMENSIONS.height * finalProps.scale + "px",
+        width: DIMENSIONS.width * mergedProps.scale + "px",
+        height: DIMENSIONS.height * mergedProps.scale + "px",
       }}
     >
       <div class={dipRowClass}>
@@ -61,7 +61,7 @@ export const CBADipSwitches: Component<CBADipSwitchesProps> = (props) => {
           {(i) => (
             <div
               class={
-                finalProps.state[i]
+                mergedProps.state[i]
                   ? "cba-dip-switch flipped"
                   : "cba-dip-switch"
               }
@@ -78,7 +78,7 @@ export const CBADipSwitches: Component<CBADipSwitchesProps> = (props) => {
           {(i) => (
             <div
               class={
-                finalProps.state[i + 8]
+                mergedProps.state[i + 8]
                   ? "cba-dip-switch flipped"
                   : "cba-dip-switch"
               }

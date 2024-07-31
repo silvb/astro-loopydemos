@@ -7,7 +7,7 @@ interface ThreewaySwitchProps
 }
 
 export const ThreewaySwitch: Component<ThreewaySwitchProps> = (props) => {
-  const finalProps = mergeProps(
+  const mergedProps = mergeProps(
     {
       size: 64,
       state: 1,
@@ -20,18 +20,18 @@ export const ThreewaySwitch: Component<ThreewaySwitchProps> = (props) => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
-      width={finalProps.size}
-      height={finalProps.size}
+      width={mergedProps.size}
+      height={mergedProps.size}
       viewBox="0 0 64 64"
     >
       <g
         fill="none"
-        transform={`rotate(${finalProps.orientation === "vertical" ? -90 : 0} 32 32)`}
+        transform={`rotate(${mergedProps.orientation === "vertical" ? -90 : 0} 32 32)`}
       >
         <rect
           width={64}
           height={32}
-          fill={finalProps.colors?.primary || "black"}
+          fill={mergedProps.colors?.primary || "black"}
           x="0"
           y="16"
           rx="2"
@@ -52,7 +52,7 @@ export const ThreewaySwitch: Component<ThreewaySwitchProps> = (props) => {
           fill="none"
           class="transition-transform duration-100 ease-in"
           style={{
-            transform: `translateX(${{ 1: 0, 2: 24, 3: 48 }[finalProps.state]}%)`,
+            transform: `translateX(${{ 1: 0, 2: 24, 3: 48 }[mergedProps.state]}%)`,
           }}
         >
           <rect

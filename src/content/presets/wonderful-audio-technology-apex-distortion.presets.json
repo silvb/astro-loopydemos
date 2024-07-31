@@ -21,12 +21,12 @@
       "label": "Will it Shoegaze?",
       "chain": [
         {
-          "name": "wonderful-audio-technology-apex-distortion",
+          "pedalSlug": "wonderful-audio-technology-apex-distortion",
           "id": "apex",
           "settings": { "gain": 7 }
         },
         {
-          "name": "walrus-audio-slo",
+          "pedalSlug": "walrus-audio-slo",
           "id": "slo",
           "settings": {
             "mode": 3,

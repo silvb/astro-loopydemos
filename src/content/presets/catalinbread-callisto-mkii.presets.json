@@ -55,7 +55,7 @@
       "label": "Chorus Drive",
       "chain": [
         {
-          "name": "catalinbread-callisto-mkii",
+          "pedalSlug": "catalinbread-callisto-mkii",
           "id": "callisto",
           "settings": {
             "rate": 3,
@@ -65,7 +65,7 @@
           }
         },
         {
-          "name": "smallsound-bigsound-mini",
+          "pedalSlug": "smallsound-bigsound-mini",
           "id": "mini",
           "settings": {
             "gain": 6,

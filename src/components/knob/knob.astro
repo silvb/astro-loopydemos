@@ -22,12 +22,22 @@ import RoundChickenHeadKnob from "./round-chicken-head-knob.astro"
 import { KnobStateContainer } from "./knob-state-container"
 import SweepIndicator from "@components/sweep-indicator.astro"
 
-type Props = Knob
+interface Props extends Knob {
+  pedalSlug: string
+}
 
-const { size, type, colors, id, isRotary, rotaryAngles } = Astro.props
+const { size, type, colors, id, isRotary, rotaryAngles, pedalSlug } =
+  Astro.props
 ---
 
-<KnobStateContainer {id} {isRotary} {rotaryAngles} {size} client:load>
+<KnobStateContainer
+  {id}
+  {isRotary}
+  {rotaryAngles}
+  {size}
+  {pedalSlug}
+  client:load
+>
   {
     {
       arrow: <ArrowKnob {size} />,

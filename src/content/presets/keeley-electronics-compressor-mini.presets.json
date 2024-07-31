@@ -6,7 +6,7 @@
       "noLabels": true,
       "chain": [
         {
-          "name": "walrus-audio-polychrome",
+          "pedalSlug": "walrus-audio-polychrome",
           "id": "polychrome",
           "settings": {
             "rate": 4,
@@ -20,7 +20,7 @@
           }
         },
         {
-          "name": "keeley-electronics-compressor-mini",
+          "pedalSlug": "keeley-electronics-compressor-mini",
           "id": "compmini",
           "settings": { "level": 3, "comp": 10 }
         }

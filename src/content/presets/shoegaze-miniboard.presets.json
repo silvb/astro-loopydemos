@@ -6,12 +6,12 @@
       "noLabels": true,
       "chain": [
         {
-          "name": "twilight-pulse-audioworks-proxima",
+          "pedalSlug": "twilight-pulse-audioworks-proxima",
           "id": "proxima",
           "settings": { "gain": 8, "mass": 5, "refine": 6 }
         },
         {
-          "name": "walrus-audio-polychrome",
+          "pedalSlug": "walrus-audio-polychrome",
           "id": "polychrome",
           "settings": {
             "rate": 6,
@@ -25,12 +25,12 @@
           }
         },
         {
-          "name": "catalinbread-sinkhole",
+          "pedalSlug": "catalinbread-sinkhole",
           "id": "sinkhole",
           "settings": { "fdbck": 5, "mod": 7, "verb": 6, "mix": 6, "vol": 5 }
         },
         {
-          "name": "chase-bliss-audio-mood",
+          "pedalSlug": "chase-bliss-audio-mood",
           "id": "mood",
           "settings": {
             "time": 5,

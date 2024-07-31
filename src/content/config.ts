@@ -119,7 +119,7 @@ const demos = defineCollection({
 })
 
 export const presetChainElementSchema = z.object({
-  name: z.string(),
+  pedalSlug: z.string(),
   id: z.string(),
   settings: settingsSchema,
 })
@@ -141,7 +141,7 @@ export const presetSchema = z.object({
     .array(
       z.object({
         id: z.string(),
-        pedalId: z.string(),
+        pedalSlug: z.string(),
         settings: settingsSchema.optional(),
       })
     )

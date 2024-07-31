@@ -85,7 +85,7 @@
       "label": "Obviously it Shoegazes",
       "chain": [
         {
-          "name": "black-mass-electronics-1312-distortion-v3",
+          "pedalSlug": "black-mass-electronics-1312-distortion-v3",
           "id": "1312",
           "settings": {
             "level": 7,
@@ -95,7 +95,7 @@
           }
         },
         {
-          "name": "catalinbread-soft-focus",
+          "pedalSlug": "catalinbread-soft-focus",
           "id": "softfocus",
           "settings": {
             "symph": 10,

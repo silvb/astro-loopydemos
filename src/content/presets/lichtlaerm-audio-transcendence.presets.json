@@ -65,7 +65,7 @@
       "label": "Flerb Done Right",
       "chain": [
         {
-          "name": "walrus-audio-polychrome",
+          "pedalSlug": "walrus-audio-polychrome",
           "id": "polychrome",
           "settings": {
             "rate": 7,
@@ -79,7 +79,7 @@
           }
         },
         {
-          "name": "lichtlaerm-audio-transcendence",
+          "pedalSlug": "lichtlaerm-audio-transcendence",
           "id": "transcendence",
           "settings": {
             "rate": 8,
@@ -100,7 +100,7 @@
       "label": "Shoegated",
       "chain": [
         {
-          "name": "smallsound-bigsound-mini",
+          "pedalSlug": "smallsound-bigsound-mini",
           "id": "mini",
           "settings": {
             "gain": 5,
@@ -111,7 +111,7 @@
           }
         },
         {
-          "name": "lichtlaerm-audio-transcendence",
+          "pedalSlug": "lichtlaerm-audio-transcendence",
           "id": "transcendence",
           "settings": {
             "rate": 0,

@@ -17,6 +17,6 @@ const title = `${model} - ${builder}`
   <div class="mb-3">
     <DateTag {date} />
   </div>
-  <DemoWidget {slug} {model} {builder} />
+  <DemoWidget presetSlug={slug} />
   <slot />
 </Layout>

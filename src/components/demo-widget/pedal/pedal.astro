@@ -1,0 +1,86 @@
+---
+import { getImageFromSlug } from "@utils/get-image-from-slug"
+import { Image } from "astro:assets"
+import { getEntry, type CollectionEntry } from "astro:content"
+import {
+  POTRAIT_DEFAULT_ENCLOSURE,
+  LANDSCAPE_DEFAULT_ENCLOSURE,
+} from "@constants/sizes"
+import Knob from "@components/knob"
+import AbsolutePosition from "@components/absolute-position.astro"
+import { Switch } from "@components/switch"
+import { Led } from "@components/led"
+import { PedalStateContainer } from "./pedal-state-container"
+
+interface Props {
+  slug: string
+}
+
+const { slug } = Astro.props
+
+const pedalData: CollectionEntry<"pedals"> = await getEntry(
+  "pedals",
+  `${slug as CollectionEntry<"demos">["slug"]}.pedal`
+)
+
+if (!pedalData) {
+  throw new Error(`Pedal not found: ${slug}`)
+}
+
+const { controls, width, height, enclosure, name } = pedalData.data
+
+const imageAltText = slug
+  .split("-")
+  .map((word) => word[0].toUpperCase() + word.slice(1))
+  .join(" ")
+
+const enclosureWidth =
+  width ||
+  (enclosure === "landscape"
+    ? LANDSCAPE_DEFAULT_ENCLOSURE.width
+    : POTRAIT_DEFAULT_ENCLOSURE.width)
+const enclosureHeight =
+  height ||
+  (enclosure === "landscape"
+    ? LANDSCAPE_DEFAULT_ENCLOSURE.height
+    : POTRAIT_DEFAULT_ENCLOSURE.height)
+---
+
+<PedalStateContainer client:load {slug}>
+  <div
+    class="relative box-border select-none"
+    style={{
+      width: `${enclosureWidth}px`,
+      height: `${enclosureHeight}px`,
+    }}
+  >
+    <Image
+      src={getImageFromSlug(slug)}
+      alt={imageAltText}
+      class="absolute h-full w-full object-contain"
+    />
+    <div class="relative h-full w-full">
+      {
+        controls?.knobs?.map((knob) => (
+          <AbsolutePosition id={knob.id} {...knob.position}>
+            <Knob {...knob} pedalSlug={name} />
+          </AbsolutePosition>
+        ))
+      }
+      {
+        controls?.switches?.map((switchEl) => (
+          <AbsolutePosition id={switchEl.id} {...switchEl.position}>
+            <Switch client:load {...switchEl} pedalSlug={name} />
+          </AbsolutePosition>
+        ))
+      }
+      {
+        controls?.leds?.map((led) => (
+          <AbsolutePosition id={led.id} {...led.position}>
+            <Led client:load {...led} pedalSlug={name} />
+          </AbsolutePosition>
+        ))
+      }
+    </div>
+  </div>
+</PedalStateContainer>

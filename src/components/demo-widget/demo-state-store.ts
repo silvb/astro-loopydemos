@@ -10,9 +10,6 @@ const findClosestValue = (value: number, valueArray: number[]) =>
   }, valueArray[0])
 
 function createDemoState() {
-  const [demoType, setDemoType] = createSignal<"single" | "comparison">(
-    "single"
-  )
   const [mainPedal, setMainPedal] = createSignal<string>("")
   const [activePresetId, selectPreset] = createSignal<string | undefined>(
     undefined
@@ -31,15 +28,12 @@ function createDemoState() {
   )
 
   const activePedals = createMemo(() => {
-    if (demoType() === "single") {
-      return (
-        activePreset()?.chain?.map((chainElement) => chainElement.name) || [
-          mainPedal(),
-        ]
-      )
-    }
-
-    return []
+    // TODO: also make it work with comparison
+    return (
+      activePreset()?.chain?.map((chainElement) => chainElement.pedalSlug) || [
+        mainPedal(),
+      ]
+    )
   })
 
   const selectSweepSetting = (id: string, value: number) => {
@@ -52,13 +46,13 @@ function createDemoState() {
     setSweepSetting({ [id]: closestValue })
   }
 
-  const toggleBypass = (pedalId: string) => {
+  const toggleBypass = (pedalSlug: string) => {
     const pedals = pedalsOn()
 
-    if (pedals.includes(pedalId)) {
-      setPedalsOn(pedals.filter((id) => id !== pedalId))
+    if (pedals.includes(pedalSlug)) {
+      setPedalsOn(pedals.filter((id) => id !== pedalSlug))
     } else {
-      setPedalsOn([...pedals, pedalId])
+      setPedalsOn([...pedals, pedalSlug])
     }
   }
 
@@ -74,22 +68,23 @@ function createDemoState() {
 
   const getSetting = (
     id?: string,
-    pedalName?: string,
+    pedalSlug?: string,
     dependency?: ControlElement["dependency"]
   ): SettingsValue | undefined => {
     if (!id) return
-    const name = pedalName || mainPedal()
+    const slug = pedalSlug || mainPedal()
 
     return (
       sweepSetting()?.[id] ??
-      activePreset()?.chain?.find((chainItem) => chainItem.name === name)
+      activePreset()?.chain?.find((chainItem) => chainItem.pedalSlug === slug)
         ?.settings?.[id] ??
-      activePreset()?.comparison?.find((compItem) => compItem.pedalId === name)
-        ?.settings?.[id] ??
+      activePreset()?.comparison?.find(
+        (compItem) => compItem.pedalSlug === slug
+      )?.settings?.[id] ??
       activePreset()?.settings?.[id] ??
       dependency?.values?.find(
         ({ sourceValue }) =>
-          sourceValue === getSetting(dependency?.source, name)
+          sourceValue === getSetting(dependency?.source, slug)
       )?.targetValue
     )
   }
@@ -122,7 +117,6 @@ function createDemoState() {
     setPresets,
     sweepSetting,
     toggleBypass,
-    setDemoType,
     setMainPedal,
     secondaryCircuitsOn,
     toggleSecondaryCircuit,

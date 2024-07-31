@@ -264,7 +264,7 @@
       "label": "With Overdrive",
       "chain": [
         {
-          "name": "dsm-humboldt-simplifier",
+          "pedalSlug": "dsm-humboldt-simplifier",
           "id": "simplifier",
           "settings": {
             "volume": 5,
@@ -283,7 +283,7 @@
           }
         },
         {
-          "name": "plain-speak-calamity-drive",
+          "pedalSlug": "plain-speak-calamity-drive",
           "id": "calamity",
           "settings": {
             "tone": 8,
@@ -300,7 +300,7 @@
       "label": "With Fuzz",
       "chain": [
         {
-          "name": "dsm-humboldt-simplifier",
+          "pedalSlug": "dsm-humboldt-simplifier",
           "id": "simplifier",
           "settings": {
             "volume": 5,
@@ -319,7 +319,7 @@
           }
         },
         {
-          "name": "mask-audio-electronics-black-math",
+          "pedalSlug": "mask-audio-electronics-black-math",
           "id": "black_math",
           "settings": { "loud": 5, "tone": 5, "gain": 7, "boost": 9, "mode": 1 }
         }

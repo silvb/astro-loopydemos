@@ -44,7 +44,7 @@
       "label": "Murky Reverb",
       "chain": [
         {
-          "name": "fairfield-circuitry-shallow-water",
+          "pedalSlug": "fairfield-circuitry-shallow-water",
           "id": "shallowwater",
           "settings": {
             "rate": 6,
@@ -56,7 +56,7 @@
           }
         },
         {
-          "name": "lichtlaerm-audio-untiefe",
+          "pedalSlug": "lichtlaerm-audio-untiefe",
           "id": "untiefe",
           "settings": {
             "rate": 3.5,
@@ -75,7 +75,7 @@
       "label": "Exploding Reverb",
       "chain": [
         {
-          "name": "beautiful-noise-effects-exploder",
+          "pedalSlug": "beautiful-noise-effects-exploder",
           "id": "exploder",
           "settings": {
             "master": 4,
@@ -90,7 +90,7 @@
           }
         },
         {
-          "name": "lichtlaerm-audio-untiefe",
+          "pedalSlug": "lichtlaerm-audio-untiefe",
           "id": "untiefe",
           "settings": {
             "rate": 5,
@@ -109,7 +109,7 @@
       "label": "Parallel Shoegaze",
       "chain": [
         {
-          "name": "beautiful-noise-effects-exploder",
+          "pedalSlug": "beautiful-noise-effects-exploder",
           "id": "exploder",
           "settings": {
             "master": 4,
@@ -124,7 +124,7 @@
           }
         },
         {
-          "name": "lichtlaerm-audio-untiefe",
+          "pedalSlug": "lichtlaerm-audio-untiefe",
           "id": "untiefe",
           "settings": {
             "rate": 4,

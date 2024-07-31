@@ -20,7 +20,7 @@
       "label": "You Bet It Shoegazes",
       "chain": [
         {
-          "name": "beautiful-noise-effects-exploder",
+          "pedalSlug": "beautiful-noise-effects-exploder",
           "id": "exploder",
           "settings": {
             "master": 6,
@@ -35,7 +35,7 @@
           }
         },
         {
-          "name": "catalinbread-sts-88-flanger-reverb",
+          "pedalSlug": "catalinbread-sts-88-flanger-reverb",
           "id": "sts88",
           "settings": { "depth": 8, "rate": 0, "mix": 4, "reverb": 10 }
         }

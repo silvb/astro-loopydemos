@@ -15,12 +15,12 @@
       "label": "Does it Shoegaze?",
       "chain": [
         {
-          "name": "spun-loud-shuksan-fuzz",
+          "pedalSlug": "spun-loud-shuksan-fuzz",
           "id": "shuksan",
           "settings": { "vol": 4, "sustain": 5, "input": 7 }
         },
         {
-          "name": "walrus-audio-slo",
+          "pedalSlug": "walrus-audio-slo",
           "id": "slo",
           "settings": {
             "decay": 5,

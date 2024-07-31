@@ -84,7 +84,7 @@
       "label": "Shallow Water in FX Loop",
       "chain": [
         {
-          "name": "fairfield-circuitry-shallow-water",
+          "pedalSlug": "fairfield-circuitry-shallow-water",
           "id": "shallow",
           "settings": {
             "rate": 6,
@@ -96,7 +96,7 @@
           }
         },
         {
-          "name": "jptr-fx-fernweh",
+          "pedalSlug": "jptr-fx-fernweh",
           "id": "fernweh",
           "settings": {
             "vol_one": 8,

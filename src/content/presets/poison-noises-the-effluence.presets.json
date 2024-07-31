@@ -23,7 +23,7 @@
       "label": "Does it Shoegaze?",
       "chain": [
         {
-          "name": "poison-noises-the-crook",
+          "pedalSlug": "poison-noises-the-crook",
           "id": "crook",
           "settings": {
             "breaking": 6,
@@ -35,7 +35,7 @@
           }
         },
         {
-          "name": "poison-noises-the-effluence",
+          "pedalSlug": "poison-noises-the-effluence",
           "id": "effluence",
           "settings": {
             "transcend": 8,

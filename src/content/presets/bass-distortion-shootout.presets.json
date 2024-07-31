@@ -6,12 +6,12 @@
       "comparison": [
         {
           "id": "warlow_growl",
-          "pedalId": "jptr-fx-warlow",
+          "pedalSlug": "jptr-fx-warlow",
           "settings": { "volume": 4, "tone": 6, "sustain": 5, "mode": 2 }
         },
         {
           "id": "jive_growl",
-          "pedalId": "jptr-fx-jive",
+          "pedalSlug": "jptr-fx-jive",
           "settings": {
             "vol": 2,
             "gain": 8,
@@ -22,7 +22,7 @@
         },
         {
           "id": "diabolik_growl",
-          "pedalId": "malekko-diabolik",
+          "pedalSlug": "malekko-diabolik",
           "settings": {
             "fuzz": 7,
             "clean": 8,
@@ -31,7 +31,7 @@
         },
         {
           "id": "divvy_growl",
-          "pedalId": "champion-leccy-the-divvy-v3",
+          "pedalSlug": "champion-leccy-the-divvy-v3",
           "settings": {
             "level": 6,
             "gain": 7,
@@ -40,7 +40,7 @@
         },
         {
           "id": "proxima_growl",
-          "pedalId": "twilight-pulse-audioworks-proxima",
+          "pedalSlug": "twilight-pulse-audioworks-proxima",
           "settings": {
             "gain": 4,
             "mass": 6.5,
@@ -49,12 +49,12 @@
         },
         {
           "id": "motorbass_growl",
-          "pedalId": "okko-fx-motorbass",
+          "pedalSlug": "okko-fx-motorbass",
           "settings": { "faster": 7, "harder": 2, "louder": 3 }
         },
         {
           "id": "mini_growl",
-          "pedalId": "smallsound-bigsound-mini",
+          "pedalSlug": "smallsound-bigsound-mini",
           "settings": {
             "gain": 7,
             "bass": 6,
@@ -65,7 +65,7 @@
         },
         {
           "id": "exploder_growl",
-          "pedalId": "beautiful-noise-effects-exploder",
+          "pedalSlug": "beautiful-noise-effects-exploder",
           "settings": {
             "master": 6,
             "gain": 5,
@@ -80,7 +80,7 @@
         },
         {
           "id": "riche_growl",
-          "pedalId": "freqscene-effects-nouveau-riche",
+          "pedalSlug": "freqscene-effects-nouveau-riche",
           "settings": {
             "vol": 5,
             "gain": 6.5,
@@ -91,22 +91,22 @@
         },
         {
           "id": "shuksan_growl",
-          "pedalId": "spun-loud-shuksan-fuzz",
+          "pedalSlug": "spun-loud-shuksan-fuzz",
           "settings": { "vol": 6, "sustain": 3.5, "input": 1 }
         },
         {
           "id": "mammoth_growl",
-          "pedalId": "zvex-effects-woolly-mammoth",
+          "pedalSlug": "zvex-effects-woolly-mammoth",
           "settings": { "output": 5, "eq": 6, "pinch": 6, "wool": 2 }
         },
         {
           "id": "basstortion_growl",
-          "pedalId": "zvex-effects-basstortion",
+          "pedalSlug": "zvex-effects-basstortion",
           "settings": { "volume": 6, "tone": 8, "drive": 8, "mode": 3 }
         },
         {
           "id": "mastotron_growl",
-          "pedalId": "zvex-effects-mastotron",
+          "pedalSlug": "zvex-effects-mastotron",
           "settings": {
             "vol": 10,
             "tone": 8,
@@ -118,7 +118,7 @@
         },
         {
           "id": "surprise_growl",
-          "pedalId": "fairfield-circuitry-unpleasant-surprise",
+          "pedalSlug": "fairfield-circuitry-unpleasant-surprise",
           "settings": {
             "volume": 7,
             "onset": 5,

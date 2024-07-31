@@ -15,7 +15,7 @@
       "label": "Will it Shoegaze?",
       "chain": [
         {
-          "name": "black-mass-electronics-1312-distortion-v3",
+          "pedalSlug": "black-mass-electronics-1312-distortion-v3",
           "id": "1312",
           "settings": {
             "level": 7,
@@ -25,7 +25,7 @@
           }
         },
         {
-          "name": "walrus-audio-slo",
+          "pedalSlug": "walrus-audio-slo",
           "id": "slo",
           "settings": {
             "decay": 6,

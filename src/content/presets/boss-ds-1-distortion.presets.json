@@ -5,7 +5,7 @@
       "label": "Perfect Combo",
       "chain": [
         {
-          "name": "smallsound-bigsound-mini",
+          "pedalSlug": "smallsound-bigsound-mini",
           "id": "mini",
           "settings": {
             "gain": 4,
@@ -16,7 +16,7 @@
           }
         },
         {
-          "name": "boss-ds-1-distortion",
+          "pedalSlug": "boss-ds-1-distortion",
           "id": "ds1",
           "settings": { "tone": 5, "dist": 2, "level": 8 }
         }

@@ -10,14 +10,15 @@ import { CBADipSwitches } from "./cba-dip-switches"
 import { StompSwitch } from "./stomp-switch"
 
 interface SwitchProps extends SwitchType {
-  pedalId: string
+  pedalSlug: string
 }
 
 export const Switch: Component<SwitchProps> = (props) => {
   const { getSetting, toggleBypass, toggleSecondaryCircuit, activePreset } =
     demoState
 
-  const state = () => (getSetting(props.id, props.pedalId) ?? 1) as SwitchState
+  const state = () =>
+    (getSetting(props.id, props.pedalSlug) ?? 1) as SwitchState
 
   return (
     <RenderSwitch>
@@ -72,7 +73,7 @@ export const Switch: Component<SwitchProps> = (props) => {
             aria-label="pedal bypass switch"
             onClick={() => {
               if (props.id === "bypass_switch") {
-                toggleBypass(props.pedalId)
+                toggleBypass(props.pedalSlug)
               }
               if (props.secondaryCircuitId) {
                 toggleSecondaryCircuit(props.secondaryCircuitId)

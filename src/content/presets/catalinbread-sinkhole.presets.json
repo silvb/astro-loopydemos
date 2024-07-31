@@ -20,7 +20,7 @@
       "label": "This was made for Shoegaze!",
       "chain": [
         {
-          "name": "twilight-pulse-audioworks-proxima",
+          "pedalSlug": "twilight-pulse-audioworks-proxima",
           "id": "proxima",
           "settings": {
             "gain": 9,
@@ -29,7 +29,7 @@
           }
         },
         {
-          "name": "catalinbread-sinkhole",
+          "pedalSlug": "catalinbread-sinkhole",
           "id": "sinkhole",
           "settings": { "fdbck": 8, "mod": 5, "verb": 5, "mix": 6, "vol": 5 }
         }

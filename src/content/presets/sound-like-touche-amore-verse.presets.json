@@ -6,12 +6,12 @@
       "noLabels": true,
       "chain": [
         {
-          "name": "big-ear-pedals-elle",
+          "pedalSlug": "big-ear-pedals-elle",
           "id": "elle",
           "settings": { "color": 8.5, "dwell": 8, "blend": 7 }
         },
         {
-          "name": "caroline-guitar-company-somersault",
+          "pedalSlug": "caroline-guitar-company-somersault",
           "id": "somersault",
           "settings": {
             "mix": 4.5,
@@ -22,7 +22,7 @@
           }
         },
         {
-          "name": "bondi-effects-del-mar-mkii",
+          "pedalSlug": "bondi-effects-del-mar-mkii",
           "id": "delmar",
           "settings": { "bass": 4, "treble": 7.5, "drive": 2, "output": 5.5 }
         }

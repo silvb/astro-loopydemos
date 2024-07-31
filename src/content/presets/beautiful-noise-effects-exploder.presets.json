@@ -20,7 +20,7 @@
       "label": "Shoegaze? Yes!",
       "chain": [
         {
-          "name": "beautiful-noise-effects-exploder",
+          "pedalSlug": "beautiful-noise-effects-exploder",
           "id": "exploder",
           "settings": {
             "master": 7,
@@ -35,7 +35,7 @@
           }
         },
         {
-          "name": "walrus-audio-slo",
+          "pedalSlug": "walrus-audio-slo",
           "id": "slo",
           "settings": {
             "decay": 6,

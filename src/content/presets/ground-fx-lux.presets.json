@@ -16,7 +16,7 @@
       "label": "Shoegaze, Baby!",
       "chain": [
         {
-          "name": "twilight-pulse-audioworks-proxima",
+          "pedalSlug": "twilight-pulse-audioworks-proxima",
           "id": "proxima",
           "settings": {
             "gain": 2,
@@ -25,7 +25,7 @@
           }
         },
         {
-          "name": "ground-fx-lux",
+          "pedalSlug": "ground-fx-lux",
           "id": "lux",
           "settings": {
             "decay": 7,

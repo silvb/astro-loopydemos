@@ -29,12 +29,12 @@
       "label": "Fuzz with Treble Boost",
       "chain": [
         {
-          "name": "interstellar-audio-machines-fuzzsquatch-fuzzdrive",
+          "pedalSlug": "interstellar-audio-machines-fuzzsquatch-fuzzdrive",
           "id": "fuzzsquatch",
           "settings": { "vol": 6, "tone": 4, "sustain": 10, "tone_bypass": 1 }
         },
         {
-          "name": "interstellar-audio-machines-octonaut-hyperdrive",
+          "pedalSlug": "interstellar-audio-machines-octonaut-hyperdrive",
           "id": "hyperdrive",
           "settings": {
             "vol": 10,
@@ -49,7 +49,7 @@
       "label": "Fuzz with Added Mids",
       "chain": [
         {
-          "name": "interstellar-audio-machines-octonaut-hyperdrive",
+          "pedalSlug": "interstellar-audio-machines-octonaut-hyperdrive",
           "id": "hyperdrive",
           "settings": {
             "vol": 5,
@@ -58,7 +58,7 @@
           }
         },
         {
-          "name": "interstellar-audio-machines-fuzzsquatch-fuzzdrive",
+          "pedalSlug": "interstellar-audio-machines-fuzzsquatch-fuzzdrive",
           "id": "fuzzsquatch",
           "settings": { "vol": 6, "tone": 4, "sustain": 10, "tone_bypass": 1 }
         }
