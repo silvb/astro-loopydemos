@@ -4,19 +4,18 @@ import type { GetStaticPaths, InferGetStaticPropsType } from "astro"
 import { getCollection, type CollectionEntry } from "astro:content"
 
 export const getStaticPaths = (async () => {
-  const allDemos: CollectionEntry<"demos">[] = await getCollection("demos")
-  return allDemos.map((demo) => ({
-    params: { slug: demo.slug },
-    props: { ...demo.data, content: demo },
+  const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
+  return allPosts.map((post) => ({
+    params: { slug: post.slug },
+    props: { ...post.data, content: post },
   }))
 }) satisfies GetStaticPaths
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>
 
-const { model, builder, content, date } = Astro.props
+const { content, date, title } = Astro.props
 const { slug } = Astro.params
 const { Content } = await content.render()
-const title = `${model} - ${builder}`
 ---
 
 <DemoLayout {slug} {title} {date}>

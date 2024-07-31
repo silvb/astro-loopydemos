@@ -1,4 +1,4 @@
-export const getImageFromSlug = (slug: string) => {
+export const getImageSrcFromSlug = (slug: string) => {
   const images = import.meta.glob<{ default: ImageMetadata }>(
     "/src/images/*.{jpeg,jpg,png,webp}"
   )

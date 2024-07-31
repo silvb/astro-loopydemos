@@ -1,0 +1,28 @@
+---
+import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
+import { getImageSrcFromSlug } from "@utils/get-image-src-from-slug"
+import { Image } from "astro:assets"
+import { ComparisonPedalSelect } from "./comparison-pedal-select"
+
+interface Props {
+  pedals: string[]
+}
+
+const { pedals } = Astro.props
+---
+
+<ul class="custom-scrollbar flex list-none flex-nowrap items-center gap-2">
+  {
+    pedals.map((pedalSlug) => (
+      <li class="h-16 w-16 shrink-0 rounded-md md:h-28 md:w-28">
+        <ComparisonPedalSelect {pedalSlug} client:load>
+          <Image
+            src={getImageSrcFromSlug(pedalSlug)}
+            alt={getImageAltFromSlug(pedalSlug)}
+            class="h-5/6 w-5/6 object-contain"
+          />
+        </ComparisonPedalSelect>
+      </li>
+    ))
+  }
+</ul>

@@ -9,6 +9,8 @@ interface StompSwitchProps extends JSX.ButtonHTMLAttributes<HTMLButtonElement> {
   isMomentary?: boolean
   isOn?: boolean
   "momentary-indicator"?: JSX.Element
+  pedalSlug: string
+  secondaryCircuitId?: string
 }
 
 export const StompSwitch: Component<StompSwitchProps> = (props) => {
@@ -19,6 +21,12 @@ export const StompSwitch: Component<StompSwitchProps> = (props) => {
       setIsDown(props.isOn ?? false)
     }
   })
+
+  const uniqueStompId = [
+    props.id,
+    props.pedalSlug,
+    props.secondaryCircuitId,
+  ].join("-")
 
   return (
     <button
@@ -55,7 +63,7 @@ export const StompSwitch: Component<StompSwitchProps> = (props) => {
         class="pointer-events-none select-none"
       >
         <defs>
-          <radialGradient id="gradient1">
+          <radialGradient id={`${uniqueStompId}-gradient1`}>
             <stop
               offset="0%"
               stop-color={props.isDark ? "#666" : "aliceblue"}
@@ -69,7 +77,7 @@ export const StompSwitch: Component<StompSwitchProps> = (props) => {
               stop-color={props.isDark ? "#222" : "lightslategray"}
             />
           </radialGradient>
-          <radialGradient id="gradient2">
+          <radialGradient id={`${uniqueStompId}-gradient2`}>
             <stop
               offset="0%"
               stop-color={props.isDark ? "#666" : "aliceblue"}
@@ -85,9 +93,14 @@ export const StompSwitch: Component<StompSwitchProps> = (props) => {
           </radialGradient>
         </defs>
         <g fill="none">
-          <circle cx="26" cy="26" r="26" fill="url(#gradient1)" />
+          <circle
+            cx="26"
+            cy="26"
+            r="26"
+            fill={`url(#${uniqueStompId}-gradient1)`}
+          />
           <polygon
-            fill="url(#gradient1)"
+            fill={`url(#${uniqueStompId}-gradient1)`}
             stroke={props.isDark ? "#555" : "slategray"}
             points="32 8 52.785 20 52.785 44 32 56 11.215 44 11.215 20"
             transform="rotate(90 32 32) translate(-6, 6)"
@@ -102,7 +115,7 @@ export const StompSwitch: Component<StompSwitchProps> = (props) => {
             cx="26"
             cy={`${isDown() ? 26 : 24}`}
             r={`${isDown() ? 15 : 16}`}
-            fill="url(#gradient2)"
+            fill={`url(#${uniqueStompId}-gradient2)`}
           />
         </g>
       </svg>

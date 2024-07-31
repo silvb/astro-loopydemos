@@ -4,12 +4,13 @@ import Layout from "./layout.astro"
 import type { CollectionEntry } from "astro:content"
 import DateTag from "./date-tag.astro"
 
-type Props = Pick<CollectionEntry<"demos">, "slug"> &
-  Pick<CollectionEntry<"demos">["data"], "model" | "builder" | "date">
+interface Props {
+  title: string
+  date: Date
+  slug: string
+}
 
-const { slug, model, builder, date } = Astro.props
-
-const title = `${model} - ${builder}`
+const { slug, title, date } = Astro.props
 ---
 
 <Layout {title}>

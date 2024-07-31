@@ -23,18 +23,11 @@ function createDemoState() {
     []
   )
 
+  const [activePedals, setActivePedals] = createSignal<string[]>([])
+
   const activePreset = createMemo(() =>
     presets().find((preset) => preset.id === activePresetId())
   )
-
-  const activePedals = createMemo(() => {
-    // TODO: also make it work with comparison
-    return (
-      activePreset()?.chain?.map((chainElement) => chainElement.pedalSlug) || [
-        mainPedal(),
-      ]
-    )
-  })
 
   const selectSweepSetting = (id: string, value: number) => {
     if (!activePreset()?.isSweep) return
@@ -98,6 +91,12 @@ function createDemoState() {
       setSweepSetting({})
     }
     setSecondaryCircuitsOn(activePreset()?.initialSecondaryCircuits || [])
+
+    setActivePedals(
+      activePreset()?.chain?.map((chainElement) => chainElement.pedalSlug) || [
+        mainPedal(),
+      ]
+    )
   })
 
   createEffect(() => {
@@ -121,6 +120,7 @@ function createDemoState() {
     secondaryCircuitsOn,
     toggleSecondaryCircuit,
     getSetting,
+    setActivePedals,
   }
 }
 

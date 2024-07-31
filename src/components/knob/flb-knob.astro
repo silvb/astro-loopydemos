@@ -12,6 +12,7 @@ const {
 } = Astro.props
 
 const pixelSize = `${size}px`
+const uniqueKnobId = Math.random().toString(36).substring(7)
 ---
 
 <div class="gradient-background">
@@ -22,7 +23,7 @@ const pixelSize = `${size}px`
     viewBox="0 0 64 64"
   >
     <defs>
-      <mask id="cut-off-rect">
+      <mask id={`${uniqueKnobId}-cut-off-rect`}>
         <rect x={0} y={0} height={24} width={64} fill="#fff"></rect>
       </mask>
     </defs>
@@ -32,7 +33,7 @@ const pixelSize = `${size}px`
         cy="32"
         r="32"
         fill={colors.secondary}
-        mask="url(#cut-off-rect)"></circle>
+        mask={`url(#${uniqueKnobId}-cut-off-rect)`}></circle>
       <circle r="5" cx="31" cy="12" fill={colors.primary}></circle>
     </g>
   </svg>

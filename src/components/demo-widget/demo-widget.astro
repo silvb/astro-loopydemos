@@ -6,9 +6,10 @@ import Pedal from "./pedal"
 import PresetsSlider from "./presets-slider.astro"
 
 import { DemoStateInitializer } from "./demo-state-initializer"
+import ComparisonSlider from "./comparison-slider.astro"
 
 interface Props {
-  presetSlug: CollectionEntry<"demos">["slug"]
+  presetSlug: string
 }
 
 const { presetSlug } = Astro.props
@@ -17,7 +18,7 @@ const {
   data: { presets },
 }: CollectionEntry<"presets"> = await getEntry(
   "presets",
-  `${presetSlug}.presets`
+  `${presetSlug as CollectionEntry<"demos">["slug"]}.presets`
 )
 
 // Get all pedals from presets
@@ -30,8 +31,10 @@ const pedalsFromPresets = presets.reduce(
   [] as string[]
 )
 
-// Add the current preset to the list of pedals if it's not a comparison
-if (!presets.some(({ comparison }) => Boolean(comparison))) {
+const isComparison = presets.some(({ comparison }) => Boolean(comparison))
+
+// The preset slug is also the pedal slug of the demo. Add it to the top of the list
+if (!isComparison) {
   pedalsFromPresets.unshift(presetSlug)
 }
 
@@ -42,8 +45,8 @@ const pedals = [...new Set(pedalsFromPresets)]
 <div class="flex flex-col gap-4">
   <AudioPlayer />
   <PresetsSlider {presets} />
+  {isComparison && <ComparisonSlider {pedals} />}
 </div>
 <div class="mb-24 mt-8 flex items-end justify-center">
   {pedals.map((slug) => <Pedal slug={slug} />)}
-  <!-- <Pedal slug={presetSlug} /> -->
 </div>

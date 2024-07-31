@@ -1,5 +1,5 @@
 ---
-import { getImageFromSlug } from "@utils/get-image-from-slug"
+import { getImageSrcFromSlug } from "@utils/get-image-src-from-slug"
 import { Image } from "astro:assets"
 import { getEntry, type CollectionEntry } from "astro:content"
 import {
@@ -11,6 +11,7 @@ import AbsolutePosition from "@components/absolute-position.astro"
 import { Switch } from "@components/switch"
 import { Led } from "@components/led"
 import { PedalStateContainer } from "./pedal-state-container"
+import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
 
 interface Props {
   slug: string
@@ -55,8 +56,8 @@ const enclosureHeight =
     }}
   >
     <Image
-      src={getImageFromSlug(slug)}
-      alt={imageAltText}
+      src={getImageSrcFromSlug(slug)}
+      alt={getImageAltFromSlug(slug)}
       class="absolute h-full w-full object-contain"
     />
     <div class="relative h-full w-full">

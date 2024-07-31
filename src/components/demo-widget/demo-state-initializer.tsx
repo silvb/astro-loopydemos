@@ -11,12 +11,10 @@ export const DemoStateInitializer: Component<DemoStateInitializerProps> = (
   props
 ) => {
   const { setPresets, setPedalsOn, setMainPedal } = demoState
-  const isComparison = props.presets.some(({ comparison }) =>
-    Boolean(comparison)
-  )
+
   onMount(() => {
     setTimeout(() => {
-      setMainPedal(isComparison ? "" : props.pedals[0])
+      setMainPedal(props.pedals[0])
       setPresets(props.presets)
       setPedalsOn(props.pedals)
     }, 200)

@@ -1,5 +1,8 @@
 ---
 import Layout from "@layouts/layout.astro"
+import { getCollection, type CollectionEntry } from "astro:content"
+
+const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
 ---
 
 <Layout title="Posts">
@@ -11,5 +14,19 @@ import Layout from "@layouts/layout.astro"
       will have some sort of interactive demo widget because sound says more
       than any of my ramblings.
     </p>
+  </section>
+  <section>
+    <ul>
+      {
+        allPosts
+          .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+          .filter((post) => post.data.type === "post")
+          .map((post) => (
+            <li>
+              <a href={`posts/${post.slug}`}>{post.data.title}</a>
+            </li>
+          ))
+      }
+    </ul>
   </section>
 </Layout>

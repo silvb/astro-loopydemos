@@ -4,6 +4,7 @@ import type { Knob } from "@types"
 type Props = Pick<Knob, "colors" | "size">
 
 const { size, colors = { primary: "#E58075" } } = Astro.props
+const uniqueKnobId = Math.random().toString(36).substring(7)
 ---
 
 <svg
@@ -19,7 +20,7 @@ const { size, colors = { primary: "#E58075" } } = Astro.props
       cy="212.361"
       r="150"
       transform="rotate(45 213 212.361)"
-      fill="url(#a)"></circle>
+      fill={`url(#${uniqueKnobId}-lin-gradient1)`}></circle>
     <circle
       cx="213"
       cy="212.254"
@@ -32,13 +33,13 @@ const { size, colors = { primary: "#E58075" } } = Astro.props
       cy="212.355"
       r="130"
       transform="rotate(-45 213 212.355)"
-      stroke="url(#b)"
+      stroke={`url(#${uniqueKnobId}-lin-gradient2)`}
       stroke-width="40"></circle>
     <path fill="#fff" d="M199 82h28v130h-28z"></path>
     <path fill={colors.primary} d="M199 57h28v25h-28z"></path>
     <defs>
       <linearGradient
-        id="a"
+        id={`${uniqueKnobId}-lin-gradient1`}
         x1="213"
         y1="62.361"
         x2="213"
@@ -49,7 +50,7 @@ const { size, colors = { primary: "#E58075" } } = Astro.props
         <stop offset="1" stop-color="#EFEFEF"></stop>
       </linearGradient>
       <linearGradient
-        id="b"
+        id={`${uniqueKnobId}-lin-gradient2`}
         x1="213"
         y1="62.355"
         x2="213"

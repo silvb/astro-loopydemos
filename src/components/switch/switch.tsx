@@ -71,6 +71,8 @@ export const Switch: Component<SwitchProps> = (props) => {
             isMomentary={props.isMomentary}
             size={props.size}
             aria-label="pedal bypass switch"
+            pedalSlug={props.pedalSlug}
+            secondaryCircuitId={props.secondaryCircuitId}
             onClick={() => {
               if (props.id === "bypass_switch") {
                 toggleBypass(props.pedalSlug)

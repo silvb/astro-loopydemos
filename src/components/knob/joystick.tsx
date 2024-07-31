@@ -32,6 +32,8 @@ export const Joystick: Component<Pick<Knob, "id" | "size">> = (props) => {
     }
   }
 
+  const uniqueId = `${props.id}-joystick-${Math.random().toString(36).substring(7)}}`
+
   return (
     <svg
       width={props.size}
@@ -52,7 +54,7 @@ export const Joystick: Component<Pick<Knob, "id" | "size">> = (props) => {
         cx="456"
         cy="456"
         r="278"
-        fill="url(#paint0_radial_1_23)"
+        fill={`url(#${uniqueId}-paint0_radial_1_23)`}
         stroke="#232323"
         stroke-width="4"
       ></circle>
@@ -164,13 +166,13 @@ export const Joystick: Component<Pick<Knob, "id" | "size">> = (props) => {
         cx={stickCoords().x}
         cy={stickCoords().y}
         r={STICK_RADIUS}
-        fill="url(#stick_head_radial)"
+        fill={`url(#${uniqueId}-stick_head_radial)`}
         class="stroke-loopydemos-highlight-primary"
         stroke-width="16"
       ></circle>
       <defs>
         <radialGradient
-          id="paint0_radial_1_23"
+          id={`${uniqueId}-paint0_radial_1_23`}
           cx="0"
           cy="0"
           r="1"
@@ -180,7 +182,7 @@ export const Joystick: Component<Pick<Knob, "id" | "size">> = (props) => {
           <stop stop-color="#6C6C6C" stop-opacity="0"></stop>
           <stop offset="1" stop-color="#1E1E1E"></stop>
         </radialGradient>
-        <radialGradient id="stick_head_radial">
+        <radialGradient id={`${uniqueId}-stick_head_radial`}>
           <stop stop-color="#767676"></stop>
           <stop stop-color="#232323" offset="1"></stop>
         </radialGradient>

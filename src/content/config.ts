@@ -118,6 +118,15 @@ const demos = defineCollection({
   }),
 })
 
+const posts = defineCollection({
+  type: "content",
+  schema: z.object({
+    date: z.date(),
+    title: z.string(),
+    type: z.enum(["demo", "post", "none"]),
+  }),
+})
+
 export const presetChainElementSchema = z.object({
   pedalSlug: z.string(),
   id: z.string(),
@@ -176,4 +185,5 @@ export const collections = {
   demos,
   presets,
   pedals,
+  posts,
 }
