@@ -7,6 +7,7 @@ import PresetsSlider from "./presets-slider.astro"
 
 import { DemoStateInitializer } from "./demo-state-initializer"
 import ComparisonSlider from "./comparison-slider.astro"
+import { getPedalsFromPresets } from "@utils/get-pedals-from-presets"
 
 interface Props {
   presetSlug: string
@@ -22,14 +23,7 @@ const {
 )
 
 // Get all pedals from presets
-const pedalsFromPresets = presets.reduce(
-  (acc, { chain, comparison }) => [
-    ...acc,
-    ...(chain?.map(({ pedalSlug }) => pedalSlug) ?? []),
-    ...(comparison?.map(({ pedalSlug }) => pedalSlug) ?? []),
-  ],
-  [] as string[]
-)
+const pedalsFromPresets = getPedalsFromPresets(presets)
 
 const isComparison = presets.some(({ comparison }) => Boolean(comparison))
 
@@ -47,6 +41,6 @@ const pedals = [...new Set(pedalsFromPresets)]
   <PresetsSlider {presets} />
   {isComparison && <ComparisonSlider {pedals} />}
 </div>
-<div class="mb-24 mt-8 flex items-end justify-center">
+<div class="mb-12 mt-8 flex min-h-[25rem] items-start justify-center">
   {pedals.map((slug) => <Pedal slug={slug} />)}
 </div>

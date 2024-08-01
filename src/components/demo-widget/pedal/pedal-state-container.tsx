@@ -11,10 +11,12 @@ export const PedalStateContainer: ParentComponent<PedalStateContainerProps> = (
   const { activePedals } = demoState
 
   const orderIndex = () => activePedals().indexOf(props.slug)
+  const isHidden = () => !activePedals().includes(props.slug)
+  const isVisibleWithOthers = () => activePedals().length > 1 && !isHidden()
 
   return (
     <div
-      class={activePedals().includes(props.slug) ? "" : "hidden"}
+      class={isHidden() ? "hidden" : isVisibleWithOthers() ? "self-end" : ""}
       style={{ order: orderIndex() }}
     >
       {props.children}

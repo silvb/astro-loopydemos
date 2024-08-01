@@ -1,4 +1,5 @@
 ---
+import PostPreviewCard from "@components/post-preview-card.astro"
 import Layout from "@layouts/layout.astro"
 import { getCollection, type CollectionEntry } from "astro:content"
 
@@ -6,7 +7,7 @@ const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
 ---
 
 <Layout title="Posts">
-  <section>
+  <section class="mb-12">
     <h2>Posts</h2>
     <p>
       In these blog posts you'll get back-to-back comparisons of similar pedals
@@ -16,17 +17,19 @@ const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
     </p>
   </section>
   <section>
-    <ul>
-      {
-        allPosts
-          .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-          .filter((post) => post.data.type === "post")
-          .map((post) => (
-            <li>
-              <a href={`posts/${post.slug}`}>{post.data.title}</a>
-            </li>
-          ))
-      }
-    </ul>
+    {
+      allPosts
+        .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+        .filter((post) => post.data.type === "post")
+        .map(({ slug, data }) => (
+          <PostPreviewCard
+            {slug}
+            title={data.title}
+            date={data.date}
+            excerpt={data.excerpt}
+            tags={data.tags}
+          />
+        ))
+    }
   </section>
 </Layout>

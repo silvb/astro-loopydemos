@@ -124,6 +124,8 @@ const posts = defineCollection({
     date: z.date(),
     title: z.string(),
     type: z.enum(["demo", "post", "none"]),
+    excerpt: z.string(),
+    tags: z.array(z.string()),
   }),
 })
 

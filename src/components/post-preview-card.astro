@@ -1,0 +1,115 @@
+---
+import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
+import { getImageSrcFromSlug } from "@utils/get-image-src-from-slug"
+import { getPedalsFromPresets } from "@utils/get-pedals-from-presets"
+import { Icon } from "astro-icon/components"
+import { Image } from "astro:assets"
+import { getEntry, type CollectionEntry } from "astro:content"
+
+interface Props
+  extends Pick<
+    CollectionEntry<"posts">["data"],
+    "excerpt" | "title" | "date" | "tags"
+  > {
+  slug: CollectionEntry<"posts">["slug"]
+}
+
+const { title, excerpt, date, slug, tags } = Astro.props
+
+console.log({ tags })
+
+const presetsFromPost: CollectionEntry<"presets"> = await getEntry(
+  "presets",
+  `${slug as CollectionEntry<"demos">["slug"]}.presets`
+)
+
+let hasTeaser = true
+let pedals: string[] = []
+
+let collageGridElementSize = "5rem"
+
+if (presetsFromPost) {
+  console.log(`${slug} ✅`)
+  pedals = getPedalsFromPresets(presetsFromPost.data.presets)
+
+  if (pedals.length > 0) {
+    hasTeaser = false
+  }
+
+  if (pedals.length > 4) {
+    collageGridElementSize = "4rem"
+  }
+
+  if (pedals.length > 8) {
+    collageGridElementSize = "3rem"
+  }
+}
+
+let shortenedExcerpt = excerpt
+
+if (excerpt.split(" ").length > 24) {
+  shortenedExcerpt = [...excerpt.split(" ").slice(0, 24), "..."].join(" ")
+}
+---
+
+<article id="slug" class="mb-12">
+  <a href={`/posts/${slug}`} class="link-none flex gap-4">
+    <div
+      class="flex h-60 w-60 shrink-0 items-center justify-center rounded-lg bg-loopydemos-secondary/50"
+    >
+      {
+        hasTeaser ? (
+          <Image
+            src={getImageSrcFromSlug(slug)}
+            alt={title}
+            class="h-auto w-56 object-contain object-top"
+          />
+        ) : (
+          <div class="pedal-collage-grid h-auto w-56">
+            {pedals.map((pedal) => (
+              <Image
+                src={getImageSrcFromSlug(pedal)}
+                alt={getImageAltFromSlug(pedal)}
+                class="h-full object-contain"
+              />
+            ))}
+          </div>
+        )
+      }
+    </div>
+    <div class="flex flex-col justify-between">
+      <div>
+        <h3 class="m-0">{title}</h3>
+        <p class="text-lg">
+          {shortenedExcerpt}
+        </p>
+      </div>
+      <div class="flex items-center justify-between gap-4">
+        <div class="flex flex-wrap gap-1">
+          {
+            tags.map((tag) => (
+              <span class="whitespace-nowrap rounded-md bg-loopydemos-secondary px-2 py-2 text-sm text-loopydemos-gray">
+                {tag}
+              </span>
+            ))
+          }
+        </div>
+        <span
+          class="flex items-center gap-2 text-xl font-black text-loopydemos-highlight-primary"
+        >
+          <span class="whitespace-nowrap">Read on...</span>
+          <Icon name="ph:arrow-right" />
+        </span>
+      </div>
+    </div>
+  </a>
+</article>
+
+<style define:vars={{ size: collageGridElementSize }}>
+  .pedal-collage-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(var(--size), 1fr));
+    grid-auto-rows: var(--size);
+    gap: 0.5rem;
+  }
+</style>
