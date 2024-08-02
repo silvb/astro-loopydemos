@@ -1,11 +1,6 @@
 ---
 model: Iridium
 builder: Strymon
-slug: strymon-iridium
-image: ../images/strymon-iridium.webp
-ogImage: ../images/seo-preview/strymon-iridium.jpeg
-pedalData: ../data/pedals/strymon-iridium.pedal.json
-presetsData: ../data/presets/strymon-iridium.presets.json
 type: demo
 date: 2020-12-27
 tags:

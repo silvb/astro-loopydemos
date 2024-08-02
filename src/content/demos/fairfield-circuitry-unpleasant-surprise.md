@@ -1,15 +1,8 @@
 ---
 builder: Fairfield Circuitry
 model: The Unpleasant Surprise
-image: ../images/fairfield-circuitry-unpleasant-surprise.png
-ogImage: ../images/seo-preview/fairfield-circuitry-unpleasant-surprise.jpeg
-slug: fairfield-circuitry-unpleasant-surprise
-pedalData: ../data/pedals/fairfield-circuitry-unpleasant-surprise.pedal.json
-presetsData: ../data/presets/fairfield-circuitry-unpleasant-surprise.presets.json
 type: demo
 date: 2024-04-15
-hasBackingTrack: true
-volume: 0.9
 tags:
   - velcro fuzz
   - octave fuzz

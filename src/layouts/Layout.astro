@@ -42,6 +42,42 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
   </body>
 </html>
 
+<script>
+  // TODO: Move this to the future embed layout
+  const queryString = window.location.search
+
+  const urlParams = new URLSearchParams(queryString)
+  const root = document.documentElement
+
+  const setCSSVarFromURL = (varName: string) => {
+    const paramName = varName
+      .replace("--loopydemos-", "")
+      .split("-")
+      .map((word, index) =>
+        index === 0 ? word : word[0].toUpperCase() + word.slice(1)
+      )
+      .join("")
+
+    console.log({ paramName, varName, value: urlParams.get(paramName) })
+    if (urlParams.has(paramName)) {
+      root.style.setProperty(varName, "#" + urlParams.get(paramName))
+    }
+  }
+
+  setCSSVarFromURL("--loopydemos-primary")
+  setCSSVarFromURL("--loopydemos-secondary")
+  setCSSVarFromURL("--loopydemos-background")
+  setCSSVarFromURL("--loopydemos-primary-highlight")
+  setCSSVarFromURL("--loopydemos-secondary-highlight")
+  setCSSVarFromURL("--loopydemos-tertiary-highlight")
+  setCSSVarFromURL("--loopydemos-text")
+  setCSSVarFromURL("--loopydemos-green")
+  setCSSVarFromURL("--loopydemos-red")
+  setCSSVarFromURL("--loopydemos-orange")
+  setCSSVarFromURL("--loopydemos-gray")
+  setCSSVarFromURL("--loopydemos-black")
+</script>
+
 <style is:global>
   @tailwind base;
   @tailwind components;
@@ -57,6 +93,19 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
       rgb(var(--accent-light)) 30%,
       white 60%
     );
+
+    --loopydemos-primary: #9580ff;
+    --loopydemos-secondary: #383a59;
+    --loopydemos-background: #282a36;
+    --loopydemos-primary-highlight: #80ffea;
+    --loopydemos-secondary-highlight: #ff80bf;
+    --loopydemos-tertiary-highlight: #f1fa8c;
+    --loopydemos-text: #f8f8f2;
+    --loopydemos-green: #50fa7b;
+    --loopydemos-red: #ff5555;
+    --loopydemos-orange: #ffb86c;
+    --loopydemos-gray: #bcc2cd;
+    --loopydemos-black: #121212;
   }
 
   html {

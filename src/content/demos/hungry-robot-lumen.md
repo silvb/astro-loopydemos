@@ -1,11 +1,6 @@
 ---
 builder: Hungry Robot
 model: Lumen
-slug: hungry-robot-lumen
-image: ../images/hungry-robot-lumen.webp
-ogImage: ../images/seo-preview/hungry-robot-lumen.jpeg
-pedalData: ../data/pedals/hungry-robot-lumen.pedal.json
-presetsData: ../data/presets/hungry-robot-lumen.presets.json
 type: demo
 date: 2021-05-23
 tags:

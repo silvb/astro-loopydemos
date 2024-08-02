@@ -1,14 +1,8 @@
 ---
 builder: Walrus Audio
 model: Fundamental Delay
-image: ../images/walrus-audio-fundamental-delay.png
-ogImage: ../images/seo-preview/walrus-audio-fundamental-delay.jpeg
-slug: walrus-audio-fundamental-delay
-pedalData: ../data/pedals/walrus-audio-fundamental-delay.pedal.json
-presetsData: ../data/presets/walrus-audio-fundamental-delay.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2023-11-01
 tags:
   - delay

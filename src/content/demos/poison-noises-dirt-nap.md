@@ -1,15 +1,8 @@
 ---
 builder: Poison Noises
 model: Dirt Nap
-image: ../images/poison-noises-dirt-nap.png
-ogImage: ../images/seo-preview/poison-noises-dirt-nap.jpeg
-slug: poison-noises-dirt-nap
-pedalData: ../data/pedals/poison-noises-dirt-nap.pedal.json
-presetsData: ../data/presets/poison-noises-dirt-nap.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.9
 date: 2022-10-17
 tags:
   - dod 250

@@ -115,6 +115,8 @@ const demos = defineCollection({
     builder: z.string(),
     date: z.date(),
     type: z.enum(["demo", "post", "none"]),
+    hasBackingTrack: z.boolean().optional(),
+    volume: z.number().optional(),
   }),
 })
 
@@ -126,6 +128,8 @@ const posts = defineCollection({
     type: z.enum(["demo", "post", "none"]),
     excerpt: z.string(),
     tags: z.array(z.string()),
+    hasBackingTrack: z.boolean().optional(),
+    volume: z.number().optional(),
   }),
 })
 
@@ -135,17 +139,13 @@ export const presetChainElementSchema = z.object({
   settings: settingsSchema,
 })
 
-export const presetSchema = z.object({
+export const basePresetSchema = z.object({
   id: z.string(),
   label: z.string(),
   secondaryCircuitId: z.string().optional(),
   secondaryCircuitSlug: z.string().optional(),
   secondaryCircuitOnlySlug: z.string().optional(),
   initialSecondaryCircuits: z.array(z.string()).optional(),
-  isSweep: z.boolean().optional(),
-  target: z.string().optional(),
-  initialValue: z.number().optional(),
-  values: z.array(z.number()).optional(),
   settings: settingsSchema.optional(),
   chain: z.array(presetChainElementSchema).optional(),
   comparison: z
@@ -157,7 +157,23 @@ export const presetSchema = z.object({
       })
     )
     .optional(),
+  isSweep: z.literal(undefined),
+  target: z.string().optional(),
+  initialValue: z.number().optional(),
+  values: z.array(z.number()).optional(),
 })
+
+export const sweepPresetSchema = basePresetSchema.extend({
+  isSweep: z.literal(true),
+  target: z.string(),
+  initialValue: z.number(),
+  values: z.array(z.number()),
+})
+
+export const presetSchema = z.discriminatedUnion("isSweep", [
+  basePresetSchema,
+  sweepPresetSchema,
+])
 
 const presets = defineCollection({
   type: "data",

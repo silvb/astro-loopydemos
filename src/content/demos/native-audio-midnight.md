@@ -1,11 +1,6 @@
 ---
 builder: NativeAudio
 model: Midnight
-slug: native-audio-midnight
-image: ../images/native-audio-midnight.webp
-ogImage: ../images/seo-preview/native-audio-midnight.jpeg
-pedalData: ../data/pedals/native-audio-midnight.pedal.json
-presetsData: ../data/presets/native-audio-midnight.presets.json
 type: demo
 isSponsored: true
 date: 2021-06-16

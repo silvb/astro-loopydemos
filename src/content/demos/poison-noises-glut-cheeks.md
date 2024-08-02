@@ -1,15 +1,8 @@
 ---
 builder: Poison Noises
 model: Glut Cheeks
-image: ../images/poison-noises-glut-cheeks.png
-ogImage: ../images/seo-preview/poison-noises-glut-cheeks.jpeg
-slug: poison-noises-glut-cheeks
-pedalData: ../data/pedals/poison-noises-glut-cheeks.pedal.json
-presetsData: ../data/presets/poison-noises-glut-cheeks.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.6
 date: 2022-09-13
 tags:
   - fuzz

@@ -1,19 +1,8 @@
 ---
 builder: Wonderful Audio Technology
 model: Apex Distortion
-image: ../images/wonderful-audio-technology-apex-distortion.png
-ogImage: ../images/seo-preview/wonderful-audio-technology-apex-distortion.jpeg
-slug: wonderful-audio-technology-apex-distortion
-pedalData: ../data/pedals/wonderful-audio-technology-apex-distortion.pedal.json
-presetsData: ../data/presets/wonderful-audio-technology-apex-distortion.presets.json
-stackedPedals:
-  - slo:
-    data: ../data/pedals/walrus-audio-slo.pedal.json
-    image: ../images/walrus-audio-slo.webp
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.75
 date: 2022-06-24
 tags:
   - rat

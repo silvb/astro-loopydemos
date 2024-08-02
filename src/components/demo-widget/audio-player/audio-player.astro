@@ -1,0 +1,31 @@
+---
+import { Icon } from "astro-icon/components"
+import { PlayButton } from "./play-button"
+import { AudioPlayerDisplay } from "./audio-player-display"
+import AudioPlayerVisualizer from "./audio-player-visualizer.astro"
+import { AudioPlayerController } from "./audio-player-controller"
+
+interface Props {
+  slug: string
+}
+
+const { slug } = Astro.props
+---
+
+<div class="bg-loopydemos-primary-themed flex h-16 w-full gap-2 rounded-xl p-1">
+  <PlayButton client:load>
+    <Icon name="ph:play-fill" slot="play-icon" />
+    <Icon name="ph:pause-fill" slot="pause-icon" />
+    <Icon
+      name="ph:spinner-bold"
+      slot="loading-icon"
+      class="animate-spin-slow"
+    />
+  </PlayButton>
+  <div class="bg-loopydemos-secondary-themed h-full flex-grow rounded-xl">
+    <AudioPlayerDisplay client:load>
+      <AudioPlayerVisualizer slot="audio-visualizer" />
+    </AudioPlayerDisplay>
+  </div>
+</div>
+<AudioPlayerController client:only="solid-js" {slug} />

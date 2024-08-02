@@ -1,15 +1,8 @@
 ---
 builder: JPTR FX
 model: Super Weirdo
-image: ../images/jptr-fx-super-weirdo.png
-ogImage: ../images/seo-preview/jptr-fx-super-weirdo.jpeg
-slug: jptr-fx-super-weirdo
-pedalData: ../data/pedals/jptr-fx-super-weirdo.pedal.json
-presetsData: ../data/presets/jptr-fx-super-weirdo.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: false
-volume: 0.95
 date: 2024-02-29
 tags:
   - fuzz

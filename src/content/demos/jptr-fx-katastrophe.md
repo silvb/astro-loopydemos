@@ -1,15 +1,8 @@
 ---
 builder: JPTR FX
 model: Katastrophe
-image: ../images/jptr-fx-katastrophe.png
-ogImage: ../images/seo-preview/jptr-fx-katastrophe.jpeg
-slug: jptr-fx-katastrophe
-pedalData: ../data/pedals/jptr-fx-katastrophe.pedal.json
-presetsData: ../data/presets/jptr-fx-katastrophe.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: false
-volume: 0.95
 date: 2024-02-21
 tags:
   - amp in a box

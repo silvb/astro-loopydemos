@@ -1,14 +1,8 @@
 ---
 model: Stinger Fuzz
 builder: TL Pedals
-slug: tl-pedals-stinger-fuzz
-image: ../images/tl-pedals-stinger-fuzz.webp
-ogImage: ../images/seo-preview/tl-pedals-stinger-fuzz.jpeg
-pedalData: ../data/pedals/tl-pedals-stinger-fuzz.pedal.json
-presetsData: ../data/presets/tl-pedals-stinger-fuzz.presets.json
-type: demo
-isSponsored: true
 date: 2021-05-02
+type: demo
 tags:
   - big muff
   - rams head

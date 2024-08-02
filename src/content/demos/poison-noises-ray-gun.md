@@ -1,15 +1,8 @@
 ---
 builder: Poison Noises
 model: Ray Gun
-image: ../images/poison-noises-ray-gun.png
-ogImage: ../images/seo-preview/poison-noises-ray-gun.jpeg
-slug: poison-noises-ray-gun
-pedalData: ../data/pedals/poison-noises-ray-gun.pedal.json
-presetsData: ../data/presets/poison-noises-ray-gun.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.9
 date: 2022-09-23
 tags:
   - phaser

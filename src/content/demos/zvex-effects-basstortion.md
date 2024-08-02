@@ -1,15 +1,8 @@
 ---
 builder: ZVEX Effects
 model: Basstortion
-image: ../images/zvex-effects-basstortion.png
-ogImage: ../images/seo-preview/zvex-effects-basstortion.jpeg
-slug: zvex-effects-basstortion
-pedalData: ../data/pedals/zvex-effects-basstortion.pedal.json
-presetsData: ../data/presets/zvex-effects-basstortion.presets.json
 type: none
 isSponsored: true
-hasBackingTrack: true
-volume: 0.7
 date: 2024-06-25
 tags:
   - bass distortion

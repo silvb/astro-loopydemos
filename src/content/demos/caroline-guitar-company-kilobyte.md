@@ -1,11 +1,6 @@
 ---
 builder: Caroline Guitar Company
 model: Kilobyte
-slug: caroline-guitar-company-kilobyte
-image: ../images/caroline-guitar-company-kilobyte.webp
-ogImage: ../images/seo-preview/caroline-guitar-company-kilobyte.jpeg
-pedalData: ../data/pedals/caroline-guitar-company-kilobyte.pedal.json
-presetsData: ../data/presets/caroline-guitar-company-kilobyte.presets.json
 type: demo
 date: 2021-08-26
 tags:

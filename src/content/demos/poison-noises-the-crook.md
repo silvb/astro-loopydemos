@@ -1,15 +1,8 @@
 ---
 builder: Poison Noises
 model: The Crook V4
-image: ../images/poison-noises-the-crook.png
-ogImage: ../images/seo-preview/poison-noises-the-crook.jpeg
-slug: poison-noises-the-crook
-pedalData: ../data/pedals/poison-noises-the-crook.pedal.json
-presetsData: ../data/presets/poison-noises-the-crook.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2022-07-27
 tags:
   - bass overdrive

@@ -1,11 +1,6 @@
 ---
 builder: Alexander Pedals
 model: Jubilee Silver Overdrive
-image: ../images/alexander-pedals-jubilee-silver-overdrive.webp
-ogImage: ../images/seo-preview/alexander-pedals-jubilee-silver-overdrive.jpeg
-slug: alexander-pedals-jubilee-silver-overdrive
-pedalData: ../data/pedals/alexander-pedals-jubilee-silver-overdrive.pedal.json
-presetsData: ../data/presets/alexander-pedals-jubilee-silver-overdrive.presets.json
 type: demo
 date: 2021-04-18
 tags:

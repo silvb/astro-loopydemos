@@ -1,11 +1,6 @@
 ---
 builder: Crazy Tube Circuits
 model: Falcon
-image: ../images/crazy-tube-circuits-falcon.webp
-ogImage: ../images/seo-preview/crazy-tube-circuits-falcon.jpeg
-slug: crazy-tube-circuits-falcon
-pedalData: ../data/pedals/crazy-tube-circuits-falcon.pedal.json
-presetsData: ../data/presets/crazy-tube-circuits-falcon.presets.json
 type: demo
 date: 2021-02-17
 tags:

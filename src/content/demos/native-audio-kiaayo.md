@@ -1,11 +1,6 @@
 ---
 builder: NativeAudio
 model: Kiaayo
-image: ../images/native-audio-kiaayo.webp
-ogImage: ../images/seo-preview/native-audio-kiaayo.jpeg
-slug: native-audio-kiaayo
-pedalData: ../data/pedals/native-audio-kiaayo.pedal.json
-presetsData: ../data/presets/native-audio-kiaayo.presets.json
 type: demo
 date: 2021-05-21
 tags:

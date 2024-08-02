@@ -1,11 +1,6 @@
 ---
 builder: JHS Pedals
 model: Twin Twelve V2
-image: ../images/jhs-pedals-twin-twelve-v2.webp
-ogImage: ../images/seo-preview/jhs-pedals-twin-twelve-v2.jpeg
-slug: jhs-pedals-twin-twelve-v2
-pedalData: ../data/pedals/jhs-pedals-twin-twelve-v2.pedal.json
-presetsData: ../data/presets/jhs-pedals-twin-twelve-v2.presets.json
 type: demo
 date: 2021-04-22
 tags:

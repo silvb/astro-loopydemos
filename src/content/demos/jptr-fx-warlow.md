@@ -1,11 +1,6 @@
 ---
 builder: JPTR FX
 model: Warlow
-image: ../images/jptr-fx-warlow.png
-ogImage: ../images/seo-preview/jptr-fx-warlow.jpeg
-slug: jptr-fx-warlow
-pedalData: ../data/pedals/jptr-fx-warlow.pedal.json
-presetsData: ../data/presets/jptr-fx-warlow.presets.json
 type: demo
 isSponsored: false
 date: 2021-09-12

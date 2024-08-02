@@ -1,7 +1,7 @@
 ---
 import { getEntry, type CollectionEntry } from "astro:content"
 
-import AudioPlayer from "./audio-player.astro"
+import AudioPlayer from "./audio-player"
 import Pedal from "./pedal"
 import PresetsSlider from "./presets-slider.astro"
 
@@ -22,12 +22,10 @@ const {
   `${presetSlug as CollectionEntry<"demos">["slug"]}.presets`
 )
 
-// Get all pedals from presets
 const pedalsFromPresets = getPedalsFromPresets(presets)
 
 const isComparison = presets.some(({ comparison }) => Boolean(comparison))
 
-// The preset slug is also the pedal slug of the demo. Add it to the top of the list
 if (!isComparison) {
   pedalsFromPresets.unshift(presetSlug)
 }
@@ -37,7 +35,7 @@ const pedals = [...new Set(pedalsFromPresets)]
 
 <DemoStateInitializer client:load {presets} {pedals} />
 <div class="flex flex-col gap-4">
-  <AudioPlayer />
+  <AudioPlayer slug={presetSlug} />
   <PresetsSlider {presets} />
   {isComparison && <ComparisonSlider {pedals} />}
 </div>

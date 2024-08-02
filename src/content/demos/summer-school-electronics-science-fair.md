@@ -1,16 +1,9 @@
 ---
 builder: Summer School Electronics
 model: Science Fair
-image: ../images/summer-school-electronics-science-fair.png
-ogImage: ../images/seo-preview/summer-school-electronics-science-fair.jpeg
-slug: summer-school-electronics-science-fair
-pedalData: ../data/pedals/summer-school-electronics-science-fair.pedal.json
-presetsData: ../data/presets/summer-school-electronics-science-fair.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2023-09-20
-volume: 0.8
 tags:
   - rat
   - tubescreamer

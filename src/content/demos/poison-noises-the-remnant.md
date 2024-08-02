@@ -1,15 +1,8 @@
 ---
 builder: Poison Noises
 model: The Remnant
-image: ../images/poison-noises-the-remnant.png
-ogImage: ../images/seo-preview/poison-noises-the-remnant.jpeg
-slug: poison-noises-the-remnant
-pedalData: ../data/pedals/poison-noises-the-remnant.pedal.json
-presetsData: ../data/presets/poison-noises-the-remnant.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.7
 date: 2022-11-01
 tags:
   - delay

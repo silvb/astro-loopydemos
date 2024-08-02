@@ -1,11 +1,6 @@
 ---
 builder: Buzzing Bugs Audio Devices
 model: BB01 Fuzz Pre-Amp
-image: ../images/buzzing-bugs-audio-devices-bb01-fuzz-preamp.png
-ogImage: ../images/seo-preview/buzzing-bugs-audio-devices-bb01-fuzz-preamp.jpeg
-slug: buzzing-bugs-audio-devices-bb01-fuzz-preamp
-pedalData: ../data/pedals/buzzing-bugs-audio-devices-bb01-fuzz-preamp.pedal.json
-presetsData: ../data/presets/buzzing-bugs-audio-devices-bb01-fuzz-preamp.presets.json
 type: demo
 isSponsored: true
 hasBackingTrack: true

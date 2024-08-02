@@ -1,15 +1,8 @@
 ---
 builder: Electric Love
 model: Aquatone
-image: ../images/electric-love-aquatone.png
-ogImage: ../images/seo-preview/electric-love-aquatone.jpeg
-slug: electric-love-aquatone
-pedalData: ../data/pedals/electric-love-aquatone.pedal.json
-presetsData: ../data/presets/electric-love-aquatone.presets.json
 type: demo
 isSponsored: false
-hasBackingTrack: false
-volume: 0.7
 date: 2023-10-19
 tags:
   - overdrive

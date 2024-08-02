@@ -1,14 +1,8 @@
 ---
 builder: Demedash Effects
 model: T-120 DLX v2
-image: ../images/demedash-effects-t-120-dlx-v2.png
-ogImage: ../images/seo-preview/demedash-effects-t-120-dlx-v2.jpeg
-slug: demedash-effects-t-120-dlx-v2
-pedalData: ../data/pedals/demedash-effects-t-120-dlx-v2.pedal.json
-presetsData: ../data/presets/demedash-effects-t-120-dlx-v2.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2022-12-25
 tags:
   - delay

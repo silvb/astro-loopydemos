@@ -1,14 +1,8 @@
 ---
 builder: Poison Noises
 model: The Vacuum
-image: ../images/poison-noises-the-vacuum.png
-ogImage: ../images/seo-preview/poison-noises-the-vacuum.jpeg
-slug: poison-noises-the-vacuum
-pedalData: ../data/pedals/poison-noises-the-vacuum.pedal.json
-presetsData: ../data/presets/poison-noises-the-vacuum.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2022-09-02
 tags:
   - compressor

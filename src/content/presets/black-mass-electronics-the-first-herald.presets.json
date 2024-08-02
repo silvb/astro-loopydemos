@@ -1,4 +1,6 @@
 {
+  "hasBackingTrack": true,
+  "volume": 0.7,
   "presets": [
     {
       "id": "dinosaur_fuzz",

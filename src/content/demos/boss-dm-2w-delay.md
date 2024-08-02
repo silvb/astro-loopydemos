@@ -1,11 +1,6 @@
 ---
 builder: BOSS
 model: DM-2w Delay
-slug: boss-dm-2w-delay
-image: ../images/boss-dm-2w-delay.webp
-ogImage: ../images/seo-preview/boss-dm-2w-delay.jpeg
-pedalData: ../data/pedals/boss-dm-2w-delay.pedal.json
-presetsData: ../data/presets/boss-dm-2w-delay.presets.json
 type: demo
 date: 2021-01-28
 tags:

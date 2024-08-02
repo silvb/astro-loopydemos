@@ -1,15 +1,8 @@
 ---
 builder: Beautiful Noise Effects
 model: When The Sun Explodes
-image: ../images/beautiful-noise-effects-when-the-sun-explodes.png
-ogImage: ../images/seo-preview/beautiful-noise-effects-when-the-sun-explodes.jpeg
-slug: beautiful-noise-effects-when-the-sun-explodes
-pedalData: ../data/pedals/beautiful-noise-effects-when-the-sun-explodes.pedal.json
-presetsData: ../data/presets/beautiful-noise-effects-when-the-sun-explodes.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.7
 date: 2023-06-07
 tags:
   - shoegaze

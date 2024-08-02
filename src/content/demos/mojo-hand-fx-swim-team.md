@@ -1,15 +1,8 @@
 ---
 builder: Mojo Hand FX
 model: Swim Team
-image: ../images/mojo-hand-fx-swim-team.png
-ogImage: ../images/seo-preview/mojo-hand-fx-swim-team.jpeg
-slug: mojo-hand-fx-swim-team
-pedalData: ../data/pedals/mojo-hand-fx-swim-team.pedal.json
-presetsData: ../data/presets/mojo-hand-fx-swim-team.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.85
 date: 2022-08-04
 tags:
   - chorus

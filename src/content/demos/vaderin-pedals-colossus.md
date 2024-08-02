@@ -1,15 +1,8 @@
 ---
 builder: Vaderin Pedals
 model: Colossus
-image: ../images/vaderin-pedals-colossus.png
-ogImage: ../images/seo-preview/vaderin-pedals-colossus.jpeg
-slug: vaderin-pedals-colossus
-pedalData: ../data/pedals/vaderin-pedals-colossus.pedal.json
-presetsData: ../data/presets/vaderin-pedals-colossus.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.65
 date: 2024-03-21
 tags:
   - velcro fuzz

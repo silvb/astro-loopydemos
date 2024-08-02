@@ -1,14 +1,8 @@
 ---
 builder: OKKO FX
 model: Twin Sonic MKII
-image: ../images/okko-fx-twin-sonic-mkii.png
-ogImage: ../images/seo-preview/okko-fx-twin-sonic-mkii.jpeg
-slug: okko-fx-twin-sonic-mkii
-pedalData: ../data/pedals/okko-fx-twin-sonic-mkii.pedal.json
-presetsData: ../data/presets/okko-fx-twin-sonic-mkii.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2022-12-04
 tags:
   - amp in a box

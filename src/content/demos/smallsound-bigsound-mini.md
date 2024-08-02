@@ -1,11 +1,6 @@
 ---
 builder: Smallsound / Bigsound
 model: Mini
-slug: smallsound-bigsound-mini
-image: ../images/smallsound-bigsound-mini.png
-ogImage: ../images/seo-preview/smallsound-bigsound-mini.jpeg
-pedalData: ../data/pedals/smallsound-bigsound-mini.pedal.json
-presetsData: ../data/presets/smallsound-bigsound-mini.presets.json
 type: demo
 date: 2020-11-06
 tags:

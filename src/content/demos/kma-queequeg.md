@@ -1,15 +1,6 @@
 ---
 builder: KMA Audio Machines
 model: Queequeg
-slug: kma-queequeg
-image: ../images/kma-queequeg.webp
-ogImage: ../images/seo-preview/kma-queequeg.jpeg
-pedalData: ../data/pedals/kma-queequeg.pedal.json
-stackedPedals:
-  - animalizzer:
-    data: ../data/pedals/tone-electronix-animalizzer.pedal.json
-    image: ../images/tone-electronix-animalizzer.webp
-presetsData: ../data/presets/kma-queequeg.presets.json
 type: demo
 date: 2021-04-11
 tags:

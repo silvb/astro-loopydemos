@@ -1,15 +1,8 @@
 ---
 builder: VVco Pedals
 model: Dark Father Preamp
-image: ../images/vvco-pedals-dark-father-preamp.png
-ogImage: ../images/seo-preview/vvco-pedals-dark-father-preamp.jpeg
-slug: vvco-pedals-dark-father-preamp
-pedalData: ../data/pedals/vvco-pedals-dark-father-preamp.pedal.json
-presetsData: ../data/presets/vvco-pedals-dark-father-preamp.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2023-01-14
 tags:
   - qotsa

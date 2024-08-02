@@ -1,14 +1,8 @@
 ---
 builder: Walrus Audio
 model: Fundamental Chorus
-image: ../images/walrus-audio-fundamental-chorus.png
-ogImage: ../images/seo-preview/walrus-audio-fundamental-chorus.jpeg
-slug: walrus-audio-fundamental-chorus
-pedalData: ../data/pedals/walrus-audio-fundamental-chorus.pedal.json
-presetsData: ../data/presets/walrus-audio-fundamental-chorus.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2023-07-10
 tags:
   - chorus

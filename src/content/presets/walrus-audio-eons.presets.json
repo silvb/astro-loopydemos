@@ -1,4 +1,6 @@
 {
+  "hasBackingTrack": true,
+  "volume": 1.2,
   "presets": [
     {
       "id": "velcro_fuzz",

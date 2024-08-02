@@ -1,15 +1,8 @@
 ---
 builder: Poison Noises
 model: The Crook V5
-image: ../images/poison-noises-the-crook-v5.png
-ogImage: ../images/seo-preview/poison-noises-the-crook-v5.jpeg
-slug: poison-noises-the-crook-v5
-pedalData: ../data/pedals/poison-noises-the-crook-v5.pedal.json
-presetsData: ../data/presets/poison-noises-the-crook-v5.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.85
 date: 2023-10-06
 tags:
   - bass

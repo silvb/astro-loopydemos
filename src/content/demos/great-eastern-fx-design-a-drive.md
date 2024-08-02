@@ -1,15 +1,8 @@
 ---
 builder: Great Eastern FX
 model: Design-a-drive
-image: ../images/great-eastern-fx-design-a-drive.png
-ogImage: ../images/seo-preview/great-eastern-fx-design-a-drive.jpeg
-slug: great-eastern-fx-design-a-drive
-pedalData: ../data/pedals/great-eastern-fx-design-a-drive.pedal.json
-presetsData: ../data/presets/great-eastern-fx-design-a-drive.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.7
 date: 2023-10-10
 tags:
   - overdrive

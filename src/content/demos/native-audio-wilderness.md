@@ -1,11 +1,6 @@
 ---
 builder: NativeAudio
 model: Wilderness
-slug: native-audio-wilderness
-image: ../images/native-audio-wilderness.webp
-ogImage: ../images/seo-preview/native-audio-wilderness.jpeg
-pedalData: ../data/pedals/native-audio-wilderness.pedal.json
-presetsData: ../data/presets/native-audio-wilderness.presets.json
 type: demo
 isSponsored: true
 date: 2021-05-30

@@ -1,15 +1,8 @@
 ---
 builder: Walrus Audio
 model: Badwater
-image: ../images/walrus-audio-badwater.webp
-ogImage: ../images/seo-preview/walrus-audio-badwater.jpeg
-slug: walrus-audio-badwater
-pedalData: ../data/pedals/walrus-audio-badwater.pedal.json
-presetsData: ../data/presets/walrus-audio-badwater.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 1
 date: 2022-06-08
 tags:
   - bass preamp

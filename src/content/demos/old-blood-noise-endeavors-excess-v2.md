@@ -1,15 +1,8 @@
 ---
 builder: Old Blood Noise Endeavors
 model: Excess V2
-image: ../images/old-blood-noise-endeavors-excess-v2.png
-ogImage: ../images/seo-preview/old-blood-noise-endeavors-excess-v2.jpeg
-slug: old-blood-noise-endeavors-excess-v2
-pedalData: ../data/pedals/old-blood-noise-endeavors-excess-v2.pedal.json
-presetsData: ../data/presets/old-blood-noise-endeavors-excess-v2.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2024-05-07
 tags:
   - shoegaze

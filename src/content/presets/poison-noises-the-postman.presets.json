@@ -1,4 +1,5 @@
 {
+  "hasBackingTrack": true,
   "presets": [
     {
       "id": "auto_wah",

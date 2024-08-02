@@ -1,15 +1,8 @@
 ---
 builder: Ground FX
 model: Keto
-image: ../images/ground-fx-keto.png
-ogImage: ../images/seo-preview/ground-fx-keto.jpeg
-slug: ground-fx-keto
-pedalData: ../data/pedals/ground-fx-keto.pedal.json
-presetsData: ../data/presets/ground-fx-keto.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2023-02-22
 tags:
   - chorus

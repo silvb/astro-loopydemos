@@ -1,15 +1,8 @@
 ---
 builder: Walrus Audio
 model: Fundamental Fuzz
-image: ../images/walrus-audio-fundamental-fuzz.png
-ogImage: ../images/seo-preview/walrus-audio-fundamental-fuzz.jpeg
-slug: walrus-audio-fundamental-fuzz
-pedalData: ../data/pedals/walrus-audio-fundamental-fuzz.pedal.json
-presetsData: ../data/presets/walrus-audio-fundamental-fuzz.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.75
 date: 2023-04-07
 tags:
   - big muff

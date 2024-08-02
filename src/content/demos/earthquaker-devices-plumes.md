@@ -1,11 +1,6 @@
 ---
 builder: EarthQuaker Devices
 model: Plumes
-slug: earthquaker-devices-plumes
-image: ../images/earthquaker-devices-plumes.webp
-ogImage: ../images/seo-preview/earthquaker-devices-plumes.jpeg
-pedalData: ../data/pedals/earthquaker-devices-plumes.pedal.json
-presetsData: ../data/presets/earthquaker-devices-plumes.presets.json
 type: demo
 date: 2021-01-04
 tags:

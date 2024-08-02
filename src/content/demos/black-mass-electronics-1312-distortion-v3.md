@@ -1,18 +1,7 @@
 ---
 builder: Black Mass Electronics
 model: 1312 Distortion V3
-image: ../images/black-mass-electronics-1312-distortion-v3.webp
-ogImage: ../images/seo-preview/black-mass-electronics-1312-distortion-v3.jpeg
-slug: black-mass-electronics-1312-distortion-v3
-pedalData: ../data/pedals/black-mass-electronics-1312-distortion-v3.pedal.json
-presetsData: ../data/presets/black-mass-electronics-1312-distortion-v3.presets.json
-stackedPedals:
-  - slo:
-    data: ../data/pedals/walrus-audio-slo.pedal.json
-    image: ../images/walrus-audio-slo.webp
 type: demo
-hasBackingTrack: true
-volume: 0.65
 isSponsored: true
 date: 2022-04-07
 tags:

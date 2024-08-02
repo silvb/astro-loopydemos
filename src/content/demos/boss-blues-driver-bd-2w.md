@@ -1,11 +1,6 @@
 ---
 builder: BOSS
 model: Blues Driver BD-2w
-slug: boss-blues-driver-bd-2w
-image: ../images/boss-blues-driver-bd-2w.webp
-ogImage: ../images/seo-preview/boss-blues-driver-bd-2w.jpeg
-pedalData: ../data/pedals/boss-blues-driver-bd-2w.pedal.json
-presetsData: ../data/presets/boss-blues-driver-bd-2w.presets.json
 type: demo
 date: 2021-05-09
 tags:

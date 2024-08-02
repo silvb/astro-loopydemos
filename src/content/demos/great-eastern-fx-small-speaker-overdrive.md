@@ -1,15 +1,8 @@
 ---
 builder: Great Eastern FX
 model: Small Speaker Overdrive
-image: ../images/great-eastern-fx-small-speaker-overdrive.png
-ogImage: ../images/seo-preview/great-eastern-fx-small-speaker-overdrive.jpeg
-slug: great-eastern-fx-small-speaker-overdrive
-pedalData: ../data/pedals/great-eastern-fx-small-speaker-overdrive.pedal.json
-presetsData: ../data/presets/great-eastern-fx-small-speaker-overdrive.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.7
 date: 2023-03-30
 tags:
   - lofi

@@ -1,4 +1,6 @@
 {
+  "hasBackingTrack": true,
+  "volume": 0.6,
   "presets": [
     {
       "id": "sparkle_and_chime",

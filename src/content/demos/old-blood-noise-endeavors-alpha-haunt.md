@@ -1,15 +1,8 @@
 ---
 builder: Old Blood Noise Endeavors
 model: Alpha Haunt
-image: ../images/old-blood-noise-endeavors-alpha-haunt.png
-ogImage: ../images/seo-preview/old-blood-noise-endeavors-alpha-haunt.jpeg
-slug: old-blood-noise-endeavors-alpha-haunt
-pedalData: ../data/pedals/old-blood-noise-endeavors-alpha-haunt.pedal.json
-presetsData: ../data/presets/old-blood-noise-endeavors-alpha-haunt.presets.json
 type: demo
 isSponsored: false
-hasBackingTrack: true
-volume: 0.7
 date: 2024-04-20
 tags:
   - velcro fuzz

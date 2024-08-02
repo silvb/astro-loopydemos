@@ -1,14 +1,8 @@
 ---
 builder: ProCo
 model: Vintage RAT 1987
-image: ../images/proco-vintage-rat-1987.webp
-ogImage: ../images/seo-preview/proco-vintage-rat-1987.jpeg
-slug: proco-vintage-rat-1987
-pedalData: ../data/pedals/proco-vintage-rat-1987.pedal.json
-presetsData: ../data/presets/proco-vintage-rat-1987.presets.json
 type: demo
 isSponsored: false
-hasBackingTrack: false
 date: 2023-02-11
 tags:
   - rat

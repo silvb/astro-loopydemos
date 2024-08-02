@@ -1,15 +1,8 @@
 ---
 builder: Old Blood Noise Endeavors
 model: Screen Violence
-image: ../images/old-blood-noise-endeavors-screen-violence.png
-ogImage: ../images/seo-preview/old-blood-noise-endeavors-screen-violence.jpeg
-slug: old-blood-noise-endeavors-screen-violence
-pedalData: ../data/pedals/old-blood-noise-endeavors-screen-violence.pedal.json
-presetsData: ../data/presets/old-blood-noise-endeavors-screen-violence.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.9
 date: 2022-10-05
 tags:
   - reverb

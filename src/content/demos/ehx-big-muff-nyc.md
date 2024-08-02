@@ -1,11 +1,6 @@
 ---
 builder: Electro Harmonix
 model: Big Muff PI USA
-image: ../images/ehx-big-muff-nyc.webp
-ogImage: ../images/seo-preview/ehx-big-muff-nyc.jpeg
-slug: ehx-big-muff-nyc
-pedalData: ../data/pedals/ehx-big-muff-nyc.pedal.json
-presetsData: ../data/presets/ehx-big-muff-nyc.presets.json
 type: demo
 isSponsored: false
 date: 2021-11-07

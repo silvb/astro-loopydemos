@@ -1,15 +1,8 @@
 ---
 builder: Vaderin Pedals
 model: Kroaked
-image: ../images/vaderin-pedals-kroaked.png
-ogImage: ../images/seo-preview/vaderin-pedals-kroaked.jpeg
-slug: vaderin-pedals-kroaked
-pedalData: ../data/pedals/vaderin-pedals-kroaked.pedal.json
-presetsData: ../data/presets/vaderin-pedals-kroaked.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.9
 date: 2022-10-25
 tags:
   -

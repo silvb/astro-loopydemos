@@ -1,15 +1,8 @@
 ---
 builder: Poison Noises
 model: The Spill
-image: ../images/poison-noises-the-spill.png
-ogImage: ../images/seo-preview/poison-noises-the-spill.jpeg
-slug: poison-noises-the-spill
-pedalData: ../data/pedals/poison-noises-the-spill.pedal.json
-presetsData: ../data/presets/poison-noises-the-spill.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 1.2
 date: 2022-08-11
 tags:
   - chorus

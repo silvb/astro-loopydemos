@@ -1,11 +1,6 @@
 ---
 builder: NativeAudio
 model: Ghost Ridge
-slug: native-audio-ghost-ridge
-image: ../images/native-audio-ghost-ridge.webp
-ogImage: ../images/seo-preview/native-audio-ghost-ridge.jpeg
-pedalData: ../data/pedals/native-audio-ghost-ridge.pedal.json
-presetsData: ../data/presets/native-audio-ghost-ridge.presets.json
 isSponsored: true
 type: demo
 date: 2021-05-16

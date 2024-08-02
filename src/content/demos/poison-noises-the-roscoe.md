@@ -1,14 +1,8 @@
 ---
 builder: Poison Noises
 model: The Roscoe
-image: ../images/poison-noises-the-roscoe.png
-ogImage: ../images/seo-preview/poison-noises-the-roscoe.jpeg
-slug: poison-noises-the-roscoe
-pedalData: ../data/pedals/poison-noises-the-roscoe.pedal.json
-presetsData: ../data/presets/poison-noises-the-roscoe.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2022-11-24
 tags:
   - eq

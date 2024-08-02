@@ -1,15 +1,8 @@
 ---
 builder: Tone Charm Audio
 model: Into the Waves
-image: ../images/tone-charm-audio-into-the-waves.png
-ogImage: ../images/seo-preview/tone-charm-audio-into-the-waves.jpeg
-slug: tone-charm-audio-into-the-waves
-pedalData: ../data/pedals/tone-charm-audio-into-the-waves.pedal.json
-presetsData: ../data/presets/tone-charm-audio-into-the-waves.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.6
 date: 2023-03-15
 tags:
   - delay

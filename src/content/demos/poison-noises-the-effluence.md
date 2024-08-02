@@ -1,19 +1,8 @@
 ---
 builder: Poison Noises
 model: The Effluence
-image: ../images/poison-noises-the-effluence.png
-ogImage: ../images/seo-preview/poison-noises-the-effluence.jpeg
-slug: poison-noises-the-effluence
-pedalData: ../data/pedals/poison-noises-the-effluence.pedal.json
-presetsData: ../data/presets/poison-noises-the-effluence.presets.json
-stackedPedals:
-  - crook:
-    data: ../data/pedals/poison-noises-the-crook.pedal.json
-    image: ../images/poison-noises-the-crook.png
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 1.1
 date: 2022-11-01
 tags:
   - reverb

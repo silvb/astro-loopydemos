@@ -12,8 +12,6 @@ stackedPedals:
 presetsData: ../data/presets/keeley-electronics-compressor-mini.presets.json
 type: demo
 isSponsored: false
-hasBackingTrack: true
-volume: 0.6
 date: 2022-03-25
 tags:
   - compressor

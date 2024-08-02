@@ -1,11 +1,6 @@
 ---
 model: Julia V2
 builder: Walrus Audio
-slug: walrus-audio-julia-v2
-image: ../images/walrus-audio-julia-v2.webp
-ogImage: ../images/seo-preview/walrus-audio-julia-v2.jpeg
-pedalData: ../data/pedals/walrus-audio-julia-v2.pedal.json
-presetsData: ../data/presets/walrus-audio-julia-v2.presets.json
 type: demo
 date: 2020-12-31
 tags:

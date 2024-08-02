@@ -1,15 +1,8 @@
 ---
 builder: Walrus Audio
 model: Eons
-image: ../images/walrus-audio-eons.webp
-ogImage: ../images/seo-preview/walrus-audio-eons.jpeg
-slug: walrus-audio-eons
-pedalData: ../data/pedals/walrus-audio-eons.pedal.json
-presetsData: ../data/presets/walrus-audio-eons.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 1.2
 date: 2022-11-30
 tags:
   - velcro fuzz

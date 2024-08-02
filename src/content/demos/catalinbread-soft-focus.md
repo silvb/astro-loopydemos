@@ -1,18 +1,8 @@
 ---
 builder: Catalinbread
 model: Soft Focus
-image: ../images/catalinbread-soft-focus.png
-ogImage: ../images/seo-preview/catalinbread-soft-focus.jpeg
-slug: catalinbread-soft-focus
-pedalData: ../data/pedals/catalinbread-soft-focus.pedal.json
-presetsData: ../data/presets/catalinbread-soft-focus.presets.json
-stackedPedals:
-  - 1312:
-    data: ../data/pedals/black-mass-electronics-1312-distortion-v3.pedal.json
-    image: ../images/black-mass-electronics-1312-distortion-v3.webp
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2022-09-07
 tags:
   - reverb

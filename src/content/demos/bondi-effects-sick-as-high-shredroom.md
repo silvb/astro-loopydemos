@@ -1,15 +1,8 @@
 ---
 builder: Bondi Effects
 model: Sick As High Shredroom
-image: ../images/bondi-effects-sick-as-high-shredroom.png
-ogImage: ../images/seo-preview/bondi-effects-sick-as-high-shredroom.jpeg
-slug: bondi-effects-sick-as-high-shredroom
-pedalData: ../data/pedals/bondi-effects-sick-as-high-shredroom.pedal.json
-presetsData: ../data/presets/bondi-effects-sick-as-high-shredroom.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2023-08-20
 tags:
   - distortion

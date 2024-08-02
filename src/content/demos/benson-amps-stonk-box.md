@@ -1,15 +1,8 @@
 ---
 builder: Benson Amps
 model: Stonk Box
-image: ../images/benson-amps-stonk-box.png
-ogImage: ../images/seo-preview/benson-amps-stonk-box.jpeg
-slug: benson-amps-stonk-box
-pedalData: ../data/pedals/benson-amps-stonk-box.pedal.json
-presetsData: ../data/presets/benson-amps-stonk-box.presets.json
 type: demo
 isSponsored: false
-hasBackingTrack: true
-volume: 0.85
 date: 2023-12-07
 tags:
   - fuzz

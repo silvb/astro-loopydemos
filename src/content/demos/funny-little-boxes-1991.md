@@ -1,16 +1,9 @@
 ---
 builder: Funny Little Boxes
 model: "1991"
-image: ../images/funny-little-boxes-1991.png
-ogImage: ../images/seo-preview/funny-little-boxes-1991.jpeg
-slug: funny-little-boxes-1991
-pedalData: ../data/pedals/funny-little-boxes-1991.pedal.json
-presetsData: ../data/presets/funny-little-boxes-1991.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2023-07-06
-volume: 0.85
 tags:
   - distortion
   - plexi

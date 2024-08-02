@@ -1,22 +1,8 @@
 ---
 builder: Old Blood Noise Endeavors
 model: BL-44 Reverse
-image: ../images/old-blood-noise-endeavors-bl-44-reverse.png
-ogImage: ../images/seo-preview/old-blood-noise-endeavors-bl-44-reverse.jpeg
-slug: old-blood-noise-endeavors-bl-44-reverse
-pedalData: ../data/pedals/old-blood-noise-endeavors-bl-44-reverse.pedal.json
-presetsData: ../data/presets/old-blood-noise-endeavors-bl-44-reverse.presets.json
-stackedPedals:
-  - exploder:
-    data: ../data/pedals/beautiful-noise-effects-exploder.pedal.json
-    image: ../images/beautiful-noise-effects-exploder.png
-  - sinkhole:
-    data: ../data/pedals/catalinbread-sinkhole.pedal.json
-    image: ../images/catalinbread-sinkhole.png
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.65
 date: 2024-04-10
 tags:
   - reverse delay

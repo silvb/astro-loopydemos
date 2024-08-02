@@ -1,11 +1,6 @@
 ---
 builder: Walrus Audio
 model: Eras
-image: ../images/walrus-audio-eras.webp
-ogImage: ../images/seo-preview/walrus-audio-eras.jpeg
-slug: walrus-audio-eras
-pedalData: ../data/pedals/walrus-audio-eras.pedal.json
-presetsData: ../data/presets/walrus-audio-eras.presets.json
 type: demo
 isSponsored: true
 date: 2021-10-02

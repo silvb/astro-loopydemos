@@ -1,15 +1,8 @@
 ---
 builder: Gojira Fx
 model: Mr Sparkle 808
-image: ../images/gojira-fx-mr-sparkle-808.png
-ogImage: ../images/seo-preview/gojira-fx-mr-sparkle-808.jpeg
-slug: gojira-fx-mr-sparkle-808
-pedalData: ../data/pedals/gojira-fx-mr-sparkle-808.pedal.json
-presetsData: ../data/presets/gojira-fx-mr-sparkle-808.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.9
 date: 2022-11-07
 tags:
   - tubescreamer

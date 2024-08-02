@@ -1,4 +1,6 @@
 {
+  "hasBackingTrack": true,
+  "volume": 0.75,
   "presets": [
     {
       "id": "extremely_gated",

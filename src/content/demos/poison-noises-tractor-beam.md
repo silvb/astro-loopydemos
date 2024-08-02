@@ -1,15 +1,8 @@
 ---
 builder: Poison Noises
 model: Tractor Beam
-image: ../images/poison-noises-tractor-beam.png
-ogImage: ../images/seo-preview/poison-noises-tractor-beam.jpeg
-slug: poison-noises-tractor-beam
-pedalData: ../data/pedals/poison-noises-tractor-beam.pedal.json
-presetsData: ../data/presets/poison-noises-tractor-beam.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.9
 date: 2022-11-17
 tags:
   -

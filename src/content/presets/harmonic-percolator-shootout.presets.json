@@ -1,4 +1,6 @@
 {
+  "volume": 0.75,
+  "hasBackingTrack": true,
   "presets": [
     {
       "id": "low_gain",
@@ -24,20 +26,20 @@
           }
         },
         {
-          "id": "freqhd_low",
-          "pedalSlug": "freqscene-effects-co-harmonic-distorter",
-          "settings": {
-            "harmonics": 4,
-            "balance": 5
-          }
-        },
-        {
           "id": "divvy_low",
           "pedalSlug": "champion-leccy-the-divvy-v3",
           "settings": {
             "level": 6.5,
             "gain": 5,
             "voice": 2
+          }
+        },
+        {
+          "id": "freqhd_low",
+          "pedalSlug": "freqscene-effects-co-harmonic-distorter",
+          "settings": {
+            "harmonics": 4,
+            "balance": 5
           }
         },
         {
@@ -86,20 +88,20 @@
           }
         },
         {
-          "id": "freqhd_high",
-          "pedalSlug": "freqscene-effects-co-harmonic-distorter",
-          "settings": {
-            "harmonics": 8.5,
-            "balance": 3
-          }
-        },
-        {
           "id": "divvy_high",
           "pedalSlug": "champion-leccy-the-divvy-v3",
           "settings": {
             "level": 6,
             "gain": 9,
             "voice": 3
+          }
+        },
+        {
+          "id": "freqhd_high",
+          "pedalSlug": "freqscene-effects-co-harmonic-distorter",
+          "settings": {
+            "harmonics": 8.5,
+            "balance": 3
           }
         },
         {

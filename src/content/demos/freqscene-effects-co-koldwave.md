@@ -1,15 +1,8 @@
 ---
 builder: Freqscene Effects Co.
 model: Koldwave
-image: ../images/freqscene-effects-co-koldwave.png
-ogImage: ../images/seo-preview/freqscene-effects-co-koldwave.jpeg
-slug: freqscene-effects-co-koldwave
-pedalData: ../data/pedals/freqscene-effects-co-koldwave.pedal.json
-presetsData: ../data/presets/freqscene-effects-co-koldwave.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2024-06-27
 tags:
   - modulation

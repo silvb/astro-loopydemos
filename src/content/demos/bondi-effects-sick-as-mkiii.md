@@ -1,15 +1,8 @@
 ---
 builder: Bondi Effects
 model: Sick As MkIII
-image: ../images/bondi-effects-sick-as-mkiii.png
-ogImage: ../images/seo-preview/bondi-effects-sick-as-mkiii.jpeg
-slug: bondi-effects-sick-as-mkiii
-pedalData: ../data/pedals/bondi-effects-sick-as-mkiii.pedal.json
-presetsData: ../data/presets/bondi-effects-sick-as-mkiii.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2022-09-26
 tags:
   - klon

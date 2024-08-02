@@ -1,15 +1,8 @@
 ---
 builder: blue fx devices
 model: Nebula
-image: ../images/blue-fx-devices-nebula.webp
-ogImage: ../images/seo-preview/blue-fx-devices-nebula.jpeg
-slug: blue-fx-devices-nebula
-pedalData: ../data/pedals/blue-fx-devices-nebula.pedal.json
-presetsData: ../data/presets/blue-fx-devices-nebula.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 1.1
 date: 2022-07-12
 tags:
   - op amp overdrive

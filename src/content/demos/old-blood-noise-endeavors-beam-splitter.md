@@ -1,15 +1,8 @@
 ---
 builder: Old Blood Noise Endeavors
 model: Beam Splitter
-image: ../images/old-blood-noise-endeavors-beam-splitter.png
-ogImage: ../images/seo-preview/old-blood-noise-endeavors-beam-splitter.jpeg
-slug: old-blood-noise-endeavors-beam-splitter
-pedalData: ../data/pedals/old-blood-noise-endeavors-beam-splitter.pedal.json
-presetsData: ../data/presets/old-blood-noise-endeavors-beam-splitter.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.9
 date: 2024-04-23
 tags:
   - ambient

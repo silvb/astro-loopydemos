@@ -1,12 +1,7 @@
 ---
 model: Polychrome
 builder: Walrus Audio
-slug: walrus-audio-polychrome
 isSponsored: true
-image: ../images/walrus-audio-polychrome.webp
-ogImage: ../images/seo-preview/walrus-audio-polychrome.jpeg
-pedalData: ../data/pedals/walrus-audio-polychrome.pedal.json
-presetsData: ../data/presets/walrus-audio-polychrome.presets.json
 type: demo
 date: 2021-05-11
 tags:

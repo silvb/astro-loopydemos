@@ -1,11 +1,6 @@
 ---
 builder: Catalinbread
 model: SFT
-image: ../images/catalinbread-sft.webp
-ogImage: ../images/seo-preview/catalinbread-sft.jpeg
-slug: catalinbread-sft
-pedalData: ../data/pedals/catalinbread-sft.pedal.json
-presetsData: ../data/presets/catalinbread-sft.presets.json
 type: demo
 date: 2021-04-20
 tags:

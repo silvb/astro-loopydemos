@@ -1,15 +1,8 @@
 ---
 builder: Buzzing Bugs Audio Devices
 model: BB03 Lo-Fi Chorus
-image: ../images/buzzing-bugs-audio-devices-bb03-lo-fi-chorus.png
-ogImage: ../images/seo-preview/buzzing-bugs-audio-devices-bb03-lo-fi-chorus.jpeg
-slug: buzzing-bugs-audio-devices-bb03-lo-fi-chorus
-pedalData: ../data/pedals/buzzing-bugs-audio-devices-bb03-lo-fi-chorus.pedal.json
-presetsData: ../data/presets/buzzing-bugs-audio-devices-bb03-lo-fi-chorus.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2023-12-14
 tags:
   - lofi

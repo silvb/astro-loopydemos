@@ -1,11 +1,6 @@
 ---
 builder: Catalinbread
 model: Cloak
-image: ../images/catalinbread-cloak.webp
-ogImage: ../images/seo-preview/catalinbread-cloak.jpeg
-slug: catalinbread-cloak
-pedalData: ../data/pedals/catalinbread-cloak.pedal.json
-presetsData: ../data/presets/catalinbread-cloak.presets.json
 type: demo
 isSponsored: true
 date: 2021-11-10

@@ -1,15 +1,8 @@
 ---
 builder: Walrus Audio
 model: Fundamental Tremolo
-image: ../images/walrus-audio-fundamental-tremolo.png
-ogImage: ../images/seo-preview/walrus-audio-fundamental-tremolo.jpeg
-slug: walrus-audio-fundamental-tremolo
-pedalData: ../data/pedals/walrus-audio-fundamental-tremolo.pedal.json
-presetsData: ../data/presets/walrus-audio-fundamental-tremolo.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.7
 date: 2023-11-21
 tags:
   - tremolo

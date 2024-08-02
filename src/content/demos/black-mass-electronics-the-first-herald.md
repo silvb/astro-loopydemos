@@ -1,14 +1,7 @@
 ---
 builder: Black Mass Electronics
 model: The First Herald
-image: ../images/black-mass-electronics-the-first-herald.webp
-ogImage: ../images/seo-preview/black-mass-electronics-the-first-herald.jpeg
-slug: black-mass-electronics-the-first-herald
-pedalData: ../data/pedals/black-mass-electronics-the-first-herald.pedal.json
-presetsData: ../data/presets/black-mass-electronics-the-first-herald.presets.json
 type: demo
-hasBackingTrack: true
-volume: 0.7
 date: 2022-07-29
 tags:
   - big muff

@@ -1,11 +1,6 @@
 ---
 builder: Walrus Audio
 model: Slö Multi Texture Reverb
-slug: walrus-audio-slo
-image: ../images/walrus-audio-slo.webp
-ogImage: ../images/seo-preview/walrus-audio-slo.jpeg
-pedalData: ../data/pedals/walrus-audio-slo.pedal.json
-presetsData: ../data/presets/walrus-audio-slo.presets.json
 type: demo
 date: 2020-11-12
 tags:

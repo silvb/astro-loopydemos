@@ -1,15 +1,8 @@
 ---
 builder: Poison Noises
 model: Hall of Mirrors
-image: ../images/poison-noises-hall-of-mirrors.png
-ogImage: ../images/seo-preview/poison-noises-hall-of-mirrors.jpeg
-slug: poison-noises-hall-of-mirrors
-pedalData: ../data/pedals/poison-noises-hall-of-mirrors.pedal.json
-presetsData: ../data/presets/poison-noises-hall-of-mirrors.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2022-08-29
 tags:
   - plate reverb

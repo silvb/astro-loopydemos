@@ -1,4 +1,6 @@
 {
+  "hasBackingTrack": true,
+  "volume": 0.65,
   "presets": [
     {
       "id": "reverse_octave_boost",

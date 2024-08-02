@@ -1,15 +1,8 @@
 ---
 builder: Buzzing Bugs Audio Devices
 model: BB02 Percolator Fuzz
-image: ../images/buzzing-bugs-audio-devices-bb02-percolator-fuzz.png
-ogImage: ../images/seo-preview/buzzing-bugs-audio-devices-bb02-percolator-fuzz.jpeg
-slug: buzzing-bugs-audio-devices-bb02-percolator-fuzz
-pedalData: ../data/pedals/buzzing-bugs-audio-devices-bb02-percolator-fuzz.pedal.json
-presetsData: ../data/presets/buzzing-bugs-audio-devices-bb02-percolator-fuzz.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.5
 date: 2023-08-29
 tags:
   - harmonic percolator

@@ -2,10 +2,6 @@
 model: ACS1
 builder: Walrus Audio
 slug: walrus-audio-acs1
-image: ../images/walrus-audio-acs1.webp
-ogImage: ../images/seo-preview/walrus-audio-acs1.jpeg
-pedalData: ../data/pedals/walrus-audio-acs1.pedal.json
-presetsData: ../data/presets/walrus-audio-acs1.presets.json
 type: demo
 isSponsored: true
 date: 2021-03-26

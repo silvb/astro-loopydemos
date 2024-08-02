@@ -1,15 +1,8 @@
 ---
 builder: Great Eastern FX
 model: Focus Fuzz
-image: ../images/great-eastern-fx-focus-fuzz.png
-ogImage: ../images/seo-preview/great-eastern-fx-focus-fuzz.jpeg
-slug: great-eastern-fx-focus-fuzz
-pedalData: ../data/pedals/great-eastern-fx-focus-fuzz.pedal.json
-presetsData: ../data/presets/great-eastern-fx-focus-fuzz.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2023-03-01
 tags:
   - fuzz

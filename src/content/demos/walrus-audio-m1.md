@@ -1,15 +1,8 @@
 ---
 builder: Walrus Audio
 model: M1
-image: ../images/walrus-audio-m1.webp
-ogImage: ../images/seo-preview/walrus-audio-m1.jpeg
-slug: walrus-audio-m1
-pedalData: ../data/pedals/walrus-audio-m1.pedal.json
-presetsData: ../data/presets/walrus-audio-m1.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.7
 date: 2022-04-27
 tags:
   - lofi

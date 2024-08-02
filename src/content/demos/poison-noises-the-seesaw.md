@@ -1,15 +1,8 @@
 ---
 builder: Poison Noises
 model: The Seesaw
-image: ../images/poison-noises-the-seesaw.png
-ogImage: ../images/seo-preview/poison-noises-the-seesaw.jpeg
-slug: poison-noises-the-seesaw
-pedalData: ../data/pedals/poison-noises-the-seesaw.pedal.json
-presetsData: ../data/presets/poison-noises-the-seesaw.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 1.8
 date: 2022-11-15
 tags:
   - octave

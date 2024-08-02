@@ -1,15 +1,8 @@
 ---
 builder: Chase Bliss Audio
 model: Mood
-image: ../images/chase-bliss-audio-mood.png
-ogImage: ../images/seo-preview/chase-bliss-audio-mood.jpeg
-dipSwitchImage: ../images/chase-bliss-audio-mood-dip-switches.png
-slug: chase-bliss-audio-mood
-pedalData: ../data/pedals/chase-bliss-audio-mood.pedal.json
-presetsData: ../data/presets/chase-bliss-audio-mood.presets.json
 type: demo
 isSponsored: false
-hasBackingTrack: false
 date: 2022-06-10
 tags:
   - reverb

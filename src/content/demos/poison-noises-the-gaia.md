@@ -1,15 +1,8 @@
 ---
 builder: Poison Noises
 model: The Gaia
-image: ../images/poison-noises-the-gaia.png
-ogImage: ../images/seo-preview/poison-noises-the-gaia.jpeg
-slug: poison-noises-the-gaia
-pedalData: ../data/pedals/poison-noises-the-gaia.pedal.json
-presetsData: ../data/presets/poison-noises-the-gaia.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2022-08-27
 tags:
   - klon

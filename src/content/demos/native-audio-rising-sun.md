@@ -1,11 +1,6 @@
 ---
 builder: NativeAudio
 model: Rising Sun
-slug: native-audio-rising-sun
-image: ../images/native-audio-rising-sun.webp
-ogImage: ../images/seo-preview/native-audio-rising-sun.jpeg
-pedalData: ../data/pedals/native-audio-rising-sun.pedal.json
-presetsData: ../data/presets/native-audio-rising-sun.presets.json
 type: demo
 isSponsored: true
 date: 2021-11-13

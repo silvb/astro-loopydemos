@@ -1,19 +1,8 @@
 ---
 builder: JPTR FX
 model: Fernweh
-image: ../images/jptr-fx-fernweh.png
-ogImage: ../images/seo-preview/jptr-fx-fernweh.jpeg
-slug: jptr-fx-fernweh
-pedalData: ../data/pedals/jptr-fx-fernweh.pedal.json
-presetsData: ../data/presets/jptr-fx-fernweh.presets.json
-stackedPedals:
-  - shallow:
-    data: ../data/pedals/fairfield-circuitry-shallow-water.pedal.json
-    image: ../images/fairfield-circuitry-shallow-water.webp
 type: demo
 isSponsored: true
-hasBackingTrack: false
-volume: 0.95
 date: 2024-01-25
 tags:
   - karaoke chip

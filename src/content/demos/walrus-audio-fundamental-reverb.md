@@ -1,15 +1,8 @@
 ---
 builder: Walrus Audio
 model: Fundamental Reverb
-image: ../images/walrus-audio-fundamental-reverb.png
-ogImage: ../images/seo-preview/walrus-audio-fundamental-reverb.jpeg
-slug: walrus-audio-fundamental-reverb
-pedalData: ../data/pedals/walrus-audio-fundamental-reverb.pedal.json
-presetsData: ../data/presets/walrus-audio-fundamental-reverb.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2023-11-16
 tags:
   - reverb

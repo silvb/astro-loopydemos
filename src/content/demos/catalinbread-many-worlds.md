@@ -1,15 +1,8 @@
 ---
 builder: Catalinbread
 model: Many Worlds
-image: ../images/catalinbread-many-worlds.png
-ogImage: ../images/seo-preview/catalinbread-many-worlds.jpeg
-slug: catalinbread-many-worlds
-pedalData: ../data/pedals/catalinbread-many-worlds.pedal.json
-presetsData: ../data/presets/catalinbread-many-worlds.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2022-03-08
 tags:
   - phaser

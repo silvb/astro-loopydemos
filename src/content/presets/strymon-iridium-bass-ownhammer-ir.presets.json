@@ -1,4 +1,6 @@
 {
+  "volume": 0.65,
+  "hasBackingTrack": true,
   "presets": [
     {
       "id": "ampeg_cab",

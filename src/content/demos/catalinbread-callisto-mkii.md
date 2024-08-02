@@ -1,19 +1,8 @@
 ---
 builder: Catalinbread
 model: Callisto MKII
-image: ../images/catalinbread-callisto-mkii.webp
-ogImage: ../images/seo-preview/catalinbread-callisto-mkii.jpeg
-slug: catalinbread-callisto-mkii
-pedalData: ../data/pedals/catalinbread-callisto-mkii.pedal.json
-presetsData: ../data/presets/catalinbread-callisto-mkii.presets.json
-stackedPedals:
-  - mini:
-    data: ../data/pedals/smallsound-bigsound-mini.pedal.json
-    image: ../images/smallsound-bigsound-mini.png
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 1.2
 date: 2022-07-15
 tags:
   - chorus

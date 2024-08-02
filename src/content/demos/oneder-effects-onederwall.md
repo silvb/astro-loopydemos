@@ -1,15 +1,8 @@
 ---
 builder: Oneder Effects
 model: Onederwall
-image: ../images/oneder-effects-onederwall.webp
-ogImage: ../images/seo-preview/oneder-effects-onederwall.jpeg
-slug: oneder-effects-onederwall
-pedalData: ../data/pedals/oneder-effects-onederwall.pedal.json
-presetsData: ../data/presets/oneder-effects-onederwall.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2023-08-24
 tags:
   - big muff

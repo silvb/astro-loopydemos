@@ -1,22 +1,8 @@
 ---
 builder: Catalinbread
 model: Tribute
-image: ../images/catalinbread-tribute.png
-ogImage: ../images/seo-preview/catalinbread-tribute.jpeg
-slug: catalinbread-tribute
-pedalData: ../data/pedals/catalinbread-tribute.pedal.json
-presetsData: ../data/presets/catalinbread-tribute.presets.json
-stackedPedals:
-  - mini:
-    data: ../data/pedals/smallsound-bigsound-mini.pedal.json
-    image: ../images/smallsound-bigsound-mini.png
-  - hpx:
-    data: ../data/pedals/vaderin-pedals-hp-x.pedal.json
-    image: ../images/vaderin-pedals-hp-x.png
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.65
 date: 2022-04-13
 tags:
   - preamp

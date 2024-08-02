@@ -1,4 +1,6 @@
 {
+  "hasBackingTrack": true,
+  "volume": 1.5,
   "presets": [
     {
       "id": "articulate_dirt",

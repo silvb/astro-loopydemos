@@ -1,15 +1,8 @@
 ---
 builder: Vaderin Pedals
 model: HP-X
-slug: vaderin-pedals-hp-x
-image: ../images/vaderin-pedals-hp-x.png
-ogImage: ../images/seo-preview/vaderin-pedals-hp-x.jpeg
-pedalData: ../data/pedals/vaderin-pedals-hp-x.pedal.json
-presetsData: ../data/presets/vaderin-pedals-hp-x.presets.json
 type: demo
 date: 2023-06-15
-hasBackingTrack: true
-volume: 0.85
 isSponsored: true
 tags:
   - harmonic percolator

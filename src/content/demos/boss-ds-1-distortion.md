@@ -1,15 +1,6 @@
 ---
 builder: BOSS
 model: DS-1 Distortion
-image: ../images/boss-ds-1-distortion.webp
-ogImage: ../images/seo-preview/boss-ds-1-distortion.jpeg
-slug: boss-ds-1-distortion
-pedalData: ../data/pedals/boss-ds-1-distortion.pedal.json
-presetsData: ../data/presets/boss-ds-1-distortion.presets.json
-stackedPedals:
-  - mini:
-    data: ../data/pedals/smallsound-bigsound-mini.pedal.json
-    image: ../images/smallsound-bigsound-mini.png
 type: demo
 isSponsored: false
 date: 2021-11-21

@@ -1,15 +1,8 @@
 ---
 builder: Poison Noises
 model: The Narc
-image: ../images/poison-noises-the-narc.png
-ogImage: ../images/seo-preview/poison-noises-the-narc.jpeg
-slug: poison-noises-the-narc
-pedalData: ../data/pedals/poison-noises-the-narc.pedal.json
-presetsData: ../data/presets/poison-noises-the-narc.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.7
 date: 2022-09-19
 tags:
   - rat

@@ -1,22 +1,8 @@
 ---
 builder: Interstellar Audio Machines
 model: Fuzzsquatch Fuzzdrive
-image: ../images/interstellar-audio-machines-fuzzsquatch-fuzzdrive.png
-ogImage: ../images/seo-preview/interstellar-audio-machines-fuzzsquatch-fuzzdrive.jpeg
-slug: interstellar-audio-machines-fuzzsquatch-fuzzdrive
-pedalData: ../data/pedals/interstellar-audio-machines-fuzzsquatch-fuzzdrive.pedal.json
-presetsData: ../data/presets/interstellar-audio-machines-fuzzsquatch-fuzzdrive.presets.json
-stackedPedals:
-  - hyperdrive:
-    data: ../data/pedals/interstellar-audio-machines-octonaut-hyperdrive.pedal.json
-    image: ../images/interstellar-audio-machines-octonaut-hyperdrive.png
-  - hyperdrive_boost:
-    data: ../data/pedals/interstellar-audio-machines-octonaut-hyperdrive.pedal.json
-    image: ../images/interstellar-audio-machines-octonaut-hyperdrive.png
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.7
 date: 2023-01-28
 tags:
   - big muff

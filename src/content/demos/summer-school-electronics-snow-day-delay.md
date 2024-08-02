@@ -1,14 +1,8 @@
 ---
 builder: Summer School Electronics
 model: Snow Day Delay
-image: ../images/summer-school-electronics-snow-day-delay.png
-ogImage: ../images/seo-preview/summer-school-electronics-snow-day-delay.jpeg
-slug: summer-school-electronics-snow-day-delay
-pedalData: ../data/pedals/summer-school-electronics-snow-day-delay.pedal.json
-presetsData: ../data/presets/summer-school-electronics-snow-day-delay.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2022-07-22
 tags:
   - delay

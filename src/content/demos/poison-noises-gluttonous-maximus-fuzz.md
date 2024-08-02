@@ -1,15 +1,8 @@
 ---
 builder: Poison Noises
 model: Gluttonous Maximus Fuzz
-image: ../images/poison-noises-gluttonous-maximus-fuzz.png
-ogImage: ../images/seo-preview/poison-noises-gluttonous-maximus-fuzz.jpeg
-slug: poison-noises-gluttonous-maximus-fuzz
-pedalData: ../data/pedals/poison-noises-gluttonous-maximus-fuzz.pedal.json
-presetsData: ../data/presets/poison-noises-gluttonous-maximus-fuzz.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.7
 date: 2023-06-19
 tags:
   - gated fuzz

@@ -1,15 +1,8 @@
 ---
 builder: OKKO FX
 model: Diablo Dual
-image: ../images/okko-fx-diablo-dual.png
-ogImage: ../images/seo-preview/okko-fx-diablo-dual.jpeg
-slug: okko-fx-diablo-dual
-pedalData: ../data/pedals/okko-fx-diablo-dual.pedal.json
-presetsData: ../data/presets/okko-fx-diablo-dual.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.85
 date: 2023-10-26
 tags:
   - low gain overdrive

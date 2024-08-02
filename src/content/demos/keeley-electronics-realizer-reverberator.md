@@ -1,18 +1,8 @@
 ---
 builder: Keeley Electronics
 model: Realizer Reverberator
-image: ../images/keeley-electronics-realizer-reverberator.png
-ogImage: ../images/seo-preview/keeley-electronics-realizer-reverberator.jpeg
-slug: keeley-electronics-realizer-reverberator
-pedalData: ../data/pedals/keeley-electronics-realizer-reverberator.pedal.json
-presetsData: ../data/presets/keeley-electronics-realizer-reverberator.presets.json
-stackedPedals:
-  - mini:
-    data: ../data/pedals/smallsound-bigsound-mini.pedal.json
-    image: ../images/smallsound-bigsound-mini.png
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2022-10-27
 tags:
   - shoegaze

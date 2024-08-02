@@ -1,4 +1,6 @@
 {
+  "hasBackingTrack": false,
+  "volume": 0.95,
   "presets": [
     {
       "id": "easy_sludge",

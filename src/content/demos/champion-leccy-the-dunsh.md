@@ -1,15 +1,8 @@
 ---
 builder: Champion Leccy
 model: The Dunsh
-image: ../images/champion-leccy-the-dunsh.png
-ogImage: ../images/seo-preview/champion-leccy-the-dunsh.jpeg
-slug: champion-leccy-the-dunsh
-pedalData: ../data/pedals/champion-leccy-the-dunsh.pedal.json
-presetsData: ../data/presets/champion-leccy-the-dunsh.presets.json
 type: demo
 isSponsored: false
-hasBackingTrack: true
-volume: 0.75
 date: 2023-05-21
 tags:
   - gated

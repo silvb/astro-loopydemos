@@ -1,14 +1,8 @@
 ---
 builder: Twilight Pulse Audioworks
 model: Konstante
-image: ../images/twilight-pulse-audioworks-konstante.png
-ogImage: ../images/seo-preview/twilight-pulse-audioworks-konstante.jpeg
-slug: twilight-pulse-audioworks-konstante
-pedalData: ../data/pedals/twilight-pulse-audioworks-konstante.pedal.json
-presetsData: ../data/presets/twilight-pulse-audioworks-konstante.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2022-12-11
 tags:
   - low gain

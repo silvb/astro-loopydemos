@@ -1,15 +1,8 @@
 ---
 builder: Vaderin Pedals
 model: Laser 1
-image: ../images/vaderin-pedals-laser-1.webp
-ogImage: ../images/seo-preview/vaderin-pedals-laser-1.jpeg
-slug: vaderin-pedals-laser-1
-pedalData: ../data/pedals/vaderin-pedals-laser-1.pedal.json
-presetsData: ../data/presets/vaderin-pedals-laser-1.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.7
 date: 2022-05-17
 tags:
   - gated fuzz

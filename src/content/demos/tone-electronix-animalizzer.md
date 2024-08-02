@@ -1,11 +1,6 @@
 ---
 builder: T.X Pedals
 model: Animalizzer
-slug: tone-electronix-animalizzer
-image: ../images/tone-electronix-animalizzer.webp
-ogImage: ../images/seo-preview/tone-electronix-animalizzer.jpeg
-pedalData: ../data/pedals/tone-electronix-animalizzer.pedal.json
-presetsData: ../data/presets/tone-electronix-animalizzer.presets.json
 type: demo
 date: 2021-02-16
 tags:

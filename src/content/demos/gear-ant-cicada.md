@@ -1,15 +1,8 @@
 ---
 builder: Gear Ant
 model: Cicada
-image: ../images/gear-ant-cicada.png
-ogImage: ../images/seo-preview/gear-ant-cicada.jpeg
-slug: gear-ant-cicada
-pedalData: ../data/pedals/gear-ant-cicada.pedal.json
-presetsData: ../data/presets/gear-ant-cicada.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2023-05-29
 tags:
   - weird fuzz

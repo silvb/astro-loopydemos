@@ -1,15 +1,8 @@
 ---
 builder: Walrus Audio
 model: Mira
-image: ../images/walrus-audio-mira.png
-ogImage: ../images/seo-preview/walrus-audio-mira.jpeg
-slug: walrus-audio-mira
-pedalData: ../data/pedals/walrus-audio-mira.pedal.json
-presetsData: ../data/presets/walrus-audio-mira.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 1.6
 date: 2022-08-02
 tags:
   - compressor

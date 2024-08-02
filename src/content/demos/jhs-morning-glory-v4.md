@@ -1,11 +1,6 @@
 ---
 builder: JHS Pedals
 model: Morning Glory V4
-slug: jhs-morning-glory-v4
-image: ../images/jhs-morning-glory-v4.webp
-ogImage: ../images/seo-preview/jhs-morning-glory-v4.jpeg
-pedalData: ../data/pedals/jhs-morning-glory-v4.pedal.json
-presetsData: ../data/presets/jhs-morning-glory-v4.presets.json
 type: demo
 date: 2021-01-29
 tags:

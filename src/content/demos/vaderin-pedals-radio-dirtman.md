@@ -1,15 +1,8 @@
 ---
 builder: Vaderin Pedals
 model: Radio Dirtman
-image: ../images/vaderin-pedals-radio-dirtman.png
-ogImage: ../images/seo-preview/vaderin-pedals-radio-dirtman.jpeg
-slug: vaderin-pedals-radio-dirtman
-pedalData: ../data/pedals/vaderin-pedals-radio-dirtman.pedal.json
-presetsData: ../data/presets/vaderin-pedals-radio-dirtman.presets.json
 type: demo
 isSponsored: false
-hasBackingTrack: true
-volume: 0.7
 date: 2023-07-31
 tags:
   - velcro fuzz

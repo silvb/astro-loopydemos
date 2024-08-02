@@ -1,14 +1,8 @@
 ---
 builder: Spaceman Effects
 model: Meridian Time Modulator
-image: ../images/spaceman-meridian-time-modulator.png
-ogImage: ../images/seo-preview/spaceman-meridian-time-modulator.jpeg
-slug: spaceman-meridian-time-modulator
-pedalData: ../data/pedals/spaceman-meridian-time-modulator.pedal.json
-presetsData: ../data/presets/spaceman-meridian-time-modulator.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2023-09-26
 tags:
   - flanger

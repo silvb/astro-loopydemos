@@ -1,15 +1,8 @@
 ---
 builder: Catalinbread
 model: Dirty Little Secret Deluxe
-image: ../images/catalinbread-dirty-little-secret-deluxe.webp
-ogImage: ../images/seo-preview/catalinbread-dirty-little-secret-deluxe.jpeg
-slug: catalinbread-dirty-little-secret-deluxe
-pedalData: ../data/pedals/catalinbread-dirty-little-secret-deluxe.pedal.json
-presetsData: ../data/presets/catalinbread-dirty-little-secret-deluxe.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2023-09-06
 tags:
   - marshall

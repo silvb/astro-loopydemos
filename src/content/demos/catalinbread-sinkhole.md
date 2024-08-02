@@ -1,19 +1,8 @@
 ---
 builder: Catalinbread
 model: Sinkhole
-image: ../images/catalinbread-sinkhole.png
-ogImage: ../images/seo-preview/catalinbread-sinkhole.jpeg
-slug: catalinbread-sinkhole
-pedalData: ../data/pedals/catalinbread-sinkhole.pedal.json
-presetsData: ../data/presets/catalinbread-sinkhole.presets.json
-stackedPedals:
-  - proxima:
-    data: ../data/pedals/twilight-pulse-audioworks-proxima.pedal.json
-    image: ../images/twilight-pulse-audioworks-proxima.png
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 1
 date: 2023-12-18
 tags:
   - shoegaze

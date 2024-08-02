@@ -1,15 +1,8 @@
 ---
 builder: Vaderin Pedals
 model: Super Ram
-image: ../images/vaderin-pedals-super-ram.png
-ogImage: ../images/seo-preview/vaderin-pedals-super-ram.jpeg
-slug: vaderin-pedals-super-ram
-pedalData: ../data/pedals/vaderin-pedals-super-ram.pedal.json
-presetsData: ../data/presets/vaderin-pedals-super-ram.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.7
 date: 2023-09-08
 tags:
   - big muff

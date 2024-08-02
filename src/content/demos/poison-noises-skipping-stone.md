@@ -1,15 +1,8 @@
 ---
 builder: Poison Noises
 model: Skipping Stone
-image: ../images/poison-noises-skipping-stone.png
-ogImage: ../images/seo-preview/poison-noises-skipping-stone.jpeg
-slug: poison-noises-skipping-stone
-pedalData: ../data/pedals/poison-noises-skipping-stone.pedal.json
-presetsData: ../data/presets/poison-noises-skipping-stone.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.75
 date: 2022-08-23
 tags:
   - delay

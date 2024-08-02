@@ -1,4 +1,6 @@
 {
+  "hasBackingTrack": true,
+  "volume": 1.6,
   "presets": [
     {
       "id": "squashed",

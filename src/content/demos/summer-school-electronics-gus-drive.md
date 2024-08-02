@@ -1,15 +1,8 @@
 ---
 builder: Summer School Electronics
 model: Gus-Drive
-image: ../images/summer-school-electronics-gus-drive.png
-ogImage: ../images/seo-preview/summer-school-electronics-gus-drive.jpeg
-slug: summer-school-electronics-gus-drive
-pedalData: ../data/pedals/summer-school-electronics-gus-drive.pedal.json
-presetsData: ../data/presets/summer-school-electronics-gus-drive.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.65
 date: 2022-09-10
 tags:
   - overdrive

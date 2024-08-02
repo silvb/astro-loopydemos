@@ -1,15 +1,8 @@
 ---
 builder: Bleak District Electric
 model: Tapescape
-image: ../images/bleak-district-electric-tapescape.png
-ogImage: ../images/seo-preview/bleak-district-electric-tapescape.jpeg
-slug: bleak-district-electric-tapescape
-pedalData: ../data/pedals/bleak-district-electric-tapescape.pedal.json
-presetsData: ../data/presets/bleak-district-electric-tapescape.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2023-07-17
 tags:
   - tape delay

@@ -1,11 +1,6 @@
 ---
 builder: MXR
 model: M294 Sugar Drive Mini
-image: ../images/mxr-sugar-drive.webp
-ogImage: ../images/seo-preview/mxr-sugar-drive.jpeg
-slug: mxr-sugar-drive
-pedalData: ../data/pedals/mxr-sugar-drive.pedal.json
-presetsData: ../data/presets/mxr-sugar-drive.presets.json
 type: demo
 isSponsored: false
 date: 2022-02-23

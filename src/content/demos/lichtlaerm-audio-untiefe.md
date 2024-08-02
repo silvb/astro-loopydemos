@@ -1,22 +1,8 @@
 ---
 builder: Lichtlaerm Audio
 model: Untiefe
-image: ../images/lichtlaerm-audio-untiefe.png
-ogImage: ../images/seo-preview/lichtlaerm-audio-untiefe.jpeg
-slug: lichtlaerm-audio-untiefe
-pedalData: ../data/pedals/lichtlaerm-audio-untiefe.pedal.json
-presetsData: ../data/presets/lichtlaerm-audio-untiefe.presets.json
-stackedPedals:
-  - exploder:
-    data: ../data/pedals/beautiful-noise-effects-exploder.pedal.json
-    image: ../images/beautiful-noise-effects-exploder.png
-  - shallowwater:
-    data: ../data/pedals/fairfield-circuitry-shallow-water.pedal.json
-    image: ../images/fairfield-circuitry-shallow-water.webp
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.7
 date: 2023-04-27
 tags:
   - reverb

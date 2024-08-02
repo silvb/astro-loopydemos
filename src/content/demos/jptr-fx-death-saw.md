@@ -1,22 +1,8 @@
 ---
 builder: JPTR FX
 model: Death Saw
-image: ../images/jptr-fx-death-saw.png
-ogImage: ../images/seo-preview/jptr-fx-death-saw.jpeg
-slug: jptr-fx-death-saw
-pedalData: ../data/pedals/jptr-fx-death-saw.pedal.json
-presetsData: ../data/presets/jptr-fx-death-saw.presets.json
-stackedPedals:
-  - sinkhole:
-    data: ../data/pedals/catalinbread-sinkhole.pedal.json
-    image: ../images/catalinbread-sinkhole.png
-  - lineblur:
-    data: ../data/pedals/mask-audio-electronics-line-blur.pedal.json
-    image: ../images/mask-audio-electronics-line-blur.png
 type: demo
 isSponsored: false
-hasBackingTrack: false
-volume: 1
 date: 2023-12-21
 tags:
   - heavy metal

@@ -1,11 +1,6 @@
 ---
 model: Jive Reel Saturator
 builder: JPTR FX
-slug: jptr-fx-jive
-image: ../images/jptr-fx-jive.png
-ogImage: ../images/seo-preview/jptr-fx-jive.jpeg
-pedalData: ../data/pedals/jptr-fx-jive.pedal.json
-presetsData: ../data/presets/jptr-fx-jive.presets.json
 type: demo
 date: 2021-03-30
 tags:

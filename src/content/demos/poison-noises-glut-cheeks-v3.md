@@ -1,15 +1,8 @@
 ---
 builder: Poison Noises
 model: Glut Cheeks V3
-image: ../images/poison-noises-glut-cheeks-v3.png
-ogImage: ../images/seo-preview/poison-noises-glut-cheeks-v3.jpeg
-slug: poison-noises-glut-cheeks-v3
-pedalData: ../data/pedals/poison-noises-glut-cheeks-v3.pedal.json
-presetsData: ../data/presets/poison-noises-glut-cheeks-v3.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.7
 date: 2023-11-11
 tags:
   - tone bender

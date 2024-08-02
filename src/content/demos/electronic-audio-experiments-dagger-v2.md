@@ -1,14 +1,8 @@
 ---
 builder: Electronic Audio Experiments
 model: Dagger V2
-image: ../images/electronic-audio-experiments-dagger-v2.png
-ogImage: ../images/seo-preview/electronic-audio-experiments-dagger-v2.jpeg
-slug: electronic-audio-experiments-dagger-v2
-pedalData: ../data/pedals/electronic-audio-experiments-dagger-v2.pedal.json
-presetsData: ../data/presets/electronic-audio-experiments-dagger-v2.presets.json
 type: demo
 isSponsored: false
-hasBackingTrack: false
 date: 2023-02-13
 tags:
   - op amp overdrive

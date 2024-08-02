@@ -1,19 +1,8 @@
 ---
 builder: Spun Loud
 model: Shuksan Fuzz
-image: ../images/spun-loud-shuksan-fuzz.png
-ogImage: ../images/seo-preview/spun-loud-shuksan-fuzz.jpeg
-slug: spun-loud-shuksan-fuzz
-pedalData: ../data/pedals/spun-loud-shuksan-fuzz.pedal.json
-presetsData: ../data/presets/spun-loud-shuksan-fuzz.presets.json
-stackedPedals:
-  - slo:
-    data: ../data/pedals/walrus-audio-slo.pedal.json
-    image: ../images/walrus-audio-slo.webp
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.9
 date: 2022-11-06
 tags:
   - fuzz

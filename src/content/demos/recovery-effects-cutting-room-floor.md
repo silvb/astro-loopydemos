@@ -1,14 +1,8 @@
 ---
 builder: Recovery Effects
 model: Cutting Room Floor
-image: ../images/recovery-effects-cutting-room-floor.png
-ogImage: ../images/seo-preview/recovery-effects-cutting-room-floor.jpeg
-slug: recovery-effects-cutting-room-floor
-pedalData: ../data/pedals/recovery-effects-cutting-room-floor.pedal.json
-presetsData: ../data/presets/recovery-effects-cutting-room-floor.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2023-06-30
 tags:
   - delay

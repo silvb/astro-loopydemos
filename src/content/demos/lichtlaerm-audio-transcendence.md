@@ -1,22 +1,8 @@
 ---
 builder: Lichtlaerm Audio
 model: Transcendence
-image: ../images/lichtlaerm-audio-transcendence.png
-ogImage: ../images/seo-preview/lichtlaerm-audio-transcendence.jpeg
-slug: lichtlaerm-audio-transcendence
-pedalData: ../data/pedals/lichtlaerm-audio-transcendence.pedal.json
-presetsData: ../data/presets/lichtlaerm-audio-transcendence.presets.json
-stackedPedals:
-  - polychrome:
-    data: ../data/pedals/walrus-audio-polychrome.pedal.json
-    image: ../images/walrus-audio-polychrome.webp
-  - mini:
-    data: ../data/pedals/smallsound-bigsound-mini.pedal.json
-    image: ../images/smallsound-bigsound-mini.png
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 1.2
 date: 2023-02-03
 tags:
   - reverb

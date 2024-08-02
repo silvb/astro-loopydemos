@@ -1,16 +1,8 @@
 ---
 builder: Walrus Audio
 model: Lore
-image: ../images/walrus-audio-lore.webp
-ogImage: ../images/seo-preview/walrus-audio-lore.jpeg
-slug: walrus-audio-lore
-pedalData: ../data/pedals/walrus-audio-lore.pedal.json
-presetsData: ../data/presets/walrus-audio-lore.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.85
-scale: 0.8
 date: 2022-07-05
 tags:
   - reverb

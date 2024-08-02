@@ -1,4 +1,5 @@
 ---
+import DateTag from "@layouts/date-tag.astro"
 import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
 import { getImageSrcFromSlug } from "@utils/get-image-src-from-slug"
 import { getPedalsFromPresets } from "@utils/get-pedals-from-presets"
@@ -16,8 +17,6 @@ interface Props
 
 const { title, excerpt, date, slug, tags } = Astro.props
 
-console.log({ tags })
-
 const presetsFromPost: CollectionEntry<"presets"> = await getEntry(
   "presets",
   `${slug as CollectionEntry<"demos">["slug"]}.presets`
@@ -25,11 +24,9 @@ const presetsFromPost: CollectionEntry<"presets"> = await getEntry(
 
 let hasTeaser = true
 let pedals: string[] = []
-
 let collageGridElementSize = "5rem"
 
 if (presetsFromPost) {
-  console.log(`${slug} ✅`)
   pedals = getPedalsFromPresets(presetsFromPost.data.presets)
 
   if (pedals.length > 0) {
@@ -45,17 +42,18 @@ if (presetsFromPost) {
   }
 }
 
-let shortenedExcerpt = excerpt
+const EXCERPT_LENGTH = 24
 
-if (excerpt.split(" ").length > 24) {
-  shortenedExcerpt = [...excerpt.split(" ").slice(0, 24), "..."].join(" ")
-}
+const shortenedExcerpt =
+  excerpt.split(" ").length > EXCERPT_LENGTH
+    ? [...excerpt.split(" ").slice(0, EXCERPT_LENGTH), "..."].join(" ")
+    : excerpt
 ---
 
 <article id="slug" class="mb-12">
   <a href={`/posts/${slug}`} class="link-none flex gap-4">
     <div
-      class="flex h-60 w-60 shrink-0 items-center justify-center rounded-lg bg-loopydemos-secondary/50"
+      class="flex min-h-60 w-60 shrink-0 items-center justify-center rounded-lg bg-loopydemos-secondary/50"
     >
       {
         hasTeaser ? (
@@ -77,10 +75,11 @@ if (excerpt.split(" ").length > 24) {
         )
       }
     </div>
-    <div class="flex flex-col justify-between">
-      <div>
+    <div class="flex flex-col justify-between gap-4">
+      <div class="flex flex-col gap-2">
         <h3 class="m-0">{title}</h3>
-        <p class="text-lg">
+        <DateTag {date} />
+        <p class="m-0 text-lg">
           {shortenedExcerpt}
         </p>
       </div>
@@ -88,7 +87,7 @@ if (excerpt.split(" ").length > 24) {
         <div class="flex flex-wrap gap-1">
           {
             tags.map((tag) => (
-              <span class="whitespace-nowrap rounded-md bg-loopydemos-secondary px-2 py-2 text-sm text-loopydemos-gray">
+              <span class="whitespace-nowrap rounded-md bg-loopydemos-secondary/50 px-2 py-2 text-sm text-loopydemos-gray">
                 {tag}
               </span>
             ))

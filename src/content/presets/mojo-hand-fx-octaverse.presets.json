@@ -1,4 +1,6 @@
 {
+  "hasBackingTrack": true,
+  "volume": 0.5,
   "presets": [
     {
       "id": "reverse_twinkles",

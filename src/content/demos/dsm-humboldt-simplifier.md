@@ -1,22 +1,9 @@
 ---
 builder: DSM & Humboldt Electronics
 model: Simplifier
-image: ../images/dsm-humboldt-simplifier.png
-ogImage: ../images/seo-preview/dsm-humboldt-simplifier.jpeg
-slug: dsm-humboldt-simplifier
-pedalData: ../data/pedals/dsm-humboldt-simplifier.pedal.json
-presetsData: ../data/presets/dsm-humboldt-simplifier.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2022-08-18
-stackedPedals:
-  - calamity:
-    data: ../data/pedals/plain-speak-calamity-drive.pedal.json
-    image: ../images/plain-speak-calamity-drive.webp
-  - black_math:
-    data: ../data/pedals/mask-audio-electronics-black-math.pedal.json
-    image: ../images/mask-audio-electronics-black-math.png
 tags:
   - amp sim
   - cab sim

@@ -1,11 +1,6 @@
 ---
 builder: Crazy Tube Circuits
 model: TI:ME
-slug: crazy-tube-circuits-time
-image: ../images/crazy-tube-circuits-time.webp
-ogImage: ../images/seo-preview/crazy-tube-circuits-time.jpeg
-pedalData: ../data/pedals/crazy-tube-circuits-time.pedal.json
-presetsData: ../data/presets/crazy-tube-circuits-time.presets.json
 type: demo
 isSponsored: true
 date: 2021-06-25

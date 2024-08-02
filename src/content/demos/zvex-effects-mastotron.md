@@ -1,15 +1,8 @@
 ---
 builder: ZVEX Effects
 model: Mastotron
-image: ../images/zvex-effects-mastotron.png
-ogImage: ../images/seo-preview/zvex-effects-mastotron.jpeg
-slug: zvex-effects-mastotron
-pedalData: ../data/pedals/zvex-effects-mastotron.pedal.json
-presetsData: ../data/presets/zvex-effects-mastotron.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2024-03-08
 tags:
   - velcro fuzz

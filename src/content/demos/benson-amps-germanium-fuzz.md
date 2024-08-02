@@ -1,15 +1,8 @@
 ---
 builder: Benson Amps
 model: Germanium Fuzz
-image: ../images/benson-amps-germanium-fuzz.png
-ogImage: ../images/seo-preview/benson-amps-germanium-fuzz.jpeg
-slug: benson-amps-germanium-fuzz
-pedalData: ../data/pedals/benson-amps-germanium-fuzz.pedal.json
-presetsData: ../data/presets/benson-amps-germanium-fuzz.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.7
 date: 2023-06-13
 tags:
   - fuzz

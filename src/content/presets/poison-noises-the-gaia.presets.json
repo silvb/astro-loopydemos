@@ -1,4 +1,6 @@
 {
+  "hasBackingTrack": true,
+  "volume": 0.8,
   "presets": [
     {
       "id": "eruptive_chime",

@@ -1,18 +1,8 @@
 ---
 builder: Beautiful Noise Effects
 model: Exploder
-image: ../images/beautiful-noise-effects-exploder.png
-ogImage: ../images/seo-preview/beautiful-noise-effects-exploder.jpeg
-slug: beautiful-noise-effects-exploder
-pedalData: ../data/pedals/beautiful-noise-effects-exploder.pedal.json
-presetsData: ../data/presets/beautiful-noise-effects-exploder.presets.json
-stackedPedals:
-  - slo:
-    data: ../data/pedals/walrus-audio-slo.pedal.json
-    image: ../images/walrus-audio-slo.webp
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2023-02-09
 tags:
   - shoegaze

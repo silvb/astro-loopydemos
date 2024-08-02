@@ -1,4 +1,6 @@
 {
+  "volume": 1,
+  "hasBackingTrack": true,
   "presets": [
     {
       "id": "growl",

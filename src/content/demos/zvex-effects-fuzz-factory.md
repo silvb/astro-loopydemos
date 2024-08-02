@@ -1,15 +1,8 @@
 ---
 builder: ZVEX Effects
 model: Fuzz Factory
-image: ../images/zvex-effects-fuzz-factory.png
-ogImage: ../images/seo-preview/zvex-effects-fuzz-factory.jpeg
-slug: zvex-effects-fuzz-factory
-pedalData: ../data/pedals/zvex-effects-fuzz-factory.pedal.json
-presetsData: ../data/presets/zvex-effects-fuzz-factory.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.7
 date: 2024-03-18
 tags:
   - velcro fuzz

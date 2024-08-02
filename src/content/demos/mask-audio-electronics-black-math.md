@@ -1,11 +1,6 @@
 ---
 builder: Mask Audio Electronics
 model: Black Math
-image: ../images/mask-audio-electronics-black-math.png
-ogImage: ../images/seo-preview/mask-audio-electronics-black-math.jpeg
-slug: mask-audio-electronics-black-math
-pedalData: ../data/pedals/mask-audio-electronics-black-math.pedal.json
-presetsData: ../data/presets/mask-audio-electronics-black-math.presets.json
 type: demo
 isSponsored: false
 date: 2021-10-21

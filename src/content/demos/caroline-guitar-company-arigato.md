@@ -1,14 +1,8 @@
 ---
 builder: Caroline Guitar Company
 model: Arigato
-image: ../images/caroline-guitar-company-arigato.png
-ogImage: ../images/seo-preview/caroline-guitar-company-arigato.jpeg
-slug: caroline-guitar-company-arigato
-pedalData: ../data/pedals/caroline-guitar-company-arigato.pedal.json
-presetsData: ../data/presets/caroline-guitar-company-arigato.presets.json
 type: demo
 isSponsored: false
-hasBackingTrack: false
 date: 2023-03-03
 tags:
   - phaser

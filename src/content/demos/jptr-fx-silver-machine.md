@@ -1,14 +1,8 @@
 ---
 builder: JPTR FX
 model: Silver Machine
-image: ../images/jptr-fx-silver-machine.png
-ogImage: ../images/seo-preview/jptr-fx-silver-machine.jpeg
-slug: jptr-fx-silver-machine
-pedalData: ../data/pedals/jptr-fx-silver-machine.pedal.json
-presetsData: ../data/presets/jptr-fx-silver-machine.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: false
 date: 2024-01-10
 tags:
   - octave fuzz

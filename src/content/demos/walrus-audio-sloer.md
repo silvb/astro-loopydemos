@@ -1,14 +1,8 @@
 ---
 builder: Walrus Audio
 model: Slöer
-image: ../images/walrus-audio-sloer.png
-ogImage: ../images/seo-preview/walrus-audio-sloer.jpeg
-slug: walrus-audio-sloer
-pedalData: ../data/pedals/walrus-audio-sloer.pedal.json
-presetsData: ../data/presets/walrus-audio-sloer.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2023-09-28
 tags:
   - reverb

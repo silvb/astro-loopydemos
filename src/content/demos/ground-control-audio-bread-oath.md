@@ -1,15 +1,8 @@
 ---
 builder: Ground Control Audio
 model: Bread Oath
-image: ../images/ground-control-audio-bread-oath.png
-ogImage: ../images/seo-preview/ground-control-audio-bread-oath.jpeg
-slug: ground-control-audio-bread-oath
-pedalData: ../data/pedals/ground-control-audio-bread-oath.pedal.json
-presetsData: ../data/presets/ground-control-audio-bread-oath.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 1.5
 date: 2023-01-26
 tags:
   - low gain

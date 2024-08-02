@@ -1,15 +1,8 @@
 ---
 builder: Mask Audio Electronics
 model: Line Blur
-image: ../images/mask-audio-electronics-line-blur.png
-ogImage: ../images/seo-preview/mask-audio-electronics-line-blur.jpeg
-slug: mask-audio-electronics-line-blur
-pedalData: ../data/pedals/mask-audio-electronics-line-blur.pedal.json
-presetsData: ../data/presets/mask-audio-electronics-line-blur.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.9
 date: 2022-10-14
 tags:
   - preamp

@@ -1,15 +1,8 @@
 ---
 builder: Keeley Electronics
 model: Fuzz Bender
-image: ../images/keeley-electronics-fuzz-bender.png
-ogImage: ../images/seo-preview/keeley-electronics-fuzz-bender.jpeg
-slug: keeley-electronics-fuzz-bender
-pedalData: ../data/pedals/keeley-electronics-fuzz-bender.pedal.json
-presetsData: ../data/presets/keeley-electronics-fuzz-bender.presets.json
 type: demo
 isSponsored: false
-hasBackingTrack: true
-volume: 0.85
 date: 2024-03-27
 tags:
   - veclro fuzz

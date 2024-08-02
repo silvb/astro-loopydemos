@@ -1,12 +1,6 @@
 ---
 model: Honker Overdrive
 builder: TL Pedals
-slug: tl-pedals-honker-overdrive
-isSponsored: true
-image: ../images/tl-pedals-honker-overdrive.webp
-ogImage: ../images/seo-preview/tl-pedals-honker-overdrive.jpeg
-pedalData: ../data/pedals/tl-pedals-honker-overdrive.pedal.json
-presetsData: ../data/presets/tl-pedals-honker-overdrive.presets.json
 type: demo
 date: 2021-05-06
 tags:

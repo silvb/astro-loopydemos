@@ -1,14 +1,8 @@
 ---
 builder: Bleak District Electric
 model: Rec Head V2
-image: ../images/bleak-district-electric-rec-head-v2.png
-ogImage: ../images/seo-preview/bleak-district-electric-rec-head-v2.jpeg
-slug: bleak-district-electric-rec-head-v2
-pedalData: ../data/pedals/bleak-district-electric-rec-head-v2.pedal.json
-presetsData: ../data/presets/bleak-district-electric-rec-head-v2.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2023-02-08
 tags:
   - lofi

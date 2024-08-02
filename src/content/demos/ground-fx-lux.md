@@ -1,19 +1,8 @@
 ---
 builder: Ground FX
 model: Lux
-image: ../images/ground-fx-lux.png
-ogImage: ../images/seo-preview/ground-fx-lux.jpeg
-slug: ground-fx-lux
-pedalData: ../data/pedals/ground-fx-lux.pedal.json
-presetsData: ../data/presets/ground-fx-lux.presets.json
-stackedPedals:
-  - proxima:
-    data: ../data/pedals/twilight-pulse-audioworks-proxima.pedal.json
-    image: ../images/twilight-pulse-audioworks-proxima.png
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2023-06-27
 tags:
   - shoegaze

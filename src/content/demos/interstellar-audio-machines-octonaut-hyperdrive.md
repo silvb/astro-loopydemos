@@ -1,14 +1,8 @@
 ---
 builder: Interstellar Audio Machines
 model: Octonaut Hyperdrive
-image: ../images/interstellar-audio-machines-octonaut-hyperdrive.png
-ogImage: ../images/seo-preview/interstellar-audio-machines-octonaut-hyperdrive.jpeg
-slug: interstellar-audio-machines-octonaut-hyperdrive
-pedalData: ../data/pedals/interstellar-audio-machines-octonaut-hyperdrive.pedal.json
-presetsData: ../data/presets/interstellar-audio-machines-octonaut-hyperdrive.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2023-01-06
 tags:
   - klon

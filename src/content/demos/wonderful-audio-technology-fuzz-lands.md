@@ -1,15 +1,8 @@
 ---
 builder: Wonderful Audio Technology
 model: Fuzz Lands
-image: ../images/wonderful-audio-technology-fuzz-lands.png
-ogImage: ../images/seo-preview/wonderful-audio-technology-fuzz-lands.jpeg
-slug: wonderful-audio-technology-fuzz-lands
-pedalData: ../data/pedals/wonderful-audio-technology-fuzz-lands.pedal.json
-presetsData: ../data/presets/wonderful-audio-technology-fuzz-lands.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.9
 date: 2023-12-08
 tags:
   - fuzz

@@ -1,19 +1,8 @@
 ---
 builder: Mojo Hand FX
 model: Octaverse
-image: ../images/mojo-hand-fx-octaverse.png
-ogImage: ../images/seo-preview/mojo-hand-fx-octaverse.jpeg
-slug: mojo-hand-fx-octaverse
-pedalData: ../data/pedals/mojo-hand-fx-octaverse.pedal.json
-presetsData: ../data/presets/mojo-hand-fx-octaverse.presets.json
-stackedPedals:
-  - exploder:
-    data: ../data/pedals/beautiful-noise-effects-exploder.pedal.json
-    image: ../images/beautiful-noise-effects-exploder.png
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.5
 date: 2023-03-21
 tags:
   - shoegaze

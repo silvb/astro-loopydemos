@@ -1,11 +1,6 @@
 ---
 builder: Catalinbread
 model: Topanga
-slug: catalinbread-topanga
-image: ../images/catalinbread-topanga.webp
-ogImage: ../images/seo-preview/catalinbread-topanga.jpeg
-pedalData: ../data/pedals/catalinbread-topanga.pedal.json
-presetsData: ../data/presets/catalinbread-topanga.presets.json
 type: demo
 date: 2021-02-26
 tags:

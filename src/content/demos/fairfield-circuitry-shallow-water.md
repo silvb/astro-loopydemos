@@ -1,11 +1,6 @@
 ---
 builder: Fairfield Circuitry
 model: Shallow Water
-image: ../images/fairfield-circuitry-shallow-water.webp
-ogImage: ../images/seo-preview/fairfield-circuitry-shallow-water.jpeg
-slug: fairfield-circuitry-shallow-water
-pedalData: ../data/pedals/fairfield-circuitry-shallow-water.pedal.json
-presetsData: ../data/presets/fairfield-circuitry-shallow-water.presets.json
 type: demo
 date: 2021-06-28
 tags:

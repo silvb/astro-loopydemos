@@ -1,15 +1,8 @@
 ---
 builder: Walrus Audio
 model: Fundamental Distortion
-image: ../images/walrus-audio-fundamental-distortion.png
-ogImage: ../images/seo-preview/walrus-audio-fundamental-distortion.jpeg
-slug: walrus-audio-fundamental-distortion
-pedalData: ../data/pedals/walrus-audio-fundamental-distortion.pedal.json
-presetsData: ../data/presets/walrus-audio-fundamental-distortion.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2023-11-14
 tags:
   - rat

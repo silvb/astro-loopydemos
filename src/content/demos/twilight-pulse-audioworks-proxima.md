@@ -1,15 +1,8 @@
 ---
 builder: Twilight Pulse Audioworks
 model: Proxima
-image: ../images/twilight-pulse-audioworks-proxima.png
-ogImage: ../images/seo-preview/twilight-pulse-audioworks-proxima.jpeg
-slug: twilight-pulse-audioworks-proxima
-pedalData: ../data/pedals/twilight-pulse-audioworks-proxima.pedal.json
-presetsData: ../data/presets/twilight-pulse-audioworks-proxima.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.7
 date: 2023-04-19
 tags:
   - gainster

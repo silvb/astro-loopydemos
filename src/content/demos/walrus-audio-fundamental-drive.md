@@ -1,15 +1,8 @@
 ---
 builder: Walrus Audio
 model: Fundamental Drive
-image: ../images/walrus-audio-fundamental-drive.png
-ogImage: ../images/seo-preview/walrus-audio-fundamental-drive.jpeg
-slug: walrus-audio-fundamental-drive
-pedalData: ../data/pedals/walrus-audio-fundamental-drive.pedal.json
-presetsData: ../data/presets/walrus-audio-fundamental-drive.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.6
 date: 2023-04-12
 tags:
   - overdrive

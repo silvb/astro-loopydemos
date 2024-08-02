@@ -1,15 +1,8 @@
 ---
 builder: Plain Speak
 model: Calamity Drive
-image: ../images/plain-speak-calamity-drive.webp
-ogImage: ../images/seo-preview/plain-speak-calamity-drive.jpeg
-slug: plain-speak-calamity-drive
-pedalData: ../data/pedals/plain-speak-calamity-drive.pedal.json
-presetsData: ../data/presets/plain-speak-calamity-drive.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.65
 date: 2022-08-10
 tags:
   - tubescreamer

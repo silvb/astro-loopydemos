@@ -1,14 +1,8 @@
 ---
 builder: Poison Noises
 model: Gluttonous Fuzz
-image: ../images/poison-noises-gluttonous-fuzz.png
-ogImage: ../images/seo-preview/poison-noises-gluttonous-fuzz.jpeg
-slug: poison-noises-gluttonous-fuzz
-pedalData: ../data/pedals/poison-noises-gluttonous-fuzz.pedal.json
-presetsData: ../data/presets/poison-noises-gluttonous-fuzz.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2022-11-22
 tags:
   - fuzz

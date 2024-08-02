@@ -1,11 +1,6 @@
 ---
 builder: Mythos Pedals
 model: Golden Fleece
-slug: mythos-pedals-golden-fleece
-image: ../images/mythos-pedals-golden-fleece.png
-ogImage: ../images/seo-preview/mythos-pedals-golden-fleece.jpeg
-pedalData: ../data/pedals/mythos-pedals-golden-fleece.pedal.json
-presetsData: ../data/presets/mythos-pedals-golden-fleece.presets.json
 type: demo
 date: 2020-12-25
 tags:

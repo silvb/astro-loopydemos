@@ -1,15 +1,8 @@
 ---
 builder: Walrus Audio
 model: Melee
-image: ../images/walrus-audio-melee.webp
-ogImage: ../images/seo-preview/walrus-audio-melee.jpeg
-slug: walrus-audio-melee
-pedalData: ../data/pedals/walrus-audio-melee.pedal.json
-presetsData: ../data/presets/walrus-audio-melee.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-scale: 0.95
 date: 2023-02-20
 tags:
   - shoegaze

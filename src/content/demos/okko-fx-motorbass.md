@@ -1,15 +1,8 @@
 ---
 builder: OKKO FX
 model: MOTÖRBASS
-image: ../images/okko-fx-motorbass.png
-ogImage: ../images/seo-preview/okko-fx-motorbass.jpeg
-slug: okko-fx-motorbass
-pedalData: ../data/pedals/okko-fx-motorbass.pedal.json
-presetsData: ../data/presets/okko-fx-motorbass.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.85
 date: 2023-10-04
 tags:
   - bass

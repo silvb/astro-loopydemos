@@ -23,6 +23,8 @@ function createDemoState() {
     []
   )
 
+  const [isPlaying, setIsPlaying] = createSignal(false)
+
   const [activePedals, setActivePedals] = createSignal<string[]>([])
 
   const activePreset = createMemo(() =>
@@ -35,6 +37,8 @@ function createDemoState() {
     const values = activePreset()?.values || []
 
     const closestValue = findClosestValue(value, values)
+
+    if (closestValue === sweepSetting()[id]) return
 
     setSweepSetting({ [id]: closestValue })
   }
@@ -121,6 +125,8 @@ function createDemoState() {
     toggleSecondaryCircuit,
     getSetting,
     setActivePedals,
+    isPlaying,
+    setIsPlaying,
   }
 }
 

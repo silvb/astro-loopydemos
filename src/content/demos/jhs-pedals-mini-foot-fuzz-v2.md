@@ -1,11 +1,6 @@
 ---
 builder: JHS Pedals
 model: Mini Foot Fuzz V2
-slug: jhs-pedals-mini-foot-fuzz-v2
-image: ../images/jhs-pedals-mini-foot-fuzz-v2.webp
-ogImage: ../images/seo-preview/jhs-pedals-mini-foot-fuzz-v2.jpeg
-pedalData: ../data/pedals/jhs-pedals-mini-foot-fuzz-v2.pedal.json
-presetsData: ../data/presets/jhs-pedals-mini-foot-fuzz-v2.presets.json
 type: demo
 date: 2021-01-10
 tags:

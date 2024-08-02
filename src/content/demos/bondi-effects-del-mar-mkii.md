@@ -1,14 +1,8 @@
 ---
 builder: Bondi Effects
 model: Del Mar MkII
-image: ../images/bondi-effects-del-mar-mkii.png
-ogImage: ../images/seo-preview/bondi-effects-del-mar-mkii.jpeg
-slug: bondi-effects-del-mar-mkii
-pedalData: ../data/pedals/bondi-effects-del-mar-mkii.pedal.json
-presetsData: ../data/presets/bondi-effects-del-mar-mkii.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2023-01-03
 tags:
   - klon

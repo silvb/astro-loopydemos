@@ -1,14 +1,8 @@
 ---
 builder: Mask Audio Electronics
 model: Laran
-image: ../images/mask-audio-electronics-laran.png
-ogImage: ../images/seo-preview/mask-audio-electronics-laran.jpeg
-slug: mask-audio-electronics-laran
-pedalData: ../data/pedals/mask-audio-electronics-laran.pedal.json
-presetsData: ../data/presets/mask-audio-electronics-laran.presets.json
 type: demo
 isSponsored: false
-hasBackingTrack: false
 date: 2024-01-11
 tags:
   - big muff

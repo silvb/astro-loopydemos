@@ -1,14 +1,8 @@
 ---
 builder: Poison Noises
 model: The Postman
-image: ../images/poison-noises-the-postman.png
-ogImage: ../images/seo-preview/poison-noises-the-postman.jpeg
-slug: poison-noises-the-postman
-pedalData: ../data/pedals/poison-noises-the-postman.pedal.json
-presetsData: ../data/presets/poison-noises-the-postman.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2022-11-22
 tags:
   - envelope filter

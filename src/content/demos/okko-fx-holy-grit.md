@@ -1,15 +1,8 @@
 ---
 builder: OKKO FX
 model: Holy Grit
-image: ../images/okko-fx-holy-grit.webp
-ogImage: ../images/seo-preview/okko-fx-holy-grit.jpeg
-slug: okko-fx-holy-grit
-pedalData: ../data/pedals/okko-fx-holy-grit.pedal.json
-presetsData: ../data/presets/okko-fx-holy-grit.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.65
 date: 2022-06-01
 tags:
   - preamp

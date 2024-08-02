@@ -1,15 +1,8 @@
 ---
 builder: MXR
 model: M309 Joshua Ambient Echo
-image: ../images/mxr-joshua-ambient-echo.png
-ogImage: ../images/seo-preview/mxr-joshua-ambient-echo.jpeg
-slug: mxr-joshua-ambient-echo
-pedalData: ../data/pedals/mxr-joshua-ambient-echo.pedal.json
-presetsData: ../data/presets/mxr-joshua-ambient-echo.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.9
 date: 2024-01-02
 tags:
   - digital delay

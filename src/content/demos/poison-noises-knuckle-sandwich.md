@@ -1,15 +1,8 @@
 ---
 builder: Poison Noises
 model: Knuckle Sandwich
-image: ../images/poison-noises-knuckle-sandwich.png
-ogImage: ../images/seo-preview/poison-noises-knuckle-sandwich.jpeg
-slug: poison-noises-knuckle-sandwich
-pedalData: ../data/pedals/poison-noises-knuckle-sandwich.pedal.json
-presetsData: ../data/presets/poison-noises-knuckle-sandwich.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2022-08-25
 tags:
   - tubescreamer

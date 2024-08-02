@@ -1,11 +1,6 @@
 ---
 builder: Electro Harmonix
 model: Holy Grail Nano
-slug: ehx-holy-grail-nano
-image: ../images/ehx-holy-grail-nano.webp
-ogImage: ../images/seo-preview/ehx-holy-grail-nano.jpeg
-pedalData: ../data/pedals/ehx-holy-grail-nano.pedal.json
-presetsData: ../data/presets/ehx-holy-grail-nano.presets.json
 type: demo
 date: 2021-03-10
 tags:

@@ -1,22 +1,8 @@
 ---
 builder: Funny Little Boxes
 model: Skeleton Key
-image: ../images/funny-little-boxes-skeleton-key.png
-ogImage: ../images/seo-preview/funny-little-boxes-skeleton-key.jpeg
-slug: funny-little-boxes-skeleton-key
-pedalData: ../data/pedals/funny-little-boxes-skeleton-key.pedal.json
-presetsData: ../data/presets/funny-little-boxes-skeleton-key.presets.json
-stackedPedals:
-  - dm2:
-    data: ../data/pedals/boss-dm-2w-delay.pedal.json
-    image: ../images/boss-dm-2w-delay.webp
-  - konstante:
-    data: ../data/pedals/twilight-pulse-audioworks-konstante.pedal.json
-    image: ../images/twilight-pulse-audioworks-konstante.png
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.8
 date: 2024-04-03
 tags:
   - queens of the stone age

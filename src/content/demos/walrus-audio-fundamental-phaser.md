@@ -1,14 +1,8 @@
 ---
 builder: Walrus Audio
 model: Fundamental Phaser
-image: ../images/walrus-audio-fundamental-phaser.png
-ogImage: ../images/seo-preview/walrus-audio-fundamental-phaser.jpeg
-slug: walrus-audio-fundamental-phaser
-pedalData: ../data/pedals/walrus-audio-fundamental-phaser.pedal.json
-presetsData: ../data/presets/walrus-audio-fundamental-phaser.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
 date: 2023-07-24
 tags:
   - phaser

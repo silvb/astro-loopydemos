@@ -1,19 +1,8 @@
 ---
 builder: Catalinbread
 model: STS-88 Flanger/Reverb
-image: ../images/catalinbread-sts-88-flanger-reverb.png
-ogImage: ../images/seo-preview/catalinbread-sts-88-flanger-reverb.jpeg
-slug: catalinbread-sts-88-flanger-reverb
-pedalData: ../data/pedals/catalinbread-sts-88-flanger-reverb.pedal.json
-presetsData: ../data/presets/catalinbread-sts-88-flanger-reverb.presets.json
-stackedPedals:
-  - exploder:
-    data: ../data/pedals/beautiful-noise-effects-exploder.pedal.json
-    image: ../images/beautiful-noise-effects-exploder.png
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.75
 date: 2023-03-29
 tags:
   - shoegaze

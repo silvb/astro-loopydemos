@@ -1,18 +1,6 @@
 ---
 builder: Stone Deaf FX
 model: QBoost
-image: ../images/stone-deaf-fx-qboost.webp
-ogImage: ../images/seo-preview/stone-deaf-fx-qboost.jpeg
-slug: stone-deaf-fx-qboost
-pedalData: ../data/pedals/stone-deaf-fx-qboost.pedal.json
-presetsData: ../data/presets/stone-deaf-fx-qboost.presets.json
-stackedPedals:
-  - mini:
-    data: ../data/pedals/smallsound-bigsound-mini.pedal.json
-    image: ../images/smallsound-bigsound-mini.png
-  - sft:
-    data: ../data/pedals/catalinbread-sft.pedal.json
-    image: ../images/catalinbread-sft.webp
 type: demo
 isSponsored: true
 date: 2021-09-06

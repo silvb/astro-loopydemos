@@ -1,15 +1,8 @@
 ---
 builder: Poison Noises
 model: Lighthouse
-image: ../images/poison-noises-lighthouse.png
-ogImage: ../images/seo-preview/poison-noises-lighthouse.jpeg
-slug: poison-noises-lighthouse
-pedalData: ../data/pedals/poison-noises-lighthouse.pedal.json
-presetsData: ../data/presets/poison-noises-lighthouse.presets.json
 type: demo
 isSponsored: true
-hasBackingTrack: true
-volume: 0.7
 date: 2023-04-17
 tags:
   - univibe
