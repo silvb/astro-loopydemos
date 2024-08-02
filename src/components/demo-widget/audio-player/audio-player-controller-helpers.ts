@@ -10,3 +10,14 @@ export const getMediaUrl = (id: string, slug: string) => {
       return `${MEDIA_ROOT_URL}/${slug}/${id}.mp3`
   }
 }
+
+export const fetchAudioBuffer = async (
+  id: string,
+  slug: string,
+  audioContext: AudioContext
+) => {
+  const url = getMediaUrl(id, slug)
+  const response = await fetch(url)
+  const buffer = await response.arrayBuffer()
+  return audioContext.decodeAudioData(buffer)
+}

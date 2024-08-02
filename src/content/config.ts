@@ -178,6 +178,8 @@ export const presetSchema = z.discriminatedUnion("isSweep", [
 const presets = defineCollection({
   type: "data",
   schema: z.object({
+    volume: z.number().optional(),
+    hasBackingTrack: z.boolean().optional(),
     presets: z.array(presetSchema),
   }),
 })

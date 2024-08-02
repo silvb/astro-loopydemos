@@ -1,5 +1,6 @@
 import type { ControlElement, Preset, SettingsValue } from "@types"
 import { createSignal, createMemo, createRoot, createEffect } from "solid-js"
+import { debounce } from "radash"
 
 const findClosestValue = (value: number, valueArray: number[]) =>
   valueArray.reduce((acc, curr) => {
@@ -26,6 +27,12 @@ function createDemoState() {
   const [isPlaying, setIsPlaying] = createSignal(false)
 
   const [activePedals, setActivePedals] = createSignal<string[]>([])
+
+  const [isBackingTrackMuted, setIsBackingTrackMuted] = createSignal(false)
+
+  const [isLoading, setIsLoading] = createSignal(false)
+
+  const setIsLoadingDebounced = debounce({ delay: 200 }, setIsLoading)
 
   const activePreset = createMemo(() =>
     presets().find((preset) => preset.id === activePresetId())
@@ -127,6 +134,10 @@ function createDemoState() {
     setActivePedals,
     isPlaying,
     setIsPlaying,
+    isBackingTrackMuted,
+    setIsBackingTrackMuted,
+    isLoading,
+    setIsLoading: setIsLoadingDebounced,
   }
 }
 

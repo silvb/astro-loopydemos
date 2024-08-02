@@ -58,7 +58,6 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
       )
       .join("")
 
-    console.log({ paramName, varName, value: urlParams.get(paramName) })
     if (urlParams.has(paramName)) {
       root.style.setProperty(varName, "#" + urlParams.get(paramName))
     }

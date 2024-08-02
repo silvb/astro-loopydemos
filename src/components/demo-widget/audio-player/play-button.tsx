@@ -1,5 +1,5 @@
 import type { JSX } from "astro/jsx-runtime"
-import { createSignal, Show, type Component } from "solid-js"
+import { Show, type Component } from "solid-js"
 import { demoState } from "../demo-state-store"
 
 interface PlayButtonProps {
@@ -9,8 +9,7 @@ interface PlayButtonProps {
 }
 
 export const PlayButton: Component<PlayButtonProps> = (props) => {
-  const { isPlaying, setIsPlaying } = demoState
-  const [isLoading, setIsLoading] = createSignal(false)
+  const { isPlaying, setIsPlaying, isLoading } = demoState
 
   return (
     <button
