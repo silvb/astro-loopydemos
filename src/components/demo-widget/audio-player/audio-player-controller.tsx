@@ -2,7 +2,6 @@ import { createEffect, type Component } from "solid-js"
 import { demoState } from "../demo-state-store"
 import { fetchAudioBuffer } from "./audio-player-controller-helpers"
 import { BACKING_TRACK, CLEAN_TONE } from "./constants"
-import pedal from "../pedal"
 
 interface AudioPlayerControllerProps {
   slug: string
