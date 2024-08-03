@@ -62,7 +62,12 @@ export const Switch: Component<SwitchProps> = (props) => {
         <Show
           when={
             !props.secondaryCircuitId ||
-            props.secondaryCircuitId === activePreset()?.secondaryCircuitId
+            [
+              activePreset()?.secondaryCircuitId,
+              activePreset()?.comparison?.find(
+                (compPreset) => compPreset.pedalSlug === props.pedalSlug
+              )?.secondaryCircuitId,
+            ].includes(props.secondaryCircuitId)
           }
         >
           <StompSwitch

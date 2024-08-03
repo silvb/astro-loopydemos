@@ -153,6 +153,10 @@ export const basePresetSchema = z.object({
       z.object({
         id: z.string(),
         pedalSlug: z.string(),
+        secondaryCircuitId: z.string().optional(),
+        secondaryCircuitSlug: z.string().optional(),
+        secondaryCircuitOnlySlug: z.string().optional(),
+        initialSecondaryCircuits: z.array(z.string()).optional(),
         settings: settingsSchema.optional(),
       })
     )

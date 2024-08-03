@@ -16,7 +16,12 @@ const { presets } = Astro.props
       presets.map(({ id, isSweep, label }) => (
         <li class="h-full flex-shrink-0 flex-grow-0 basis-auto">
           <PresetButton client:load {id} {isSweep} {label}>
-            <Icon name="ph:faders" />
+            <Icon name="ph:faders" slot="default-icon" />
+            <Icon
+              name="ph:spinner"
+              class="animate-spin-slow"
+              slot="loading-icon"
+            />
           </PresetButton>
         </li>
       ))

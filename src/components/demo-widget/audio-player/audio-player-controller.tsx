@@ -1,7 +1,10 @@
 import { createEffect, type Component } from "solid-js"
 import { demoState } from "../demo-state-store"
-import { fetchAudioBuffer } from "./audio-player-controller-helpers"
-import { BACKING_TRACK, CLEAN_TONE } from "./constants"
+import {
+  fetchAudioBuffer,
+  getAudioPresetId,
+} from "./audio-player-controller-helpers"
+import { BACKING_TRACK } from "./constants"
 
 interface AudioPlayerControllerProps {
   slug: string
@@ -25,6 +28,7 @@ export const AudioPlayerController: Component<AudioPlayerControllerProps> = (
     setIsLoading,
     pedalsOn,
     activePedals,
+    secondaryCircuitsOn,
   } = demoState
   let audioContext: AudioContext | null = null
   let currentPlayingAudioSource: AudioBufferSourceNode | null = null
@@ -48,18 +52,13 @@ export const AudioPlayerController: Component<AudioPlayerControllerProps> = (
         await audioContext.resume()
       }
 
-      let presetId = CLEAN_TONE
-      if (activePedals().some((pedal) => pedalsOn().includes(pedal))) {
-        if (
-          preset.isSweep &&
-          !Object.keys(sweepSetting()).includes(preset.target)
-        )
-          return
-
-        presetId = preset.isSweep
-          ? preset.id + "_" + sweepSetting()[preset.target]
-          : preset.id
-      }
+      const presetId = getAudioPresetId(
+        preset,
+        sweepSetting(),
+        activePedals(),
+        pedalsOn(),
+        secondaryCircuitsOn()
+      )
 
       if (currentBuffer.id !== presetId) {
         currentBuffer.id = presetId

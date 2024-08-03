@@ -1,5 +1,5 @@
 import type { Preset } from "@types"
-import { onMount, type ParentComponent } from "solid-js"
+import { onMount, type Component, type JSX } from "solid-js"
 import { cva } from "class-variance-authority"
 import { demoState } from "./demo-state-store"
 
@@ -19,11 +19,20 @@ const buttonClass = cva(
   }
 )
 
-type PresetButtonProps = Pick<Preset, "id" | "isSweep" | "label">
+interface PresetButtonProps extends Pick<Preset, "id" | "isSweep" | "label"> {
+  "default-icon"?: JSX.Element
+  "loading-icon"?: JSX.Element
+}
 
-export const PresetButton: ParentComponent<PresetButtonProps> = (props) => {
-  const { activePresetId, selectPreset, activePedals, pedalsOn, setPedalsOn } =
-    demoState
+export const PresetButton: Component<PresetButtonProps> = (props) => {
+  const {
+    activePresetId,
+    selectPreset,
+    activePedals,
+    pedalsOn,
+    setPedalsOn,
+    isLoading,
+  } = demoState
   let buttonEl!: HTMLButtonElement
 
   onMount(() => {
@@ -64,7 +73,7 @@ export const PresetButton: ParentComponent<PresetButtonProps> = (props) => {
       })}
     >
       <span>{props.label}</span>
-      {props.children}
+      {isLoading() ? props["loading-icon"] : props["default-icon"]}
     </button>
   )
 }
