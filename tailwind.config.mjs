@@ -8,8 +8,8 @@ export default {
       fontFamily: {
         sans: ["Mulish Variable", ...defaultTheme.fontFamily.sans],
         mono: ["VT323", ...defaultTheme.fontFamily.mono],
-        display: ["Anton SC", ...defaultTheme.fontFamily.serif],
-        logo: ["Climate Crisis", ...defaultTheme.fontFamily.serif],
+        display: ["Anton", ...defaultTheme.fontFamily.serif],
+        logo: ["Erica One", ...defaultTheme.fontFamily.serif],
       },
       colors: {
         "loopydemos-primary": {
@@ -33,7 +33,7 @@ export default {
           themed: "var(--loopydemos-secondary-highlight)",
         },
         "loopydemos-highlight-tertiary": {
-          DEFAULT: "#f859a8",
+          DEFAULT: "#f8f859",
           themed: "var(--loopydemos-tertiary-highlight)",
         },
         "loopydemos-text": {

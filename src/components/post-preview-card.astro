@@ -78,7 +78,9 @@ const shortenedExcerpt =
     <div class="flex flex-col justify-between gap-4">
       <div class="flex flex-col gap-2">
         <h3 class="m-0">{title}</h3>
-        <DateTag {date} />
+        <div class="text-sm">
+          <DateTag {date} />
+        </div>
         <p class="m-0 text-lg">
           {shortenedExcerpt}
         </p>

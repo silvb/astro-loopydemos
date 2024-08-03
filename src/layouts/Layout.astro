@@ -1,11 +1,10 @@
 ---
 import Footer from "@layouts/footer.astro"
 import Header from "@layouts/header.astro"
+import "@fontsource-variable/fira-code"
 import "@fontsource-variable/mulish"
-import "@fontsource/anton-sc"
-import "@fontsource/climate-crisis"
+import "@fontsource/anton"
 import "@fontsource/erica-one"
-import "@fontsource/notable"
 import "@fontsource/vt323"
 import type { MarkdownLayoutProps } from "astro"
 
@@ -95,13 +94,12 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
       white 60%
     );
 
-    --hue: 254;
     --loopydemos-primary: #7359f8;
     --loopydemos-secondary: #242441;
     --loopydemos-background: #100f13;
     --loopydemos-primary-highlight: #5cf5f5;
     --loopydemos-secondary-highlight: #f859a8;
-    --loopydemos-tertiary-highlight: #f859a8;
+    --loopydemos-tertiary-highlight: #f8f859;
     --loopydemos-text: #f8f8f2;
     --loopydemos-success: #50fa7b;
     --loopydemos-error: #f87359;
@@ -138,14 +136,14 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
     h4,
     h5,
     h6 {
-      @apply break-words font-display font-normal text-loopydemos-highlight-tertiary;
+      @apply break-words font-display font-normal text-loopydemos-highlight-secondary tracking-wide;
     }
     h2 {
       @apply my-6 text-4xl;
     }
 
     h3 {
-      @apply mb-4 mt-12 text-2xl tracking-wide;
+      @apply mb-4 mt-12 text-2xl;
     }
 
     h4 {
