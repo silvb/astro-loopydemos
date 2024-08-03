@@ -39,9 +39,16 @@ function createDemoState() {
   )
 
   const selectSweepSetting = (id: string, value: number) => {
-    if (!activePreset()?.isSweep) return
+    if (
+      !activePreset()?.isSweep &&
+      !activePreset()?.chain?.some((p) => p.isSweep)
+    )
+      return
 
-    const values = activePreset()?.values || []
+    const values =
+      activePreset()?.values ||
+      activePreset()?.chain?.find((p) => p.isSweep)?.values ||
+      []
 
     const closestValue = findClosestValue(value, values)
 
@@ -71,12 +78,15 @@ function createDemoState() {
   }
 
   const getSetting = (
+    pedalSlug: string,
     id?: string,
-    pedalSlug?: string,
     dependency?: ControlElement["dependency"]
   ): SettingsValue | undefined => {
     if (!id) return
-    const slug = pedalSlug || mainPedal()
+
+    if (!activePedals().includes(pedalSlug)) return
+
+    const slug = pedalSlug
 
     return (
       sweepSetting()?.[id] ??
@@ -87,8 +97,7 @@ function createDemoState() {
       )?.settings?.[id] ??
       activePreset()?.settings?.[id] ??
       dependency?.values?.find(
-        ({ sourceValue }) =>
-          sourceValue === getSetting(dependency?.source, slug)
+        ({ sourceValue }) => sourceValue === getSetting(dependency.source, slug)
       )?.targetValue
     )
   }
@@ -103,6 +112,7 @@ function createDemoState() {
     }
     setSecondaryCircuitsOn(activePreset()?.initialSecondaryCircuits || [])
 
+    if (activePreset()?.comparison) return
     setActivePedals(
       activePreset()?.chain?.map((chainElement) => chainElement.pedalSlug) || [
         mainPedal(),

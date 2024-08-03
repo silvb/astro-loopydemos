@@ -22,7 +22,7 @@
   <rect
     width="200"
     height="200"
-    opacity="0.6"
+    opacity="0.8"
     filter="url(#nnnoise-filter)"
   ></rect>
 </svg>

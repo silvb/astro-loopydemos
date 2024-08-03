@@ -24,28 +24,43 @@ const containerClass = cva("relative origin-center", {
 export const KnobStateContainer: ParentComponent<KnobStateContainerProps> = (
   props
 ) => {
-  const { activePreset, getSetting } = demoState
+  const { activePreset, getSetting, activePedals } = demoState
 
-  const isSweepTarget = () =>
-    activePreset()?.isSweep && activePreset()?.target === props.id
+  const isSweepTarget = () => {
+    const isSweep =
+      activePreset()?.isSweep ||
+      activePreset()?.chain?.some(
+        (p) => p.isSweep && p.pedalSlug === props.pedalSlug
+      )
 
-  const level = () => (getSetting(props.id, props.pedalSlug) as number) ?? 5
+    if (!isSweep) return false
+
+    const target =
+      activePreset()?.target ||
+      activePreset()?.chain?.find((p) => p.isSweep)?.target
+
+    return target === props.id
+  }
+
+  const level = () => (getSetting(props.pedalSlug, props.id) as number) ?? 5
 
   return (
-    <div
-      class={containerClass({
-        transition: !Boolean(props.isRotary) && !isSweepTarget(),
-      })}
-      style={{
-        transform: `rotate(${props.isRotary ? props.rotaryAngles?.[level() - 1] : 30 * level() - 150}deg)`,
-      }}
-    >
-      <Show when={isSweepTarget()} fallback={props.children}>
-        <DragSweepControl id={props.id}>
-          {props["sweep-indicator"]}
-          {props.children}
-        </DragSweepControl>
-      </Show>
-    </div>
+    <Show when={activePedals().includes(props.pedalSlug)}>
+      <div
+        class={containerClass({
+          transition: !Boolean(props.isRotary) && !isSweepTarget(),
+        })}
+        style={{
+          transform: `rotate(${props.isRotary ? props.rotaryAngles?.[level() - 1] : 30 * level() - 150}deg)`,
+        }}
+      >
+        <Show when={isSweepTarget()} fallback={props.children}>
+          <DragSweepControl id={props.id}>
+            {props["sweep-indicator"]}
+            {props.children}
+          </DragSweepControl>
+        </Show>
+      </div>
+    </Show>
   )
 }

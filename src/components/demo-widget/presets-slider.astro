@@ -13,9 +13,14 @@ const { presets } = Astro.props
 <div class="custom-scrollbar">
   <ul class="flex h-10 list-none gap-1">
     {
-      presets.map(({ id, isSweep, label }) => (
+      presets.map(({ id, isSweep, label, chain }) => (
         <li class="h-full flex-shrink-0 flex-grow-0 basis-auto">
-          <PresetButton client:load {id} {isSweep} {label}>
+          <PresetButton
+            client:load
+            {id}
+            isSweep={chain?.some((p) => p.isSweep) || isSweep}
+            {label}
+          >
             <Icon name="ph:faders" slot="default-icon" />
             <Icon
               name="ph:spinner"

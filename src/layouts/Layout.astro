@@ -1,9 +1,11 @@
 ---
 import Footer from "@layouts/footer.astro"
 import Header from "@layouts/header.astro"
-import "@fontsource-variable/fira-code"
 import "@fontsource-variable/mulish"
-import "@fontsource/bowlby-one-sc"
+import "@fontsource/anton-sc"
+import "@fontsource/climate-crisis"
+import "@fontsource/erica-one"
+import "@fontsource/notable"
 import "@fontsource/vt323"
 import type { MarkdownLayoutProps } from "astro"
 
@@ -70,10 +72,10 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
   setCSSVarFromURL("--loopydemos-secondary-highlight")
   setCSSVarFromURL("--loopydemos-tertiary-highlight")
   setCSSVarFromURL("--loopydemos-text")
-  setCSSVarFromURL("--loopydemos-green")
-  setCSSVarFromURL("--loopydemos-red")
+  setCSSVarFromURL("--loopydemos-success")
+  setCSSVarFromURL("--loopydemos-error")
   setCSSVarFromURL("--loopydemos-orange")
-  setCSSVarFromURL("--loopydemos-gray")
+  setCSSVarFromURL("--loopydemos-subdued")
   setCSSVarFromURL("--loopydemos-black")
 </script>
 
@@ -93,17 +95,18 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
       white 60%
     );
 
-    --loopydemos-primary: #9580ff;
-    --loopydemos-secondary: #383a59;
-    --loopydemos-background: #282a36;
-    --loopydemos-primary-highlight: #80ffea;
-    --loopydemos-secondary-highlight: #ff80bf;
-    --loopydemos-tertiary-highlight: #f1fa8c;
+    --hue: 254;
+    --loopydemos-primary: #7359f8;
+    --loopydemos-secondary: #242441;
+    --loopydemos-background: #100f13;
+    --loopydemos-primary-highlight: #5cf5f5;
+    --loopydemos-secondary-highlight: #f859a8;
+    --loopydemos-tertiary-highlight: #f859a8;
     --loopydemos-text: #f8f8f2;
-    --loopydemos-green: #50fa7b;
-    --loopydemos-red: #ff5555;
+    --loopydemos-success: #50fa7b;
+    --loopydemos-error: #f87359;
     --loopydemos-orange: #ffb86c;
-    --loopydemos-gray: #bcc2cd;
+    --loopydemos-subdued: #bcc2cd;
     --loopydemos-black: #121212;
   }
 
@@ -138,15 +141,15 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
       @apply break-words font-display font-normal text-loopydemos-highlight-tertiary;
     }
     h2 {
-      @apply my-6 text-3xl;
+      @apply my-6 text-4xl;
     }
 
     h3 {
-      @apply mb-4 mt-12 text-xl;
+      @apply mb-4 mt-12 text-2xl tracking-wide;
     }
 
     h4 {
-      @apply mb-2 mt-8 text-base;
+      @apply mb-2 mt-8 text-lg;
     }
 
     strong {
@@ -250,41 +253,6 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
   @layer utilities {
     .content-wrapper {
       @apply mx-auto max-w-3xl px-6 md:px-8;
-    }
-
-    .bg-shiny-knob-gradient {
-      background: conic-gradient(
-        from 120deg,
-        #8a8a8a,
-        #fff,
-        #fff,
-        #8a8a8a,
-        #fff,
-        #fff,
-        #8a8a8a
-      );
-    }
-
-    .bg-shiny-knob-gradient-lg {
-      background: conic-gradient(
-        from 30deg,
-        #8a8a8a,
-        #fff,
-        #fff,
-        #8a8a8a,
-        #fff,
-        #fff,
-        #8a8a8a,
-        #8a8a8a,
-        #fff,
-        #8a8a8a,
-        #fff,
-        #fff,
-        #8a8a8a,
-        #8a8a8a,
-        #fff,
-        #8a8a8a
-      );
     }
 
     .custom-scrollbar {

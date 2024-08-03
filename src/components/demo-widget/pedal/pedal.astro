@@ -30,11 +30,6 @@ if (!pedalData) {
 
 const { controls, width, height, enclosure, name } = pedalData.data
 
-const imageAltText = slug
-  .split("-")
-  .map((word) => word[0].toUpperCase() + word.slice(1))
-  .join(" ")
-
 const enclosureWidth =
   width ||
   (enclosure === "landscape"
@@ -64,21 +59,21 @@ const enclosureHeight =
       {
         controls?.knobs?.map((knob) => (
           <AbsolutePosition id={knob.id} {...knob.position}>
-            <Knob {...knob} pedalSlug={name} />
+            <Knob {...knob} pedalSlug={slug} />
           </AbsolutePosition>
         ))
       }
       {
         controls?.switches?.map((switchEl) => (
           <AbsolutePosition id={switchEl.id} {...switchEl.position}>
-            <Switch client:load {...switchEl} pedalSlug={name} />
+            <Switch client:load {...switchEl} pedalSlug={slug} />
           </AbsolutePosition>
         ))
       }
       {
         controls?.leds?.map((led) => (
           <AbsolutePosition id={led.id} {...led.position}>
-            <Led client:load {...led} pedalSlug={name} />
+            <Led client:load {...led} pedalSlug={slug} />
           </AbsolutePosition>
         ))
       }

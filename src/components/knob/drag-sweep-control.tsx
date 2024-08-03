@@ -18,7 +18,10 @@ export const DragSweepControl: ParentComponent<DragSweepControlProps> = (
 ) => {
   const { activePreset, sweepSetting, selectSweepSetting } = demoState
   const [level, setLevel] = createSignal(
-    (sweepSetting()[props.id] || activePreset()?.initialValue) ?? 0
+    (sweepSetting()[props.id] ||
+      activePreset()?.initialValue ||
+      activePreset()?.chain?.find((p) => p.isSweep)?.initialValue) ??
+      0
   )
 
   createEffect(() => {

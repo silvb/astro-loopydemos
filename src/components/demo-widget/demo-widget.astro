@@ -22,15 +22,15 @@ const {
   `${presetSlug as CollectionEntry<"demos">["slug"]}.presets`
 )
 
-const pedalsFromPresets = getPedalsFromPresets(presets)
+let pedals = [...new Set(getPedalsFromPresets(presets))]
 
-const isComparison = presets.some(({ comparison }) => Boolean(comparison))
-
-if (!isComparison) {
-  pedalsFromPresets.unshift(presetSlug)
+if (pedals.includes(presetSlug)) {
+  pedals.sort((pedal) => (pedal === presetSlug ? -1 : 1))
 }
 
-const pedals = [...new Set(pedalsFromPresets)]
+if (pedals.length === 0) pedals = [presetSlug]
+
+const isComparison = presets.some(({ comparison }) => Boolean(comparison))
 ---
 
 <DemoStateInitializer client:load {presets} {pedals} />

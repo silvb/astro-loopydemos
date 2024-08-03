@@ -14,7 +14,7 @@ export const PlayButton: Component<PlayButtonProps> = (props) => {
   return (
     <button
       onClick={() => setIsPlaying(!isPlaying())}
-      class="text-loopydemos-highlight-tertiary-themed h-full basis-12 text-[3rem]"
+      class="h-full basis-12 text-[3rem] text-loopydemos-highlight-primary-themed"
     >
       <Show when={!isLoading()} fallback={props["loading-icon"]}>
         <Show when={isPlaying()} fallback={props["play-icon"]}>

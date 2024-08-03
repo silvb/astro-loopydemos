@@ -137,6 +137,13 @@ export const presetChainElementSchema = z.object({
   pedalSlug: z.string(),
   id: z.string(),
   settings: settingsSchema,
+  secondaryCircuitId: z.string().optional(),
+  secondaryCircuitSlug: z.string().optional(),
+  secondaryCircuitOnlySlug: z.string().optional(),
+  target: z.string().optional(),
+  isSweep: z.boolean().optional(),
+  initialValue: z.number().optional(),
+  values: z.array(z.number()).optional(),
 })
 
 export const basePresetSchema = z.object({

@@ -53,7 +53,7 @@ const shortenedExcerpt =
 <article id="slug" class="mb-12">
   <a href={`/posts/${slug}`} class="link-none flex gap-4">
     <div
-      class="flex min-h-60 w-60 shrink-0 items-center justify-center rounded-lg bg-loopydemos-secondary/50"
+      class="flex min-h-60 w-60 shrink-0 items-center justify-center rounded-lg bg-loopydemos-secondary"
     >
       {
         hasTeaser ? (
@@ -87,7 +87,7 @@ const shortenedExcerpt =
         <div class="flex flex-wrap gap-1">
           {
             tags.map((tag) => (
-              <span class="whitespace-nowrap rounded-md bg-loopydemos-secondary/50 px-2 py-2 text-sm text-loopydemos-gray">
+              <span class="text-loopydemos-subdued whitespace-nowrap rounded-md bg-loopydemos-secondary px-2 py-2 text-sm">
                 {tag}
               </span>
             ))

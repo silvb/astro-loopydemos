@@ -8,31 +8,32 @@ export default {
       fontFamily: {
         sans: ["Mulish Variable", ...defaultTheme.fontFamily.sans],
         mono: ["VT323", ...defaultTheme.fontFamily.mono],
-        display: ["Bowlby One SC", ...defaultTheme.fontFamily.serif],
+        display: ["Anton SC", ...defaultTheme.fontFamily.serif],
+        logo: ["Climate Crisis", ...defaultTheme.fontFamily.serif],
       },
       colors: {
         "loopydemos-primary": {
-          DEFAULT: "#9580ff",
+          DEFAULT: "#7359f8",
           themed: "var(--loopydemos-primary)",
         },
         "loopydemos-secondary": {
-          DEFAULT: "#383a59",
+          DEFAULT: "#242441",
           themed: "var(--loopydemos-secondary)",
         },
         "loopydemos-background": {
-          DEFAULT: "#282a36",
+          DEFAULT: "#100f13",
           themed: "var(--loopydemos-background)",
         },
         "loopydemos-highlight-primary": {
-          DEFAULT: "#80ffea",
+          DEFAULT: "#5cf5f5",
           themed: "var(--loopydemos-primary-highlight)",
         },
         "loopydemos-highlight-secondary": {
-          DEFAULT: "#ff80bf",
+          DEFAULT: "#f859a8",
           themed: "var(--loopydemos-secondary-highlight)",
         },
         "loopydemos-highlight-tertiary": {
-          DEFAULT: "#f1fa8c",
+          DEFAULT: "#f859a8",
           themed: "var(--loopydemos-tertiary-highlight)",
         },
         "loopydemos-text": {
@@ -51,9 +52,9 @@ export default {
           DEFAULT: "#ffb86c",
           themed: "var(--loopydemos-orange)",
         },
-        "loopydemos-gray": {
+        "loopydemos-subdued": {
           DEFAULT: "#bcc2cd",
-          themed: "var(--loopydemos-gray)",
+          themed: "var(--loopydemos-subdued)",
         },
         "loopydemos-black": {
           DEFAULT: "#121212",
@@ -62,6 +63,10 @@ export default {
       },
       backgroundImage: {
         noise: 'url("/noise.svg")',
+        shiny:
+          "conic-gradient(from 120deg,#8a8a8a,#fff,#fff,#8a8a8a,#fff,#fff,#8a8a8a)",
+        "shiny-lg":
+          "conic-gradient(from 30deg,#8a8a8a,#fff,#fff,#8a8a8a,#fff,#fff,#8a8a8a,#8a8a8a,#fff,#8a8a8a,#fff,#fff,#8a8a8a,#8a8a8a,#fff,#8a8a8a)",
       },
       gridTemplateColumns: {
         "3-min-repeat": "repeat(auto-fit, minmax(10rem, 1fr))",
