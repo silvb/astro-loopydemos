@@ -3,20 +3,96 @@ import Logo from "./logo.astro"
 import { Icon } from "astro-icon/components"
 
 const pathname = Astro.url.pathname
+
+const headerLinks = [
+  { href: "/demos", text: "Demos" },
+  { href: "/posts", text: "Posts" },
+  { href: "/about", text: "About" },
+  { href: "/uses", text: "Uses" },
+  { href: "/contact", text: "Contact" },
+]
 ---
 
 <header class="z-50 w-full">
   <div class="bg-loopydemos-secondary">
-    <div class="content-wrapper flex items-center bg-loopydemos-secondary py-2">
-      <a href="/" aria-label="Logo and home link" class="py-4">
+    <div class="content-wrapper flex min-h-20 items-center py-2">
+      <a
+        href="/"
+        aria-label="Logo and home link"
+        class="hidden py-4 sm:inline-block"
+      >
         <Logo />
       </a>
+      <button id="mobile-menu-toggle" class="size-10 sm:hidden">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 48 48"
+          class="size-10"
+        >
+          <g fill="none">
+            <line
+              x1="4"
+              x2="44"
+              y1="10"
+              y2="10"
+              class="stroke-loopydemos-primary"
+              stroke-width="4"
+              stroke-linecap="round"></line>
+            <line
+              id="line-handle-1"
+              x1="12"
+              x2="12"
+              y1="6"
+              y2="14"
+              class="line-handle stroke-loopydemos-highlight-secondary transition-transform"
+              stroke-width="4"
+              stroke-linecap="round"></line>
+            <line
+              x1="4"
+              x2="44"
+              y1="24"
+              y2="24"
+              class="stroke-loopydemos-primary"
+              stroke-width="4"
+              stroke-linecap="round"></line>
+            <line
+              id="line-handle-2"
+              x1="16"
+              x2="16"
+              y1="20"
+              y2="28"
+              class="line-handle stroke-loopydemos-highlight-secondary transition-transform"
+              stroke-width="4"
+              stroke-linecap="round"></line>
+            <line
+              x1="4"
+              x2="44"
+              y1="38"
+              y2="38"
+              class="stroke-loopydemos-primary"
+              stroke-width="4"
+              stroke-linecap="round"></line>
+            <line
+              id="line-handle-3"
+              x1="8"
+              x2="8"
+              y1="34"
+              y2="42"
+              class="line-handle stroke-loopydemos-highlight-secondary transition-transform"
+              stroke-width="4"
+              stroke-linecap="round"></line>
+          </g>
+        </svg>
+      </button>
+
       <div
         class="ml-4 box-border flex h-12 flex-auto flex-col justify-center sm:ml-8 sm:h-24 sm:justify-between"
       >
         <div class="flex items-center justify-between">
           <a href="/" class="flex items-center">
-            <h1 class="font-logo text-5xl text-loopydemos-primary uppercase">
+            <h1
+              class="font-logo text-2xl uppercase text-loopydemos-primary sm:text-5xl"
+            >
               Loopy Demos
             </h1>
           </a>
@@ -25,22 +101,16 @@ const pathname = Astro.url.pathname
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Instagram link"
-            class="text-4xl text-loopydemos-highlight-primary"
+            class="text-3xl text-loopydemos-highlight-primary sm:text-4xl"
           >
             <Icon name="ph:instagram-logo-bold" />
           </a>
         </div>
-        <ul class="flex w-full items-center justify-between">
+        <ul class="hidden w-full items-center justify-between sm:flex">
           {
-            [
-              { href: "/demos", text: "Demos" },
-              { href: "/posts", text: "Posts" },
-              { href: "/about", text: "About" },
-              { href: "/uses", text: "Uses" },
-              { href: "/contact", text: "Contact" },
-            ].map(({ href, text }) => (
+            headerLinks.map(({ href, text }) => (
               <li
-                class={`font-display text-3xl tracking-wider ${pathname.startsWith(href) ? "text-loopydemos-highlight-primary" : "text-loopydemos-highlight-secondary"} transition-colors hover:text-loopydemos-highlight-primary`}
+                class={`font-display text-3xl tracking-wide ${pathname.startsWith(href) ? "text-loopydemos-highlight-primary" : "text-loopydemos-highlight-secondary"} transition-colors hover:text-loopydemos-highlight-primary`}
               >
                 <a href={href}>{text}</a>
               </li>
@@ -65,3 +135,83 @@ const pathname = Astro.url.pathname
       stroke-linejoin="miter"></path>
   </svg>
 </header>
+<aside
+  class="animated-sidenav absolute left-0 top-20 z-10 flex h-screen w-full -translate-x-[100vw] bg-black/0"
+>
+  <ul class="flex h-full w-48 flex-col bg-loopydemos-secondary pl-6">
+    {
+      headerLinks.map(({ href, text }) => (
+        <li
+          class={`font-display text-3xl tracking-wide ${pathname.startsWith(href) ? "text-loopydemos-highlight-primary" : "text-loopydemos-highlight-secondary"} py-1 transition-colors hover:text-loopydemos-highlight-primary`}
+        >
+          <a href={href}>{text}</a>
+        </li>
+      ))
+    }
+  </ul>
+  <svg
+    viewBox="0 0 20 840"
+    xmlns="http://www.w3.org/2000/svg"
+    version="1.1"
+    preserveAspectRatio="none"
+    class="[&>path]:fill-loopydemos-secondary"
+  >
+    <path
+      d="M19 0L17.7 8.8C16.3 17.7 13.7 35.3 13.8 52.8C14 70.3 17 87.7 16.5 105.2C16 122.7 12 140.3 10.3 157.8C8.7 175.3 9.3 192.7 9.7 210.2C10 227.7 10 245.3 10.8 262.8C11.7 280.3 13.3 297.7 12.7 315.2C12 332.7 9 350.3 9.2 367.8C9.3 385.3 12.7 402.7 13 420.2C13.3 437.7 10.7 455.3 10.5 472.8C10.3 490.3 12.7 507.7 13.7 525.2C14.7 542.7 14.3 560.3 13.3 577.8C12.3 595.3 10.7 612.7 9.3 630.2C8 647.7 7 665.3 6.8 682.8C6.7 700.3 7.3 717.7 9.3 735.2C11.3 752.7 14.7 770.3 14 787.8C13.3 805.3 8.7 822.7 6.3 831.3L4 840L0 840L0 831.3C0 822.7 0 805.3 0 787.8C0 770.3 0 752.7 0 735.2C0 717.7 0 700.3 0 682.8C0 665.3 0 647.7 0 630.2C0 612.7 0 595.3 0 577.8C0 560.3 0 542.7 0 525.2C0 507.7 0 490.3 0 472.8C0 455.3 0 437.7 0 420.2C0 402.7 0 385.3 0 367.8C0 350.3 0 332.7 0 315.2C0 297.7 0 280.3 0 262.8C0 245.3 0 227.7 0 210.2C0 192.7 0 175.3 0 157.8C0 140.3 0 122.7 0 105.2C0 87.7 0 70.3 0 52.8C0 35.3 0 17.7 0 8.8L0 0Z"
+      stroke-linecap="round"
+      stroke-linejoin="miter"></path>
+  </svg>
+</aside>
+
+<style>
+  .menu-animated-line {
+    @apply transition-transform;
+  }
+
+  aside.animated-sidenav {
+    transition:
+      transform 0.1s ease-in 0s,
+      background-color 0.1s linear 0.2s;
+
+    &.slide-in {
+      @apply translate-x-0 bg-black/50;
+    }
+  }
+
+  #mobile-menu-toggle {
+    #line-handle-1 {
+      @apply translate-x-5;
+      &.open {
+        @apply translate-x-2;
+      }
+    }
+
+    #line-handle-2 {
+      @apply translate-x-0;
+      &.open {
+        @apply translate-x-4;
+      }
+    }
+
+    #line-handle-3 {
+      @apply translate-x-8;
+      &.open {
+        @apply translate-x-0;
+      }
+    }
+  }
+</style>
+
+<script>
+  document
+    ?.getElementById("mobile-menu-toggle")
+    ?.addEventListener("click", () => {
+      document
+        ?.querySelector("aside.animated-sidenav")
+        ?.classList.toggle("slide-in")
+
+      document?.querySelectorAll(".line-handle")?.forEach((el) => {
+        el.classList.toggle("open")
+      })
+    })
+</script>

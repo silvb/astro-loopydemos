@@ -13,7 +13,7 @@ export default {
       },
       colors: {
         "loopydemos-primary": {
-          DEFAULT: "#7359f8",
+          DEFAULT: "#9580ff",
           themed: "var(--loopydemos-primary)",
         },
         "loopydemos-secondary": {
@@ -29,7 +29,7 @@ export default {
           themed: "var(--loopydemos-primary-highlight)",
         },
         "loopydemos-highlight-secondary": {
-          DEFAULT: "#f859a8",
+          DEFAULT: "#f765ae",
           themed: "var(--loopydemos-secondary-highlight)",
         },
         "loopydemos-highlight-tertiary": {
@@ -69,7 +69,7 @@ export default {
           "conic-gradient(from 30deg,#8a8a8a,#fff,#fff,#8a8a8a,#fff,#fff,#8a8a8a,#8a8a8a,#fff,#8a8a8a,#fff,#fff,#8a8a8a,#8a8a8a,#fff,#8a8a8a)",
       },
       gridTemplateColumns: {
-        "3-min-repeat": "repeat(auto-fit, minmax(10rem, 1fr))",
+        "3-min-repeat": "repeat(auto-fit, minmax(9rem, 1fr))",
       },
       animation: {
         "spin-slow": "spin 2s linear infinite",

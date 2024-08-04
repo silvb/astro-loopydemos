@@ -1,9 +1,9 @@
 export const COLORS = {
-  primary: "#7359f8",
+  primary: "#9580ff",
   secondary: "#242441",
   background: "#100f13",
   "highlight-primary": "#5cf5f5",
-  "highlight-secondary": "#f859a8",
+  "highlight-secondary": "#f765ae",
   "highlight-tertiary": "#f8f859",
   text: "#f8f8f2",
   success: "#50FA7B",
@@ -11,37 +11,4 @@ export const COLORS = {
   orange: "#FFB86C",
   subdued: "#bcc2cd",
   black: "#121212",
-}
-
-// export const DRACULA = {
-//   primary: "#9580ff",
-//   secondary: "#383a59",
-//   background: "#282a36",
-//   "highlight-primary": "#80ffea",
-//   "highlight-secondary": "#ff80bf",
-//   "highlight-tertiary": "#F1FA8C",
-//   text: "#f8f8f2",
-//   success: "#50FA7B",
-//   error: "#FF5555",
-//   orange: "#FFB86C",
-//   subdued: "#bcc2cd",
-//   black: "#121212",
-// }
-
-export const SYNTHWAVE = {
-  primary: "#e779c1",
-  secondary: "#58c7f3",
-  accent: "oklch(88.04% 0.206 93.72)",
-  neutral: "#221551",
-  "neutral-content": "#f9f7fd",
-  "base-100": "#1a103d",
-  "base-content": "#f9f7fd",
-  info: "#53c0f3",
-  "info-content": "#201047",
-  success: "#71ead2",
-  "success-content": "#201047",
-  warning: "#eace6c",
-  "warning-content": "#201047",
-  error: "#ec8c78",
-  "error-content": "#201047",
 }
