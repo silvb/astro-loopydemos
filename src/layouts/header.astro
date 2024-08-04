@@ -40,7 +40,7 @@ const pathname = Astro.url.pathname
               { href: "/contact", text: "Contact" },
             ].map(({ href, text }) => (
               <li
-                class={`font-display text-4xl tracking-wide ${pathname.startsWith(href) ? "text-loopydemos-highlight-primary" : "text-loopydemos-highlight-secondary"} transition-colors hover:text-loopydemos-highlight-primary`}
+                class={`font-display text-3xl tracking-wider ${pathname.startsWith(href) ? "text-loopydemos-highlight-primary" : "text-loopydemos-highlight-secondary"} transition-colors hover:text-loopydemos-highlight-primary`}
               >
                 <a href={href}>{text}</a>
               </li>
