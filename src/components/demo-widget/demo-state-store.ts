@@ -32,6 +32,8 @@ function createDemoState() {
 
   const [isLoading, setIsLoading] = createSignal(false)
 
+  const [widthTab, setWidthTab] = createSignal<Record<string, number>>({})
+
   const setIsLoadingDebounced = debounce({ delay: 200 }, setIsLoading)
 
   const activePreset = createMemo(() =>
@@ -147,6 +149,8 @@ function createDemoState() {
     isBackingTrackMuted,
     setIsBackingTrackMuted,
     isLoading,
+    widthTab,
+    setWidthTab,
     setIsLoading: setIsLoadingDebounced,
   }
 }

@@ -21,8 +21,9 @@ const { presets } = Astro.props
             isSweep={chain?.some((p) => p.isSweep) || isSweep}
             {label}
           >
-            <Icon name="ph:faders" slot="default-icon" />
+            <Icon {id} name="ph:faders" slot="default-icon" />
             <Icon
+              {id}
               name="ph:spinner"
               class="animate-spin-slow"
               slot="loading-icon"

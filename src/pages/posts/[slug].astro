@@ -13,11 +13,11 @@ export const getStaticPaths = (async () => {
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>
 
-const { content, date, title } = Astro.props
+const { content, date, title, type } = Astro.props
 const { slug } = Astro.params
 const { Content } = await content.render()
 ---
 
-<DemoLayout {slug} {title} {date}>
+<DemoLayout {slug} {title} {date} {type}>
   <Content />
 </DemoLayout>

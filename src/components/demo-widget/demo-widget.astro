@@ -8,6 +8,7 @@ import PresetsSlider from "./presets-slider.astro"
 import { DemoStateInitializer } from "./demo-state-initializer"
 import ComparisonSlider from "./comparison-slider.astro"
 import { getPedalsFromPresets } from "@utils/get-pedals-from-presets"
+import { ScaleFactor } from "./scale-factor"
 
 interface Props {
   presetSlug: string
@@ -39,6 +40,8 @@ const isComparison = presets.some(({ comparison }) => Boolean(comparison))
   <PresetsSlider {presets} />
   {isComparison && <ComparisonSlider {pedals} />}
 </div>
-<div class="mb-12 mt-8 flex min-h-[25rem] items-start justify-center">
-  {pedals.map((slug) => <Pedal slug={slug} />)}
-</div>
+<ScaleFactor client:only="solid-js">
+  <div class="mb-12 mt-8 flex min-h-[25rem] items-start justify-center">
+    {pedals.map((slug) => <Pedal slug={slug} />)}
+  </div>
+</ScaleFactor>

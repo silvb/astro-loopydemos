@@ -1,5 +1,5 @@
 import type { Preset } from "@types"
-import { onMount, type Component, type JSX } from "solid-js"
+import { onMount, Show, type Component, type JSX } from "solid-js"
 import { cva } from "class-variance-authority"
 import { demoState } from "./demo-state-store"
 
@@ -73,7 +73,9 @@ export const PresetButton: Component<PresetButtonProps> = (props) => {
       })}
     >
       <span>{props.label}</span>
-      {isLoading() ? props["loading-icon"] : props["default-icon"]}
+      <Show when={isLoading()} fallback={props["default-icon"]}>
+        {props["loading-icon"]}
+      </Show>
     </button>
   )
 }

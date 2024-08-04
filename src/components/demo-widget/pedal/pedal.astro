@@ -28,7 +28,7 @@ if (!pedalData) {
   throw new Error(`Pedal not found: ${slug}`)
 }
 
-const { controls, width, height, enclosure, name } = pedalData.data
+const { controls, width, height, enclosure } = pedalData.data
 
 const enclosureWidth =
   width ||
@@ -42,8 +42,9 @@ const enclosureHeight =
     : POTRAIT_DEFAULT_ENCLOSURE.height)
 ---
 
-<PedalStateContainer client:load {slug}>
+<PedalStateContainer client:load {slug} {enclosureWidth}>
   <div
+    id={slug}
     class="relative box-border select-none"
     style={{
       width: `${enclosureWidth}px`,

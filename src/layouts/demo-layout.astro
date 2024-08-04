@@ -2,17 +2,28 @@
 import DemoWidget from "@components/demo-widget"
 import Layout from "./layout.astro"
 import DateTag from "./date-tag.astro"
+import { Icon } from "astro-icon/components"
 
 interface Props {
   title: string
   date: Date
   slug: string
+  type: "demo" | "post" | "none"
 }
 
-const { slug, title, date } = Astro.props
+const { slug, title, date, type } = Astro.props
 ---
 
 <Layout {title}>
+  <a
+    href={type === "demo" ? "/demos" : "/posts"}
+    class="link-none flex items-center gap-2 text-lg font-black text-loopydemos-highlight-primary sm:text-xl"
+  >
+    <Icon name="ph:arrow-left" />
+    <span>
+      {type === "demo" ? "All demos" : "All posts"}
+    </span>
+  </a>
   <h2>{title}</h2>
   <div class="mb-3">
     <DateTag {date} />
