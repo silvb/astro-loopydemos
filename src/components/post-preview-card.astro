@@ -42,7 +42,7 @@ if (presetsFromPost) {
   }
 }
 
-const EXCERPT_LENGTH = 24
+const EXCERPT_LENGTH = 20
 
 const shortenedExcerpt =
   excerpt.split(" ").length > EXCERPT_LENGTH
@@ -51,57 +51,76 @@ const shortenedExcerpt =
 ---
 
 <article id="slug" class="mb-12">
-  <a href={`/posts/${slug}`} class="link-none flex gap-4">
-    <div
-      class="flex min-h-60 w-60 shrink-0 items-center justify-center rounded-lg bg-loopydemos-secondary"
-    >
-      {
-        hasTeaser ? (
-          <Image
-            src={getImageSrcFromSlug(slug)}
-            alt={title}
-            class="h-auto w-56 object-contain object-top"
-          />
-        ) : (
-          <div class="pedal-collage-grid h-auto w-56">
-            {pedals.map((pedal) => (
-              <Image
-                src={getImageSrcFromSlug(pedal)}
-                alt={getImageAltFromSlug(pedal)}
-                class="h-full object-contain"
-              />
-            ))}
+  <a href={`/posts/${slug}`} class="link-none flex flex-col gap-2">
+    <div class="flex items-start gap-4 sm:items-stretch">
+      <div
+        class="flex min-h-40 w-40 shrink-0 items-center justify-center rounded-lg bg-loopydemos-secondary p-2 sm:min-h-60 sm:w-60"
+      >
+        {
+          hasTeaser ? (
+            <Image
+              src={getImageSrcFromSlug(slug)}
+              alt={title}
+              class="h-auto w-36 object-contain object-top sm:w-56"
+            />
+          ) : (
+            <div class="pedal-collage-grid h-auto w-36 sm:w-56">
+              {pedals.map((pedal) => (
+                <Image
+                  src={getImageSrcFromSlug(pedal)}
+                  alt={getImageAltFromSlug(pedal)}
+                  class="h-full object-contain"
+                />
+              ))}
+            </div>
+          )
+        }
+      </div>
+      <div class="flex flex-col justify-between gap-4">
+        <div class="flex flex-col gap-2">
+          <h3 class="m-0">{title}</h3>
+          <div class="text-sm">
+            <DateTag {date} />
           </div>
-        )
-      }
+          <p class="xs:text-base m-0 text-sm sm:text-lg">
+            {shortenedExcerpt}
+          </p>
+        </div>
+        <div class="hidden flex-col items-end gap-4 sm:flex">
+          <span
+            class="flex items-center gap-2 text-lg font-black text-loopydemos-highlight-primary"
+          >
+            <span class="whitespace-nowrap">Read on...</span>
+            <Icon name="ph:arrow-right" />
+          </span>
+          <div class="flex flex-wrap justify-end gap-1">
+            {
+              tags.map((tag) => (
+                <span class="whitespace-nowrap rounded-md bg-loopydemos-secondary px-2 py-2 text-sm text-loopydemos-subdued">
+                  {tag}
+                </span>
+              ))
+            }
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="flex flex-col justify-between gap-4">
-      <div class="flex flex-col gap-2">
-        <h3 class="m-0">{title}</h3>
-        <div class="text-sm">
-          <DateTag {date} />
-        </div>
-        <p class="m-0 text-lg">
-          {shortenedExcerpt}
-        </p>
+    <div class="flex items-center justify-between gap-4 sm:hidden">
+      <div class="flex flex-wrap gap-1">
+        {
+          tags.map((tag) => (
+            <span class="whitespace-nowrap rounded-md bg-loopydemos-secondary px-2 py-2 text-sm text-loopydemos-subdued">
+              {tag}
+            </span>
+          ))
+        }
       </div>
-      <div class="flex items-center justify-between gap-4">
-        <div class="flex flex-wrap gap-1">
-          {
-            tags.map((tag) => (
-              <span class="text-loopydemos-subdued whitespace-nowrap rounded-md bg-loopydemos-secondary px-2 py-2 text-sm">
-                {tag}
-              </span>
-            ))
-          }
-        </div>
-        <span
-          class="flex items-center gap-2 text-xl font-black text-loopydemos-highlight-primary"
-        >
-          <span class="whitespace-nowrap">Read on...</span>
-          <Icon name="ph:arrow-right" />
-        </span>
-      </div>
+      <span
+        class="flex items-center gap-2 text-lg font-black text-loopydemos-highlight-primary"
+      >
+        <span class="whitespace-nowrap">Read on...</span>
+        <Icon name="ph:arrow-right" />
+      </span>
     </div>
   </a>
 </article>
@@ -109,8 +128,18 @@ const shortenedExcerpt =
 <style define:vars={{ size: collageGridElementSize }}>
   .pedal-collage-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(var(--size), 1fr));
-    grid-auto-rows: var(--size);
     gap: 0.5rem;
+    grid-template-columns: repeat(
+      auto-fit,
+      minmax(calc(var(--size) * 0.8), 1fr)
+    );
+    grid-auto-rows: calc(var(--size) * 0.8);
+
+    @media (min-width: 640px) {
+      & {
+        grid-template-columns: repeat(auto-fit, minmax(var(--size), 1fr));
+        grid-auto-rows: var(--size);
+      }
+    }
   }
 </style>

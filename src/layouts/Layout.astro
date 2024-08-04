@@ -139,11 +139,11 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
       @apply break-words font-display font-normal tracking-wide text-loopydemos-highlight-secondary;
     }
     h2 {
-      @apply my-6 text-4xl;
+      @apply my-6 text-3xl sm:text-4xl;
     }
 
     h3 {
-      @apply mb-4 mt-12 text-2xl;
+      @apply mb-4 mt-12 text-xl sm:text-2xl;
     }
 
     h4 {
@@ -155,7 +155,7 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
     }
 
     p {
-      @apply my-4 text-lg md:text-xl;
+      @apply my-4 text-base sm:text-lg md:text-xl;
       > img {
         @apply float-right my-2 ml-4 w-1/2;
       }
@@ -165,7 +165,7 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
       @apply list-outside list-[disclosure-closed] pl-8;
 
       li {
-        @apply pb-2 pl-2 text-lg md:text-xl;
+        @apply pb-2 pl-2 text-base sm:text-lg md:text-xl;
 
         &::marker {
           @apply text-loopydemos-primary;
