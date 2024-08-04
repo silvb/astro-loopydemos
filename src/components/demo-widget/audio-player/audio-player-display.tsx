@@ -23,7 +23,7 @@ export const AudioPlayerDisplay: Component<AudioPlayerDisplayProps> = (
       <Show
         when={showVisualizer()}
         fallback={
-          <span class="text-center font-mono text-loopydemos-highlight-primary-themed">
+          <span class="px-2 text-center font-mono text-base text-loopydemos-highlight-primary-themed [word-spacing:-0.1em] sm:text-lg md:text-xl">
             {getDisplayText(isPlaying(), false, false, isAnyPedalOn(), false)}
           </span>
         }
