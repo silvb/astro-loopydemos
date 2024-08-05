@@ -2,10 +2,16 @@
 import Footer from "@layouts/footer.astro"
 import Header from "@layouts/header.astro"
 import "@fontsource-variable/fira-code"
+import firaCodeWoff2 from "@fontsource-variable/fira-code/files/fira-code-latin-wght-normal.woff2?url"
+
 import "@fontsource-variable/mulish"
+import mulishWoff2 from "@fontsource-variable/mulish/files/mulish-latin-400.woff2?url"
 import "@fontsource/anton"
+import antonWoff2 from "@fontsource/anton/files/anton-latin-400.woff2?url"
 import "@fontsource/erica-one"
+import ericaOneWoff2 from "@fontsource/erica-one/files/erica-one-latin-400.woff2?url"
 import "@fontsource/vt323"
+import vt323Woff2 from "@fontsource/vt323/files/vt323-latin-400.woff2?url"
 import type { MarkdownLayoutProps } from "astro"
 import SpeedInsights from "@vercel/speed-insights/astro"
 
@@ -28,6 +34,41 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href={firaCodeWoff2}
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href={mulishWoff2}
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href={antonWoff2}
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href={ericaOneWoff2}
+      crossorigin="anonymous"
+    />
+    <link
+      rel="preload"
+      as="font"
+      type="font/woff2"
+      href={vt323Woff2}
+      crossorigin="anonymous"
+    />
     <meta name="generator" content={Astro.generator} />
     <title>{pageTitle}</title>
   </head>
