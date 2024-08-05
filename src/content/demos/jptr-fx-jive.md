@@ -1,8 +1,9 @@
 ---
 model: Jive Reel Saturator
 builder: JPTR FX
+slug: jptr-fx-jive
 type: demo
-date: 2021-03-30
+date: 2024-08-03
 tags:
   - preamp
   - boost
@@ -12,7 +13,7 @@ relatedSlugs:
   - overdrive-shootout
 externalLinks:
   reverb: jptr-fx-jive
-  builderLink: https://www.jptrfx.com/dirt-machines/
+  builderLink: https://jptrfx.com/products/jptr-fx-jive-reel-saturator-overdrive
 ---
 
 The Jive Reel Saturator from JPTR FX is a build-your-own overdrive. It's super versatile. It can do anything from clean boost (40dB!), light, crackly overdrive, lo-fi tape saturation, amp-like, dynamic overdrive to meaty and fuzz-like distortion.
@@ -27,9 +28,7 @@ The Jive got me hooked on JPTR FX pedals. This won't be the last "ugliest sound 
 
 ### Signal Chain
 
-- Epiphone SG Special (P90, bridge pickup)
+- Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (bridge pickup)
 - Jive
-- [Catalinbread Topanga](/demos/catalinbread-topanga) (for some reverb)
-- [Strymon Iridium (Chime)](/demos/strymon-iridium)
-- Focusrite Scarlett 2i2
-- GarageBand
+- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)

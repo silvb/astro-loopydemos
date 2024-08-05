@@ -23,14 +23,25 @@
       }
     },
     {
-      "id": "only_opamp",
+      "id": "jfet_only",
       "label": "JFET-Only Clipping",
       "settings": {
-        "vol": 2,
+        "vol": 1.5,
         "gain": 10,
         "toggle_a": 1,
         "toggle_b": 1,
         "toggle_c": 1
+      }
+    },
+    {
+      "id": "fully_saturated",
+      "label": "Fully Saturated",
+      "settings": {
+        "vol": 8,
+        "gain": 10,
+        "toggle_a": 3,
+        "toggle_b": 3,
+        "toggle_c": 3
       }
     },
     {
@@ -39,13 +50,13 @@
       "isSweep": true,
       "target": "gain",
       "settings": {
-        "vol": 5,
+        "vol": 8,
         "toggle_a": 3,
         "toggle_b": 3,
         "toggle_c": 3
       },
-      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-      "initialValue": 4
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0
     },
     {
       "id": "toggle_a",
@@ -53,8 +64,8 @@
       "isSweep": true,
       "target": "toggle_a",
       "settings": {
-        "vol": 5,
-        "gain": 6,
+        "vol": 1.5,
+        "gain": 8,
         "toggle_b": 1,
         "toggle_c": 1
       },
@@ -67,8 +78,8 @@
       "isSweep": true,
       "target": "toggle_b",
       "settings": {
-        "vol": 5,
-        "gain": 6,
+        "vol": 4,
+        "gain": 10,
         "toggle_a": 1,
         "toggle_c": 1
       },
@@ -81,8 +92,8 @@
       "isSweep": true,
       "target": "toggle_c",
       "settings": {
-        "vol": 5,
-        "gain": 6,
+        "vol": 6,
+        "gain": 7,
         "toggle_a": 1,
         "toggle_b": 1
       },

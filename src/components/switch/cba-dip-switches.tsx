@@ -3,7 +3,6 @@ import { For, mergeProps, type Component } from "solid-js"
 
 interface CBADipSwitchesProps {
   state: CBASwitchSate
-  scale?: number
 }
 
 const dipRowClass =
@@ -37,23 +36,22 @@ export const CBADipSwitches: Component<CBADipSwitchesProps> = (props) => {
         false,
         false,
       ],
-      scale: 1,
     },
     props
   )
 
   const dipInlineStyle = {
-    "--width": 6 * mergedProps.scale + "px",
-    "--height": 12 * mergedProps.scale + "px",
-    "--nippleWidth": 5 * mergedProps.scale + "px",
-    "--nippleHeight": 6 * mergedProps.scale + "px",
+    "--width": 6 + "px",
+    "--height": 12 + "px",
+    "--nippleWidth": 5 + "px",
+    "--nippleHeight": 6 + "px",
   }
   return (
     <div
       class="box-border flex bg-[#aa232f] px-0.5 py-0"
       style={{
-        width: DIMENSIONS.width * mergedProps.scale + "px",
-        height: DIMENSIONS.height * mergedProps.scale + "px",
+        width: DIMENSIONS.width + "px",
+        height: DIMENSIONS.height + "px",
       }}
     >
       <div class={dipRowClass}>

@@ -1,0 +1,124 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.7,
+  "presets": [
+    {
+      "id": "harmonic_wave",
+      "label": "Harmonic Wave",
+      "settings": {
+        "vol": 10,
+        "shape": 0,
+        "pan": 5,
+        "rate": 5,
+        "depth": 10,
+        "sbh": 10,
+        "rate_led": 1000,
+        "triplet": true
+      }
+    },
+    {
+      "id": "pulsing_trem",
+      "label": "Pulsing Trem",
+      "settings": {
+        "vol": 10,
+        "shape": 3,
+        "pan": 2,
+        "rate": 5,
+        "depth": 8,
+        "sbh": 1,
+        "rate_led": 1000,
+        "sixteenth": true
+      }
+    },
+    {
+      "id": "circling_swell",
+      "label": "Circling Swell",
+      "settings": {
+        "vol": 10,
+        "shape": 4,
+        "pan": 10,
+        "rate": 5,
+        "depth": 10,
+        "sbh": 3,
+        "rate_led": 1000,
+        "triplet": true
+      }
+    },
+    {
+      "id": "subtle_phase",
+      "label": "Subtle Phase",
+      "settings": {
+        "vol": 10,
+        "shape": 6,
+        "pan": 2,
+        "rate": 5,
+        "depth": 10,
+        "sbh": 8,
+        "rate_led": 1000,
+        "quarter": true
+      }
+    },
+    {
+      "id": "ear_massage",
+      "label": "Ear Massage",
+      "settings": {
+        "vol": 10,
+        "shape": 7,
+        "pan": 5,
+        "rate": 5,
+        "depth": 10,
+        "sbh": 0,
+        "rate_led": 1000,
+        "eighth_triplet": true
+      }
+    },
+    {
+      "id": "stereo_glitch",
+      "label": "Stereo Glitch",
+      "settings": {
+        "vol": 10,
+        "shape": 10,
+        "pan": 10,
+        "rate": 8,
+        "depth": 10,
+        "sbh": 2,
+        "rate_led": 300,
+        "eighth": true
+      }
+    },
+    {
+      "id": "sbh_knob",
+      "label": "S-B-H",
+      "isSweep": true,
+      "target": "sbh",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "volume": 10,
+        "shape": 0,
+        "pan": 5,
+        "rate": 5,
+        "depth": 10,
+        "rate_led": 1000,
+        "triplet": true
+      }
+    },
+    {
+      "id": "pan_knob",
+      "label": "Pan",
+      "isSweep": true,
+      "target": "pan",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "volume": 10,
+        "shape": 0,
+        "rate": 5,
+        "depth": 10,
+        "sbh": 2,
+        "rate_led": 1000,
+        "triplet": true
+      }
+    }
+  ]
+}

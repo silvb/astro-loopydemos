@@ -1,20 +1,53 @@
 {
   "hasBackingTrack": true,
-  "volume": 0.7,
+  "volume": 0.8,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
-      "settings": { "output": 5, "eq": 5, "pinch": 5, "wool": 5 }
+      "id": "thumpy_velcro",
+      "label": "Thumpy Velcro",
+      "settings": { "output": 5, "eq": 9, "pinch": 5, "wool": 10 }
     },
     {
-      "id": "output_knob",
-      "label": "Output",
+      "id": "starving_gate",
+      "label": "Starving Gate",
+      "settings": { "output": 7, "eq": 8, "pinch": 9, "wool": 4 }
+    },
+    {
+      "id": "full_drive",
+      "label": "Full Drive",
+      "settings": { "output": 7, "eq": 6, "pinch": 0, "wool": 0 }
+    },
+    {
+      "id": "meaty_distortion",
+      "label": "Meaty Distortion",
+      "settings": { "output": 6, "eq": 6, "pinch": 3, "wool": 6 }
+    },
+    {
+      "id": "eq_knob",
+      "label": "EQ",
       "isSweep": true,
-      "target": "output",
+      "target": "eq",
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
-      "settings": { "eq": 5, "pinch": 5, "wool": 5 }
+      "settings": { "output": 6, "pinch": 5, "wool": 5 }
+    },
+    {
+      "id": "pinch_knob",
+      "label": "Pinch",
+      "isSweep": true,
+      "target": "pinch",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "output": 6, "eq": 8, "wool": 7 }
+    },
+    {
+      "id": "wool_knob",
+      "label": "Wool",
+      "isSweep": true,
+      "target": "wool",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "output": 6, "eq": 8, "pinch": 5 }
     }
   ]
 }

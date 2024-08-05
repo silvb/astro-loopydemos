@@ -1,0 +1,138 @@
+{
+  "name": "walrus-audio-monumental",
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol",
+        "size": 48,
+        "position": { "top": 15, "left": 16 },
+        "type": "walrus"
+      },
+      {
+        "id": "shape",
+        "size": 48,
+        "position": { "top": 15, "left": 76 },
+        "type": "walrus"
+      },
+      {
+        "id": "pan",
+        "size": 48,
+        "position": { "top": 15, "left": 134 },
+        "type": "walrus"
+      },
+      {
+        "id": "rate",
+        "size": 48,
+        "position": { "top": 84, "left": 16 },
+        "type": "walrus"
+      },
+      {
+        "id": "depth",
+        "size": 48,
+        "position": { "top": 84, "left": 75 },
+        "type": "walrus"
+      },
+      {
+        "id": "sbh",
+        "size": 48,
+        "position": { "top": 84, "left": 136 },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      {
+        "id": "quarter",
+        "size": 24,
+        "position": {
+          "top": 160,
+          "left": 12
+        },
+        "colors": {
+          "off": "#5d656aa1",
+          "on": "#d4f9ff"
+        }
+      },
+      {
+        "id": "triplet",
+        "size": 24,
+        "position": {
+          "top": 170,
+          "left": 19
+        },
+        "colors": {
+          "off": "#5d656aa1",
+          "on": "#d4f9ff"
+        }
+      },
+      {
+        "id": "eighth",
+        "size": 24,
+        "position": {
+          "top": 174,
+          "left": 31
+        },
+        "colors": {
+          "off": "#5d656add",
+          "on": "#d4f9ff"
+        }
+      },
+      {
+        "id": "eighth_triplet",
+        "size": 24,
+        "position": {
+          "top": 170,
+          "left": 42
+        },
+        "colors": {
+          "off": "#5d656aa1",
+          "on": "#d4f9ff"
+        }
+      },
+      {
+        "id": "sixteenth",
+        "size": 24,
+        "position": {
+          "top": 160,
+          "left": 49
+        },
+        "colors": {
+          "off": "#5d656aa1",
+          "on": "#d4f9ff"
+        }
+      },
+      {
+        "id": "on_led",
+        "size": 42,
+        "position": {
+          "top": 238,
+          "left": 26
+        },
+        "colors": {
+          "off": "#5d656a",
+          "on": "#0ff"
+        }
+      },
+      {
+        "id": "rate_led",
+        "size": 40,
+        "position": {
+          "top": 238,
+          "left": 133
+        },
+        "colors": {
+          "off": "#5d656aa1",
+          "on": "#d4f9ff"
+        },
+        "isBlinking": true
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 48,
+        "type": "stomp",
+        "position": { "top": 276, "left": 22 }
+      }
+    ]
+  }
+}

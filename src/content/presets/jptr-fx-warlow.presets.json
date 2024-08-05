@@ -1,42 +1,70 @@
 {
   "presets": [
     {
+      "id": "brutal_distortion",
+      "label": "Brutal Distortion",
+      "settings": { "volume": 6, "tone": 2, "sustain": 10, "mode": 2 }
+    },
+    {
       "id": "smashing_sustain",
       "label": "Smashing Sustain",
-      "settings": { "volume": 6, "tone": 4, "sustain": 10 }
+      "settings": { "volume": 6, "tone": 4, "sustain": 10, "mode": 1 }
     },
     {
       "id": "weird_boost",
       "label": "Weird Boost",
-      "settings": { "volume": 10, "tone": 3, "sustain": 2 }
+      "settings": { "volume": 10, "tone": 7, "sustain": 2, "mode": 1 }
     },
     {
       "id": "fat_overdrive",
       "label": "Fat Overdrive",
-      "settings": { "volume": 6, "tone": 2, "sustain": 1 }
+      "settings": { "volume": 4, "tone": 4, "sustain": 1, "mode": 2 }
     },
     {
-      "id": "lofi_radio",
-      "label": "Lo-fi Radio",
-      "settings": { "volume": 5, "tone": 7, "sustain": 0 }
+      "id": "grotesque_lead",
+      "label": "Grotesque Lead",
+      "settings": { "volume": 5, "tone": 10, "sustain": 10, "mode": 2 }
     },
     {
-      "id": "sustain_knob",
-      "label": "Sustain Knob",
-      "isSweep": true,
-      "target": "sustain",
-      "initialValue": 8,
-      "values": [0, 2, 4, 6, 8, 10],
-      "settings": { "volume": 6, "tone": 4 }
+      "id": "rat_on_steroids",
+      "label": "Rat on Steroids 💪🐭💉",
+      "settings": { "volume": 5, "tone": 3, "sustain": 5, "mode": 3 }
     },
     {
-      "id": "tone_knob",
-      "label": "Tone Knob",
+      "id": "muff_tone_knob",
+      "label": "Muff Tone Stack",
       "isSweep": true,
       "target": "tone",
       "initialValue": 4,
-      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
-      "settings": { "volume": 6, "sustain": 7 }
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "settings": { "volume": 6, "sustain": 10, "mode": 1 }
+    },
+    {
+      "id": "rat_muff_tone_knob",
+      "label": "Muff/RAT Tone Stack",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 3,
+      "values": [0, 3, 7, 10],
+      "settings": { "volume": 6, "sustain": 10, "mode": 2 }
+    },
+    {
+      "id": "rat_filter_knob",
+      "label": "RAT Filter",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "volume": 6, "sustain": 10, "mode": 3 }
+    },
+    {
+      "id": "distortion_knob",
+      "label": "Distortion",
+      "isSweep": true,
+      "target": "sustain",
+      "initialValue": 5,
+      "values": [0, 1, 2, 5, 8, 10],
+      "settings": { "volume": 6, "tone": 5, "mode": 1 }
     }
   ]
 }

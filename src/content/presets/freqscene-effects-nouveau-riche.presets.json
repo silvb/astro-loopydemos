@@ -1,20 +1,67 @@
 {
   "hasBackingTrack": true,
-  "volume": 0.7,
+  "volume": 0.8,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "classic_rodent",
+      "label": "Classic Rodent 🐁",
+      "settings": { "vol": 6, "gain": 8, "freq": 0, "voice": 5, "mode": 1 }
+    },
+    {
+      "id": "chime_cut",
+      "label": "Chime & Cut",
+      "settings": { "vol": 5, "gain": 2, "freq": 2, "voice": 8, "mode": 1 }
+    },
+    {
+      "id": "mild_crunch",
+      "label": "Mild Crunch",
+      "settings": { "vol": 6, "gain": 2, "freq": 6, "voice": 0, "mode": 3 }
+    },
+    {
+      "id": "straight_rock",
+      "label": "Straight Rock",
       "settings": { "vol": 5, "gain": 5, "freq": 5, "voice": 5, "mode": 1 }
     },
     {
-      "id": "vol_knob",
-      "label": "Vol",
+      "id": "fat_distortion",
+      "label": "Fat Distortion",
+      "settings": { "vol": 6, "gain": 10, "freq": 4, "voice": 10, "mode": 3 }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
       "isSweep": true,
-      "target": "vol",
+      "target": "gain",
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
-      "settings": { "gain": 5, "freq": 5, "voice": 5, "mode": 1 }
+      "settings": { "vol": 5, "freq": 2, "voice": 5, "mode": 3 }
+    },
+    {
+      "id": "freq_knob",
+      "label": "Freq",
+      "isSweep": true,
+      "target": "freq",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "vol": 5, "gain": 5, "voice": 5, "mode": 3 }
+    },
+    {
+      "id": "voice_knob",
+      "label": "Voice",
+      "isSweep": true,
+      "target": "voice",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "vol": 5, "gain": 2, "freq": 0, "mode": 3 }
+    },
+    {
+      "id": "mode_switch",
+      "label": "+/-",
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": { "vol": 5, "gain": 7, "freq": 2, "voice": 5 }
     }
   ]
 }
