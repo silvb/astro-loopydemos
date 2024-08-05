@@ -110,7 +110,15 @@ const headerLinks = [
           {
             headerLinks.map(({ href, text }) => (
               <li
-                class={`font-display text-3xl tracking-wide ${pathname.startsWith(href) ? "text-loopydemos-highlight-primary" : "text-loopydemos-highlight-secondary"} transition-colors hover:text-loopydemos-highlight-primary`}
+                class:list={[
+                  "font-display text-3xl tracking-wide transition-colors hover:text-loopydemos-highlight-primary",
+                  {
+                    "text-loopydemos-highlight-primary":
+                      pathname.startsWith(href),
+                    "text-loopydemos-highlight-secondary":
+                      !pathname.startsWith(href),
+                  },
+                ]}
               >
                 <a href={href}>{text}</a>
               </li>
@@ -142,7 +150,13 @@ const headerLinks = [
     {
       headerLinks.map(({ href, text }) => (
         <li
-          class={`font-display text-3xl tracking-wide ${pathname.startsWith(href) ? "text-loopydemos-highlight-primary" : "text-loopydemos-highlight-secondary"} py-1 transition-colors hover:text-loopydemos-highlight-primary`}
+          class:list={[
+            "py-1 font-display text-3xl tracking-wide transition-colors hover:text-loopydemos-highlight-primary",
+            {
+              "text-loopydemos-highlight-primary": pathname.startsWith(href),
+              "text-loopydemos-highlight-secondary": !pathname.startsWith(href),
+            },
+          ]}
         >
           <a href={href}>{text}</a>
         </li>

@@ -83,6 +83,108 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
   @tailwind components;
   @tailwind utilities;
 
+  :root {
+    --accent: 136, 58, 234;
+    --accent-light: 224, 204, 250;
+    --accent-dark: 49, 10, 101;
+    --accent-gradient: linear-gradient(
+      45deg,
+      rgb(var(--accent)),
+      rgb(var(--accent-light)) 30%,
+      white 60%
+    );
+
+    --loopydemos-primary: #9580ff;
+    --loopydemos-secondary: #242441;
+    --loopydemos-background: #100f13;
+    --loopydemos-primary-highlight: #5cf5f5;
+    --loopydemos-secondary-highlight: #f765ae;
+    --loopydemos-tertiary-highlight: #f8f859;
+    --loopydemos-text: #f8f8f2;
+    --loopydemos-success: #50fa7b;
+    --loopydemos-error: #f87359;
+    --loopydemos-orange: #ffb86c;
+    --loopydemos-subdued: #bcc2cd;
+    --loopydemos-black: #121212;
+  }
+
+  html {
+    scrollbar-width: thin;
+    scrollbar-color: theme(colors.loopydemos-highlight-primary.DEFAULT)
+      theme(colors.loopydemos-background.DEFAULT);
+  }
+
+  body {
+    ::-webkit-scrollbar {
+      width: 12px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: theme(colors.loopydemos-background.DEFAULT);
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: theme(colors.loopydemos-highlight-primary.DEFAULT);
+      border-radius: 6px;
+      border: 3px solid theme(colors.loopydemos-background.DEFAULT);
+    }
+  }
+
+  main {
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      @apply break-words font-display font-normal tracking-wide text-loopydemos-highlight-secondary;
+    }
+    h2 {
+      @apply my-6 text-3xl sm:text-4xl;
+    }
+
+    h3 {
+      @apply mb-4 mt-12 text-xl sm:text-2xl;
+    }
+
+    h4 {
+      @apply mb-2 mt-8 text-lg;
+    }
+
+    strong {
+      @apply font-black text-loopydemos-highlight-tertiary;
+    }
+
+    p {
+      @apply my-4 text-base sm:text-lg md:text-xl;
+      > img {
+        @apply float-right my-2 ml-4 w-1/2;
+      }
+    }
+
+    ul:not(.list-none) {
+      @apply list-outside list-[disclosure-closed] pl-8;
+
+      li {
+        @apply pb-2 pl-2 text-base sm:text-lg md:text-xl;
+
+        &::marker {
+          @apply text-loopydemos-primary;
+        }
+      }
+    }
+
+    a:not(.link-none) {
+      @apply font-black text-loopydemos-highlight-primary underline underline-offset-2;
+      text-decoration-thickness: 2px;
+    }
+  }
+
+  footer {
+    a {
+      @apply text-loopydemos-highlight-primary;
+    }
+  }
+
   /* CUSTOM CLASSES */
   @layer components {
     .cba-dip-switch {
@@ -147,108 +249,6 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
   }
 
   @layer utilities {
-    :root {
-      --accent: 136, 58, 234;
-      --accent-light: 224, 204, 250;
-      --accent-dark: 49, 10, 101;
-      --accent-gradient: linear-gradient(
-        45deg,
-        rgb(var(--accent)),
-        rgb(var(--accent-light)) 30%,
-        white 60%
-      );
-
-      --loopydemos-primary: #9580ff;
-      --loopydemos-secondary: #242441;
-      --loopydemos-background: #100f13;
-      --loopydemos-primary-highlight: #5cf5f5;
-      --loopydemos-secondary-highlight: #f765ae;
-      --loopydemos-tertiary-highlight: #f8f859;
-      --loopydemos-text: #f8f8f2;
-      --loopydemos-success: #50fa7b;
-      --loopydemos-error: #f87359;
-      --loopydemos-orange: #ffb86c;
-      --loopydemos-subdued: #bcc2cd;
-      --loopydemos-black: #121212;
-    }
-
-    html {
-      scrollbar-width: thin;
-      scrollbar-color: theme(colors.loopydemos-highlight-primary.DEFAULT)
-        theme(colors.loopydemos-background.DEFAULT);
-    }
-
-    body {
-      ::-webkit-scrollbar {
-        width: 12px;
-      }
-
-      ::-webkit-scrollbar-track {
-        background: theme(colors.loopydemos-background.DEFAULT);
-      }
-
-      ::-webkit-scrollbar-thumb {
-        background-color: theme(colors.loopydemos-highlight-primary.DEFAULT);
-        border-radius: 6px;
-        border: 3px solid theme(colors.loopydemos-background.DEFAULT);
-      }
-    }
-
-    main {
-      h2,
-      h3,
-      h4,
-      h5,
-      h6 {
-        @apply break-words font-display font-normal tracking-wide text-loopydemos-highlight-secondary;
-      }
-      h2 {
-        @apply my-6 text-3xl sm:text-4xl;
-      }
-
-      h3 {
-        @apply mb-4 mt-12 text-xl sm:text-2xl;
-      }
-
-      h4 {
-        @apply mb-2 mt-8 text-lg;
-      }
-
-      strong {
-        @apply font-black text-loopydemos-highlight-tertiary;
-      }
-
-      p {
-        @apply my-4 text-base sm:text-lg md:text-xl;
-        > img {
-          @apply float-right my-2 ml-4 w-1/2;
-        }
-      }
-
-      ul:not(.list-none) {
-        @apply list-outside list-[disclosure-closed] pl-8;
-
-        li {
-          @apply pb-2 pl-2 text-base sm:text-lg md:text-xl;
-
-          &::marker {
-            @apply text-loopydemos-primary;
-          }
-        }
-      }
-
-      a:not(.link-none) {
-        @apply font-black text-loopydemos-highlight-primary underline underline-offset-2;
-        text-decoration-thickness: 2px;
-      }
-    }
-
-    footer {
-      a {
-        @apply text-loopydemos-highlight-primary;
-      }
-    }
-
     .content-wrapper {
       @apply mx-auto max-w-3xl px-6 md:px-8;
     }
