@@ -1,9 +1,5 @@
 ---
 title: How the Strymon Iridium can be Awesome for Bass Guitar
-slug: strymon-iridium-bass-ownhammer-ir
-coverImage: ../../images/strymon-iridium-bass-ownhammer-ir.png
-ogImage: ../../images/seo-preview/strymon-iridium-bass-ownhammer-ir.jpeg
-hideCoverImage: true
 type: post
 date: 2022-03-16
 tags:
@@ -16,10 +12,6 @@ relatedSlugs:
   - walrus-audio-acs1
 excerpt: How to get a great bass tone with the Strymon Iridium and OwnHammer IRs. The Iridium is a great tool for recording bass without breaking the bank. The OwnHammer AMPG Bass IRs are a great addition to the Iridium for bass tones.
 ---
-
-import { StrymonIridiumBassOwnhammerIr } from "./strymon-iridium-bass-ownhammer-ir"
-
-<StrymonIridiumBassOwnhammerIr />
 
 I recently got my first bass, a JMJ Mustang Bass. I needed to find a decent sound for recording bass without breaking the bank. I was trying to make the most out of the gear that I already had, and the result is not too shabby.
 

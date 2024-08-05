@@ -1,23 +1,7 @@
 ---
 title: What is the Best Bass Distortion Pedal?
 type: post
-slug: bass-distortion-shootout
 date: 2024-06-30
-pedalImages:
-  - ../../images/beautiful-noise-effects-exploder.png
-  - ../../images/spun-loud-shuksan-fuzz.png
-  - ../../images/fairfield-circuitry-unpleasant-surprise.png
-  - ../../images/zvex-effects-mastotron.png
-  - ../../images/zvex-effects-basstortion.png
-  - ../../images/zvex-effects-woolly-mammoth.png
-  - ../../images/twilight-pulse-audioworks-proxima.png
-  - ../../images/smallsound-bigsound-mini.png
-  - ../../images/okko-fx-motorbass.png
-  - ../../images/malekko-diabolik.png
-  - ../../images/champion-leccy-the-divvy-v3.png
-  - ../../images/jptr-fx-warlow.png
-  - ../../images/jptr-fx-jive.png
-  - ../../images/freqscene-effects-nouveau-riche.png
 tags:
   - bass
   - distortion
@@ -36,8 +20,6 @@ relatedSlugs:
   - zvex-effects-basstortion
   - zvex-effects-woolly-mammoth
   - freqscene-effects-nouveau-riche
-coverImage:
-ogImage: ../../images/seo-preview/bass-distortion-shootout.jpeg
 excerpt: A shootout of the best bass distortion pedals. I love using guitar pedals on bass and experimenting with finding the "magic sauce" for a great, gnarly, distorted bass tone. Often, when I get an overdrive, fuzz or distortion for a guitar demo, I try it on bass as well. I found quite a few gems that way and I'd like to show you my favorites.
 ---
 

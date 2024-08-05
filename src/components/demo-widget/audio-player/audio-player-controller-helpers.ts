@@ -100,7 +100,7 @@ export const getAudioPresetId = (
   activePedals: string[],
   pedalsOn: string[],
   secondaryCircuitsOn: string[]
-) => {
+): string => {
   const allPedalsOff =
     !activePedals.some((pedal) => pedalsOn.includes(pedal)) &&
     secondaryCircuitsOn.length === 0
@@ -132,7 +132,7 @@ export const getAudioPresetId = (
     )
 
     return secondaryCircuitIsOn
-      ? activePreset.secondaryCircuitSlug
+      ? activePreset.secondaryCircuitSlug!
       : activePreset.id
   }
 

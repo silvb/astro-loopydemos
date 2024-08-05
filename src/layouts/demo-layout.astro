@@ -3,12 +3,13 @@ import DemoWidget from "@components/demo-widget"
 import Layout from "./layout.astro"
 import DateTag from "./date-tag.astro"
 import { Icon } from "astro-icon/components"
+import type { PostType } from "@types"
 
 interface Props {
   title: string
   date: Date
   slug: string
-  type: "demo" | "post" | "none"
+  type: PostType
 }
 
 const { slug, title, date, type } = Astro.props
@@ -28,6 +29,6 @@ const { slug, title, date, type } = Astro.props
   <div class="mb-3">
     <DateTag {date} />
   </div>
-  <DemoWidget presetSlug={slug} />
+  {type !== "freeform" && <DemoWidget presetSlug={slug} />}
   <slot />
 </Layout>

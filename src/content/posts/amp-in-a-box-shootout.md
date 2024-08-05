@@ -1,13 +1,7 @@
 ---
 title: Amp in a Box Shootout
 type: post
-slug: amp-in-a-box-shootout
 date: 2021-04-26
-pedalImages:
-  - ../../images/catalinbread-sft.webp
-  - ../../images/jhs-pedals-twin-twelve-v2.webp
-  - ../../images/alexander-pedals-jubilee-silver-overdrive.webp
-  - ../../images/crazy-tube-circuits-falcon.webp
 tags:
   - amp in a box
   - always on
@@ -18,14 +12,8 @@ relatedSlugs:
   - jhs-pedals-twin-twelve-v2
   - alexander-pedals-jubilee-silver-overdrive
   - crazy-tube-circuits-falcon
-coverImage:
-ogImage: ../../images/seo-preview/amp-in-a-box-shootout.jpeg
 excerpt: A shootout of four different amp in a box pedals. The Catalinbread SFT, JHS Pedals Twin Twelve V2, Alexander Pedals Jubilee Silver Overdrive and Crazy Tube Circuits Falcon.
 ---
-
-import AmpInABoxShootout from "./amp-in-a-box-shootout"
-
-<AmpInABoxShootout />
 
 Amp in a box pedals are great for when you want the sound of a pushed amp, but can't really push a real amp. They are also a very nice option for capturing a specific vibe that you associate with the amps they are trying to emulate.
 

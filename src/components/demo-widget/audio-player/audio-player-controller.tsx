@@ -61,7 +61,7 @@ export const AudioPlayerController: Component<AudioPlayerControllerProps> = (
       )
 
       if (currentBuffer.id !== presetId) {
-        currentBuffer.id = presetId
+        currentBuffer.id = presetId ?? null
         setIsLoading(true)
         currentBuffer.buffer = await fetchAudioBuffer(
           presetId,

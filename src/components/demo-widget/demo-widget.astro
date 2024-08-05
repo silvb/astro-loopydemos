@@ -17,7 +17,7 @@ interface Props {
 const { presetSlug } = Astro.props
 
 const {
-  data: { presets, hasBackingTrack, volume },
+  data: { presets, hasBackingTrack, volume, mainPedal },
 }: CollectionEntry<"presets"> = await getEntry(
   "presets",
   `${presetSlug as CollectionEntry<"demos">["slug"]}.presets`
@@ -29,7 +29,7 @@ if (pedals.includes(presetSlug)) {
   pedals.sort((pedal) => (pedal === presetSlug ? -1 : 1))
 }
 
-if (pedals.length === 0) pedals = [presetSlug]
+if (pedals.length === 0) pedals = [mainPedal || presetSlug]
 
 const isComparison = presets.some(({ comparison }) => Boolean(comparison))
 ---

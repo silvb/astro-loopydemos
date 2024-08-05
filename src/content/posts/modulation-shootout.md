@@ -1,13 +1,7 @@
 ---
 title: Modulation Shootout
 type: post
-slug: modulation-shootout
 date: 2021-08-30
-pedalImages:
-  - ../../images/fairfield-circuitry-shallow-water.webp
-  - ../../images/native-audio-midnight.webp
-  - ../../images/walrus-audio-julia-v2.webp
-  - ../../images/walrus-audio-polychrome.webp
 tags:
   - chorus
   - phaser
@@ -18,14 +12,8 @@ relatedSlugs:
   - native-audio-midnight
   - walrus-audio-julia-v2
   - walrus-audio-polychrome
-coverImage:
-ogImage: ../../images/seo-preview/modulation-shootout.jpeg
 excerpt: A shootout of multiple modulation effects. Phasers, choruses, vibratos and flangers compared side-to-side. The Fairfield Circuitry Shallow Water, NativeAudio Midnight, Walrus Audio Julia and Walrus Audio Polychrome.
 ---
-
-import ModulationShootout from "./modulation-shootout"
-
-<ModulationShootout />
 
 In this shootout, I'm providing some side-to-side comparisons between multiple types of modulation effects.
 

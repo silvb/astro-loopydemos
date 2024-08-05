@@ -1,23 +1,7 @@
 ---
 title: "Overdrive Shootout: Blues Driver, Morning Glory, Plumes and More"
 type: post
-slug: overdrive-shootout
 date: 2021-05-15
-pedalImages:
-  - ../../images/smallsound-bigsound-mini.png
-  - ../../images/jhs-morning-glory-v4.webp
-  - ../../images/jptr-fx-jive.png
-  - ../../images/boss-blues-driver-bd-2w.webp
-  - ../../images/tl-pedals-honker-overdrive.webp
-  - ../../images/vaderin-pedals-hp-x.png
-  - ../../images/hungry-robot-lumen.webp
-  - ../../images/native-audio-kiaayo.webp
-  - ../../images/earthquaker-devices-plumes.webp
-  - ../../images/mxr-sugar-drive.webp
-  - ../../images/catalinbread-tribute.png
-  - ../../images/black-mass-electronics-1312-distortion-v3.webp
-  - ../../images/okko-fx-holy-grit.webp
-  - ../../images/blue-fx-devices-nebula.webp
 tags:
   - jfet
   - gain
@@ -38,14 +22,8 @@ relatedSlugs:
   - black-mass-electronics-1312-distortion-v3
   - okko-fx-holy-grit
   - blue-fx-devices-nebula
-coverImage:
-ogImage: ../../images/seo-preview/overdrive-shootout.jpeg
 excerpt: A shootout of multiple overdrive pedals. TubeScreamer, Blues Driver, Morning Glory and many more compared side-to-side. The SS/BS Mini, BOSS BD-2w, TL Pedals Honker Overdrive, JPTR FX Jive, JHS Morning Glory, Hungry Robot Lumen, NativeAudio Kiaayo, Vaderin Pedals HP-X, EarthQuaker Devices Plumes, MXR Sugar Drive, Catalinbread Tribute, Black Mass 1312, OKKO FX Holy Grit and blue fx devices Nebula.
 ---
-
-import OverdriveShootout from "./overdrive-shootout"
-
-<OverdriveShootout />
 
 Have you ever wondered what the difference is between a TubeScreamer, a Klon, a Bluesbreaker or any other overdrive? This is the shootout to answer that question.
 

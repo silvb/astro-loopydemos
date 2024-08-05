@@ -1,13 +1,7 @@
 ---
 title: Delay Shootout
 type: post
-slug: delay-shootout
 date: 2021-08-31
-pedalImages:
-  - ../../images/boss-dm-2w-delay.webp
-  - ../../images/caroline-guitar-company-kilobyte.webp
-  - ../../images/crazy-tube-circuits-time.webp
-  - ../../images/native-audio-wilderness.webp
 tags:
   - delay
   - ambient
@@ -17,14 +11,8 @@ relatedSlugs:
   - caroline-guitar-company-kilobyte
   - crazy-tube-circuits-time
   - native-audio-wilderness
-coverImage:
-ogImage: ../../images/seo-preview/delay-shootout.jpeg
 excerpt: A shootout of four different delay pedals. The BOSS DM-2w, Caroline Guitar Co. Kilobyte, Crazy Tube Circuits TI:ME and NativeAudio Wilderness.
 ---
-
-import DelayShootout from "./delay-shootout"
-
-<DelayShootout />
 
 I was fortunate enough to have a bunch of delays at hand and I compared them. From simple to highly adjustable, there is a pedal that stretches time just how you like it.
 

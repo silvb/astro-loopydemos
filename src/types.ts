@@ -2,6 +2,7 @@ import type { CollectionEntry } from "astro:content"
 import { z } from "astro:content"
 import {
   controlElementSchema,
+  postTypeEnum,
   settingsValueSchema,
   type knobSchema,
   type ledSchema,
@@ -30,3 +31,5 @@ export type Led = z.infer<typeof ledSchema>
 export type ControlElement = z.infer<typeof controlElementSchema>
 
 export type SettingsValue = z.infer<typeof settingsValueSchema>
+
+export type PostType = z.infer<typeof postTypeEnum>

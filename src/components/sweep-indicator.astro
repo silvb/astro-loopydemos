@@ -11,7 +11,7 @@ const pixelSize = `${size}px`
 
 <style define:vars={{ size: pixelSize, scaleX: 1, scaleY: 1 }}>
   .sweep-indicator {
-    @apply border-loopydemos-highlight-secondary-themed absolute left-0 top-0 box-border rounded-full border-dashed content-none;
+    @apply absolute left-0 top-0 box-border rounded-full border-dashed border-loopydemos-highlight-secondary-themed content-none;
     border-width: calc(var(--size) / 12);
     width: var(--size);
     height: var(--size);

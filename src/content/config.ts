@@ -108,13 +108,15 @@ export const switchSchema = controlElementSchema.extend({
   variant: z.enum(["boss", "dark"]).optional(),
 })
 
+export const postTypeEnum = z.enum(["demo", "post", "none", "freeform"])
+
 const demos = defineCollection({
   type: "content",
   schema: z.object({
     model: z.string(),
     builder: z.string(),
     date: z.date(),
-    type: z.enum(["demo", "post", "none"]),
+    type: postTypeEnum,
     hasBackingTrack: z.boolean().optional(),
     volume: z.number().optional(),
   }),
@@ -125,7 +127,7 @@ const posts = defineCollection({
   schema: z.object({
     date: z.date(),
     title: z.string(),
-    type: z.enum(["demo", "post", "none"]),
+    type: postTypeEnum,
     excerpt: z.string(),
     tags: z.array(z.string()),
     hasBackingTrack: z.boolean().optional(),
@@ -191,6 +193,7 @@ const presets = defineCollection({
   schema: z.object({
     volume: z.number().optional(),
     hasBackingTrack: z.boolean().optional(),
+    mainPedal: z.string().optional(),
     presets: z.array(presetSchema),
   }),
 })

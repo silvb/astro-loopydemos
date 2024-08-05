@@ -1,6 +1,5 @@
 ---
 title: How to Set up a Shoegaze Pedalboard
-hideCoverImage: true
 type: post
 date: 2024-01-13
 tags:

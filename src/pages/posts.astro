@@ -20,7 +20,7 @@ const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
     {
       allPosts
         .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-        .filter((post) => post.data.type === "post")
+        .filter((post) => ["post", "freeform"].includes(post.data.type))
         .map(({ slug, data }) => (
           <PostPreviewCard
             {slug}

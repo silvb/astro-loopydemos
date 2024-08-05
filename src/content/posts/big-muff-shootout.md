@@ -16,10 +16,6 @@ relatedSlugs:
 excerpt: A shootout of six different Big Muff-style fuzz pedals. The Electro Harmonix Big Muff PI USA, JPTR FX Warlow, MAE Black Math, TL Pedals Stinger Fuzz, Tone ElectroniX Animalizzer and Black Mass Electronics The First Herald.
 ---
 
-import BigMuffShootout from "./big-muff-shootout"
-
-<BigMuffShootout />
-
 I love Big Muffs. Whenever I hear a band with a fat or sustaining guitar tone that I like, it's very likely that the guitarist is using some kind of Big Muff.
 
 I've been on a quest to find the perfect variation of this classic fuzz/distortion circuit. These are the pedals I've found so far.
