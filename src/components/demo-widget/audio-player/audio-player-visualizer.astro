@@ -4,9 +4,12 @@
 
 <div class="flex h-full w-full gap-px px-2 py-3">
   {
-    Array.from({ length: 200 }, () => (
+    Array.from({ length: 200 }, (_, i) => (
       <div
-        class="animate-warp h-full grow rounded-lg bg-loopydemos-highlight-secondary-themed"
+        class:list={[
+          "animate-warp h-full grow rounded-lg bg-loopydemos-highlight-secondary-themed",
+          { "hidden xs:block": i > 100 },
+        ]}
         style={{
           "--delay": `calc(${Math.random()} * 0.2s)`,
           "--duration": `calc(${Math.random() + 0.7} * 0.5s)`,
