@@ -1,31 +1,73 @@
 ---
+import DemoPreviewCard from "@components/demo-preview-card.astro"
+import LinkButton from "@components/link-button.astro"
+import PostPreviewCard from "@components/post-preview-card.astro"
 import Layout from "@layouts/layout.astro"
+import { type CollectionEntry, getCollection } from "astro:content"
+
+const allDemos: CollectionEntry<"demos">[] = await getCollection("demos")
+const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
 ---
 
 <Layout>
-  <section>
+  <section class="mb-12">
     <p>
       Welcome to Loopy Demos, a website for{" "}
-      <strong>interactive guitar pedal and gear demos</strong>. Here, you can
-      access and compare pedal sounds like no other platform or video demo can
-      offer.
+      <strong>interactive guitar pedal and gear demos</strong>.
     </p>
     <p>
-      Instead of watching and scrubbing through demo videos, get a piece of
-      music playing, change settings, <strong>twist knobs</strong> and hear the
-      <strong>sound change instantly</strong>.
+      Instead of watching and scrubbing through long demo videos, <i>you</i> get
+      to <strong>twist knobs</strong> and hear the <strong
+        >sound change instantly</strong
+      >.
     </p>
     <p>
-      Check out the latest demos below, or browse the blog posts for more
-      in-depth comparisons, tone tips and more.
+      Check out the latest demos below, or browse the blog posts for in-depth
+      <strong>comparisons</strong>, tone tips and more.
     </p>
   </section>
 
   <h2>Latest Demos</h2>
 
-  <section></section>
+  <section class="mb-12 flex flex-col items-end gap-4">
+    <div class="grid w-full auto-rows-[200px] grid-cols-3-min-repeat gap-2">
+      {
+        allDemos
+          .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+          .filter((demo) => demo.data.type === "demo")
+          .slice(0, 4)
+          .map((demo) => (
+            <DemoPreviewCard
+              slug={demo.slug}
+              model={demo.data.model}
+              builder={demo.data.builder}
+            />
+          ))
+      }
+    </div>
+    <LinkButton href="/demos" label="See all demos" />
+  </section>
 
   <h2>Latest Posts</h2>
 
-  <section></section>
+  <section class="flex flex-col items-end">
+    <div>
+      {
+        allPosts
+          .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+          .filter((post) => ["post", "freeform"].includes(post.data.type))
+          .slice(0, 4)
+          .map(({ slug, data }) => (
+            <PostPreviewCard
+              {slug}
+              title={data.title}
+              date={data.date}
+              excerpt={data.excerpt}
+              tags={data.tags}
+            />
+          ))
+      }
+    </div>
+    <LinkButton href="/posts" label="See all posts" />
+  </section>
 </Layout>

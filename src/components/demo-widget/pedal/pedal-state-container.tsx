@@ -4,12 +4,13 @@ import { demoState } from "../demo-state-store"
 interface PedalStateContainerProps {
   slug: string
   enclosureWidth: number
+  enclosureHeight: number
 }
 
 export const PedalStateContainer: ParentComponent<PedalStateContainerProps> = (
   props
 ) => {
-  const { activePedals, setWidthTab } = demoState
+  const { activePedals, setWidthTab, setMaxHeight } = demoState
 
   const orderIndex = () => activePedals().indexOf(props.slug)
   const isHidden = () => !activePedals().includes(props.slug)
@@ -17,6 +18,7 @@ export const PedalStateContainer: ParentComponent<PedalStateContainerProps> = (
 
   createEffect(() => {
     setWidthTab((prev) => ({ ...prev, [props.slug]: props.enclosureWidth }))
+    setMaxHeight((prev) => Math.max(prev, props.enclosureHeight))
   })
 
   return (

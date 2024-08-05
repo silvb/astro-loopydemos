@@ -41,7 +41,7 @@ const isComparison = presets.some(({ comparison }) => Boolean(comparison))
   {isComparison && <ComparisonSlider {pedals} />}
 </div>
 <ScaleFactor client:only="solid-js">
-  <div class="mb-12 mt-8 flex min-h-[25rem] items-start justify-center">
+  <div class="mt-8 flex h-full items-start justify-center">
     {pedals.map((slug) => <Pedal slug={slug} />)}
   </div>
 </ScaleFactor>
