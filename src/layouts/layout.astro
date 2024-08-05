@@ -7,6 +7,7 @@ import "@fontsource/anton"
 import "@fontsource/erica-one"
 import "@fontsource/vt323"
 import type { MarkdownLayoutProps } from "astro"
+import SpeedInsights from "@vercel/speed-insights/astro"
 
 type Props =
   | MarkdownLayoutProps<{ title: string }>
@@ -40,6 +41,7 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
       </main>
       <Footer />
     </div>
+    <SpeedInsights />
   </body>
 </html>
 
