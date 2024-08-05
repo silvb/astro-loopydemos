@@ -7,7 +7,7 @@ import {
 import { demoState } from "./demo-state-store"
 
 export const ScaleFactor: ParentComponent = (props) => {
-  const { activePedals, widthTab, maxHeight } = demoState
+  const { activePedals, widthTab } = demoState
   const [containerWidth, setContainerWidth] = createSignal(window.innerWidth)
   const [scale, setScale] = createSignal(1)
 
@@ -29,11 +29,7 @@ export const ScaleFactor: ParentComponent = (props) => {
   })
 
   return (
-    <div
-      id="scale-container"
-      class="mb-16"
-      style={{ transform: `scale(${scale()})`, height: maxHeight() + "px" }}
-    >
+    <div id="scale-container" style={{ transform: `scale(${scale()})` }}>
       {props.children}
     </div>
   )

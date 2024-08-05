@@ -9,6 +9,10 @@ import { DemoStateInitializer } from "./demo-state-initializer"
 import ComparisonSlider from "./comparison-slider.astro"
 import { getPedalsFromPresets } from "@utils/get-pedals-from-presets"
 import { ScaleFactor } from "./scale-factor"
+import {
+  LANDSCAPE_DEFAULT_ENCLOSURE,
+  POTRAIT_DEFAULT_ENCLOSURE,
+} from "@constants/sizes"
 
 interface Props {
   presetSlug: string
@@ -32,6 +36,25 @@ if (pedals.includes(presetSlug)) {
 if (pedals.length === 0) pedals = [mainPedal || presetSlug]
 
 const isComparison = presets.some(({ comparison }) => Boolean(comparison))
+
+let heights: number[] = []
+
+for (const pedalSlug of pedals) {
+  const pedalData: CollectionEntry<"pedals"> = await getEntry(
+    "pedals",
+    `${pedalSlug as CollectionEntry<"demos">["slug"]}.pedal`
+  )
+  const { height, enclosure } = pedalData.data
+  const enclosureHeight =
+    height ||
+    (enclosure === "landscape"
+      ? LANDSCAPE_DEFAULT_ENCLOSURE.height
+      : POTRAIT_DEFAULT_ENCLOSURE.height)
+
+  heights.push(enclosureHeight)
+}
+
+const maxHeight = Math.max(...heights)
 ---
 
 <DemoStateInitializer client:load {presets} {pedals} />
@@ -41,7 +64,10 @@ const isComparison = presets.some(({ comparison }) => Boolean(comparison))
   {isComparison && <ComparisonSlider {pedals} />}
 </div>
 <ScaleFactor client:only="solid-js">
-  <div class="mt-8 flex h-full items-start justify-center">
+  <div
+    class="mb-16 mt-8 flex h-full items-start justify-center"
+    style={{ height: maxHeight + "px" }}
+  >
     {pedals.map((slug) => <Pedal slug={slug} />)}
   </div>
 </ScaleFactor>

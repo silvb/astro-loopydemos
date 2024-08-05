@@ -34,8 +34,6 @@ function createDemoState() {
 
   const [widthTab, setWidthTab] = createSignal<Record<string, number>>({})
 
-  const [maxHeight, setMaxHeight] = createSignal(0)
-
   const setIsLoadingDebounced = debounce({ delay: 200 }, setIsLoading)
 
   const activePreset = createMemo(() =>
@@ -153,8 +151,6 @@ function createDemoState() {
     isLoading,
     widthTab,
     setWidthTab,
-    maxHeight,
-    setMaxHeight,
     setIsLoading: setIsLoadingDebounced,
   }
 }
