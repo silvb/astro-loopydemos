@@ -64,10 +64,22 @@ const maxHeight = Math.max(...heights)
   {isComparison && <ComparisonSlider {pedals} />}
 </div>
 <ScaleFactor client:only="solid-js">
-  <div
-    class="mb-16 mt-8 flex h-full items-start justify-center"
-    style={{ height: maxHeight + "px" }}
-  >
+  <div class="height-limit mb-16 mt-8 flex items-start justify-center">
     {pedals.map((slug) => <Pedal slug={slug} />)}
   </div>
 </ScaleFactor>
+
+<style
+  define:vars={{
+    maxHeight: `${maxHeight}px`,
+  }}
+>
+  .height-limit {
+    height: calc(var(--maxHeight) * 0.75);
+    @media (min-width: theme(screens.sm)) {
+      & {
+        height: var(--maxHeight);
+      }
+    }
+  }
+</style>

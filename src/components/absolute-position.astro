@@ -8,6 +8,28 @@ interface Props {
 const { id, top, left } = Astro.props
 ---
 
-<div {id} class="absolute" style={{ left: `${left}px`, top: `${top}px` }}>
+<div
+  {id}
+  class="responsive-position origin-top-left scale-75 transform sm:scale-100"
+>
   <slot />
 </div>
+
+<style
+  define:vars={{
+    left: `${left}px`,
+    top: `${top}px`,
+  }}
+>
+  .responsive-position {
+    position: absolute;
+    left: calc(var(--left) * 0.75);
+    top: calc(var(--top) * 0.75);
+    @media (min-width: theme(screens.sm)) {
+      & {
+        left: var(--left);
+        top: var(--top);
+      }
+    }
+  }
+</style>
