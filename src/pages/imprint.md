@@ -7,20 +7,20 @@ layout: "@layouts/layout.astro"
 
 Angaben gemäß § 5 TMG
 
-Silvio Schmidt
-Uhlenhorst 7
+Silvio Schmidt\
+Uhlenhorst 7\
 21357 Barum
 
-**Vertreten durch:**
+**Vertreten durch:**\
 Silvio Schmidt
 
-**Kontakt:**
-Telefon: 0176-32239743
+**Kontakt:**\
+Telefon: 0176-32239743\
 E-Mail: silvio@loopydemos.com
 
-**Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:**
-Silvio Schmidt
-Uhlenhorst 7
+**Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:**\
+Silvio Schmidt\
+Uhlenhorst 7\
 21357 Barum
 
 ### Haftungsausschluss:

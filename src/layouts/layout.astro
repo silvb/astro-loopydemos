@@ -14,6 +14,7 @@ import "@fontsource/vt323"
 import vt323Woff2 from "@fontsource/vt323/files/vt323-latin-400-normal.woff2?url"
 import type { MarkdownLayoutProps } from "astro"
 import SpeedInsights from "@vercel/speed-insights/astro"
+import { ViewTransitions } from "astro:transitions"
 
 type Props =
   | MarkdownLayoutProps<{ title: string }>
@@ -30,6 +31,7 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
   class="bg-loopydemos-background bg-noise text-loopydemos-text antialiased bg-blend-hard-light"
 >
   <head>
+    <ViewTransitions />
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
@@ -83,230 +85,231 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
       <Footer />
     </div>
     <SpeedInsights />
+    <script>
+      // TODO: Move this to the future embed layout
+      const queryString = window.location.search
+
+      const urlParams = new URLSearchParams(queryString)
+      const root = document.documentElement
+
+      const setCSSVarFromURL = (varName: string) => {
+        const paramName = varName
+          .replace("--loopydemos-", "")
+          .split("-")
+          .map((word, index) =>
+            index === 0 ? word : word[0].toUpperCase() + word.slice(1)
+          )
+          .join("")
+
+        if (urlParams.has(paramName)) {
+          root.style.setProperty(varName, "#" + urlParams.get(paramName))
+        }
+      }
+
+      setCSSVarFromURL("--loopydemos-primary")
+      setCSSVarFromURL("--loopydemos-secondary")
+      setCSSVarFromURL("--loopydemos-background")
+      setCSSVarFromURL("--loopydemos-primary-highlight")
+      setCSSVarFromURL("--loopydemos-secondary-highlight")
+      setCSSVarFromURL("--loopydemos-tertiary-highlight")
+      setCSSVarFromURL("--loopydemos-text")
+      setCSSVarFromURL("--loopydemos-success")
+      setCSSVarFromURL("--loopydemos-error")
+      setCSSVarFromURL("--loopydemos-orange")
+      setCSSVarFromURL("--loopydemos-subdued")
+      setCSSVarFromURL("--loopydemos-black")
+    </script>
+
+    <style is:global>
+      @tailwind base;
+      @tailwind components;
+      @tailwind utilities;
+
+      :root {
+        --accent: 136, 58, 234;
+        --accent-light: 224, 204, 250;
+        --accent-dark: 49, 10, 101;
+        --accent-gradient: linear-gradient(
+          45deg,
+          rgb(var(--accent)),
+          rgb(var(--accent-light)) 30%,
+          white 60%
+        );
+
+        --loopydemos-primary: #9580ff;
+        --loopydemos-secondary: #242441;
+        --loopydemos-background: #100f13;
+        --loopydemos-primary-highlight: #5cf5f5;
+        --loopydemos-secondary-highlight: #f765ae;
+        --loopydemos-tertiary-highlight: #f8f859;
+        --loopydemos-text: #f8f8f2;
+        --loopydemos-success: #50fa7b;
+        --loopydemos-error: #f87359;
+        --loopydemos-orange: #ffb86c;
+        --loopydemos-subdued: #bcc2cd;
+        --loopydemos-black: #121212;
+      }
+
+      html {
+        scrollbar-width: thin;
+        scrollbar-color: theme(colors.loopydemos-highlight-primary.DEFAULT)
+          theme(colors.loopydemos-background.DEFAULT);
+      }
+
+      body {
+        ::-webkit-scrollbar {
+          width: 12px;
+        }
+
+        ::-webkit-scrollbar-track {
+          background: theme(colors.loopydemos-background.DEFAULT);
+        }
+
+        ::-webkit-scrollbar-thumb {
+          background-color: theme(colors.loopydemos-highlight-primary.DEFAULT);
+          border-radius: 6px;
+          border: 3px solid theme(colors.loopydemos-background.DEFAULT);
+        }
+      }
+
+      main {
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+          @apply break-words font-display font-normal tracking-wide text-loopydemos-highlight-secondary;
+        }
+        h2 {
+          @apply my-6 text-3xl sm:text-4xl;
+        }
+
+        h3 {
+          @apply mb-4 mt-12 text-xl sm:text-2xl;
+        }
+
+        h4 {
+          @apply mb-2 mt-8 text-lg;
+        }
+
+        strong {
+          @apply font-black text-loopydemos-highlight-tertiary;
+        }
+
+        p {
+          @apply my-4 text-base sm:text-lg md:text-xl;
+          > img {
+            @apply float-right my-2 ml-4 w-1/2;
+          }
+        }
+
+        ul:not(.list-none) {
+          @apply list-outside list-[disclosure-closed] pl-8;
+
+          li {
+            @apply pb-2 pl-2 text-base sm:text-lg md:text-xl;
+
+            &::marker {
+              @apply text-loopydemos-primary;
+            }
+          }
+        }
+
+        a:not(.link-none) {
+          @apply font-black text-loopydemos-highlight-primary underline underline-offset-2;
+          text-decoration-thickness: 2px;
+        }
+      }
+
+      footer {
+        a {
+          @apply text-loopydemos-highlight-primary;
+        }
+      }
+
+      /* CUSTOM CLASSES */
+      @layer components {
+        .cba-dip-switch {
+          background: #898989;
+          position: relative;
+          width: var(--width);
+          height: var(--height);
+
+          z-index: 0;
+
+          &:before {
+            content: " ";
+            width: var(--nippleWidth);
+            height: var(--nippleHeight);
+            position: absolute;
+            left: calc((var(--width) - var(--nippleWidth)) / 2);
+            bottom: 0;
+
+            background: #fefcfd;
+            z-index: 1;
+            transition: transform ease-in 0.2s;
+          }
+
+          &.flipped {
+            &:before {
+              transform: translateY(-100%);
+            }
+          }
+        }
+
+        .blinking-led {
+          animation: var(--blinkTime) ease-in-out var(--blinkOffset) infinite
+            blink;
+
+          &.mood-blink {
+            animation: var(--blinkTime) cubic-bezier(0, 1, 0, 1) infinite
+              microblink;
+          }
+        }
+
+        @keyframes blink {
+          0% {
+            opacity: 1;
+          }
+          50% {
+            opacity: 0;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+
+        @keyframes microblink {
+          0% {
+            opacity: 0;
+          }
+          20% {
+            opacity: 1;
+          }
+          100% {
+            opacity: 1;
+          }
+        }
+      }
+
+      @layer utilities {
+        .content-wrapper {
+          @apply mx-auto max-w-3xl px-6 md:px-8;
+        }
+
+        .custom-scrollbar {
+          overflow-x: auto;
+          overflow-y: hidden;
+          scroll-snap-type: x mandatory;
+          scroll-behavior: smooth;
+          scrollbar-width: none;
+          scrollbar-color: transparent transparent;
+
+          :-webkit-scrollbar {
+            display: none;
+          }
+        }
+      }
+    </style>
   </body>
 </html>
-
-<script>
-  // TODO: Move this to the future embed layout
-  const queryString = window.location.search
-
-  const urlParams = new URLSearchParams(queryString)
-  const root = document.documentElement
-
-  const setCSSVarFromURL = (varName: string) => {
-    const paramName = varName
-      .replace("--loopydemos-", "")
-      .split("-")
-      .map((word, index) =>
-        index === 0 ? word : word[0].toUpperCase() + word.slice(1)
-      )
-      .join("")
-
-    if (urlParams.has(paramName)) {
-      root.style.setProperty(varName, "#" + urlParams.get(paramName))
-    }
-  }
-
-  setCSSVarFromURL("--loopydemos-primary")
-  setCSSVarFromURL("--loopydemos-secondary")
-  setCSSVarFromURL("--loopydemos-background")
-  setCSSVarFromURL("--loopydemos-primary-highlight")
-  setCSSVarFromURL("--loopydemos-secondary-highlight")
-  setCSSVarFromURL("--loopydemos-tertiary-highlight")
-  setCSSVarFromURL("--loopydemos-text")
-  setCSSVarFromURL("--loopydemos-success")
-  setCSSVarFromURL("--loopydemos-error")
-  setCSSVarFromURL("--loopydemos-orange")
-  setCSSVarFromURL("--loopydemos-subdued")
-  setCSSVarFromURL("--loopydemos-black")
-</script>
-
-<style is:global>
-  @tailwind base;
-  @tailwind components;
-  @tailwind utilities;
-
-  :root {
-    --accent: 136, 58, 234;
-    --accent-light: 224, 204, 250;
-    --accent-dark: 49, 10, 101;
-    --accent-gradient: linear-gradient(
-      45deg,
-      rgb(var(--accent)),
-      rgb(var(--accent-light)) 30%,
-      white 60%
-    );
-
-    --loopydemos-primary: #9580ff;
-    --loopydemos-secondary: #242441;
-    --loopydemos-background: #100f13;
-    --loopydemos-primary-highlight: #5cf5f5;
-    --loopydemos-secondary-highlight: #f765ae;
-    --loopydemos-tertiary-highlight: #f8f859;
-    --loopydemos-text: #f8f8f2;
-    --loopydemos-success: #50fa7b;
-    --loopydemos-error: #f87359;
-    --loopydemos-orange: #ffb86c;
-    --loopydemos-subdued: #bcc2cd;
-    --loopydemos-black: #121212;
-  }
-
-  html {
-    scrollbar-width: thin;
-    scrollbar-color: theme(colors.loopydemos-highlight-primary.DEFAULT)
-      theme(colors.loopydemos-background.DEFAULT);
-  }
-
-  body {
-    ::-webkit-scrollbar {
-      width: 12px;
-    }
-
-    ::-webkit-scrollbar-track {
-      background: theme(colors.loopydemos-background.DEFAULT);
-    }
-
-    ::-webkit-scrollbar-thumb {
-      background-color: theme(colors.loopydemos-highlight-primary.DEFAULT);
-      border-radius: 6px;
-      border: 3px solid theme(colors.loopydemos-background.DEFAULT);
-    }
-  }
-
-  main {
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      @apply break-words font-display font-normal tracking-wide text-loopydemos-highlight-secondary;
-    }
-    h2 {
-      @apply my-6 text-3xl sm:text-4xl;
-    }
-
-    h3 {
-      @apply mb-4 mt-12 text-xl sm:text-2xl;
-    }
-
-    h4 {
-      @apply mb-2 mt-8 text-lg;
-    }
-
-    strong {
-      @apply font-black text-loopydemos-highlight-tertiary;
-    }
-
-    p {
-      @apply my-4 text-base sm:text-lg md:text-xl;
-      > img {
-        @apply float-right my-2 ml-4 w-1/2;
-      }
-    }
-
-    ul:not(.list-none) {
-      @apply list-outside list-[disclosure-closed] pl-8;
-
-      li {
-        @apply pb-2 pl-2 text-base sm:text-lg md:text-xl;
-
-        &::marker {
-          @apply text-loopydemos-primary;
-        }
-      }
-    }
-
-    a:not(.link-none) {
-      @apply font-black text-loopydemos-highlight-primary underline underline-offset-2;
-      text-decoration-thickness: 2px;
-    }
-  }
-
-  footer {
-    a {
-      @apply text-loopydemos-highlight-primary;
-    }
-  }
-
-  /* CUSTOM CLASSES */
-  @layer components {
-    .cba-dip-switch {
-      background: #898989;
-      position: relative;
-      width: var(--width);
-      height: var(--height);
-
-      z-index: 0;
-
-      &:before {
-        content: " ";
-        width: var(--nippleWidth);
-        height: var(--nippleHeight);
-        position: absolute;
-        left: calc((var(--width) - var(--nippleWidth)) / 2);
-        bottom: 0;
-
-        background: #fefcfd;
-        z-index: 1;
-        transition: transform ease-in 0.2s;
-      }
-
-      &.flipped {
-        &:before {
-          transform: translateY(-100%);
-        }
-      }
-    }
-
-    .blinking-led {
-      animation: var(--blinkTime) ease-in-out var(--blinkOffset) infinite blink;
-
-      &.mood-blink {
-        animation: var(--blinkTime) cubic-bezier(0, 1, 0, 1) infinite microblink;
-      }
-    }
-
-    @keyframes blink {
-      0% {
-        opacity: 1;
-      }
-      50% {
-        opacity: 0;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-
-    @keyframes microblink {
-      0% {
-        opacity: 0;
-      }
-      20% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 1;
-      }
-    }
-  }
-
-  @layer utilities {
-    .content-wrapper {
-      @apply mx-auto max-w-3xl px-6 md:px-8;
-    }
-
-    .custom-scrollbar {
-      overflow-x: auto;
-      overflow-y: hidden;
-      scroll-snap-type: x mandatory;
-      scroll-behavior: smooth;
-      scrollbar-width: none;
-      scrollbar-color: transparent transparent;
-
-      :-webkit-scrollbar {
-        display: none;
-      }
-    }
-  }
-</style>
