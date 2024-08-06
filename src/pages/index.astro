@@ -2,14 +2,14 @@
 import DemoPreviewCard from "@components/demo-preview-card.astro"
 import LinkButton from "@components/link-button.astro"
 import PostPreviewCard from "@components/post-preview-card.astro"
-import Layout from "@layouts/layout.astro"
+import DefaultLayout from "@layouts/default-layout.astro"
 import { type CollectionEntry, getCollection } from "astro:content"
 
 const allDemos: CollectionEntry<"demos">[] = await getCollection("demos")
 const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
 ---
 
-<Layout>
+<DefaultLayout>
   <section class="mb-12">
     <p>
       Welcome to Loopy Demos, a website for{" "}
@@ -70,4 +70,4 @@ const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
     </div>
     <LinkButton href="/posts" label="See all posts" />
   </section>
-</Layout>
+</DefaultLayout>

@@ -1,6 +1,6 @@
 ---
 title: Contact
-layout: "@layouts/layout.astro"
+layout: "@layouts/default-layout.astro"
 ---
 
 ## Contact

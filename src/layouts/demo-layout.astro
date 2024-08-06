@@ -1,7 +1,7 @@
 ---
 import DemoWidget from "@components/demo-widget"
-import Layout from "./layout.astro"
-import DateTag from "./date-tag.astro"
+import DefaultLayout from "./default-layout.astro"
+import DateTag from "../components/date-tag.astro"
 import { Icon } from "astro-icon/components"
 import type { PostType } from "@types"
 
@@ -15,7 +15,7 @@ interface Props {
 const { slug, title, date, type } = Astro.props
 ---
 
-<Layout {title}>
+<DefaultLayout {title}>
   <a
     href={type === "demo" ? "/demos" : "/posts"}
     class="link-none flex items-center gap-2 text-lg font-black text-loopydemos-highlight-primary sm:text-xl"
@@ -31,4 +31,4 @@ const { slug, title, date, type } = Astro.props
   </div>
   {type !== "freeform" && <DemoWidget presetSlug={slug} />}
   <slot />
-</Layout>
+</DefaultLayout>

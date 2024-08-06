@@ -1,0 +1,18 @@
+---
+import EmbedLayout from "@layouts/embed-layout.astro"
+import type { GetStaticPaths, InferGetStaticPropsType } from "astro"
+import { getCollection, type CollectionEntry } from "astro:content"
+
+export const getStaticPaths = (async () => {
+  const allDemos: CollectionEntry<"demos">[] = await getCollection("demos")
+  return allDemos.map((demo) => ({
+    params: { slug: demo.slug },
+  }))
+}) satisfies GetStaticPaths
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>
+
+const { slug } = Astro.params
+---
+
+<EmbedLayout {slug} />

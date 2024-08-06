@@ -1,0 +1,24 @@
+---
+import type { MarkdownLayoutProps } from "astro"
+import BaseLayout from "./base-layout.astro"
+import Footer from "./footer.astro"
+import Header from "./header.astro"
+
+type Props =
+  | MarkdownLayoutProps<{ title: string }>
+  | { title?: string; frontmatter?: never }
+
+const { title } = Astro.props.frontmatter || Astro.props
+---
+
+<BaseLayout {title}>
+  <div class="layout-wrapper flex min-h-screen flex-col">
+    <Header />
+    <main class="w-full grow">
+      <div class="content-wrapper">
+        <slot />
+      </div>
+    </main>
+    <Footer />
+  </div>
+</BaseLayout>

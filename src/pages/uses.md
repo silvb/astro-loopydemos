@@ -1,6 +1,6 @@
 ---
 title: Uses
-layout: "@layouts/layout.astro"
+layout: "@layouts/default-layout.astro"
 ---
 
 ## Uses

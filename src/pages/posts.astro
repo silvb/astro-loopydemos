@@ -1,12 +1,12 @@
 ---
 import PostPreviewCard from "@components/post-preview-card.astro"
-import Layout from "@layouts/layout.astro"
+import DefaultLayout from "@layouts/default-layout.astro"
 import { getCollection, type CollectionEntry } from "astro:content"
 
 const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
 ---
 
-<Layout title="Posts">
+<DefaultLayout title="Posts">
   <section class="mb-12">
     <h2>Posts</h2>
     <p>
@@ -32,4 +32,4 @@ const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
         ))
     }
   </section>
-</Layout>
+</DefaultLayout>

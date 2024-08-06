@@ -1,6 +1,4 @@
 ---
-import Footer from "@layouts/footer.astro"
-import Header from "@layouts/header.astro"
 import "@fontsource-variable/fira-code"
 import firaCodeWoff2 from "@fontsource-variable/fira-code/files/fira-code-latin-wght-normal.woff2?url"
 
@@ -12,15 +10,15 @@ import "@fontsource/erica-one"
 import ericaOneWoff2 from "@fontsource/erica-one/files/erica-one-latin-400-normal.woff2?url"
 import "@fontsource/vt323"
 import vt323Woff2 from "@fontsource/vt323/files/vt323-latin-400-normal.woff2?url"
-import type { MarkdownLayoutProps } from "astro"
 import SpeedInsights from "@vercel/speed-insights/astro"
 // import { ViewTransitions } from "astro:transitions"
 
-type Props =
-  | MarkdownLayoutProps<{ title: string }>
-  | { title?: string; frontmatter?: never }
+interface Props {
+  title?: string
+  noIndex?: boolean
+}
 
-const { title } = Astro.props.frontmatter || Astro.props
+const { title, noIndex } = Astro.props
 
 const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
 ---
@@ -32,6 +30,7 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
 >
   <head>
     <!-- <ViewTransitions /> -->
+    {noIndex && <meta name="robots" content="noindex" />}
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
@@ -75,50 +74,8 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
     <title>{pageTitle}</title>
   </head>
   <body>
-    <div class="layout-wrapper flex min-h-screen flex-col">
-      <Header />
-      <main class="w-full grow">
-        <div class="content-wrapper">
-          <slot />
-        </div>
-      </main>
-      <Footer />
-    </div>
+    <slot />
     <SpeedInsights />
-    <script>
-      // TODO: Move this to the future embed layout
-      const queryString = window.location.search
-
-      const urlParams = new URLSearchParams(queryString)
-      const root = document.documentElement
-
-      const setCSSVarFromURL = (varName: string) => {
-        const paramName = varName
-          .replace("--loopydemos-", "")
-          .split("-")
-          .map((word, index) =>
-            index === 0 ? word : word[0].toUpperCase() + word.slice(1)
-          )
-          .join("")
-
-        if (urlParams.has(paramName)) {
-          root.style.setProperty(varName, "#" + urlParams.get(paramName))
-        }
-      }
-
-      setCSSVarFromURL("--loopydemos-primary")
-      setCSSVarFromURL("--loopydemos-secondary")
-      setCSSVarFromURL("--loopydemos-background")
-      setCSSVarFromURL("--loopydemos-primary-highlight")
-      setCSSVarFromURL("--loopydemos-secondary-highlight")
-      setCSSVarFromURL("--loopydemos-tertiary-highlight")
-      setCSSVarFromURL("--loopydemos-text")
-      setCSSVarFromURL("--loopydemos-success")
-      setCSSVarFromURL("--loopydemos-error")
-      setCSSVarFromURL("--loopydemos-orange")
-      setCSSVarFromURL("--loopydemos-subdued")
-      setCSSVarFromURL("--loopydemos-black")
-    </script>
 
     <style is:global>
       @tailwind base;

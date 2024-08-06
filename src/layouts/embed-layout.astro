@@ -1,0 +1,62 @@
+---
+import BaseLayout from "./base-layout.astro"
+import DemoWidget from "@components/demo-widget"
+
+interface Props {
+  slug: string
+}
+
+const { slug } = Astro.props
+---
+
+<BaseLayout noIndex>
+  <div class="flex h-screen flex-col bg-loopydemos-secondary-themed p-2">
+    <div
+      class="grow rounded-lg bg-loopydemos-background-themed bg-noise p-4 bg-blend-hard-light"
+    >
+      <DemoWidget presetSlug={slug} />
+    </div>
+    <footer class="flex justify-end p-2 text-sm">
+      <div>
+        <span>More demos on{" "}</span><a
+          href="https://loopydemos.com"
+          target="_blank">loopydemos.com</a
+        >
+      </div>
+    </footer>
+  </div>
+</BaseLayout>
+
+<script>
+  const queryString = window.location.search
+
+  const urlParams = new URLSearchParams(queryString)
+  const root = document.documentElement
+
+  const setCSSVarFromURL = (varName: string) => {
+    const paramName = varName
+      .replace("--loopydemos-", "")
+      .split("-")
+      .map((word, index) =>
+        index === 0 ? word : word[0].toUpperCase() + word.slice(1)
+      )
+      .join("")
+
+    if (urlParams.has(paramName)) {
+      root.style.setProperty(varName, "#" + urlParams.get(paramName))
+    }
+  }
+
+  setCSSVarFromURL("--loopydemos-primary")
+  setCSSVarFromURL("--loopydemos-secondary")
+  setCSSVarFromURL("--loopydemos-background")
+  setCSSVarFromURL("--loopydemos-primary-highlight")
+  setCSSVarFromURL("--loopydemos-secondary-highlight")
+  setCSSVarFromURL("--loopydemos-tertiary-highlight")
+  setCSSVarFromURL("--loopydemos-text")
+  setCSSVarFromURL("--loopydemos-success")
+  setCSSVarFromURL("--loopydemos-error")
+  setCSSVarFromURL("--loopydemos-orange")
+  setCSSVarFromURL("--loopydemos-subdued")
+  setCSSVarFromURL("--loopydemos-black")
+</script>
