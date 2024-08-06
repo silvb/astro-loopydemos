@@ -217,16 +217,18 @@ const headerLinks = [
   }
 </style>
 
-<script>
-  document
-    ?.getElementById("mobile-menu-toggle")
-    ?.addEventListener("click", () => {
-      document
-        ?.querySelector("aside.animated-sidenav")
-        ?.classList.toggle("slide-in")
+<script is:inline>
+  document.addEventListener("astro:page-load", () => {
+    document
+      ?.getElementById("mobile-menu-toggle")
+      ?.addEventListener("click", () => {
+        document
+          ?.querySelector("aside.animated-sidenav")
+          ?.classList.toggle("slide-in")
 
-      document?.querySelectorAll(".line-handle")?.forEach((el) => {
-        el.classList.toggle("open")
+        document?.querySelectorAll(".line-handle")?.forEach((el) => {
+          el.classList.toggle("open")
+        })
       })
-    })
+  })
 </script>
