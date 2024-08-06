@@ -217,7 +217,22 @@ const headerLinks = [
   }
 </style>
 
-<script is:inline>
+<script>
+  document
+    ?.getElementById("mobile-menu-toggle")
+    ?.addEventListener("click", () => {
+      document
+        ?.querySelector("aside.animated-sidenav")
+        ?.classList.toggle("slide-in")
+
+      document?.querySelectorAll(".line-handle")?.forEach((el) => {
+        el.classList.toggle("open")
+      })
+    })
+</script>
+
+<!-- Use this when adding back page transitions -->
+<!-- <script is:inline>
   document.addEventListener("astro:page-load", () => {
     document
       ?.getElementById("mobile-menu-toggle")
@@ -231,4 +246,4 @@ const headerLinks = [
         })
       })
   })
-</script>
+</script> -->

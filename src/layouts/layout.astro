@@ -14,7 +14,7 @@ import "@fontsource/vt323"
 import vt323Woff2 from "@fontsource/vt323/files/vt323-latin-400-normal.woff2?url"
 import type { MarkdownLayoutProps } from "astro"
 import SpeedInsights from "@vercel/speed-insights/astro"
-import { ViewTransitions } from "astro:transitions"
+// import { ViewTransitions } from "astro:transitions"
 
 type Props =
   | MarkdownLayoutProps<{ title: string }>
@@ -31,7 +31,7 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
   class="bg-loopydemos-background bg-noise text-loopydemos-text antialiased bg-blend-hard-light"
 >
   <head>
-    <ViewTransitions />
+    <!-- <ViewTransitions /> -->
     <meta charset="UTF-8" />
     <meta name="description" content="Astro description" />
     <meta name="viewport" content="width=device-width" />
