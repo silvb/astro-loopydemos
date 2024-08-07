@@ -1,17 +1,35 @@
 ---
+import type { ControlElement } from "@types"
+import { cva } from "class-variance-authority"
+import { c } from "dist/_astro/solid.BMHjOSeE"
+
 interface Props {
   size: number
+  color: ControlElement["highlightColor"]
 }
 
-const { size } = Astro.props
+const sweepClass = cva("sweep-indicator", {
+  variants: {
+    color: {
+      primary: "border-loopydemos-highlight-primary-themed",
+      secondary: "border-loopydemos-highlight-secondary-themed",
+      tertiary: "border-loopydemos-highlight-tertiary-themed",
+    },
+  },
+  defaultVariants: {
+    color: "secondary",
+  },
+})
+
+const { size, color } = Astro.props
 const pixelSize = `${size}px`
 ---
 
-<div class="sweep-indicator"></div>
+<div class={sweepClass({ color })}></div>
 
 <style define:vars={{ size: pixelSize, scaleX: 1, scaleY: 1 }}>
   .sweep-indicator {
-    @apply absolute left-0 top-0 box-border rounded-full border-dashed border-loopydemos-highlight-secondary-themed content-none;
+    @apply absolute left-0 top-0 box-border rounded-full border-dashed content-none;
     border-width: calc(var(--size) / 12);
     width: var(--size);
     height: var(--size);

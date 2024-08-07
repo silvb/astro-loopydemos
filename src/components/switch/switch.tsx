@@ -1,6 +1,12 @@
 import type { CBASwitchSate, SwitchState, Switch as SwitchType } from "@types"
 import { ToggleSwitch } from "./toggle-switch"
-import { Match, Switch as RenderSwitch, Show, type Component } from "solid-js"
+import {
+  Match,
+  Switch as RenderSwitch,
+  Show,
+  type Component,
+  type JSXElement,
+} from "solid-js"
 import { demoState } from "@components/demo-widget/demo-state-store"
 import { ThreewaySwitch } from "./threeway-switch"
 import { RockerSwitch } from "./rocker-switch"
@@ -11,6 +17,7 @@ import { StompSwitch } from "./stomp-switch"
 
 interface SwitchProps extends SwitchType {
   pedalSlug: string
+  "sweep-indicator"?: JSXElement
 }
 
 export const Switch: Component<SwitchProps> = (props) => {
@@ -20,6 +27,8 @@ export const Switch: Component<SwitchProps> = (props) => {
     toggleSecondaryCircuit,
     activePreset,
     activePedals,
+    isSweepTarget,
+    selectSweepSetting,
   } = demoState
 
   const state = () =>
@@ -27,6 +36,25 @@ export const Switch: Component<SwitchProps> = (props) => {
 
   return (
     <Show when={activePedals().includes(props.pedalSlug)}>
+      <Show when={isSweepTarget(props.id, props.pedalSlug)}>
+        {props["sweep-indicator"]}
+        <button
+          class="absolute left-0 top-0 z-10 h-full w-full"
+          style={{ width: `${props.size}px`, height: `${props.size}px` }}
+          onClick={() => {
+            const numSweepValues = activePreset()?.values?.length ?? 0
+            const currIndex =
+              activePreset()?.values?.findIndex((value) => value === state()) ??
+              0
+
+            const nextIndex = (currIndex + 1) % numSweepValues
+            selectSweepSetting(
+              props.id,
+              activePreset()?.values?.[nextIndex] ?? 1
+            )
+          }}
+        ></button>
+      </Show>
       <RenderSwitch>
         <Match when={props.type === "toggle"}>
           <ToggleSwitch

@@ -12,6 +12,7 @@ import { Switch } from "@components/switch"
 import { Led } from "@components/led"
 import { PedalStateContainer } from "./pedal-state-container"
 import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
+import SweepIndicator from "@components/sweep-indicator.astro"
 
 interface Props {
   slug: string
@@ -61,7 +62,13 @@ const enclosureHeight =
       {
         controls?.switches?.map((switchEl) => (
           <AbsolutePosition id={switchEl.id} {...switchEl.position}>
-            <Switch client:load {...switchEl} pedalSlug={slug} />
+            <Switch client:load {...switchEl} pedalSlug={slug}>
+              <SweepIndicator
+                size={switchEl.size}
+                color={switchEl.highlightColor}
+                slot="sweep-indicator"
+              />
+            </Switch>
           </AbsolutePosition>
         ))
       }

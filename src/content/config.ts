@@ -47,6 +47,7 @@ export const controlElementSchema = z.object({
       ),
     })
     .optional(),
+  highlightColor: z.enum(["primary", "secondary", "tertiary"]).optional(),
 })
 
 const knobTypeEnum = z.enum([

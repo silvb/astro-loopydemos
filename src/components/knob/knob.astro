@@ -26,8 +26,16 @@ interface Props extends Knob {
   pedalSlug: string
 }
 
-const { size, type, colors, id, isRotary, rotaryAngles, pedalSlug } =
-  Astro.props
+const {
+  size,
+  type,
+  colors,
+  id,
+  isRotary,
+  rotaryAngles,
+  pedalSlug,
+  highlightColor,
+} = Astro.props
 ---
 
 <KnobStateContainer
@@ -61,5 +69,5 @@ const { size, type, colors, id, isRotary, rotaryAngles, pedalSlug } =
       walrus: <WalrusAudioKnob {size} {colors} />,
     }[type]
   }
-  <SweepIndicator {size} slot="sweep-indicator" />
+  <SweepIndicator color={highlightColor} {size} slot="sweep-indicator" />
 </KnobStateContainer>

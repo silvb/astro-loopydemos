@@ -126,17 +126,27 @@ export const getAudioPresetId = (
       activePedals
     )
 
+  let presetId = activePreset.id
+
   if (activePreset.secondaryCircuitId) {
     const secondaryCircuitIsOn = secondaryCircuitsOn.includes(
       activePreset.secondaryCircuitId
     )
 
-    return secondaryCircuitIsOn
-      ? activePreset.secondaryCircuitSlug!
-      : activePreset.id
+    const mainCircuitIsOn = activePedals.some((pedal) =>
+      pedalsOn.includes(pedal)
+    )
+
+    presetId = mainCircuitIsOn
+      ? secondaryCircuitIsOn
+        ? activePreset.secondaryCircuitSlug!
+        : activePreset.id
+      : secondaryCircuitIsOn
+        ? activePreset.secondaryCircuitOnlySlug!
+        : CLEAN_TONE
   }
 
   return activePreset.isSweep
-    ? activePreset.id + "_" + sweepSetting[activePreset.target]
-    : activePreset.id
+    ? presetId + "_" + sweepSetting[activePreset.target]
+    : presetId
 }

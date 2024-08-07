@@ -104,6 +104,20 @@ function createDemoState() {
     )
   }
 
+  const isSweepTarget = (id: string, pedalSlug: string) => {
+    const isSweep =
+      activePreset()?.isSweep ||
+      activePreset()?.chain?.some((p) => p.isSweep && p.pedalSlug === pedalSlug)
+
+    if (!isSweep) return false
+
+    const target =
+      activePreset()?.target ||
+      activePreset()?.chain?.find((p) => p.isSweep)?.target
+
+    return target === id
+  }
+
   createEffect(() => {
     setPedalsOn(activePedals())
   })
@@ -111,7 +125,12 @@ function createDemoState() {
   createEffect(() => {
     if (!activePreset()?.isSweep) {
       setSweepSetting({})
+    } else {
+      setSweepSetting({
+        [activePreset()?.target || ""]: activePreset()?.initialValue || 0,
+      })
     }
+
     setSecondaryCircuitsOn(activePreset()?.initialSecondaryCircuits || [])
 
     if (activePreset()?.comparison) return
@@ -152,6 +171,7 @@ function createDemoState() {
     widthTab,
     setWidthTab,
     setIsLoading: setIsLoadingDebounced,
+    isSweepTarget,
   }
 }
 
