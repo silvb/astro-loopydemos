@@ -1,7 +1,6 @@
 import type { JSX } from "astro/jsx-runtime"
 import { onCleanup, onMount, Show, type Component } from "solid-js"
 import { demoState } from "../demo-state-store"
-import { set } from "radash"
 
 interface PlayButtonProps {
   "play-icon"?: JSX.Element

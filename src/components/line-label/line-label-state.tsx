@@ -1,6 +1,6 @@
 import { demoState } from "@components/demo-widget/demo-state-store"
 import type { ControlElement } from "@types"
-import { createEffect, Show, type ParentComponent } from "solid-js"
+import { createEffect, type ParentComponent } from "solid-js"
 
 interface LineLabelStateProps {
   id: string

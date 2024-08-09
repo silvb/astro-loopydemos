@@ -76,6 +76,7 @@
     ],
     "labels": [
       {
+        "id": "waveforms_label",
         "position": {
           "left": 149,
           "top": 125

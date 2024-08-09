@@ -1,5 +1,4 @@
 import { defineCollection, z } from "astro:content"
-import { idText } from "typescript"
 
 export const colorsSchema = z.object({
   primary: z.string().optional(),
