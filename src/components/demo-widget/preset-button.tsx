@@ -49,6 +49,8 @@ export const PresetButton: Component<PresetButtonProps> = props => {
     buttonEl.style.setProperty("color", textColor)
   })
 
+  const isLoadingAndActive = () => isLoading() && activePresetId() === props.id
+
   return (
     <button
       id={props.id}
@@ -71,7 +73,7 @@ export const PresetButton: Component<PresetButtonProps> = props => {
       })}
     >
       <span>{props.label}</span>
-      <Show when={isLoading()} fallback={props["default-icon"]}>
+      <Show when={isLoadingAndActive()} fallback={props["default-icon"]}>
         {props["loading-icon"]}
       </Show>
     </button>
