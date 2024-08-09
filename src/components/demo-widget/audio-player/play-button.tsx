@@ -9,7 +9,7 @@ interface PlayButtonProps {
   "loading-icon"?: JSX.Element
 }
 
-export const PlayButton: Component<PlayButtonProps> = (props) => {
+export const PlayButton: Component<PlayButtonProps> = props => {
   const {
     isPlaying,
     setIsPlaying,

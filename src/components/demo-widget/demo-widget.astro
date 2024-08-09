@@ -30,7 +30,7 @@ const {
 let pedals = [...new Set(getPedalsFromPresets(presets))]
 
 if (pedals.includes(presetSlug)) {
-  pedals.sort((pedal) => (pedal === presetSlug ? -1 : 1))
+  pedals.sort(pedal => (pedal === presetSlug ? -1 : 1))
 }
 
 if (pedals.length === 0) pedals = [mainPedal || presetSlug]
@@ -65,7 +65,7 @@ const maxHeight = Math.max(...heights)
 </div>
 <ScaleFactor client:only="solid-js">
   <div class="height-limit mb-24 mt-8 flex items-start justify-center">
-    {pedals.map((slug) => <Pedal slug={slug} />)}
+    {pedals.map(slug => <Pedal slug={slug} />)}
   </div>
 </ScaleFactor>
 

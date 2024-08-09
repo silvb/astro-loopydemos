@@ -20,7 +20,7 @@ interface SwitchProps extends SwitchType {
   "sweep-indicator"?: JSXElement
 }
 
-export const Switch: Component<SwitchProps> = (props) => {
+export const Switch: Component<SwitchProps> = props => {
   const {
     getSetting,
     toggleBypass,
@@ -44,8 +44,7 @@ export const Switch: Component<SwitchProps> = (props) => {
           onClick={() => {
             const numSweepValues = activePreset()?.values?.length ?? 0
             const currIndex =
-              activePreset()?.values?.findIndex((value) => value === state()) ??
-              0
+              activePreset()?.values?.findIndex(value => value === state()) ?? 0
 
             const nextIndex = (currIndex + 1) % numSweepValues
             selectSweepSetting(
@@ -99,10 +98,10 @@ export const Switch: Component<SwitchProps> = (props) => {
               [
                 activePreset()?.secondaryCircuitId,
                 activePreset()?.comparison?.find(
-                  (compPreset) => compPreset.pedalSlug === props.pedalSlug
+                  compPreset => compPreset.pedalSlug === props.pedalSlug
                 )?.secondaryCircuitId,
                 activePreset()?.chain?.find(
-                  (chainItem) => chainItem.pedalSlug === props.pedalSlug
+                  chainItem => chainItem.pedalSlug === props.pedalSlug
                 )?.secondaryCircuitId,
               ].includes(props.secondaryCircuitId)
             }

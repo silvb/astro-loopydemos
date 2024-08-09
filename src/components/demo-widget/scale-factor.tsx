@@ -9,7 +9,7 @@ import { demoState } from "./demo-state-store"
 import resolveConfig from "tailwindcss/resolveConfig"
 import tailwindConfig from "tailwind.config.mjs"
 
-export const ScaleFactor: ParentComponent = (props) => {
+export const ScaleFactor: ParentComponent = props => {
   const { activePedals, widthTab } = demoState
   const [containerWidth, setContainerWidth] = createSignal(window.innerWidth)
   const [scale, setScale] = createSignal(1)

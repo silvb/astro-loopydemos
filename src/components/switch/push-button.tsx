@@ -5,7 +5,7 @@ interface PushButtonProps extends Pick<Switch, "size"> {
   state: SwitchState
 }
 
-export const PushButton: Component<PushButtonProps> = (props) => (
+export const PushButton: Component<PushButtonProps> = props => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={props.size}

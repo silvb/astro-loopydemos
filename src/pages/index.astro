@@ -34,9 +34,9 @@ const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
       {
         allDemos
           .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-          .filter((demo) => demo.data.type === "demo")
+          .filter(demo => demo.data.type === "demo")
           .slice(0, 4)
-          .map((demo) => (
+          .map(demo => (
             <DemoPreviewCard
               slug={demo.slug}
               model={demo.data.model}
@@ -55,7 +55,7 @@ const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
       {
         allPosts
           .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-          .filter((post) => ["post", "freeform"].includes(post.data.type))
+          .filter(post => ["post", "freeform"].includes(post.data.type))
           .slice(0, 4)
           .map(({ slug, data }) => (
             <PostPreviewCard

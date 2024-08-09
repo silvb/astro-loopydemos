@@ -37,11 +37,11 @@ function createDemoState() {
   const setIsLoadingDebounced = debounce({ delay: 200 }, setIsLoading)
 
   const activePreset = createMemo(() =>
-    presets().find((preset) => preset.id === activePresetId())
+    presets().find(preset => preset.id === activePresetId())
   )
   const selectNextPreset = () => {
     const presetIndex = presets().findIndex(
-      (preset) => preset.id === activePresetId()
+      preset => preset.id === activePresetId()
     )
 
     const nextPresetIndex =
@@ -52,7 +52,7 @@ function createDemoState() {
 
   const selectPreviousPreset = () => {
     const presetIndex = presets().findIndex(
-      (preset) => preset.id === activePresetId()
+      preset => preset.id === activePresetId()
     )
 
     const previousPresetIndex =
@@ -64,13 +64,13 @@ function createDemoState() {
   const selectSweepSetting = (id: string, value: number) => {
     if (
       !activePreset()?.isSweep &&
-      !activePreset()?.chain?.some((p) => p.isSweep)
+      !activePreset()?.chain?.some(p => p.isSweep)
     )
       return
 
     const values =
       activePreset()?.values ||
-      activePreset()?.chain?.find((p) => p.isSweep)?.values ||
+      activePreset()?.chain?.find(p => p.isSweep)?.values ||
       []
 
     const closestValue = findClosestValue(value, values)
@@ -84,7 +84,7 @@ function createDemoState() {
     const pedals = pedalsOn()
 
     if (pedals.includes(pedalSlug)) {
-      setPedalsOn(pedals.filter((id) => id !== pedalSlug))
+      setPedalsOn(pedals.filter(id => id !== pedalSlug))
     } else {
       setPedalsOn([...pedals, pedalSlug])
     }
@@ -94,7 +94,7 @@ function createDemoState() {
     const circuits = secondaryCircuitsOn()
 
     if (circuits.includes(circuitId)) {
-      setSecondaryCircuitsOn(circuits.filter((id) => id !== circuitId))
+      setSecondaryCircuitsOn(circuits.filter(id => id !== circuitId))
     } else {
       setSecondaryCircuitsOn([...circuits, circuitId])
     }
@@ -113,11 +113,10 @@ function createDemoState() {
 
     return (
       sweepSetting()?.[id] ??
-      activePreset()?.chain?.find((chainItem) => chainItem.pedalSlug === slug)
+      activePreset()?.chain?.find(chainItem => chainItem.pedalSlug === slug)
         ?.settings?.[id] ??
-      activePreset()?.comparison?.find(
-        (compItem) => compItem.pedalSlug === slug
-      )?.settings?.[id] ??
+      activePreset()?.comparison?.find(compItem => compItem.pedalSlug === slug)
+        ?.settings?.[id] ??
       activePreset()?.settings?.[id] ??
       dependency?.values?.find(
         ({ sourceValue }) => sourceValue === getSetting(slug, dependency.source)
@@ -128,13 +127,13 @@ function createDemoState() {
   const isSweepTarget = (id: string, pedalSlug: string) => {
     const isSweep =
       activePreset()?.isSweep ||
-      activePreset()?.chain?.some((p) => p.isSweep && p.pedalSlug === pedalSlug)
+      activePreset()?.chain?.some(p => p.isSweep && p.pedalSlug === pedalSlug)
 
     if (!isSweep) return false
 
     const target =
       activePreset()?.target ||
-      activePreset()?.chain?.find((p) => p.isSweep)?.target
+      activePreset()?.chain?.find(p => p.isSweep)?.target
 
     return target === id
   }
@@ -156,7 +155,7 @@ function createDemoState() {
 
     if (activePreset()?.comparison) return
     setActivePedals(
-      activePreset()?.chain?.map((chainElement) => chainElement.pedalSlug) || [
+      activePreset()?.chain?.map(chainElement => chainElement.pedalSlug) || [
         mainPedal(),
       ]
     )

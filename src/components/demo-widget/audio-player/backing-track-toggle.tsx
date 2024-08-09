@@ -14,7 +14,7 @@ export const BackingTrackToggle: Component<BackingTrackToggleProps> = () => {
         type="checkbox"
         class="peer hidden"
         checked={isBackingTrackMuted()}
-        onChange={(e) => setIsBackingTrackMuted(e.currentTarget.checked)}
+        onChange={e => setIsBackingTrackMuted(e.currentTarget.checked)}
       />
       <label
         for={uniqueToggleId}

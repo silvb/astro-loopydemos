@@ -5,7 +5,7 @@ interface ToggleSwitchProps extends Pick<Switch, "size" | "orientation"> {
   state: SwitchState
 }
 
-export const ToggleSwitch: Component<ToggleSwitchProps> = (props) => (
+export const ToggleSwitch: Component<ToggleSwitchProps> = props => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={props.size}

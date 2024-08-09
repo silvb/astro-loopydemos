@@ -7,7 +7,7 @@ const STICK_RADIUS = 72
 const VIEWBOX_CENTER = VIEWBOX_SIZE / 2
 const STICK_RANGE = 328 - STICK_RADIUS
 
-export const Joystick: Component<Pick<Knob, "id" | "size">> = (props) => {
+export const Joystick: Component<Pick<Knob, "id" | "size">> = props => {
   const { activePreset } = demoState
 
   const stickCoords = () => {

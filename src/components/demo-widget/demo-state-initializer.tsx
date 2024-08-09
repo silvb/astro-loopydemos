@@ -7,9 +7,9 @@ interface DemoStateInitializerProps {
   pedals: string[]
 }
 
-export const DemoStateInitializer: Component<DemoStateInitializerProps> = (
-  props
-) => {
+export const DemoStateInitializer: Component<
+  DemoStateInitializerProps
+> = props => {
   const { setPresets, setPedalsOn, setMainPedal } = demoState
 
   onMount(() => {

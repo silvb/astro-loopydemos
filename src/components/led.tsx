@@ -24,7 +24,7 @@ const containerClass = cva("", {
   },
 })
 
-export const Led: Component<LedProps> = (props) => {
+export const Led: Component<LedProps> = props => {
   const { pedalsOn, getSetting, secondaryCircuitsOn, activePedals } = demoState
 
   const isMood = props.type === "mood"

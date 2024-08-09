@@ -8,7 +8,7 @@ interface LineLabelStateProps {
   dependency?: ControlElement["dependency"]
 }
 
-export const LineLabelState: ParentComponent<LineLabelStateProps> = (props) => {
+export const LineLabelState: ParentComponent<LineLabelStateProps> = props => {
   const { getSetting, activePreset } = demoState
 
   const setting = () =>

@@ -17,7 +17,7 @@ const buttonClass = cva("h-full w-full flex items-center justify-center", {
 
 export const ComparisonPedalSelect: ParentComponent<
   ComparisonPedalSelectProps
-> = (props) => {
+> = props => {
   const { activePedals, setActivePedals } = demoState
 
   return (

@@ -7,14 +7,12 @@ interface AudioPlayerDisplayProps {
   "audio-visualizer"?: JSX.Element
 }
 
-export const AudioPlayerDisplay: Component<AudioPlayerDisplayProps> = (
-  props
-) => {
+export const AudioPlayerDisplay: Component<AudioPlayerDisplayProps> = props => {
   const { isPlaying, pedalsOn, activePedals } = demoState
 
   //check if any of the active pedals are on
   const isAnyPedalOn = () =>
-    activePedals().some((pedal) => pedalsOn().includes(pedal))
+    activePedals().some(pedal => pedalsOn().includes(pedal))
 
   const showVisualizer = () => isAnyPedalOn() && isPlaying() //&& !isLoading()
 

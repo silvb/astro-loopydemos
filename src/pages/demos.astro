@@ -18,8 +18,8 @@ const allDemos: CollectionEntry<"demos">[] = await getCollection("demos")
     {
       allDemos
         .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-        .filter((demo) => demo.data.type === "demo")
-        .map((demo) => (
+        .filter(demo => demo.data.type === "demo")
+        .map(demo => (
           <DemoPreviewCard
             slug={demo.slug}
             model={demo.data.model}

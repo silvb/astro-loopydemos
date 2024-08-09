@@ -5,7 +5,7 @@ import { getCollection, type CollectionEntry } from "astro:content"
 
 export const getStaticPaths = (async () => {
   const allDemos: CollectionEntry<"demos">[] = await getCollection("demos")
-  return allDemos.map((demo) => ({
+  return allDemos.map(demo => ({
     params: { slug: demo.slug },
     props: { ...demo.data, content: demo },
   }))

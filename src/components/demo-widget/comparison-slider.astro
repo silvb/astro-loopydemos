@@ -13,7 +13,7 @@ const { pedals } = Astro.props
 
 <ul class="custom-scrollbar flex list-none flex-nowrap items-center gap-2">
   {
-    pedals.map((pedalSlug) => (
+    pedals.map(pedalSlug => (
       <li class="h-16 w-16 shrink-0 rounded-md md:h-28 md:w-28">
         <ComparisonPedalSelect {pedalSlug} client:load>
           <Image

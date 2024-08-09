@@ -21,9 +21,9 @@ const containerClass = cva("relative origin-center", {
   },
 })
 
-export const KnobStateContainer: ParentComponent<KnobStateContainerProps> = (
-  props
-) => {
+export const KnobStateContainer: ParentComponent<
+  KnobStateContainerProps
+> = props => {
   const { getSetting, activePedals, isSweepTarget } = demoState
 
   const level = () => (getSetting(props.pedalSlug, props.id) as number) ?? 5

@@ -65,7 +65,7 @@ const shortenedExcerpt =
             />
           ) : (
             <div class="pedal-collage-grid h-auto w-36 sm:w-56">
-              {pedals.map((pedal) => (
+              {pedals.map(pedal => (
                 <Image
                   src={getImageSrcFromSlug(pedal)}
                   alt={getImageAltFromSlug(pedal)}
@@ -95,7 +95,7 @@ const shortenedExcerpt =
           </span>
           <div class="flex flex-wrap justify-end gap-1">
             {
-              tags.map((tag) => (
+              tags.map(tag => (
                 <span class="whitespace-nowrap rounded-md bg-loopydemos-secondary px-2 py-2 text-sm text-loopydemos-subdued">
                   {tag}
                 </span>
@@ -108,7 +108,7 @@ const shortenedExcerpt =
     <div class="flex items-center justify-between gap-4 sm:hidden">
       <div class="flex flex-wrap gap-1">
         {
-          tags.map((tag) => (
+          tags.map(tag => (
             <span class="whitespace-nowrap rounded-md bg-loopydemos-secondary px-2 py-2 text-sm text-loopydemos-subdued">
               {tag}
             </span>

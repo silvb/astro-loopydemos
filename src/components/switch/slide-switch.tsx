@@ -5,7 +5,7 @@ interface SlideSwitchProps extends Pick<Switch, "size" | "orientation"> {
   state: SwitchState
 }
 
-export const SlideSwitch: Component<SlideSwitchProps> = (props) => {
+export const SlideSwitch: Component<SlideSwitchProps> = props => {
   const uniqueId = `slide-switch-${Math.random().toString(36).substring(7)}`
   return (
     <svg

@@ -18,7 +18,7 @@ const { presets } = Astro.props
           <PresetButton
             client:only="solid-js"
             {id}
-            isSweep={chain?.some((p) => p.isSweep) || isSweep}
+            isSweep={chain?.some(p => p.isSweep) || isSweep}
             {label}
           >
             <Icon {id} name="ph:faders-bold" slot="default-icon" />

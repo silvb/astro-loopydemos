@@ -24,7 +24,7 @@ interface PresetButtonProps extends Pick<Preset, "id" | "isSweep" | "label"> {
   "loading-icon"?: JSX.Element
 }
 
-export const PresetButton: Component<PresetButtonProps> = (props) => {
+export const PresetButton: Component<PresetButtonProps> = props => {
   const {
     activePresetId,
     selectPreset,
@@ -67,9 +67,7 @@ export const PresetButton: Component<PresetButtonProps> = (props) => {
         isSweep: Boolean(props.isSweep),
         isActive:
           activePresetId() === props.id &&
-          activePedals().some((activePedal) =>
-            pedalsOn().includes(activePedal)
-          ),
+          activePedals().some(activePedal => pedalsOn().includes(activePedal)),
       })}
     >
       <span>{props.label}</span>

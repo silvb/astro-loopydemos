@@ -6,9 +6,9 @@ interface PedalStateContainerProps {
   enclosureWidth: number
 }
 
-export const PedalStateContainer: ParentComponent<PedalStateContainerProps> = (
-  props
-) => {
+export const PedalStateContainer: ParentComponent<
+  PedalStateContainerProps
+> = props => {
   const { activePedals, setWidthTab } = demoState
 
   const orderIndex = () => activePedals().indexOf(props.slug)
@@ -16,7 +16,7 @@ export const PedalStateContainer: ParentComponent<PedalStateContainerProps> = (
   const isVisibleWithOthers = () => activePedals().length > 1 && !isHidden()
 
   createEffect(() => {
-    setWidthTab((prev) => ({ ...prev, [props.slug]: props.enclosureWidth }))
+    setWidthTab(prev => ({ ...prev, [props.slug]: props.enclosureWidth }))
   })
 
   return (

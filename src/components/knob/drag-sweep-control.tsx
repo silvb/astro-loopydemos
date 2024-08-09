@@ -13,14 +13,14 @@ const getNextLevel = (startLevel: number, startY: number, clientY: number) => {
   return nextLevel
 }
 
-export const DragSweepControl: ParentComponent<DragSweepControlProps> = (
-  props
-) => {
+export const DragSweepControl: ParentComponent<
+  DragSweepControlProps
+> = props => {
   const { activePreset, sweepSetting, selectSweepSetting } = demoState
   const [level, setLevel] = createSignal(
     (sweepSetting()[props.id] ||
       activePreset()?.initialValue ||
-      activePreset()?.chain?.find((p) => p.isSweep)?.initialValue) ??
+      activePreset()?.chain?.find(p => p.isSweep)?.initialValue) ??
       0
   )
 

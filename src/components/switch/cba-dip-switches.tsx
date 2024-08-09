@@ -15,7 +15,7 @@ const DIMENSIONS = {
   height: 30,
 }
 
-export const CBADipSwitches: Component<CBADipSwitchesProps> = (props) => {
+export const CBADipSwitches: Component<CBADipSwitchesProps> = props => {
   const mergedProps = mergeProps(
     {
       state: [
@@ -56,7 +56,7 @@ export const CBADipSwitches: Component<CBADipSwitchesProps> = (props) => {
     >
       <div class={dipRowClass}>
         <For each={lineArray(8)}>
-          {(i) => (
+          {i => (
             <div
               class={
                 mergedProps.state[i]
@@ -73,7 +73,7 @@ export const CBADipSwitches: Component<CBADipSwitchesProps> = (props) => {
       <div class="h-full w-[1px] bg-black" />
       <div class={dipRowClass}>
         <For each={lineArray(8)}>
-          {(i) => (
+          {i => (
             <div
               class={
                 mergedProps.state[i + 8]

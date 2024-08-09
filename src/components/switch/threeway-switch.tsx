@@ -6,7 +6,7 @@ interface ThreewaySwitchProps
   state: SwitchState
 }
 
-export const ThreewaySwitch: Component<ThreewaySwitchProps> = (props) => {
+export const ThreewaySwitch: Component<ThreewaySwitchProps> = props => {
   const mergedProps = mergeProps(
     {
       size: 64,

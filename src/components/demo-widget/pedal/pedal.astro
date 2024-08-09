@@ -54,14 +54,14 @@ const enclosureHeight =
     />
     <div class="relative h-full w-full transform">
       {
-        controls?.knobs?.map((knob) => (
+        controls?.knobs?.map(knob => (
           <AbsolutePosition id={knob.id} {...knob.position}>
             <Knob {...knob} pedalSlug={slug} />
           </AbsolutePosition>
         ))
       }
       {
-        controls?.switches?.map((switchEl) => (
+        controls?.switches?.map(switchEl => (
           <AbsolutePosition id={switchEl.id} {...switchEl.position}>
             <Switch client:load {...switchEl} pedalSlug={slug}>
               <SweepIndicator
@@ -74,14 +74,14 @@ const enclosureHeight =
         ))
       }
       {
-        controls?.leds?.map((led) => (
+        controls?.leds?.map(led => (
           <AbsolutePosition id={led.id} {...led.position}>
             <Led client:load {...led} pedalSlug={slug} />
           </AbsolutePosition>
         ))
       }
       {
-        controls?.labels?.map((label) => (
+        controls?.labels?.map(label => (
           <AbsolutePosition id={label.id} {...label.position}>
             <LineLabel {...label} pedalSlug={slug} />
           </AbsolutePosition>

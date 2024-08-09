@@ -29,7 +29,7 @@ interface RockerSwitchProps
   state: SwitchState
 }
 
-export const RockerSwitch: Component<RockerSwitchProps> = (props) => {
+export const RockerSwitch: Component<RockerSwitchProps> = props => {
   const mergedProps = mergeProps(
     {
       size: 64,

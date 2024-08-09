@@ -13,7 +13,7 @@ interface StompSwitchProps extends JSX.ButtonHTMLAttributes<HTMLButtonElement> {
   secondaryCircuitId?: string
 }
 
-export const StompSwitch: Component<StompSwitchProps> = (props) => {
+export const StompSwitch: Component<StompSwitchProps> = props => {
   const [isDown, setIsDown] = createSignal(false)
 
   createEffect(() => {

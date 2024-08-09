@@ -17,9 +17,9 @@ type CurrentBuffer = {
   id: string | null
 }
 
-export const AudioPlayerController: Component<AudioPlayerControllerProps> = (
-  props
-) => {
+export const AudioPlayerController: Component<
+  AudioPlayerControllerProps
+> = props => {
   const {
     isPlaying,
     activePreset,
