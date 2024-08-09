@@ -6,7 +6,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        xs: "400px",
+        xs: "420px",
       },
       fontFamily: {
         sans: ["Mulish Variable", ...defaultTheme.fontFamily.sans],

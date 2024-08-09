@@ -1,4 +1,5 @@
 import { defineCollection, z } from "astro:content"
+import { idText } from "typescript"
 
 export const colorsSchema = z.object({
   primary: z.string().optional(),
@@ -21,6 +22,17 @@ export const ledColorsSchema = z.object({
   off: z.string().optional(),
 })
 
+export const dependencySchema = z.object({
+  source: z.string(),
+  values: z.array(
+    z.object({
+      sourceValue: z.number().or(z.boolean()),
+      targetValue: settingsValueSchema.optional(),
+      colors: ledColorsSchema.optional(),
+    })
+  ),
+})
+
 export const controlElementSchema = z.object({
   id: z.string(),
   size: z.number(),
@@ -34,19 +46,7 @@ export const controlElementSchema = z.object({
     top: z.number(),
     left: z.number(),
   }),
-  dependency: z
-    .object({
-      source: z.string(),
-      values: z.array(
-        z.object({
-          sourceValue: z.number(),
-          targetValue: settingsValueSchema.optional(),
-          colors: ledColorsSchema.optional(),
-          isOn: z.boolean().optional(),
-        })
-      ),
-    })
-    .optional(),
+  dependency: dependencySchema.optional(),
   highlightColor: z.enum(["primary", "secondary", "tertiary"]).optional(),
 })
 
@@ -98,6 +98,21 @@ export const ledSchema = controlElementSchema.extend({
   offOverride: z.boolean().optional(),
   blinkOffset: z.number().optional(),
   defaultTime: z.number().optional(),
+})
+
+export const labelSchema = z.object({
+  id: z.string(),
+  position: z.object({
+    top: z.number(),
+    left: z.number(),
+  }),
+  labelPosition: z.object({
+    top: z.number(),
+    left: z.number(),
+  }),
+  color: z.string().optional(),
+  dependency: dependencySchema.optional(),
+  isLong: z.boolean().optional(),
 })
 
 export const switchSchema = controlElementSchema.extend({
@@ -152,6 +167,7 @@ export const presetChainElementSchema = z.object({
 export const basePresetSchema = z.object({
   id: z.string(),
   label: z.string(),
+  noLabels: z.boolean().optional(),
   secondaryCircuitId: z.string().optional(),
   secondaryCircuitSlug: z.string().optional(),
   secondaryCircuitOnlySlug: z.string().optional(),
@@ -211,6 +227,7 @@ const pedals = defineCollection({
         knobs: z.array(knobSchema).optional(),
         switches: z.array(switchSchema).optional(),
         leds: z.array(ledSchema).optional(),
+        labels: z.array(labelSchema).optional(),
       })
       .optional(),
   }),

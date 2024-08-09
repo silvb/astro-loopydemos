@@ -114,26 +114,21 @@
         "labelPosition": {
           "left": 0,
           "top": 217
-        }
-      }
-    ],
-    "dependencies": [
-      {
-        "source": "shape",
-        "target": {
-          "id": "shape_label",
+        },
+        "dependency": {
+          "source": "shape",
           "values": [
             {
               "sourceValue": 1,
-              "value": "sine waveform"
+              "targetValue": "sine waveform"
             },
             {
               "sourceValue": 2,
-              "value": "triangle waveform"
+              "targetValue": "triangle waveform"
             },
             {
               "sourceValue": 3,
-              "value": "random modulation"
+              "targetValue": "random modulation"
             }
           ]
         }

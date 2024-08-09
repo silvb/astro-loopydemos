@@ -72,7 +72,24 @@
         "colors": {
           "on": "#fcff8c"
         },
-        "secondaryCircuitId": "violence_circuit"
+        "secondaryCircuitId": "violence_circuit",
+        "dependency": {
+          "source": "is_stacked",
+          "values": [
+            {
+              "sourceValue": false,
+              "colors": {
+                "on": "#fcff8c"
+              }
+            },
+            {
+              "sourceValue": true,
+              "colors": {
+                "on": "#f73333"
+              }
+            }
+          ]
+        }
       }
     ],
     "switches": [
@@ -121,28 +138,6 @@
         "position": {
           "left": 132,
           "top": 159
-        }
-      }
-    ],
-    "dependencies": [
-      {
-        "source": "is_stacked",
-        "target": {
-          "id": "violence_led",
-          "values": [
-            {
-              "sourceValue": false,
-              "colors": {
-                "on": "#fcff8c"
-              }
-            },
-            {
-              "sourceValue": true,
-              "colors": {
-                "on": "#f73333"
-              }
-            }
-          ]
         }
       }
     ]

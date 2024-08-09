@@ -94,6 +94,31 @@
         "labelPosition": {
           "left": 199,
           "top": 240
+        },
+        "dependency": {
+          "source": "mode",
+          "values": [
+            {
+              "sourceValue": 1,
+              "targetValue": "smooth, compressed, well-rounded"
+            },
+            {
+              "sourceValue": 2,
+              "targetValue": "crunchy, more compressed"
+            },
+            {
+              "sourceValue": 3,
+              "targetValue": "love child of distortion and fuzz"
+            },
+            {
+              "sourceValue": 4,
+              "targetValue": "dynamically dark"
+            },
+            {
+              "sourceValue": 5,
+              "targetValue": "rowdiest mode - angry, loud and compressed"
+            }
+          ]
         }
       },
       {
@@ -105,62 +130,29 @@
         "labelPosition": {
           "left": 1,
           "top": 240
-        }
-      }
-    ],
-    "dependencies": [
-      {
-        "source": "mode",
-        "target": {
-          "id": "mode_label",
+        },
+        "dependency": {
+          "source": "mode",
           "values": [
             {
               "sourceValue": 1,
-              "value": "smooth, compressed, well-rounded"
+              "targetValue": "soft clipping silicon diodes"
             },
             {
               "sourceValue": 2,
-              "value": "crunchy, more compressed"
+              "targetValue": "soft clipping silicon diodes with added bass"
             },
             {
               "sourceValue": 3,
-              "value": "love child of distortion and fuzz"
+              "targetValue": "soft clipping germanium diodes"
             },
             {
               "sourceValue": 4,
-              "value": "dynamically dark"
+              "targetValue": "LED clipping diodes with slight high-cut"
             },
             {
               "sourceValue": 5,
-              "value": "rowdiest mode - angry, loud and compressed"
-            }
-          ]
-        }
-      },
-      {
-        "source": "mode",
-        "target": {
-          "id": "clipping_label",
-          "values": [
-            {
-              "sourceValue": 1,
-              "value": "soft clipping silicon diodes"
-            },
-            {
-              "sourceValue": 2,
-              "value": "soft clipping silicon diodes with added bass"
-            },
-            {
-              "sourceValue": 3,
-              "value": "soft clipping germanium diodes"
-            },
-            {
-              "sourceValue": 4,
-              "value": "LED clipping diodes with slight high-cut"
-            },
-            {
-              "sourceValue": 5,
-              "value": "combination of hard clipping transistors and LED and silicon soft clipping"
+              "targetValue": "combination of hard clipping transistors and LED and silicon soft clipping"
             }
           ]
         }

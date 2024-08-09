@@ -129,63 +129,55 @@
       {
         "id": "bolts_label",
         "position": { "left": 224, "top": 85 },
-        "labelPosition": { "left": 314, "top": 320 }
+        "labelPosition": { "left": 314, "top": 310 },
+        "dependency": {
+          "source": "bolts_muff",
+          "values": [
+            {
+              "sourceValue": 1,
+              "targetValue": "(⚡️⚡️⚡️) insane low end + max."
+            },
+            {
+              "sourceValue": 2,
+              "targetValue": "(⚡️⚡️) flat EQ, heavier than ⚡️"
+            },
+            { "sourceValue": 3, "targetValue": "(⚡️) classic scoop" }
+          ]
+        }
       },
       {
         "id": "clip_label",
         "position": { "left": 132, "top": 81 },
-        "labelPosition": { "left": 82, "top": 307 }
+        "labelPosition": { "left": 100, "top": 320 },
+        "dependency": {
+          "source": "clip_dist",
+          "values": [
+            { "sourceValue": 1, "targetValue": "(+) op-amp clipping" },
+            { "sourceValue": 3, "targetValue": "(-) Si/LED hybrid clipping" }
+          ]
+        }
       },
       {
         "id": "boost_label",
-        "position": { "left": 86, "top": 120 },
-        "labelPosition": { "left": 27, "top": 284 }
+        "position": { "left": 92, "top": 120 },
+        "labelPosition": { "left": 17, "top": 300 },
+        "dependency": {
+          "source": "boost_dist",
+          "values": [
+            { "sourceValue": 1, "targetValue": "Not boosted 😴" },
+            { "sourceValue": 3, "targetValue": "Boost 👊" }
+          ]
+        }
       },
       {
         "id": "order_label",
         "position": { "left": 164, "top": 157 },
-        "labelPosition": { "left": 200, "top": 299 }
-      }
-    ],
-    "dependencies": [
-      {
-        "source": "bolts_muff",
-        "target": {
-          "id": "bolts_label",
+        "labelPosition": { "left": 170, "top": 310 },
+        "dependency": {
+          "source": "order_switch",
           "values": [
-            { "sourceValue": 1, "value": "(⚡️⚡️⚡️) insane low end + max." },
-            { "sourceValue": 2, "value": "(⚡️⚡️) flat EQ, heavier than ⚡️" },
-            { "sourceValue": 3, "value": "(⚡️) classic scoop" }
-          ]
-        }
-      },
-      {
-        "source": "clip_dist",
-        "target": {
-          "id": "clip_label",
-          "values": [
-            { "sourceValue": 1, "value": "(+) op-amp clipping" },
-            { "sourceValue": 3, "value": "(-) Si/LED hybrid clipping" }
-          ]
-        }
-      },
-      {
-        "source": "boost_dist",
-        "target": {
-          "id": "boost_label",
-          "values": [
-            { "sourceValue": 1, "value": "Not boosted 😴" },
-            { "sourceValue": 3, "value": "Boost 👊" }
-          ]
-        }
-      },
-      {
-        "source": "order_switch",
-        "target": {
-          "id": "order_label",
-          "values": [
-            { "sourceValue": 1, "value": "Distortion/Drive into Muff" },
-            { "sourceValue": 3, "value": "Muff into Drive/Distortion" }
+            { "sourceValue": 1, "targetValue": "Distortion/Drive into Muff" },
+            { "sourceValue": 3, "targetValue": "Muff into Drive/Distortion" }
           ]
         }
       }

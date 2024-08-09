@@ -15,11 +15,11 @@ const headerLinks = [
 
 <header class="z-50 w-full">
   <div class="bg-loopydemos-secondary">
-    <div class="content-wrapper flex min-h-20 items-center py-2">
+    <div class="content-wrapper flex min-h-16 items-center py-6 xs:min-h-20">
       <a
         href="/"
         aria-label="Logo and home link"
-        class="hidden py-4 sm:inline-block"
+        class="hidden sm:inline-block"
       >
         <Logo />
       </a>
@@ -145,7 +145,7 @@ const headerLinks = [
   </svg>
 </header>
 <aside
-  class="animated-sidenav absolute left-0 top-20 z-10 flex h-screen w-full -translate-x-[100vw] bg-black/0"
+  class="animated-sidenav absolute left-0 top-16 z-10 flex h-screen w-full -translate-x-[100vw] bg-black/0 xs:top-20 sm:hidden"
 >
   <ul class="flex h-full w-48 flex-col bg-loopydemos-secondary pl-6">
     {

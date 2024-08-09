@@ -94,6 +94,31 @@
         "labelPosition": {
           "left": 199,
           "top": 240
+        },
+        "dependency": {
+          "source": "mode",
+          "values": [
+            {
+              "sourceValue": 1,
+              "targetValue": "fastest response, great for palm muting"
+            },
+            {
+              "sourceValue": 2,
+              "targetValue": "smooth with added compression"
+            },
+            {
+              "sourceValue": 3,
+              "targetValue": "rich & full with added sustain"
+            },
+            {
+              "sourceValue": 4,
+              "targetValue": "scooped mids, tight response"
+            },
+            {
+              "sourceValue": 5,
+              "targetValue": "rhythmic, warm and full"
+            }
+          ]
         }
       },
       {
@@ -105,62 +130,29 @@
         "labelPosition": {
           "left": 1,
           "top": 240
-        }
-      }
-    ],
-    "dependencies": [
-      {
-        "source": "mode",
-        "target": {
-          "id": "mode_label",
+        },
+        "dependency": {
+          "source": "mode",
           "values": [
             {
               "sourceValue": 1,
-              "value": "fastest response, great for palm muting"
+              "targetValue": "slight mid-cut, LED diodes"
             },
             {
               "sourceValue": 2,
-              "value": "smooth with added compression"
+              "targetValue": "slight mid-cut, silicon diodes"
             },
             {
               "sourceValue": 3,
-              "value": "rich & full with added sustain"
+              "targetValue": "slight mid-cut, silicon + LED diodes"
             },
             {
               "sourceValue": 4,
-              "value": "scooped mids, tight response"
+              "targetValue": "deeper mid-cut, LED diodes"
             },
             {
               "sourceValue": 5,
-              "value": "rhythmic, warm and full"
-            }
-          ]
-        }
-      },
-      {
-        "source": "mode",
-        "target": {
-          "id": "clipping_label",
-          "values": [
-            {
-              "sourceValue": 1,
-              "value": "slight mid-cut, LED diodes"
-            },
-            {
-              "sourceValue": 2,
-              "value": "slight mid-cut, silicon diodes"
-            },
-            {
-              "sourceValue": 3,
-              "value": "slight mid-cut, silicon + LED diodes"
-            },
-            {
-              "sourceValue": 4,
-              "value": "deeper mid-cut, LED diodes"
-            },
-            {
-              "sourceValue": 5,
-              "value": "deeper mid-cut, silicon diodes"
+              "targetValue": "deeper mid-cut, silicon diodes"
             }
           ]
         }

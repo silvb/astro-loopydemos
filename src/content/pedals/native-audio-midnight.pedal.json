@@ -106,6 +106,31 @@
         "labelPosition": {
           "left": 15,
           "top": 237
+        },
+        "dependency": {
+          "source": "rate",
+          "values": [
+            {
+              "sourceValue": 0,
+              "targetValue": "sine wave"
+            },
+            {
+              "sourceValue": 3,
+              "targetValue": "ramp up"
+            },
+            {
+              "sourceValue": 5,
+              "targetValue": "ramp up and down"
+            },
+            {
+              "sourceValue": 7,
+              "targetValue": "ramp down"
+            },
+            {
+              "sourceValue": 10,
+              "targetValue": "random"
+            }
+          ]
         }
       },
       {
@@ -117,36 +142,6 @@
         "labelPosition": {
           "left": 180,
           "top": 253
-        }
-      }
-    ],
-    "dependencies": [
-      {
-        "source": "rate",
-        "target": {
-          "id": "waveform",
-          "values": [
-            {
-              "sourceValue": 0,
-              "value": "sine wave"
-            },
-            {
-              "sourceValue": 3,
-              "value": "ramp up"
-            },
-            {
-              "sourceValue": 5,
-              "value": "ramp up and down"
-            },
-            {
-              "sourceValue": 7,
-              "value": "ramp down"
-            },
-            {
-              "sourceValue": 10,
-              "value": "random"
-            }
-          ]
         }
       }
     ]

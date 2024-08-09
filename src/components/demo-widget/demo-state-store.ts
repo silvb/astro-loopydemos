@@ -39,6 +39,27 @@ function createDemoState() {
   const activePreset = createMemo(() =>
     presets().find((preset) => preset.id === activePresetId())
   )
+  const selectNextPreset = () => {
+    const presetIndex = presets().findIndex(
+      (preset) => preset.id === activePresetId()
+    )
+
+    const nextPresetIndex =
+      presetIndex === presets().length - 1 ? 0 : presetIndex + 1
+
+    selectPreset(presets()[nextPresetIndex].id)
+  }
+
+  const selectPreviousPreset = () => {
+    const presetIndex = presets().findIndex(
+      (preset) => preset.id === activePresetId()
+    )
+
+    const previousPresetIndex =
+      presetIndex === 0 ? presets().length - 1 : presetIndex - 1
+
+    selectPreset(presets()[previousPresetIndex].id)
+  }
 
   const selectSweepSetting = (id: string, value: number) => {
     if (
@@ -99,7 +120,7 @@ function createDemoState() {
       )?.settings?.[id] ??
       activePreset()?.settings?.[id] ??
       dependency?.values?.find(
-        ({ sourceValue }) => sourceValue === getSetting(dependency.source, slug)
+        ({ sourceValue }) => sourceValue === getSetting(slug, dependency.source)
       )?.targetValue
     )
   }
@@ -172,6 +193,8 @@ function createDemoState() {
     setWidthTab,
     setIsLoading: setIsLoadingDebounced,
     isSweepTarget,
+    selectNextPreset,
+    selectPreviousPreset,
   }
 }
 

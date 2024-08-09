@@ -13,6 +13,7 @@ import { Led } from "@components/led"
 import { PedalStateContainer } from "./pedal-state-container"
 import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
 import SweepIndicator from "@components/sweep-indicator.astro"
+import LineLabel from "@components/line-label"
 
 interface Props {
   slug: string
@@ -76,6 +77,13 @@ const enclosureHeight =
         controls?.leds?.map((led) => (
           <AbsolutePosition id={led.id} {...led.position}>
             <Led client:load {...led} pedalSlug={slug} />
+          </AbsolutePosition>
+        ))
+      }
+      {
+        controls?.labels?.map((label) => (
+          <AbsolutePosition id={label.id} {...label.position}>
+            <LineLabel {...label} pedalSlug={slug} />
           </AbsolutePosition>
         ))
       }

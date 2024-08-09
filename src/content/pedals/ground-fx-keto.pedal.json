@@ -77,6 +77,55 @@
         "position": {
           "left": 39,
           "top": 36
+        },
+        "dependency": {
+          "source": "rate",
+          "values": [
+            {
+              "sourceValue": 0,
+              "targetValue": 1200
+            },
+            {
+              "sourceValue": 1,
+              "targetValue": 1100
+            },
+            {
+              "sourceValue": 2,
+              "targetValue": 1000
+            },
+            {
+              "sourceValue": 3,
+              "targetValue": 900
+            },
+            {
+              "sourceValue": 4,
+              "targetValue": 800
+            },
+            {
+              "sourceValue": 5,
+              "targetValue": 700
+            },
+            {
+              "sourceValue": 6,
+              "targetValue": 600
+            },
+            {
+              "sourceValue": 7,
+              "targetValue": 500
+            },
+            {
+              "sourceValue": 8,
+              "targetValue": 400
+            },
+            {
+              "sourceValue": 9,
+              "targetValue": 300
+            },
+            {
+              "sourceValue": 10,
+              "targetValue": 200
+            }
+          ]
         }
       }
     ],
@@ -88,60 +137,6 @@
         "position": {
           "left": 75,
           "top": 287
-        }
-      }
-    ],
-    "dependencies": [
-      {
-        "source": "rate",
-        "target": {
-          "id": "rate_led",
-          "values": [
-            {
-              "sourceValue": 0,
-              "value": 1200
-            },
-            {
-              "sourceValue": 1,
-              "value": 1100
-            },
-            {
-              "sourceValue": 2,
-              "value": 1000
-            },
-            {
-              "sourceValue": 3,
-              "value": 900
-            },
-            {
-              "sourceValue": 4,
-              "value": 800
-            },
-            {
-              "sourceValue": 5,
-              "value": 700
-            },
-            {
-              "sourceValue": 6,
-              "value": 600
-            },
-            {
-              "sourceValue": 7,
-              "value": 500
-            },
-            {
-              "sourceValue": 8,
-              "value": 400
-            },
-            {
-              "sourceValue": 9,
-              "value": 300
-            },
-            {
-              "sourceValue": 10,
-              "value": 200
-            }
-          ]
         }
       }
     ]

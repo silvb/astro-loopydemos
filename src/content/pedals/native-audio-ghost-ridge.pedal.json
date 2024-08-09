@@ -65,6 +65,15 @@
         "colors": {
           "off": "#d2e1e9a1",
           "on": "#d4f9ff"
+        },
+        "dependency": {
+          "source": "reverb",
+          "values": [
+            {
+              "sourceValue": 0,
+              "targetValue": true
+            }
+          ]
         }
       },
       {
@@ -77,6 +86,15 @@
         "colors": {
           "off": "#d2e1e9a1",
           "on": "#d4f9ff"
+        },
+        "dependency": {
+          "source": "reverb",
+          "values": [
+            {
+              "sourceValue": 3,
+              "targetValue": true
+            }
+          ]
         }
       },
       {
@@ -89,6 +107,15 @@
         "colors": {
           "off": "#d2e1e9a1",
           "on": "#d4f9ff"
+        },
+        "dependency": {
+          "source": "reverb",
+          "values": [
+            {
+              "sourceValue": 7,
+              "targetValue": true
+            }
+          ]
         }
       },
       {
@@ -101,6 +128,15 @@
         "colors": {
           "off": "#d2e1e9a1",
           "on": "#d4f9ff"
+        },
+        "dependency": {
+          "source": "reverb",
+          "values": [
+            {
+              "sourceValue": 10,
+              "targetValue": true
+            }
+          ]
         }
       }
     ],
@@ -112,56 +148,6 @@
         "position": {
           "left": 22,
           "top": 268
-        }
-      }
-    ],
-    "dependencies": [
-      {
-        "source": "reverb",
-        "target": {
-          "id": "mode_1_led",
-          "values": [
-            {
-              "sourceValue": 0,
-              "isOn": true
-            }
-          ]
-        }
-      },
-      {
-        "source": "reverb",
-        "target": {
-          "id": "mode_2_led",
-          "values": [
-            {
-              "sourceValue": 3,
-              "isOn": true
-            }
-          ]
-        }
-      },
-      {
-        "source": "reverb",
-        "target": {
-          "id": "mode_3_led",
-          "values": [
-            {
-              "sourceValue": 7,
-              "isOn": true
-            }
-          ]
-        }
-      },
-      {
-        "source": "reverb",
-        "target": {
-          "id": "mode_4_led",
-          "values": [
-            {
-              "sourceValue": 10,
-              "isOn": true
-            }
-          ]
         }
       }
     ]

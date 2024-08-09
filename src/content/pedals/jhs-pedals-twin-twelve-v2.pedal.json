@@ -70,6 +70,25 @@
         "colors": {
           "off": "#d2e1e9a1",
           "on": "#d4f9ff"
+        },
+        "dependency": {
+          "source": "gain",
+          "values": [
+            {
+              "sourceValue": 1,
+              "colors": {
+                "on": "#f73333",
+                "off": "#800000a1"
+              }
+            },
+            {
+              "sourceValue": 3,
+              "colors": {
+                "off": "#d2e1e9a1",
+                "on": "#d4f9ff"
+              }
+            }
+          ]
         }
       }
     ],
@@ -103,30 +122,6 @@
         "labelPosition": {
           "left": 193,
           "top": 128
-        }
-      }
-    ],
-    "dependencies": [
-      {
-        "source": "gain",
-        "target": {
-          "id": "on_led",
-          "values": [
-            {
-              "sourceValue": 1,
-              "colors": {
-                "on": "#f73333",
-                "off": "#800000a1"
-              }
-            },
-            {
-              "sourceValue": 3,
-              "colors": {
-                "off": "#d2e1e9a1",
-                "on": "#d4f9ff"
-              }
-            }
-          ]
         }
       }
     ]

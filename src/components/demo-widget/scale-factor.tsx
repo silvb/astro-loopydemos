@@ -6,7 +6,6 @@ import {
   type ParentComponent,
 } from "solid-js"
 import { demoState } from "./demo-state-store"
-// import breakpoint from tailwind config
 import resolveConfig from "tailwindcss/resolveConfig"
 import tailwindConfig from "tailwind.config.mjs"
 

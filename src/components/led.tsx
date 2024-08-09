@@ -55,7 +55,8 @@ export const Led: Component<LedProps> = (props) => {
       : Boolean(setting()) ||
         (props.secondaryCircuitId &&
           secondaryCircuitsOn().includes(props.secondaryCircuitId)) ||
-        (props.isBlinking && !props.offOverride)
+        (props.isBlinking && !props.offOverride) ||
+        getSetting(props.pedalSlug, props.id, props.dependency)
 
   const blinkTime = () => (setting() || props.defaultTime) ?? 0
 

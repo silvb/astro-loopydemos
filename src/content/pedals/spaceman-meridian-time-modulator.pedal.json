@@ -108,6 +108,31 @@
         "isBlinking": true,
         "colors": {
           "on": "#0000ff87"
+        },
+        "dependency": {
+          "source": "rate",
+          "values": [
+            {
+              "sourceValue": 2,
+              "targetValue": 1500
+            },
+            {
+              "sourceValue": 3.5,
+              "targetValue": 800
+            },
+            {
+              "sourceValue": 4,
+              "targetValue": 600
+            },
+            {
+              "sourceValue": 6,
+              "targetValue": 300
+            },
+            {
+              "sourceValue": 7,
+              "targetValue": 200
+            }
+          ]
         }
       }
     ],
@@ -130,36 +155,6 @@
           "top": 36
         },
         "orientation": "horizontal"
-      }
-    ],
-    "dependencies": [
-      {
-        "source": "rate",
-        "target": {
-          "id": "rate_led",
-          "values": [
-            {
-              "sourceValue": 2,
-              "value": 1500
-            },
-            {
-              "sourceValue": 3.5,
-              "value": 800
-            },
-            {
-              "sourceValue": 4,
-              "value": 600
-            },
-            {
-              "sourceValue": 6,
-              "value": 300
-            },
-            {
-              "sourceValue": 7,
-              "value": 200
-            }
-          ]
-        }
       }
     ]
   }

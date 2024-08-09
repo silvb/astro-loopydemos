@@ -52,7 +52,17 @@
         "position": { "left": 77, "top": 176 },
         "isBlinking": true,
         "offOverride": true,
-        "colors": { "on": "#0091ff" }
+        "colors": { "on": "#0091ff" },
+        "dependency": {
+          "source": "division",
+          "values": [
+            { "sourceValue": 0, "targetValue": 500 },
+            { "sourceValue": 3, "targetValue": 400 },
+            { "sourceValue": 5, "targetValue": 300 },
+            { "sourceValue": 7, "targetValue": 200 },
+            { "sourceValue": 10, "targetValue": 350 }
+          ]
+        }
       },
       {
         "id": "echo_led",
@@ -69,21 +79,6 @@
         "type": "stomp",
         "size": 52,
         "position": { "left": 75, "top": 217 }
-      }
-    ],
-    "dependencies": [
-      {
-        "source": "division",
-        "target": {
-          "id": "on_led",
-          "values": [
-            { "sourceValue": 0, "value": 500 },
-            { "sourceValue": 3, "value": 400 },
-            { "sourceValue": 5, "value": 300 },
-            { "sourceValue": 7, "value": 200 },
-            { "sourceValue": 10, "value": 350 }
-          ]
-        }
       }
     ]
   }

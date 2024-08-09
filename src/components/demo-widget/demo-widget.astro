@@ -64,7 +64,7 @@ const maxHeight = Math.max(...heights)
   {isComparison && <ComparisonSlider {pedals} />}
 </div>
 <ScaleFactor client:only="solid-js">
-  <div class="height-limit mb-16 mt-8 flex items-start justify-center">
+  <div class="height-limit mb-24 mt-8 flex items-start justify-center">
     {pedals.map((slug) => <Pedal slug={slug} />)}
   </div>
 </ScaleFactor>
