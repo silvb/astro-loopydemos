@@ -15,6 +15,7 @@ import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
 import SweepIndicator from "@components/sweep-indicator.astro"
 import LineLabel from "@components/line-label"
 import Slider from "@components/slider"
+import MomentaryIndicator from "@components/momentary-indicator.astro"
 
 interface Props {
   slug: string
@@ -69,6 +70,10 @@ const enclosureHeight =
                 size={switchEl.size}
                 color={switchEl.highlightColor}
                 slot="sweep-indicator"
+              />
+              <MomentaryIndicator
+                size={switchEl.size}
+                slot="momentary-indicator"
               />
             </Switch>
           </AbsolutePosition>

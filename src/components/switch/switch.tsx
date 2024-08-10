@@ -18,6 +18,7 @@ import { StompSwitch } from "./stomp-switch"
 interface SwitchProps extends SwitchType {
   pedalSlug: string
   "sweep-indicator"?: JSXElement
+  "momentary-indicator"?: JSXElement
 }
 
 export const Switch: Component<SwitchProps> = props => {
@@ -25,6 +26,7 @@ export const Switch: Component<SwitchProps> = props => {
     getSetting,
     toggleBypass,
     toggleSecondaryCircuit,
+    secondaryCircuitsOn,
     activePreset,
     activePedals,
     isSweepTarget,
@@ -109,11 +111,15 @@ export const Switch: Component<SwitchProps> = props => {
             <StompSwitch
               id={props.id}
               isDark={props.variant === "dark"}
-              isMomentary={props.isMomentary}
               size={props.size}
               aria-label="pedal bypass switch"
               pedalSlug={props.pedalSlug}
               secondaryCircuitId={props.secondaryCircuitId}
+              isMomentary={props.isMomentary}
+              isOn={Boolean(
+                props.secondaryCircuitId &&
+                  secondaryCircuitsOn().includes(props.secondaryCircuitId)
+              )}
               onClick={() => {
                 if (props.id === "bypass_switch") {
                   toggleBypass(props.pedalSlug)
@@ -123,6 +129,23 @@ export const Switch: Component<SwitchProps> = props => {
                 }
               }}
             />
+            <Show
+              when={
+                props.secondaryCircuitId &&
+                !secondaryCircuitsOn().includes(props.secondaryCircuitId)
+              }
+            >
+              {props["sweep-indicator"]}
+            </Show>
+            <Show
+              when={
+                props.isMomentary &&
+                props.secondaryCircuitId &&
+                secondaryCircuitsOn().includes(props.secondaryCircuitId)
+              }
+            >
+              {props["momentary-indicator"]}
+            </Show>
           </Show>
         </Match>
       </RenderSwitch>

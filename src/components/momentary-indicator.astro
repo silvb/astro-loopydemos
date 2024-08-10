@@ -11,18 +11,10 @@ const pixelSize = `${size}px`
 
 <style define:vars={{ size: pixelSize }}>
   .momentary-indicator {
-    position: absolute;
+    @apply pointer-events-auto absolute left-0 top-0 -z-10 box-border scale-[2] rounded-full border-[10px] border-solid border-loopydemos-highlight-secondary-themed;
     width: var(--size);
     height: var(--size);
-    border-radius: 50%;
-    border: 10px solid var(--secondaryHighlight);
-    box-sizing: border-box;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    transform: scale(2);
     animation: 600ms ease-out infinite momentaryAnimation;
-    pointer-events: none;
   }
 
   @keyframes momentaryAnimation {

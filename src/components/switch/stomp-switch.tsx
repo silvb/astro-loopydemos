@@ -3,24 +3,16 @@ import { createEffect, type Component, type JSX, createSignal } from "solid-js"
 interface StompSwitchProps extends JSX.ButtonHTMLAttributes<HTMLButtonElement> {
   onClick: () => void
   id?: string
+  pedalSlug: string
+  secondaryCircuitId?: string
   size: number
-  isDisabled?: boolean
   isDark?: boolean
   isMomentary?: boolean
   isOn?: boolean
-  "momentary-indicator"?: JSX.Element
-  pedalSlug: string
-  secondaryCircuitId?: string
 }
 
 export const StompSwitch: Component<StompSwitchProps> = props => {
   const [isDown, setIsDown] = createSignal(false)
-
-  createEffect(() => {
-    if (props.isMomentary) {
-      setIsDown(props.isOn ?? false)
-    }
-  })
 
   const uniqueStompId = [
     props.id,
@@ -32,34 +24,29 @@ export const StompSwitch: Component<StompSwitchProps> = props => {
     <button
       type="button"
       onClick={() => {
-        if (!props.isDisabled) props.onClick()
+        props.onClick()
       }}
       id={props.id}
       class="relative m-0"
-      style={{
-        cursor: props.isDisabled ? "not-allowed" : "pointer",
-      }}
       onMouseDown={() => {
-        if (!props.isDisabled && !props.isMomentary) setIsDown(true)
+        setIsDown(props.isMomentary ? (props.isOn ? false : true) : true)
       }}
       onTouchStart={() => {
-        if (!props.isDisabled && !props.isMomentary) setIsDown(true)
+        setIsDown(props.isMomentary ? (props.isOn ? false : true) : true)
       }}
       onMouseUp={() => {
-        if (!props.isDisabled && !props.isMomentary) setIsDown(false)
+        if (!props.isMomentary) setIsDown(false)
       }}
       onTouchEnd={() => {
-        if (!props.isDisabled && !props.isMomentary) setIsDown(false)
+        if (!props.isMomentary) setIsDown(false)
       }}
       aria-label={props["aria-label"]}
     >
-      {props.isMomentary && props.isOn && props["momentary-indicator"]}
       <svg
         xmlns="http://www.w3.org/2000/svg"
         width={props.size}
         height={props.size}
         viewBox="0 0 52 52"
-        opacity={props.isDisabled ? 0 : 1}
         class="pointer-events-none select-none"
       >
         <defs>
