@@ -6,8 +6,6 @@ isSponsored: true
 date: 2022-10-17
 tags:
   - dod 250
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.poisonnoises.com/shop/p/dirtnapv3
 ---

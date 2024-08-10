@@ -6,8 +6,6 @@ isSponsored: true
 date: 2023-11-21
 tags:
   - tremolo
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.walrusaudio.com/products/fundamental-series-tremolo
   thomann: https://thmn.to/thoprod/564318?partner_id=15606

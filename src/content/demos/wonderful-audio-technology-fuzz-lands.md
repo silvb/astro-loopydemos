@@ -7,8 +7,6 @@ date: 2023-12-08
 tags:
   - fuzz
   - velcro fuzz
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.wonderfulaudiotechnology.com/fuzz-lands
 ---

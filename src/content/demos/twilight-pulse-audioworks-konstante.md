@@ -8,8 +8,6 @@ tags:
   - low gain
   - internal boost
   - preamp
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://twilightpulseaudioworks.bigcartel.com/
 ---

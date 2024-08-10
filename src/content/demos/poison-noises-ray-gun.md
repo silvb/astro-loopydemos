@@ -6,8 +6,6 @@ isSponsored: true
 date: 2022-09-23
 tags:
   - phaser
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.poisonnoises.com/shop/p/raygunv2
 ---

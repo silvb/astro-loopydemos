@@ -7,8 +7,6 @@ date: 2023-10-04
 tags:
   - bass
   - bass distortion
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://okkofx.company.site/MOT%C3%96RBASS-p269040004
 ---

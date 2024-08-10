@@ -7,8 +7,6 @@ date: 2022-11-01
 tags:
   - delay
   - oil can delay
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.poisonnoises.com/shop/
 ---

@@ -7,8 +7,6 @@ date: 2023-09-28
 tags:
   - reverb
   - ambient
-relatedSlugs:
-  -
 externalLinks:
   thomann: https://thmn.to/thoprod/572133?partner_id=15606
   builderLink: https://www.walrusaudio.com/products/sloer-stereo-ambient-reverb?variant=44031416140011

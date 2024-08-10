@@ -8,8 +8,6 @@ tags:
   - overdrive
   - mid gain
   - chime
-relatedSlugs:
-  -
 externalLinks:
   thomann: https://thmn.to/thoprod/564325?partner_id=15606
   reverb: walrus-audio-fundamental-drive

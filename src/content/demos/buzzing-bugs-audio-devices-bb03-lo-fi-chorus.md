@@ -9,8 +9,6 @@ tags:
   - chorus
   - vibrato
   - slap back delay
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://buzzingbugsfx.com/shop/p/bb02-percolator-fuzz-a3z38
 ---

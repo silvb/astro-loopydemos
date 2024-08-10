@@ -8,8 +8,6 @@ tags:
   - fuzz
   - tone bender
   - velcro fuzz
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.poisonnoises.com/shop/p/glutcheeksv2
 ---

@@ -31,7 +31,7 @@ if (!pedalData) {
   throw new Error(`Pedal not found: ${slug}`)
 }
 
-const { controls, width, height, enclosure } = pedalData.data
+const { controls, width, height, enclosure, imageSrcSlug } = pedalData.data
 
 const enclosureWidth =
   width ||
@@ -48,7 +48,7 @@ const enclosureHeight =
 <PedalStateContainer client:load {slug} {enclosureWidth}>
   <div id={slug} class="enclosure">
     <Image
-      src={getImageSrcFromSlug(slug)}
+      src={getImageSrcFromSlug(imageSrcSlug ?? slug)}
       alt={getImageAltFromSlug(slug)}
       class="absolute h-full w-full object-contain"
       loading="eager"

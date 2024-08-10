@@ -12,8 +12,6 @@ relatedSlugs:
   - crazy-tube-circuits-falcon
   - mythos-pedals-golden-fleece
 externalLinks:
-  thomann:
-  reverb:
   builderLink: https://okkofx.company.site/HOLY-GRIT-p469583005
 ---
 

@@ -9,8 +9,6 @@ tags:
   - plexi
   - marshall
   - amp in a box
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://funnylittleboxes.co.uk/products/funny-little-boxes-1991
 ---

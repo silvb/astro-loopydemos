@@ -14,7 +14,6 @@ relatedSlugs:
   - walrus-audio-julia-v2
   - walrus-audio-polychrome
 externalLinks:
-  thomann:
   reverb: mojo-hand-fx-swim-team
   builderLink: https://mojohandfx.com/products/swim-team
 ---

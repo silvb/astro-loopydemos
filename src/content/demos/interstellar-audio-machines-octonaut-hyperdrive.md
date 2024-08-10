@@ -7,10 +7,7 @@ date: 2023-01-06
 tags:
   - klon
   - low gain
-relatedSlugs:
-  -
 externalLinks:
-  thomann:
   reverb: interstellar-audio-machines-octonaut-hyperdrive
   builderLink: https://interstellaraudiomachines.com/products/octonaut-hyperdrive
 ---

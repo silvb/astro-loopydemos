@@ -1,7 +1,10 @@
 ---
+import DemoPreviewCard from "@components/demo-preview-card.astro"
+import PostPreviewCard from "@components/post-preview-card.astro"
 import DemoLayout from "@layouts/demo-layout.astro"
+import { getPedalsFromPresets } from "@utils/get-pedals-from-presets"
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro"
-import { getCollection, type CollectionEntry } from "astro:content"
+import { getEntry, getCollection, type CollectionEntry } from "astro:content"
 
 export const getStaticPaths = (async () => {
   const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
@@ -13,11 +16,79 @@ export const getStaticPaths = (async () => {
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>
 
-const { content, date, title, type } = Astro.props
+const { content, date, title, type, relatedSlugs, tags } = Astro.props
 const { slug } = Astro.params
 const { Content } = await content.render()
+
+const allDemos: CollectionEntry<"demos">[] = await getCollection("demos")
+const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
+
+const {
+  data: { presets },
+}: CollectionEntry<"presets"> = await getEntry(
+  "presets",
+  `${slug as CollectionEntry<"demos">["slug"]}.presets`
+)
+
+const relatedPedals = [...new Set(getPedalsFromPresets(presets))]
+
+const relatedDemos = allDemos.filter(
+  demo =>
+    demo.data.tags?.some(tag => tags?.includes(tag)) ||
+    relatedSlugs?.includes(demo.slug) ||
+    demo.data.relatedSlugs?.includes(slug) ||
+    relatedPedals.includes(demo.slug)
+)
+
+const relatedPosts = allPosts.filter(post =>
+  post.data.tags?.some(tag => tags?.includes(tag))
+)
 ---
 
 <DemoLayout {slug} {title} {date} {type}>
   <Content />
+  {
+    relatedDemos.length > 0 && (
+      <>
+        <h3>Related Pedals</h3>
+        <div class="grid auto-rows-[200px] grid-cols-3-min-repeat gap-2">
+          {relatedDemos
+            .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+            .sort(demo => (relatedPedals.includes(demo.slug) ? -1 : 1))
+            .sort(demo => (relatedSlugs?.includes(demo.slug) ? -1 : 1))
+            .filter(demo => demo.data.type === "demo")
+            .slice(0, 12)
+            .map(demo => (
+              <DemoPreviewCard
+                slug={demo.slug}
+                model={demo.data.model}
+                builder={demo.data.builder}
+              />
+            ))}
+        </div>
+      </>
+    )
+  }
+  {
+    relatedPosts.length > 0 && (
+      <>
+        <h3>Related Posts</h3>
+        <div>
+          {relatedPosts
+            .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+            .filter(post => ["post", "freeform"].includes(post.data.type))
+            .slice(0, 3)
+            .map(({ slug, data }) => (
+              <PostPreviewCard
+                {slug}
+                title={data.title}
+                date={data.date}
+                excerpt={data.excerpt}
+                tags={data.tags}
+              />
+            ))}
+        </div>
+      </>
+    )
+  }
 </DemoLayout>

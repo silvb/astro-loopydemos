@@ -7,8 +7,6 @@ date: 2023-11-14
 tags:
   - rat
   - distortion
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.walrusaudio.com/products/fundamental-series-distortion
   perfectCircuit: walrus-fundamental-distortion

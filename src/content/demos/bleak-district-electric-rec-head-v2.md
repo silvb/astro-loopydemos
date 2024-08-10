@@ -7,8 +7,6 @@ date: 2023-02-08
 tags:
   - lofi
   - chorus
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://bleakdistrict.co.uk/page-z9gNHB?store-page=RecHead-V2-p479153262
 ---

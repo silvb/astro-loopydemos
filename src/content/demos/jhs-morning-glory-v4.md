@@ -16,7 +16,6 @@ externalLinks:
   builderLink: https://www.jhspedals.info/morning-glory-v4
   reverb: jhs-morning-glory-v4
   thomann: https://thmn.to/thoprod/380517?partner_id=15606
-  perfectCircuit:
 ---
 
 The JHS Morning Glory is a very useful light gain overdrive pedal. It can be used very subtly to just add a bit of smush and crunchyness or shape a gainy rhythm sound.

@@ -6,8 +6,6 @@ isSponsored: true
 date: 2023-06-19
 tags:
   - gated fuzz
-relatedSlugs:
-  -
 externalLinks:
   reverb: poison-noises-gluttonous-maximus-fuzz
   builderLink: https://www.poisonnoises.com/shop/p/gluttonousmaximus

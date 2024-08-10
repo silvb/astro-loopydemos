@@ -7,8 +7,6 @@ date: 2023-09-20
 tags:
   - rat
   - tubescreamer
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.summerschoolelectronics.com/shop/p/science-fair
 ---

@@ -11,8 +11,7 @@ tags:
   - lo-fi
   - glitch
 relatedSlugs:
-  - beautiful-noise-effects-exploder
-  - catalinbread-sinkhole
+  - chase-bliss-audio-mood
 externalLinks:
   perfectCircuit: old-blood-noise-bl-44-reverse
   builderLink: https://oldbloodnoise.com/pedals/p/bl-44-reverse

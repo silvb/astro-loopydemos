@@ -16,7 +16,6 @@ relatedSlugs:
   - walrus-audio-polychrome
   - walrus-audio-slo
 externalLinks:
-  thomann:
   reverb: black-mass-electronics-1312-distortion-v3
   builderLink: https://blackmasselectronics.com/products/1312-distortion
 ---

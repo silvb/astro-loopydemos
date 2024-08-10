@@ -7,8 +7,6 @@ date: 2022-11-07
 tags:
   - tubescreamer
   - bass overdrive
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://gojira.co.uk/product/gojira808/
 ---

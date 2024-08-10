@@ -8,8 +8,6 @@ tags:
   - octave fuzz
   - gated fuzz
   - garage rock
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://fairfieldcircuitry.com/products/the-unpleasant-surprise
   perfectCircuit: fairfield-circuitry-the-unpleasant-surprise

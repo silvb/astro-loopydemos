@@ -7,8 +7,6 @@ date: 2023-06-13
 tags:
   - fuzz
   - fuzz face
-relatedSlugs:
-  -
 externalLinks:
   reverb: benson-amps-germanium-fuzz
   builderLink: https://www.bensonamps.com/guitarpedals/germaniumfuzz

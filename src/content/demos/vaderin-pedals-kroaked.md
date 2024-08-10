@@ -4,8 +4,6 @@ model: Kroaked
 type: demo
 isSponsored: true
 date: 2022-10-25
-tags:
-  -
 relatedSlugs:
   - preamp
 externalLinks:

@@ -6,8 +6,6 @@ isSponsored: true
 date: 2023-04-07
 tags:
   - big muff
-relatedSlugs:
-  -
 externalLinks:
   thomann: https://thmn.to/thoprod/564327?partner_id=15606
   reverb: walrus-audio-fundamental-fuzz

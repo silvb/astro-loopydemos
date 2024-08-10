@@ -8,8 +8,6 @@ tags:
   - big muff
   - octave fuzz
   - qotsa
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://vaderin.com/shop/super-ram
 ---

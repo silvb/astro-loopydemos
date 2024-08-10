@@ -7,8 +7,6 @@ date: 2024-03-08
 tags:
   - velcro fuzz
   - bass fuzz
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.zvex.com/guitar-pedals/mastotron-guitar-effects-pedal
   perfectCircuit: zvex-mastotron

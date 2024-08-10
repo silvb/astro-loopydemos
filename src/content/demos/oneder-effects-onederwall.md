@@ -8,8 +8,6 @@ tags:
   - big muff
   - rams head
   - dual gain
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.onedereffects.com/products/onederwall
 ---

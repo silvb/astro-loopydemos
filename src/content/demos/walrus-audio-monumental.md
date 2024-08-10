@@ -7,8 +7,6 @@ date: 2024-07-10
 tags:
   - tremolo
   - stereo modulation
-relatedSlugs:
-  -
 externalLinks:
   perfectCircuit: walrus-monumental-black
   builderLink: https://www.walrusaudio.com/products/monumental-harmonic-stereo-tremolo?variant=45120590217451

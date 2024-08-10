@@ -8,8 +8,6 @@ tags:
   - delay
   - analog delay
   - bucket brigade
-relatedSlugs:
-  -
 externalLinks:
   reverb: demedash-effects-t-120-dlx-v2
   builderLink: https://www.demedasheffects.com/store/p/t120dlx

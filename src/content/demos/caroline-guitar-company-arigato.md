@@ -6,8 +6,6 @@ isSponsored: false
 date: 2023-03-03
 tags:
   - phaser
-relatedSlugs:
-  -
 externalLinks:
   reverb: caroline-guitar-company-arigato
   builderLink: https://carolineguitar.com/product/arigato/

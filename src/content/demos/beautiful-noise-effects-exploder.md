@@ -8,11 +8,10 @@ tags:
   - shoegaze
   - distortion
   - dod 250
-relatedSlugs:
-  -
 externalLinks:
   reverb: beautiful-noise-effects-exploder
   soundShoppe: exploder-from-when-the-sun-explodes
+  builderLink: https://www.beautifulnoiseeffects.com/shop/p/exploder
 ---
 
 The Exploder by Beautiful Noise Effects is a distortion box extracted from the gain circuit of their distortion/reverb pedal WHEN THE SUN EXPLODES.

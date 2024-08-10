@@ -9,7 +9,6 @@ tags:
   - boost
 relatedSlugs:
   - smallsound-bigsound-mini
-  - catalinbread-topanga
   - overdrive-shootout
 externalLinks:
   reverb: jptr-fx-jive

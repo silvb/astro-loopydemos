@@ -7,8 +7,6 @@ date: 2024-01-02
 tags:
   - digital delay
   - ping pong delay
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.jimdunlop.com/mxr-joshua-ambient-echo/
   thomann: https://thmn.to/thoprod/583187?partner_id=15606

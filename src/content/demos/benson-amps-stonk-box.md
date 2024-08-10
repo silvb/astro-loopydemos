@@ -8,8 +8,6 @@ tags:
   - fuzz
   - vintage fuzz
   - old school fuzz
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.bensonamps.com/guitarpedals/stonkbox
 ---

@@ -7,8 +7,6 @@ date: 2023-07-10
 tags:
   - chorus
   - dreampop
-relatedSlugs:
-  -
 externalLinks:
   thomann: https://thmn.to/thoprod/564304?partner_id=15606
   builderLink: https://www.walrusaudio.com/collections/modulation-octave/products/fundamental-series-chorus

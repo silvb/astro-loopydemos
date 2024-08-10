@@ -7,8 +7,6 @@ date: 2023-05-21
 tags:
   - gated
   - velcro fuzz
-relatedSlugs:
-  -
 externalLinks:
   reverb: champion-leccy-the-dunsh
   builderLink: https://championleccy.com/product/the-dunsh/

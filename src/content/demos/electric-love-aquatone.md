@@ -12,6 +12,7 @@ relatedSlugs:
   - boss-blues-driver-bd-2w
 externalLinks:
   reverb: electric-love-aquatone
+  builderLink: https://www.electriclovefx.com
 ---
 
 The Aquatone by Electric Love is a super versatile overdrive pedal with wide range of gain and tone sculpting options. The super pleasing saturation it provides puts it among my favorite overdrives of all time!

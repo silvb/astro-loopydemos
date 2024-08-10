@@ -9,8 +9,6 @@ tags:
   - analog delay
   - lofi
   - tape emulation
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://recoveryeffects.com/collections/all-products/products/cutting-room-floor-v3-pedal
 ---

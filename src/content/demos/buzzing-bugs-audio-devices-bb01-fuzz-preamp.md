@@ -9,8 +9,6 @@ date: 2023-09-24
 tags:
   - fuzz
   - preamp
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://buzzingbugsfx.com/shop/p/bb01-fuzz-pre-amp
 ---

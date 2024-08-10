@@ -7,8 +7,6 @@ date: 2023-02-13
 tags:
   - op amp overdrive
   - distortion
-relatedSlugs:
-  -
 externalLinks:
   reverb: electronic-audio-experiments-dagger-v2
   builderLink: https://www.electronicaudioexperiments.com/pedals/dagger

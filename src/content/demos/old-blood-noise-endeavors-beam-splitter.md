@@ -10,8 +10,6 @@ tags:
   - delay
   - chorus
   - distortion
-relatedSlugs:
-  -
 externalLinks:
   perfectCircuit: old-blood-noise-beam-splitter
   builderLink: https://oldbloodnoise.com/pedals/p/beam-splitter

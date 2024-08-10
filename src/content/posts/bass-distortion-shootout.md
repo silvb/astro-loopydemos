@@ -5,21 +5,6 @@ date: 2024-06-30
 tags:
   - bass
   - distortion
-relatedSlugs:
-  - beautiful-noise-effects-exploder
-  - spun-loud-shuksan-fuzz
-  - fairfield-circuitry-unpleasant-surprise
-  - zvex-effects-mastotron
-  - twilight-pulse-audioworks-proxima
-  - smallsound-bigsound-mini
-  - okko-fx-motorbass
-  - malekko-diabolik
-  - champion-leccy-the-divvy-v3
-  - jptr-fx-warlow
-  - jptr-fx-jive
-  - zvex-effects-basstortion
-  - zvex-effects-woolly-mammoth
-  - freqscene-effects-nouveau-riche
 excerpt: A shootout of the best bass distortion pedals. I love using guitar pedals on bass and experimenting with finding the "magic sauce" for a great, gnarly, distorted bass tone. Often, when I get an overdrive, fuzz or distortion for a guitar demo, I try it on bass as well. I found quite a few gems that way and I'd like to show you my favorites.
 ---
 

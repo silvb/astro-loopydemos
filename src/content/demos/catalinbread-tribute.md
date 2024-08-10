@@ -15,7 +15,6 @@ relatedSlugs:
 externalLinks:
   builderLink: https://catalinbread.com/products/tribute
   thomann: https://thmn.to/thoprod/541409?partner_id=15606
-  reverb:
 ---
 
 The Tribute Parametric Overdrive by Catalinbread is the tool to precisely shape your tone to fit in a mix.

@@ -6,8 +6,6 @@ isSponsored: true
 date: 2023-03-01
 tags:
   - fuzz
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.greateasternfx.com/product-page/focus-fuzz
   soundShoppe: focus-fuzz

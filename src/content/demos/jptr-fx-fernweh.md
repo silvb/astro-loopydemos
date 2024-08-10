@@ -10,7 +10,6 @@ tags:
 relatedSlugs:
   - fairfield-circuitry-shallow-water
 externalLinks:
-  thomann:
   reverb: jptr-fx-fernweh
   builderLink: https://jptrfx.com/products/jptr-fx-fernweh-delay-vintage-voiced-dual-delay-pedal
 ---

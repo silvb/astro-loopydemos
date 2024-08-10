@@ -6,8 +6,6 @@ isSponsored: true
 date: 2022-10-20
 tags:
   - big muff
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.poisonnoises.com/shop/p/glutnik
 ---

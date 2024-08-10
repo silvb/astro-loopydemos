@@ -8,8 +8,6 @@ tags:
   - velcro fuzz
   - gated fuzz
   - weird fuzz
-relatedSlugs:
-  -
 externalLinks:
   perfectCircuit: zvex-fuzz-factory-vexter
   builderLink: https://www.zvex.com/guitar-pedals/fuzz-factory-guitar-effects-pedal

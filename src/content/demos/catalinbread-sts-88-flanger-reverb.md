@@ -8,8 +8,6 @@ tags:
   - shoegaze
   - flanger
   - ambient
-relatedSlugs:
-  -
 externalLinks:
   thomann: https://thmn.to/thoprod/563108?partner_id=15606
   reverb: catalinbread-sts-88-flanger-reverb

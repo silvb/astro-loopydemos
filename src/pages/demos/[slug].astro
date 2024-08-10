@@ -1,7 +1,10 @@
 ---
+import DemoPreviewCard from "@components/demo-preview-card.astro"
+import PostPreviewCard from "@components/post-preview-card.astro"
 import DemoLayout from "@layouts/demo-layout.astro"
+import { getPedalsFromPresets } from "@utils/get-pedals-from-presets"
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro"
-import { getCollection, type CollectionEntry } from "astro:content"
+import { getEntry, getCollection, type CollectionEntry } from "astro:content"
 
 export const getStaticPaths = (async () => {
   const allDemos: CollectionEntry<"demos">[] = await getCollection("demos")
@@ -13,12 +16,156 @@ export const getStaticPaths = (async () => {
 
 type Props = InferGetStaticPropsType<typeof getStaticPaths>
 
-const { model, builder, content, date, type } = Astro.props
+const {
+  model,
+  builder,
+  content,
+  date,
+  type,
+  externalLinks,
+  relatedSlugs,
+  tags,
+} = Astro.props
+
+const possessifyString = (string = "") =>
+  `${string}'${string.toLowerCase().endsWith("s") ? "" : "s"}`
+
 const { slug } = Astro.params
 const { Content } = await content.render()
 const title = `${model} - ${builder}`
+
+const allDemos: CollectionEntry<"demos">[] = await getCollection("demos")
+const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
+
+const {
+  data: { presets },
+}: CollectionEntry<"presets"> = await getEntry(
+  "presets",
+  `${slug as CollectionEntry<"demos">["slug"]}.presets`
+)
+
+const relatedPedals = [...new Set(getPedalsFromPresets(presets))]
+
+const relatedDemos = allDemos
+  .filter(demo => demo.slug !== slug)
+  .filter(
+    demo =>
+      demo.data.builder === builder ||
+      demo.data.tags?.some(tag => tags?.includes(tag)) ||
+      relatedSlugs?.includes(demo.slug) ||
+      demo.data.relatedSlugs?.includes(slug) ||
+      relatedPedals.includes(demo.slug)
+  )
+
+const relatedPosts = allPosts.filter(
+  post =>
+    post.data.tags?.some(tag => tags?.includes(tag)) ||
+    post.data.relatedSlugs?.includes(slug)
+)
 ---
 
 <DemoLayout {slug} {title} {date} {type}>
   <Content />
+  {
+    externalLinks && (
+      <>
+        <h3>Links</h3>
+        <ul>
+          {externalLinks.perfectCircuit && (
+            <li>
+              <span>
+                Try a new one from{" "}
+                <a
+                  href={`https://link.perfectcircuit.com/t/v1/8-12626-329078-9759?url=https%3A%2F%2Fwww.perfectcircuit.com%2F${externalLinks.perfectCircuit}.html`}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Perfect Circuit*
+                </a>
+              </span>
+            </li>
+          )}
+          {externalLinks.builderLink && (
+            <li>
+              <span>
+                Get detailed specs on{" "}
+                <a
+                  href={externalLinks.builderLink}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  {`${possessifyString(builder)} website`}
+                </a>
+              </span>
+            </li>
+          )}
+          {externalLinks.soundShoppe && (
+            <li>
+              <span>
+                If you are in the US, grab one from{" "}
+                <a
+                  href={`https://soundshoppe.nyc/products/${externalLinks.soundShoppe}`}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Sound Shoppe NYC
+                </a>
+              </span>
+            </li>
+          )}
+        </ul>
+        <p>
+          <i>
+            Some of these are affiliate links and I earn a small comission if
+            you buy stuff through those links. There is no additional cost for
+            you. It helps me grow this website. Thank you!
+          </i>
+        </p>
+      </>
+    )
+  }
+  {
+    relatedDemos.length > 0 && (
+      <>
+        <h3>Similar Pedals</h3>
+        <div class="grid auto-rows-[200px] grid-cols-3-min-repeat gap-2">
+          {relatedDemos
+            .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+            .sort(demo => (relatedSlugs?.includes(demo.slug) ? -1 : 1))
+            .sort(demo => (relatedPedals.includes(demo.slug) ? -1 : 1))
+            .filter(demo => demo.data.type === "demo")
+            .slice(0, 8)
+            .map(demo => (
+              <DemoPreviewCard
+                slug={demo.slug}
+                model={demo.data.model}
+                builder={demo.data.builder}
+              />
+            ))}
+        </div>
+      </>
+    )
+  }
+  {
+    relatedPosts.length > 0 && (
+      <>
+        <h3>Related Posts</h3>
+        <div>
+          {relatedPosts
+            .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+            .filter(post => ["post", "freeform"].includes(post.data.type))
+            .slice(0, 3)
+            .map(({ slug, data }) => (
+              <PostPreviewCard
+                {slug}
+                title={data.title}
+                date={data.date}
+                excerpt={data.excerpt}
+                tags={data.tags}
+              />
+            ))}
+        </div>
+      </>
+    )
+  }
 </DemoLayout>

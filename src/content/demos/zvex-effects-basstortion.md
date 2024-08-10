@@ -7,11 +7,9 @@ date: 2024-06-25
 tags:
   - bass distortion
   - bass
-relatedSlugs:
-  -
 externalLinks:
   perfectCircuit: zvex-effects-basstortion
-  builderLink:
+  builderLink: https://www.zvex.com/guitar-pedals/basstortion-guitar-effects-pedal
 ---
 
 Write some copy about the Basstortion by ZVEX Effects.

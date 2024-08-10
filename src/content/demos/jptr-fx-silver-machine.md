@@ -6,10 +6,7 @@ isSponsored: true
 date: 2024-01-10
 tags:
   - octave fuzz
-relatedSlugs:
-  -
 externalLinks:
-  thomann:
   reverb: jptr-fx-silver-machine
   builderLink: https://jptrfx.com/products/jptr-fx-silvermachine-dual-gain-stage-fuzz-pedal
 ---

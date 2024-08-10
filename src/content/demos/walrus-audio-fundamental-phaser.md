@@ -6,8 +6,6 @@ isSponsored: true
 date: 2023-07-24
 tags:
   - phaser
-relatedSlugs:
-  -
 externalLinks:
   thomann: https://thmn.to/thoprod/564324?partner_id=15606
   builderLink: https://www.walrusaudio.com/collections/fundamental-series/products/fundamental-series-phaser

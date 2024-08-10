@@ -52,11 +52,10 @@ export const Led: Component<LedProps> = props => {
   const isOn = () =>
     props.id === "on_led" || props.isOnIndicator
       ? pedalsOn().includes(props.pedalSlug) && setting() !== false
-      : Boolean(setting()) ||
+      : Boolean(isMood ? typeof setting() !== "number" : setting()) ||
         (props.secondaryCircuitId &&
           secondaryCircuitsOn().includes(props.secondaryCircuitId)) ||
-        (props.isBlinking && !props.offOverride) ||
-        getSetting(props.pedalSlug, props.id, props.dependency)
+        (props.isBlinking && !props.offOverride && !isMood)
 
   const blinkTime = () => (setting() || props.defaultTime) ?? 0
 

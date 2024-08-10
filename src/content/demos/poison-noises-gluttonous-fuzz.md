@@ -7,8 +7,6 @@ date: 2022-11-22
 tags:
   - fuzz
   - smashing pumpkins
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.poisonnoises.com/shop/p/gluttonousfuzzv3
 ---

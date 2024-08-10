@@ -6,8 +6,6 @@ isSponsored: true
 date: 2023-01-26
 tags:
   - low gain
-relatedSlugs:
-  -
 externalLinks:
   reverb: ground-control-audio-bread-oath
   builderLink: https://www.groundcontrolaudio.com/store/p/bread-oath

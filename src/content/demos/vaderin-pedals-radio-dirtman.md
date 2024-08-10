@@ -8,8 +8,6 @@ tags:
   - velcro fuzz
   - gated fuzz
   - qotsa
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://vaderin.com/shop/radio-dirtman/
 ---

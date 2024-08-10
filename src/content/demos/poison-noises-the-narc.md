@@ -7,8 +7,6 @@ date: 2022-09-19
 tags:
   - rat
   - distortion
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.poisonnoises.com/shop/p/thenarcv2
 ---

@@ -8,8 +8,6 @@ tags:
   - flanger
   - vibrato
   - chorus
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://spacemaneffects.com/products/meridian?variant=44384560283812
 ---

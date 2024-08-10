@@ -9,8 +9,6 @@ tags:
   - lofi
   - analog delay
   - delay
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://bleakdistrict.co.uk/tapescape-zzzkrq
 ---

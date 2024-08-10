@@ -6,8 +6,6 @@ isSponsored: true
 date: 2023-08-20
 tags:
   - distortion
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.bondieffects.com/products/sick-as-high-shredroom-graphite
 ---

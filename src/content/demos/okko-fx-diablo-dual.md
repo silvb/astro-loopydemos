@@ -8,8 +8,6 @@ tags:
   - low gain overdrive
   - mid gain
   - dual overdrive
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://okkofx.company.site/DIABLO-DUAL-p261206223
 ---

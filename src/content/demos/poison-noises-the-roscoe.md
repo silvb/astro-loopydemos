@@ -6,8 +6,6 @@ isSponsored: true
 date: 2022-11-24
 tags:
   - eq
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.poisonnoises.com/shop/p/theroscoe
 ---

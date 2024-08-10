@@ -7,8 +7,6 @@ date: 2023-08-29
 tags:
   - harmonic percolator
   - fuzz
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://buzzingbugsfx.com/shop/p/bb02-percolator-fuzz
 ---

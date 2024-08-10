@@ -8,8 +8,6 @@ tags:
   - veclro fuzz
   - tone bender
   - gated fuzz
-relatedSlugs:
-  -
 externalLinks:
   perfectCircuit: keeley-fuzz-bender
   builderLink: https://robertkeeley.com/product/fuzz-bender/

@@ -7,10 +7,7 @@ date: 2024-01-11
 tags:
   - big muff
   - fuzz
-relatedSlugs:
-  -
 externalLinks:
-  thomann:
   reverb: mask-audio-electronics-laran
   builderLink: https://maskaudioelectronics.com/collections/pedals/products/laran-diy-kit-1
 ---

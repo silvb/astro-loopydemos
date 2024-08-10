@@ -8,8 +8,6 @@ tags:
   - fuzz
   - modulated fuzz
   - weird fuzz
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://jptrfx.com/products/jptr-fx-super-weirdo-fuzz-modulator-pedal
 ---

@@ -6,8 +6,6 @@ isSponsored: true
 date: 2022-11-17
 tags:
   - tremolo
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.poisonnoises.com/shop/p/tractorbeamv2
 ---

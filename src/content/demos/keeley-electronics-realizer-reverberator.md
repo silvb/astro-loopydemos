@@ -8,8 +8,6 @@ tags:
   - shoegaze
   - reverb
   - modulated reverb
-relatedSlugs:
-  -
 externalLinks:
   reverb: keeley-electronics-realizer-reverberator
   builderLink: https://robertkeeley.com/products/realizer-21st-anniversary-edition

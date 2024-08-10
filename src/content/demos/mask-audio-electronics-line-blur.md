@@ -9,8 +9,6 @@ tags:
   - parametric eq
   - bass
   - eq
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://maskaudioelectronics.com/collections/pedals/products/line-blur
 ---

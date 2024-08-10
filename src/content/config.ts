@@ -157,6 +157,18 @@ const demos = defineCollection({
     type: postTypeEnum,
     hasBackingTrack: z.boolean().optional(),
     volume: z.number().optional(),
+    externalLinks: z
+      .object({
+        builderLink: z.string(),
+        perfectCircuit: z.string().optional(),
+        thomann: z.string().optional(),
+        sweetwater: z.string().optional(),
+        soundShoppe: z.string().optional(),
+        reverb: z.string().optional(),
+      })
+      .optional(),
+    relatedSlugs: z.array(z.string()).optional(),
+    tags: z.array(z.string()).optional(),
   }),
 })
 
@@ -167,9 +179,10 @@ const posts = defineCollection({
     title: z.string(),
     type: postTypeEnum,
     excerpt: z.string(),
-    tags: z.array(z.string()),
+    tags: z.array(z.string()).optional(),
     hasBackingTrack: z.boolean().optional(),
     volume: z.number().optional(),
+    relatedSlugs: z.array(z.string()).optional(),
   }),
 })
 
@@ -241,6 +254,7 @@ const pedals = defineCollection({
   type: "data",
   schema: z.object({
     name: z.string(),
+    imageSrcSlug: z.string().optional(),
     enclosure: z.enum(["portrait", "landscape"]).optional(),
     width: z.number().optional(),
     height: z.number().optional(),

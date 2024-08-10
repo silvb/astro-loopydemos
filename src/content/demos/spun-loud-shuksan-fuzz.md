@@ -6,8 +6,6 @@ isSponsored: true
 date: 2022-11-06
 tags:
   - fuzz
-relatedSlugs:
-  -
 externalLinks:
   reverb: spun-loud-shuksan-fuzz
   builderLink: https://spunloud.com/products/shuksan-fuzz

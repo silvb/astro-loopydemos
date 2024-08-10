@@ -9,8 +9,6 @@ tags:
   - dreampop
   - shoegaze
   - ambient
-relatedSlugs:
-  -
 externalLinks:
   reverb: ground-fx-keto
   builderLink: https://ground-fx.de/products/keto

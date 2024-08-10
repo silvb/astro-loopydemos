@@ -7,8 +7,6 @@ date: 2022-11-01
 tags:
   - reverb
   - lo-fi reverb
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.poisonnoises.com/shop/
 ---

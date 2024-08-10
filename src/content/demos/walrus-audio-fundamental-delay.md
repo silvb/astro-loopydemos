@@ -7,8 +7,6 @@ date: 2023-11-01
 tags:
   - delay
   - reverse delay
-relatedSlugs:
-  -
 externalLinks:
   thomann: https://thmn.to/thoprod/564329?partner_id=15606
   builderLink: https://www.walrusaudio.com/products/fundamental-series-delay

@@ -8,8 +8,6 @@ tags:
   - weird fuzz
   - phaser
   - phaser fuzz
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://gearant.com/collections/guitar-pedals/products/cicada
 ---

@@ -7,8 +7,6 @@ date: 2022-11-15
 tags:
   - octave
   - vibrato
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.poisonnoises.com/shop/p/theseesawv2
 ---

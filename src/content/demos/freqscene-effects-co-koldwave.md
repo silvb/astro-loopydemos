@@ -9,8 +9,6 @@ tags:
   - vibrato
   - chorus
   - lofi
-relatedSlugs:
-  -
 externalLinks:
   perfectCircuit: freqscene-effects-co-koldwave
   builderLink: https://www.freqscene.com/

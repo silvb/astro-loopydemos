@@ -7,8 +7,6 @@ date: 2024-03-21
 tags:
   - velcro fuzz
   - tone bender
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://vaderin.com/shop/colossus/
 ---

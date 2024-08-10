@@ -11,7 +11,6 @@ relatedSlugs:
   - black-mass-electronics-1312-distortion-v3
   - walrus-audio-slo
 externalLinks:
-  thomann:
   reverb: wonderful-audio-technology-apex-distortion
   builderLink: https://www.wonderfulaudiotechnology.com/apex
 ---

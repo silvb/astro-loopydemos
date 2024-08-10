@@ -7,8 +7,6 @@ date: 2023-10-06
 tags:
   - bass
   - bass overdrive
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.poisonnoises.com/shop/p/thecrook
 ---

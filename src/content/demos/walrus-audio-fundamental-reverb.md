@@ -6,8 +6,6 @@ isSponsored: true
 date: 2023-11-16
 tags:
   - reverb
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.walrusaudio.com/products/fundamental-series-reverb
   thomann: https://thmn.to/thoprod/564323?partner_id=15606

@@ -7,8 +7,6 @@ date: 2022-09-02
 tags:
   - compressor
   - optical compressor
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://www.poisonnoises.com/shop/p/thevacuumv2
 ---

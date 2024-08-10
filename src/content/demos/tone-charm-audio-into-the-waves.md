@@ -8,8 +8,6 @@ tags:
   - delay
   - shoegaze
   - rat
-relatedSlugs:
-  -
 externalLinks:
   reverb: tone-charm-audio-into-the-waves
   builderLink: https://www.tonecharmaudio.com/product/into-the-waves-tone-charm-audio

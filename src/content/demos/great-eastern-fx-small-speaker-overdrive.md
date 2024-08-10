@@ -8,8 +8,6 @@ tags:
   - lofi
   - amp in a box
   - garage rock
-relatedSlugs:
-  -
 externalLinks:
   reverb: great-eastern-fx-small-speaker-overdrive
   builderLink: https://www.greateasternfx.com/product-page/small-speaker-overdrive

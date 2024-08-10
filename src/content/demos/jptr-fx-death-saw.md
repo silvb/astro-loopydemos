@@ -9,8 +9,6 @@ tags:
   - distortion
   - shoegaze
   - high gain
-relatedSlugs:
-  -
 externalLinks:
   builderLink: https://jptrfx.com/products/jptr-fx-death-saw
 ---

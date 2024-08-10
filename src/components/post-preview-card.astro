@@ -78,7 +78,7 @@ const shortenedExcerpt =
       </div>
       <div class="flex flex-col justify-between gap-4">
         <div class="flex flex-col gap-2">
-          <h3 class="m-0">{title}</h3>
+          <h4 class="m-0">{title}</h4>
           <div class="text-sm">
             <DateTag {date} />
           </div>
@@ -95,7 +95,7 @@ const shortenedExcerpt =
           </span>
           <div class="flex flex-wrap justify-end gap-1">
             {
-              tags.map(tag => (
+              tags?.map(tag => (
                 <span class="whitespace-nowrap rounded-md bg-loopydemos-secondary px-2 py-2 text-sm text-loopydemos-subdued">
                   {tag}
                 </span>
@@ -108,7 +108,7 @@ const shortenedExcerpt =
     <div class="flex items-center justify-between gap-4 sm:hidden">
       <div class="flex flex-wrap gap-1">
         {
-          tags.map(tag => (
+          tags?.map(tag => (
             <span class="whitespace-nowrap rounded-md bg-loopydemos-secondary px-2 py-2 text-sm text-loopydemos-subdued">
               {tag}
             </span>
