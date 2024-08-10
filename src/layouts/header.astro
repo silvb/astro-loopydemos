@@ -145,9 +145,9 @@ const headerLinks = [
   </svg>
 </header>
 <aside
-  class="animated-sidenav absolute left-0 top-16 z-10 flex h-screen w-full -translate-x-[100vw] bg-black/0 xs:top-20 sm:hidden"
+  class="animated-sidenav absolute left-0 top-16 z-40 flex h-screen w-full -translate-x-[100vw] bg-black/0 xs:top-20 sm:hidden"
 >
-  <ul class="flex h-full w-48 flex-col bg-loopydemos-secondary pl-6">
+  <ul class="flex h-full w-48 flex-col bg-loopydemos-secondary pl-6 pt-8">
     {
       headerLinks.map(({ href, text }) => (
         <li
@@ -184,9 +184,7 @@ const headerLinks = [
   }
 
   aside.animated-sidenav {
-    transition:
-      transform 0.1s ease-in 0s,
-      background-color 0.1s linear 0.2s;
+    @apply transition-transform;
 
     &.slide-in {
       @apply translate-x-0 bg-black/50;
@@ -218,17 +216,19 @@ const headerLinks = [
 </style>
 
 <script>
-  document
-    ?.getElementById("mobile-menu-toggle")
-    ?.addEventListener("click", () => {
-      document
-        ?.querySelector("aside.animated-sidenav")
-        ?.classList.toggle("slide-in")
+  const menuToggle = document?.getElementById("mobile-menu-toggle")
+  const sidenav = document?.querySelector("aside.animated-sidenav")
 
-      document?.querySelectorAll(".line-handle")?.forEach(el => {
-        el.classList.toggle("open")
-      })
+  const toggleSidenav = () => {
+    sidenav?.classList.toggle("slide-in")
+
+    document?.querySelectorAll(".line-handle")?.forEach(el => {
+      el.classList.toggle("open")
     })
+  }
+
+  menuToggle?.addEventListener("click", toggleSidenav)
+  sidenav?.addEventListener("click", toggleSidenav)
 </script>
 
 <!-- Use this when adding back page transitions -->

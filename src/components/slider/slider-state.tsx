@@ -1,6 +1,6 @@
 import { demoState } from "@components/demo-widget/demo-state-store"
 import { throttle } from "radash"
-import { createSignal, type Component, type JSX } from "solid-js"
+import { type Component, type JSX } from "solid-js"
 
 interface SliderStateProps {
   id: string
@@ -17,7 +17,6 @@ interface SliderStateProps {
 }
 
 export const SliderState: Component<SliderStateProps> = props => {
-  const [isDragging, setIsDragging] = createSignal(false)
   const { selectSweepSetting, getSetting, isSweepTarget } = demoState
 
   const faderId = `fader-${props.id}-${props.pedalSlug}`
@@ -36,15 +35,15 @@ export const SliderState: Component<SliderStateProps> = props => {
       ?.getBoundingClientRect()
 
     if (!boundindRect) return
+    const { left: rectLeft, width } = boundindRect
+
+    const moveValue = ((downEvent.clientX - rectLeft) / width) * 10
+    selectSweepSetting(props.id, moveValue)
 
     const handleDrag = (moveEvent: typeof downEvent) => {
       moveEvent.preventDefault()
-      setIsDragging(true)
 
-      const { left: rectLeft, width } = boundindRect
-
-      const moveX = moveEvent.clientX
-      const moveValue = ((moveX - rectLeft) / width) * 10
+      const moveValue = ((moveEvent.clientX - rectLeft) / width) * 10
       selectSweepSetting(props.id, moveValue)
     }
 
@@ -53,7 +52,6 @@ export const SliderState: Component<SliderStateProps> = props => {
     document.addEventListener("mousemove", throttledHandleDrag)
     document.addEventListener("mouseup", () => {
       document.removeEventListener("mousemove", throttledHandleDrag)
-      setIsDragging(false)
     })
   }
 
@@ -66,15 +64,15 @@ export const SliderState: Component<SliderStateProps> = props => {
       ?.getBoundingClientRect()
 
     if (!boundindRect) return
+    const { left: rectLeft, width } = boundindRect
+
+    const moveValue = ((downEvent.touches[0].clientX - rectLeft) / width) * 10
+    selectSweepSetting(props.id, moveValue)
 
     const handleDrag = (moveEvent: typeof downEvent) => {
       moveEvent.preventDefault()
-      setIsDragging(true)
 
-      const { left: rectLeft, width } = boundindRect
-
-      const moveX = moveEvent.touches[0].clientX
-      const moveValue = ((moveX - rectLeft) / width) * 10
+      const moveValue = ((moveEvent.touches[0].clientX - rectLeft) / width) * 10
       selectSweepSetting(props.id, moveValue)
     }
 
@@ -83,7 +81,6 @@ export const SliderState: Component<SliderStateProps> = props => {
     document.addEventListener("touchmove", throttledHandleDrag)
     document.addEventListener("touchend", () => {
       document.removeEventListener("touchmove", throttledHandleDrag)
-      setIsDragging(false)
     })
   }
 
@@ -118,8 +115,7 @@ export const SliderState: Component<SliderStateProps> = props => {
             height: `${props.size.height}px`,
             left: `${handlePosition()}%`,
           }}
-          class="absolute top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center"
-          classList={{ "transition-[left] duration-300": !isDragging() }}
+          class="absolute top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center transition-[left] duration-300"
         >
           {props["fader-face"]}
         </div>
