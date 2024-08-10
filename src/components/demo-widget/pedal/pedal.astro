@@ -14,6 +14,7 @@ import { PedalStateContainer } from "./pedal-state-container"
 import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
 import SweepIndicator from "@components/sweep-indicator.astro"
 import LineLabel from "@components/line-label"
+import Slider from "@components/slider"
 
 interface Props {
   slug: string
@@ -84,6 +85,13 @@ const enclosureHeight =
         controls?.labels?.map(label => (
           <AbsolutePosition id={label.id} {...label.position}>
             <LineLabel {...label} pedalSlug={slug} />
+          </AbsolutePosition>
+        ))
+      }
+      {
+        controls?.sliders?.map(slider => (
+          <AbsolutePosition id={slider.id} {...slider.position}>
+            <Slider {...slider} pedalSlug={slug} />
           </AbsolutePosition>
         ))
       }

@@ -99,6 +99,29 @@ export const ledSchema = controlElementSchema.extend({
   defaultTime: z.number().optional(),
 })
 
+export const sliderSchema = z.object({
+  id: z.string(),
+  size: z.object({
+    width: z.number(),
+    height: z.number(),
+    innerWidth: z.number(),
+    innerHeight: z.number(),
+  }),
+  position: z.object({
+    top: z.number(),
+    left: z.number(),
+  }),
+  faderType: z.enum(["walrus", "simple"]).optional(),
+  tilt: z.number().optional(),
+  colors: z
+    .object({
+      enclosure: z.string().optional(),
+      tick: z.string().optional(),
+      face: z.string().optional(),
+    })
+    .optional(),
+})
+
 export const labelSchema = z.object({
   id: z.string(),
   position: z.object({
@@ -227,6 +250,7 @@ const pedals = defineCollection({
         switches: z.array(switchSchema).optional(),
         leds: z.array(ledSchema).optional(),
         labels: z.array(labelSchema).optional(),
+        sliders: z.array(sliderSchema).optional(),
       })
       .optional(),
   }),

@@ -5,6 +5,7 @@ import {
   labelSchema,
   postTypeEnum,
   settingsValueSchema,
+  sliderSchema,
   type knobSchema,
   type ledSchema,
   type presetSchema,
@@ -36,3 +37,5 @@ export type SettingsValue = z.infer<typeof settingsValueSchema>
 export type PostType = z.infer<typeof postTypeEnum>
 
 export type LineLabel = z.infer<typeof labelSchema>
+
+export type Slider = z.infer<typeof sliderSchema>

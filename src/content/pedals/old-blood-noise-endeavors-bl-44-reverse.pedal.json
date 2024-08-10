@@ -48,7 +48,6 @@
           "innerHeight": 8
         },
         "position": { "top": 104, "left": 42 },
-        "type": "range",
         "faderType": "simple",
         "tilt": 23,
         "colors": {

@@ -50,7 +50,6 @@
           "innerHeight": 8
         },
         "position": { "top": 127, "left": 67 },
-        "type": "range",
         "faderType": "simple",
         "tilt": -90,
         "colors": { "enclosure": "#e2d4bb", "tick": "#eeeae6" }
@@ -64,7 +63,6 @@
           "innerHeight": 8
         },
         "position": { "top": 127, "left": 113 },
-        "type": "range",
         "faderType": "simple",
         "tilt": -90,
         "colors": { "enclosure": "#e2d4bb", "tick": "#eeeae6" }
@@ -78,7 +76,6 @@
           "innerHeight": 8
         },
         "position": { "left": 160, "top": 127 },
-        "type": "range",
         "faderType": "simple",
         "tilt": -90,
         "colors": { "enclosure": "#e2d4bb", "tick": "#eeeae6" }

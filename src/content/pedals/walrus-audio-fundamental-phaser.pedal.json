@@ -14,7 +14,6 @@
           "top": 44,
           "left": 45
         },
-        "type": "range",
         "colors": {
           "enclosure": "#433f41"
         }
@@ -31,7 +30,6 @@
           "top": 76,
           "left": 45
         },
-        "type": "range",
         "colors": {
           "enclosure": "#433f41"
         }
@@ -48,7 +46,6 @@
           "top": 108,
           "left": 45
         },
-        "type": "range",
         "colors": {
           "enclosure": "#433f41"
         }
