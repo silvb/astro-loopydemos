@@ -115,7 +115,7 @@ export const SliderState: Component<SliderStateProps> = props => {
             height: `${props.size.height}px`,
             left: `${handlePosition()}%`,
           }}
-          class="absolute top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center transition-[left] duration-300"
+          class="absolute top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center transition-[left]"
         >
           {props["fader-face"]}
         </div>
