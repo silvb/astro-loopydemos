@@ -54,8 +54,8 @@ const relatedPosts = allPosts.filter(post =>
         <div class="grid auto-rows-[200px] grid-cols-3-min-repeat gap-2">
           {relatedDemos
             .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
-            .sort(demo => (relatedPedals.includes(demo.slug) ? -1 : 1))
             .sort(demo => (relatedSlugs?.includes(demo.slug) ? -1 : 1))
+            .sort(demo => (relatedPedals.includes(demo.slug) ? -1 : 1))
             .filter(demo => demo.data.type === "demo")
             .slice(0, 12)
             .map(demo => (
