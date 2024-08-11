@@ -27,7 +27,7 @@ I record all the sounds via simply reamping a prerecorded track through the peda
 
 This is my usual workflow:
 
-I have a template in my DAW where I use Logic's I/O plugin to put the pedal between the interface input and an amp simulation (currently: [Mixwave's Benson Chimera Plugin]()).
+I have a template in my DAW where I use Logic's I/O plugin to put the pedal between the interface input and an amp simulation (currently: [Mixwave's Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)).
 
 I fiddle with the pedal until I get an inspiring sound, then write and record the main demo track. It's usually a 16 bar loop. I try to write something that makes sense for the pedal and is not too tiring on the ears after repeated listening.
 
@@ -49,9 +49,9 @@ My primary workhorse is a [Fidelity Guitars](https://www.fidelity-guitars.co.uk/
 
 It blends aesthetics from vintage catalog guitars together with offset guitar features – all executed with exceptional craftsmanship.
 
-![Fidelity Guitars Stellarosa Lite II guitar on a rug with smallsound bigsound mini overdrive](../images/fidelity-stellarosa-on-rug.jpg)
-
 **SPECS**
+
+![Fidelity Guitars Stellarosa Lite II guitar on a rug](../images/fidelity-stellarosa-lite-ii.jpg)
 
 - Obeche body in relic'd nitro finish (Burgundy Mist)
 - Roasted maple neck with wenge fretboard. Stellar fretwork. It's a chunky C-shaped neck and the most comfortable neck I ever tried. Fits my hands like a well-worn glove
@@ -72,15 +72,42 @@ This has been my first bass and I recorded most backing tracks and bass-focused 
 
 It was a decent bass when I got it. After a little bit of tweaking and modding, I really love it.
 
-![justin mendal johnsen fender mustang bass](../images/jmj-mustang-on-rug.png)
-
 **MODS**
+
+![justin mendal johnsen fender mustang bass](../images/jmj-fender-mustang-bass.jpg)
 
 - Baguley Guitars custom aluminum pickguard. Mustangs usually have a two-piece guard + control plate. Baguley made me a solid one-piece guard that makes this bass feel like a heavy-duty tool.
 - Curtis Novak Fat Mustang Pickups. The stock Seymour Duncan pickups were great, but these are awesome. The sound is more plucky with more attack and growl. I asked Curtis to omit the pickguard and wrap the coils like you would a tele bridge PU, but with black cotton wrap. I also put heavier springs for the PU height adjustment so I can rest my thump on the PU directly instead of a cover and it doesn't wiggle.
 - I sanded down the back of the neck and finished it with basic furniture oil. I much prefer the matte feel instead of the lacquer.
 - Fret ends needed some TLC. There was some slight fret sprout. I got a fret file and rounded off the fret ends myself. I didn't do a masterful job but the sharp ends are gone and it plays much better now.
 - Strings: La Bella Deep Talkin' Bass 760F-MUS Flatwounds. I tried half-rounds and roundwounds. For this bass, I really disliked the half-rounds. They just felt like dull roundwounds. The roundwounds worked well for rock bass riffs but ultimately, I feel this bass was made for flats. The La Bellas are wonderfully thumpy and truly complete this instrument.
+
+#### Greco/Hondo Jazz Bass
+
+I found this on Kleinanzeigen (German Craigslist/FB Marketplace) for a steal. It's an old Japanese made bass from the 70s or 80s. I found nothing on the bass to accurately date it and I'm not even sure if the official brand is Greco or Hondo because there is no decal on the headstock, nothing on the back of the pickups or neck plate.
+
+I loved the look and the unique pickups. I had to do a few mods when I got it to make it playable again:
+
+![greco/hondo jazz bass with maxon pickups sunburst](../images/greco-maxon-jazz-bass.jpg)
+
+- Swapped out the old rusty and crackly electronics and got a custom wiring harness from [James' Home of Tone](https://www.homeoftone.co.uk/). Works like a charm and the wiring is a piece of art!
+- Shielded the cavities with copper tape and made sure all electronic grounds have continuity with the shielding
+- Had to take apart the pickups and glued some loose pieces together
+- Fret ends were a horrible sharp mess. I was able to mitigate that with a fret file.
+- Sanded down the lacquer of the back of the neck and applied furniture oil again.
+- New screws for some of the hardware because the were rusted and loose
+
+#### Gretsch Electromatic
+
+This is the guitar that I've owned the longest. I played it a lot when I played in bands. It's a budget line guitar but it plays extremely well. Sadly, I don't get to play it much because it's to loud for recording when the rest of the family is asleep.
+
+It's also the guitar that is the most "stock" in my collection. Just a few mods and specs if you're curious:
+
+![gretsch electromatic amber semi hollow guitar](../images/gretsch-electromatic.jpg)
+
+- I got the bridge pickup wax-potted because it got microphonic to a point where it was unusable. It just feedbacked like crazy.
+- It's neck-divy so I moved the pin for the strap from the upper horn to behind the neck
+- I found these rubber grommets to put between the strings behind the bridge. Usually, I welcome a little bit of string noise like on my Stellarosa. But the hollow body is so resonant that I prefer this guitar to be a bit more "dry".
 
 #### Other Gear
 

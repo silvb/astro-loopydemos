@@ -99,7 +99,7 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
     --loopydemos-secondary: #1e1c41;
     --loopydemos-background: #100f13;
     --loopydemos-primary-highlight: #5cf5f5;
-    --loopydemos-secondary-highlight: #fa42ab;
+    --loopydemos-secondary-highlight: #ff46d5;
     --loopydemos-tertiary-highlight: #f8f859;
     --loopydemos-text: #f8f8f2;
     --loopydemos-success: #0a100b;
@@ -171,14 +171,10 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
     }
 
     ul:not(.list-none) {
-      @apply list-outside list-[disclosure-closed] pl-8;
+      @apply list-outside list-image-[url('/plec.svg')] pl-5;
 
       li {
         @apply pb-2 pl-2 text-base sm:text-lg md:text-xl;
-
-        &::marker {
-          @apply text-loopydemos-primary;
-        }
       }
     }
 

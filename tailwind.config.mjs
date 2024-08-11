@@ -32,7 +32,7 @@ export default {
           themed: "var(--loopydemos-primary-highlight)",
         },
         "loopydemos-highlight-secondary": {
-          DEFAULT: "#fa42ab",
+          DEFAULT: "#ff46d5",
           themed: "var(--loopydemos-secondary-highlight)",
         },
         "loopydemos-highlight-tertiary": {
