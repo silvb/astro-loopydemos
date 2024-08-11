@@ -32,9 +32,7 @@ export const KnobStateContainer: ParentComponent<
     <Show when={activePedals().includes(props.pedalSlug)}>
       <div
         class={containerClass({
-          transition:
-            !Boolean(props.isRotary) &&
-            !isSweepTarget(props.id, props.pedalSlug),
+          transition: !Boolean(props.isRotary),
         })}
         style={{
           transform: `rotate(${props.isRotary ? props.rotaryAngles?.[level() - 1] : 30 * level() - 150}deg)`,

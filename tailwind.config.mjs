@@ -16,11 +16,11 @@ export default {
       },
       colors: {
         "loopydemos-primary": {
-          DEFAULT: "#9580ff",
+          DEFAULT: "#9f58ff",
           themed: "var(--loopydemos-primary)",
         },
         "loopydemos-secondary": {
-          DEFAULT: "#242441",
+          DEFAULT: "#1e1c41",
           themed: "var(--loopydemos-secondary)",
         },
         "loopydemos-background": {
@@ -32,7 +32,7 @@ export default {
           themed: "var(--loopydemos-primary-highlight)",
         },
         "loopydemos-highlight-secondary": {
-          DEFAULT: "#f765ae",
+          DEFAULT: "#fa42ab",
           themed: "var(--loopydemos-secondary-highlight)",
         },
         "loopydemos-highlight-tertiary": {

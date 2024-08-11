@@ -7,12 +7,88 @@ layout: "@layouts/default-layout.astro"
 
 Hey 👋
 
-![Silvio playing a Fidelity Guitars Stellarosa Lite II](../images/silvio-with-fidelity-stellarosa.webp)
-
 my name is Silvio. I'm a web developer, musician and gear nerd from Germany. I created Loopy Demos.
+
+![Silvio playing a Fidelity Guitars Stellarosa Lite II](../images/silvio-with-fidelity-stellarosa.webp)
 
 With this website, I produce interactive gear demos for the web. Instead of sitting through a lengthy YouTube video, you can interactively turn the knobs yourself and hear the difference in real time.
 
 I use this little site endeavor to learn new technologies and to combine my passion for music and web development. With my skills from working professionally as a frontend engineer, I wanted to create a platform for musicians to explore gear in a new way and at the same time, have a creative musical outlet for myself.
 
 I'm running this site as a one-man show. So if you find a bug or usability issue, or have any other feedback – tech/software or music related – shoot me a DM on [Instagram](https://www.instagram.com/loopydemos/).
+
+### How I Record Demos
+
+Everything you hear on this website is an actual instrument recorded through a physical unit of the pedal you see displayed. This is not a plugin or some AI modelling.
+
+In the interactive demos, you hear the sound that the actual pedal produces at the settings you see displayed.
+
+I record all the sounds via simply reamping a prerecorded track through the pedal.
+
+This is my usual workflow:
+
+I have a template in my DAW where I use Logic's I/O plugin to put the pedal between the interface input and an amp simulation (currently: [Mixwave's Benson Chimera Plugin]()).
+
+I fiddle with the pedal until I get an inspiring sound, then write and record the main demo track. It's usually a 16 bar loop. I try to write something that makes sense for the pedal and is not too tiring on the ears after repeated listening.
+
+The D.I. recorded track goes out from my interface, into the reamp box, out through the pedal and back into an input on my interface.
+
+I record a few "presets" that you can flip through on this website and a few knob "sweeps". For a knob sweep, I keep all settings the same but for one knob or toggle. For knobs, I record about 6 positions, which is usually enough to get a feel for the range of a knob. I try to listen closely how sensitive a knob is and how many samples I need to take to create a good audio representation.
+
+I then export all audio files, with settings to make sure that all audio files are the same length, upload them to a server and this website downloads them to the browser.
+
+Lately I've been recording videos of myself playing the demo track to create more engaging posts for [Instagram](https://www.instagram.com/loopydemos/).
+
+I use [remotion.dev](https://www.remotion.dev/) so I can reuse the code for the website and overlay the demo widget in the video to showcase the settings.
+
+### My Gear
+
+#### Fidelity Guitars Stellarosa Lite II
+
+My primary workhorse is a [Fidelity Guitars](https://www.fidelity-guitars.co.uk/) Stellrosa Lite II. As of now, I record 99% of my demos with this beauty.
+
+It blends aesthetics from vintage catalog guitars together with offset guitar features – all executed with exceptional craftsmanship.
+
+![Fidelity Guitars Stellarosa Lite II guitar on a rug with smallsound bigsound mini overdrive](../images/fidelity-stellarosa-on-rug.jpg)
+
+**SPECS**
+
+- Obeche body in relic'd nitro finish (Burgundy Mist)
+- Roasted maple neck with wenge fretboard. Stellar fretwork. It's a chunky C-shaped neck and the most comfortable neck I ever tried. Fits my hands like a well-worn glove
+- Lollar Firebird Pickups. I originally had these in a cheap Epiphone SG Special and loved them so much, that I sent them to Matt to put in this guitar.
+- Descendant Vibrato. Feels very good, the stiffness is adjustable and I can fix the arm so it stays in place instead of falling down
+- There is no tone control. Instead, I have a slide switch that engages a low pass filter, so I can choose between tone fully open and tone rolled off completely.
+- Another slide switch puts the pickups in series mode, giving me a louder, more compressed and slightly darker sound
+
+The sound of this guitar is best described as a beefy telecaster. The neck pickup has great glassy and punchy sound similar to a good strat neck pickup. The bridge pickup reminds me of a good tele bridge, but with more oomph and less harshness.
+
+The Firebirds have a slightly compressed characteristic with a slight scoop in the middle. They are humbuckers but have a lot of single-coil feel to them.
+
+This guitar records super well and mixes itself, with a good variety of tones to be a great allrounder and bring out the best from every pedal I play with it.
+
+#### Fender® Mustang JMJ Signature Bass
+
+This has been my first bass and I recorded most backing tracks and bass-focused demos with it: A custom Justin Mendal-Johnsen Mustang bass.
+
+It was a decent bass when I got it. After a little bit of tweaking and modding, I really love it.
+
+![justin mendal johnsen fender mustang bass](../images/jmj-mustang-on-rug.png)
+
+**MODS**
+
+- Baguley Guitars custom aluminum pickguard. Mustangs usually have a two-piece guard + control plate. Baguley made me a solid one-piece guard that makes this bass feel like a heavy-duty tool.
+- Curtis Novak Fat Mustang Pickups. The stock Seymour Duncan pickups were great, but these are awesome. The sound is more plucky with more attack and growl. I asked Curtis to omit the pickguard and wrap the coils like you would a tele bridge PU, but with black cotton wrap. I also put heavier springs for the PU height adjustment so I can rest my thump on the PU directly instead of a cover and it doesn't wiggle.
+- I sanded down the back of the neck and finished it with basic furniture oil. I much prefer the matte feel instead of the lacquer.
+- Fret ends needed some TLC. There was some slight fret sprout. I got a fret file and rounded off the fret ends myself. I didn't do a masterful job but the sharp ends are gone and it plays much better now.
+- Strings: La Bella Deep Talkin' Bass 760F-MUS Flatwounds. I tried half-rounds and roundwounds. For this bass, I really disliked the half-rounds. They just felt like dull roundwounds. The roundwounds worked well for rock bass riffs but ultimately, I feel this bass was made for flats. The La Bellas are wonderfully thumpy and truly complete this instrument.
+
+#### Other Gear
+
+- DAW: Logic Pro X
+- Audio Interface: Universal Audio Volt 4
+- Computer: Mac Mini M2
+- Apple Magic Trackpad + Nuphy Air96 low profile mechanical keyboard
+
+### Web Tech
+
+I built this site with [Astro](https://astro.build/) and [SolidJS](https://www.solidjs.com/). I code in [Visual Studio Code](https://code.visualstudio.com/), my terminal is [Warp](https://www.warp.dev/). I host this site on [Vercel](https://vercel.com/).
