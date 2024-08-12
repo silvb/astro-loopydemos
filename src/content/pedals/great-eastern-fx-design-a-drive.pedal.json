@@ -41,7 +41,7 @@
         "type": "chicken",
         "colors": {
           "primary": "#444",
-          "background": "#1C1C1C",
+          "secondary": "#1C1C1C",
           "tick": "oldlace"
         }
       }
