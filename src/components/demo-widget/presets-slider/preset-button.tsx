@@ -1,11 +1,10 @@
 import type { Preset } from "@types"
 import { onMount, Show, type Component, type JSX } from "solid-js"
-import { demoState } from "../demo-state-store"
+import { useDemoState } from "../demo-state-store"
+import { PhFadersIcon } from "../icons/ph-faders-icon"
+import { PhSpinnerIcon } from "../icons/ph-spinner-icon"
 
-interface PresetButtonProps extends Pick<Preset, "id" | "isSweep" | "label"> {
-  "default-icon"?: JSX.Element
-  "loading-icon"?: JSX.Element
-}
+type PresetButtonProps = Pick<Preset, "id" | "isSweep" | "label">
 
 export const PresetButton: Component<PresetButtonProps> = props => {
   const {
@@ -15,7 +14,7 @@ export const PresetButton: Component<PresetButtonProps> = props => {
     pedalsOn,
     setPedalsOn,
     isLoading,
-  } = demoState
+  } = useDemoState()
   let buttonEl!: HTMLButtonElement
 
   onMount(() => {
@@ -60,8 +59,8 @@ export const PresetButton: Component<PresetButtonProps> = props => {
       }}
     >
       <span>{props.label}</span>
-      <Show when={isLoadingAndActive()} fallback={props["default-icon"]}>
-        {props["loading-icon"]}
+      <Show when={isLoadingAndActive()} fallback={<PhFadersIcon />}>
+        <PhSpinnerIcon />
       </Show>
     </button>
   )

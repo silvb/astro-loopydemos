@@ -1,4 +1,4 @@
-import { demoState } from "@components/demo-widget/demo-state-store"
+import { useDemoState } from "@components/demo-widget/demo-state-store"
 import { type Component } from "solid-js"
 import styles from "./line-label.module.css"
 import type { LineLabel as LineLabelType } from "@types"
@@ -8,7 +8,7 @@ interface LineLabelProps extends LineLabelType {
 }
 
 export const LineLabel: Component<LineLabelProps> = props => {
-  const { getSetting, activePreset } = demoState
+  const { getSetting, activePreset } = useDemoState()
 
   const setting = () =>
     getSetting(props.pedalSlug, props.id, props.dependency) as string

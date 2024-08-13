@@ -1,14 +1,10 @@
-import type { JSX } from "astro/jsx-runtime"
 import { onCleanup, onMount, Show, type Component } from "solid-js"
-import { demoState } from "../demo-state-store"
+import { useDemoState } from "../demo-state-store"
+import { PhSpinnerIcon } from "../icons/ph-spinner-icon"
+import { PhPlayIcon } from "../icons/ph-play-icon"
+import { PhPauseIcon } from "../icons/ph-pause-icon"
 
-interface PlayButtonProps {
-  "play-icon"?: JSX.Element
-  "pause-icon"?: JSX.Element
-  "loading-icon"?: JSX.Element
-}
-
-export const PlayButton: Component<PlayButtonProps> = props => {
+export const PlayButton: Component = props => {
   const {
     isPlaying,
     setIsPlaying,
@@ -17,7 +13,7 @@ export const PlayButton: Component<PlayButtonProps> = props => {
     selectNextPreset,
     isBackingTrackMuted,
     setIsBackingTrackMuted,
-  } = demoState
+  } = useDemoState()
 
   const handleShortcut = (e: KeyboardEvent) => {
     if (e.code === "Space") {
@@ -54,15 +50,11 @@ export const PlayButton: Component<PlayButtonProps> = props => {
       tabIndex={1}
       onClick={() => setIsPlaying(!isPlaying())}
       class="h-full basis-12 text-[3rem] text-loopydemos-highlight-tertiary-themed"
-      classList={{
-        "bg-loopydemos-highlight-primary-themed": !isPlaying(),
-        "bg-loopydemos-highlight-secondary-themed": isPlaying(),
-      }}
     >
       <span class="sr-only">Start to play audio of demo track</span>
-      <Show when={!isLoading()} fallback={props["loading-icon"]}>
-        <Show when={isPlaying()} fallback={props["play-icon"]}>
-          {props["pause-icon"]}
+      <Show when={!isLoading()} fallback={<PhSpinnerIcon />}>
+        <Show when={isPlaying()} fallback={<PhPlayIcon />}>
+          <PhPauseIcon />
         </Show>
       </Show>
     </button>

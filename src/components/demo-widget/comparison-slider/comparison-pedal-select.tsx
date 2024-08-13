@@ -1,5 +1,5 @@
 import { type ParentComponent } from "solid-js"
-import { demoState } from "../demo-state-store"
+import { useDemoState } from "../demo-state-store"
 
 interface ComparisonPedalSelectProps {
   pedalSlug: string
@@ -8,7 +8,7 @@ interface ComparisonPedalSelectProps {
 export const ComparisonPedalSelect: ParentComponent<
   ComparisonPedalSelectProps
 > = props => {
-  const { activePedals, setActivePedals } = demoState
+  const { activePedals, setActivePedals } = useDemoState()
 
   return (
     <button

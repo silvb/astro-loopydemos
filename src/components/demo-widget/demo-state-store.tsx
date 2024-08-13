@@ -1,6 +1,25 @@
 import type { ControlElement, Preset, SettingsValue } from "@types"
-import { createSignal, createMemo, createRoot, createEffect } from "solid-js"
+import {
+  createSignal,
+  createMemo,
+  createEffect,
+  createContext,
+  type ParentComponent,
+  useContext,
+} from "solid-js"
 import { debounce } from "radash"
+
+const DemoStateContext = createContext()
+
+export const useDemoState = () => {
+  const context = useContext(DemoStateContext)
+
+  if (!context) {
+    throw new Error("useDemoState must be used within a DemoStateProvider")
+  }
+
+  return context
+}
 
 const findClosestValue = (value: number, valueArray: number[]) =>
   valueArray.reduce((acc, curr) => {
@@ -10,16 +29,23 @@ const findClosestValue = (value: number, valueArray: number[]) =>
     return lastDistance <= currDistance ? acc : curr
   }, valueArray[0])
 
-function createDemoState() {
-  const [mainPedal, setMainPedal] = createSignal<string>("")
+interface DemoStateProviderProps {
+  presets: Preset[]
+  pedals: string[]
+}
+
+export const DemoStateProvider: ParentComponent<
+  DemoStateProviderProps
+> = props => {
+  const [mainPedal, setMainPedal] = createSignal<string>(props.pedals[0])
   const [activePresetId, selectPreset] = createSignal<string | undefined>(
     undefined
   )
-  const [presets, setPresets] = createSignal<Preset[]>([])
+  const [presets, setPresets] = createSignal<Preset[]>(props.presets)
   const [sweepSetting, setSweepSetting] = createSignal<Record<string, number>>(
     {}
   )
-  const [pedalsOn, setPedalsOn] = createSignal<string[]>([])
+  const [pedalsOn, setPedalsOn] = createSignal<string[]>(props.pedals)
   const [secondaryCircuitsOn, setSecondaryCircuitsOn] = createSignal<string[]>(
     []
   )
@@ -167,34 +193,38 @@ function createDemoState() {
     }
   })
 
-  return {
-    activePedals,
-    activePreset,
-    activePresetId,
-    pedalsOn,
-    selectPreset,
-    selectSweepSetting,
-    setPedalsOn,
-    setPresets,
-    sweepSetting,
-    toggleBypass,
-    setMainPedal,
-    secondaryCircuitsOn,
-    toggleSecondaryCircuit,
-    getSetting,
-    setActivePedals,
-    isPlaying,
-    setIsPlaying,
-    isBackingTrackMuted,
-    setIsBackingTrackMuted,
-    isLoading,
-    widthTab,
-    setWidthTab,
-    setIsLoading: setIsLoadingDebounced,
-    isSweepTarget,
-    selectNextPreset,
-    selectPreviousPreset,
-  }
+  return (
+    <DemoStateContext.Provider
+      value={{
+        activePedals,
+        activePreset,
+        activePresetId,
+        pedalsOn,
+        selectPreset,
+        selectSweepSetting,
+        setPedalsOn,
+        setPresets,
+        sweepSetting,
+        toggleBypass,
+        setMainPedal,
+        secondaryCircuitsOn,
+        toggleSecondaryCircuit,
+        getSetting,
+        setActivePedals,
+        isPlaying,
+        setIsPlaying,
+        isBackingTrackMuted,
+        setIsBackingTrackMuted,
+        isLoading,
+        widthTab,
+        setWidthTab,
+        setIsLoading: setIsLoadingDebounced,
+        isSweepTarget,
+        selectNextPreset,
+        selectPreviousPreset,
+      }}
+    >
+      {props.children}
+    </DemoStateContext.Provider>
+  )
 }
-
-export const demoState = createRoot(createDemoState)

@@ -1,4 +1,4 @@
-import { demoState } from "@components/demo-widget/demo-state-store"
+import { useDemoState } from "@components/demo-widget/demo-state-store"
 import type { Led as LedType } from "@types"
 import {
   type Component,
@@ -24,7 +24,8 @@ interface LedProps extends LedType {
 }
 
 export const Led: Component<LedProps> = props => {
-  const { pedalsOn, getSetting, secondaryCircuitsOn, activePedals } = demoState
+  const { pedalsOn, getSetting, secondaryCircuitsOn, activePedals } =
+    useDemoState()
 
   const isMood = props.type === "mood"
 

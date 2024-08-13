@@ -1,4 +1,4 @@
-import { demoState } from "@components/demo-widget/demo-state-store"
+import { useDemoState } from "@components/demo-widget/demo-state-store"
 import type { Knob } from "@types"
 import { type Component } from "solid-js"
 
@@ -8,7 +8,7 @@ const VIEWBOX_CENTER = VIEWBOX_SIZE / 2
 const STICK_RANGE = 328 - STICK_RADIUS
 
 export const Joystick: Component<Pick<Knob, "id" | "size">> = props => {
-  const { activePreset } = demoState
+  const { activePreset } = useDemoState()
 
   const stickCoords = () => {
     const radialCoords = activePreset()?.settings?.[props.id] as {

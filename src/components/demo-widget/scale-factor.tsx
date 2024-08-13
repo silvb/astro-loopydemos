@@ -5,12 +5,12 @@ import {
   onMount,
   type ParentComponent,
 } from "solid-js"
-import { demoState } from "./demo-state-store"
+import { useDemoState } from "./demo-state-store"
 import resolveConfig from "tailwindcss/resolveConfig"
 import tailwindConfig from "tailwind.config.mjs"
 
 export const ScaleFactor: ParentComponent = props => {
-  const { activePedals, widthTab } = demoState
+  const { activePedals, widthTab } = useDemoState()
   const [containerWidth, setContainerWidth] = createSignal(window.innerWidth)
   const [scale, setScale] = createSignal(1)
   const [isMobile, setIsMobile] = createSignal(true)

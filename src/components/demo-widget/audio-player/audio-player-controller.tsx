@@ -1,5 +1,5 @@
 import { createEffect, type Component } from "solid-js"
-import { demoState } from "../demo-state-store"
+import { useDemoState } from "../demo-state-store"
 import {
   fetchAudioBuffer,
   getAudioPresetId,
@@ -29,7 +29,7 @@ export const AudioPlayerController: Component<
     pedalsOn,
     activePedals,
     secondaryCircuitsOn,
-  } = demoState
+  } = useDemoState()
   let audioContext: AudioContext | null = null
   let currentPlayingAudioSource: AudioBufferSourceNode | null = null
   const currentBuffer: CurrentBuffer = {

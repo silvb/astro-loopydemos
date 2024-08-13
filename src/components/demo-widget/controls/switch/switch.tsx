@@ -1,7 +1,7 @@
 import type { CBASwitchSate, SwitchState, Switch as SwitchType } from "@types"
 import { ToggleSwitch } from "./toggle-switch"
 import { Match, Switch as RenderSwitch, Show, type Component } from "solid-js"
-import { demoState } from "@components/demo-widget/demo-state-store"
+import { useDemoState } from "@components/demo-widget/demo-state-store"
 import { ThreewaySwitch } from "./threeway-switch"
 import { RockerSwitch } from "./rocker-switch"
 import { PushButton } from "./push-button"
@@ -25,7 +25,7 @@ export const Switch: Component<SwitchProps> = props => {
     activePedals,
     isSweepTarget,
     selectSweepSetting,
-  } = demoState
+  } = useDemoState()
 
   const state = () =>
     (getSetting(props.pedalSlug, props.id) ?? 1) as SwitchState

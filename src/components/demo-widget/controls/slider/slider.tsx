@@ -1,4 +1,4 @@
-import { demoState } from "@components/demo-widget/demo-state-store"
+import { useDemoState } from "@components/demo-widget/demo-state-store"
 import { throttle } from "radash"
 import { type Component, type JSX } from "solid-js"
 import { FaderFace } from "./fader-face"
@@ -9,7 +9,7 @@ interface SliderProps extends SliderType {
 }
 
 export const Slider: Component<SliderProps> = props => {
-  const { selectSweepSetting, getSetting, isSweepTarget } = demoState
+  const { selectSweepSetting, getSetting, isSweepTarget } = useDemoState()
 
   let faderElement!: HTMLDivElement
 

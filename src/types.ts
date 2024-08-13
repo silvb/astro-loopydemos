@@ -39,3 +39,11 @@ export type PostType = z.infer<typeof postTypeEnum>
 export type LineLabel = z.infer<typeof labelSchema>
 
 export type Slider = z.infer<typeof sliderSchema>
+
+export type StaticPedalData = {
+  slug: string
+  imgSrc: string
+  width: number
+  height: number
+  controls: CollectionEntry<"pedals">["data"]["controls"]
+}

@@ -1,20 +1,15 @@
 ---
 import { getEntry, type CollectionEntry } from "astro:content"
 
-import { AudioPlayer } from "./audio-player"
-import { Pedal } from "./pedal"
-import { PresetsSlider } from "./presets-slider"
-
-import { DemoStateInitializer } from "./demo-state-initializer"
-import { ComparisonSlider } from "./comparison-slider"
 import { getPedalsFromPresets } from "@utils/get-pedals-from-presets"
-import { ScaleFactor } from "./scale-factor"
 import {
   LANDSCAPE_DEFAULT_ENCLOSURE,
   POTRAIT_DEFAULT_ENCLOSURE,
 } from "@constants/sizes"
 import { getImage } from "astro:assets"
 import { getImageSrcFromSlug } from "@utils/get-image-src-from-slug"
+import type { StaticPedalData } from "@types"
+import { DemoWidgetContainer } from "./demo-widget-container"
 
 interface Props {
   presetSlug: string
@@ -38,14 +33,6 @@ if (pedals.includes(presetSlug)) {
 if (pedals.length === 0) pedals = [mainPedal || presetSlug]
 
 const isComparison = presets.some(({ comparison }) => Boolean(comparison))
-
-type StaticPedalData = {
-  slug: string
-  imgSrc: string
-  width: number
-  height: number
-  controls: CollectionEntry<"pedals">["data"]["controls"]
-}
 
 let staticPedalData: StaticPedalData[] = []
 
@@ -87,41 +74,13 @@ for (const pedalSlug of pedals) {
 const maxHeight = Math.max(...staticPedalData.map(({ height }) => height))
 ---
 
-<DemoStateInitializer client:idle {presets} {pedals} />
-<div class="flex flex-col gap-4">
-  <AudioPlayer
-    client:only="solid-js"
-    slug={presetSlug}
-    {hasBackingTrack}
-    {volume}
-  />
-  {
-    isComparison && (
-      <ComparisonSlider
-        client:load
-        pedals={staticPedalData.map(({ slug, imgSrc }) => ({ slug, imgSrc }))}
-      />
-    )
-  }
-  <PresetsSlider client:load {presets} />
-</div>
-<ScaleFactor client:only="solid-js">
-  <div class="height-limit mb-24 mt-8 flex items-start justify-center">
-    {staticPedalData.map(pedalData => <Pedal {...pedalData} client:load />)}
-  </div>
-</ScaleFactor>
-
-<style
-  define:vars={{
-    maxHeight: `${maxHeight}px`,
-  }}
->
-  .height-limit {
-    height: calc(var(--maxHeight) * 0.75);
-    @media (min-width: theme(screens.sm)) {
-      & {
-        height: var(--maxHeight);
-      }
-    }
-  }
-</style>
+<DemoWidgetContainer
+  client:only="solid-js"
+  {presets}
+  {staticPedalData}
+  {isComparison}
+  {presetSlug}
+  {volume}
+  {hasBackingTrack}
+  {maxHeight}
+/>

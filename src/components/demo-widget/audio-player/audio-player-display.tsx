@@ -1,6 +1,6 @@
 import { Show, type Component } from "solid-js"
 import { getDisplayText } from "./get-display-text"
-import { demoState } from "../demo-state-store"
+import { useDemoState } from "../demo-state-store"
 import type { JSX } from "astro/jsx-runtime"
 import { AudioPlayerVisualizer } from "./audio-player-visualizer"
 
@@ -9,7 +9,7 @@ interface AudioPlayerDisplayProps {
 }
 
 export const AudioPlayerDisplay: Component<AudioPlayerDisplayProps> = props => {
-  const { isPlaying, pedalsOn, activePedals, isLoading } = demoState
+  const { isPlaying, pedalsOn, activePedals, isLoading } = useDemoState()
 
   const isAnyPedalOn = () =>
     activePedals().some(pedal => pedalsOn().includes(pedal))

@@ -1,7 +1,7 @@
 // import { Icon } from "astro-icon/components"
 import { PresetButton } from "./preset-button"
 import type { Preset } from "@types"
-import type { Component } from "solid-js"
+import { type Component } from "solid-js"
 
 interface PresetsSliderProps {
   presets: Preset[]
@@ -17,14 +17,6 @@ export const PresetsSlider: Component<PresetsSliderProps> = props => (
             isSweep={chain?.some(p => p.isSweep) || isSweep}
             label={label}
           />
-          {/* <Icon {id} name="ph:faders-bold" slot="default-icon" />
-            <Icon
-              {id}
-              name="ph:spinner-bold"
-              class="animate-spin-slow"
-              slot="loading-icon"
-            />
-          </PresetButton> */}
         </li>
       ))}
     </ul>

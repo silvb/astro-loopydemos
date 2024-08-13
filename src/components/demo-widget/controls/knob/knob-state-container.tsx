@@ -1,4 +1,4 @@
-import { demoState } from "@components/demo-widget/demo-state-store"
+import { useDemoState } from "@components/demo-widget/demo-state-store"
 import { Show, type ParentComponent, type JSXElement } from "solid-js"
 import { DragSweepControl } from "./drag-sweep-control"
 import { SweepIndicator } from "../sweep-indicator"
@@ -16,7 +16,7 @@ interface KnobStateContainerProps {
 export const KnobStateContainer: ParentComponent<
   KnobStateContainerProps
 > = props => {
-  const { getSetting, activePedals, isSweepTarget } = demoState
+  const { getSetting, activePedals, isSweepTarget } = useDemoState()
 
   const level = () => (getSetting(props.pedalSlug, props.id) as number) ?? 5
 

@@ -1,4 +1,4 @@
-import { demoState } from "@components/demo-widget/demo-state-store"
+import { useDemoState } from "@components/demo-widget/demo-state-store"
 import { type ParentComponent, createEffect, createSignal } from "solid-js"
 import { throttle } from "radash"
 
@@ -16,7 +16,7 @@ const getNextLevel = (startLevel: number, startY: number, clientY: number) => {
 export const DragSweepControl: ParentComponent<
   DragSweepControlProps
 > = props => {
-  const { activePreset, sweepSetting, selectSweepSetting } = demoState
+  const { activePreset, sweepSetting, selectSweepSetting } = useDemoState()
   const [level, setLevel] = createSignal(
     (sweepSetting()[props.id] ||
       activePreset()?.initialValue ||
