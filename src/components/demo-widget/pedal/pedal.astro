@@ -6,16 +6,16 @@ import {
   POTRAIT_DEFAULT_ENCLOSURE,
   LANDSCAPE_DEFAULT_ENCLOSURE,
 } from "@constants/sizes"
-import Knob from "@components/knob"
-import AbsolutePosition from "@components/absolute-position.astro"
-import { Switch } from "@components/switch"
-import { Led } from "@components/led"
+import Knob from "@components/demo-widget/knob"
+import AbsolutePosition from "@components/demo-widget/pedal/absolute-position.astro"
+import { Switch } from "@components/demo-widget/switch"
+import { Led } from "@components/demo-widget/led"
 import { PedalStateContainer } from "./pedal-state-container"
 import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
-import SweepIndicator from "@components/sweep-indicator.astro"
-import LineLabel from "@components/line-label"
-import Slider from "@components/slider"
-import MomentaryIndicator from "@components/momentary-indicator.astro"
+import SweepIndicator from "@components/demo-widget/sweep-indicator.astro"
+import LineLabel from "@components/demo-widget/line-label"
+import Slider from "@components/demo-widget/slider"
+import MomentaryIndicator from "@components/demo-widget/momentary-indicator.astro"
 
 interface Props {
   slug: string

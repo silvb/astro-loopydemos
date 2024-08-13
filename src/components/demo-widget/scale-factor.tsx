@@ -15,11 +15,10 @@ export const ScaleFactor: ParentComponent = props => {
   const [scale, setScale] = createSignal(1)
   const [isMobile, setIsMobile] = createSignal(true)
   const breakpoint = resolveConfig(tailwindConfig).theme.screens.sm
+  let containerElement!: HTMLDivElement
 
   const handleResize = () => {
-    setContainerWidth(
-      document.getElementById("scale-container")?.offsetWidth ?? 0
-    )
+    setContainerWidth(containerElement.offsetWidth ?? 0)
     setIsMobile(window.matchMedia(`(max-width: ${breakpoint})`).matches)
   }
 
@@ -46,7 +45,7 @@ export const ScaleFactor: ParentComponent = props => {
   })
 
   return (
-    <div id="scale-container" style={{ transform: `scale(${scale()})` }}>
+    <div ref={containerElement} style={{ transform: `scale(${scale()})` }}>
       {props.children}
     </div>
   )

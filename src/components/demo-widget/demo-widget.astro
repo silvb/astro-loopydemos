@@ -57,7 +57,7 @@ for (const pedalSlug of pedals) {
 const maxHeight = Math.max(...heights)
 ---
 
-<DemoStateInitializer client:load {presets} {pedals} />
+<DemoStateInitializer client:idle {presets} {pedals} />
 <div class="flex flex-col gap-4">
   <AudioPlayer slug={presetSlug} {hasBackingTrack} {volume} />
   <PresetsSlider {presets} />
