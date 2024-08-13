@@ -1,5 +1,5 @@
 import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
-import { ComparisonPedalSelect } from "./comparison-pedal-select"
+import { ComparisonPedalSelect } from "../comparison-slider/comparison-pedal-select"
 import type { Component } from "solid-js"
 
 type PedalData = {

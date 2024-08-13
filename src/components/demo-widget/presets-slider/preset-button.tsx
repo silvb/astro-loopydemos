@@ -1,6 +1,6 @@
 import type { Preset } from "@types"
 import { onMount, Show, type Component, type JSX } from "solid-js"
-import { demoState } from "./demo-state-store"
+import { demoState } from "../demo-state-store"
 
 interface PresetButtonProps extends Pick<Preset, "id" | "isSweep" | "label"> {
   "default-icon"?: JSX.Element

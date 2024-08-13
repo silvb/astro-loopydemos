@@ -1,12 +1,12 @@
 import { type CollectionEntry } from "astro:content"
-import { Knob } from "@components/demo-widget/knob"
+import { Knob } from "@components/demo-widget/controls/knob"
 import { AbsolutePosition } from "@components/demo-widget/pedal/absolute-position"
-import { Switch } from "@components/demo-widget/switch"
-import { Led } from "@components/demo-widget/led"
+import { Switch } from "@components/demo-widget/controls/switch"
+import { Led } from "@components/demo-widget/controls/led"
 import { PedalStateContainer } from "./pedal-state-container"
 import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
-import { LineLabel } from "@components/demo-widget/line-label"
-import { Slider } from "@components/demo-widget/slider"
+import { LineLabel } from "@components/demo-widget/controls/line-label"
+import { Slider } from "@components/demo-widget/controls/slider"
 import type { Component } from "solid-js"
 
 interface PedalProps {
