@@ -1,7 +1,13 @@
 import { demoState } from "@components/demo-widget/demo-state-store"
 import type { Led as LedType } from "@types"
-import { cva } from "class-variance-authority"
-import { type Component, Switch, Match, Show, mergeProps } from "solid-js"
+import {
+  type Component,
+  Switch,
+  Match,
+  Show,
+  mergeProps,
+  createEffect,
+} from "solid-js"
 
 const MOOD_COLORS = {
   on: "greenyellow",
@@ -16,13 +22,6 @@ const DEFAULT_COLORS = {
 interface LedProps extends LedType {
   pedalSlug: string
 }
-
-const containerClass = cva("", {
-  variants: {
-    isBlinking: { true: "blinking-led", false: "" },
-    isMood: { true: "mood-blink", false: "" },
-  },
-})
 
 export const Led: Component<LedProps> = props => {
   const { pedalsOn, getSetting, secondaryCircuitsOn, activePedals } = demoState
@@ -62,13 +61,19 @@ export const Led: Component<LedProps> = props => {
   const uniqueOnLedId =
     props.id === "on_led" ? `${props.id}-${props.pedalSlug}` : props.id
 
+  createEffect(() => {
+    if (props.id === "microloop_led") {
+      console.log({ props, isOn: isOn(), isMood })
+    }
+  })
+
   return (
     <Show when={activePedals().includes(props.pedalSlug)}>
       <div
-        class={containerClass({
-          isBlinking: Boolean(props.isBlinking && isOn()),
-          isMood: isMood,
-        })}
+        classList={{
+          "blinking-led": props.isBlinking && (isMood ? !isOn() : isOn()),
+          "mood-blink": isMood,
+        }}
         style={{
           "--blinkTime": `${blinkTime() ?? 0}ms`,
           "--blinkOffset": `${props.blinkOffset ?? 0}ms`,

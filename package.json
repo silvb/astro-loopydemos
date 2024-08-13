@@ -23,7 +23,6 @@
     "@vercel/speed-insights": "^1.0.12",
     "astro": "^4.11.3",
     "astro-icon": "^1.1.0",
-    "class-variance-authority": "^0.7.0",
     "radash": "^12.1.0",
     "rehype-external-links": "^3.0.0",
     "solid-js": "^1.8.18",

@@ -1,5 +1,4 @@
 import { demoState } from "@components/demo-widget/demo-state-store"
-import { cva } from "class-variance-authority"
 import { Show, type ParentComponent, type JSXElement } from "solid-js"
 import { DragSweepControl } from "./drag-sweep-control"
 
@@ -12,15 +11,6 @@ interface KnobStateContainerProps {
   pedalSlug: string
 }
 
-const containerClass = cva("relative origin-center", {
-  variants: {
-    transition: {
-      true: "transition-transform ease-in duration-200",
-      false: "transition-none",
-    },
-  },
-})
-
 export const KnobStateContainer: ParentComponent<
   KnobStateContainerProps
 > = props => {
@@ -31,9 +21,11 @@ export const KnobStateContainer: ParentComponent<
   return (
     <Show when={activePedals().includes(props.pedalSlug)}>
       <div
-        class={containerClass({
-          transition: !Boolean(props.isRotary),
-        })}
+        class="relative origin-center"
+        classList={{
+          "transition-transform ease-in duration-200": !props.isRotary,
+          "transition-none": props.isRotary,
+        }}
         style={{
           transform: `rotate(${props.isRotary ? props.rotaryAngles?.[level() - 1] : 30 * level() - 150}deg)`,
         }}

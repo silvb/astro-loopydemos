@@ -1,19 +1,9 @@
-import { cva } from "class-variance-authority"
 import { type ParentComponent } from "solid-js"
 import { demoState } from "./demo-state-store"
 
 interface ComparisonPedalSelectProps {
   pedalSlug: string
 }
-
-const buttonClass = cva("h-full w-full flex items-center justify-center", {
-  variants: {
-    active: {
-      true: "bg-loopydemos-secondary border-[1px] rounded-md border-loopydemos-highlight-primary",
-      false: "bg-loopydemos-secondary opacity-30",
-    },
-  },
-})
 
 export const ComparisonPedalSelect: ParentComponent<
   ComparisonPedalSelectProps
@@ -25,7 +15,14 @@ export const ComparisonPedalSelect: ParentComponent<
       onClick={() => {
         setActivePedals([props.pedalSlug])
       }}
-      class={buttonClass({ active: activePedals().includes(props.pedalSlug) })}
+      class="flex h-full w-full items-center justify-center"
+      classList={{
+        "bg-loopydemos-secondary border-[1px] rounded-md border-loopydemos-highlight-primary":
+          activePedals().includes(props.pedalSlug),
+        "bg-loopydemos-secondary opacity-30": !activePedals().includes(
+          props.pedalSlug
+        ),
+      }}
     >
       {props.children}
     </button>

@@ -1,0 +1,21 @@
+@tailwind components;
+
+.sweep-indicator {
+  @apply absolute left-0 top-0 box-border rounded-full border-dashed content-none;
+  border-width: calc(var(--size) / 12);
+  width: var(--size);
+  height: var(--size);
+  z-index: -1;
+  transform: scale(calc(1.2 * var(--scaleX)), calc(1.2 * var(--scaleY)));
+  animation: 30s linear infinite spinKeepScale;
+}
+
+@keyframes spinKeepScale {
+  0% {
+    transform: scale(calc(1.2 * var(--scaleX)), calc(1.2 * var(--scaleY)));
+  }
+  100% {
+    transform: scale(calc(1.2 * var(--scaleX)), calc(1.2 * var(--scaleY)))
+      rotate(360deg);
+  }
+}

@@ -12,7 +12,7 @@ import { Switch } from "@components/demo-widget/switch"
 import { Led } from "@components/demo-widget/led"
 import { PedalStateContainer } from "./pedal-state-container"
 import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
-import SweepIndicator from "@components/demo-widget/sweep-indicator.astro"
+import { SweepIndicator } from "@components/demo-widget/sweep-indicator"
 import LineLabel from "@components/demo-widget/line-label"
 import Slider from "@components/demo-widget/slider"
 import MomentaryIndicator from "@components/demo-widget/momentary-indicator.astro"
@@ -67,6 +67,7 @@ const enclosureHeight =
           <AbsolutePosition id={switchEl.id} {...switchEl.position}>
             <Switch client:load {...switchEl} pedalSlug={slug}>
               <SweepIndicator
+                client:load
                 size={switchEl.size}
                 color={switchEl.highlightColor}
                 slot="sweep-indicator"

@@ -1,23 +1,6 @@
 import type { Preset } from "@types"
 import { onMount, Show, type Component, type JSX } from "solid-js"
-import { cva } from "class-variance-authority"
 import { demoState } from "./demo-state-store"
-
-const buttonClass = cva(
-  "flex h-full items-center gap-1 rounded-md px-2 font-black text-loopydemos-background",
-  {
-    variants: {
-      isSweep: {
-        true: "bg-loopydemos-highlight-secondary-themed",
-        false: "bg-loopydemos-highlight-primary-themed",
-      },
-      isActive: {
-        true: "opacity-100",
-        false: "opacity-40",
-      },
-    },
-  }
-)
 
 interface PresetButtonProps extends Pick<Preset, "id" | "isSweep" | "label"> {
   "default-icon"?: JSX.Element
@@ -50,6 +33,9 @@ export const PresetButton: Component<PresetButtonProps> = props => {
   })
 
   const isLoadingAndActive = () => isLoading() && activePresetId() === props.id
+  const isActive = () =>
+    activePresetId() === props.id &&
+    activePedals().some(activePedal => pedalsOn().includes(activePedal))
 
   return (
     <button
@@ -65,12 +51,13 @@ export const PresetButton: Component<PresetButtonProps> = props => {
 
         setPedalsOn(activePedals())
       }}
-      class={buttonClass({
-        isSweep: Boolean(props.isSweep),
-        isActive:
-          activePresetId() === props.id &&
-          activePedals().some(activePedal => pedalsOn().includes(activePedal)),
-      })}
+      class="flex h-full items-center gap-1 rounded-md px-2 font-black text-loopydemos-background"
+      classList={{
+        "bg-loopydemos-highlight-secondary-themed": props.isSweep,
+        "bg-loopydemos-highlight-primary-themed": !props.isSweep,
+        "opacity-100": isActive(),
+        "opacity-40": !isActive(),
+      }}
     >
       <span>{props.label}</span>
       <Show when={isLoadingAndActive()} fallback={props["default-icon"]}>
