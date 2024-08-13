@@ -1,1 +1,1 @@
-export { default } from "./audio-player.astro"
+export { AudioPlayer } from "./audio-player"

@@ -1,1 +1,1 @@
-export { default } from "./slider.astro"
+export { Slider } from "./slider"

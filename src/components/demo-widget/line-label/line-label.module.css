@@ -1,0 +1,32 @@
+@tailwind components;
+
+.line-label-container {
+  transform: translate(var(--translateX), var(--translateY));
+  z-index: 30;
+  pointer-events: none;
+
+  transform: translateY(-100%);
+
+  .top-down {
+    transform: translateY(0);
+  }
+}
+
+.line-label {
+  position: absolute;
+  padding: 0 0.5rem;
+  transform: translate(-100%, -50%);
+  text-align: right;
+  hyphens: auto;
+  min-width: 5rem;
+  text-shadow: 1px 1px 0px rgba(0, 0, 0, 0.7);
+
+  &.long-width {
+    min-width: 10rem;
+  }
+
+  &.right-aligned {
+    transform: translate(0, -50%);
+    text-align: left;
+  }
+}

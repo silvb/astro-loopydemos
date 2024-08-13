@@ -1,0 +1,16 @@
+@tailwind components;
+
+.animate-warp {
+  animation: warp var(--duration) ease-out infinite alternate;
+  animation-delay: var(--delay);
+  transform: scaleY(0.4);
+}
+
+@keyframes warp {
+  0% {
+    transform: scaleY(0.4);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}

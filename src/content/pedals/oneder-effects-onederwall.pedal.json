@@ -74,7 +74,7 @@
       {
         "id": "on_led",
         "size": 44,
-        "position": { "left": 194, "top": 199 },
+        "position": { "left": 195, "top": 203 },
         "colors": { "on": "#d000f5" }
       },
       {

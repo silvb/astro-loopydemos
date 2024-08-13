@@ -1,22 +1,14 @@
 import { demoState } from "@components/demo-widget/demo-state-store"
 import { throttle } from "radash"
 import { type Component, type JSX } from "solid-js"
+import { FaderFace } from "./fader-face"
 
-interface SliderStateProps {
-  id: string
+import type { Slider as SliderType } from "@types"
+interface SliderProps extends SliderType {
   pedalSlug: string
-  size: {
-    width: number
-    height: number
-    innerWidth: number
-    innerHeight: number
-  }
-  color: string
-  tilt?: number
-  "fader-face"?: JSX.Element
 }
 
-export const SliderState: Component<SliderStateProps> = props => {
+export const Slider: Component<SliderProps> = props => {
   const { selectSweepSetting, getSetting, isSweepTarget } = demoState
 
   let faderElement!: HTMLDivElement
@@ -77,7 +69,7 @@ export const SliderState: Component<SliderStateProps> = props => {
       style={{
         width: `${props.size.width}px`,
         height: `${props.size.height}px`,
-        "background-color": props.color,
+        "background-color": props.colors?.enclosure ?? "#333",
         transform: `rotate(${props.tilt}deg)`,
       }}
       onMouseDown={startDrag}
@@ -103,7 +95,12 @@ export const SliderState: Component<SliderStateProps> = props => {
           }}
           class="absolute top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center transition-[left]"
         >
-          {props["fader-face"]}
+          <FaderFace
+            type={props.faderType}
+            size={props.size.height}
+            tickColor={props.colors?.tick}
+            faceColor={props.colors?.face}
+          />
         </div>
       </div>
     </div>

@@ -54,6 +54,10 @@ export const PlayButton: Component<PlayButtonProps> = props => {
       tabIndex={1}
       onClick={() => setIsPlaying(!isPlaying())}
       class="h-full basis-12 text-[3rem] text-loopydemos-highlight-tertiary-themed"
+      classList={{
+        "bg-loopydemos-highlight-primary-themed": !isPlaying(),
+        "bg-loopydemos-highlight-secondary-themed": isPlaying(),
+      }}
     >
       <span class="sr-only">Start to play audio of demo track</span>
       <Show when={!isLoading()} fallback={props["loading-icon"]}>

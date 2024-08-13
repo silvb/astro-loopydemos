@@ -1,1 +1,1 @@
-export { default } from "./pedal.astro"
+export { Pedal } from "./pedal"

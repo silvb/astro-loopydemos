@@ -1,1 +1,1 @@
-export { default } from "./knob.astro"
+export { Knob } from "./knob"

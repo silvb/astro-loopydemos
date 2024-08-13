@@ -1,11 +1,13 @@
 import { demoState } from "@components/demo-widget/demo-state-store"
 import { Show, type ParentComponent, type JSXElement } from "solid-js"
 import { DragSweepControl } from "./drag-sweep-control"
+import { SweepIndicator } from "../sweep-indicator"
 
 interface KnobStateContainerProps {
   id: string
   isRotary?: boolean
   size: number
+  highlightColor?: "primary" | "secondary" | "tertiary"
   rotaryAngles?: number[]
   "sweep-indicator"?: JSXElement
   pedalSlug: string
@@ -35,7 +37,7 @@ export const KnobStateContainer: ParentComponent<
           fallback={props.children}
         >
           <DragSweepControl id={props.id}>
-            {props["sweep-indicator"]}
+            <SweepIndicator color={props.highlightColor} size={props.size} />
             {props.children}
           </DragSweepControl>
         </Show>

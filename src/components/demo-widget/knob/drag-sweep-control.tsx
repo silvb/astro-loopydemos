@@ -7,7 +7,7 @@ interface DragSweepControlProps {
 }
 
 const getNextLevel = (startLevel: number, startY: number, clientY: number) => {
-  let nextLevel = startLevel + (startY - clientY) / 12
+  let nextLevel = startLevel + (startY - clientY) / 6
   nextLevel = Math.min(10, nextLevel)
   nextLevel = Math.max(0, nextLevel)
   return nextLevel

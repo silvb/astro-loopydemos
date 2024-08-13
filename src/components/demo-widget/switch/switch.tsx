@@ -1,12 +1,6 @@
 import type { CBASwitchSate, SwitchState, Switch as SwitchType } from "@types"
 import { ToggleSwitch } from "./toggle-switch"
-import {
-  Match,
-  Switch as RenderSwitch,
-  Show,
-  type Component,
-  type JSXElement,
-} from "solid-js"
+import { Match, Switch as RenderSwitch, Show, type Component } from "solid-js"
 import { demoState } from "@components/demo-widget/demo-state-store"
 import { ThreewaySwitch } from "./threeway-switch"
 import { RockerSwitch } from "./rocker-switch"
@@ -14,11 +8,11 @@ import { PushButton } from "./push-button"
 import { SlideSwitch } from "./slide-switch"
 import { CBADipSwitches } from "./cba-dip-switches"
 import { StompSwitch } from "./stomp-switch"
+import { SweepIndicator } from "../sweep-indicator"
+import { MomentaryIndicator } from "../momentary-indicator"
 
 interface SwitchProps extends SwitchType {
   pedalSlug: string
-  "sweep-indicator"?: JSXElement
-  "momentary-indicator"?: JSXElement
 }
 
 export const Switch: Component<SwitchProps> = props => {
@@ -39,7 +33,7 @@ export const Switch: Component<SwitchProps> = props => {
   return (
     <Show when={activePedals().includes(props.pedalSlug)}>
       <Show when={isSweepTarget(props.id, props.pedalSlug)}>
-        {props["sweep-indicator"]}
+        <SweepIndicator size={props.size} color={props.highlightColor} />
         <button
           class="absolute left-0 top-0 z-10 h-full w-full"
           style={{ width: `${props.size}px`, height: `${props.size}px` }}
@@ -135,7 +129,7 @@ export const Switch: Component<SwitchProps> = props => {
                 !secondaryCircuitsOn().includes(props.secondaryCircuitId)
               }
             >
-              {props["sweep-indicator"]}
+              <SweepIndicator size={props.size} color={props.highlightColor} />
             </Show>
             <Show
               when={
@@ -144,7 +138,7 @@ export const Switch: Component<SwitchProps> = props => {
                 secondaryCircuitsOn().includes(props.secondaryCircuitId)
               }
             >
-              {props["momentary-indicator"]}
+              <MomentaryIndicator size={props.size} />
             </Show>
           </Show>
         </Match>

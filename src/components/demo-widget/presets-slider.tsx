@@ -1,0 +1,32 @@
+// import { Icon } from "astro-icon/components"
+import { PresetButton } from "./preset-button"
+import type { Preset } from "@types"
+import type { Component } from "solid-js"
+
+interface PresetsSliderProps {
+  presets: Preset[]
+}
+
+export const PresetsSlider: Component<PresetsSliderProps> = props => (
+  <div class="custom-scrollbar">
+    <ul class="flex h-10 list-none gap-1">
+      {props.presets.map(({ id, isSweep, label, chain }) => (
+        <li class="h-full flex-shrink-0 flex-grow-0 basis-auto">
+          <PresetButton
+            id={id}
+            isSweep={chain?.some(p => p.isSweep) || isSweep}
+            label={label}
+          />
+          {/* <Icon {id} name="ph:faders-bold" slot="default-icon" />
+            <Icon
+              {id}
+              name="ph:spinner-bold"
+              class="animate-spin-slow"
+              slot="loading-icon"
+            />
+          </PresetButton> */}
+        </li>
+      ))}
+    </ul>
+  </div>
+)

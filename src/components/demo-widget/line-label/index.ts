@@ -1,1 +1,1 @@
-export { default } from "./line-label.astro"
+export { LineLabel } from "./line-label"
