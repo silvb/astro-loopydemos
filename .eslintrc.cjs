@@ -7,6 +7,12 @@ module.exports = {
     sourceType: "module",
     ecmaVersion: "latest",
   },
+  rules: {
+    "no-unused-vars": [
+      "error",
+      { varsIgnorePattern: "^_", argsIgnorePattern: "^_" },
+    ],
+  },
   overrides: [
     {
       files: ["*.astro"],

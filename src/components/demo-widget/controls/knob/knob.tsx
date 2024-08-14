@@ -26,7 +26,7 @@ interface KnobProps extends KnobType {
 }
 
 export const Knob: Component<KnobProps> = props => {
-  const [stateContainerProps, sizeAndColorProps, rest] = splitProps(
+  const [stateContainerProps, sizeAndColorProps, _] = splitProps(
     props,
     ["id", "isRotary", "rotaryAngles", "size", "pedalSlug"],
     ["colors", "size"]

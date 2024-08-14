@@ -1,4 +1,4 @@
-import { createEffect, type Component, type JSX, createSignal } from "solid-js"
+import { type Component, type JSX, createSignal } from "solid-js"
 
 interface StompSwitchProps extends JSX.ButtonHTMLAttributes<HTMLButtonElement> {
   onClick: () => void

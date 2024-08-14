@@ -6,7 +6,9 @@ interface AbsolutePositionProps {
   left: number
 }
 
-export const AbsolutePosition: ParentComponent<AbsolutePositionProps> = props => (
+export const AbsolutePosition: ParentComponent<
+  AbsolutePositionProps
+> = props => (
   <div
     id={props.id}
     class="absolute left-[calc(var(--left)*0.75)] top-[calc(var(--top)*0.75)] origin-top-left scale-75 transform sm:left-[var(--left)] sm:top-[var(--top)] sm:scale-100"

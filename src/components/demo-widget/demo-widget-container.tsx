@@ -1,4 +1,4 @@
-import { onMount, type Component, type JSX } from "solid-js"
+import { onMount, type Component } from "solid-js"
 import { DemoStateProvider } from "./demo-state-store"
 import type { Preset, StaticPedalData } from "@types"
 import { AudioPlayer } from "./audio-player"

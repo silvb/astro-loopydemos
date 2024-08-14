@@ -1,5 +1,5 @@
 import type { Preset } from "@types"
-import { onMount, Show, type Component, type JSX } from "solid-js"
+import { onMount, Show, type Component } from "solid-js"
 import { useDemoState } from "../demo-state-store"
 import { PhFadersIcon } from "../icons/ph-faders-icon"
 import { PhSpinnerIcon } from "../icons/ph-spinner-icon"

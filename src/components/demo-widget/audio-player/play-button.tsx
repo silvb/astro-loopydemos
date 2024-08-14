@@ -4,7 +4,7 @@ import { PhSpinnerIcon } from "../icons/ph-spinner-icon"
 import { PhPlayIcon } from "../icons/ph-play-icon"
 import { PhPauseIcon } from "../icons/ph-pause-icon"
 
-export const PlayButton: Component = props => {
+export const PlayButton: Component = () => {
   const {
     isPlaying,
     setIsPlaying,
