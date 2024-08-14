@@ -9,18 +9,6 @@ import {
 } from "solid-js"
 import { debounce } from "radash"
 
-const DemoStateContext = createContext()
-
-export const useDemoState = () => {
-  const context = useContext(DemoStateContext)
-
-  if (!context) {
-    throw new Error("useDemoState must be used within a DemoStateProvider")
-  }
-
-  return context
-}
-
 const findClosestValue = (value: number, valueArray: number[]) =>
   valueArray.reduce((acc, curr) => {
     const lastDistance = Math.abs(value - acc)
@@ -34,9 +22,7 @@ interface DemoStateProviderProps {
   pedals: string[]
 }
 
-export const DemoStateProvider: ParentComponent<
-  DemoStateProviderProps
-> = props => {
+export const useDemoStateValue = (props: DemoStateProviderProps) => {
   const [mainPedal, setMainPedal] = createSignal<string>(props.pedals[0])
   const [activePresetId, selectPreset] = createSignal<string | undefined>(
     undefined
@@ -49,15 +35,10 @@ export const DemoStateProvider: ParentComponent<
   const [secondaryCircuitsOn, setSecondaryCircuitsOn] = createSignal<string[]>(
     []
   )
-
   const [isPlaying, setIsPlaying] = createSignal(false)
-
   const [activePedals, setActivePedals] = createSignal<string[]>([])
-
   const [isBackingTrackMuted, setIsBackingTrackMuted] = createSignal(false)
-
   const [isLoading, setIsLoading] = createSignal(false)
-
   const [widthTab, setWidthTab] = createSignal<Record<string, number>>({})
 
   const setIsLoadingDebounced = debounce({ delay: 200 }, setIsLoading)
@@ -193,37 +174,57 @@ export const DemoStateProvider: ParentComponent<
     }
   })
 
+  return {
+    activePedals,
+    activePreset,
+    activePresetId,
+    pedalsOn,
+    selectPreset,
+    selectSweepSetting,
+    setPedalsOn,
+    setPresets,
+    sweepSetting,
+    toggleBypass,
+    setMainPedal,
+    secondaryCircuitsOn,
+    toggleSecondaryCircuit,
+    getSetting,
+    setActivePedals,
+    isPlaying,
+    setIsPlaying,
+    isBackingTrackMuted,
+    setIsBackingTrackMuted,
+    isLoading,
+    widthTab,
+    setWidthTab,
+    setIsLoading: setIsLoadingDebounced,
+    isSweepTarget,
+    selectNextPreset,
+    selectPreviousPreset,
+  }
+}
+
+export type ContextType = ReturnType<typeof useDemoStateValue>
+
+const DemoStateContext = createContext<ContextType>()
+
+export const useDemoState = () => {
+  const context = useContext(DemoStateContext)
+
+  if (!context) {
+    throw new Error("useDemoState must be used within a DemoStateProvider")
+  }
+
+  return context
+}
+
+export const DemoStateProvider: ParentComponent<
+  DemoStateProviderProps
+> = props => {
+  const value = useDemoStateValue(props)
+
   return (
-    <DemoStateContext.Provider
-      value={{
-        activePedals,
-        activePreset,
-        activePresetId,
-        pedalsOn,
-        selectPreset,
-        selectSweepSetting,
-        setPedalsOn,
-        setPresets,
-        sweepSetting,
-        toggleBypass,
-        setMainPedal,
-        secondaryCircuitsOn,
-        toggleSecondaryCircuit,
-        getSetting,
-        setActivePedals,
-        isPlaying,
-        setIsPlaying,
-        isBackingTrackMuted,
-        setIsBackingTrackMuted,
-        isLoading,
-        widthTab,
-        setWidthTab,
-        setIsLoading: setIsLoadingDebounced,
-        isSweepTarget,
-        selectNextPreset,
-        selectPreviousPreset,
-      }}
-    >
+    <DemoStateContext.Provider value={value}>
       {props.children}
     </DemoStateContext.Provider>
   )

@@ -8,7 +8,7 @@ export const getDisplayText = (
   let text = ``
 
   if (isLoading) {
-    text = `Loading sounds. Just a moment, ok?`
+    text = `Loading sounds. Gimme a sec...`
   }
 
   if (!isPlaying) {
