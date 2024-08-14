@@ -1,0 +1,52 @@
+---
+interface Props {
+  pedalHeight: number
+  presetSlug: string
+  hasBackingTrack?: boolean
+  isComparison?: boolean
+}
+
+const { pedalHeight, presetSlug, hasBackingTrack, isComparison } = Astro.props
+---
+
+<div id={`loading-skeleton-${presetSlug}`}>
+  <div class="flex flex-col gap-4">
+    <div>
+      <div class="h-16 w-full rounded-xl bg-loopydemos-secondary-themed"></div>
+      {
+        hasBackingTrack && (
+          <div class="mt-3 flex justify-end">
+            <div class="flex items-center gap-4">
+              <div class="rounded-ful h-3 w-24 bg-loopydemos-secondary-themed" />
+              <div class="h-6 w-12 rounded-full bg-loopydemos-secondary-themed" />
+            </div>
+          </div>
+        )
+      }
+    </div>
+    {
+      isComparison && (
+        <ul class="flex list-none items-center gap-2">
+          {Array.from({ length: 6 }, (_, i) => (
+            <li class="h-16 grow rounded-md bg-loopydemos-secondary-themed md:h-28 md:w-28" />
+          ))}
+        </ul>
+      )
+    }
+    <ul class="flex h-10 list-none gap-1">
+      {
+        Array.from({ length: 5 }, (_, i) => (
+          <li class="h-full grow rounded-md bg-loopydemos-secondary-themed px-2" />
+        ))
+      }
+    </ul>
+  </div>
+  <div
+    class="mb-24 mt-8 flex h-[calc(var(--height)*0.75)] items-start justify-center sm:h-[var(--height)]"
+    style={{
+      "--height": `${pedalHeight}px`,
+    }}
+  >
+    <div class="h-full w-1/2 rounded-lg bg-loopydemos-secondary-themed"></div>
+  </div>
+</div>

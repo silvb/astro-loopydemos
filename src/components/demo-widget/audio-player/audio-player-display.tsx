@@ -21,7 +21,7 @@ export const AudioPlayerDisplay: Component<AudioPlayerDisplayProps> = props => {
       <Show
         when={showVisualizer()}
         fallback={
-          <span class="px-2 text-center font-mono text-base text-loopydemos-highlight-primary-themed [word-spacing:-0.1em] sm:text-lg md:text-xl">
+          <span class="font-pixel px-2 text-center text-base text-loopydemos-highlight-primary-themed [word-spacing:-0.1em] sm:text-lg md:text-xl">
             {getDisplayText(
               isPlaying(),
               false,

@@ -19,9 +19,11 @@ export const AudioPlayer: Component<AudioPlayerProps> = props => (
           <AudioPlayerDisplay />
         </div>
       </div>
-      <div class="mt-3 flex justify-end">
-        {props.hasBackingTrack && <BackingTrackToggle />}
-      </div>
+      {props.hasBackingTrack && (
+        <div class="mt-3 flex justify-end">
+          <BackingTrackToggle />
+        </div>
+      )}
     </div>
     <AudioPlayerController {...props} />
   </>

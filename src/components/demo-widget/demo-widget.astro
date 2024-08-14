@@ -10,6 +10,7 @@ import { getImage } from "astro:assets"
 import { getImageSrcFromSlug } from "@utils/get-image-src-from-slug"
 import type { StaticPedalData } from "@types"
 import { DemoWidgetContainer } from "./demo-widget-container"
+import LoadingSkeleton from "./loading-skeleton.astro"
 
 interface Props {
   presetSlug: string
@@ -74,6 +75,12 @@ for (const pedalSlug of pedals) {
 const maxHeight = Math.max(...staticPedalData.map(({ height }) => height))
 ---
 
+<LoadingSkeleton
+  pedalHeight={maxHeight}
+  {presetSlug}
+  {hasBackingTrack}
+  {isComparison}
+/>
 <DemoWidgetContainer
   client:only="solid-js"
   {presets}
