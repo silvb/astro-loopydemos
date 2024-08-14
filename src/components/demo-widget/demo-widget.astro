@@ -47,7 +47,8 @@ for (const pedalSlug of pedals) {
     throw new Error(`Pedal not found: ${pedalSlug}`)
   }
 
-  const { controls, width, height, enclosure, imageSrcSlug } = pedalData.data
+  const { controls, width, height, enclosure, imageSrcSlug, isOneOff } =
+    pedalData.data
   const enclosureWidth =
     width ||
     (enclosure === "landscape"
@@ -78,6 +79,7 @@ for (const pedalSlug of pedals) {
     thumbnailSrc,
     thumbnailSrcSet,
     controls,
+    isOneOff,
   })
 }
 

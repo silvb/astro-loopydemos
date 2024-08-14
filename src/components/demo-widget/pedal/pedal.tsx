@@ -6,8 +6,9 @@ import { PedalStateContainer } from "./pedal-state-container"
 import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
 import { LineLabel } from "@components/demo-widget/controls/line-label"
 import { Slider } from "@components/demo-widget/controls/slider"
-import type { Component } from "solid-js"
+import { type Component, Switch as RenderSwitch, Match } from "solid-js"
 import type { StaticPedalData } from "@types"
+import { DarkFatherControls } from "../controls/dark-father-controls"
 
 type PedalProps = StaticPedalData
 
@@ -30,7 +31,14 @@ export const Pedal: Component<PedalProps> = props => {
           class="absolute h-full w-full object-contain"
           loading="eager"
         />
-        <div class="relative h-full w-full transform">
+        <div class="relative h-full w-full">
+          {props.isOneOff && (
+            <RenderSwitch>
+              <Match when={props.slug === "vvco-pedals-dark-father-preamp"}>
+                <DarkFatherControls />
+              </Match>
+            </RenderSwitch>
+          )}
           {props.controls?.knobs?.map(knob => (
             <AbsolutePosition id={knob.id} {...knob.position}>
               <Knob {...knob} pedalSlug={props.slug} />

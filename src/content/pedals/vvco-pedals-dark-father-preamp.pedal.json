@@ -2,5 +2,32 @@
   "name": "vvco-pedals-dark-father-preamp",
   "isOneOff": true,
   "width": 300,
-  "height": 350
+  "height": 350,
+  "controls": {
+    "knobs": [
+      {
+        "id": "boost",
+        "size": 32,
+        "position": { "left": 102, "top": 4 },
+        "type": "simple",
+        "label": "boost"
+      },
+      {
+        "id": "gain",
+        "size": 32,
+        "position": { "left": 164, "top": 4 },
+        "type": "simple",
+        "label": "gain"
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "size": 32,
+        "variant": "dark",
+        "type": "stomp",
+        "position": { "left": 134, "top": 294 }
+      }
+    ]
+  }
 }

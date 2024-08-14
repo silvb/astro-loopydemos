@@ -65,6 +65,7 @@ export default {
         },
       },
       backgroundImage: {
+        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         noise: 'url("/noise.svg")',
         shiny:
           "conic-gradient(from 120deg,#8a8a8a,#fff,#fff,#8a8a8a,#fff,#fff,#8a8a8a)",
