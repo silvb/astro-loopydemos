@@ -1,4 +1,3 @@
-import { type CollectionEntry } from "astro:content"
 import { Knob } from "@components/demo-widget/controls/knob"
 import { AbsolutePosition } from "@components/demo-widget/pedal/absolute-position"
 import { Switch } from "@components/demo-widget/controls/switch"
@@ -8,14 +7,9 @@ import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
 import { LineLabel } from "@components/demo-widget/controls/line-label"
 import { Slider } from "@components/demo-widget/controls/slider"
 import type { Component } from "solid-js"
+import type { StaticPedalData } from "@types"
 
-interface PedalProps {
-  slug: string
-  imgSrc: string
-  width: number
-  height: number
-  controls: CollectionEntry<"pedals">["data"]["controls"]
-}
+type PedalProps = StaticPedalData
 
 export const Pedal: Component<PedalProps> = props => {
   return (
@@ -30,6 +24,8 @@ export const Pedal: Component<PedalProps> = props => {
       >
         <img
           src={props.imgSrc}
+          srcSet={props.imgSrcSet.attribute}
+          sizes={`(min-width: 640px) ${props.width}px, ${Math.ceil(props.width * 0.75)}px`}
           alt={getImageAltFromSlug(props.slug)}
           class="absolute h-full w-full object-contain"
           loading="eager"

@@ -43,10 +43,13 @@ export const DemoWidgetContainer: Component<
         />
         {props.isComparison && (
           <ComparisonSlider
-            pedals={props.staticPedalData.map(({ slug, imgSrc }) => ({
-              slug,
-              imgSrc,
-            }))}
+            pedals={props.staticPedalData.map(
+              ({ slug, thumbnailSrc, thumbnailSrcSet }) => ({
+                slug,
+                imgSrc: thumbnailSrc,
+                imgSrcSet: thumbnailSrcSet,
+              })
+            )}
           />
         )}
         <PresetsSlider presets={props.presets} />

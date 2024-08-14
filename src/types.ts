@@ -11,6 +11,7 @@ import {
   type presetSchema,
   type switchSchema,
 } from "./content/config"
+import { getImage } from "astro:assets"
 
 export interface PedalProps {
   slug: CollectionEntry<"demos">["slug"]
@@ -40,9 +41,13 @@ export type LineLabel = z.infer<typeof labelSchema>
 
 export type Slider = z.infer<typeof sliderSchema>
 
-export type StaticPedalData = {
+export type GetImageResult = Awaited<ReturnType<typeof getImage>>
+export interface StaticPedalData {
   slug: string
-  imgSrc: string
+  imgSrc: GetImageResult["src"]
+  imgSrcSet: GetImageResult["srcSet"]
+  thumbnailSrc: GetImageResult["src"]
+  thumbnailSrcSet: GetImageResult["srcSet"]
   width: number
   height: number
   controls: CollectionEntry<"pedals">["data"]["controls"]

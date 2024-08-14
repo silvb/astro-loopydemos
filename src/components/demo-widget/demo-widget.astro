@@ -59,8 +59,14 @@ for (const pedalSlug of pedals) {
       ? LANDSCAPE_DEFAULT_ENCLOSURE.height
       : POTRAIT_DEFAULT_ENCLOSURE.height)
 
-  const { src: imgSrc } = await getImage({
+  const { src: imgSrc, srcSet: imgSrcSet } = await getImage({
     src: getImageSrcFromSlug(imageSrcSlug ?? pedalSlug),
+    widths: [enclosureWidth, Math.ceil(enclosureWidth * 0.75)],
+  })
+
+  const { src: thumbnailSrc, srcSet: thumbnailSrcSet } = await getImage({
+    src: getImageSrcFromSlug(imageSrcSlug ?? pedalSlug),
+    widths: [94, 54],
   })
 
   staticPedalData.push({
@@ -68,6 +74,9 @@ for (const pedalSlug of pedals) {
     height: enclosureHeight,
     slug: pedalSlug,
     imgSrc,
+    imgSrcSet,
+    thumbnailSrc,
+    thumbnailSrcSet,
     controls,
   })
 }

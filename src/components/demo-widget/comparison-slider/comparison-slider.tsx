@@ -1,11 +1,9 @@
 import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
 import { ComparisonPedalSelect } from "../comparison-slider/comparison-pedal-select"
 import type { Component } from "solid-js"
+import type { StaticPedalData } from "@types"
 
-type PedalData = {
-  slug: string
-  imgSrc: string
-}
+type PedalData = Pick<StaticPedalData, "slug" | "imgSrc" | "imgSrcSet">
 interface ComparisonSliderProps {
   pedals: PedalData[]
 }
@@ -17,6 +15,8 @@ export const ComparisonSlider: Component<ComparisonSliderProps> = props => (
         <ComparisonPedalSelect pedalSlug={pedal.slug}>
           <img
             src={pedal.imgSrc}
+            srcSet={pedal.imgSrcSet.attribute}
+            sizes="(min-width: 640px) 94px, 54px"
             alt={getImageAltFromSlug(pedal.slug)}
             class="h-5/6 w-5/6 object-contain"
           />
