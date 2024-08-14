@@ -3,13 +3,25 @@ title: About
 layout: "@layouts/default-layout.astro"
 ---
 
+import { Image } from "astro:assets"
+import silvio from "../images/silvio-with-fidelity-stellarosa.webp"
+import stellarosa from "../images/fidelity-stellarosa-lite-ii.jpg"
+import mustang from "../images/jmj-fender-mustang-bass.jpg"
+import maxon from "../images/greco-maxon-jazz-bass.jpg"
+import gretsch from "../images/gretsch-electromatic.jpg"
+
 ## About
 
 Hey 👋
 
 my name is Silvio. I'm a web developer, musician and gear nerd from Germany. I created Loopy Demos.
 
-![Silvio playing a Fidelity Guitars Stellarosa Lite II](../images/silvio-with-fidelity-stellarosa.webp)
+<Image
+  src={silvio}
+  alt="Silvio playing a Fidelity Guitars Stellarosa Lite II"
+  width={400}
+  class="mx-auto my-2 xs:float-right xs:ml-4 xs:w-1/2"
+/>
 
 With this website, I produce interactive gear demos for the web. Instead of sitting through a lengthy YouTube video, you can interactively turn the knobs yourself and hear the difference in real time.
 
@@ -51,7 +63,12 @@ It blends aesthetics from vintage catalog guitars together with offset guitar fe
 
 **SPECS**
 
-![Fidelity Guitars Stellarosa Lite II guitar on a rug](../images/fidelity-stellarosa-lite-ii.jpg)
+<Image
+  src={stellarosa}
+  alt="Fidelity Guitars Stellarosa Lite II guitar on a rug"
+  width={400}
+  class="mx-auto my-2 xs:float-right xs:ml-4 xs:w-1/2"
+/>
 
 - Obeche body in relic'd nitro finish (Burgundy Mist)
 - Roasted maple neck with wenge fretboard. Stellar fretwork. It's a chunky C-shaped neck and the most comfortable neck I ever tried. Fits my hands like a well-worn glove
@@ -74,7 +91,12 @@ It was a decent bass when I got it. After a little bit of tweaking and modding, 
 
 **MODS**
 
-![justin mendal johnsen fender mustang bass](../images/jmj-fender-mustang-bass.jpg)
+<Image
+  src={mustang}
+  alt="justin mendal johnsen fender mustang bass"
+  width={400}
+  class="mx-auto my-2 xs:float-right xs:ml-4 xs:w-1/2"
+/>
 
 - Baguley Guitars custom aluminum pickguard. Mustangs usually have a two-piece guard + control plate. Baguley made me a solid one-piece guard that makes this bass feel like a heavy-duty tool.
 - Curtis Novak Fat Mustang Pickups. The stock Seymour Duncan pickups were great, but these are awesome. The sound is more plucky with more attack and growl. I asked Curtis to omit the pickguard and wrap the coils like you would a tele bridge PU, but with black cotton wrap. I also put heavier springs for the PU height adjustment so I can rest my thump on the PU directly instead of a cover and it doesn't wiggle.
@@ -88,7 +110,12 @@ I found this on Kleinanzeigen (German Craigslist/FB Marketplace) for a steal. It
 
 I loved the look and the unique pickups. I had to do a few mods when I got it to make it playable again:
 
-![greco/hondo jazz bass with maxon pickups sunburst](../images/greco-maxon-jazz-bass.jpg)
+<Image
+  src={maxon}
+  alt="greco/hondo jazz bass with maxon pickups sunburst"
+  width={400}
+  class="mx-auto my-2 xs:float-right xs:ml-4 xs:w-1/2"
+/>
 
 - Swapped out the old rusty and crackly electronics and got a custom wiring harness from [James' Home of Tone](https://www.homeoftone.co.uk/). Works like a charm and the wiring is a piece of art!
 - Shielded the cavities with copper tape and made sure all electronic grounds have continuity with the shielding
@@ -103,7 +130,12 @@ This is the guitar that I've owned the longest. I played it a lot when I played 
 
 It's also the guitar that is the most "stock" in my collection. Just a few mods and specs if you're curious:
 
-![gretsch electromatic amber semi hollow guitar](../images/gretsch-electromatic.jpg)
+<Image
+  src={gretsch}
+  alt="gretsch electromatic amber semi hollow guitar"
+  width={400}
+  class="mx-auto my-2 xs:float-right xs:ml-4 xs:w-1/2"
+/>
 
 - I got the bridge pickup wax-potted because it got microphonic to a point where it was unusable. It just feedbacked like crazy.
 - It's neck-divy so I moved the pin for the strap from the upper horn to behind the neck

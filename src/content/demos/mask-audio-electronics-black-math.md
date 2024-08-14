@@ -19,18 +19,9 @@ externalLinks:
   builderLink: https://maskaudioelectronics.com/collections/pedals/products/black-math
 ---
 
-import YoutubeEmbed from '../components/youtube-embed'
-
 The Black Math by Mask Audio Electronics is my favorite Big Muff style pedal of all the ones I've tried.
 
 I'm a huge Jack White fan and I was always intrigued by a certain part of his live sound (particularly White Stripes era). His heavily distorted guitar sounds not only massive, it also feels like the speaker is just on the brink of ripping apart. And there's this gated, velcro-ish thing going on.
-
-This is one of my favorite White Stripes performances and you can clearly hear what I mean (also: you're welcome):
-
-<YoutubeEmbed
-  title="The White Stripes - Dead Leaves and the Dirty Ground (Live @ VH1 9/23/2005)"
-  url="https://www.youtube.com/embed/uep_vBObNwY"
-/>
 
 Turns out, having a linear boost (Jack famously used the [MXR Micro Amp\*](https://link.perfectcircuit.com/t/v1/8-12626-329078-9759?url=https%3A%2F%2Fwww.perfectcircuit.com%2Fmxr-m133-micro-amp.html)) slamming the front of the Big Muff, and the Big Muff going into his cranked Silvertone Amp, does that.
 

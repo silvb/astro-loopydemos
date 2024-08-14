@@ -12,22 +12,15 @@ externalLinks:
   builderLink: https://vaderin.com/shop/radio-dirtman/
 ---
 
-import YoutubeEmbed from '../components/youtube-embed'
-
 I instantly ordered a Radio Dirtman from Vaderin Pedals after I read the description of what it does.
 
 It's based on the Dirt Transmitter with a wider frequency range on the tone control, with much more low end possible.
 
 The Radio Dirtman is can deliver all kinds of dirt flavor: gated or wooly fuzz, smooth overdrive, or crackly lo-fi distortion or that satisfying saturation you get from plugging in straight to the desk and cranking the gain.
 
-I'm a huge QOTSA fan and I know that Michael Shuman uses a Dirt Transmitter live on a few tracks where the bass sound really stands out. Here's where I first heard of it:
+I'm a huge QOTSA fan and I know that Michael Shuman uses a Dirt Transmitter live on a few tracks where the bass sound really stands out.
 
-<YoutubeEmbed
-  title="Board to Death Ep. 9 - Michael Schuman (Queens of the Stone Age) | EarthQuaker Devices"
-  url="https://www.youtube.com/embed/GxMdpgGvk9U"
-/>
-
-The Radio Dirtman Nails this and I love it both on guitar and bass.
+The Radio Dirtman nails this and I love it both on guitar and bass.
 
 ### Signal Chain
 

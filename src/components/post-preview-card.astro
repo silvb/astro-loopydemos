@@ -61,12 +61,14 @@ const shortenedExcerpt =
             <Image
               src={getImageSrcFromSlug(slug)}
               alt={title}
+              width={224}
               class="h-auto w-36 object-contain object-top sm:w-56"
             />
           ) : (
             <div class="pedal-collage-grid h-auto w-36 sm:w-56">
               {pedals.map(pedal => (
                 <Image
+                  width={108}
                   src={getImageSrcFromSlug(pedal)}
                   alt={getImageAltFromSlug(pedal)}
                   class="h-full object-contain"

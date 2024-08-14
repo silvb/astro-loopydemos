@@ -19,18 +19,7 @@ externalLinks:
   perfectCircuit: boss-ds-1-distortion-pedal
 ---
 
-import YoutubeEmbed from '../components/youtube-embed'
-
 The DS-1 Distortion by BOSS is probably one of the best selling pedals of all time. Yet it's not very hip anymore. It seems that it had its hay days during the 90s.
-
-But recently I stumbled over a great demo/lesson by Ryan from Demos in the Dark:
-
-<YoutubeEmbed
-  title="Demos in the Dark // BOSS FX DS-1 Tips & Tricks // Pedal Demo"
-  url="https://www.youtube.com/embed/veI5gkaEQ-4"
-/>
-
-Just as luck would have it, I got the opportunity to snag one up in a pedal trade. I wanted to try this.
 
 My first pedal was a DS-2. I was super into Red Hot Chili Peppers and John Frusciante at the time. I remember it sounding harsh and crappy. In hindsight, it might have been because I plugged it into a tiny Roland Cube and didn't know how to dial in pedals.
 

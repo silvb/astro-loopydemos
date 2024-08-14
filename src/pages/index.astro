@@ -56,7 +56,7 @@ const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
         allPosts
           .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
           .filter(post => ["post", "freeform"].includes(post.data.type))
-          .slice(0, 4)
+          .slice(0, 3)
           .map(({ slug, data }) => (
             <PostPreviewCard
               {slug}

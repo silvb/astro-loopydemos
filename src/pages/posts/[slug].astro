@@ -43,9 +43,9 @@ const relatedDemos = allDemos.filter(
     relatedPedals.includes(demo.slug)
 )
 
-const relatedPosts = allPosts.filter(post =>
-  post.data.tags?.some(tag => tags?.includes(tag))
-)
+const relatedPosts = allPosts
+  .filter(post => post.slug !== slug)
+  .filter(post => post.data.tags?.some(tag => tags?.includes(tag)))
 ---
 
 <DemoLayout {slug} {title} {date} {type}>
