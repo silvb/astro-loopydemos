@@ -1,22 +1,25 @@
 ---
 builder: ZVEX Effects
 model: Basstortion
-type: none
+type: demo
 isSponsored: true
-date: 2024-06-25
+date: 2024-08-16
 tags:
   - bass distortion
   - bass
 externalLinks:
-  perfectCircuit: zvex-effects-basstortion
+  perfectCircuit: zvex-basstortion-vexter
   builderLink: https://www.zvex.com/guitar-pedals/basstortion-guitar-effects-pedal
 ---
 
-Write some copy about the Basstortion by ZVEX Effects.
+The Basstortion by ZVEX Effects delivers exactly what it says on the packaging: great bass distortion.
+
+The controls are as simple as it gets for overdrive/distortion pedals: **DRIVE**, **TONE** and **VOLUME**. Additionally, there is a toggle to switch between **BRIGHT** and **DARK** mode.
+
+Whilst being a simple distortion box, the Basstorion has a versatile range from bright clang for aggressive punk rock, smooth saturation for subtle presence and can be driven to fuzz-like distortion while retaining ample amounts of low end.
 
 ### Signal Chain
 
-- Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (neck pickup)
+- Greco Jazz Bass with Maxon pickups
 - Basstortion
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
-- A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)
+- [Bogren Digital Bassknob STD](https://bogrendigital.com/collections/ampknob/products/bassknob-std) set to clean
