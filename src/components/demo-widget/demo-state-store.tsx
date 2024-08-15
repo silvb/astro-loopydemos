@@ -39,6 +39,7 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
   const [activePedals, setActivePedals] = createSignal<string[]>([])
   const [isBackingTrackMuted, setIsBackingTrackMuted] = createSignal(false)
   const [isLoading, setIsLoading] = createSignal(false)
+  const [hasErrors, setHasErrors] = createSignal(false)
   const [widthTab, setWidthTab] = createSignal<Record<string, number>>({})
 
   const setIsLoadingDebounced = debounce({ delay: 200 }, setIsLoading)
@@ -195,6 +196,8 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
     isBackingTrackMuted,
     setIsBackingTrackMuted,
     isLoading,
+    hasErrors,
+    setHasErrors,
     widthTab,
     setWidthTab,
     setIsLoading: setIsLoadingDebounced,

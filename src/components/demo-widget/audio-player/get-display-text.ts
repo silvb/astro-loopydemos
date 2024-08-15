@@ -3,7 +3,7 @@ export const getDisplayText = (
   isDisabled = false,
   isLoading = true,
   isPedalOn = false,
-  hasError = false
+  hasErrors = false
 ) => {
   let text = ``
 
@@ -23,8 +23,8 @@ export const getDisplayText = (
     text = `Here's my clean tone. Turn the pedal on.`
   }
 
-  if (hasError) {
-    text = `Error loading sounds. Try reloading the page.*`
+  if (hasErrors) {
+    text = `Error loading sounds. Try reloading the page.`
   }
 
   return text

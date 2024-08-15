@@ -19,6 +19,11 @@ export const fetchAudioBuffer = async (
 ) => {
   const url = getMediaUrl(id, slug)
   const response = await fetch(url)
+
+  if (!response.ok) {
+    throw new Error(`Failed to fetch audio buffer: ${response.statusText}`)
+  }
+
   const buffer = await response.arrayBuffer()
   return audioContext.decodeAudioData(buffer)
 }

@@ -1,4 +1,4 @@
-import { createEffect, type Component } from "solid-js"
+import { createEffect, createMemo, type Component } from "solid-js"
 import { useDemoState } from "../demo-state-store"
 import {
   fetchAudioBuffer,
@@ -26,6 +26,7 @@ export const AudioPlayerController: Component<
     sweepSetting,
     isBackingTrackMuted,
     setIsLoading,
+    setHasErrors,
     pedalsOn,
     activePedals,
     secondaryCircuitsOn,
@@ -39,6 +40,15 @@ export const AudioPlayerController: Component<
   let backingTrackAudioSource: AudioBufferSourceNode | null = null
   let backingTackBuffer: AudioBuffer | null = null
   let trackLength = 0
+
+  const errorHandler = (error: unknown, slug: string, id: string) => {
+    console.error("Error fetching audio buffer", {
+      error,
+      slug,
+      id,
+    })
+    setHasErrors(true)
+  }
 
   createEffect(async () => {
     const preset = activePreset()
@@ -63,12 +73,18 @@ export const AudioPlayerController: Component<
       if (currentBuffer.id !== presetId) {
         currentBuffer.id = presetId ?? null
         setIsLoading(true)
-        currentBuffer.buffer = await fetchAudioBuffer(
-          presetId,
-          props.slug,
-          audioContext
-        )
-        setIsLoading(false)
+
+        try {
+          currentBuffer.buffer = await fetchAudioBuffer(
+            presetId,
+            props.slug,
+            audioContext
+          )
+        } catch (error) {
+          errorHandler(error, props.slug, presetId)
+        } finally {
+          setIsLoading(false)
+        }
       }
 
       if (trackLength === 0 && currentBuffer.buffer) {
@@ -91,12 +107,17 @@ export const AudioPlayerController: Component<
       if (props.hasBackingTrack) {
         if (!backingTackBuffer) {
           setIsLoading(true)
-          backingTackBuffer = await fetchAudioBuffer(
-            BACKING_TRACK,
-            props.slug,
-            audioContext
-          )
-          setIsLoading(false)
+          try {
+            backingTackBuffer = await fetchAudioBuffer(
+              BACKING_TRACK,
+              props.slug,
+              audioContext
+            )
+          } catch (error) {
+            errorHandler(error, props.slug, BACKING_TRACK)
+          } finally {
+            setIsLoading(false)
+          }
         }
 
         backingTrackAudioSource?.stop()

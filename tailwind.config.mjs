@@ -48,7 +48,7 @@ export default {
           themed: "var(--loopydemos-green)",
         },
         "loopydemos-red": {
-          DEFAULT: "#ff5555",
+          DEFAULT: "#ff6553",
           themed: "var(--loopydemos-red)",
         },
         "loopydemos-orange": {
