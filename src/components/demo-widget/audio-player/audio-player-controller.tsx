@@ -1,4 +1,4 @@
-import { createEffect, createMemo, type Component } from "solid-js"
+import { createEffect, type Component } from "solid-js"
 import { useDemoState } from "../demo-state-store"
 import {
   fetchAudioBuffer,
