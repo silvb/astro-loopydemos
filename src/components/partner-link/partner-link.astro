@@ -19,13 +19,28 @@ const href = {
   "perfect-circuit": `https://link.perfectcircuit.com/t/v1/8-12626-329078-9759?url=https%3A%2F%2Fwww.perfectcircuit.com%2F${slug}.html`,
   "sound-shoppe": `https://soundshoppe.nyc/products/${slug}`,
 }[partner]
+
+const ctaLabels = [
+  "Treat yo' self",
+  "Click, it's fate!",
+  "'Cause why not?",
+  "Buy now, brag later",
+  "Cure your GAS!",
+  "Impulse buy here",
+  "Indulge a little",
+  "Add to pedalboard",
+  "Snag one here",
+  "Eh, might as well..."
+]
+
+const randomCtaLabel = ctaLabels[Math.min(Math.floor(Math.random() * 10),9)]
 ---
 
 <a
   {href}
   target="_blank"
   rel="noopener"
-  class="link-none relative my-4 flex max-w-64 flex-col items-center justify-between gap-4 rounded-lg border-4 border-solid border-loopydemos-primary bg-loopydemos-secondary p-4"
+  class="link-none relative my-4 flex flex-col items-center justify-between gap-4 rounded-lg border-4 border-loopydemos-primary border-dashed bg-loopydemos-secondary p-4 max-w-64"
 >
   <div class="absolute right-2 top-2 shadow-md shadow-gray-800">
     {
@@ -44,10 +59,10 @@ const href = {
       )
     }
   </div>
-  <div class="flex h-48 w-full items-center justify-center rounded-lg">
+  <div class="flex h-48 items- w-ful justify-center rounded-lg">
     <Image
       width="200"
-      class="h-full w-full object-contain"
+      class="h-auto w-full object-contain"
       src={getImageSrcFromSlug(imgSlug)}
       alt={getImageAltFromSlug(imgSlug)}
     />
@@ -55,7 +70,7 @@ const href = {
   <div
     class="flex w-full items-center justify-center gap-2 rounded-lg bg-loopydemos-highlight-tertiary p-4 font-black text-loopydemos-background hover:bg-loopydemos-highlight-tertiary/80"
   >
+  <span class="whitespace-nowrap">{randomCtaLabel}</span>
     <Icon name="ph:hand-heart" class="text-xl" />
-    <span>Snag one here!</span>
   </div>
 </a>
