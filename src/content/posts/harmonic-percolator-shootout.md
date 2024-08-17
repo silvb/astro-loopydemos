@@ -20,6 +20,8 @@ relatedSlugs:
 excerpt: A shootout of 6 of the best Harmonic Percolator pedals on the market. The Champion Leccy The Divvy V3, Vaderin Pedals HP-X, Land Devices HP-2, Freqscene Effects Co. Harmonic Distorter, Latent Lemon Audio Hurts and Dirty Sock Harmonic Percolator.
 ---
 
+import PartnerLink from "@components/partner-link"
+
 Famously used by audio engineer and guitarist Steve Albini, the Harmonic Percolator is a unique distortion/fuzz pedal that has a very distinct sound. The original circuit design used a silicon NPN transistor and a PNP germanium transistor configuration that pass even order harmonics while surpressing odd order harmonics.
 
 The result is a kind of distortion that is very pleasing to the ear with a unique character.
@@ -38,7 +40,11 @@ The Divvy takes a different design approach than most other HP interpretations. 
 
 This is a super clever design choice that makes the Divvy great for bass and guitar.
 
-Get it from [Perfect Circuit\*](https://link.perfectcircuit.com/t/v1/8-12626-329078-9759?url=https%3A%2F%2Fwww.perfectcircuit.com%2Fchampion-leccy-the-divvy-black.html).
+<PartnerLink
+  slug="champion-leccy-the-divvy-black"
+  imgSlug="champion-leccy-the-divvy-v3"
+  partner="perfect-circuit"
+/>
 
 ### Vaderin Pedals HP-X
 

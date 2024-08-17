@@ -1,0 +1,61 @@
+---
+import PerfectCircuitLogo from "./perfect-circuit-logo.astro"
+import { Image } from "astro:assets"
+import { getImageSrcFromSlug } from "@utils/get-image-src-from-slug"
+import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
+import { Icon } from "astro-icon/components"
+import soundShoppeLogo from "./sound-shoppe-logo.png"
+
+interface Props {
+  slug: string
+  imgSlug: string
+  text?: string
+  partner: "perfect-circuit" | "sound-shoppe"
+}
+
+const { slug, imgSlug, partner } = Astro.props
+
+const href = {
+  "perfect-circuit": `https://link.perfectcircuit.com/t/v1/8-12626-329078-9759?url=https%3A%2F%2Fwww.perfectcircuit.com%2F${slug}.html`,
+  "sound-shoppe": `https://soundshoppe.nyc/products/${slug}`,
+}[partner]
+---
+
+<a
+  {href}
+  target="_blank"
+  rel="noopener"
+  class="link-none relative my-4 flex max-w-64 flex-col items-center justify-between gap-4 rounded-lg border-4 border-solid border-loopydemos-primary bg-loopydemos-secondary p-4"
+>
+  <div class="absolute right-2 top-2 shadow-md shadow-gray-800">
+    {
+      partner === "perfect-circuit" && (
+        <PerfectCircuitLogo class="max-w-20 rounded-lg border-2 border-loopydemos-subdued bg-white p-2" />
+      )
+    }
+    {
+      partner === "sound-shoppe" && (
+        <Image
+          class="h-auto max-w-16 rounded-lg border-2 border-loopydemos-subdued"
+          width={96}
+          src={soundShoppeLogo}
+          alt="sound shoppe nyc logo"
+        />
+      )
+    }
+  </div>
+  <div class="flex h-48 w-full items-center justify-center rounded-lg">
+    <Image
+      width="200"
+      class="h-full w-full object-contain"
+      src={getImageSrcFromSlug(imgSlug)}
+      alt={getImageAltFromSlug(imgSlug)}
+    />
+  </div>
+  <div
+    class="flex w-full items-center justify-center gap-2 rounded-lg bg-loopydemos-highlight-tertiary p-4 font-black text-loopydemos-background hover:bg-loopydemos-highlight-tertiary/80"
+  >
+    <Icon name="ph:hand-heart" class="text-xl" />
+    <span>Snag one here!</span>
+  </div>
+</a>

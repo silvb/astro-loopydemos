@@ -7,6 +7,17 @@
       "label": "Growl",
       "comparison": [
         {
+          "id": "surprise_growl",
+          "pedalSlug": "fairfield-circuitry-unpleasant-surprise",
+          "settings": {
+            "volume": 7,
+            "onset": 5,
+            "t": 1,
+            "g": 1,
+            "c": 1
+          }
+        },
+        {
           "id": "warlow_growl",
           "pedalSlug": "jptr-fx-warlow",
           "settings": { "volume": 4, "tone": 6, "sustain": 5, "mode": 2 }
@@ -116,17 +127,6 @@
             "fuzz": 9,
             "relax_push": 2,
             "subs": 1
-          }
-        },
-        {
-          "id": "surprise_growl",
-          "pedalSlug": "fairfield-circuitry-unpleasant-surprise",
-          "settings": {
-            "volume": 7,
-            "onset": 5,
-            "t": 1,
-            "g": 1,
-            "c": 1
           }
         }
       ]
