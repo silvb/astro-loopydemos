@@ -3,12 +3,20 @@ import tailwind from "@astrojs/tailwind"
 import icon from "astro-icon"
 import rehypeExternalLinks from "rehype-external-links"
 import solidJs from "@astrojs/solid-js"
-
 import mdx from "@astrojs/mdx"
+
+import vercel from "@astrojs/vercel/static"
 
 // https://astro.build/config
 export default defineConfig({
-  integrations: [tailwind({ nesting: true }), icon(), solidJs(), mdx()],
+  integrations: [
+    tailwind({
+      nesting: true,
+    }),
+    icon(),
+    solidJs(),
+    mdx(),
+  ],
   markdown: {
     rehypePlugins: [
       [
@@ -20,4 +28,6 @@ export default defineConfig({
       ],
     ],
   },
+  output: "server",
+  adapter: vercel({ webAnalytics: { enabled: true } }),
 })
