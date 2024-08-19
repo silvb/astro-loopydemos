@@ -10,7 +10,7 @@ export default {
       },
       fontFamily: {
         sans: ["Mulish Variable", ...defaultTheme.fontFamily.sans],
-        pixel: ["VT323", ...defaultTheme.fontFamily.mono],
+        pixel: ["Roboto Mono Variable", ...defaultTheme.fontFamily.mono],
         display: ["Anton", ...defaultTheme.fontFamily.serif],
         logo: ["Erica One", ...defaultTheme.fontFamily.serif],
       },

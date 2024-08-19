@@ -168,3 +168,18 @@ const relatedPosts = allPosts.filter(
     )
   }
 </DemoLayout>
+
+<script>
+  // TEMP: Redirect to new URL
+
+  // get query params
+  const urlParams = new URLSearchParams(window.location.search)
+  const isEmbed = urlParams.get("embed") === "1"
+
+  if (isEmbed) {
+    // get current URL without query params
+    const currentURL = window.location.href.split("?")[0]
+    // redirect to new URL
+    window.location.href = currentURL + "/embed"
+  }
+</script>

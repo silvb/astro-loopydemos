@@ -22,25 +22,25 @@ const href = {
 
 const ctaLabels = [
   "Treat yo' self",
-  "Click, it's fate!",
+  "Tone quest ends here",
   "'Cause why not?",
   "Buy now, brag later",
   "Cure your GAS!",
   "Impulse buy here",
   "Indulge a little",
-  "Add to pedalboard",
+  "Feeling pedalbored?",
   "Snag one here",
-  "Eh, might as well..."
+  "Shred responsibly",
 ]
 
-const randomCtaLabel = ctaLabels[Math.min(Math.floor(Math.random() * 10),9)]
+const randomCtaLabel = ctaLabels[Math.min(Math.floor(Math.random() * 10), 9)]
 ---
 
 <a
   {href}
   target="_blank"
   rel="noopener"
-  class="link-none relative my-4 flex flex-col items-center justify-between gap-4 rounded-lg border-4 border-loopydemos-primary border-dashed bg-loopydemos-secondary p-4 max-w-64"
+  class="link-none relative my-4 flex max-w-72 flex-col items-center justify-between gap-4 rounded-lg border-4 border-dashed border-loopydemos-primary bg-loopydemos-secondary p-4"
 >
   <div class="absolute right-2 top-2 shadow-md shadow-gray-800">
     {
@@ -59,7 +59,7 @@ const randomCtaLabel = ctaLabels[Math.min(Math.floor(Math.random() * 10),9)]
       )
     }
   </div>
-  <div class="flex h-48 items- w-ful justify-center rounded-lg">
+  <div class="items- w-ful flex h-48 justify-center rounded-lg">
     <Image
       width="200"
       class="h-auto w-full object-contain"
@@ -68,9 +68,9 @@ const randomCtaLabel = ctaLabels[Math.min(Math.floor(Math.random() * 10),9)]
     />
   </div>
   <div
-    class="flex w-full items-center justify-center gap-2 rounded-lg bg-loopydemos-highlight-tertiary p-4 font-black text-loopydemos-background hover:bg-loopydemos-highlight-tertiary/80"
+    class="flex w-full items-center justify-center gap-2 rounded-lg bg-loopydemos-highlight-tertiary px-2 py-4 font-black text-loopydemos-background hover:bg-loopydemos-highlight-tertiary/80"
   >
-  <span class="whitespace-nowrap">{randomCtaLabel}</span>
-    <Icon name="ph:hand-heart" class="text-xl" />
+    <span class="whitespace-nowrap">{randomCtaLabel}</span>
+    <Icon name="ph:tip-jar" class="shrink-0 text-xl" />
   </div>
 </a>
