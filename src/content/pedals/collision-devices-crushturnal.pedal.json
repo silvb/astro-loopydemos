@@ -1,0 +1,152 @@
+{
+  "name": "collision-devices-crushturnal",
+  "width": 540,
+  "height": 350,
+  "controls": {
+    "knobs": [
+      {
+        "id": "step_size",
+        "size": 44,
+        "position": { "top": 42, "left": 28 },
+        "colors": {
+          "primary": "#fb7c27",
+          "secondary": "#d16925",
+          "tick": "#fefefe"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "rate",
+        "size": 44,
+        "position": { "top": 116, "left": 86 },
+        "colors": {
+          "primary": "#fb7c27",
+          "secondary": "#d16925",
+          "tick": "#fefefe"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "mode",
+        "size": 44,
+        "position": { "top": 69, "left": 144 },
+        "colors": {
+          "primary": "#fb7c27",
+          "secondary": "#d16925",
+          "tick": "#fefefe"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "clock",
+        "size": 60,
+        "position": { "top": 34, "left": 241 },
+        "colors": {
+          "primary": "#fb7c27",
+          "secondary": "#d16925",
+          "tick": "#fefefe"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "crush",
+        "size": 44,
+        "position": { "top": 165, "left": 31 },
+        "colors": {
+          "primary": "#aeb0b5",
+          "secondary": "#74797c",
+          "tick": "#fefefe"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "sample_rate",
+        "size": 44,
+        "position": { "top": 190, "left": 145 },
+        "colors": {
+          "primary": "#aeb0b5",
+          "secondary": "#74797c",
+          "tick": "#fefefe"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "fx_level",
+        "size": 44,
+        "position": { "top": 146, "left": 250 },
+        "colors": {
+          "primary": "#aeb0b5",
+          "secondary": "#74797c",
+          "tick": "#fefefe"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "diffusion",
+        "size": 44,
+        "position": { "top": 67, "left": 354 },
+        "colors": {
+          "primary": "#eee",
+          "secondary": "#bababa",
+          "tick": "#1a1a1a"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "time",
+        "size": 44,
+        "position": { "top": 190, "left": 353 },
+        "colors": {
+          "primary": "#aeb0b5",
+          "secondary": "#74797c",
+          "tick": "#fefefe"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "fx_level_ambience",
+        "size": 44,
+        "position": { "top": 114, "left": 414 },
+        "colors": {
+          "primary": "#eee",
+          "secondary": "#bababa",
+          "tick": "#1a1a1a"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "filter",
+        "size": 44,
+        "position": { "top": 44, "left": 466 },
+        "colors": {
+          "primary": "#eee",
+          "secondary": "#bababa",
+          "tick": "#1a1a1a"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "feedback",
+        "size": 44,
+        "position": { "top": 163, "left": 469 },
+        "colors": {
+          "primary": "#aeb0b5",
+          "secondary": "#74797c",
+          "tick": "#fefefe"
+        },
+        "type": "brutalist"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 48, "position": { "top": 238, "left": 464 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 285, "left": 461 }
+      }
+    ]
+  }
+}

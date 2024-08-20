@@ -1,0 +1,45 @@
+{
+  "hasBackingTrack": true,
+  "volume": 1,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": {
+        "step_size": 5,
+        "rate": 5,
+        "mode": 5,
+        "clock": 5,
+        "crush": 5,
+        "sample_rate": 5,
+        "fx_level": 5,
+        "diffusion": 5,
+        "time": 5,
+        "fx_level_ambience": 5,
+        "filter": 5,
+        "feedback": 5
+      }
+    },
+    {
+      "id": "step_size_knob",
+      "label": "Step_size",
+      "isSweep": true,
+      "target": "step_size",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "rate": 5,
+        "mode": 5,
+        "clock": 5,
+        "crush": 5,
+        "sample_rate": 5,
+        "fx_level": 5,
+        "diffusion": 5,
+        "time": 5,
+        "fx_level_ambience": 5,
+        "filter": 5,
+        "feedback": 5
+      }
+    }
+  ]
+}

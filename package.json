@@ -8,7 +8,9 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,astro}\" && eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro}\""
+    "lint": "prettier --write  \"**/*.{js,jsx,ts,tsx,md,mdx,astro}\" && eslint --fix \"src/**/*.{js,ts,jsx,tsx,astro}\"",
+    "create-demo": "node scripts/create-demo.cjs && node scripts/create-seo-images.cjs",
+    "create-seo-images": "node scripts/create-seo-images.cjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
@@ -35,6 +37,7 @@
   "devDependencies": {
     "@iconify-json/ph": "^1.1.13",
     "@typescript-eslint/parser": "^7.14.1",
+    "enquirer": "^2.4.1",
     "eslint": "^8.57.0",
     "eslint-plugin-astro": "^1.2.2",
     "eslint-plugin-jsx-a11y": "^6.9.0",
