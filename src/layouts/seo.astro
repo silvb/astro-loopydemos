@@ -16,7 +16,7 @@ const formattedDate = date?.toISOString().split("T")[0]
 
 const isDev = import.meta.env.DEV
 
-const vercelPreviewBranchUrl = import.meta.env.VERCEL_BRANCH_URL
+const vercelPreviewBranchUrl = "https://" + import.meta.env.VERCEL_BRANCH_URL
 const isVercelPreview = import.meta.env.VERCEL_ENV === "preview"
 
 const siteUrl = isDev
