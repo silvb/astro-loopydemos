@@ -42,9 +42,9 @@ const { pedalHeight, presetSlug, hasBackingTrack, isComparison } = Astro.props
     </ul>
   </div>
   <div
-    class="mt-8 flex h-[calc(var(--height)*0.75)] items-start justify-center sm:h-[var(--height)]"
+    class="mt-8 flex items-start justify-center"
     style={{
-      "--height": `${pedalHeight}px`,
+      height: `${pedalHeight}px`,
     }}
   >
     <div class="h-full w-1/2 rounded-lg bg-loopydemos-secondary-themed"></div>

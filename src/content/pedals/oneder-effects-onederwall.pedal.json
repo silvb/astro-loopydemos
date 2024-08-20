@@ -129,7 +129,7 @@
       {
         "id": "bolts_label",
         "position": { "left": 224, "top": 85 },
-        "labelPosition": { "left": 314, "top": 310 },
+        "labelPosition": { "left": 274, "top": 310 },
         "dependency": {
           "source": "bolts_muff",
           "values": [
@@ -148,7 +148,7 @@
       {
         "id": "clip_label",
         "position": { "left": 132, "top": 81 },
-        "labelPosition": { "left": 100, "top": 320 },
+        "labelPosition": { "left": 100, "top": 340 },
         "dependency": {
           "source": "clip_dist",
           "values": [
@@ -160,7 +160,7 @@
       {
         "id": "boost_label",
         "position": { "left": 92, "top": 120 },
-        "labelPosition": { "left": 17, "top": 300 },
+        "labelPosition": { "left": 57, "top": 300 },
         "dependency": {
           "source": "boost_dist",
           "values": [
@@ -171,8 +171,8 @@
       },
       {
         "id": "order_label",
-        "position": { "left": 164, "top": 157 },
-        "labelPosition": { "left": 170, "top": 310 },
+        "position": { "left": 158, "top": 147 },
+        "labelPosition": { "left": 170, "top": 330 },
         "dependency": {
           "source": "order_switch",
           "values": [

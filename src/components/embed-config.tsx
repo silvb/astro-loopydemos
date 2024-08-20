@@ -10,7 +10,7 @@ interface EmbedConfigProps {
 }
 
 export const EmbedConfig: Component<EmbedConfigProps> = props => {
-  const [height, setHeight] = createSignal(560)
+  const [height, setHeight] = createSignal(600)
   const [width, setWidth] = createSignal(400)
   const [colors, setColors] = createStore({
     primary: COLORS["primary"],
@@ -53,7 +53,7 @@ export const EmbedConfig: Component<EmbedConfigProps> = props => {
         }}
       />
       <div
-        class="size-6 cursor-pointer rounded-full border-2 border-loopydemos-background"
+        class="size-10 cursor-pointer rounded-full border-4 border-loopydemos-background"
         style={{ "background-color": colors[props.color] }}
       ></div>
     </label>
@@ -80,15 +80,17 @@ export const EmbedConfig: Component<EmbedConfigProps> = props => {
             class="min-w-40 rounded-md bg-loopydemos-background p-2"
           ></input>
         </label>
-        <div class="flex grow justify-between gap-2">
+        <div class="flex grow items-center gap-2">
           <span>Customize colors:</span>
-          <ColorInput color="primary" />
-          <ColorInput color="secondary" />
-          <ColorInput color="background" />
-          <ColorInput color="text" />
-          <ColorInput color="highlight-primary" />
-          <ColorInput color="highlight-secondary" />
-          <ColorInput color="highlight-tertiary" />
+          <div class="flex flex-wrap gap-2">
+            <ColorInput color="primary" />
+            <ColorInput color="secondary" />
+            <ColorInput color="background" />
+            <ColorInput color="text" />
+            <ColorInput color="highlight-primary" />
+            <ColorInput color="highlight-secondary" />
+            <ColorInput color="highlight-tertiary" />
+          </div>
         </div>
       </div>
       <EmbedCode code={embedCode()} />

@@ -143,12 +143,12 @@
       {
         "id": "decay_label",
         "position": {
-          "left": 40,
-          "top": 170
+          "left": 50,
+          "top": 140
         },
         "labelPosition": {
-          "left": 9,
-          "top": 211
+          "left": 16,
+          "top": 91
         }
       }
     ]

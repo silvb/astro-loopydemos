@@ -17,16 +17,14 @@ export const Pedal: Component<PedalProps> = props => {
     <PedalStateContainer slug={props.slug} enclosureWidth={props.width}>
       <div
         id={props.slug}
-        class="relative box-border h-[calc(var(--height)*0.75)] w-[calc(var(--width)*0.75)] select-none sm:h-[var(--height)] sm:w-[var(--width)]"
+        class="relative box-border select-none"
         style={{
-          "--width": `${props.width}px`,
-          "--height": `${props.height}px`,
+          width: `${props.width}px`,
+          height: `${props.height}px`,
         }}
       >
         <img
           src={props.imgSrc}
-          srcSet={props.imgSrcSet.attribute}
-          sizes={`(min-width: 640px) ${props.width}px, ${Math.ceil(props.width * 0.75)}px`}
           alt={getImageAltFromSlug(props.slug)}
           class="absolute h-full w-full object-contain"
           loading="eager"

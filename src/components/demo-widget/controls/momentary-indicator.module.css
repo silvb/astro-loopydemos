@@ -1,7 +1,7 @@
 @tailwind components;
 
 .momentary-indicator {
-  @apply pointer-events-auto absolute left-0 top-0 -z-10 box-border scale-[2] rounded-full border-[10px] border-solid border-loopydemos-highlight-secondary-themed;
+  @apply pointer-events-none absolute left-0 top-0 z-0 box-border scale-[2] rounded-full border-[10px] border-solid border-loopydemos-highlight-secondary-themed;
   width: var(--size);
   height: var(--size);
   animation: 600ms ease-out infinite momentaryAnimation;

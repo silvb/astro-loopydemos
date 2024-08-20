@@ -56,9 +56,9 @@ export const DemoWidgetContainer: Component<
       </div>
       <ScaleFactor>
         <div
-          class="mt-8 flex h-[calc(var(--height)*0.75)] items-start justify-center sm:h-[var(--height)]"
+          class="mt-8 flex items-start justify-center"
           style={{
-            "--height": `${props.maxHeight}px`,
+            height: `${props.maxHeight}px`,
           }}
         >
           {props.staticPedalData.map(pedalData => (

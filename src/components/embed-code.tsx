@@ -19,11 +19,11 @@ export const EmbedCode: Component<EmbedCodeProps> = props => {
 
   const embedCode = () =>
     props.static
-      ? `<div style="display: flex; justify-content: center;"><iframe loading="lazy" src="${props.siteUrl}/demos/${props.slug}/embed" height="560" width="400" title="${props.title} | Loopy Demos" style="border-radius: 12px; border: 0px;"></iframe></div>`
+      ? `<div style="display: flex; justify-content: center;"><iframe loading="lazy" src="${props.siteUrl}/demos/${props.slug}/embed" height="624" width="400" title="${props.title} | Loopy Demos" style="border-radius: 12px; border: 0px;"></iframe></div>`
       : props.code
 
   return (
-    <div class="flex items-stretch gap-2 rounded-lg bg-loopydemos-primary p-4">
+    <div class="flex items-stretch gap-2 rounded-lg bg-loopydemos-primary p-2">
       <pre
         class="flex items-center overflow-x-scroll rounded-md px-2 py-1 font-pixel text-xs transition-colors"
         classList={{
