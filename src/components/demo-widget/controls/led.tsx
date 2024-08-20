@@ -1,13 +1,6 @@
 import { useDemoState } from "@components/demo-widget/demo-state-store"
 import type { Led as LedType } from "@types"
-import {
-  type Component,
-  Switch,
-  Match,
-  Show,
-  mergeProps,
-  createEffect,
-} from "solid-js"
+import { type Component, Switch, Match, Show, mergeProps } from "solid-js"
 
 const MOOD_COLORS = {
   on: "greenyellow",
@@ -61,12 +54,6 @@ export const Led: Component<LedProps> = props => {
 
   const uniqueOnLedId =
     props.id === "on_led" ? `${props.id}-${props.pedalSlug}` : props.id
-
-  createEffect(() => {
-    if (props.id === "microloop_led") {
-      console.log({ props, isOn: isOn(), isMood })
-    }
-  })
 
   return (
     <Show when={activePedals().includes(props.pedalSlug)}>
