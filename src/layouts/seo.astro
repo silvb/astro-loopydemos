@@ -1,0 +1,211 @@
+---
+import type { Graph } from "schema-dts"
+
+interface Props {
+  title?: string
+  description?: string
+  noIndex?: boolean
+  metaImage?: string
+  date?: Date
+  isBlogPost?: boolean
+}
+
+const { metaImage, description, title, date, isBlogPost, noIndex } = Astro.props
+
+const formattedDate = date?.toISOString().split("T")[0]
+
+const siteUrl = Astro.url.origin
+const pathname = Astro.url.pathname
+
+const SITE_DESCRIPTION = "Interactive guitar pedal and gear demos"
+const WEBSITE_ID = `${siteUrl}/#website`
+const ORGANIZATION_ID = `${siteUrl}/#organization`
+const AUTHOR_ID = `${siteUrl}/about/#author`
+const metaImageUrl = metaImage ? `${siteUrl}${metaImage}` : undefined
+const webpageId = `${siteUrl}${pathname}/#webpage`
+
+const blogStructuredData: Graph["@graph"] = [
+  {
+    "@type": "BlogPosting",
+    "@id": `${siteUrl}${pathname}/#blogpost`,
+    copyrightYear: new Date().getFullYear(),
+    headline: title,
+    name: title,
+    datePublished: formattedDate,
+    image: metaImageUrl
+      ? {
+          "@id": metaImageUrl,
+        }
+      : undefined,
+    mainEntityOfPage: {
+      "@id": webpageId,
+    },
+    author: {
+      "@id": AUTHOR_ID,
+      name: "Silvio Schmidt",
+    },
+    publisher: {
+      "@id": ORGANIZATION_ID,
+    },
+    isPartOf: {
+      "@id": webpageId,
+    },
+    inLanguage: "en-US",
+  },
+  {
+    "@type": "ImageObject",
+    "@id": metaImageUrl,
+    url: metaImageUrl,
+    width: "400",
+    height: "400",
+    inLanguage: "en-US",
+  },
+  {
+    "@type": "WebPage",
+    "@id": webpageId,
+    url: `${siteUrl}${pathname}`,
+    datePublished: formattedDate,
+    dateModified: formattedDate,
+    name: title,
+    isPartOf: {
+      "@id": WEBSITE_ID,
+    },
+    primaryImageOfPage: metaImageUrl
+      ? {
+          "@id": metaImageUrl,
+        }
+      : undefined,
+  },
+]
+
+const structuredData: Graph = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": ORGANIZATION_ID,
+      name: "Loopy Demos",
+      url: siteUrl,
+      sameAs: [
+        "https://www.instagram.com/loopydemos/",
+        "https://www.threads.net/@loopydemos",
+        "https://www.youtube.com/@loopydemos",
+        "https://www.tiktok.com/@loopydemos",
+      ],
+      // logo: {},
+    },
+    {
+      "@type": "WebSite",
+      "@id": WEBSITE_ID,
+      url: siteUrl,
+      name: "Loopy Demos",
+      description: SITE_DESCRIPTION,
+      publisher: {
+        "@id": ORGANIZATION_ID,
+      },
+      inLanguage: "en-US",
+    },
+    {
+      "@type": "Person",
+      "@id": AUTHOR_ID,
+      name: "Silvio Schmidt",
+      url: `${siteUrl}/about/`,
+      // image: {
+      //   '@type': 'ImageObject',
+      //   '@id': '',
+      //   url: '',
+      //   caption: 'Silvio Schmidt from Loopy Demos',
+      //   inLanguage: 'en-US',
+      // },
+      worksFor: {
+        "@id": ORGANIZATION_ID,
+      },
+    },
+  ],
+}
+
+if (isBlogPost) {
+  structuredData["@graph"] = [
+    ...structuredData["@graph"],
+    ...blogStructuredData,
+  ]
+}
+
+const metaDescription = description || SITE_DESCRIPTION
+
+const metaTags = [
+  {
+    name: `description`,
+    content: metaDescription,
+  },
+  {
+    property: `og:title`,
+    content: title || "Loopy Demos",
+  },
+  { property: "og:url", content: `${siteUrl}${pathname}` },
+  {
+    property: `og:description`,
+    content: metaDescription,
+  },
+  {
+    property: `og:type`,
+    content: `website`,
+  },
+  {
+    name: `twitter:card`,
+    content: `summary`,
+  },
+  {
+    name: `twitter:creator`,
+    content: "Silvio Schmidt",
+  },
+  {
+    name: `twitter:title`,
+    content: title,
+  },
+  {
+    name: `twitter:description`,
+    content: metaDescription,
+  },
+  {
+    name: "mobile-web-app-capable",
+    content: "yes",
+  },
+  {
+    name: "apple-mobile-web-app-capable",
+    content: "yes",
+  },
+  {
+    name: "apple-mobile-web-app-status-bar-style",
+    content: "black-translucent",
+  },
+  {
+    name: "og:image",
+    content: siteUrl + metaImage,
+  },
+  {
+    name: "image",
+    content: siteUrl + metaImage,
+  },
+  {
+    name: "twitter:image",
+    content: siteUrl + metaImage,
+  },
+]
+
+if (noIndex) {
+  metaTags.push({
+    name: "robots",
+    content: "noindex",
+  })
+}
+---
+
+<link rel="canonical" href={`${siteUrl}${pathname}`} />
+{
+  metaTags.map(({ name, content, property }) => (
+    <meta name={name} content={content} property={property} />
+  ))
+}
+
+<script type="application/ld+json" set:html={JSON.stringify(structuredData)} />

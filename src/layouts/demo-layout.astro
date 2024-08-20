@@ -4,18 +4,35 @@ import DefaultLayout from "./default-layout.astro"
 import DateTag from "../components/date-tag.astro"
 import { Icon } from "astro-icon/components"
 import type { PostType } from "@types"
+import SEO from "./seo.astro"
+import { getImageSrcFromSlug } from "@utils/get-image-src-from-slug"
+import { getImage } from "astro:assets"
 
 interface Props {
   title: string
   date: Date
   slug: string
   type: PostType
+  excerpt?: string
 }
 
-const { slug, title, date, type } = Astro.props
+const { slug, title, date, type, excerpt } = Astro.props
+
+const metaImage = await getImage({
+  src: getImageSrcFromSlug(slug, true),
+  format: "jpeg",
+})
 ---
 
 <DefaultLayout {title}>
+  <SEO
+    slot="head"
+    {title}
+    metaImage={metaImage.src}
+    isBlogPost
+    {date}
+    description={excerpt}
+  />
   <a
     href={type === "demo" ? "/demos" : "/posts"}
     class="link-none flex items-center gap-2 text-lg font-black text-loopydemos-highlight-primary sm:text-xl"

@@ -1,6 +1,7 @@
 ---
 import BaseLayout from "./base-layout.astro"
 import DemoWidget from "@components/demo-widget"
+import SEO from "./seo.astro"
 
 interface Props {
   slug: string
@@ -9,7 +10,8 @@ interface Props {
 const { slug } = Astro.props
 ---
 
-<BaseLayout noIndex>
+<BaseLayout>
+  <SEO noIndex slot="head" />
   <div class="flex h-screen flex-col bg-loopydemos-secondary-themed p-2">
     <div
       class="grow rounded-lg bg-loopydemos-background-themed bg-noise p-4 bg-blend-hard-light"

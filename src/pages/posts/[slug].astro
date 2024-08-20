@@ -16,7 +16,7 @@ export const getStaticPaths = (async () => {
 
 export type Props = InferGetStaticPropsType<typeof getStaticPaths>
 
-const { content, date, title, type, relatedSlugs, tags } = Astro.props
+const { content, date, title, type, relatedSlugs, tags, excerpt } = Astro.props
 const { slug } = Astro.params
 const { Content } = await content.render()
 
@@ -48,7 +48,7 @@ const relatedPosts = allPosts
   .filter(post => post.data.tags?.some(tag => tags?.includes(tag)))
 ---
 
-<DemoLayout {slug} {title} {date} {type}>
+<DemoLayout {slug} {title} {date} {type} {excerpt}>
   <Content />
   {
     relatedDemos.length > 0 && (
