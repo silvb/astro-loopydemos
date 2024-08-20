@@ -23,6 +23,16 @@ const metaImage = await getImage({
   src: getImageSrcFromSlug(slug, true),
   format: "jpeg",
 })
+
+const isDev = import.meta.env.DEV
+const vercelPreviewBranchUrl = "https://" + import.meta.env.VERCEL_BRANCH_URL
+const isVercelPreview = import.meta.env.VERCEL_ENV === "preview"
+
+const siteUrl = isDev
+  ? Astro.url.origin
+  : isVercelPreview
+    ? vercelPreviewBranchUrl
+    : import.meta.env.SITE
 ---
 
 <DefaultLayout {title}>
@@ -51,7 +61,11 @@ const metaImage = await getImage({
   <section class="mt-24">
     <slot />
   </section>
-  {type === "demo" && <EmbedCode client:visible static {slug} {title} />}
+  {
+    type === "demo" && (
+      <EmbedCode client:visible static {slug} {title} {siteUrl} />
+    )
+  }
   <div class="relative mt-4 rounded-md bg-loopydemos-secondary px-2 py-1">
     <div
       class="absolute -top-3 right-4 border-b-[0.75rem] border-l-[0.75rem] border-r-[0.75rem] border-transparent border-b-loopydemos-secondary"
