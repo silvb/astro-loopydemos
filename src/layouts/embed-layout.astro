@@ -12,16 +12,16 @@ const { slug } = Astro.props
 
 <BaseLayout>
   <SEO noIndex slot="head" />
-  <div class="flex h-screen flex-col bg-loopydemos-secondary-themed p-2">
-    <div
-      class="grow rounded-lg bg-loopydemos-background-themed bg-noise p-4 bg-blend-hard-light"
-    >
+  <div class="flex h-screen flex-col bg-loopydemos-background-themed p-4">
+    <div class="grow">
       <DemoWidget presetSlug={slug} />
     </div>
-    <footer class="flex justify-end p-2 text-sm">
+    <footer class="flex justify-end pt-2 text-sm">
       <div>
-        <span>Find more demos on{" "}</span><a
+        <span class="text-loopydemos-text-themed">Find more demos on{" "}</span
+        ><a
           href="https://loopydemos.com"
+          class="!text-loopydemos-highlight-primary-themed"
           target="_blank">loopydemos.com</a
         >
       </div>

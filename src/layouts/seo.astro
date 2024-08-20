@@ -15,7 +15,6 @@ const { metaImage, description, title, date, isBlogPost, noIndex } = Astro.props
 const formattedDate = date?.toISOString().split("T")[0]
 
 const isDev = import.meta.env.DEV
-
 const vercelPreviewBranchUrl = "https://" + import.meta.env.VERCEL_BRANCH_URL
 const isVercelPreview = import.meta.env.VERCEL_ENV === "preview"
 

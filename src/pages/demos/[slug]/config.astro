@@ -1,0 +1,38 @@
+---
+import DefaultLayout from "@layouts/default-layout.astro"
+import type { GetStaticPaths, InferGetStaticPropsType } from "astro"
+import { getCollection, type CollectionEntry } from "astro:content"
+import SEO from "@layouts/seo.astro"
+import { EmbedConfig } from "@components/embed-config"
+
+export const getStaticPaths = (async () => {
+  const allDemos: CollectionEntry<"demos">[] = await getCollection("demos")
+  return allDemos.map(demo => ({
+    params: { slug: demo.slug },
+    props: { ...demo.data },
+  }))
+}) satisfies GetStaticPaths
+
+type Props = InferGetStaticPropsType<typeof getStaticPaths>
+
+const { model, builder } = Astro.props
+const { slug } = Astro.params
+
+const title = `${model} - ${builder}: Embed Widget Configurator`
+const frameTitle = `${model} - ${builder} | Loopy Demos`
+
+const isDev = import.meta.env.DEV
+const vercelPreviewBranchUrl = "https://" + import.meta.env.VERCEL_BRANCH_URL
+const isVercelPreview = import.meta.env.VERCEL_ENV === "preview"
+
+const siteUrl = isDev
+  ? Astro.url.origin
+  : isVercelPreview
+    ? vercelPreviewBranchUrl
+    : import.meta.env.SITE
+---
+
+<DefaultLayout {title}>
+  <SEO slot="head" noIndex />
+  <EmbedConfig client:only="solid-js" {slug} title={frameTitle} {siteUrl} />
+</DefaultLayout>

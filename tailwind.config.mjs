@@ -24,7 +24,7 @@ export default {
           themed: "var(--loopydemos-secondary)",
         },
         "loopydemos-background": {
-          DEFAULT: "#100f13",
+          DEFAULT: "#1d1b22",
           themed: "var(--loopydemos-background)",
         },
         "loopydemos-highlight-primary": {

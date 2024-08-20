@@ -7,8 +7,8 @@ export const BackingTrackToggle: Component<BackingTrackToggleProps> = () => {
   const { isBackingTrackMuted, setIsBackingTrackMuted } = useDemoState()
   const uniqueToggleId = `backing-track-toggle-${Math.random().toString(36).slice(2)}`
   return (
-    <div class="flex gap-4">
-      <span>Mute backing track</span>
+    <div class="flex items-center gap-4 text-loopydemos-text-themed">
+      <span class="text-sm sm:text-base">Mute backing track</span>
       <input
         id={uniqueToggleId}
         type="checkbox"

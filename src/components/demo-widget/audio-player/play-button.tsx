@@ -1,8 +1,8 @@
 import { onCleanup, onMount, Show, type Component } from "solid-js"
 import { useDemoState } from "../demo-state-store"
-import { PhSpinnerIcon } from "../icons/ph-spinner-icon"
-import { PhPlayIcon } from "../icons/ph-play-icon"
-import { PhPauseIcon } from "../icons/ph-pause-icon"
+import { PhSpinnerIcon } from "@components/icons/ph-spinner-icon"
+import { PhPlayIcon } from "@components/icons/ph-play-icon"
+import { PhPauseIcon } from "@components/icons/ph-pause-icon"
 
 export const PlayButton: Component = () => {
   const {

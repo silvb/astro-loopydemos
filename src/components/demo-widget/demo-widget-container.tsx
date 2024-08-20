@@ -56,7 +56,7 @@ export const DemoWidgetContainer: Component<
       </div>
       <ScaleFactor>
         <div
-          class="mb-24 mt-8 flex h-[calc(var(--height)*0.75)] items-start justify-center sm:h-[var(--height)]"
+          class="mt-8 flex h-[calc(var(--height)*0.75)] items-start justify-center sm:h-[var(--height)]"
           style={{
             "--height": `${props.maxHeight}px`,
           }}
