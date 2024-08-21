@@ -1,14 +1,9 @@
 import { Show, type Component } from "solid-js"
 import { getDisplayText } from "./get-display-text"
 import { useDemoState } from "../demo-state-store"
-import type { JSX } from "astro/jsx-runtime"
 import { AudioPlayerVisualizer } from "./audio-player-visualizer"
 
-interface AudioPlayerDisplayProps {
-  "audio-visualizer"?: JSX.Element
-}
-
-export const AudioPlayerDisplay: Component<AudioPlayerDisplayProps> = () => {
+export const AudioPlayerDisplay: Component = () => {
   const { isPlaying, pedalsOn, activePedals, isLoading, hasErrors } =
     useDemoState()
 

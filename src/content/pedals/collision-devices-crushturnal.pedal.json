@@ -7,7 +7,7 @@
       {
         "id": "step_size",
         "size": 44,
-        "position": { "top": 42, "left": 28 },
+        "position": { "top": 41, "left": 30 },
         "colors": {
           "primary": "#fb7c27",
           "secondary": "#d16925",
@@ -138,7 +138,18 @@
       }
     ],
     "leds": [
-      { "id": "on_led", "size": 48, "position": { "top": 238, "left": 464 } }
+      { "id": "on_led", "size": 32, "position": { "top": 246, "left": 471 } },
+      {
+        "id": "kill_dry_led",
+        "size": 32,
+
+        "position": { "top": 245, "left": 255 }
+      },
+      {
+        "id": "tap_led",
+        "size": 32,
+        "position": { "top": 245, "left": 38 }
+      }
     ],
     "switches": [
       {
@@ -146,6 +157,18 @@
         "type": "stomp",
         "size": 48,
         "position": { "top": 285, "left": 461 }
+      },
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 284, "left": 245 }
+      },
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 283, "left": 31 }
       }
     ]
   }

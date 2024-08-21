@@ -1,5 +1,5 @@
 import { useDemoState } from "@components/demo-widget/demo-state-store"
-import { Show, type ParentComponent, type JSXElement } from "solid-js"
+import { Show, type ParentComponent } from "solid-js"
 import { DragSweepControl } from "./drag-sweep-control"
 import { SweepIndicator } from "../sweep-indicator"
 
@@ -9,7 +9,6 @@ interface KnobStateContainerProps {
   size: number
   highlightColor?: "primary" | "secondary" | "tertiary"
   rotaryAngles?: number[]
-  "sweep-indicator"?: JSXElement
   pedalSlug: string
 }
 

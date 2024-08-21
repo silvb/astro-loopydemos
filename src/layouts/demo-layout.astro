@@ -61,22 +61,18 @@ const siteUrl = isDev
   <section class="mt-24">
     <slot />
   </section>
-  <section class="mt-8">
-    {
-      type === "demo" && (
+  {
+    type === "demo" && (
+      <section class="mt-8">
         <EmbedCode client:visible static {slug} {title} {siteUrl} />
-      )
-    }
-    <div class="relative mt-4 rounded-md bg-loopydemos-secondary px-2 py-1">
-      <div
-        class="absolute -top-3 right-4 border-b-[0.75rem] border-l-[0.75rem] border-r-[0.75rem] border-transparent border-b-loopydemos-secondary"
-      >
-      </div>
-      <p class="text-base italic">
-        To embed this demo on your website, copy & paste the code above or{
-          " "
-        }<a href={`/demos/${slug}/config`}>customize your demo widget</a>
-      </p>
-    </div>
-  </section>
+        <div class="relative mt-4 rounded-md bg-loopydemos-secondary px-2 py-1">
+          <div class="absolute -top-3 right-4 border-b-[0.75rem] border-l-[0.75rem] border-r-[0.75rem] border-transparent border-b-loopydemos-secondary"></div>
+          <p class="text-base italic">
+            To embed this demo on your website, copy & paste the code above or{" "}
+            <a href={`/demos/${slug}/config`}>customize your demo widget</a>
+          </p>
+        </div>
+      </section>
+    )
+  }
 </DefaultLayout>

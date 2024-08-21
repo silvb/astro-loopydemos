@@ -62,8 +62,8 @@ for (const pedalSlug of pedals) {
 
   const { src: imgSrc, srcSet: imgSrcSet } = await getImage({
     src: getImageSrcFromSlug(imageSrcSlug ?? pedalSlug),
-    width: enclosureWidth,
-    format: "webp",
+    width: enclosureWidth * 1.5,
+    quality: "mid",
   })
 
   const { src: thumbnailSrc, srcSet: thumbnailSrcSet } = await getImage({
