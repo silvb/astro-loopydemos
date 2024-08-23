@@ -138,17 +138,37 @@
       }
     ],
     "leds": [
-      { "id": "on_led", "size": 32, "position": { "top": 246, "left": 471 } },
       {
-        "id": "kill_dry_led",
+        "id": "on_led",
         "size": 32,
-
-        "position": { "top": 245, "left": 255 }
+        "position": { "top": 246, "left": 471 },
+        "colors": {
+          "off": "#555555cc",
+          "on": "#7bfcff"
+        }
       },
       {
-        "id": "tap_led",
+        "id": "repeater_led",
         "size": 32,
-        "position": { "top": 245, "left": 38 }
+        "secondaryCircuitId": "digital_repeater",
+        "position": { "top": 245, "left": 255 },
+        "colors": {
+          "off": "#555555cc",
+          "on": "#7bfcff"
+        }
+      },
+      { 
+        "id": "sequencer_led",
+        "size": 32,
+        "secondaryCircuitId": "sequencer",
+        "position": {
+          "top": 245,
+          "left": 38
+        },
+        "colors": {
+          "off": "#555555cc",
+          "on": "#fb7c27"
+        }
       }
     ],
     "switches": [
@@ -159,13 +179,15 @@
         "position": { "top": 285, "left": 461 }
       },
       {
-        "id": "bypass_switch",
+        "id": "repeater_stomp",
+        "secondaryCircuitId": "digital_repeater",
         "type": "stomp",
         "size": 48,
         "position": { "top": 284, "left": 245 }
       },
       {
-        "id": "bypass_switch",
+        "id": "sequencer_stomp",
+        "secondaryCircuitId": "sequencer",
         "type": "stomp",
         "size": 48,
         "position": { "top": 283, "left": 31 }

@@ -3,21 +3,49 @@
   "volume": 1,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "parallel_worlds",
+      "label": "Parallel Worlds",
+      "secondaryCircuitSlug": "parallel_worlds_repeat",
+      "secondaryCircuitOnlySlug": "parallel_worlds_repeater_only",
+      "secondaryCircuitId": "digital_repeater",
+      "initialSecondaryCircuits": ["digital_repeater"],
+      "settings": {
+        "step_size": 5.6,
+        "rate": 2,
+        "mode": 4,
+        "clock": 8,
+        "crush": 5,
+        "sample_rate": 1.8,
+        "fx_level": 3.5,
+        "diffusion": 7,
+        "time": 6,
+        "fx_level_ambience": 1.8,
+        "filter": 8,
+        "feedback": 6.5,
+        "sequencer_led": true
+      }
+    },
+    {
+      "id": "lofi_ambience",
+      "label": "Lo-fi Ambience",
+      "secondaryCircuitSlug": "lofi_ambience_repeat",
+      "secondaryCircuitOnlySlug": "lofi_ambience_repeater_only",
+      "secondaryCircuitId": "digital_repeater",
+      "initialSecondaryCircuits": ["digital_repeater"],
       "settings": {
         "step_size": 5,
         "rate": 5,
         "mode": 5,
-        "clock": 5,
-        "crush": 5,
-        "sample_rate": 5,
-        "fx_level": 5,
-        "diffusion": 5,
-        "time": 5,
-        "fx_level_ambience": 5,
+        "clock": 3,
+        "crush": 4,
+        "sample_rate": 2,
+        "fx_level": 3,
+        "diffusion": 7.5,
+        "time": 6,
+        "fx_level_ambience": 2,
         "filter": 5,
-        "feedback": 5
+        "feedback": 6,
+        "sequencer_led": false
       }
     },
     {
