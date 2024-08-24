@@ -71,6 +71,23 @@
       }
     },
     {
+      "id": "robot_in_space",
+      "label": "Robot in Space",
+      "secondaryCircuitSlug": "robot_in_space_repeat",
+      "secondaryCircuitOnlySlug": "robot_in_space_repeater_only",
+      "secondaryCircuitId": "digital_repeater",
+      "initialSecondaryCircuits": ["digital_repeater"],
+      "settings": {
+        "clock": 5,
+        "crush": 10,
+        "sample_rate": 3.5,
+        "fx_level": 5,
+        "diffusion": 2,
+        "fx_level_ambience": 3,
+        "filter": 10
+      }
+    },
+    {
       "id": "clock_knob",
       "label": "Clock",
       "secondaryCircuitSlug": "clock_knob_repeater",
@@ -121,6 +138,42 @@
         "time": 7,
         "fx_level": 3.5,
         "crush": 4
+      }
+    },
+    {
+      "id": "sequencer_mode_knob",
+      "label": "Sequencer Mode",
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 0,
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "settings": {
+        "fx_level_ambience": 4,
+        "filter": 8,
+        "diffusion": 3,
+        "clock": 5,
+        "step_size": 10,
+        "rate": 4,
+        "sequencer_led": true
+      }
+    },
+    {
+      "id": "crush_knob",
+      "label": "Crush",
+      "isSweep": true,
+      "target": "crush",
+      "initialSecondaryCircuits": ["digital_repeater"],
+      "initialValue": 5,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "fx_level_ambience": 0,
+        "filter": 8,
+        "clock": 5,
+        "diffusion": 0,
+        "feedback": 7,
+        "time": 5,
+        "fx_level": 5,
+        "sample_rate": 2
       }
     }
   ]
