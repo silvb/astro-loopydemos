@@ -12,7 +12,7 @@ export const PresetButton: Component<PresetButtonProps> = props => {
     selectPreset,
     activePedals,
     pedalsOn,
-    setPedalsOn,
+    addPedalsOn,
     isLoading,
   } = useDemoState()
   let buttonEl!: HTMLButtonElement
@@ -48,7 +48,7 @@ export const PresetButton: Component<PresetButtonProps> = props => {
           block: "nearest",
         })
 
-        setPedalsOn(activePedals())
+        addPedalsOn(activePedals())
       }}
       class="flex h-full items-center gap-1 rounded-md px-2 font-black text-loopydemos-background"
       classList={{

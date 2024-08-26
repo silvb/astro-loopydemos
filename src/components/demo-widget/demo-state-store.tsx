@@ -1,7 +1,6 @@
 import type { ControlElement, Preset, SettingsValue } from "@types"
 import {
   createSignal,
-  createMemo,
   createEffect,
   createContext,
   type ParentComponent,
@@ -44,9 +43,9 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
 
   const setIsLoadingDebounced = debounce({ delay: 200 }, setIsLoading)
 
-  const activePreset = createMemo(() =>
+  const activePreset = () =>
     presets().find(preset => preset.id === activePresetId())
-  )
+
   const selectNextPreset = () => {
     const presetIndex = presets().findIndex(
       preset => preset.id === activePresetId()
@@ -132,6 +131,10 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
     )
   }
 
+  const addPedalsOn = (pedalSlugs: string[]) => {
+    setPedalsOn(prev => [...new Set([...prev, ...pedalSlugs])])
+  }
+
   const isSweepTarget = (id: string, pedalSlug: string) => {
     const isSweep =
       activePreset()?.isSweep ||
@@ -147,7 +150,7 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
   }
 
   createEffect(() => {
-    setPedalsOn(activePedals())
+    addPedalsOn(activePedals())
   })
 
   createEffect(() => {
@@ -162,6 +165,7 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
     setSecondaryCircuitsOn(activePreset()?.initialSecondaryCircuits || [])
 
     if (activePreset()?.comparison) return
+
     setActivePedals(
       activePreset()?.chain?.map(chainElement => chainElement.pedalSlug) || [
         mainPedal(),
@@ -182,7 +186,7 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
     pedalsOn,
     selectPreset,
     selectSweepSetting,
-    setPedalsOn,
+    addPedalsOn,
     setPresets,
     sweepSetting,
     toggleBypass,
