@@ -51,9 +51,16 @@ export const AudioPlayerController: Component<
   }
 
   createEffect(async () => {
-    const preset = activePreset()
     const muteBackingTrack = isBackingTrackMuted()
-    if (isPlaying() && preset) {
+    const presetId = getAudioPresetId(
+      sweepSetting(),
+      activePedals(),
+      pedalsOn(),
+      secondaryCircuitsOn(),
+      activePreset()
+    )
+
+    if (isPlaying()) {
       if (!audioContext) {
         audioContext = new AudioContext()
       }
@@ -61,14 +68,6 @@ export const AudioPlayerController: Component<
       if (audioContext.state === "suspended") {
         await audioContext.resume()
       }
-
-      const presetId = getAudioPresetId(
-        preset,
-        sweepSetting(),
-        activePedals(),
-        pedalsOn(),
-        secondaryCircuitsOn()
-      )
 
       if (currentBuffer.id !== presetId) {
         currentBuffer.id = presetId ?? null

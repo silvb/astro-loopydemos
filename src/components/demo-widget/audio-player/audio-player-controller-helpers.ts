@@ -100,12 +100,14 @@ export const getPresetIdChain = (
 }
 
 export const getAudioPresetId = (
-  activePreset: Preset,
   sweepSetting: Record<string, number>,
   activePedals: string[],
   pedalsOn: string[],
-  secondaryCircuitsOn: string[]
+  secondaryCircuitsOn: string[],
+  activePreset?: Preset
 ): string => {
+  if (!activePreset) return CLEAN_TONE
+
   const allPedalsOff =
     !activePedals.some(pedal => pedalsOn.includes(pedal)) &&
     secondaryCircuitsOn.length === 0
