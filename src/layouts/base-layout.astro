@@ -272,5 +272,12 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
         caches.delete(cacheName)
       })
     })
+
+    navigator.serviceWorker.getRegistrations().then(registrations => {
+      console.log({ registrations })
+      registrations.forEach(registration => {
+        registration.unregister()
+      })
+    })
   })
 </script>
