@@ -17,15 +17,15 @@ export default {
       },
       colors: {
         "loopydemos-primary": {
-          DEFAULT: "#9f58ff",
+          DEFAULT: "#8958ff",
           themed: "var(--loopydemos-primary)",
         },
         "loopydemos-secondary": {
-          DEFAULT: "#1e1c41",
+          DEFAULT: "#252253",
           themed: "var(--loopydemos-secondary)",
         },
         "loopydemos-background": {
-          DEFAULT: "#1d1b22",
+          DEFAULT: "#1b191f",
           themed: "var(--loopydemos-background)",
         },
         "loopydemos-highlight-primary": {
