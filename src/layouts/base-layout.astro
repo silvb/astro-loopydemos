@@ -262,3 +262,15 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
     </style>
   </body>
 </html>
+
+<script is:inline>
+  // remove all cache from the browser
+  window.addEventListener("load", () => {
+    caches.keys().then(cacheNames => {
+      console.log({ cacheNames })
+      cacheNames.forEach(cacheName => {
+        caches.delete(cacheName)
+      })
+    })
+  })
+</script>
