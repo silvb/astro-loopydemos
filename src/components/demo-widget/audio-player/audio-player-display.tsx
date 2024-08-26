@@ -4,11 +4,18 @@ import { useDemoState } from "../demo-state-store"
 import { AudioPlayerVisualizer } from "./audio-player-visualizer"
 
 export const AudioPlayerDisplay: Component = () => {
-  const { isPlaying, pedalsOn, activePedals, isLoading, hasErrors } =
-    useDemoState()
+  const {
+    isPlaying,
+    pedalsOn,
+    activePedals,
+    isLoading,
+    hasErrors,
+    secondaryCircuitsOn,
+  } = useDemoState()
 
   const isAnyPedalOn = () =>
-    activePedals().some(pedal => pedalsOn().includes(pedal))
+    activePedals().some(pedal => pedalsOn().includes(pedal)) ||
+    secondaryCircuitsOn().length > 0
 
   const showVisualizer = () =>
     isAnyPedalOn() && isPlaying() && !isLoading() && !hasErrors()
