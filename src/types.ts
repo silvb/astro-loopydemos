@@ -45,6 +45,7 @@ export type GetImageResult = Awaited<ReturnType<typeof getImage>>
 export interface StaticPedalData {
   slug: string
   imgSrc: GetImageResult["src"]
+  tinySrc: GetImageResult["src"]
   imgSrcSet: GetImageResult["srcSet"]
   thumbnailSrc: GetImageResult["src"]
   thumbnailSrcSet: GetImageResult["srcSet"]

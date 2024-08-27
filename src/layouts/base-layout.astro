@@ -8,6 +8,7 @@ import antonWoff2 from "@fontsource/anton/files/anton-latin-400-normal.woff2?url
 import "@fontsource/erica-one"
 import ericaOneWoff2 from "@fontsource/erica-one/files/erica-one-latin-400-normal.woff2?url"
 import SpeedInsights from "@vercel/speed-insights/astro"
+import { COLORS } from "@constants/colors"
 // import { ViewTransitions } from "astro:transitions"
 
 interface Props {
@@ -32,6 +33,7 @@ const pageTitle = title ? `${title} | Loopy Demos` : "Loopy Demos"
       content="Interactive guitar pedal and gear demos"
     />
     <meta name="viewport" content="width=device-width" />
+    <meta name="theme-color" content={COLORS.primary} />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link
       rel="preload"

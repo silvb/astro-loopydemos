@@ -6,13 +6,19 @@ import { PedalStateContainer } from "./pedal-state-container"
 import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
 import { LineLabel } from "@components/demo-widget/controls/line-label"
 import { Slider } from "@components/demo-widget/controls/slider"
-import { type Component, Switch as RenderSwitch, Match } from "solid-js"
+import {
+  type Component,
+  Switch as RenderSwitch,
+  Match,
+  createSignal,
+} from "solid-js"
 import type { StaticPedalData } from "@types"
 import { DarkFatherControls } from "../controls/dark-father-controls"
 
 type PedalProps = StaticPedalData
 
 export const Pedal: Component<PedalProps> = props => {
+  const [isImgLoaded, setIsImgLoaded] = createSignal(false)
   return (
     <PedalStateContainer slug={props.slug} enclosureWidth={props.width}>
       <div
@@ -28,6 +34,17 @@ export const Pedal: Component<PedalProps> = props => {
           alt={getImageAltFromSlug(props.slug)}
           class="absolute h-full w-full object-contain"
           loading="eager"
+          onLoad={() => setIsImgLoaded(true)}
+        />
+        <div
+          class="absolute h-full w-full bg-contain bg-center bg-no-repeat blur-sm transition-opacity duration-500"
+          classList={{
+            "opacity-0": isImgLoaded(),
+            "opacity-100": !isImgLoaded(),
+          }}
+          style={{
+            "background-image": `url(${props.tinySrc})`,
+          }}
         />
         <div class="relative h-full w-full">
           {props.isOneOff && (

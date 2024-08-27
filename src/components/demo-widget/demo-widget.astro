@@ -71,6 +71,12 @@ for (const pedalSlug of pedals) {
     widths: [94, 54],
   })
 
+  const { src: tinySrc } = await getImage({
+    src: getImageSrcFromSlug(imageSrcSlug ?? pedalSlug),
+    width: 100,
+    quality: "low",
+  })
+
   staticPedalData.push({
     width: enclosureWidth,
     height: enclosureHeight,
@@ -79,6 +85,7 @@ for (const pedalSlug of pedals) {
     imgSrcSet,
     thumbnailSrc,
     thumbnailSrcSet,
+    tinySrc,
     controls,
     isOneOff,
   })
