@@ -6,46 +6,61 @@
     "knobs": [
       {
         "id": "mix",
-        "size": 44,
+        "size": 48,
         "position": {
-          "left": 64,
-          "top": 49
+          "left": 58,
+          "top": 43
         },
-        "type": "simple"
+        "type": "brutalist",
+        "colors": {
+          "primary": "#151515",
+          "tick": "#f3f3f3",
+          "secondary": "#363636"
+        }
       },
       {
         "id": "voice",
-        "size": 44,
+        "size": 48,
         "position": {
-          "left": 167,
-          "top": 49
+          "left": 163,
+          "top": 43
         },
-        "type": "simple"
+        "type": "brutalist",
+        "colors": {
+          "primary": "#151515",
+          "tick": "#f3f3f3",
+          "secondary": "#363636"
+        }
       },
       {
         "id": "volume",
-        "size": 44,
+        "size": 48,
         "position": {
-          "left": 235,
-          "top": 49
+          "left": 232,
+          "top": 43
         },
-        "type": "simple"
+        "type": "brutalist",
+        "colors": {
+          "primary": "#151515",
+          "tick": "#f3f3f3",
+          "secondary": "#363636"
+        }
       },
       {
         "id": "screen",
-        "size": 64,
+        "size": 72,
         "position": {
-          "left": 52,
-          "top": 166
+          "left": 49,
+          "top": 168
         },
         "type": "simple"
       },
       {
         "id": "violence",
-        "size": 64,
+        "size": 72,
         "position": {
-          "left": 187,
-          "top": 166
+          "left": 185,
+          "top": 168
         },
         "type": "simple"
       }
@@ -55,22 +70,22 @@
         "id": "on_led",
         "size": 30,
         "position": {
-          "left": 71,
-          "top": 269
+          "left": 67,
+          "top": 272
         },
         "colors": {
-          "on": "#a3fb82"
+          "on": "#f300ff"
         }
       },
       {
         "id": "violence_led",
         "size": 30,
         "position": {
-          "left": 206,
-          "top": 269
+          "left": 207,
+          "top": 272
         },
         "colors": {
-          "on": "#fcff8c"
+          "on": "#1ec6fe"
         },
         "secondaryCircuitId": "violence_circuit",
         "dependency": {
@@ -79,7 +94,7 @@
             {
               "sourceValue": false,
               "colors": {
-                "on": "#fcff8c"
+                "on": "#1ec6fe"
               }
             },
             {
@@ -98,16 +113,16 @@
         "type": "stomp",
         "size": 40,
         "position": {
-          "left": 65,
-          "top": 298
+          "left": 61,
+          "top": 302
         }
       },
       {
         "id": "violence_switch",
         "size": 40,
         "position": {
-          "left": 200,
-          "top": 298
+          "left": 203,
+          "top": 302
         },
         "type": "stomp",
         "secondaryCircuitId": "violence_circuit"
@@ -117,8 +132,8 @@
         "type": "toggle",
         "size": 28,
         "position": {
-          "left": 74,
-          "top": 122
+          "left": 69,
+          "top": 121
         }
       },
       {
@@ -127,7 +142,7 @@
         "size": 28,
         "position": {
           "left": 206,
-          "top": 122
+          "top": 121
         }
       },
       {
@@ -136,8 +151,8 @@
         "orientation": "horizontal",
         "size": 44,
         "position": {
-          "left": 132,
-          "top": 159
+          "left": 129,
+          "top": 157
         }
       }
     ]
