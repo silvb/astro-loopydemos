@@ -17,8 +17,7 @@ export const AudioPlayerDisplay: Component = () => {
     activePedals().some(pedal => pedalsOn().includes(pedal)) ||
     secondaryCircuitsOn().length > 0
 
-  const showVisualizer = () =>
-    isAnyPedalOn() && isPlaying() && !isLoading() && !hasErrors()
+  const showVisualizer = () => isAnyPedalOn() && isPlaying() && !hasErrors()
 
   return (
     <div class="flex h-full w-full items-center justify-center">
@@ -41,7 +40,7 @@ export const AudioPlayerDisplay: Component = () => {
           </span>
         }
       >
-        <AudioPlayerVisualizer />
+        <AudioPlayerVisualizer subdued={isLoading()} />
       </Show>
     </div>
   )
