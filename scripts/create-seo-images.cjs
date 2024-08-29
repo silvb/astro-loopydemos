@@ -1,6 +1,6 @@
 const fs = require("fs")
 const path = require("path")
-const matter = require("gray-matter")
+// const matter = require("gray-matter")
 const { execSync } = require("child_process")
 
 const imageSourcePath = "src/images"
@@ -41,32 +41,33 @@ fs.readdirSync(imageSourcePath)
     }
   })
 
-const postSourcePath = "src/content/posts"
+// TODO: refactor this and make it work with new file structure
+// const postSourcePath = "src/content/posts"
 
-fs.readdirSync(postSourcePath).forEach(post => {
-  const mdxPath = path.join(postSourcePath, post, "index.mdx")
-  const mdxFile = fs.readFileSync(mdxPath, "utf8")
-  const parsedMdx = matter(mdxFile)
+// fs.readdirSync(postSourcePath).forEach(post => {
+//   const mdxPath = path.join(postSourcePath, post, "index.mdx")
+//   const mdxFile = fs.readFileSync(mdxPath, "utf8")
+//   const parsedMdx = matter(mdxFile)
 
-  if (!parsedMdx.data.coverImage && parsedMdx.data.pedalImages.length > 0) {
-    const pedalsSeoImages = parsedMdx.data.pedalImages
-      .map(pedalImagePath => {
-        return pedalImagePath.split("/").pop().split(".")[0]
-      })
-      .map(pedalImageName => {
-        return path.join(targetDirectoryPath, `${pedalImageName}.jpeg`)
-      })
+//   if (!parsedMdx.data.coverImage && parsedMdx.data.pedalImages.length > 0) {
+//     const pedalsSeoImages = parsedMdx.data.pedalImages
+//       .map(pedalImagePath => {
+//         return pedalImagePath.split("/").pop().split(".")[0]
+//       })
+//       .map(pedalImageName => {
+//         return path.join(targetDirectoryPath, `${pedalImageName}.jpeg`)
+//       })
 
-    const gridSize = Math.ceil(Math.sqrt(pedalsSeoImages.length))
-    const outputPathRaw = path.join(targetDirectoryPath, `${post}_raw.png`)
-    const outputPath = path.join(targetDirectoryPath, `${post}.jpeg`)
+//     const gridSize = Math.ceil(Math.sqrt(pedalsSeoImages.length))
+//     const outputPathRaw = path.join(targetDirectoryPath, `${post}_raw.png`)
+//     const outputPath = path.join(targetDirectoryPath, `${post}.jpeg`)
 
-    const montageCmd = `montage ${pedalsSeoImages.join(
-      " "
-    )} -tile ${gridSize}x${gridSize} -geometry +0+0 -background '${fillColor}' "${outputPathRaw}"`
+//     const montageCmd = `montage ${pedalsSeoImages.join(
+//       " "
+//     )} -tile ${gridSize}x${gridSize} -geometry +0+0 -background '${fillColor}' "${outputPathRaw}"`
 
-    execSync(montageCmd)
-    convertImage(outputPathRaw, outputPath)
-    execSync(`rm ${outputPathRaw}`)
-  }
-})
+//     execSync(montageCmd)
+//     convertImage(outputPathRaw, outputPath)
+//     execSync(`rm ${outputPathRaw}`)
+//   }
+// })

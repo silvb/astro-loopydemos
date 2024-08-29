@@ -1,0 +1,88 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.7,
+  "presets": [
+    {
+      "id": "funky_wah",
+      "label": "Funky Wah",
+      "settings": {
+        "filter": 0,
+        "drive": 5,
+        "level": 6,
+        "envelope": 3.5,
+        "mode": 3
+      }
+    },
+    {
+      "id": "throaty_drive",
+      "label": "Throaty Drive",
+      "settings": {
+        "filter": 4,
+        "drive": 10,
+        "level": 6.5,
+        "envelope": 8,
+        "mode": 1
+      }
+    },
+    {
+      "id": "cocked_wah",
+      "label": "Cocked Wah",
+      "settings": {
+        "filter": 6,
+        "drive": 6,
+        "level": 6,
+        "envelope": 3,
+        "mode": 1
+      }
+    },
+    {
+      "id": "squeezed_attack",
+      "label": "Squeezed Attack",
+      "settings": {
+        "filter": 7.5,
+        "drive": 2,
+        "level": 8,
+        "envelope": 10,
+        "mode": 1
+      }
+    },
+    {
+      "id": "disco_synth",
+      "label": "Disco Synth",
+      "settings": {
+        "filter": 1.5,
+        "drive": 10,
+        "level": 6,
+        "envelope": 2,
+        "mode": 3
+      }
+    },
+    {
+      "id": "filter_knob",
+      "label": "Filter",
+      "isSweep": true,
+      "target": "filter",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "drive": 5, "level": 6, "envelope": 2, "mode": 1 }
+    },
+    {
+      "id": "drive_knob",
+      "label": "Drive",
+      "isSweep": true,
+      "target": "drive",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "filter": 10, "level": 6, "envelope": 0, "mode": 1 }
+    },
+    {
+      "id": "envelope_knob",
+      "label": "Comp Colour",
+      "isSweep": true,
+      "target": "envelope",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "filter": 5, "level": 6, "drive": 2, "mode": 1 }
+    }
+  ]
+}
