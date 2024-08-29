@@ -1,0 +1,1 @@
+{"hasBackingTrack":true,"volume":1,"presets":[{"id":"static_preset","label":"Static Preset","settings":{"filter":5,"drive":5,"level":5,"envelope":5,"mode":1}},{"id":"filter_knob","label":"Filter","isSweep":true,"target":"filter","initialValue":0,"values":[0,2,4,6,8,10],"settings":{"drive":5,"level":5,"envelope":5,"mode":1}}]}

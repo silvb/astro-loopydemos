@@ -1,0 +1,51 @@
+{
+  "name": "dreadbox-fx-kinematic",
+  "width": 280,
+  "height": 390,
+  "controls": {
+    "knobs": [
+      {
+        "id": "filter",
+        "size": 72,
+        "position": { "top": 74, "left": 24 },
+        "type": "bakelit"
+      },
+      {
+        "id": "drive",
+        "size": 48,
+        "position": { "top": 155, "left": 115 },
+        "type": "bakelit"
+      },
+      {
+        "id": "level",
+        "size": 48,
+        "position": { "top": 224, "left": 36 },
+        "type": "bakelit"
+      },
+      {
+        "id": "envelope",
+        "size": 48,
+        "position": { "top": 224, "left": 195 },
+        "type": "bakelit"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 32, "position": { "top": 309, "left": 123 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 335, "left": 115 }
+      },
+      {
+        "id": "mode",
+        "type": "toggle",
+        "orientation": "horizontal",
+        "size": 32,
+        "position": { "top": 159, "left": 203 }
+      }
+    ]
+  }
+}
