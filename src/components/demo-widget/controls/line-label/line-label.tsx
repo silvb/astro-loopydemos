@@ -80,7 +80,7 @@ export const LineLabel: Component<LineLabelProps> = props => {
         <span
           class={`${styles["line-label"]} text-xs text-loopydemos-text-themed`}
           classList={{
-            "long-width": props.isLong,
+            [styles["long-width"]]: props.isLong,
             [styles["right-aligned"]]: isRightAligned,
           }}
           style={{

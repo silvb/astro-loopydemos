@@ -115,12 +115,12 @@
       {
         "id": "reverb_mode_label",
         "position": {
-          "left": 246,
-          "top": 239
+          "left": 236,
+          "top": 269
         },
         "labelPosition": {
-          "left": 293,
-          "top": 171
+          "left": 253,
+          "top": 381
         },
         "dependency": {
           "source": "reverb_mode",
@@ -142,13 +142,14 @@
       },
       {
         "id": "decay_label",
+        "isLong": true,
         "position": {
-          "left": 50,
-          "top": 140
+          "left": 60,
+          "top": 160
         },
         "labelPosition": {
-          "left": 16,
-          "top": 91
+          "left": 93,
+          "top": 381
         }
       }
     ]
