@@ -68,14 +68,14 @@ const getDefaultControls = ({ knobs = [], toggles = [], slug = "" }) => ({
   controls: {
     knobs: knobs.map(knob => ({
       id: knob,
-      size: 64,
+      size: 48,
       position: { top: 64, left: 64 },
       type: "bakelit",
     })),
     leds: [
       {
         id: "on_led",
-        size: 48,
+        size: 32,
         position: { top: 64, left: 64 },
       },
     ],
@@ -83,13 +83,13 @@ const getDefaultControls = ({ knobs = [], toggles = [], slug = "" }) => ({
       {
         id: "bypass_switch",
         type: "stomp",
-        size: 56,
+        size: 48,
         position: { top: 64, left: 64 },
       },
       ...toggles.map(toggle => ({
         id: toggle,
         type: "toggle",
-        size: 40,
+        size: 32,
         position: { top: 64, left: 64 },
       })),
     ],

@@ -114,12 +114,14 @@ const relatedPosts = allPosts.filter(
             </li>
           )}
         </ul>
-        <p>
-          <i>
-            *Affiliate link: Buy something and support Loopy Demos at no extra
-            cost to you!
-          </i>
-        </p>
+        {externalLinks.perfectCircuit && (
+          <p>
+            <i>
+              *Affiliate link: Buy something and support Loopy Demos at no extra
+              cost to you!
+            </i>
+          </p>
+        )}
       </>
     )
   }
