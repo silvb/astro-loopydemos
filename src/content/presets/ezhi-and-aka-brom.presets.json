@@ -1,0 +1,1 @@
+{"hasBackingTrack":true,"volume":1,"presets":[{"id":"static_preset","label":"Static Preset","settings":{"ampfuzz":5,"tapefuzz":5,"noisefuzz":5,"vol":5,"mode_1":1,"mode_2":1}},{"id":"ampfuzz_knob","label":"Ampfuzz","isSweep":true,"target":"ampfuzz","initialValue":0,"values":[0,2,4,6,8,10],"settings":{"tapefuzz":5,"noisefuzz":5,"vol":5,"mode_1":1,"mode_2":1}}]}

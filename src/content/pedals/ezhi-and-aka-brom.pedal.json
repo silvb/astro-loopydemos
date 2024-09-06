@@ -1,0 +1,62 @@
+{
+  "name": "ezhi-and-aka-brom",
+  "controls": {
+    "knobs": [
+      {
+        "id": "ampfuzz",
+        "size": 44,
+        "position": { "top": 29, "left": 32 },
+        "type": "knurled"
+      },
+      {
+        "id": "tapefuzz",
+        "size": 44,
+        "position": { "top": 88, "left": 34 },
+        "type": "knurled"
+      },
+      {
+        "id": "noisefuzz",
+        "size": 44,
+        "position": { "top": 145, "left": 34 },
+        "type": "knurled"
+      },
+      {
+        "id": "vol",
+        "size": 44,
+        "position": { "top": 199, "left": 35 },
+        "type": "knurled"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 24,
+        "position": { "top": 224, "left": 147 },
+        "colors": {
+          "off": "#8f9ca5a1",
+          "on": "#82fffb"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 280, "left": 110 }
+      },
+      {
+        "id": "mode_1",
+        "type": "toggle",
+        "size": 32,
+        "position": { "top": 101, "left": 143 }
+      },
+      {
+        "id": "mode_2",
+        "type": "toggle",
+        "size": 32,
+        "position": { "top": 147, "left": 143 }
+      }
+    ]
+  }
+}
