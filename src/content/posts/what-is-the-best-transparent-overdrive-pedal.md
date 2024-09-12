@@ -111,7 +111,7 @@ The Konstante can sound and feel pretty close to the BlackBox. I especially love
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (neck pickup)
 - Overdrive pedal in the shootout
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)
 - A hint of room reverb added in post from [Valhalla Vintage Verb](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)
 
 _\*Some of these are affiliate links and I earn a small comission if you buy stuff through those links. There is no additional cost for you. It helps me keep this website alive._

@@ -64,7 +64,7 @@ Plus, all the color options look gorgeous. I love my 1312 and it's going to stay
 
 **Bass**
 
-- JMJ Mustang, Fender flats, played with pick, tone rolled off 50% and palm-muted during the first half
+- [JMJ Mustang\*](https://sweetwater.sjv.io/R5A6bg), Fender flats, played with pick, tone rolled off 50% and palm-muted during the first half
 - [Keeley Compressor Mini](/demos/keeley-electronics-compressor-mini)
 - 1312 with asymm. MOSFET clipping, low gain (9 o'clock) and filter at noon
 - Iridium on the round setting with SVT cabs, as demoed [here](/posts/strymon-iridium-bass-ownhammer-ir)

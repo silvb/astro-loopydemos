@@ -22,4 +22,4 @@ I especially noticed that it sounds awesome with the neck pickup, wich is what y
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (neck pickup)
 - Stonk Box
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)

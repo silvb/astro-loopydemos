@@ -33,4 +33,4 @@ You can literally go bonkers with the Joshua Ambient Echo or switch off all the 
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (both pickups)
 - Joshua Ambient Echo
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)

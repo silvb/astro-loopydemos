@@ -37,7 +37,7 @@ And it works great on bass as well (the bass in the backing track uses only the 
 
 **Bass**
 
-- JMJ Mustang, tone 100%, played with pick
+- [JMJ Mustang\*](https://sweetwater.sjv.io/R5A6bg), tone 100%, played with pick
 - Apex on a low to medium gain
 - Strymon Iridium (round mode with OwnHammer AMPG IRs) as demoed [here](/posts/strymon-iridium-bass-ownhammer-ir/)
 - Boosted a little around 120 Hz and 2.5 kHz

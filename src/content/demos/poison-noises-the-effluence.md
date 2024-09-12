@@ -35,7 +35,7 @@ If you think you've heard 'em all, try The Effluence.
 
 **Other Pedals Used for the Backing Track**
 
-- The Crook, [MAE Line Blur](/demos/mask-audio-electronics-line-blur) and Strymon Iridium (round) [with bass cabs](/posts/strymon-iridium-bass-ownhammer-ir/) for bass (JMJ Mustang)
+- The Crook, [MAE Line Blur](/demos/mask-audio-electronics-line-blur) and Strymon Iridium (round) [with bass cabs](/posts/strymon-iridium-bass-ownhammer-ir/) for bass ([JMJ Mustang\*](https://sweetwater.sjv.io/R5A6bg))
 - [Chase Bliss Mood](/demos/chase-bliss-audio-mood) for the grainy pad
 - The Effluence with different settings on pretty much every guitar part
 - The Crook for lead and more saturated parts

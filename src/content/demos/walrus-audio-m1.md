@@ -46,7 +46,7 @@ I tried to keep this one short and simple, because the pedal is complex enough.
 
 **Bass**
 
-- JMJ Mustang, tone 50%, played with pick
+- [JMJ Mustang\*](https://sweetwater.sjv.io/R5A6bg), tone 50%, played with pick
 - [Keeley Compressor Mini](/demos/keeley-electronics-compressor-mini) to even it out
 - [Iridium with Ampeg® cab IRs](/posts/strymon-iridium-bass-ownhammer-ir) and just a little bit of grit
 

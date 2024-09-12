@@ -5,19 +5,22 @@ import { getImageSrcFromSlug } from "@utils/get-image-src-from-slug"
 import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
 import { Icon } from "astro-icon/components"
 import soundShoppeLogo from "./sound-shoppe-logo.png"
+import sweetwaterLogo from "./sweetwater-logo.webp"
 
 interface Props {
-  slug: string
+  slug?: string
   imgSlug: string
   text?: string
-  partner: "perfect-circuit" | "sound-shoppe"
+  link?: string
+  partner: "perfect-circuit" | "sound-shoppe" | "sweetwater"
 }
 
-const { slug, imgSlug, partner } = Astro.props
+const { slug, imgSlug, partner, link } = Astro.props
 
 const href = {
   "perfect-circuit": `https://link.perfectcircuit.com/t/v1/8-12626-329078-9759?url=https%3A%2F%2Fwww.perfectcircuit.com%2F${slug}.html`,
   "sound-shoppe": `https://soundshoppe.nyc/products/${slug}`,
+  sweetwater: link,
 }[partner]
 
 const ctaLabels = [
@@ -58,6 +61,16 @@ const randomCtaLabel = ctaLabels[Math.min(Math.floor(Math.random() * 10), 9)]
         />
       )
     }
+    {
+      partner === "sweetwater" && (
+        <Image
+          class="h-auto max-w-20 rounded-lg border-2 border-loopydemos-subdued bg-white p-2"
+          width={96}
+          src={sweetwaterLogo}
+          alt="sweetwater logo"
+        />
+      )
+    }
   </div>
   <div class="items- w-ful flex h-48 justify-center rounded-lg">
     <Image
@@ -71,6 +84,6 @@ const randomCtaLabel = ctaLabels[Math.min(Math.floor(Math.random() * 10), 9)]
     class="flex w-full items-center justify-center gap-2 rounded-lg bg-loopydemos-highlight-tertiary px-2 py-4 font-black text-loopydemos-background hover:bg-loopydemos-highlight-tertiary/80"
   >
     <span class="whitespace-nowrap">{randomCtaLabel}</span>
-    <Icon name="ph:tip-jar" class="shrink-0 text-xl" />
+    <Icon name="ph:shopping-cart" class="shrink-0 text-xl" />
   </div>
 </a>

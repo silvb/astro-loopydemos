@@ -35,7 +35,7 @@ This is the type of pedal that you can just plug and play, find a setting you li
 
 **Bass**
 
-- JMJ Mustang, plucked with fingers, tone rolled off to 0%
+- [JMJ Mustang\*](https://sweetwater.sjv.io/R5A6bg), plucked with fingers, tone rolled off to 0%
 - [Keeley Comp Mini](/demos/keeley-electronics-compressor-mini) to even out picking dynamics
 - [Smallsound/Bigsound Mini](/demos/smallsound-bigsound-mini) for a touch of grit
 - Iridium with on round mode [with bass cabs](/posts/strymon-iridium-bass-ownhammer-ir/)

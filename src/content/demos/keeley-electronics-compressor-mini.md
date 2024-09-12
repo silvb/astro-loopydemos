@@ -52,7 +52,7 @@ In GarageBand, I just a applied very mild compression and limiting to the master
 
 **Bass**:
 
-- JMJ Mustang, tone 100%, with plectrum
+- [JMJ Mustang\*](https://sweetwater.sjv.io/R5A6bg), tone 100%, with plectrum
 - Compressor Mini with mild compression to even it out, and **level** a little above unity (noonish) to drive the Iridium's preamp
 - Iridium on the round setting with SVT cabs, as demoed [here](/posts/strymon-iridium-bass-ownhammer-ir)
 - Some EQing to mix with drums and guitars

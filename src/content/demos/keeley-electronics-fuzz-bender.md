@@ -11,6 +11,7 @@ tags:
 externalLinks:
   perfectCircuit: keeley-fuzz-bender
   builderLink: https://robertkeeley.com/product/fuzz-bender/
+  sweetwater: https://sweetwater.sjv.io/Pye6rz
 ---
 
 The Fuzz Bender by Keeley Electronics is a versatile fuzz pedal that combines the best of vintage and modern fuzz tones. It's based on the Tone Bender circuit, but with a few modern twists. The Fuzz Bender has a wide range of fuzz tones, from smooth and creamy to aggressive and gated.
@@ -25,4 +26,4 @@ I like how the guitar melts into a full band mix with the Fuzz Bender. It doesn'
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (bridge pickup)
 - Fuzz Bender
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)

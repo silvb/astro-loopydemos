@@ -33,5 +33,5 @@ My favorite is the "Cranked InnerSpeaker" setting in the demo above. It reminds 
 **Pedals Used for the Backing Track**
 
 - Kroaked for most of the guitar overdubs
-- [Keeley Compressor Mini](/demos/keeley-electronics-compressor-mini), [MAE Line Blur](/demos/mask-audio-electronics-line-blur) and Strymon Iridium (round) [with bass cabs](/posts/strymon-iridium-bass-ownhammer-ir/) for bass (JMJ Mustang)
+- [Keeley Compressor Mini](/demos/keeley-electronics-compressor-mini), [MAE Line Blur](/demos/mask-audio-electronics-line-blur) and Strymon Iridium (round) [with bass cabs](/posts/strymon-iridium-bass-ownhammer-ir/) for bass ([JMJ Mustang\*](https://sweetwater.sjv.io/R5A6bg))
 - [OBNE Screen Violence](/demos/old-blood-noise-endeavors-screen-violence) for some the lead guitar

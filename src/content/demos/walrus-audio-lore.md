@@ -62,7 +62,7 @@ For my demos, I export the backing track and the guitar sounds affected by the p
 
 **Bass**
 
-- Fender JMJ Mustang Bass, tone 100% up, played with pick
+- [Fender JMJ Mustang Bass\*](https://sweetwater.sjv.io/R5A6bg), tone 100% up, played with pick
 - SS/BS Mini, medium gain with bass maxed out
 - [Iridium with bass cab IRs](/posts/strymon-iridium-bass-ownhammer-ir/), a little bit more gain to stack with the mini and a bit more room reverb to make it sit in a more reverby mix
 - Compression and EQing in the DAW (just a bumb around 100 Hz, scooping the low mids a little and slight bumb around 2 kHz)

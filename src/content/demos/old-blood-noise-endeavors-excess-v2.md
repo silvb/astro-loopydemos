@@ -33,5 +33,5 @@ Overall, the Excess is definitely not a subtle pedal, but meant to paint a broad
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (both pickups)
 - Excess V2
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)
 - A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)

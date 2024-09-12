@@ -58,7 +58,7 @@ I used the same guitar and settings for the left and right channel and panned th
 
 **Bass**
 
-- JMJ Mustang, Fender flatwound strings, tone 100% up, played with a pick.
+- [JMJ Mustang\*](https://sweetwater.sjv.io/R5A6bg), Fender flatwound strings, tone 100% up, played with a pick.
 - Tribute with a 12dB boost at ~80-90Hz and drive slightly past noon
 - Iridium on the round setting with SVT cabs, as demoed [here](/posts/strymon-iridium-bass-ownhammer-ir)
 

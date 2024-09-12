@@ -29,5 +29,5 @@ Some pedals are good for scientifically dialing in your exact tone. The Unpleasa
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (bridge position)
 - Unpleasant Surprise
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)
 - A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)

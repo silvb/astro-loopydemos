@@ -10,8 +10,9 @@ tags:
 externalLinks:
   thomann: https://thmn.to/thoprod/553847?partner_id=15606
   reverb: walrus-audio-eons
-  builderLink: http://walrusaudio.com/products/eons-five-state-fuzz
+  builderLink: https://walrusaudio.com/products/eons-five-state-fuzz
   perfectCircuit: walrus-eons
+  sweetwater: https://sweetwater.sjv.io/Nk56Gv
 ---
 
 The Eons Five-State Fuzz by Walrus Audio is a highly versatile dirt box to basically replace every fuzz you've ever tried.

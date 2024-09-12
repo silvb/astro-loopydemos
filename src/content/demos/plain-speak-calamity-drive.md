@@ -62,7 +62,7 @@ There were quite a few overdubs towards the end of the loop with various pickup 
 
 **Bass**
 
-- JMJ Mustang, D'Addario half-round strings, played with pick, tone 100%
+- [JMJ Mustang\*](https://sweetwater.sjv.io/R5A6bg), D'Addario half-round strings, played with pick, tone 100%
 - Calamity Drive (art. ++, gain a little above noon, voice 3 o'clock)
 - [Keeley Compressor Mini](keeley-electronics-compressor-mini)
 - [Strymon Iridium (round) with bass cabs](/posts/strymon-iridium-bass-ownhammer-ir/)

@@ -33,4 +33,4 @@ For bedroom players like myself, an EQ pedal like the [MAE Line Blur](/demos/mas
 - [Catalinbread Sinkhole](/demos/catalinbread-sinkhole) for the shoegaze sound example
 - Death Saw
 - [MAE Line Blur](/demos/mask-audio-electronics-line-blur) to demo the EQ shaping
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)
