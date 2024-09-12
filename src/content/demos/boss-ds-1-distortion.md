@@ -17,6 +17,7 @@ externalLinks:
   reverb: boss-ds-1-distortion
   builderLink: https://www.boss.info/global/products/ds-1/
   perfectCircuit: boss-ds-1-distortion-pedal
+  sweetwater: https://sweetwater.sjv.io/da2Ga3
 ---
 
 The DS-1 Distortion by BOSS is probably one of the best selling pedals of all time. Yet it's not very hip anymore. It seems that it had its hay days during the 90s.

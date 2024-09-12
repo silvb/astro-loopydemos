@@ -18,6 +18,7 @@ externalLinks:
   thomann: https://thmn.to/thoprod/374466?partner_id=15606
   reverb: catalinbread-sft
   builderLink: https://catalinbread.com/products/sft2
+  sweetwater: https://sweetwater.sjv.io/k0yW0x
 ---
 
 I love the SFT Overdrive by Catalinbread. I'm a huge Josh Homme fan and this amp-in-a-box pedal nails those Ampeg tones.

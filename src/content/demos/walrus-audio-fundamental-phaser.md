@@ -10,6 +10,7 @@ externalLinks:
   thomann: https://thmn.to/thoprod/564324?partner_id=15606
   builderLink: https://www.walrusaudio.com/collections/fundamental-series/products/fundamental-series-phaser
   perfectCircuit: walrus-fundamental-phaser
+  sweetwater: https://sweetwater.sjv.io/75EMXY
 ---
 
 The Fundamental Phaser by Walrus Audio is an accessible vibe machine to add psychedelic mojo to your guitar tracks.

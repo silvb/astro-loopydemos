@@ -24,6 +24,7 @@ externalLinks:
   reverb: walrus-audio-m1
   builderLink: https://www.walrusaudio.com/products/mako-series-m1-high-fidelity-modulation-machine?variant=42069616918763
   perfectCircuit: walrus-m1
+  sweetwater: https://sweetwater.sjv.io/5gWnjb
 ---
 
 Walrus Audio calls the M1 a **High-fidelity Modulation Machine**. After running it through its paces, I think it's more than just a multi modulation pedal.

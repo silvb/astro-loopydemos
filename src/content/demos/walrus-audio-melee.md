@@ -16,6 +16,7 @@ externalLinks:
   reverb: walrus-audio-melee
   builderLink: https://www.walrusaudio.com/products/melee-wall-of-noise
   perfectCircuit: walrus-melee
+  sweetwater: https://sweetwater.sjv.io/eK3NR1
 ---
 
 The Melee by Walrus Audio is a shoegazer's wet dream. I love everything about it, from the neon color enclosure design, user interface and of course the addictive sound.

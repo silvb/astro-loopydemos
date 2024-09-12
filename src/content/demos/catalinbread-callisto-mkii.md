@@ -15,6 +15,7 @@ externalLinks:
   thomann: catalinbread_callisto_mk_ii
   reverb: catalinbread-callisto-mkii
   builderLink: https://catalinbread.com/products/callisto-mkii
+  sweetwater: https://sweetwater.sjv.io/y2ak2B
 ---
 
 The Callisto MKII by Catalinbread is an analog chorus and vibrato that gives you the classic modulation effect for your next dream-pop/lo-fi album.

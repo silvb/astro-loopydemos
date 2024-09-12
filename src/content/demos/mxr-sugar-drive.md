@@ -16,6 +16,7 @@ externalLinks:
   reverb: mxr-sugar-drive
   builderLink: https://www.jimdunlop.com/mxr-sugar-drive-pedal/
   perfectCircuit: mxr-m294-sugar-drive
+  sweetwater: https://sweetwater.sjv.io/Gmxgbn
 ---
 
 The Sugar Drive by MXR is a Klon-type drive pedal. That means its sound is characterized by a mid-push with some bass roll-off, hard clipping diodes and the drive control is actually a clean/dirt blend knob.

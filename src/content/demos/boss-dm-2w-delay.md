@@ -17,6 +17,7 @@ externalLinks:
   reverb: boss-dm-2w-delay
   builderLink: https://www.boss.info/global/products/dm-2w/
   perfectCircuit: boss-dm-2w
+  sweetwater: https://sweetwater.sjv.io/vN5VNW
 ---
 
 The DM-2w is BOSS' attempt at faithfully recreating their flag-ship analog delay. The DM-2 was first introduced in 1981 and is since then a highly sought-after vintage pedal.

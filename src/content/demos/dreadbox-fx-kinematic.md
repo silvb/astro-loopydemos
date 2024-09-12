@@ -14,6 +14,7 @@ tags:
 externalLinks:
   perfectCircuit: dreadbox-kinematic
   builderLink: https://www.dreadbox-fx.com/kinematic/
+  sweetwater: https://sweetwater.sjv.io/zNA4x0
 ---
 
 The Kinematic by Dreadbox FX completely surprised me with its versatility.

@@ -34,7 +34,7 @@ If you're tired of playing the same old Big Muff clones, give this one a whirl.
 
 **Bass**
 
-- JMJ Fender Mustang, La Bella flats, played with pick, tone 100%, mute foam on the bridge
+- [JMJ Fender Mustang\*](https://sweetwater.sjv.io/R5A6bg), [La Bella Flats\*](https://sweetwater.sjv.io/WqZN6Z), played with pick, tone 100%, mute foam on the bridge
 - [Keeley Compressor Mini](/demos/keeley-electronics-compressor-mini) to even it out
 - [MAE Line Blur](/demos/mask-audio-electronics-line-blur)
 - Strymon Iridium (round) [with bass cabs](/posts/strymon-iridium-bass-ownhammer-ir/)

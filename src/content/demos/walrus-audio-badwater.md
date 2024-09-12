@@ -13,6 +13,7 @@ externalLinks:
   reverb: walrus-audio-badwater
   builderLink: https://www.walrusaudio.com/products/badwater-bass-pre-amp-with-d-i
   perfectCircuit: walrus-badwater
+  sweetwater: https://sweetwater.sjv.io/nLqy4V
 ---
 
 The Badwater Bass Preamp and D.I. by Walrus Audio is the equivalent of a pocket knife for your bass sound.

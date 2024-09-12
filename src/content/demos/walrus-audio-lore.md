@@ -20,6 +20,7 @@ externalLinks:
   reverb: walrus-audio-lore
   builderLink: https://www.walrusaudio.com/products/lore-reverse-soundscape-generator
   perfectCircuit: walrus-lore
+  sweetwater: https://sweetwater.sjv.io/rQ9XEj
 ---
 
 Walrus Audio have given the Lore a bold tag line: Reverse Soundscape Generator. And I think they're delivering on what that title promises.

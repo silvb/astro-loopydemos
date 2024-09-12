@@ -19,6 +19,7 @@ externalLinks:
   reverb: walrus-audio-polychrome
   builderLink: https://www.walrusaudio.com/products/polychrome-analog-flanger
   perfectCircuit: walrus-polychrome
+  sweetwater: https://sweetwater.sjv.io/DKY3Lb
 ---
 
 Walrus Audio made what the masses were yearning for: A flanger that doesn't suck. The Polychrome Flanger is the first flanger that I truly enjoy and find inspiring. When I initially plugged into this, I immediately wanted to play some kind of psychedelic space rock.

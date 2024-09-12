@@ -12,6 +12,7 @@ relatedSlugs:
 externalLinks:
   builderLink: https://catalinbread.com/products/dirty-little-secret-deluxe
   thomann: https://thmn.to/thoprod/578579?partner_id=15606
+  sweetwater: https://sweetwater.sjv.io/m5LG5y
 ---
 
 The Dirty Little Secret Deluxe by Catalinbread is probably the best Marshall amp in a box pedal I've ever tried.

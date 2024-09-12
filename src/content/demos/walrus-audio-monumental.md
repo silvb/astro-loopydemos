@@ -10,6 +10,7 @@ tags:
 externalLinks:
   perfectCircuit: walrus-monumental-black
   builderLink: https://www.walrusaudio.com/products/monumental-harmonic-stereo-tremolo?variant=45120590217451
+  sweetwater: https://sweetwater.sjv.io/q4Qygg
 ---
 
 The Monumental by Walrus Audio is a Harmonic Stereo Tremolo pedal with exactly right amount of features paired with a straighforward interface.

@@ -15,6 +15,7 @@ externalLinks:
   reverb: ehx-holy-grail-nano
   builderLink: https://www.ehx.com/products/holy-grail/
   perfectCircuit: ehx-holy-grail
+  sweetwater: https://sweetwater.sjv.io/Nk5b9q
 ---
 
 The Holy Grail by Electro Harmonix is a classic reverb pedal. It's affordable. It's simple. And it sounds really good!

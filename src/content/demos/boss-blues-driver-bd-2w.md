@@ -15,6 +15,7 @@ externalLinks:
   reverb: boss-blues-driver-bd-2w
   builderLink: https://www.boss.info/global/products/bd-2w/
   perfectCircuit: boss-bd-2w
+  sweetwater: https://sweetwater.sjv.io/EKLyK9
 ---
 
 The BOSS Blues Driver BD-2w from the Waza Craft series is an absolute sleeper overdrive pedal.

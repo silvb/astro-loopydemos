@@ -11,6 +11,7 @@ externalLinks:
   builderLink: https://www.jimdunlop.com/mxr-joshua-ambient-echo/
   thomann: https://thmn.to/thoprod/583187?partner_id=15606
   perfectCircuit: mxr-m309-joshua
+  sweetwater: https://sweetwater.sjv.io/AWdjgK
 ---
 
 The Joshua Ambient Echo by MXR is well thought out and versatile digital delay pedal.

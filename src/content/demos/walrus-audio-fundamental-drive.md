@@ -13,6 +13,7 @@ externalLinks:
   reverb: walrus-audio-fundamental-drive
   builderLink: https://www.walrusaudio.com/collections/fundamental-series/products/fundamental-series-drive
   perfectCircuit: walrus-fundamental-drive
+  sweetwater: https://sweetwater.sjv.io/MmPbKM
 ---
 
 The Fundamental Drive by Walrus Audio is the drive pedal that I wish was around when I started playing guitar.

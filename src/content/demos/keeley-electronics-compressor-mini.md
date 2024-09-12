@@ -24,6 +24,7 @@ externalLinks:
   thomann: https://thmn.to/thoprod/528158?partner_id=15606
   reverb: keeley-electronics-compressor-mini
   builderLink: https://robertkeeley.com/product/keeley-electronics-compressor-mini/
+  sweetwater: https://sweetwater.sjv.io/xkeZLx
 ---
 
 I was always a little hesitant about trying compressor pedals, until I learned how they can be great recording tools. The Compressor Mini by Keeley Electronics was perfect for me to discover compression without being overwhelmed with fine tuning attack, release, ratio, blend, etc.
