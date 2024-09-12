@@ -10,6 +10,7 @@ externalLinks:
   builderLink: https://www.walrusaudio.com/products/fundamental-series-tremolo
   thomann: https://thmn.to/thoprod/564318?partner_id=15606
   perfectCircuit: walrus-fundamental-tremolo
+  sweetwater: https://sweetwater.sjv.io/xkeZJx
 ---
 
 The Fundamental Tremolo by Walrus Audio is a simple, yet powerful tremolo pedal.

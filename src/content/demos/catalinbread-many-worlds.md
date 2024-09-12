@@ -12,6 +12,7 @@ externalLinks:
   thomann: https://thmn.to/thoprod/539683?partner_id=15606
   reverb: catalinbread-many-worlds
   builderLink: https://catalinbread.com/products/many-worlds
+  sweetwater: https://sweetwater.sjv.io/Qyaby9
 ---
 
 From the manual:

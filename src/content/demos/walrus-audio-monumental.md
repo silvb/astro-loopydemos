@@ -10,6 +10,7 @@ tags:
 externalLinks:
   perfectCircuit: walrus-monumental-black
   builderLink: https://www.walrusaudio.com/products/monumental-harmonic-stereo-tremolo?variant=45120590217451
+  sweetwater: https://sweetwater.sjv.io/q4Qygg
 ---
 
 The Monumental by Walrus Audio is a Harmonic Stereo Tremolo pedal with exactly right amount of features paired with a straighforward interface.
@@ -32,5 +33,5 @@ And of course the artwork and enclosure finish are gorgeous as always with Walru
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (neck pickup)
 - [Keeley Compressor Mini](/demos/keeley-electronics-compressor-mini) for slight compression
 - Monumental
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)
 - A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)

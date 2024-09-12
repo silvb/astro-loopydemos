@@ -10,6 +10,7 @@ tags:
 externalLinks:
   reverb: benson-amps-germanium-fuzz
   builderLink: https://www.bensonamps.com/guitarpedals/germaniumfuzz
+  sweetwater: https://sweetwater.sjv.io/ZQoNd0
 ---
 
 The Germanium Fuzz by Benson Amps is the prettiest fuzz I've ever played.

@@ -11,6 +11,7 @@ externalLinks:
   thomann: https://thmn.to/thoprod/572133?partner_id=15606
   builderLink: https://www.walrusaudio.com/products/sloer-stereo-ambient-reverb?variant=44031416140011
   perfectCircuit: walrus-sloer
+  sweetwater: https://sweetwater.sjv.io/EKLyqD
 ---
 
 Walrus Audio took my favorite reverb – the [Slö](/demos/walrus-audio-slo) – put even more sounds and features into it AND made it stereo… enter the Slöer!

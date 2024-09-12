@@ -25,5 +25,5 @@ Inside the Tone Fox, there is a little trim pot that let's you adjust the bias o
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (bridge pickup)
 - Tone Fox
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)
 - A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)

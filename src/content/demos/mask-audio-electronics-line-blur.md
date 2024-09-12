@@ -39,7 +39,7 @@ If you're looking for an EQ/preamp for your pedalboard, reaching for the Line Bl
 
 **Bass**
 
-- JMJ Fender Mustang, played with pick, La Bella Deep Talkin' Bass flatwounds, tone 100%, with foam on the bridge
+- [JMJ Fender Mustang\*](https://sweetwater.sjv.io/R5A6bg), [La Bella Flats\*](https://sweetwater.sjv.io/WqZN6Z), played with pick, tone 100%, with foam on the bridge
 - [Keeley Compressor Mini](/demos/keeley-electronics-compressor-mini), unity gain and medium compression to even it out
 - Line Blur
 - Strymon Iridium (round) [with bass cabs](/posts/strymon-iridium-bass-ownhammer-ir/), EQ pretty neutral and drive set to clean

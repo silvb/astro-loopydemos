@@ -24,4 +24,4 @@ All in all this is the perfect pedal for aggressive and weird lead tones. I woul
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (both pickups)
 - Super Weirdo
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)

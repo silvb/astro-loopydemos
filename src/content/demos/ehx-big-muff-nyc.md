@@ -17,6 +17,7 @@ externalLinks:
   reverb: ehx-big-muff-nyc
   builderLink: https://www.ehx.com/products/big-muff-pi/
   perfectCircuit: electro-harmonix-big-muff-pi-1
+  sweetwater: https://sweetwater.sjv.io/OrkbeZ
 ---
 
 The Big Muff PI by Electro Harmonix provides the reference for the iconic sound of 90s grunge and alternative rock.

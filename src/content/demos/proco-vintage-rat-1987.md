@@ -7,6 +7,9 @@ date: 2023-02-11
 tags:
   - rat
   - distortion
+externalLinks:
+  builderLink: https://www.ratdistortion.com/
+  sweetwater: https://sweetwater.sjv.io/g1mGRg
 ---
 
 I got this classic vintage ProCo RAT from 1987 on loan from my pal Kit (from [Twilight Pulse Audioworks](/demos/twilight-pulse-audioworks-konstante) and [OKKO FX](/demos/okko-fx-twin-sonic-mkii)). It seems to be a special unit with some kind of secret sauce because it sounds nothing like anything I've tried before.

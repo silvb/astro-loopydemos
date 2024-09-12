@@ -49,7 +49,7 @@ I mimicked the guitar with the rolled-off tone knob by applying an aggressive lo
 
 **Bass**
 
-- JMJ Mustang with Fender Flatwounds, played with pick, tone at 30%
+- [JMJ Mustang\*](https://sweetwater.sjv.io/R5A6bg) with Fender Flatwounds, played with pick, tone at 30%
 - Laser 1 on the smooth setting with the intensity at minimum
 - Iridium (round) with bass IRs
 

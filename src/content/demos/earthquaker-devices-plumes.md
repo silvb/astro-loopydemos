@@ -16,6 +16,7 @@ externalLinks:
   reverb: earthquaker-devices-plumes
   builderLink: https://www.earthquakerdevices.com/plumes
   perfectCircuit: earthquaker-devices-plumes
+  sweetwater: https://sweetwater.sjv.io/EKLyEW
 ---
 
 I don't really care for Tube Screamers. Whenever I tried one or listened to demos, it always sounded like someone put a blanket over the amp – muffled and as if the speaker is made out of paper.

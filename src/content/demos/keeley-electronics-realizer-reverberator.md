@@ -39,7 +39,7 @@ There is an internal switch to change the behavior of the BLEND knob. In my demo
 
 **Pedals Used for the Backing Track**
 
-- DOD 250 (demo coming soon), [MAE Line Blur](/demos/mask-audio-electronics-line-blur), Strymon Iridium (round) [with bass cabs](/posts/strymon-iridium-bass-ownhammer-ir/) for bass (JMJ Fender Mustang, La Bella flats, played with pick, tone 100%)
+- DOD 250 (demo coming soon), [MAE Line Blur](/demos/mask-audio-electronics-line-blur), Strymon Iridium (round) [with bass cabs](/posts/strymon-iridium-bass-ownhammer-ir/) for bass ([JMJ Fender Mustang\*](https://sweetwater.sjv.io/R5A6bg), [La Bella Flats\*](https://sweetwater.sjv.io/WqZN6Z), played with pick, tone 100%)
 - SS/BS Mini, DOD 250, Realizer for most of the guitar overdubs
 - [Chase Bliss Mood](/demos/chase-bliss-audio-mood), Realizer and SS/BS Mini for a grainy, ambient pad
 - Having the 3 very distinct and different reverb modes in the Realizer was really useful to paint a colorful picture for the backing track.

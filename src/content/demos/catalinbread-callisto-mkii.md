@@ -15,6 +15,7 @@ externalLinks:
   thomann: catalinbread_callisto_mk_ii
   reverb: catalinbread-callisto-mkii
   builderLink: https://catalinbread.com/products/callisto-mkii
+  sweetwater: https://sweetwater.sjv.io/y2ak2B
 ---
 
 The Callisto MKII by Catalinbread is an analog chorus and vibrato that gives you the classic modulation effect for your next dream-pop/lo-fi album.
@@ -35,7 +36,7 @@ This is the type of pedal that you can just plug and play, find a setting you li
 
 **Bass**
 
-- JMJ Mustang, plucked with fingers, tone rolled off to 0%
+- [JMJ Mustang\*](https://sweetwater.sjv.io/R5A6bg), plucked with fingers, tone rolled off to 0%
 - [Keeley Comp Mini](/demos/keeley-electronics-compressor-mini) to even out picking dynamics
 - [Smallsound/Bigsound Mini](/demos/smallsound-bigsound-mini) for a touch of grit
 - Iridium with on round mode [with bass cabs](/posts/strymon-iridium-bass-ownhammer-ir/)

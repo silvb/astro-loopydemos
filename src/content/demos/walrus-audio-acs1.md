@@ -16,6 +16,7 @@ externalLinks:
   reverb: walrus-audio-acs1
   builderLink: https://www.walrusaudio.com/products/mako-series-acs1-amp-cab-simulator
   perfectCircuit: walrus-asc1
+  sweetwater: https://sweetwater.sjv.io/0ZgPGO
 ---
 
 The ACS1, the amp and cabinet simulator from Walrus Audio's Mako series makes home recording and silent stage setups a breeze. It's aim is to be the center piece of your bedroom rig.

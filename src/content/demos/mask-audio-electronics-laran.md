@@ -24,4 +24,4 @@ It sure wasn't meant to be used subtly. You will definitely know when it's on.
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (neck pickup)
 - Laran
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)

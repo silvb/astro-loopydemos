@@ -23,4 +23,4 @@ Notice how the lead guitar does that typical smooth, yet unstable thing that oct
 
 - Fidelity Guitars Stellarosa Lite II with the Lollar Firebird neck pickup in drop A for the rhythm part, and bridge pickup and tone all the way off for the lead part
 - Silver Machine
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)

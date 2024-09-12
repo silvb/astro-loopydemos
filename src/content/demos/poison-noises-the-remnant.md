@@ -28,6 +28,6 @@ Playing with the RAVAGE (feedback) is also lots of fun. I like when a delay give
 
 **Pedals Used for the Backing Track**
 
-- [Poison Noises The Crook](/demos/poison-noises-the-crook), [MAE Line Blur](/demos/mask-audio-electronics-line-blur) and Strymon Iridium (round) [with bass cabs](/posts/strymon-iridium-bass-ownhammer-ir/) for bass (JMJ Mustang)
+- [Poison Noises The Crook](/demos/poison-noises-the-crook), [MAE Line Blur](/demos/mask-audio-electronics-line-blur) and Strymon Iridium (round) [with bass cabs](/posts/strymon-iridium-bass-ownhammer-ir/) for bass ([JMJ Mustang\*](https://sweetwater.sjv.io/R5A6bg))
 - The Crook for lead parts and more saturated tones.
 - The Remnant is on almost every guitar overdub

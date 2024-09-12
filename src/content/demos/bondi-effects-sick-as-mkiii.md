@@ -60,7 +60,7 @@ I used this to add some tension and "wetness" to the track.
 
 **Bass**
 
-- JMJ Fender Mustang, La Bella Flats, played with pick, tone 100%
+- [JMJ Fender Mustang\*](https://sweetwater.sjv.io/R5A6bg), [La Bella Flats\*](https://sweetwater.sjv.io/WqZN6Z), played with pick, tone 100%
 - [Keeley Compressor Mini](/demos/keeley-electronics-compressor-mini) to even it out
 - Sick As. Did I mention, this is absolutely fantastic for bass.
 - Strymon Iridium (round) [with bass cabs](/posts/strymon-iridium-bass-ownhammer-ir/)

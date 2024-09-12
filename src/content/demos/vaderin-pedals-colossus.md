@@ -31,4 +31,4 @@ I might go even so far to say that the Colossus is my overall favorite fuzz righ
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (bridge pickup)
 - Colossus
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)

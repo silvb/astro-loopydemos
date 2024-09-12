@@ -33,5 +33,5 @@ The BL-44 is truly inspiring to play. I could not stop playing when I recorded t
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups – both pickups in series mode. This gives a thicker and more compressed tone which fit the lo-fi vibe of this pedal perfectly.
 - BL-44 Reverse
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)
 - A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)

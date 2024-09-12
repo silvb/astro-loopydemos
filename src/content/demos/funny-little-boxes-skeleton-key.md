@@ -34,4 +34,4 @@ I love how the Skeleton Key is the Occam's Razor to the QOTSA guitar tone questi
 - The "QOTSA Tone" preset uses the [Konstante by Twilight Pulse Audioworks](/demos/twilight-pulse-audioworks-konstante) for some boost and extra gain. It's set so that the boost slams into the Skeleton Key, and the drive side just adds a little more gain and texture.
 - Skeleton Key
 - [Boss DM-2w Delay](/demos/boss-dm-2w-delay) is used for the "QOTSA Tone" preset. Homme often uses a quick slapback delay with lots of repeats to create that ominous, dark vibe.
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera). I've set this a little darker than usual to approximate a typical Ampeg V40 sound.
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL). I've set this a little darker than usual to approximate a typical Ampeg V40 sound.

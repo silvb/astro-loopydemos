@@ -10,6 +10,7 @@ tags:
 externalLinks:
   builderLink: https://www.walrusaudio.com/products/fundamental-series-distortion
   perfectCircuit: walrus-fundamental-distortion
+  sweetwater: https://sweetwater.sjv.io/y2akZN
 ---
 
 The Fundamental Distortion by Walrus Audio gives you three different RAT flavours in one box.

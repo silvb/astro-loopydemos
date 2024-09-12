@@ -27,4 +27,4 @@ I think the BB03 does more than just the tape/lo-fi thing and adds its own speci
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (both pickups)
 - BB03 Lo-Fi Chorus
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)

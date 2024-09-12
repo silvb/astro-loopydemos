@@ -11,6 +11,7 @@ externalLinks:
   thomann: https://thmn.to/thoprod/564304?partner_id=15606
   builderLink: https://www.walrusaudio.com/collections/modulation-octave/products/fundamental-series-chorus
   perfectCircuit: walrus-fundamental-chorus
+  sweetwater: https://sweetwater.sjv.io/21odR0
 ---
 
 The Fundamental Chorus by Walrus Audio is a simple, yet powerful chorus pedal. It has sliders to control the RATE, DEPTH and MIX of the chorus effect, and a toggle switch to select between three different voicings.
