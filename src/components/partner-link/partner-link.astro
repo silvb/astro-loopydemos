@@ -34,6 +34,13 @@ const ctaLabels = [
   "Feeling pedalbored?",
   "Snag one here",
   "Shred responsibly",
+  "One More won't hurt",
+  "Fill that empty spot",
+  "More pedals, more fun",
+  "Just one more pedal...",
+  "Your tone deserves this",
+  "Upgrade your noise",
+  "Fuel your tone obsession",
 ]
 
 const randomCtaLabel = ctaLabels[Math.min(Math.floor(Math.random() * 10), 9)]
@@ -43,7 +50,7 @@ const randomCtaLabel = ctaLabels[Math.min(Math.floor(Math.random() * 10), 9)]
   {href}
   target="_blank"
   rel="noopener"
-  class="link-none relative my-4 flex max-w-72 flex-col items-center justify-between gap-4 rounded-lg border-4 border-dashed border-loopydemos-primary bg-loopydemos-secondary p-4"
+  class="link-none relative my-4 flex max-w-72 flex-col items-center justify-between gap-8 rounded-lg border-4 border-dashed border-loopydemos-primary bg-loopydemos-secondary p-4"
 >
   <div class="absolute right-2 top-2 shadow-md shadow-gray-800">
     {
@@ -72,10 +79,10 @@ const randomCtaLabel = ctaLabels[Math.min(Math.floor(Math.random() * 10), 9)]
       )
     }
   </div>
-  <div class="items- w-ful flex h-48 justify-center rounded-lg">
+  <div class="h-56 w-full rounded-lg px-4">
     <Image
       width="200"
-      class="h-auto w-full object-contain"
+      class="h-full w-full object-contain"
       src={getImageSrcFromSlug(imgSlug)}
       alt={getImageAltFromSlug(imgSlug)}
     />
