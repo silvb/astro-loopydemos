@@ -1,5 +1,5 @@
 ---
-builder: Ezhi and Aka
+builder: Ezhi & Aka
 model: Brom
 slug: ezhi-and-aka-brom
 type: demo
