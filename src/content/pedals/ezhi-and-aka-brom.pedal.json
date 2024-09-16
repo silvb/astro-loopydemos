@@ -3,25 +3,25 @@
   "controls": {
     "knobs": [
       {
-        "id": "ampfuzz",
+        "id": "noise_rate",
         "size": 44,
         "position": { "top": 29, "left": 32 },
         "type": "knurled"
       },
       {
-        "id": "tapefuzz",
+        "id": "noise_fuzz",
         "size": 44,
         "position": { "top": 88, "left": 34 },
         "type": "knurled"
       },
       {
-        "id": "noisefuzz",
+        "id": "tape_fuzz",
         "size": 44,
         "position": { "top": 145, "left": 34 },
         "type": "knurled"
       },
       {
-        "id": "vol",
+        "id": "amp_fuzz",
         "size": 44,
         "position": { "top": 199, "left": 35 },
         "type": "knurled"

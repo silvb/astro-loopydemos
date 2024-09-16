@@ -1,1 +1,81 @@
-{"hasBackingTrack":true,"volume":1,"presets":[{"id":"static_preset","label":"Static Preset","settings":{"ampfuzz":5,"tapefuzz":5,"noisefuzz":5,"vol":5,"mode_1":1,"mode_2":1}},{"id":"ampfuzz_knob","label":"Ampfuzz","isSweep":true,"target":"ampfuzz","initialValue":0,"values":[0,2,4,6,8,10],"settings":{"tapefuzz":5,"noisefuzz":5,"vol":5,"mode_1":1,"mode_2":1}}]}
+{
+  "hasBackingTrack": true,
+  "volume": 1,
+  "presets": [
+    {
+      "id": "shocked_fuzz",
+      "label": "Shocked Fuzz",
+      "settings": {
+        "noise_rate": 8.5,
+        "noise_fuzz": 4,
+        "tape_fuzz": 0,
+        "amp_fuzz": 4,
+        "mode_1": 1,
+        "mode_2": 3
+      }
+    },
+    {
+      "id": "swell_fuzz",
+      "label": "Swell Fuzz",
+      "settings": {
+        "noise_rate": 0,
+        "noise_fuzz": 0,
+        "tape_fuzz": 6,
+        "amp_fuzz": 1.5,
+        "mode_1": 1,
+        "mode_2": 3
+      }
+    },
+    {
+      "id": "double_gated_fuzz",
+      "label": "Doubled & Gated",
+      "settings": {
+        "noise_rate": 0,
+        "noise_fuzz": 0,
+        "tape_fuzz": 6,
+        "amp_fuzz": 4,
+        "mode_1": 1,
+        "mode_2": 2
+      }
+    },
+    {
+      "id": "glitch_fuzz",
+      "label": "Glitched Out",
+      "settings": {
+        "noise_rate": 0,
+        "noise_fuzz": 0,
+        "tape_fuzz": 5,
+        "amp_fuzz": 5,
+        "mode_1": 1,
+        "mode_2": 1
+      }
+    },
+    {
+      "id": "honky_filter",
+      "label": "Honky Filter",
+      "settings": {
+        "noise_rate": 8.5,
+        "noise_fuzz": 4,
+        "tape_fuzz": 0,
+        "amp_fuzz": 3,
+        "mode_1": 2,
+        "mode_2": 1
+      }
+    },
+    {
+      "id": "noise_rate_knob",
+      "label": "Noise Rate",
+      "isSweep": true,
+      "target": "noise_rate",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "noise_fuzz": 4,
+        "tape_fuzz": 0,
+        "amp_fuzz": 4,
+        "mode_1": 1,
+        "mode_2": 3
+      }
+    }
+  ]
+}
