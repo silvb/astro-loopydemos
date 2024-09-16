@@ -1,6 +1,6 @@
 {
   "hasBackingTrack": true,
-  "volume": 1,
+  "volume": 0.65,
   "presets": [
     {
       "id": "shocked_fuzz",
@@ -27,7 +27,7 @@
       }
     },
     {
-      "id": "double_gated_fuzz",
+      "id": "doubled_gated_fuzz",
       "label": "Doubled & Gated",
       "settings": {
         "noise_rate": 0,
@@ -63,18 +63,60 @@
       }
     },
     {
+      "id": "amp_fuzz",
+      "label": "Only Amp Fuzz",
+      "settings": {
+        "noise_rate": 0,
+        "noise_fuzz": 0,
+        "tape_fuzz": 0,
+        "amp_fuzz": 6,
+        "mode_1": 1,
+        "mode_2": 1
+      }
+    },
+    {
+      "id": "tape_fuzz_modes",
+      "label": "Tape Fuzz Modes",
+      "isSweep": true,
+      "target": "mode_2",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "noise_rate": 0,
+        "noise_fuzz": 0,
+        "tape_fuzz": 6,
+        "amp_fuzz": 1.7,
+        "mode_1": 1
+      }
+    },
+    {
+      "id": "noise_fuzz_modes",
+      "label": "Noise Fuzz Modes",
+      "isSweep": true,
+      "target": "mode_1",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "noise_rate": 8,
+        "noise_fuzz": 6,
+        "tape_fuzz": 0,
+        "amp_fuzz": 1.7,
+        "mode_2": 1
+      }
+    },
+    {
       "id": "noise_rate_knob",
-      "label": "Noise Rate",
+      "label": "Noise Rate (Tremolo Mode)",
       "isSweep": true,
       "target": "noise_rate",
       "initialValue": 0,
-      "values": [0, 2, 4, 6, 8, 10],
+      "values": [0, 2, 4, 6, 8, 9, 10],
       "settings": {
-        "noise_fuzz": 4,
+        "noise_fuzz": 6,
         "tape_fuzz": 0,
-        "amp_fuzz": 4,
+        "amp_fuzz": 1.7,
         "mode_1": 1,
-        "mode_2": 3
+        "mode_2": 1
       }
     }
   ]

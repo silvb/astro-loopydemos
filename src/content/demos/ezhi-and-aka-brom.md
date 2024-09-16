@@ -12,8 +12,8 @@ tags:
   - noise rock
   - glitch
 externalLinks:
-  perfectCircuit: ezhi-and-aka-brom
-  builderLink: ...
+  soundShoppe: brom-dihydrochlorphenylbenzodiazepine
+  builderLink: https://ezhiandaka.art/bm/
 ---
 
 Write some copy about the Brom by Ezhi and Aka.
