@@ -1,0 +1,57 @@
+{
+  "name": "ehx-nano-big-muff-nyc",
+  "width": 185,
+  "height": 325,
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 56,
+        "position": {
+          "left": 36,
+          "top": 36
+        },
+        "type": "simple"
+      },
+      {
+        "id": "tone",
+        "size": 56,
+        "position": {
+          "left": 121,
+          "top": 36
+        },
+        "type": "simple"
+      },
+      {
+        "id": "sustain",
+        "size": 56,
+        "position": {
+          "left": 206,
+          "top": 35
+        },
+        "type": "simple"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 37,
+        "position": {
+          "left": 89,
+          "top": 76
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 44,
+        "position": {
+          "left": 128,
+          "top": 252
+        }
+      }
+    ]
+  }
+}
