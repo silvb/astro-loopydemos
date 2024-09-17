@@ -14,6 +14,7 @@ externalLinks:
   reverb: strymon-iridium
   builderLink: https://www.strymon.net/product/iridium/
   perfectCircuit: strymon-iridium
+  sweetwater: https://sweetwater.sjv.io/oqxONo
 ---
 
 The Strymon Iridium is the first amp modeler that I just unboxed, plugged in and it sounded great without much fiddling. The IR selection is great. The EQs for all amp models are very usable. The drives sound good on their own. The room reverb adds a bit of three-dimensionality and lubrication for the dryness of direct/ampless setups.

@@ -10,6 +10,7 @@ externalLinks:
   builderLink: https://www.walrusaudio.com/products/fundamental-series-reverb
   thomann: https://thmn.to/thoprod/564323?partner_id=15606
   perfectCircuit: walrus-fundamental-reverb
+  sweetwater: https://sweetwater.sjv.io/LXj20V
 ---
 
 The Fundamental Reverb by Walrus Audio is a simple, yet powerful reverb pedal.

@@ -1,0 +1,44 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.8,
+  "presets": [
+    {
+      "id": "starved_crunch",
+      "label": "Starved Crunch",
+      "settings": { "gain": 2, "vol": 7, "teeth": 7 }
+    },
+    {
+      "id": "bared_teeth",
+      "label": "Bared Teeth",
+      "settings": { "gain": 5, "vol": 7, "teeth": 10 }
+    },
+    {
+      "id": "warm_drive",
+      "label": "Warm Drive",
+      "settings": { "gain": 0, "vol": 8, "teeth": 2 }
+    },
+    {
+      "id": "cozy_distortion",
+      "label": "Cozy Distortion",
+      "settings": { "gain": 10, "vol": 7, "teeth": 5 }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "vol": 7, "teeth": 7 }
+    },
+    {
+      "id": "teeth_knob",
+      "label": "Teeth",
+      "isSweep": true,
+      "target": "teeth",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "vol": 7, "gain": 7 }
+    }
+  ]
+}

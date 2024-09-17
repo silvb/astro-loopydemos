@@ -38,4 +38,4 @@ Fernweh is never in the way. It adds vibe and character to the sound. You can di
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (bridge pickup)
 - Fernweh
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)

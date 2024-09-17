@@ -71,6 +71,20 @@ const relatedPosts = allPosts.filter(
       <>
         <h3>Links</h3>
         <ul>
+          {externalLinks.sweetwater && (
+            <li>
+              <span>
+                If you are in the US, grab one from{" "}
+                <a
+                  href={externalLinks.sweetwater}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Sweetwater*
+                </a>
+              </span>
+            </li>
+          )}
           {externalLinks.perfectCircuit && (
             <li>
               <span>
@@ -114,12 +128,14 @@ const relatedPosts = allPosts.filter(
             </li>
           )}
         </ul>
-        <p>
-          <i>
-            *Affiliate link: Buy something and support Loopy Demos at no extra
-            cost to you!
-          </i>
-        </p>
+        {externalLinks.perfectCircuit && (
+          <p>
+            <i>
+              *Affiliate link: Buy something and support Loopy Demos at no extra
+              cost to you!
+            </i>
+          </p>
+        )}
       </>
     )
   }

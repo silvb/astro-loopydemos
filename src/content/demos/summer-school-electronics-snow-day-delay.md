@@ -65,7 +65,7 @@ These two guitar lines set in at the end of the loop.
 
 **Bass**
 
-- JMJ Mustang, tone 100%, Fender Flats, played with pick
+- [JMJ Mustang\*](https://sweetwater.sjv.io/R5A6bg), tone 100%, Fender Flats, played with pick
 - [Keeley Compressor Mini](/demos/keeley-electronics-compressor-mini)
 - [Calamity Drive](/demos/plain-speak-calamity-drive)
 - Strymon Iridium ([round mode with bass IRs](/posts/strymon-iridium-bass-ownhammer-ir/))

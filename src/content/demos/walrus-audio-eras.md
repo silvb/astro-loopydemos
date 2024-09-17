@@ -19,6 +19,7 @@ externalLinks:
   reverb: walrus-audio-eras
   builderLink: https://www.walrusaudio.com/products/eras-five-state-distortion
   perfectCircuit: walrus-eras
+  sweetwater: https://sweetwater.sjv.io/ba6Vkg
 ---
 
 The Eras by Walrus Audio is a five-state distortion pedal with a blend knob. It's a utility box for all your distortion needs.

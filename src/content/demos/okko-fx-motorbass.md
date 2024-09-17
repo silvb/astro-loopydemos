@@ -33,7 +33,7 @@ I can also attest that it sounds great on guitar and stacks super well with othe
 
 ### Signal Chain
 
-- JMJ Mustang Bass with La Bella Flatwound Strings, Curtis Novak FAT Mustang Pickups, played with a pick
+- [JMJ Mustang Bass\*](https://sweetwater.sjv.io/R5A6bg) with [La Bella Flats\*](https://sweetwater.sjv.io/WqZN6Z), Curtis Novak FAT Mustang Pickups, played with a pick
 - MOTÖRBASS
 - [Strymon Iridium (round mode with OwnHammer AMPG Bass IRs)](/posts/strymon-iridium-bass-ownhammer-ir/)
 - No post-processing!

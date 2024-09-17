@@ -24,6 +24,7 @@ tags:
 externalLinks:
   perfectCircuit: ${slug}
   builderLink: ...
+  sweetwater: ...
 ---
 
 Write some copy about the ${model} by ${builder}.
@@ -32,7 +33,7 @@ Write some copy about the ${model} by ${builder}.
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (${pickup})
 - ${model}
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin*](https://sweetwater.sjv.io/B0N2PL)
 - A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)
 `
 
@@ -68,14 +69,14 @@ const getDefaultControls = ({ knobs = [], toggles = [], slug = "" }) => ({
   controls: {
     knobs: knobs.map(knob => ({
       id: knob,
-      size: 64,
+      size: 48,
       position: { top: 64, left: 64 },
       type: "bakelit",
     })),
     leds: [
       {
         id: "on_led",
-        size: 48,
+        size: 32,
         position: { top: 64, left: 64 },
       },
     ],
@@ -83,13 +84,13 @@ const getDefaultControls = ({ knobs = [], toggles = [], slug = "" }) => ({
       {
         id: "bypass_switch",
         type: "stomp",
-        size: 56,
+        size: 48,
         position: { top: 64, left: 64 },
       },
       ...toggles.map(toggle => ({
         id: toggle,
         type: "toggle",
-        size: 40,
+        size: 32,
         position: { top: 64, left: 64 },
       })),
     ],

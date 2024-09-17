@@ -13,6 +13,7 @@ externalLinks:
   reverb: walrus-audio-badwater
   builderLink: https://www.walrusaudio.com/products/badwater-bass-pre-amp-with-d-i
   perfectCircuit: walrus-badwater
+  sweetwater: https://sweetwater.sjv.io/nLqy4V
 ---
 
 The Badwater Bass Preamp and D.I. by Walrus Audio is the equivalent of a pocket knife for your bass sound.
@@ -52,7 +53,7 @@ All that said, it was easy to dial in a good sound with the Badwater that mixed 
 
 **Bass**
 
-- Fender JMJ Mustang, Fender flatwounds, played with pick, tone 100% up
+- [Fender JMJ Mustang\*](https://sweetwater.sjv.io/R5A6bg), Fender flatwounds, played with pick, tone 100% up
 - Badwater
 - Iridium, preamp section bypassed, cab sim with an OwnHammer AMPG cab as demoed [here](/posts/strymon-iridium-bass-ownhammer-ir). The cab mix I chose was a 4x10 cab with "fat" voiced microphones.
 

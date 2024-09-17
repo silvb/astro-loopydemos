@@ -16,6 +16,7 @@ externalLinks:
   reverb: walrus-audio-julia
   builderLink: https://www.walrusaudio.com/products/julia-analog-chorus-vibrato-v2
   perfectCircuit: walrus-julia-v2
+  sweetwater: https://sweetwater.sjv.io/QyabYa
 ---
 
 I don't often use chorus or vibrato. But when I do, I choose the Walrus Audio Julia Analog Chorus/Vibrato. It's super versatile. You can do anything from adding just a bit of movement, lush choruses to super wobbly vibrato.

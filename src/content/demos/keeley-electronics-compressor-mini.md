@@ -24,6 +24,7 @@ externalLinks:
   thomann: https://thmn.to/thoprod/528158?partner_id=15606
   reverb: keeley-electronics-compressor-mini
   builderLink: https://robertkeeley.com/product/keeley-electronics-compressor-mini/
+  sweetwater: https://sweetwater.sjv.io/xkeZLx
 ---
 
 I was always a little hesitant about trying compressor pedals, until I learned how they can be great recording tools. The Compressor Mini by Keeley Electronics was perfect for me to discover compression without being overwhelmed with fine tuning attack, release, ratio, blend, etc.
@@ -52,7 +53,7 @@ In GarageBand, I just a applied very mild compression and limiting to the master
 
 **Bass**:
 
-- JMJ Mustang, tone 100%, with plectrum
+- [JMJ Mustang\*](https://sweetwater.sjv.io/R5A6bg), tone 100%, with plectrum
 - Compressor Mini with mild compression to even it out, and **level** a little above unity (noonish) to drive the Iridium's preamp
 - Iridium on the round setting with SVT cabs, as demoed [here](/posts/strymon-iridium-bass-ownhammer-ir)
 - Some EQing to mix with drums and guitars

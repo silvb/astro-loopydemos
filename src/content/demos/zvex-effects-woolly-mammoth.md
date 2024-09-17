@@ -29,5 +29,5 @@ The Woolly Mammoth feels like a mix of a Big Muff and a starved Tonebender, inhe
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (bridge pickup)
 - Woolly Mammoth
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)
 - A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)

@@ -13,6 +13,7 @@ externalLinks:
   thomann: https://thmn.to/thoprod/551172?partner_id=15606
   reverb: catalinbread-soft-focus
   builderLink: https://catalinbread.com/products/soft-focus-reverb
+  sweetwater: https://sweetwater.sjv.io/jrNmrM
 ---
 
 The Soft Focus is Catalinbread's attempt to create an instant shoegaze button.

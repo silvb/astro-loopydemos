@@ -14,6 +14,7 @@ externalLinks:
   thomann: https://thmn.to/thoprod/374120?partner_id=15606
   reverb: catalinbread-topanga
   builderLink: https://catalinbread.com/products/topanga
+  sweetwater: https://sweetwater.sjv.io/VmJNx6
 ---
 
 The Topanga Spring Reverb from Catalinbread makes we wanna play drippy surf rock all day.

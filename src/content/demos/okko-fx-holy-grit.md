@@ -51,7 +51,7 @@ Bottom line: The Holy Grit is right up my alley. Transparent, amp-like overdrive
 
 **Bass**
 
-- JMJ Mustang with Fender flatwounds (tone 100% open, played with pick)
+- [JMJ Mustang\*](https://sweetwater.sjv.io/R5A6bg) with Fender flatwounds (tone 100% open, played with pick)
 - Holy Grit with a medium gain setting
 - Strymon Iridium with [my usual bass setup](/posts/strymon-iridium-bass-ownhammer-ir)
 - Just a little EQing to bring out ~3kHz and low mids around 200Hz

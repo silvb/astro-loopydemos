@@ -11,6 +11,7 @@ externalLinks:
   builderLink: https://www.jimdunlop.com/mxr-joshua-ambient-echo/
   thomann: https://thmn.to/thoprod/583187?partner_id=15606
   perfectCircuit: mxr-m309-joshua
+  sweetwater: https://sweetwater.sjv.io/AWdjgK
 ---
 
 The Joshua Ambient Echo by MXR is well thought out and versatile digital delay pedal.
@@ -33,4 +34,4 @@ You can literally go bonkers with the Joshua Ambient Echo or switch off all the 
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (both pickups)
 - Joshua Ambient Echo
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)

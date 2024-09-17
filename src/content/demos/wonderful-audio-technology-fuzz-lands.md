@@ -27,4 +27,4 @@ If you are a fuzz cork sniffer, you won't be turning your nose up at this one.
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (bridge pickup)
 - Fuzz Lands
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)

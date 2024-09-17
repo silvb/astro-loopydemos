@@ -13,6 +13,7 @@ relatedSlugs:
 externalLinks:
   builderLink: https://catalinbread.com/products/sinkhole-modulated-reverb
   thomann: https://thmn.to/thoprod/580808?partner_id=15606
+  sweetwater: https://sweetwater.sjv.io/0ZgdxM
 ---
 
 From the very first moment I plugged into the Sinkhole from Catalinbread, I knew I was going to love it and I knew that I was going to put some filthy distortion behind it!
@@ -30,7 +31,7 @@ I have a feeling that the Sinkhole will become an integral part of my arsenal, e
 ### Signal Chain
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (both pickups)
-- Benson Amps Preamp [Mixwave Plugin](https://www.mixwave.net/products/benson-chimera)
+- Benson Amps Preamp [Mixwave Plugin\*](https://sweetwater.sjv.io/B0N2PL)
 - Sinkhole
 - [Twilight Pulse AudioWorks Proxima](/demos/twilight-pulse-audioworks-proxima) for the Shoegaze preset
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)

@@ -21,6 +21,7 @@ externalLinks:
   reverb: walrus-audio-slo
   builderLink: https://www.walrusaudio.com/products/slo-multi-texture-reverb
   perfectCircuit: walrus-slo
+  sweetwater: https://sweetwater.sjv.io/k0yWRV
 ---
 
 The Slö Multi Texture Reverb is a real dream machine. Anything you play into it just turns out magical and dreamy. It's really inspiring to play – almost as if an orchestra deep down in the ocean is playing along with you.

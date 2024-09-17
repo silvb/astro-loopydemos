@@ -1,0 +1,36 @@
+{
+  "name": "vaderin-pedals-tone-fox",
+  "controls": {
+    "knobs": [
+      {
+        "id": "gain",
+        "size": 48,
+        "position": { "top": 43, "left": 26 },
+        "type": "walrus"
+      },
+      {
+        "id": "vol",
+        "size": 48,
+        "position": { "top": 43, "left": 122 },
+        "type": "walrus"
+      },
+      {
+        "id": "teeth",
+        "size": 48,
+        "position": { "top": 124, "left": 26 },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 48, "position": { "top": 126, "left": 124 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 287, "left": 77 }
+      }
+    ]
+  }
+}

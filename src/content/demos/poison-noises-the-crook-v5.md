@@ -21,7 +21,7 @@ If you're reading this, chances are you've heard of the Crook before on the JHS 
 
 ### Signal Chain
 
-- JMJ Mustang Bass with La Bella Flatwound Strings, Curtis Novak FAT Mustang Pickups, played with a pick
+- [JMJ Mustang Bass\*](https://sweetwater.sjv.io/R5A6bg) with La Bella Flatwound Strings, Curtis Novak FAT Mustang Pickups, played with a pick
 - The Crook V5
 - [Strymon Iridium (round mode with OwnHammer AMPG Bass IRs)](/posts/strymon-iridium-bass-ownhammer-ir/)
 - No post-processing!

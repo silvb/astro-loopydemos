@@ -11,6 +11,7 @@ externalLinks:
   reverb: walrus-audio-fundamental-fuzz
   builderLink: https://www.walrusaudio.com/collections/fundamental-series/products/fundamental-series-fuzz
   perfectCircuit: walrus-fundamental-fuzz
+  sweetwater: https://sweetwater.sjv.io/KjrzB7
 ---
 
 The Fundamental Fuzz by Walrus Audio simple and aggressive fuzz that is super user friendly and easy to dial in.

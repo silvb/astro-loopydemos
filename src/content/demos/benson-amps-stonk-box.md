@@ -10,6 +10,7 @@ tags:
   - old school fuzz
 externalLinks:
   builderLink: https://www.bensonamps.com/guitarpedals/stonkbox
+  sweetwater: https://sweetwater.sjv.io/Gmxgj6
 ---
 
 The Stonk Box by Benson Amps is based on a vintage fuzz circuit from the 60s. Benson paired their Automatic Thermal Bias technology with one of the first iterations of the first fuzz circuit ever made.
@@ -22,4 +23,4 @@ I especially noticed that it sounds awesome with the neck pickup, wich is what y
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (neck pickup)
 - Stonk Box
-- [Mixwave Benson Chimera Plugin](https://www.mixwave.net/products/benson-chimera)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)

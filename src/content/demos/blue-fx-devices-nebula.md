@@ -50,7 +50,7 @@ If you're looking for a juicy, crunchy low to mid gain overdrive, I highly recom
 
 **Bass**
 
-- JMJ Mustang, tone 100%, Fender flats, played with pick
+- [JMJ Mustang\*](https://sweetwater.sjv.io/R5A6bg), tone 100%, Fender flats, played with pick
 - [Keeley Compressor Mini](/demos/keeley-electronics-compressor-mini) with medium compression
 - [Smallsound/Bigsound Mini Overdrive](/demos/smallsound-bigsound-mini) on medium gain setting and a little underbiased
 - [Iridium with bass cabs](/posts/strymon-iridium-bass-ownhammer-ir/)
