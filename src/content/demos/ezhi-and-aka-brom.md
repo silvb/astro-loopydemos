@@ -31,8 +31,6 @@ It's the one pedal everyone will ask you about after a gig: _"What was that soun
 
 ### Signal Chain
 
-˝
-
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (bridge pickup)
 - Brom
 - [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)
