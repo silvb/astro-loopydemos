@@ -1,0 +1,66 @@
+{
+  "volume": 1,
+  "hasBackingTrack": true,
+  "presets": [
+    {
+      "id": "growl",
+      "label": "Growl",
+      "comparison": [
+        {
+          "id": "nyc_sweetspot",
+          "pedalSlug": "ehx-nano-big-muff-nyc",
+          "settings": {
+            "volume": 5,
+            "tone": 6,
+            "sustain": 10
+          }
+        },
+        {
+          "id": "opamp_sweetspot",
+          "pedalSlug": "ehx-nano-big-muff-op-amp",
+          "settings": {
+            "volume": 5,
+            "tone": 6,
+            "sustain": 10
+          }
+        },
+        {
+          "id": "rams_sweetspot",
+          "pedalSlug": "ehx-nano-big-muff-rams-head",
+          "settings": {
+            "volume": 5,
+            "tone": 6,
+            "sustain": 10
+          }
+        },
+        {
+          "id": "triangle_sweetspot",
+          "pedalSlug": "ehx-nano-big-muff-triangle",
+          "settings": {
+            "volume": 5,
+            "tone": 6,
+            "sustain": 10
+          }
+        },
+        {
+          "id": "russian_sweetspot",
+          "pedalSlug": "ehx-nano-big-muff-green-russian",
+          "settings": {
+            "volume": 5,
+            "tone": 6,
+            "sustain": 10
+          }
+        },
+        {
+          "id": "bass_sweetspot",
+          "pedalSlug": "ehx-nano-big-muff-bass",
+          "settings": {
+            "volume": 5,
+            "tone": 6,
+            "sustain": 10
+          }
+        }
+      ]
+    }
+  ]
+}

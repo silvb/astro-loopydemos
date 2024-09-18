@@ -6,7 +6,9 @@ const { execSync } = require("child_process")
 const imageSourcePath = "src/images"
 const targetDirectoryPath = "src/images/seo-preview"
 const imageExtensions = [".png", ".webp"]
-const fillColor = "#9580ff"
+const fillColor = "#8958ff"
+const postSourcePath = "src/content/posts"
+const presetSource = "src/content/presets"
 
 const convertImage = (imagePath, outputPath) => {
   const identifyOutput = execSync(
@@ -41,33 +43,33 @@ fs.readdirSync(imageSourcePath)
     }
   })
 
-// TODO: refactor this and make it work with new file structure
-// const postSourcePath = "src/content/posts"
+fs.readdirSync(postSourcePath).forEach(post => {
+  const slug = post.split(".md")[0]
+  console.log(slug)
 
-// fs.readdirSync(postSourcePath).forEach(post => {
-//   const mdxPath = path.join(postSourcePath, post, "index.mdx")
-//   const mdxFile = fs.readFileSync(mdxPath, "utf8")
-//   const parsedMdx = matter(mdxFile)
+  const possibleImagePath = path.join(imageSourcePath, slug + ".png")
 
-//   if (!parsedMdx.data.coverImage && parsedMdx.data.pedalImages.length > 0) {
-//     const pedalsSeoImages = parsedMdx.data.pedalImages
-//       .map(pedalImagePath => {
-//         return pedalImagePath.split("/").pop().split(".")[0]
-//       })
-//       .map(pedalImageName => {
-//         return path.join(targetDirectoryPath, `${pedalImageName}.jpeg`)
-//       })
+  if (fs.existsSync(possibleImagePath)) return
 
-//     const gridSize = Math.ceil(Math.sqrt(pedalsSeoImages.length))
-//     const outputPathRaw = path.join(targetDirectoryPath, `${post}_raw.png`)
-//     const outputPath = path.join(targetDirectoryPath, `${post}.jpeg`)
+  const presetPath = path.join(presetSource, slug + ".presets.json")
+  const presetData = JSON.parse(fs.readFileSync(presetPath))
 
-//     const montageCmd = `montage ${pedalsSeoImages.join(
-//       " "
-//     )} -tile ${gridSize}x${gridSize} -geometry +0+0 -background '${fillColor}' "${outputPathRaw}"`
+  const pedals =
+    presetData.presets[0]?.comparison?.map(comp => comp.pedalSlug) ||
+    presetData.presets[0]?.chain?.map(chainEl => chainEl.pedalSlug)
 
-//     execSync(montageCmd)
-//     convertImage(outputPathRaw, outputPath)
-//     execSync(`rm ${outputPathRaw}`)
-//   }
-// })
+  const pedalImagePaths = pedals.map(pedal =>
+    path.join(targetDirectoryPath, pedal + ".jpeg")
+  )
+
+  const gridSize = Math.ceil(Math.sqrt(pedalImagePaths.length))
+  const outputPathRaw = path.join(targetDirectoryPath, `${slug}_raw.png`)
+  const outputPath = path.join(targetDirectoryPath, `${slug}.jpeg`)
+  const montageCmd = `montage ${pedalImagePaths.join(
+    " "
+  )} -tile ${gridSize}x${gridSize} -geometry +0+0 -background '${fillColor}' "${outputPathRaw}"`
+
+  execSync(montageCmd)
+  convertImage(outputPathRaw, outputPath)
+  execSync(`rm ${outputPathRaw}`)
+})

@@ -1,0 +1,67 @@
+{
+  "name": "ehx-nano-big-muff-bass",
+  "width": 185,
+  "height": 325,
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 48,
+        "position": {
+          "left": 25,
+          "top": 32
+        },
+        "type": "simple"
+      },
+      {
+        "id": "sustain",
+        "size": 48,
+        "position": {
+          "left": 112,
+          "top": 31
+        },
+        "type": "simple"
+      },
+      {
+        "id": "tone",
+        "size": 48,
+        "position": {
+          "left": 68,
+          "top": 78
+        },
+        "type": "simple"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 105,
+          "top": 193
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": {
+          "left": 70,
+          "top": 195
+        }
+      },
+      {
+        "id": "mode",
+        "type": "toggle",
+        "orientation": "horizontal",
+        "size": 24,
+        "position": {
+          "left": 81,
+          "top": 136
+        }
+      }
+    ]
+  }
+}

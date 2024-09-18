@@ -4,10 +4,10 @@
     "knobs": [
       {
         "id": "level",
-        "size": 26,
+        "size": 28,
         "position": {
           "left": 24,
-          "top": 41
+          "top": 42
         },
         "type": "simple",
         "colors": {
@@ -17,10 +17,10 @@
       },
       {
         "id": "low",
-        "size": 26,
+        "size": 28,
         "position": {
           "left": 64,
-          "top": 41
+          "top": 42
         },
         "type": "simple",
         "colors": {
@@ -30,10 +30,10 @@
       },
       {
         "id": "high",
-        "size": 26,
+        "size": 28,
         "position": {
-          "left": 107,
-          "top": 39
+          "left": 106,
+          "top": 40
         },
         "type": "simple",
         "colors": {
@@ -43,10 +43,10 @@
       },
       {
         "id": "dist",
-        "size": 26,
+        "size": 28,
         "position": {
-          "left": 146,
-          "top": 40
+          "left": 145,
+          "top": 41
         },
         "type": "simple",
         "colors": {
@@ -61,7 +61,7 @@
         "size": 28,
         "position": {
           "left": 85,
-          "top": 12
+          "top": 14
         }
       }
     ],
