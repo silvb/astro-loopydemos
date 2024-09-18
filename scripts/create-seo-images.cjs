@@ -6,44 +6,42 @@ const { execSync } = require("child_process")
 const imageSourcePath = "src/images"
 const targetDirectoryPath = "src/images/seo-preview"
 const imageExtensions = [".png", ".webp"]
-const fillColor = "#9580ff"
+const fillColor = "#8958ff"
 const postSourcePath = "src/content/posts"
 const presetSource = "src/content/presets"
 
-// const convertImage = (imagePath, outputPath) => {
-//   const identifyOutput = execSync(
-//     `identify -format "%w %h" ${imagePath}`
-//   ).toString()
-//   const imageName = imagePath.split("/").pop().split(".")[0]
-//   const [width, height] = identifyOutput.split(" ").map(Number)
-//   const longestSide = Math.max(width, height)
-//   const extendLength = longestSide + 60
+const convertImage = (imagePath, outputPath) => {
+  const identifyOutput = execSync(
+    `identify -format "%w %h" ${imagePath}`
+  ).toString()
+  const imageName = imagePath.split("/").pop().split(".")[0]
+  const [width, height] = identifyOutput.split(" ").map(Number)
+  const longestSide = Math.max(width, height)
+  const extendLength = longestSide + 60
 
-//   const convertCmd = `convert -size ${extendLength}x${extendLength} xc:${fillColor} "${imagePath}" -gravity center -composite -resize 400x400 "${outputPath}"`
+  const convertCmd = `convert -size ${extendLength}x${extendLength} xc:${fillColor} "${imagePath}" -gravity center -composite -resize 400x400 "${outputPath}"`
 
-//   execSync(convertCmd)
+  execSync(convertCmd)
 
-//   console.log(`Processed ${imageName}`)
-// }
+  console.log(`Processed ${imageName}`)
+}
 
-// fs.readdirSync(imageSourcePath)
-//   .filter(file => imageExtensions.includes(path.extname(file).toLowerCase()))
-//   .forEach(image => {
-//     const imagePath = path.join(imageSourcePath, image)
-//     const imageWithoutExtension = image.split(".")[0]
-//     const outputPath = path.join(
-//       targetDirectoryPath,
-//       `${imageWithoutExtension}.jpeg`
-//     )
+fs.readdirSync(imageSourcePath)
+  .filter(file => imageExtensions.includes(path.extname(file).toLowerCase()))
+  .forEach(image => {
+    const imagePath = path.join(imageSourcePath, image)
+    const imageWithoutExtension = image.split(".")[0]
+    const outputPath = path.join(
+      targetDirectoryPath,
+      `${imageWithoutExtension}.jpeg`
+    )
 
-//     try {
-//       convertImage(imagePath, outputPath)
-//     } catch (error) {
-//       console.error(`Error processing ${image}: ${error}`)
-//     }
-//   })
-
-// TODO: refactor this and make it work with new file structure
+    try {
+      convertImage(imagePath, outputPath)
+    } catch (error) {
+      console.error(`Error processing ${image}: ${error}`)
+    }
+  })
 
 fs.readdirSync(postSourcePath).forEach(post => {
   const slug = post.split(".md")[0]
@@ -60,16 +58,13 @@ fs.readdirSync(postSourcePath).forEach(post => {
     presetData.presets[0]?.comparison?.map(comp => comp.pedalSlug) ||
     presetData.presets[0]?.chain?.map(chainEl => chainEl.pedalSlug)
 
-  const pedalImagePaths = pedals.map(pedal => {
-    return path.join(imageSourcePath, pedal + ".png")
-  })
+  const pedalImagePaths = pedals.map(pedal =>
+    path.join(targetDirectoryPath, pedal + ".jpeg")
+  )
 
-  console.log({
-    pedalImagePaths,
-  })
   const gridSize = Math.ceil(Math.sqrt(pedalImagePaths.length))
-  const outputPathRaw = path.join(targetDirectoryPath, `${post}_raw.png`)
-  const outputPath = path.join(targetDirectoryPath, `${post}.jpeg`)
+  const outputPathRaw = path.join(targetDirectoryPath, `${slug}_raw.png`)
+  const outputPath = path.join(targetDirectoryPath, `${slug}.jpeg`)
   const montageCmd = `montage ${pedalImagePaths.join(
     " "
   )} -tile ${gridSize}x${gridSize} -geometry +0+0 -background '${fillColor}' "${outputPathRaw}"`
@@ -77,17 +72,4 @@ fs.readdirSync(postSourcePath).forEach(post => {
   execSync(montageCmd)
   convertImage(outputPathRaw, outputPath)
   execSync(`rm ${outputPathRaw}`)
-  // const mdxFile = fs.readFileSync(mdxPath, "utf8")
-  // const parsedMdx = matter(mdxFile)
-
-  // if (!parsedMdx.data.coverImage && parsedMdx.data.pedalImages.length > 0) {
-  //   const pedalsSeoImages = parsedMdx.data.pedalImages
-  //     .map(pedalImagePath => {
-  //       return pedalImagePath.split("/").pop().split(".")[0]
-  //     })
-  //     .map(pedalImageName => {
-  //       return path.join(targetDirectoryPath, `${pedalImageName}.jpeg`)
-  //     })
-
-  // }
 })
