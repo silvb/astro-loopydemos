@@ -1,0 +1,69 @@
+{
+  "name": "earthquaker-devices-blumes",
+  "controls": {
+    "knobs": [
+      {
+        "id": "level",
+        "size": 60,
+        "position": {
+          "top": 44,
+          "left": 16
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "tone",
+        "size": 60,
+        "position": {
+          "top": 102,
+          "left": 70
+        },
+        "type": "bakelit"
+      },
+      {
+        "id": "gain",
+        "size": 60,
+        "position": {
+          "top": 44,
+          "left": 123
+        },
+        "type": "bakelit"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 38,
+        "position": {
+          "top": 253,
+          "left": 27
+        },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": {
+          "top": 246,
+          "left": 76
+        }
+      },
+      {
+        "id": "mode",
+        "size": 32,
+        "orientation": "horizontal",
+        "position": {
+          "top": 61,
+          "left": 83
+        },
+        "type": "toggle"
+      }
+    ]
+  }
+}

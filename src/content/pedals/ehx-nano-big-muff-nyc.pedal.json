@@ -6,28 +6,28 @@
     "knobs": [
       {
         "id": "volume",
-        "size": 56,
+        "size": 48,
         "position": {
-          "left": 36,
-          "top": 36
-        },
-        "type": "simple"
-      },
-      {
-        "id": "tone",
-        "size": 56,
-        "position": {
-          "left": 121,
-          "top": 36
+          "left": 24,
+          "top": 32
         },
         "type": "simple"
       },
       {
         "id": "sustain",
-        "size": 56,
+        "size": 48,
         "position": {
-          "left": 206,
-          "top": 35
+          "left": 110,
+          "top": 32
+        },
+        "type": "simple"
+      },
+      {
+        "id": "tone",
+        "size": 48,
+        "position": {
+          "left": 66,
+          "top": 79
         },
         "type": "simple"
       }
@@ -35,10 +35,10 @@
     "leds": [
       {
         "id": "on_led",
-        "size": 37,
+        "size": 48,
         "position": {
-          "left": 89,
-          "top": 76
+          "left": 102,
+          "top": 195
         }
       }
     ],
@@ -46,10 +46,10 @@
       {
         "id": "bypass_switch",
         "type": "stomp",
-        "size": 44,
+        "size": 48,
         "position": {
-          "left": 128,
-          "top": 252
+          "left": 68,
+          "top": 196
         }
       }
     ]

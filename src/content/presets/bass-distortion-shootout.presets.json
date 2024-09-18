@@ -7,6 +7,48 @@
       "label": "Growl",
       "comparison": [
         {
+          "id": "harddrive_growl",
+          "pedalSlug": "jhs-pedals-hard-drive",
+          "settings": {
+            "volume": 6,
+            "mid_freq": 6,
+            "drive": 6,
+            "bass": 6,
+            "middle": 6,
+            "treble": 6
+          }
+        },
+        {
+          "id": "bassmuff_growl",
+          "pedalSlug": "ehx-nano-big-muff-bass",
+          "settings": {
+            "volume": 6,
+            "tone": 6,
+            "sustain": 6,
+            "mode": 3
+          }
+        },
+        {
+          "id": "blumes_growl",
+          "pedalSlug": "earthquaker-devices-blumes",
+          "settings": {
+            "level": 6,
+            "tone": 6,
+            "gain": 6,
+            "mode": 3
+          }
+        },
+        {
+          "id": "hm2_growl",
+          "pedalSlug": "boss-heavy-metal-hm-2w",
+          "settings": {
+            "level": 6,
+            "low": 6,
+            "high": 6,
+            "dist": 6
+          }
+        },
+        {
           "id": "surprise_growl",
           "pedalSlug": "fairfield-circuitry-unpleasant-surprise",
           "settings": {

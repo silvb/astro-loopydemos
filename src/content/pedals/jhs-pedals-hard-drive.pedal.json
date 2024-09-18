@@ -1,0 +1,116 @@
+{
+  "name": "jhs-pedals-hard-drive",
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 56,
+        "position": {
+          "left": 18,
+          "top": 25
+        },
+        "type": "jhs",
+        "colors": {
+          "primary": "#181816",
+          "secondary": "#585858",
+          "tick": "#ed312d"
+        }
+      },
+      {
+        "id": "mid_freq",
+        "size": 56,
+        "position": {
+          "left": 73,
+          "top": 25
+        },
+        "type": "jhs",
+        "colors": {
+          "primary": "#181816",
+          "secondary": "#585858",
+          "tick": "#ed312d"
+        }
+      },
+      {
+        "id": "drive",
+        "size": 56,
+        "position": {
+          "left": 128,
+          "top": 25
+        },
+        "type": "jhs",
+        "colors": {
+          "primary": "#181816",
+          "secondary": "#585858",
+          "tick": "#ed312d"
+        }
+      },
+      {
+        "id": "bass",
+        "size": 56,
+        "position": {
+          "left": 17,
+          "top": 102
+        },
+        "type": "jhs",
+        "colors": {
+          "primary": "#181816",
+          "secondary": "#585858",
+          "tick": "#ed312d"
+        }
+      },
+      {
+        "id": "middle",
+        "size": 56,
+        "position": {
+          "left": 72,
+          "top": 102
+        },
+        "type": "jhs",
+        "colors": {
+          "primary": "#181816",
+          "secondary": "#585858",
+          "tick": "#ed312d"
+        }
+      },
+      {
+        "id": "treble",
+        "size": 56,
+        "position": {
+          "top": 102,
+          "left": 128
+        },
+        "type": "jhs",
+        "colors": {
+          "primary": "#181816",
+          "secondary": "#585858",
+          "tick": "#ed312d"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 130,
+          "top": 285
+        },
+        "colors": {
+          "on": "#f73333",
+          "off": "#800000a1"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 50,
+        "position": {
+          "left": 76,
+          "top": 285
+        }
+      }
+    ]
+  }
+}

@@ -3,8 +3,55 @@
   "width": 185,
   "height": 325,
   "controls": {
-    "knobs": [],
-    "switches": [],
-    "leds": []
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 48,
+        "position": {
+          "left": 26,
+          "top": 32
+        },
+        "type": "simple"
+      },
+      {
+        "id": "sustain",
+        "size": 48,
+        "position": {
+          "left": 111,
+          "top": 31
+        },
+        "type": "simple"
+      },
+      {
+        "id": "tone",
+        "size": 48,
+        "position": {
+          "left": 68,
+          "top": 79
+        },
+        "type": "simple"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 104,
+          "top": 195
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": {
+          "left": 70,
+          "top": 196
+        }
+      }
+    ]
   }
 }
