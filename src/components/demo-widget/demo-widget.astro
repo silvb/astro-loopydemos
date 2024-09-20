@@ -96,6 +96,7 @@ const maxHeight = Math.max(...staticPedalData.map(({ height }) => height))
 
 <LoadingSkeleton
   pedalHeight={maxHeight}
+  hasMultiplePresets={presets.length > 1}
   {presetSlug}
   {hasBackingTrack}
   {isComparison}

@@ -52,7 +52,7 @@ export const DemoWidgetContainer: Component<
             )}
           />
         )}
-        <PresetsSlider presets={props.presets} />
+        {props.presets.length > 1 && <PresetsSlider presets={props.presets} />}
       </div>
       <ScaleFactor>
         <div
