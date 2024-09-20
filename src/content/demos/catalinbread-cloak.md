@@ -15,7 +15,6 @@ relatedSlugs:
   - native-audio-ghost-ridge
   - walrus-audio-slo
 externalLinks:
-  thomann: https://thmn.to/thoprod/531678?partner_id=15606
   reverb: catalinbread-cloak
   builderLink: https://catalinbread.com/products/cloak
 ---

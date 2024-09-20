@@ -8,7 +8,7 @@ tags:
   - reverb
   - ambient
 externalLinks:
-  thomann: https://thmn.to/thoprod/572133?partner_id=15606
+  thomann: walrus_audio_sloeer_ambient_reverb_blue
   builderLink: https://www.walrusaudio.com/products/sloer-stereo-ambient-reverb?variant=44031416140011
   perfectCircuit: walrus-sloer
   sweetwater: https://sweetwater.sjv.io/EKLyqD

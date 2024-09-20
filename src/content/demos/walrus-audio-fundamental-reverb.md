@@ -8,7 +8,7 @@ tags:
   - reverb
 externalLinks:
   builderLink: https://www.walrusaudio.com/products/fundamental-series-reverb
-  thomann: https://thmn.to/thoprod/564323?partner_id=15606
+  thomann: walrus_audio_fundamental_reverb
   perfectCircuit: walrus-fundamental-reverb
   sweetwater: https://sweetwater.sjv.io/LXj20V
 ---

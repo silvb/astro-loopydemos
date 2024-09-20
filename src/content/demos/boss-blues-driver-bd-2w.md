@@ -11,7 +11,7 @@ relatedSlugs:
   - boss-dm-2w-delay
   - overdrive-shootout
 externalLinks:
-  thomann: https://thmn.to/thoprod/345722?partner_id=15606
+  thomann: boss_bd_2w_blues_driver
   reverb: boss-blues-driver-bd-2w
   builderLink: https://www.boss.info/global/products/bd-2w/
   perfectCircuit: boss-bd-2w

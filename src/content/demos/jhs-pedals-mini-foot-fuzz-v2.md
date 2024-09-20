@@ -13,7 +13,6 @@ relatedSlugs:
 externalLinks:
   builderLink: https://www.jhspedals.info/mini-foot-fuzz-v2
   reverb: jhs-mini-foot-fuzz
-  thomann: https://thmn.to/thoprod/453644?partner_id=15606
 ---
 
 The JHS Mini Foot Fuzz V2 is one of my all-time favorite fuzzes. It has this velcro-like, splatty fuzz sound. The low gain mode (-) has this lovely sound of a broken speaker that I really enjoy.

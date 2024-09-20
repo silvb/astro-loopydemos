@@ -15,7 +15,7 @@ relatedSlugs:
   - walrus-audio-slo
   - boss-ds-1-distortion
 externalLinks:
-  thomann: https://thmn.to/thoprod/527473?partner_id=15606
+  thomann: walrus_audio_eras
   reverb: walrus-audio-eras
   builderLink: https://www.walrusaudio.com/products/eras-five-state-distortion
   perfectCircuit: walrus-eras

@@ -10,6 +10,7 @@ tags:
 externalLinks:
   builderLink: https://www.zvex.com/guitar-pedals/mastotron-guitar-effects-pedal
   perfectCircuit: zvex-mastotron
+  thomann: zvex_mastotron_vextron_serie
 ---
 
 The Mastotron by ZVEX Effects is an absolute sleeper of a fuzz pedal.

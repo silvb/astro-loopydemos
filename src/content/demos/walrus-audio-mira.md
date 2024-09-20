@@ -10,7 +10,6 @@ tags:
 relatedSlugs:
   - keeley-electronics-compressor-mini
 externalLinks:
-  thomann: https://thmn.to/thoprod/549033?partner_id=15606
   reverb: walrus-audio-mira
   builderLink: https://www.walrusaudio.com/products/mira-optical-compressor
   perfectCircuit: walrus-mira

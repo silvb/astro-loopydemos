@@ -12,7 +12,7 @@ relatedSlugs:
   - boss-blues-driver-bd-2w
   - overdrive-shootout
 externalLinks:
-  thomann: https://thmn.to/thoprod/469712?partner_id=15606
+  thomann: earthquaker_devices_devices_plumes_signal_shredder
   reverb: earthquaker-devices-plumes
   builderLink: https://www.earthquakerdevices.com/plumes
   perfectCircuit: earthquaker-devices-plumes

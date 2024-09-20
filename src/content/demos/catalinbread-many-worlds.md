@@ -9,7 +9,7 @@ tags:
 relatedSlugs:
   - native-audio-midnight
 externalLinks:
-  thomann: https://thmn.to/thoprod/539683?partner_id=15606
+  thomann: catalinbread_many_worlds
   reverb: catalinbread-many-worlds
   builderLink: https://catalinbread.com/products/many-worlds
   sweetwater: https://sweetwater.sjv.io/Qyaby9

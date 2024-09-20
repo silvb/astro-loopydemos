@@ -13,7 +13,7 @@ relatedSlugs:
   - native-audio-wilderness
   - delay-shootout
 externalLinks:
-  thomann: https://thmn.to/thoprod/345724?partner_id=15606
+  thomann: boss_dm_2w_delay
   reverb: boss-dm-2w-delay
   builderLink: https://www.boss.info/global/products/dm-2w/
   perfectCircuit: boss-dm-2w

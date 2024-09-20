@@ -15,7 +15,7 @@ relatedSlugs:
   - modulation-shootout
   - how-to-set-up-a-shoegaze-pedalboard
 externalLinks:
-  thomann: https://thmn.to/thoprod/519004?partner_id=15606
+  thomann: walrus_audio_polychrome
   reverb: walrus-audio-polychrome
   builderLink: https://www.walrusaudio.com/products/polychrome-analog-flanger
   perfectCircuit: walrus-polychrome

@@ -13,6 +13,7 @@ relatedSlugs:
 externalLinks:
   perfectCircuit: zvex-woolly-mammoth-vexter
   builderLink: https://www.zvex.com/guitar-pedals/woolly-mammoth-guitar-effects-pedal
+  thomann: z.vex_woolly_mammoth_vexter
 ---
 
 The Woolly Mammoth by ZVEX Effects is a uniquely voiced fuzz pedal designed for bass.

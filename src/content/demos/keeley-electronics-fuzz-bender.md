@@ -12,6 +12,7 @@ externalLinks:
   perfectCircuit: keeley-fuzz-bender
   builderLink: https://robertkeeley.com/product/fuzz-bender/
   sweetwater: https://sweetwater.sjv.io/Pye6rz
+  thomann: keeley_fuzz_bender
 ---
 
 The Fuzz Bender by Keeley Electronics is a versatile fuzz pedal that combines the best of vintage and modern fuzz tones. It's based on the Tone Bender circuit, but with a few modern twists. The Fuzz Bender has a wide range of fuzz tones, from smooth and creamy to aggressive and gated.

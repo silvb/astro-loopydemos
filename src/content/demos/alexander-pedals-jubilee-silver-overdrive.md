@@ -15,7 +15,6 @@ relatedSlugs:
   - amp-in-a-box-shootout
   - walrus-audio-eras
 externalLinks:
-  thomann: https://thmn.to/thoprod/439279?partner_id=15606
   reverb: alexander-jubilee
   builderLink: https://www.alexanderpedals.com/shop/jubilee-silver-overdrive
 ---

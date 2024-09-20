@@ -10,7 +10,6 @@ externalLinks:
   reverb: caroline-guitar-company-arigato
   builderLink: https://carolineguitar.com/product/arigato/
   soundShoppe: arigato-ota-based-analog-phaser
-  thomann: https://thmn.to/thoprod/564925?partner_id=15606
   perfectCircuit: caroline-arigato
 ---
 

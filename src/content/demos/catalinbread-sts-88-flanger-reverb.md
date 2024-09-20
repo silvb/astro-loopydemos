@@ -9,7 +9,6 @@ tags:
   - flanger
   - ambient
 externalLinks:
-  thomann: https://thmn.to/thoprod/563108?partner_id=15606
   reverb: catalinbread-sts-88-flanger-reverb
   builderLink: https://catalinbread.com/products/sts-88
   sweetwater: https://sweetwater.sjv.io/AWdjPK

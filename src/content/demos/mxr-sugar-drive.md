@@ -12,7 +12,7 @@ relatedSlugs:
   - native-audio-kiaayo
   - overdrive-shootout
 externalLinks:
-  thomann: https://thmn.to/thoprod/529180?partner_id=15606
+  thomann: mxr_m_294_sugar_drive_mini
   reverb: mxr-sugar-drive
   builderLink: https://www.jimdunlop.com/mxr-sugar-drive-pedal/
   perfectCircuit: mxr-m294-sugar-drive

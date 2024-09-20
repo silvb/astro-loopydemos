@@ -12,7 +12,7 @@ relatedSlugs:
   - how-to-set-up-a-shoegaze-pedalboard
 externalLinks:
   builderLink: https://catalinbread.com/products/sinkhole-modulated-reverb
-  thomann: https://thmn.to/thoprod/580808?partner_id=15606
+  thomann: catalinbread_sinkhole_ethereal_reverb
   sweetwater: https://sweetwater.sjv.io/0ZgdxM
 ---
 

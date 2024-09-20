@@ -7,7 +7,7 @@ date: 2023-07-24
 tags:
   - phaser
 externalLinks:
-  thomann: https://thmn.to/thoprod/564324?partner_id=15606
+  thomann: walrus_audio_fundamental_phaser
   builderLink: https://www.walrusaudio.com/collections/fundamental-series/products/fundamental-series-phaser
   perfectCircuit: walrus-fundamental-phaser
   sweetwater: https://sweetwater.sjv.io/75EMXY

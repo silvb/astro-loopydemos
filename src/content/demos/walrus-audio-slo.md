@@ -17,7 +17,7 @@ relatedSlugs:
   - walrus-audio-polychrome
   - walrus-audio-eras
 externalLinks:
-  thomann: https://thmn.to/thoprod/464165?partner_id=15606
+  thomann: walrus_audio_sloe_multi_texture_reverb
   reverb: walrus-audio-slo
   builderLink: https://www.walrusaudio.com/products/slo-multi-texture-reverb
   perfectCircuit: walrus-slo

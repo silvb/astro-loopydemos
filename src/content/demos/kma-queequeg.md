@@ -11,7 +11,7 @@ tags:
 relatedSlugs:
   - tone-electronix-animalizzer
 externalLinks:
-  thomann: https://thmn.to/thoprod/540653?partner_id=15606
+  thomann: kma_audio_machines_queequeg_2_sub_oct._generator
   reverb: kma-queequeg
   builderLink: https://kma-machines.com/m_queequeg.html
 ---

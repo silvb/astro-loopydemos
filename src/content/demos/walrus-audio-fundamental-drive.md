@@ -9,7 +9,7 @@ tags:
   - mid gain
   - chime
 externalLinks:
-  thomann: https://thmn.to/thoprod/564325?partner_id=15606
+  thomann: walrus_audio_fundamental_drive
   reverb: walrus-audio-fundamental-drive
   builderLink: https://www.walrusaudio.com/collections/fundamental-series/products/fundamental-series-drive
   perfectCircuit: walrus-fundamental-drive

@@ -13,7 +13,7 @@ relatedSlugs:
   - smallsound-bigsound-mini
   - walrus-audio-eras
 externalLinks:
-  thomann: https://thmn.to/thoprod/102371?partner_id=15606
+  thomann: boss_ds1_distortion
   reverb: boss-ds-1-distortion
   builderLink: https://www.boss.info/global/products/ds-1/
   perfectCircuit: boss-ds-1-distortion-pedal

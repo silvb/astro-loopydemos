@@ -21,7 +21,7 @@ relatedSlugs:
   - vaderin-pedals-hp-x
   - walrus-audio-polychrome
 externalLinks:
-  thomann: https://thmn.to/thoprod/528158?partner_id=15606
+  thomann: keeley_compressor_mini
   reverb: keeley-electronics-compressor-mini
   builderLink: https://robertkeeley.com/product/keeley-electronics-compressor-mini/
   sweetwater: https://sweetwater.sjv.io/xkeZLx

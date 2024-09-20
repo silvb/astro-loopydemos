@@ -11,7 +11,7 @@ relatedSlugs:
   - crazy-tube-circuits-falcon
   - catalinbread-sft
 externalLinks:
-  thomann: https://thmn.to/thoprod/374120?partner_id=15606
+  thomann: catalinbread_topanga
   reverb: catalinbread-topanga
   builderLink: https://catalinbread.com/products/topanga
   sweetwater: https://sweetwater.sjv.io/VmJNx6

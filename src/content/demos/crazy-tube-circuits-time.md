@@ -14,7 +14,6 @@ relatedSlugs:
   - delay-shootout
 externalLinks:
   builderLink: https://crazytubecircuits.com/time
-  thomann: https://thmn.to/thoprod/522571?partner_id=15606
 ---
 
 The TI:ME delay by Crazy Tube Circuits is a delay/echo pedal that has a retro-vibe with with modern features.

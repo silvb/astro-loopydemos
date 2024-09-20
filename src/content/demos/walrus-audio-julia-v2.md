@@ -12,7 +12,7 @@ relatedSlugs:
   - walrus-audio-polychrome
   - modulation-shootout
 externalLinks:
-  thomann: https://thmn.to/thoprod/482059?partner_id=15606
+  thomann: walrus_audio_julia_v2
   reverb: walrus-audio-julia
   builderLink: https://www.walrusaudio.com/products/julia-analog-chorus-vibrato-v2
   perfectCircuit: walrus-julia-v2

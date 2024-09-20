@@ -6,13 +6,14 @@ import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
 import { Icon } from "astro-icon/components"
 import soundShoppeLogo from "./sound-shoppe-logo.png"
 import sweetwaterLogo from "./sweetwater-logo.webp"
+import thomannLogo from "./thomann-logo.svg"
 
 interface Props {
   slug?: string
   imgSlug: string
   text?: string
   link?: string
-  partner: "perfect-circuit" | "sound-shoppe" | "sweetwater"
+  partner: "perfect-circuit" | "sound-shoppe" | "sweetwater" | "thomann"
 }
 
 const { slug, imgSlug, partner, link } = Astro.props
@@ -21,6 +22,7 @@ const href = {
   "perfect-circuit": `https://link.perfectcircuit.com/t/v1/8-12626-329078-9759?url=https%3A%2F%2Fwww.perfectcircuit.com%2F${slug}.html`,
   "sound-shoppe": `https://soundshoppe.nyc/products/${slug}`,
   sweetwater: link,
+  thomann: `https://www.thomann.de/intl/${slug}.htm?offid=1&affid=3396`,
 }[partner]
 
 const ctaLabels = [
@@ -75,6 +77,16 @@ const randomCtaLabel = ctaLabels[Math.min(Math.floor(Math.random() * 10), 9)]
           width={96}
           src={sweetwaterLogo}
           alt="sweetwater logo"
+        />
+      )
+    }
+    {
+      partner === "thomann" && (
+        <Image
+          class="h-auto max-w-20 rounded-lg border-2 border-loopydemos-subdued bg-white p-2"
+          width={96}
+          src={thomannLogo}
+          alt="thomann logo"
         />
       )
     }
