@@ -8,7 +8,7 @@ tags:
   - velcro fuzz
   - gated fuzz
 externalLinks:
-  thomann: https://thmn.to/thoprod/553847?partner_id=15606
+  thomann: walrus_audio_eons_fuzz
   reverb: walrus-audio-eons
   builderLink: https://walrusaudio.com/products/eons-five-state-fuzz
   perfectCircuit: walrus-eons

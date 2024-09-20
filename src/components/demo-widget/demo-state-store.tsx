@@ -164,7 +164,14 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
 
     setSecondaryCircuitsOn(activePreset()?.initialSecondaryCircuits || [])
 
-    if (activePreset()?.comparison) return
+    if (activePreset()?.comparison) {
+      const pedalsInComparison = activePreset()?.comparison?.map(
+        item => item.pedalSlug
+      )
+      if (!pedalsInComparison?.includes(activePedals()[0]))
+        setActivePedals([pedalsInComparison?.[0] || ""])
+      return
+    }
 
     setActivePedals(
       activePreset()?.chain?.map(chainElement => chainElement.pedalSlug) || [

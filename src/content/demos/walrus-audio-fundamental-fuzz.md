@@ -7,7 +7,7 @@ date: 2023-04-07
 tags:
   - big muff
 externalLinks:
-  thomann: https://thmn.to/thoprod/564327?partner_id=15606
+  thomann: walrus_audio_fundamental_fuzz
   reverb: walrus-audio-fundamental-fuzz
   builderLink: https://www.walrusaudio.com/collections/fundamental-series/products/fundamental-series-fuzz
   perfectCircuit: walrus-fundamental-fuzz

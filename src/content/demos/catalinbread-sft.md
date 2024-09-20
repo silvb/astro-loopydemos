@@ -15,7 +15,7 @@ relatedSlugs:
   - jhs-pedals-twin-twelve-v2
   - amp-in-a-box-shootout
 externalLinks:
-  thomann: https://thmn.to/thoprod/374466?partner_id=15606
+  thomann: catalinbread_sft
   reverb: catalinbread-sft
   builderLink: https://catalinbread.com/products/sft2
   sweetwater: https://sweetwater.sjv.io/k0yW0x

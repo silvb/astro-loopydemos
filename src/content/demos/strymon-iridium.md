@@ -10,7 +10,7 @@ relatedSlugs:
   - walrus-audio-acs1
   - strymon-iridium-bass-ownhammer-ir
 externalLinks:
-  thomann: https://thmn.to/thoprod/476833?partner_id=15606
+  thomann: strymon_iridium_amp_ir_cab
   reverb: strymon-iridium
   builderLink: https://www.strymon.net/product/iridium/
   perfectCircuit: strymon-iridium

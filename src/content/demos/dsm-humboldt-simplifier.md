@@ -13,7 +13,7 @@ relatedSlugs:
   - strymon-iridium
   - walrus-audio-acs1
 externalLinks:
-  thomann: https://thmn.to/thoprod/496648?partner_id=15606
+  thomann: dsm_humboldt_simplifier_mkii
   reverb: dsm-humboldt-simplifier
   builderLink: https://www.simplifieramp.com/simplifier-classic
 ---

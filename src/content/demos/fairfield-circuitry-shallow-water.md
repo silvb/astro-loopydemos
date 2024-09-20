@@ -13,7 +13,7 @@ relatedSlugs:
   - native-audio-midnight
   - modulation-shootout
 externalLinks:
-  thomann: https://thmn.to/thoprod/450522?partner_id=15606
+  thomann: fairfield_circuitry_shallow_water
   reverb: fairfield-circuitry-shallow-water
   builderLink: https://fairfieldcircuitry.com/products/shallow-water
   perfectCircuit: fairfield-circuitry-shallow-water

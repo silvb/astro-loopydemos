@@ -9,7 +9,6 @@ tags:
 relatedSlugs:
   - smallsound-bigsound-mini
 externalLinks:
-  thomann: https://thmn.to/thoprod/543875?partner_id=15606
   reverb: walrus-audio-badwater
   builderLink: https://www.walrusaudio.com/products/badwater-bass-pre-amp-with-d-i
   perfectCircuit: walrus-badwater

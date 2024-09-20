@@ -16,7 +16,6 @@ relatedSlugs:
   - strymon-iridium
   - smallsound-bigsound-mini
 externalLinks:
-  thomann: https://thmn.to/thoprod/520968?partner_id=15606
   reverb: stone-deaf-fx-qboost
   builderLink: https://www.stonedeaffx.com/shop/qboost/
 ---

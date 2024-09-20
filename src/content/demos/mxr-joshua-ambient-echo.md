@@ -9,7 +9,7 @@ tags:
   - ping pong delay
 externalLinks:
   builderLink: https://www.jimdunlop.com/mxr-joshua-ambient-echo/
-  thomann: https://thmn.to/thoprod/583187?partner_id=15606
+  thomann: mxr_joshua_ambient_echo
   perfectCircuit: mxr-m309-joshua
   sweetwater: https://sweetwater.sjv.io/AWdjgK
 ---

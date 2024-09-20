@@ -11,7 +11,7 @@ relatedSlugs:
   - catalinbread-topanga
   - native-audio-ghost-ridge
 externalLinks:
-  thomann: https://thmn.to/thoprod/228947?partner_id=15606
+  thomann: electro_harmonix_nano_holy_grail
   reverb: ehx-holy-grail-nano
   builderLink: https://www.ehx.com/products/holy-grail/
   perfectCircuit: ehx-holy-grail

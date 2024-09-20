@@ -16,7 +16,6 @@ relatedSlugs:
 externalLinks:
   builderLink: https://www.jhspedals.info/twin-twelve-v2
   reverb: jhs-twin-twelve
-  thomann: jhs_pedals_twin_twelve_v2
 ---
 
 One of my favorite guitar players of all time is Jack White. And the JHS Twin Twelve is the perfect little amp in a box to get those Silvertone-like sounds.

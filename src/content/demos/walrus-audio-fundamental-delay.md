@@ -8,7 +8,7 @@ tags:
   - delay
   - reverse delay
 externalLinks:
-  thomann: https://thmn.to/thoprod/564329?partner_id=15606
+  thomann: walrus_audio_fundamental_delay
   builderLink: https://www.walrusaudio.com/products/fundamental-series-delay
   perfectCircuit: walrus-fundamental-delay
   sweetwater: https://sweetwater.sjv.io/vN5VD3

@@ -2,11 +2,18 @@
 interface Props {
   pedalHeight: number
   presetSlug: string
+  hasMultiplePresets: boolean
   hasBackingTrack?: boolean
   isComparison?: boolean
 }
 
-const { pedalHeight, presetSlug, hasBackingTrack, isComparison } = Astro.props
+const {
+  pedalHeight,
+  presetSlug,
+  hasBackingTrack,
+  isComparison,
+  hasMultiplePresets,
+} = Astro.props
 ---
 
 <div id={`loading-skeleton-${presetSlug}`}>
@@ -33,13 +40,15 @@ const { pedalHeight, presetSlug, hasBackingTrack, isComparison } = Astro.props
         </ul>
       )
     }
-    <ul class="flex h-10 list-none gap-1">
-      {
-        Array.from({ length: 5 }, () => (
-          <li class="h-full grow rounded-md bg-loopydemos-secondary-themed px-2" />
-        ))
-      }
-    </ul>
+    {
+      hasMultiplePresets && (
+        <ul class="flex h-10 list-none gap-1">
+          {Array.from({ length: 5 }, () => (
+            <li class="h-full grow rounded-md bg-loopydemos-secondary-themed px-2" />
+          ))}
+        </ul>
+      )
+    }
   </div>
   <div
     class="mt-8 flex items-start justify-center"

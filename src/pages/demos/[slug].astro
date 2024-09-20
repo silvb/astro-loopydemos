@@ -85,6 +85,21 @@ const relatedPosts = allPosts.filter(
               </span>
             </li>
           )}
+          {externalLinks.thomann && (
+            <li>
+              <span>
+                Folks from the EU, try one from{" "}
+                <a
+                  href={`https://www.thomann.de/intl/${externalLinks.thomann}.htm?offid=1&affid=3396`}
+                  target="_blank"
+                  rel="noopener"
+                >
+                  Thomann*
+                </a>{" "}
+                with their hassle-free 30-day Money-Back Guarantee
+              </span>
+            </li>
+          )}
           {externalLinks.perfectCircuit && (
             <li>
               <span>
@@ -128,7 +143,9 @@ const relatedPosts = allPosts.filter(
             </li>
           )}
         </ul>
-        {externalLinks.perfectCircuit && (
+        {(externalLinks.perfectCircuit ||
+          externalLinks.sweetwater ||
+          externalLinks.thomann) && (
           <p>
             <i>
               *Affiliate link: Buy something and support Loopy Demos at no extra

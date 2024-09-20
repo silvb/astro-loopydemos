@@ -11,6 +11,7 @@ tags:
 externalLinks:
   perfectCircuit: zvex-fuzz-factory-vexter
   builderLink: https://www.zvex.com/guitar-pedals/fuzz-factory-guitar-effects-pedal
+  thomann: zvex_fuzz_factory_vexter
 ---
 
 The Fuzz Factory by ZVEX Effects is an absolute classic fuzz pedal.

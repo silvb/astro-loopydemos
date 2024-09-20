@@ -13,7 +13,7 @@ relatedSlugs:
   - tl-pedals-stinger-fuzz
   - tone-electronix-animalizzer
 externalLinks:
-  thomann: https://thmn.to/thoprod/147853?partner_id=15606
+  thomann: electro_harmonix_bigmuff_pi
   reverb: ehx-big-muff-nyc
   builderLink: https://www.ehx.com/products/big-muff-pi/
   perfectCircuit: electro-harmonix-big-muff-pi-1

@@ -15,7 +15,7 @@ relatedSlugs:
 externalLinks:
   builderLink: https://www.jhspedals.info/morning-glory-v4
   reverb: jhs-morning-glory-v4
-  thomann: https://thmn.to/thoprod/380517?partner_id=15606
+  thomann: jhs_pedals_morning_glory_v4
   sweetwater: https://sweetwater.sjv.io/75EMaY
 ---
 

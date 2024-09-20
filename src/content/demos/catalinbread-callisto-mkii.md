@@ -12,7 +12,6 @@ relatedSlugs:
   - walrus-audio-julia-v2
   - walrus-audio-polychrome
 externalLinks:
-  thomann: catalinbread_callisto_mk_ii
   reverb: catalinbread-callisto-mkii
   builderLink: https://catalinbread.com/products/callisto-mkii
   sweetwater: https://sweetwater.sjv.io/y2ak2B

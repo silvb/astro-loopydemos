@@ -12,7 +12,7 @@ relatedSlugs:
   - strymon-iridium
   - walrus-audio-slo
 externalLinks:
-  thomann: https://thmn.to/thoprod/511898?partner_id=15606
+  thomann: walrus_audio_acs_1_ampcab_simulator
   reverb: walrus-audio-acs1
   builderLink: https://www.walrusaudio.com/products/mako-series-acs1-amp-cab-simulator
   perfectCircuit: walrus-asc1

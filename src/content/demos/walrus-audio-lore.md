@@ -16,7 +16,7 @@ relatedSlugs:
   - fairfield-circuitry-shallow-water
   - native-audio-ghost-ridge
 externalLinks:
-  thomann: https://thmn.to/thoprod/545386?partner_id=15606
+  thomann: walrus_audio_lore_soundscape_generator
   reverb: walrus-audio-lore
   builderLink: https://www.walrusaudio.com/products/lore-reverse-soundscape-generator
   perfectCircuit: walrus-lore

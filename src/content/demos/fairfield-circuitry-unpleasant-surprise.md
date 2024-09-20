@@ -11,6 +11,7 @@ tags:
 externalLinks:
   builderLink: https://fairfieldcircuitry.com/products/the-unpleasant-surprise
   perfectCircuit: fairfield-circuitry-the-unpleasant-surprise
+  thomann: fairfield_circuitry_the_unpleasant_surprise
 ---
 
 The Unpleasant Surprise by Fairfield Circuitry is actually a pleasant little surprise if you enjoy fuzz and octave fuzz full of texture and character.

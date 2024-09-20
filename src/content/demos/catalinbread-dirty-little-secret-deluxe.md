@@ -11,7 +11,7 @@ relatedSlugs:
   - alexander-pedals-jubilee-silver-overdrive
 externalLinks:
   builderLink: https://catalinbread.com/products/dirty-little-secret-deluxe
-  thomann: https://thmn.to/thoprod/578579?partner_id=15606
+  thomann: catalinbread_dirty_little_secret_deluxe_od
   sweetwater: https://sweetwater.sjv.io/m5LG5y
 ---
 

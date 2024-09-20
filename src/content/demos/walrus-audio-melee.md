@@ -12,7 +12,7 @@ tags:
 relatedSlugs:
   - how-to-set-up-a-shoegaze-pedalboard
 externalLinks:
-  thomann: https://thmn.to/thoprod/558739?partner_id=15606
+  thomann: walrus_audio_melee
   reverb: walrus-audio-melee
   builderLink: https://www.walrusaudio.com/products/melee-wall-of-noise
   perfectCircuit: walrus-melee

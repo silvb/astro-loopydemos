@@ -10,7 +10,7 @@ tags:
 relatedSlugs:
   - black-mass-electronics-1312-distortion-v3
 externalLinks:
-  thomann: https://thmn.to/thoprod/551172?partner_id=15606
+  thomann: catalinbread_soft_focus
   reverb: catalinbread-soft-focus
   builderLink: https://catalinbread.com/products/soft-focus-reverb
   sweetwater: https://sweetwater.sjv.io/jrNmrM

@@ -15,7 +15,7 @@ relatedSlugs:
   - amp-in-a-box-shootout
 externalLinks:
   builderLink: https://crazytubecircuits.com/falcon
-  thomann: https://thmn.to/thoprod/455514?partner_id=15606
+  thomann: crazy_tube_circuits_falcon_overdrive
   reverb: crazy-tube-circuits-falcon
 ---
 

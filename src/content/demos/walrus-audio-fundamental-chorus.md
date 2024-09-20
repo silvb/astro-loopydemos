@@ -8,7 +8,7 @@ tags:
   - chorus
   - dreampop
 externalLinks:
-  thomann: https://thmn.to/thoprod/564304?partner_id=15606
+  thomann: walrus_audio_fundamental_chorus
   builderLink: https://www.walrusaudio.com/collections/modulation-octave/products/fundamental-series-chorus
   perfectCircuit: walrus-fundamental-chorus
   sweetwater: https://sweetwater.sjv.io/21odR0
