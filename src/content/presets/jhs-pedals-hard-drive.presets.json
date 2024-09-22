@@ -1,32 +1,122 @@
 {
-  "volume": 0.7,
+  "volume": 0.65,
   "hasBackingTrack": true,
   "presets": [
     {
-      "id": "first_preset",
-      "label": "First Preset",
+      "id": "cutting_crunch",
+      "label": "Cutting Crunch",
       "settings": {
         "volume": 5,
-        "mid_freq": 3,
-        "drive": 2,
+        "mid_freq": 1.8,
+        "drive": 7,
         "bass": 7,
-        "middle": 1,
+        "middle": 6.5,
         "treble": 8
       }
     },
     {
-      "id": "drive_knob",
-      "label": "Drive",
-      "isSweep": true,
-      "target": "drive",
-      "values": [0, 2, 4, 6, 8, 10],
-      "initialValue": 0,
+      "id": "stoner_amp",
+      "label": "Stoner Amp",
       "settings": {
         "volume": 5,
         "mid_freq": 3,
-        "bass": 7,
+        "drive": 10,
+        "bass": 6,
+        "middle": 8,
+        "treble": 4
+      }
+    },
+    {
+      "id": "fat_screamer",
+      "label": "Fat Screamer",
+      "settings": {
+        "volume": 5,
+        "mid_freq": 7,
+        "drive": 1,
+        "bass": 6,
+        "middle": 10,
+        "treble": 5
+      }
+    },
+    {
+      "id": "big_schmuff",
+      "label": "Big Schmuff",
+      "settings": {
+        "volume": 5,
+        "mid_freq": 4,
+        "drive": 10,
+        "bass": 6,
         "middle": 1,
-        "treble": 8
+        "treble": 7
+      }
+    },
+    {
+      "id": "shred_meister",
+      "label": "Shred Meister",
+      "settings": {
+        "volume": 5,
+        "mid_freq": 4,
+        "drive": 4,
+        "bass": 2,
+        "middle": 4,
+        "treble": 5
+      }
+    },
+    {
+      "id": "rats_tail",
+      "label": "Rat's Tail",
+      "settings": {
+        "volume": 4,
+        "mid_freq": 7,
+        "drive": 6,
+        "bass": 4,
+        "middle": 6,
+        "treble": 6
+      }
+    },
+    {
+      "id": "drive_knob",
+      "label": "Gain Range",
+      "isSweep": true,
+      "target": "drive",
+      "values": [1, 2, 4, 6, 8, 10],
+      "initialValue": 1,
+      "settings": {
+        "volume": 5,
+        "mid_freq": 5,
+        "bass": 5,
+        "middle": 5,
+        "treble": 5
+      }
+    },
+    {
+      "id": "mid_scoop",
+      "label": "Mid Scoop Sweep",
+      "isSweep": true,
+      "target": "mid_freq",
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "initialValue": 0,
+      "settings": {
+        "volume": 5,
+        "drive": 7,
+        "bass": 6,
+        "middle": 0,
+        "treble": 6
+      }
+    },
+    {
+      "id": "mid_hump",
+      "label": "Mid Hump Sweep",
+      "isSweep": true,
+      "target": "mid_freq",
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "initialValue": 0,
+      "settings": {
+        "volume": 5,
+        "drive": 7,
+        "bass": 6,
+        "middle": 10,
+        "treble": 6
       }
     }
   ]
