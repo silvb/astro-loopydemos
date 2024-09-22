@@ -144,7 +144,7 @@ const headerLinks = [
   </svg>
 </header>
 <aside
-  class="animated-sidenav absolute left-0 top-16 z-40 flex h-screen w-full -translate-x-[100vw] bg-black/0 xs:top-20 sm:hidden"
+  class="animated-sidenav absolute left-0 top-16 z-40 flex h-[calc(100vh-4rem)] w-full -translate-x-[100vw] bg-black/0 xs:top-20 sm:hidden"
 >
   <ul class="flex h-full w-48 flex-col bg-loopydemos-secondary pl-6 pt-8">
     {
@@ -224,6 +224,8 @@ const headerLinks = [
     document?.querySelectorAll(".line-handle")?.forEach(el => {
       el.classList.toggle("open")
     })
+
+    document?.body?.classList.toggle("overflow-hidden")
   }
 
   menuToggle?.addEventListener("click", toggleSidenav)
