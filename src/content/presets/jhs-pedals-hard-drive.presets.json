@@ -1,0 +1,33 @@
+{
+  "volume": 0.7,
+  "hasBackingTrack": true,
+  "presets": [
+    {
+      "id": "first_preset",
+      "label": "First Preset",
+      "settings": {
+        "volume": 5,
+        "mid_freq": 3,
+        "drive": 2,
+        "bass": 7,
+        "middle": 1,
+        "treble": 8
+      }
+    },
+    {
+      "id": "drive_knob",
+      "label": "Drive",
+      "isSweep": true,
+      "target": "drive",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0,
+      "settings": {
+        "volume": 5,
+        "mid_freq": 3,
+        "bass": 7,
+        "middle": 1,
+        "treble": 8
+      }
+    }
+  ]
+}
