@@ -32,12 +32,12 @@ export const Pedal: Component<PedalProps> = props => {
         <img
           src={props.imgSrc}
           alt={getImageAltFromSlug(props.slug)}
-          class="absolute h-full w-full object-contain"
+          class="absolute size-full object-contain"
           loading="eager"
           onLoad={() => setIsImgLoaded(true)}
         />
         <div
-          class="absolute h-full w-full bg-contain bg-center bg-no-repeat blur-sm transition-opacity duration-500"
+          class="absolute size-full bg-contain bg-center bg-no-repeat blur-sm transition-opacity duration-500"
           classList={{
             "opacity-0": isImgLoaded(),
             "opacity-100": !isImgLoaded(),
@@ -46,7 +46,7 @@ export const Pedal: Component<PedalProps> = props => {
             "background-image": `url(${props.tinySrc})`,
           }}
         />
-        <div class="relative h-full w-full">
+        <div class="relative size-full">
           {props.isOneOff && (
             <RenderSwitch>
               <Match when={props.slug === "vvco-pedals-dark-father-preamp"}>
