@@ -44,7 +44,7 @@ const shuffledCtaLabels = ctaLabels
 ---
 
 <div
-  class="my-4 flex w-fit flex-col items-center gap-4 rounded-lg border-4 border-dashed border-loopydemos-primary bg-loopydemos-secondary p-4 sm:flex-row sm:items-stretch"
+  class="scroll-animation my-4 flex w-fit flex-col items-center gap-4 rounded-lg border-4 border-dashed border-loopydemos-primary bg-loopydemos-secondary p-4 sm:flex-row"
 >
   <div class="h-40 w-auto px-4">
     <Image
@@ -64,7 +64,7 @@ const shuffledCtaLabels = ctaLabels
           rel="noopener"
         >
           <Image
-            class="h-auto max-w-24 rounded-lg border-2 border-loopydemos-subdued bg-white p-2"
+            class="h-auto max-w-24 rounded-lg border-2 border-loopydemos-background bg-white p-2"
             width={112}
             src={sweetwaterLogo}
             alt="sweetwater logo"
@@ -82,7 +82,7 @@ const shuffledCtaLabels = ctaLabels
           rel="noopener"
         >
           <Image
-            class="h-auto max-w-24 rounded-lg border-2 border-loopydemos-subdued bg-white p-2"
+            class="h-auto max-w-24 rounded-lg border-2 border-loopydemos-background bg-white p-2"
             width={112}
             src={thomannLogo}
             alt="thomann logo"
@@ -99,7 +99,7 @@ const shuffledCtaLabels = ctaLabels
           target="_blank"
           rel="noopener"
         >
-          <PerfectCircuitLogo class="max-w-24 rounded-lg border-2 border-loopydemos-subdued bg-white p-2" />
+          <PerfectCircuitLogo class="max-w-24 rounded-lg border-2 border-loopydemos-background bg-white p-2" />
           <span class="whitespace-nowrap text-sm">{shuffledCtaLabels[2]}</span>
         </a>
       )
@@ -113,7 +113,7 @@ const shuffledCtaLabels = ctaLabels
           rel="noopener"
         >
           <Image
-            class="h-auto max-w-12 rounded-lg border-2 border-loopydemos-subdued"
+            class="h-auto max-w-12 rounded-lg border-2 border-loopydemos-background"
             width={112}
             src={soundShoppeLogo}
             alt="sound shoppe nyc logo"
@@ -136,5 +136,23 @@ const shuffledCtaLabels = ctaLabels
 <style>
   .link-button {
     @apply flex items-center gap-2 rounded-lg bg-loopydemos-highlight-tertiary px-4 py-2 font-black text-loopydemos-background transition-colors hover:bg-loopydemos-highlight-tertiary/80;
+  }
+
+  .scroll-animation {
+    animation-name: wiggle;
+    animation-duration: 1ms;
+    animation-timeline: view(block 20% 20%);
+  }
+
+  @keyframes wiggle {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.05);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
 </style>
