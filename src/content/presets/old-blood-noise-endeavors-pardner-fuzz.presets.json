@@ -3,8 +3,38 @@
   "volume": 1,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "filthy_synth",
+      "label": "Filthy Synth",
+      "settings": {
+        "bass": 6,
+        "treble": 7,
+        "fuzz": 8,
+        "filter": 4,
+        "intensity": 7,
+        "lasso_vol": 0,
+        "lasso_gain": 0,
+        "lasso_order": 1,
+        "mode": 1
+      }
+    },
+    {
+      "id": "fat_fuzz",
+      "label": "Fat Fuzz",
+      "settings": {
+        "bass": 10,
+        "treble": 6,
+        "fuzz": 8,
+        "filter": 8,
+        "intensity": 6,
+        "lasso_vol": 0,
+        "lasso_gain": 0,
+        "lasso_order": 1,
+        "mode": 3
+      }
+    },
+    {
+      "id": "placeholder",
+      "label": "Placeholder",
       "initialSecondaryCircuits": ["lasso"],
       "secondaryCircuitSlug": "static_preset_lasso",
       "secondaryCircuitOnlySlug": "lasso_only",
@@ -22,29 +52,29 @@
       }
     },
     {
-      "id": "lasso_delay",
-      "label": "Lasso Delay",
+      "id": "delay",
+      "label": "Delay Lasso",
       "initialSecondaryCircuits": ["lasso"],
       "chain": [
         {
           "pedalSlug": "boss-dm-2w-delay",
           "id": "dm2",
-          "settings": { "rate": 6, "echo": 5, "intensity": 8, "mode": 1 }
+          "settings": { "rate": 6, "echo": 6, "intensity": 7, "mode": 1 }
         },
         {
           "pedalSlug": "old-blood-noise-endeavors-pardner-fuzz",
           "id": "pardner",
-          "secondaryCircuitSlug": "static_preset_lasso",
+          "secondaryCircuitSlug": "pardner_lasso",
           "secondaryCircuitOnlySlug": "lasso_only",
           "secondaryCircuitId": "lasso",
           "settings": {
-            "bass": 5,
-            "treble": 5,
-            "fuzz": 5,
-            "filter": 5,
-            "intensity": 5,
+            "bass": 6,
+            "treble": 6,
+            "fuzz": 8,
+            "filter": 4,
+            "intensity": 1,
             "lasso_vol": 5,
-            "lasso_gain": 5,
+            "lasso_gain": 8,
             "lasso_order": 1,
             "mode": 1
           }
@@ -52,8 +82,8 @@
       ]
     },
     {
-      "id": "lasso_glitch",
-      "label": "Lasso Glitch",
+      "id": "glitch",
+      "label": "Glitch Lasso",
       "initialSecondaryCircuits": ["lasso"],
       "chain": [
         {
@@ -63,7 +93,7 @@
             "time": 2,
             "mode_left": 3,
             "modify_left": 0,
-            "mix": 5,
+            "mix": 6,
             "clock": 4,
             "middle_toggle": 1,
             "microloop_led": 6000
@@ -72,54 +102,54 @@
         {
           "pedalSlug": "old-blood-noise-endeavors-pardner-fuzz",
           "id": "pardner",
-          "secondaryCircuitSlug": "static_preset_lasso",
+          "secondaryCircuitSlug": "pardner_lasso",
           "secondaryCircuitOnlySlug": "lasso_only",
           "secondaryCircuitId": "lasso",
           "settings": {
-            "bass": 5,
-            "treble": 5,
-            "fuzz": 5,
-            "filter": 5,
+            "bass": 6,
+            "treble": 7,
+            "fuzz": 7,
+            "filter": 8,
             "intensity": 5,
-            "lasso_vol": 5,
-            "lasso_gain": 5,
+            "lasso_vol": 8,
+            "lasso_gain": 1,
             "lasso_order": 1,
-            "mode": 1
+            "mode": 3
           }
         }
       ]
     },
     {
-      "id": "lasso_warble",
-      "label": "Lasso Warble",
+      "id": "warble",
+      "label": "Warble Lasso",
       "initialSecondaryCircuits": ["lasso"],
       "chain": [
         {
           "pedalSlug": "fairfield-circuitry-shallow-water",
           "id": "shallow",
           "settings": {
-            "rate": 5,
-            "lpg": 5,
-            "damp": 2,
+            "rate": 6,
+            "lpg": 2,
+            "damp": 1,
             "mix": 10,
-            "depth": 5,
-            "vol": 2
+            "depth": 8,
+            "vol": 4
           }
         },
         {
           "pedalSlug": "old-blood-noise-endeavors-pardner-fuzz",
           "id": "pardner",
-          "secondaryCircuitSlug": "static_preset_lasso",
+          "secondaryCircuitSlug": "pardner_lasso",
           "secondaryCircuitOnlySlug": "lasso_only",
           "secondaryCircuitId": "lasso",
           "settings": {
-            "bass": 5,
+            "bass": 6,
             "treble": 5,
-            "fuzz": 5,
-            "filter": 5,
+            "fuzz": 8,
+            "filter": 6,
             "intensity": 5,
             "lasso_vol": 5,
-            "lasso_gain": 5,
+            "lasso_gain": 2,
             "lasso_order": 1,
             "mode": 1
           }
