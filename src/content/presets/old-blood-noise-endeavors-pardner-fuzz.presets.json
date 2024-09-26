@@ -1,0 +1,39 @@
+{
+  "hasBackingTrack": true,
+  "volume": 1,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": {
+        "bass": 5,
+        "treble": 5,
+        "fuzz": 5,
+        "filter": 5,
+        "intensity": 5,
+        "lasso_vol": 5,
+        "lasso_gain": 5,
+        "lasso_order": 1,
+        "mode": 1,
+        "lasso_led": true
+      }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "treble": 5,
+        "fuzz": 5,
+        "filter": 5,
+        "intensity": 5,
+        "lasso_vol": 5,
+        "lasso_gain": 5,
+        "lasso_order": 1
+      }
+    }
+  ]
+}
