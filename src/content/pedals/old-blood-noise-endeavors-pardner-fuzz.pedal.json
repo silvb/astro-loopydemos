@@ -82,7 +82,12 @@
     ],
     "leds": [
       { "id": "on_led", "size": 32, "position": { "top": 249, "left": 260 } },
-      { "id": "lasso_led", "size": 32, "position": { "top": 249, "left": 34 } }
+      {
+        "id": "lasso_led",
+        "size": 32,
+        "position": { "top": 249, "left": 34 },
+        "secondaryCircuitId": "lasso"
+      }
     ],
     "switches": [
       {
@@ -90,6 +95,13 @@
         "type": "stomp",
         "size": 48,
         "position": { "top": 281, "left": 251 }
+      },
+      {
+        "id": "lasso_switch",
+        "secondaryCircuitId": "lasso",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 280, "left": 26 }
       },
       {
         "id": "lasso_order",
