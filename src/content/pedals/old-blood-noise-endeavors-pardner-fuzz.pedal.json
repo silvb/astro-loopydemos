@@ -81,12 +81,18 @@
       }
     ],
     "leds": [
-      { "id": "on_led", "size": 32, "position": { "top": 249, "left": 260 } },
+      {
+        "id": "on_led",
+        "size": 32,
+        "position": { "top": 249, "left": 260 },
+        "colors": { "on": "#ff00ea" }
+      },
       {
         "id": "lasso_led",
         "size": 32,
         "position": { "top": 249, "left": 34 },
-        "secondaryCircuitId": "lasso"
+        "secondaryCircuitId": "lasso",
+        "colors": { "on": "#ff00ea" }
       }
     ],
     "switches": [
