@@ -1,6 +1,6 @@
 {
   "hasBackingTrack": true,
-  "volume": 1,
+  "volume": 0.65,
   "presets": [
     {
       "id": "filthy_synth",
@@ -33,22 +33,22 @@
       }
     },
     {
-      "id": "placeholder",
-      "label": "Placeholder",
+      "id": "lasso_boost",
+      "label": "Lasso Boost",
       "initialSecondaryCircuits": ["lasso"],
-      "secondaryCircuitSlug": "static_preset_lasso",
+      "secondaryCircuitSlug": "lasso_boost_lasso",
       "secondaryCircuitOnlySlug": "lasso_only",
       "secondaryCircuitId": "lasso",
       "settings": {
-        "bass": 5,
+        "bass": 6,
         "treble": 5,
-        "fuzz": 5,
-        "filter": 5,
+        "fuzz": 7,
+        "filter": 8,
         "intensity": 5,
-        "lasso_vol": 5,
-        "lasso_gain": 5,
+        "lasso_vol": 6,
+        "lasso_gain": 10,
         "lasso_order": 1,
-        "mode": 1
+        "mode": 3
       }
     },
     {
@@ -157,20 +157,79 @@
       ]
     },
     {
-      "id": "bass_knob",
-      "label": "Bass",
+      "id": "synth_fuzz_toggle",
+      "label": "Synthy // Fuzzy",
       "isSweep": true,
-      "target": "bass",
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "bass": 5,
+        "treble": 5,
+        "fuzz": 8,
+        "filter": 4,
+        "intensity": 7,
+        "lasso_vol": 0,
+        "lasso_gain": 0,
+        "lasso_order": 1
+      }
+    },
+    {
+      "id": "filter_knob",
+      "label": "Filter",
+      "isSweep": true,
+      "target": "filter",
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
       "settings": {
+        "bass": 5,
         "treble": 5,
-        "fuzz": 5,
-        "filter": 5,
+        "fuzz": 8,
+        "intensity": 8,
+        "lasso_vol": 0,
+        "lasso_gain": 0,
+        "lasso_order": 1,
+        "mode": 1
+      }
+    },
+    {
+      "id": "intensity_knob",
+      "label": "Intensity",
+      "isSweep": true,
+      "target": "intensity",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "bass": 8,
+        "treble": 5,
+        "fuzz": 8,
+        "filter": 2,
+        "lasso_vol": 0,
+        "lasso_gain": 0,
+        "lasso_order": 1,
+        "mode": 1
+      }
+    },
+    {
+      "id": "lasso_order_knob",
+      "label": "Lasso First // Para // Fuzz First",
+      "isSweep": true,
+      "target": "lasso_order",
+      "initialValue": 1,
+      "initialSecondaryCircuits": ["lasso"],
+      "secondaryCircuitSlug": "lasso_order_knob_lasso",
+      "secondaryCircuitOnlySlug": "lasso_only",
+      "secondaryCircuitId": "lasso",
+      "values": [1, 2, 3],
+      "settings": {
+        "bass": 5,
+        "treble": 5,
+        "fuzz": 8,
+        "filter": 8,
         "intensity": 5,
         "lasso_vol": 5,
         "lasso_gain": 5,
-        "lasso_order": 1
+        "mode": 1
       }
     }
   ]
