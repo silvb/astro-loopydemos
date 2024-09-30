@@ -8,6 +8,7 @@ type EmbedCodeProps =
       slug: string
       title: string
       siteUrl: string
+      height?: number
     }
   | {
       code: string
@@ -19,7 +20,7 @@ export const EmbedCode: Component<EmbedCodeProps> = props => {
 
   const embedCode = () =>
     props.static
-      ? `<div style="display: flex; justify-content: center;"><iframe loading="lazy" src="${props.siteUrl}/demos/${props.slug}/embed" height="624" width="400" title="${props.title} | Loopy Demos" style="border-radius: 12px; border: 0px;"></iframe></div>`
+      ? `<div style="display: flex; justify-content: center;"><iframe loading="lazy" src="${props.siteUrl}/demos/${props.slug}/embed" height="${props.height}" width="400" title="${props.title} | Loopy Demos" style="border-radius: 12px; border: 0px;"></iframe></div>`
       : props.code
 
   return (

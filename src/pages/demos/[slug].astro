@@ -1,8 +1,11 @@
 ---
 import DemoPreviewCard from "@components/demo-preview-card.astro"
+import { EmbedCode } from "@components/embed-code"
 import PostPreviewCard from "@components/post-preview-card.astro"
+import { EMBED_HEIGHT_OFFSET } from "@constants/sizes"
 import DemoLayout from "@layouts/demo-layout.astro"
 import { getPedalsFromPresets } from "@utils/get-pedals-from-presets"
+import { getStaticPedalData } from "@utils/get-static-pedal-data"
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro"
 import { getEntry, getCollection, type CollectionEntry } from "astro:content"
 
@@ -44,7 +47,13 @@ const {
   `${slug as CollectionEntry<"demos">["slug"]}.presets`
 )
 
-const relatedPedals = [...new Set(getPedalsFromPresets(presets))]
+const pedalsInDemo = [...new Set([...getPedalsFromPresets(presets), slug])]
+
+const staticPedalData = await getStaticPedalData(pedalsInDemo)
+
+const maxHeight = Math.max(...staticPedalData.map(({ height }) => height))
+
+const embedHeight = EMBED_HEIGHT_OFFSET + maxHeight
 
 const relatedDemos = allDemos
   .filter(demo => demo.slug !== slug)
@@ -54,7 +63,7 @@ const relatedDemos = allDemos
       demo.data.tags?.some(tag => tags?.includes(tag)) ||
       relatedSlugs?.includes(demo.slug) ||
       demo.data.relatedSlugs?.includes(slug) ||
-      relatedPedals.includes(demo.slug)
+      pedalsInDemo.includes(demo.slug)
   )
 
 const relatedPosts = allPosts.filter(
@@ -62,6 +71,16 @@ const relatedPosts = allPosts.filter(
     post.data.tags?.some(tag => tags?.includes(tag)) ||
     post.data.relatedSlugs?.includes(slug)
 )
+
+const isDev = import.meta.env.DEV
+const vercelPreviewBranchUrl = "https://" + import.meta.env.VERCEL_BRANCH_URL
+const isVercelPreview = import.meta.env.VERCEL_ENV === "preview"
+
+const siteUrl = isDev
+  ? Astro.url.origin
+  : isVercelPreview
+    ? vercelPreviewBranchUrl
+    : import.meta.env.SITE
 ---
 
 <DemoLayout {slug} {title} {date} {type}>
@@ -164,7 +183,7 @@ const relatedPosts = allPosts.filter(
           {relatedDemos
             .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
             .sort(demo => (relatedSlugs?.includes(demo.slug) ? -1 : 1))
-            .sort(demo => (relatedPedals.includes(demo.slug) ? -1 : 1))
+            .sort(demo => (pedalsInDemo.includes(demo.slug) ? -1 : 1))
             .filter(demo => demo.data.type === "demo")
             .slice(0, 8)
             .map(demo => (
@@ -200,6 +219,26 @@ const relatedPosts = allPosts.filter(
       </>
     )
   }
+  <section class="mt-8">
+    <EmbedCode
+      client:visible
+      static
+      {slug}
+      {title}
+      {siteUrl}
+      height={embedHeight}
+    />
+    <div class="relative mt-4 rounded-md bg-loopydemos-secondary px-2 py-1">
+      <div
+        class="absolute -top-3 right-4 border-b-[0.75rem] border-l-[0.75rem] border-r-[0.75rem] border-transparent border-b-loopydemos-secondary"
+      >
+      </div>
+      <p class="text-base italic">
+        To embed this demo on your website, copy & paste the code above or{" "}
+        <a href={`/demos/${slug}/config`}>customize your demo widget</a>
+      </p>
+    </div>
+  </section>
 </DemoLayout>
 
 <script>
