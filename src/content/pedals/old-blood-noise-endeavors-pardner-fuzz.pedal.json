@@ -1,0 +1,128 @@
+{
+  "name": "old-blood-noise-endeavors-pardner-fuzz",
+  "height": 350,
+  "width": 325,
+  "controls": {
+    "knobs": [
+      {
+        "id": "bass",
+        "size": 60,
+        "position": { "top": 13, "left": 37 },
+        "colors": {
+          "primary": "#8093da",
+          "tick": "white",
+          "secondary": "#5167b1"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "treble",
+        "size": 60,
+        "position": { "top": 12, "left": 134 },
+        "colors": {
+          "primary": "#8093da",
+          "tick": "white",
+          "secondary": "#5167b1"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "fuzz",
+        "size": 60,
+        "position": { "top": 13, "left": 231 },
+        "colors": {
+          "primary": "#8093da",
+          "tick": "white",
+          "secondary": "#5167b1"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "filter",
+        "size": 44,
+        "position": { "top": 70, "left": 94 },
+        "colors": {
+          "primary": "#8093da",
+          "tick": "white",
+          "secondary": "#5167b1"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "intensity",
+        "size": 44,
+        "position": { "top": 70, "left": 192 },
+        "colors": {
+          "primary": "#8093da",
+          "tick": "white",
+          "secondary": "#5167b1"
+        },
+        "type": "brutalist"
+      },
+      {
+        "id": "lasso_vol",
+        "size": 24,
+        "position": { "top": 113, "left": 38 },
+        "colors": {
+          "primary": "#5d5e73",
+          "tick": "white"
+        },
+        "type": "simple"
+      },
+      {
+        "id": "lasso_gain",
+        "size": 24,
+        "position": { "top": 173, "left": 38 },
+        "colors": {
+          "primary": "#5d5e73",
+          "tick": "white"
+        },
+        "type": "simple"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "position": { "top": 249, "left": 260 },
+        "colors": { "on": "#ff00ea" }
+      },
+      {
+        "id": "lasso_led",
+        "size": 32,
+        "position": { "top": 249, "left": 34 },
+        "secondaryCircuitId": "lasso",
+        "colors": { "on": "#ff00ea" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 281, "left": 251 }
+      },
+      {
+        "id": "lasso_switch",
+        "secondaryCircuitId": "lasso",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 280, "left": 26 }
+      },
+      {
+        "id": "lasso_order",
+        "type": "toggle",
+        "orientation": "horizontal",
+        "size": 32,
+        "position": { "top": 110, "left": 258 }
+      },
+      {
+        "id": "mode",
+        "type": "toggle",
+        "orientation": "horizontal",
+        "size": 32,
+        "position": { "top": 168, "left": 259 }
+      }
+    ]
+  }
+}

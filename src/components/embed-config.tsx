@@ -7,10 +7,13 @@ interface EmbedConfigProps {
   siteUrl: string
   title: string
   slug: string
+  minHeight: number
 }
 
+const MIN_WIDTH = 320
+
 export const EmbedConfig: Component<EmbedConfigProps> = props => {
-  const [height, setHeight] = createSignal(600)
+  const [height, setHeight] = createSignal(props.minHeight)
   const [width, setWidth] = createSignal(400)
   const [colors, setColors] = createStore({
     primary: COLORS["primary"],
@@ -61,24 +64,36 @@ export const EmbedConfig: Component<EmbedConfigProps> = props => {
 
   return (
     <div class="flex flex-col gap-6">
-      <div class="flex flex-wrap items-center gap-4 rounded-lg bg-loopydemos-secondary p-4">
+      <div class="flex flex-col gap-4 rounded-lg bg-loopydemos-secondary p-4">
         <label class="flex items-center gap-2">
           <span>Frame width:</span>
-          <input
-            type="number"
-            value={width()}
-            onChange={e => setWidth(parseInt(e.currentTarget.value))}
-            class="min-w-40 rounded-md bg-loopydemos-background p-2"
-          ></input>
+          <div class="flex flex-col gap-1">
+            <input
+              type="number"
+              value={width()}
+              min={MIN_WIDTH}
+              onChange={e => setWidth(parseInt(e.currentTarget.value))}
+              class="min-w-40 rounded-md bg-loopydemos-background p-2"
+            ></input>
+            {width() < MIN_WIDTH && (
+              <span class="text-sm italic text-loopydemos-red">{`This will look ugly on your site. Best to keep the width above ${MIN_WIDTH}px.`}</span>
+            )}
+          </div>
         </label>
         <label class="flex items-center gap-2">
           <span>Frame height:</span>
-          <input
-            type="number"
-            value={height()}
-            onChange={e => setHeight(parseInt(e.currentTarget.value))}
-            class="min-w-40 rounded-md bg-loopydemos-background p-2"
-          ></input>
+          <div class="flex flex-col gap-1">
+            <input
+              type="number"
+              value={height()}
+              min={props.minHeight}
+              onChange={e => setHeight(parseInt(e.currentTarget.value))}
+              class="min-w-40 rounded-md bg-loopydemos-background p-2"
+            ></input>
+            {height() < props.minHeight && (
+              <span class="text-sm italic text-loopydemos-red">{`This will look ugly on your site. Best to keep the height above ${props.minHeight}px.`}</span>
+            )}
+          </div>
         </label>
         <div class="flex grow items-center gap-2">
           <span>Customize colors:</span>

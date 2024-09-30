@@ -12,7 +12,9 @@ const { slug } = Astro.props
 
 <BaseLayout>
   <SEO noIndex slot="head" />
-  <div class="flex h-screen flex-col bg-loopydemos-background-themed p-4">
+  <div
+    class="flex h-screen min-w-80 flex-col bg-loopydemos-background-themed p-4"
+  >
     <div class="grow">
       <DemoWidget presetSlug={slug} />
     </div>

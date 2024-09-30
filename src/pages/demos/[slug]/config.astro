@@ -1,9 +1,12 @@
 ---
 import DefaultLayout from "@layouts/default-layout.astro"
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro"
-import { getCollection, type CollectionEntry } from "astro:content"
+import { getCollection, type CollectionEntry, getEntry } from "astro:content"
 import SEO from "@layouts/seo.astro"
 import { EmbedConfig } from "@components/embed-config"
+import { getStaticPedalData } from "@utils/get-static-pedal-data"
+import { getPedalsFromPresets } from "@utils/get-pedals-from-presets"
+import { EMBED_HEIGHT_OFFSET } from "@constants/sizes"
 
 export const getStaticPaths = (async () => {
   const allDemos: CollectionEntry<"demos">[] = await getCollection("demos")
@@ -30,9 +33,30 @@ const siteUrl = isDev
   : isVercelPreview
     ? vercelPreviewBranchUrl
     : import.meta.env.SITE
+
+const {
+  data: { presets },
+}: CollectionEntry<"presets"> = await getEntry(
+  "presets",
+  `${slug as CollectionEntry<"demos">["slug"]}.presets`
+)
+
+const pedalsInDemo = [...new Set([...getPedalsFromPresets(presets), slug])]
+
+const staticPedalData = await getStaticPedalData(pedalsInDemo)
+
+const maxHeight = Math.max(...staticPedalData.map(({ height }) => height))
+
+const minHeight = EMBED_HEIGHT_OFFSET + maxHeight
 ---
 
 <DefaultLayout {title}>
   <SEO slot="head" noIndex />
-  <EmbedConfig client:only="solid-js" {slug} title={frameTitle} {siteUrl} />
+  <EmbedConfig
+    client:only="solid-js"
+    {slug}
+    title={frameTitle}
+    {siteUrl}
+    {minHeight}
+  />
 </DefaultLayout>

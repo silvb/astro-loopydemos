@@ -39,7 +39,7 @@ Write some copy about the ${model} by ${builder}.
 
 const getdefaultPresets = ({ knobs = [], toggles = [], hasBackingTrack }) => ({
   hasBackingTrack,
-  volume: 1,
+  volume: 0.65,
   presets: [
     {
       id: "static_preset",
