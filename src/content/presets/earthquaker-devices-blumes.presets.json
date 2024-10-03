@@ -1,0 +1,29 @@
+{
+  "hasBackingTrack": true,
+  "volume": 1,
+  "presets": [
+    {
+      "id": "warm_vibes",
+      "label": "Warm Vibes",
+      "settings": {
+        "level": 3,
+        "tone": 7,
+        "gain": 4,
+        "mode": 3
+      }
+    },
+    {
+      "id": "tone_sweep",
+      "label": "Tone Sweep",
+      "isSweep": true,
+      "target": "tone",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0,
+      "settings": {
+        "level": 2,
+        "tone": 6,
+        "gain": 7
+      }
+    }
+  ]
+}
