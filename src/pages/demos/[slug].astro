@@ -60,7 +60,7 @@ const relatedDemos = allDemos
   .filter(
     demo =>
       demo.data.builder === builder ||
-      demo.data.tags?.some((tag: string[]) => tags?.includes(tag)) ||
+      demo.data.tags?.some((tag: string) => tags?.includes(tag)) ||
       relatedSlugs?.includes(demo.slug) ||
       demo.data.relatedSlugs?.includes(slug) ||
       pedalsInDemo.includes(demo.slug)
@@ -70,7 +70,7 @@ console.log({ relatedDemos: relatedDemos.map(demo => demo.slug) })
 
 const relatedPosts = allPosts.filter(
   post =>
-    post.data.tags?.some((tag: string[]) => tags?.includes(tag)) ||
+    post.data.tags?.some((tag: string) => tags?.includes(tag)) ||
     post.data.relatedSlugs?.includes(slug)
 )
 
