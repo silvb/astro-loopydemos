@@ -1,0 +1,38 @@
+{
+  "volume": 1,
+  "hasBackingTrack": true,
+  "presets": [
+    {
+      "id": "thump",
+      "label": "Thump",
+      "comparison": [
+        {
+          "id": "blumes_thump",
+          "pedalSlug": "earthquaker-devices-blumes",
+          "settings": {
+            "level": 3,
+            "tone": 6,
+            "gain": 4,
+            "mode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "bite",
+      "label": "Bite",
+      "comparison": [
+        {
+          "id": "blumes_bite",
+          "pedalSlug": "earthquaker-devices-blumes",
+          "settings": {
+            "level": 1.8,
+            "tone": 8,
+            "gain": 7,
+            "mode": 2
+          }
+        }
+      ]
+    }
+  ]
+}

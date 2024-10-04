@@ -60,15 +60,17 @@ const relatedDemos = allDemos
   .filter(
     demo =>
       demo.data.builder === builder ||
-      demo.data.tags?.some(tag => tags?.includes(tag)) ||
+      demo.data.tags?.some((tag: string) => tags?.includes(tag)) ||
       relatedSlugs?.includes(demo.slug) ||
       demo.data.relatedSlugs?.includes(slug) ||
       pedalsInDemo.includes(demo.slug)
   )
 
+console.log({ relatedDemos: relatedDemos.map(demo => demo.slug) })
+
 const relatedPosts = allPosts.filter(
   post =>
-    post.data.tags?.some(tag => tags?.includes(tag)) ||
+    post.data.tags?.some((tag: string) => tags?.includes(tag)) ||
     post.data.relatedSlugs?.includes(slug)
 )
 
@@ -182,6 +184,7 @@ const siteUrl = isDev
         <div class="grid auto-rows-[200px] grid-cols-3-min-repeat gap-2">
           {relatedDemos
             .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+            .sort(demo => (demo.data.builder === builder ? -1 : 1))
             .sort(demo => (relatedSlugs?.includes(demo.slug) ? -1 : 1))
             .sort(demo => (pedalsInDemo.includes(demo.slug) ? -1 : 1))
             .filter(demo => demo.data.type === "demo")
