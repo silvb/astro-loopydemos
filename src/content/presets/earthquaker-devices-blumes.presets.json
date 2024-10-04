@@ -1,28 +1,84 @@
 {
   "hasBackingTrack": true,
-  "volume": 1,
+  "volume": 0.7,
   "presets": [
+    {
+      "id": "slight_bite",
+      "label": "Slight Bite",
+      "settings": {
+        "level": 2,
+        "tone": 6,
+        "gain": 5,
+        "mode": 1
+      }
+    },
     {
       "id": "warm_vibes",
       "label": "Warm Vibes",
       "settings": {
-        "level": 3,
-        "tone": 7,
-        "gain": 4,
+        "level": 4,
+        "tone": 3,
+        "gain": 7,
         "mode": 3
       }
     },
     {
+      "id": "op_amp_distortion",
+      "label": "OpAmp Distortion",
+      "settings": {
+        "level": 1.8,
+        "tone": 8,
+        "gain": 8.5,
+        "mode": 2
+      }
+    },
+    {
+      "id": "full_bodied",
+      "label": "Full Bodied",
+      "settings": {
+        "level": 3,
+        "tone": 3,
+        "gain": 3,
+        "mode": 1
+      }
+    },
+    {
+      "id": "mode_toggle",
+      "label": "Mode",
+      "isSweep": true,
+      "target": "mode",
+      "values": [1, 2, 3],
+      "initialValue": 1,
+      "settings": {
+        "level": 2,
+        "tone": 5,
+        "gain": 7
+      }
+    },
+    {
       "id": "tone_sweep",
-      "label": "Tone Sweep",
+      "label": "Tone",
       "isSweep": true,
       "target": "tone",
       "values": [0, 2, 4, 6, 8, 10],
       "initialValue": 0,
       "settings": {
         "level": 2,
-        "tone": 6,
-        "gain": 7
+        "gain": 6,
+        "mode": 1
+      }
+    },
+    {
+      "id": "gain_range",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 0,
+      "settings": {
+        "level": 3,
+        "tone": 5,
+        "mode": 1
       }
     }
   ]
