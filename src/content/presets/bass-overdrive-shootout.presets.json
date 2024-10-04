@@ -10,39 +10,26 @@
           "id": "blumes_thump",
           "pedalSlug": "earthquaker-devices-blumes",
           "settings": {
-            "level": 2,
-            "tone": 7,
-            "gain": 6,
-            "mode": 2
-          }
-        },
-        {
-          "id": "jive_thump",
-          "pedalSlug": "jptr-fx-jive",
-          "settings": {
-            "vol": 2,
-            "gain": 8,
-            "toggle_a": 3,
-            "toggle_b": 1,
-            "toggle_c": 1
-          }
-        },
-        {
-          "id": "divvy_thump",
-          "pedalSlug": "champion-leccy-the-divvy-v3",
-          "settings": {
-            "level": 6,
-            "gain": 7,
-            "voice": 3
-          }
-        },
-        {
-          "id": "proxima_thump",
-          "pedalSlug": "twilight-pulse-audioworks-proxima",
-          "settings": {
+            "level": 3,
+            "tone": 6,
             "gain": 4,
-            "mass": 6.5,
-            "refine": 5
+            "mode": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "bite",
+      "label": "Bite",
+      "comparison": [
+        {
+          "id": "blumes_bite",
+          "pedalSlug": "earthquaker-devices-blumes",
+          "settings": {
+            "level": 1.8,
+            "tone": 8,
+            "gain": 7,
+            "mode": 2
           }
         }
       ]
