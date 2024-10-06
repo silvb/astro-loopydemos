@@ -69,6 +69,7 @@ const knobTypeEnum = z.enum([
   "joystick",
   "flb",
   "obne",
+  "muff",
 ])
 
 const switchTypeEnum = z.enum([
