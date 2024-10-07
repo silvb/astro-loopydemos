@@ -7,109 +7,115 @@ export const MuffKnob: Component<SimpleKnobProps> = props => (
   <svg
     width={props.size}
     height={props.size}
-    viewBox="0 0 496 496"
+    viewBox="0 0 272 272"
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
     <circle
-      cx="247.614"
-      cy="249.315"
+      cx="136"
+      cy="135.75"
       r="129.5"
       fill="#1A1A1A"
-      stroke="#434343"
+      stroke="#6d6d6d"
       stroke-width="5"
     />
-    <circle cx="248" cy="249" r="84.5" fill="black" stroke="#434343" />
+    <circle cx="136.386" cy="135.435" r="84.5" fill="black" stroke="#6d6d6d" />
     <path
-      d="M317.5 249C317.5 287.384 286.384 318.5 248 318.5C209.616 318.5 178.5 287.384 178.5 249C178.5 210.616 209.616 179.5 248 179.5C286.384 179.5 317.5 210.616 317.5 249Z"
+      d="M205.886 135.435C205.886 173.819 174.769 204.935 136.386 204.935C98.0018 204.935 66.8856 173.819 66.8856 135.435C66.8856 97.051 98.0018 65.9348 136.386 65.9348C174.769 65.9348 205.886 97.051 205.886 135.435Z"
       fill="#1A1A1A"
-      stroke="#434343"
+      stroke="#6d6d6d"
     />
-    <rect x="220.614" y="117.315" width="53.9997" height="16" fill="black" />
-    <rect x="220.614" y="115.315" width="9.81812" height="16" fill="#434343" />
-    <rect x="235.341" y="114.315" width="9.81812" height="16" fill="#434343" />
-    <rect x="264.797" y="115.315" width="9.81812" height="16" fill="#434343" />
-    <rect x="250.068" y="114.315" width="9.81812" height="16" fill="#434343" />
-    <circle cx="248" cy="143" r="18" fill="#FFFCEA" />
     <rect
-      x="376.229"
-      y="292.048"
-      width="54"
+      x="263.815"
+      y="178.368"
+      width="53.9997"
       height="16"
-      transform="rotate(120 376.229 292.048)"
+      transform="rotate(120 263.815 178.368)"
       fill="black"
     />
     <rect
-      x="377.961"
-      y="293.048"
-      width="9.81818"
+      x="265.547"
+      y="179.368"
+      width="9.81812"
       height="16"
-      transform="rotate(120 377.961 293.048)"
-      fill="#434343"
+      transform="rotate(120 265.547 179.368)"
+      fill="#6d6d6d"
     />
     <rect
-      x="371.464"
-      y="306.301"
-      width="9.81818"
+      x="259.05"
+      y="192.622"
+      width="9.81812"
       height="16"
-      transform="rotate(120 371.464 306.301)"
-      fill="#434343"
+      transform="rotate(120 259.05 192.622)"
+      fill="#6d6d6d"
     />
     <rect
-      x="355.871"
-      y="331.31"
-      width="9.81818"
+      x="243.456"
+      y="217.63"
+      width="9.81812"
       height="16"
-      transform="rotate(120 355.871 331.31)"
-      fill="#434343"
+      transform="rotate(120 243.456 217.63)"
+      fill="#6d6d6d"
     />
     <rect
-      x="364.1"
-      y="319.056"
-      width="9.81818"
+      x="251.686"
+      y="205.375"
+      width="9.81812"
       height="16"
-      transform="rotate(120 364.1 319.056)"
-      fill="#434343"
+      transform="rotate(120 251.686 205.375)"
+      fill="#6d6d6d"
     />
     <rect
-      x="146.499"
-      y="339.68"
+      x="34.6852"
+      y="225.768"
       width="54"
       height="16"
-      transform="rotate(-120 146.499 339.68)"
+      transform="rotate(-120 34.6852 225.768)"
       fill="black"
     />
     <rect
-      x="144.767"
-      y="340.68"
+      x="32.9531"
+      y="226.768"
       width="9.81818"
       height="16"
-      transform="rotate(-120 144.767 340.68)"
-      fill="#434343"
+      transform="rotate(-120 32.9531 226.768)"
+      fill="#6d6d6d"
     />
     <rect
-      x="136.538"
-      y="328.425"
+      x="24.724"
+      y="214.514"
       width="9.81818"
       height="16"
-      transform="rotate(-120 136.538 328.425)"
-      fill="#434343"
+      transform="rotate(-120 24.724 214.514)"
+      fill="#6d6d6d"
     />
     <rect
-      x="122.676"
-      y="302.417"
+      x="10.8625"
+      y="188.505"
       width="9.81818"
       height="16"
-      transform="rotate(-120 122.676 302.417)"
-      fill="#434343"
+      transform="rotate(-120 10.8625 188.505)"
+      fill="#6d6d6d"
     />
     <rect
-      x="129.174"
-      y="315.671"
+      x="17.3596"
+      y="201.759"
       width="9.81818"
       height="16"
-      transform="rotate(-120 129.174 315.671)"
-      fill="#434343"
+      transform="rotate(-120 17.3596 201.759)"
+      fill="#6d6d6d"
+    />
+    <rect x="108.3" y="3" width="54" height="16" fill="black" />
+    <rect x="108.3" y="1" width="9.81818" height="16" fill="#6d6d6d" />
+    <rect x="123.027" width="9.81818" height="16" fill="#6d6d6d" />
+    <rect x="152.482" y="1" width="9.81818" height="16" fill="#6d6d6d" />
+    <rect x="137.755" width="9.81818" height="16" fill="#6d6d6d" />
+    <circle
+      cx="135.273"
+      cy="27.273"
+      r="18"
+      transform="rotate(120 135.273 27.273)"
+      fill="#FFFCEA"
     />
   </svg>
 )

@@ -3,26 +3,62 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "perfect_muff",
+      "label": "The perfect Muff doesn't ex...",
       "settings": {
-        "distortion": 5,
-        "volume": 5,
+        "distortion": 10,
+        "volume": 6,
         "tone": 5,
+        "mid_range": 6.5,
+        "rumble": 4,
+        "presence": 6.5
+      }
+    },
+    {
+      "id": "nice_drive",
+      "label": "Nice Drive",
+      "settings": {
+        "distortion": 1,
+        "volume": 8,
+        "tone": 7,
+        "mid_range": 8,
+        "rumble": 10,
+        "presence": 2
+      }
+    },
+    {
+      "id": "russian_default",
+      "label": "Russian Default",
+      "settings": {
+        "distortion": 7,
+        "volume": 7,
+        "tone": 6,
         "mid_range": 5,
-        "rumble": 5,
+        "rumble": 10,
         "presence": 5
       }
     },
     {
-      "id": "another",
-      "label": "Another",
+      "id": "heavy_sizzle",
+      "label": "Heavy Sizzle",
+      "settings": {
+        "distortion": 10,
+        "volume": 7,
+        "tone": 6,
+        "mid_range": 8,
+        "rumble": 10,
+        "presence": 10
+      }
+    },
+    {
+      "id": "extra_scoop",
+      "label": "Extra Scoop",
       "settings": {
         "distortion": 8,
-        "volume": 5,
-        "tone": 5,
-        "mid_range": 5,
-        "rumble": 5,
+        "volume": 8,
+        "tone": 6,
+        "mid_range": 3,
+        "rumble": 8,
         "presence": 5
       }
     },
@@ -34,11 +70,71 @@
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
       "settings": {
-        "volume": 5,
-        "tone": 5,
+        "volume": 7,
+        "tone": 6,
         "mid_range": 5,
-        "rumble": 5,
+        "rumble": 8,
         "presence": 5
+      }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 0,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "settings": {
+        "volume": 7,
+        "distortion": 6,
+        "mid_range": 5,
+        "rumble": 8,
+        "presence": 5
+      }
+    },
+    {
+      "id": "mid_range_knob",
+      "label": "Mid Range",
+      "isSweep": true,
+      "target": "mid_range",
+      "initialValue": 0,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "settings": {
+        "volume": 7,
+        "distortion": 8,
+        "tone": 6,
+        "rumble": 8,
+        "presence": 5
+      }
+    },
+    {
+      "id": "rumble_knob",
+      "label": "Rumble",
+      "isSweep": true,
+      "target": "rumble",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "volume": 7,
+        "distortion": 7,
+        "tone": 6,
+        "mid_range": 5,
+        "presence": 5
+      }
+    },
+    {
+      "id": "presence_knob",
+      "label": "Presence",
+      "isSweep": true,
+      "target": "presence",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "volume": 7,
+        "distortion": 7,
+        "tone": 6,
+        "mid_range": 5,
+        "rumble": 5
       }
     }
   ]
