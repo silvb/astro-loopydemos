@@ -6,38 +6,38 @@
     "knobs": [
       {
         "id": "distortion",
-        "size": 80,
-        "position": { "top": 42, "left": 45 },
+        "size": 82,
+        "position": { "top": 39, "left": 43 },
         "type": "muff"
       },
       {
         "id": "volume",
-        "size": 80,
-        "position": { "top": 157, "left": 45 },
+        "size": 82,
+        "position": { "top": 156, "left": 43 },
         "type": "muff"
       },
       {
         "id": "tone",
         "size": 40,
-        "position": { "top": 33, "left": 160 },
+        "position": { "top": 31, "left": 157 },
         "type": "simpledot"
       },
       {
         "id": "mid_range",
         "size": 40,
-        "position": { "top": 101, "left": 160 },
+        "position": { "top": 99, "left": 157 },
         "type": "simpledot"
       },
       {
         "id": "rumble",
         "size": 40,
-        "position": { "top": 168, "left": 161 },
+        "position": { "top": 166, "left": 157 },
         "type": "simpledot"
       },
       {
         "id": "presence",
         "size": 40,
-        "position": { "top": 237, "left": 161 },
+        "position": { "top": 236, "left": 157 },
         "type": "simpledot"
       }
     ],
@@ -45,7 +45,7 @@
       {
         "id": "on_led",
         "size": 64,
-        "position": { "top": 348.5, "left": 146.5 }
+        "position": { "top": 349, "left": 145 }
       }
     ],
     "switches": [
@@ -53,7 +53,7 @@
         "id": "bypass_switch",
         "type": "stomp",
         "size": 48,
-        "position": { "top": 367, "left": 61 }
+        "position": { "top": 367, "left": 60 }
       }
     ]
   }
