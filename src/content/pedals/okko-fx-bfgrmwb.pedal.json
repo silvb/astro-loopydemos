@@ -1,0 +1,60 @@
+{
+  "height": 437,
+  "width": 230,
+  "name": "okko-fx-bfgrmwb",
+  "controls": {
+    "knobs": [
+      {
+        "id": "distortion",
+        "size": 82,
+        "position": { "top": 39, "left": 43 },
+        "type": "muff"
+      },
+      {
+        "id": "volume",
+        "size": 82,
+        "position": { "top": 156, "left": 43 },
+        "type": "muff"
+      },
+      {
+        "id": "tone",
+        "size": 40,
+        "position": { "top": 31, "left": 157 },
+        "type": "simpledot"
+      },
+      {
+        "id": "mid_range",
+        "size": 40,
+        "position": { "top": 99, "left": 157 },
+        "type": "simpledot"
+      },
+      {
+        "id": "rumble",
+        "size": 40,
+        "position": { "top": 166, "left": 157 },
+        "type": "simpledot"
+      },
+      {
+        "id": "presence",
+        "size": 40,
+        "position": { "top": 236, "left": 157 },
+        "type": "simpledot"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 64,
+        "position": { "top": 349, "left": 145 }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 367, "left": 60 }
+      }
+    ]
+  }
+}

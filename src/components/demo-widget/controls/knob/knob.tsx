@@ -20,6 +20,7 @@ import { LichtlaermAudioKnob } from "./lichtlaerm-audio-knob"
 import { RoundChickenHeadKnob } from "./round-chicken-head-knob"
 import { KnobStateContainer } from "./knob-state-container"
 import { Match, splitProps, Switch, type Component } from "solid-js"
+import { MuffKnob } from "./muff-knob"
 
 interface KnobProps extends KnobType {
   pedalSlug: string
@@ -91,6 +92,9 @@ export const Knob: Component<KnobProps> = props => {
         </Match>
         <Match when={props.type === "walrus"}>
           <WalrusAudioKnob {...sizeAndColorProps} />
+        </Match>
+        <Match when={props.type === "muff"}>
+          <MuffKnob size={props.size} />
         </Match>
       </Switch>
     </KnobStateContainer>
