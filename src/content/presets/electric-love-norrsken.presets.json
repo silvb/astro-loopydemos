@@ -1,0 +1,1 @@
+{"hasBackingTrack":true,"volume":0.65,"presets":[{"id":"static_preset","label":"Static Preset","settings":{"level":5,"fuzz":5,"comp":5,"bass":5,"middle":5,"treble":5}},{"id":"level_knob","label":"Level","isSweep":true,"target":"level","initialValue":0,"values":[0,2,4,6,8,10],"settings":{"fuzz":5,"comp":5,"bass":5,"middle":5,"treble":5}}]}
