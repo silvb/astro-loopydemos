@@ -19,7 +19,7 @@ const convertImage = (imagePath, outputPath) => {
   const longestSide = Math.max(width, height)
   const extendLength = longestSide + 60
 
-  const convertCmd = `convert -size ${extendLength}x${extendLength} xc:${fillColor} "${imagePath}" -gravity center -composite -resize 400x400 "${outputPath}"`
+  const convertCmd = `magick -size ${extendLength}x${extendLength} xc:${fillColor} "${imagePath}" -gravity center -composite -resize 400x400 "${outputPath}"`
 
   execSync(convertCmd)
 
