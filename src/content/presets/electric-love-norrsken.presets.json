@@ -1,1 +1,81 @@
-{"hasBackingTrack":true,"volume":0.65,"presets":[{"id":"static_preset","label":"Static Preset","settings":{"level":5,"fuzz":5,"comp":5,"bass":5,"middle":5,"treble":5}},{"id":"level_knob","label":"Level","isSweep":true,"target":"level","initialValue":0,"values":[0,2,4,6,8,10],"settings":{"fuzz":5,"comp":5,"bass":5,"middle":5,"treble":5}}]}
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "chewy_fuzz",
+      "label": "Chewy Fuzz",
+      "settings": {
+        "level": 6,
+        "fuzz": 10,
+        "comp": 10,
+        "bass": 6.5,
+        "middle": 6.5,
+        "treble": 4
+      }
+    },
+    {
+      "id": "transparent_dirt",
+      "label": "Transparent Dirt",
+      "settings": {
+        "level": 5,
+        "fuzz": 5,
+        "comp": 8,
+        "bass": 4,
+        "middle": 8,
+        "treble": 5
+      }
+    },
+    {
+      "id": "tone_shaper",
+      "label": "Tone Shaper",
+      "settings": {
+        "level": 6,
+        "fuzz": 3,
+        "comp": 5,
+        "bass": 5,
+        "middle": 4,
+        "treble": 7.5
+      }
+    },
+    {
+      "id": "character_compressor",
+      "label": "Character Compressor",
+      "settings": {
+        "level": 5,
+        "fuzz": 2,
+        "comp": 10,
+        "bass": 10,
+        "middle": 10,
+        "treble": 3
+      }
+    },
+    {
+      "id": "fuzz_knob",
+      "label": "Fuzz",
+      "isSweep": true,
+      "target": "fuzz",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "level": 5, "comp": 7, "bass": 7, "middle": 8, "treble": 4 }
+    },
+    {
+      "id": "comp_knob",
+      "label": "Comp",
+      "isSweep": true,
+      "target": "comp",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "level": 5, "fuzz": 7, "bass": 7, "middle": 8, "treble": 4 }
+    },
+    {
+      "id": "middle_knob",
+      "label": "Middle",
+      "isSweep": true,
+      "target": "middle",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "level": 5, "fuzz": 7, "bass": 7, "comp": 7, "treble": 4 }
+    }
+  ]
+}
