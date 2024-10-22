@@ -1,42 +1,44 @@
 {
   "name": "mxr-sugar-drive",
+  "width": 124,
+  "height": 260,
   "controls": {
     "knobs": [
       {
         "id": "level",
-        "size": 50,
+        "size": 40,
         "type": "jhs",
         "position": {
-          "left": 41,
-          "top": 67
+          "left": 17,
+          "top": 48
         }
       },
       {
         "id": "tone",
-        "size": 50,
+        "size": 40,
         "type": "jhs",
         "position": {
-          "left": 74,
-          "top": 12
+          "left": 42,
+          "top": 7
         }
       },
       {
         "id": "drive",
-        "size": 50,
+        "size": 40,
         "type": "jhs",
         "position": {
-          "left": 108,
-          "top": 67
+          "left": 67,
+          "top": 48
         }
       }
     ],
     "leds": [
       {
         "id": "on_led",
-        "size": 46,
+        "size": 36,
         "position": {
-          "left": 75,
-          "top": 304
+          "left": 43,
+          "top": 225
         },
         "colors": {
           "off": "#d2e1e9a1",
@@ -48,10 +50,10 @@
       {
         "id": "bypass_switch",
         "type": "stomp",
-        "size": 64,
+        "size": 48,
         "position": {
-          "left": 64,
-          "top": 256
+          "left": 36,
+          "top": 190
         }
       }
     ]

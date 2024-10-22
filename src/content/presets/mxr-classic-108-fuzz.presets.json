@@ -1,0 +1,20 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": { "output": 5, "fuzz": 5, "buffer_led": true }
+    },
+    {
+      "id": "output_knob",
+      "label": "Output",
+      "isSweep": true,
+      "target": "output",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "fuzz": 5, "buffer": 1 }
+    }
+  ]
+}
