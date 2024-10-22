@@ -48,7 +48,7 @@ const relatedPosts = allPosts
   .filter(post => post.data.tags?.some(tag => tags?.includes(tag)))
 ---
 
-<DemoLayout {slug} {title} {date} {type} {excerpt}>
+<DemoLayout {slug} {title} {date} {type} {excerpt} noIndex={type === "none"}>
   <Content />
   {
     relatedDemos.length > 0 && (

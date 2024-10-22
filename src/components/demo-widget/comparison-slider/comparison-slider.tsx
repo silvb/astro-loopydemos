@@ -12,7 +12,6 @@ interface ComparisonSliderProps {
 export const ComparisonSlider: Component<ComparisonSliderProps> = props => {
   const { activePreset } = useDemoState()
 
-  console.log({ activePreset: activePreset() })
   const pedalsInComparison = () =>
     activePreset()?.comparison?.map(item => item.pedalSlug)
   return (

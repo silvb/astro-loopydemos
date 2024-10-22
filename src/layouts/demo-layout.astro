@@ -14,9 +14,10 @@ interface Props {
   slug: string
   type: PostType
   excerpt?: string
+  noIndex?: boolean
 }
 
-const { slug, title, date, type, excerpt } = Astro.props
+const { slug, title, date, type, excerpt, noIndex } = Astro.props
 
 const metaImage = await getImage({
   src: getImageSrcFromSlug(slug, true),
@@ -31,6 +32,7 @@ const metaImage = await getImage({
     metaImage={metaImage.src}
     isBlogPost
     {date}
+    {noIndex}
     description={excerpt}
   />
   <a

@@ -66,8 +66,6 @@ const relatedDemos = allDemos
       pedalsInDemo.includes(demo.slug)
   )
 
-console.log({ relatedDemos: relatedDemos.map(demo => demo.slug) })
-
 const relatedPosts = allPosts.filter(
   post =>
     post.data.tags?.some((tag: string) => tags?.includes(tag)) ||
@@ -85,7 +83,7 @@ const siteUrl = isDev
     : import.meta.env.SITE
 ---
 
-<DemoLayout {slug} {title} {date} {type}>
+<DemoLayout {slug} {title} {date} {type} noIndex={type === "none"}>
   <Content />
   {
     externalLinks && (

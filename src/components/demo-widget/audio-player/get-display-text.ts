@@ -12,7 +12,7 @@ export const getDisplayText = (
   }
 
   if (!isPlaying) {
-    text = `Hit play and use headphones d[-_-]b`
+    text = `Hit play and use headphones d[^.^]b`
   }
 
   if (isDisabled) {
