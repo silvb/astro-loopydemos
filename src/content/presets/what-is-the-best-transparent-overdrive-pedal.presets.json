@@ -5,6 +5,17 @@
       "label": "Light",
       "comparison": [
         {
+          "id": "timmy_light",
+          "pedalSlug": "mxr-timmy-overdrive",
+          "settings": {
+            "bass": 5,
+            "gain": 5,
+            "volume": 5,
+            "treble": 5,
+            "clip": 1
+          }
+        },
+        {
           "id": "calamity_light",
           "pedalSlug": "plain-speak-calamity-drive",
           "secondaryCircuitSlug": "calamity_light_goosed",
@@ -74,6 +85,17 @@
       "label": "Medium",
       "comparison": [
         {
+          "id": "timmy_medium",
+          "pedalSlug": "mxr-timmy-overdrive",
+          "settings": {
+            "bass": 5,
+            "gain": 5,
+            "volume": 5,
+            "treble": 5,
+            "clip": 1
+          }
+        },
+        {
           "id": "calamity_medium",
           "pedalSlug": "plain-speak-calamity-drive",
           "secondaryCircuitSlug": "calamity_medium_goosed",
@@ -142,6 +164,17 @@
       "id": "hard",
       "label": "Heavy",
       "comparison": [
+        {
+          "id": "timmy_heavy",
+          "pedalSlug": "mxr-timmy-overdrive",
+          "settings": {
+            "bass": 5,
+            "gain": 5,
+            "volume": 5,
+            "treble": 5,
+            "clip": 1
+          }
+        },
         {
           "id": "calamity_hard",
           "pedalSlug": "plain-speak-calamity-drive",
