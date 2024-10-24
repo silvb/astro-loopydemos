@@ -6,6 +6,7 @@ isSponsored: true
 date: 2022-10-25
 relatedSlugs:
   - preamp
+  - compressed fuzz
 externalLinks:
   builderLink: https://vaderin.com/shop/kroaked/
 ---

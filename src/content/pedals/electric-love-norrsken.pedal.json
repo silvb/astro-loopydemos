@@ -1,0 +1,83 @@
+{
+  "name": "electric-love-norrsken",
+  "controls": {
+    "knobs": [
+      {
+        "id": "level",
+        "size": 56,
+        "position": { "top": 5, "left": 13 },
+        "type": "davies",
+        "colors": {
+          "primary": "#ededed",
+          "tick": "#a30078"
+        }
+      },
+      {
+        "id": "fuzz",
+        "size": 56,
+        "position": { "top": 5, "left": 70 },
+        "type": "davies",
+        "colors": {
+          "primary": "#ededed",
+          "tick": "#a30078"
+        }
+      },
+      {
+        "id": "comp",
+        "size": 56,
+        "position": { "top": 5, "left": 128 },
+        "type": "davies",
+        "colors": {
+          "primary": "#ededed",
+          "tick": "#a30078"
+        }
+      },
+      {
+        "id": "bass",
+        "size": 56,
+        "position": { "top": 84, "left": 14 },
+        "type": "davies",
+        "colors": {
+          "primary": "#ededed",
+          "tick": "#a30078"
+        }
+      },
+      {
+        "id": "middle",
+        "size": 56,
+        "position": { "top": 84, "left": 71 },
+        "type": "davies",
+        "colors": {
+          "primary": "#ededed",
+          "tick": "#a30078"
+        }
+      },
+      {
+        "id": "treble",
+        "size": 56,
+        "position": { "top": 84, "left": 128 },
+        "type": "davies",
+        "colors": {
+          "primary": "#ededed",
+          "tick": "#a30078"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": { "top": 237, "left": 21 },
+        "colors": { "on": "#ff00ea" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 239, "left": 73 }
+      }
+    ]
+  }
+}
