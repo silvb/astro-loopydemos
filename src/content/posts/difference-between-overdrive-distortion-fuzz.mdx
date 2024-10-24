@@ -1,0 +1,120 @@
+---
+title: "What's the Difference Between Overdrive, Distortion and Fuzz?"
+type: post
+date: 2024-10-24
+excerpt: In the world of guitar pedals and sound design, thre is often confusion about the terms overdrive, distortion and fuzz. When in doubt and you're confronted by your band mates about your choice of pedal, you can always nonchalantly refer to it as a dirt box or gain pedal.
+tags:
+  - overdrive
+  - distortion
+  - fuzz
+---
+
+import PartnerLinks from "@components/partner-links"
+import { Image } from "astro:assets"
+import cleanSignal from "../../images/clean-signal.png"
+import overdriveSignal from "../../images/overdrive-signal.png"
+import distortionSignal from "../../images/distortion-signal.png"
+import fuzzSignal from "../../images/fuzz-signal.png"
+
+In the world of guitar pedals and sound design, thre is often confusion about the terms **overdrive**, **distortion** and **fuzz**.
+
+When in doubt and you're confronted by your band mates about your choice of pedal, you can always nonchalantly refer to it as a dirt box or gain pedal.
+
+But if you want to impress your friends with your knowledge, let's break down the differences between overdrive, distortion and fuzz.
+
+### Overdrive
+
+The typical overdrive sound is derived from trying to emulate the sound of a cranked tube amp. The sound is warm, smooth and has a lot of sustain.
+
+If you want to wrap your head around the concept of saturation/gain, you need to grasp the meaning of one word: **clipping**.
+
+When a signal is too loud for a circuit to handle, the top and bottom of the waveform get clipped off. This creates overtones and harmonics that weren't there before. The type of clipping and how much of it is applied is what makes an overdrive pedal sound the way it does.
+
+Let's take a clean guitar signal. In very simplified form, it looks like this:
+
+<Image
+  src={cleanSignal}
+  alt="representation of a clean guitar signal"
+  class="object-fit mx-auto h-28 rounded-lg bg-loopydemos-background p-4"
+  width={600}
+/>
+
+This is a sinus wave. It has an amplitude (how big the wave is) and a frequency (how often the wave repeats within a time span). This wave is nice and round and symmetrical. A simplified sinus wave like this would be one crystal clear note.
+
+When you apply overdrive, the signal gets clipped – meaning you chop off a bit from the top and bottom. The more you turn up the gain, the more the signal gets clipped. This creates overtones and harmonics that weren't there before.
+
+For overdrives, we're typically talking about **soft clipping**. This means the signal gets clipped in a more gentle way. The signal doesn't get chopped off abruptly, but rather gets rounded off.
+
+<Image
+  src={overdriveSignal}
+  alt="representation of a guitar signal with overdrive"
+  class="object-fit mx-auto h-28 rounded-lg bg-loopydemos-background p-4"
+  width={600}
+/>
+
+The **MXR Timmy** even has a **clipping** switch that lets you choose between different types of clipping (symmetrical/asymmetrical, low/high headroom). This changes the character of the clipping and thus the sound of the pedal.
+
+<PartnerLinks
+  slug="mxr-timmy-overdrive"
+  sweetwater="https://sweetwater.sjv.io/NknDdV"
+  thomann="mxr_custom_shop_timmy_csp027"
+/>
+
+### Distortion
+
+Distortion is a more aggressive form of overdrive and is usually achieved by _hard clipping_ the signal. This means the signal gets chopped off more abruptly.
+
+The sound is generally more compressed and abrasive and has a lot more gain than overdrive. The signal gets more square-like and the harmonics are more pronounced.
+
+<Image
+  src={distortionSignal}
+  alt="representation of a guitar signal with distortion"
+  class="object-fit mx-auto h-28 rounded-lg bg-loopydemos-background p-4"
+  width={600}
+/>
+
+Side note: All types of clipping introduce compression. The louder/harder you play the guitar, the more it get's clipped. Louder parts get quieter (and richer in harmonics) and quieter parts get louder.
+
+The **JHS Hard Drive** is a unique distortion pedal and extremely versatile. JHS advertises this to easily mimic several legendary distortion boxes (Marshall Shredmaster, RAT, DS-1, etc.).
+
+<PartnerLinks
+  slug="jhs-pedals-hard-drive"
+  sweetwater="https://sweetwater.sjv.io/6e0jEE"
+  thomann="jhs_pedals_hard_drive_distortion_tan"
+/>
+
+### Fuzz
+
+Fuzz pedals are the most extreme in terms of distortion. They heavily distort the signal to create a “fuzzy,” almost broken-up sound with a lot of sustain. The sound is usually very compressed and can be quite chaotic, with harmonics and overtones blending together.
+
+Fuzz pedals use extreme clipping, often to the point where the signal is almost square-shaped. This results in a very distinct, heavily distorted tone.
+
+<Image
+  src={fuzzSignal}
+  alt="representation of a guitar signal with fuzz"
+  class="object-fit mx-auto h-28 rounded-lg bg-loopydemos-background p-4"
+  width={600}
+/>
+
+When it comes to differentiating between distortion and fuzz, the line can sometimes be a bit, well... fuzzy.
+
+For example, you can dime the JHS Hard Drive and get a pretty fuzzy sound.
+
+One key ingredient that makes a pedal a fuzz pedal to me is how much bass frequencies are being let into the circuit.
+
+That woolly fuzzy tone usually comes from letting a lot of bass frequencies hit the clipping stage. This creates a more extreme, broken-speaker-like sound.
+
+The **MXR Classic 108 Fuzz** is a great example of a fuzz pedal. There is a reason why "Classic" is part of its name. It's based on the legendary Fuzz Face circuit and delivers that classic, woolly fuzz tone.
+
+<PartnerLinks
+  slug="mxr-classic-108-fuzz"
+  sweetwater="https://sweetwater.sjv.io/Mm0x4q"
+  thomann="dunlop_mxr_m296_classic_108_fuzz_mini"
+/>
+
+### Signal Chain
+
+- Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (both pickups in parallel)
+- overdrive/distortion/fuzz pedal
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)
+- A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)

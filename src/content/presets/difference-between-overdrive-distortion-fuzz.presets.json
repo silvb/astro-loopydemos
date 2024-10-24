@@ -1,0 +1,39 @@
+{
+  "volume": 1,
+  "presets": [
+    {
+      "id": "sweet_spot",
+      "label": "Sweet Spot",
+      "comparison": [
+        {
+          "id": "timmy",
+          "pedalSlug": "mxr-timmy-overdrive",
+          "settings": {
+            "bass": 4,
+            "gain": 6.5,
+            "volume": 5,
+            "treble": 6,
+            "clip": 2
+          }
+        },
+        {
+          "id": "hard_drive",
+          "pedalSlug": "jhs-pedals-hard-drive",
+          "settings": {
+            "volume": 5,
+            "mid_freq": 1.8,
+            "drive": 7,
+            "bass": 6,
+            "middle": 6,
+            "treble": 7.8
+          }
+        },
+        {
+          "id": "108fuzz",
+          "pedalSlug": "mxr-classic-108-fuzz",
+          "settings": { "output": 8, "fuzz": 10, "buffer_led": true }
+        }
+      ]
+    }
+  ]
+}

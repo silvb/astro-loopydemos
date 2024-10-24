@@ -1,0 +1,56 @@
+{
+  "width": 124,
+  "height": 260,
+  "name": "mxr-timmy-overdrive",
+  "controls": {
+    "knobs": [
+      {
+        "id": "bass",
+        "size": 40,
+        "position": { "top": 27, "left": 16 },
+        "type": "jhs"
+      },
+      {
+        "id": "gain",
+        "size": 40,
+        "position": { "top": 27, "left": 68 },
+        "type": "jhs"
+      },
+      {
+        "id": "volume",
+        "size": 40,
+        "position": { "top": 66, "left": 16 },
+        "type": "jhs"
+      },
+      {
+        "id": "treble",
+        "size": 40,
+        "position": { "top": 66, "left": 68 },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "position": { "top": 228, "left": 46 },
+        "colors": { "on": "#0056fe" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 190, "left": 38 }
+      },
+      {
+        "id": "clip",
+        "type": "toggle",
+        "orientation": "horizontal",
+        "size": 24,
+        "position": { "top": 7, "left": 50 }
+      }
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+{
+  "width": 124,
+  "height": 260,
+  "name": "mxr-classic-108-fuzz",
+  "controls": {
+    "knobs": [
+      {
+        "id": "output",
+        "size": 48,
+        "position": { "top": 13, "left": 14 },
+        "type": "jhs"
+      },
+      {
+        "id": "fuzz",
+        "size": 48,
+        "position": { "top": 44, "left": 64 },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "position": { "top": 227, "left": 46 },
+        "colors": { "on": "#0056fe" }
+      },
+      {
+        "id": "buffer_led",
+        "size": 32,
+        "position": { "top": 3, "left": 45 },
+        "colors": { "on": "#0056fe" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 189, "left": 37 }
+      }
+    ]
+  }
+}
