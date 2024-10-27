@@ -1,0 +1,32 @@
+{
+  "name": "mxr-dyna-comp",
+  "width": 195,
+  "height": 335,
+  "controls": {
+    "knobs": [
+      {
+        "id": "output",
+        "size": 80,
+        "position": { "top": 25, "left": 15 },
+        "type": "jhs"
+      },
+      {
+        "id": "sens",
+        "size": 80,
+        "position": { "top": 25, "left": 103 },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 40, "position": { "top": 175, "left": 77 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 50,
+        "position": { "top": 213, "left": 71 }
+      }
+    ]
+  }
+}
