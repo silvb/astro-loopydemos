@@ -70,7 +70,11 @@ export const Pedal: Component<PedalProps> = props => {
             </AbsolutePosition>
           ))}
           {props.controls?.labels?.map(label => (
-            <AbsolutePosition id={label.id} {...label.position}>
+            <AbsolutePosition
+              id={label.id}
+              {...label.position}
+              className="pointer-events-none"
+            >
               <LineLabel {...label} pedalSlug={props.slug} />
             </AbsolutePosition>
           ))}
