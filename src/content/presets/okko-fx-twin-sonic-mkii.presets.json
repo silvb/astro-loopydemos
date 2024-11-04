@@ -1,5 +1,6 @@
 {
   "hasBackingTrack": true,
+  "volume": 0.7,
   "presets": [
     {
       "id": "preamp_with_boost",
