@@ -31,6 +31,8 @@
         "size": 56,
         "position": { "top": 12, "left": 142 },
         "type": "jhs",
+        "isRotary": true,
+        "rotaryAngles": [-150, -110, -80, -40, 0],
         "colors": {
           "primary": "#ff0000",
           "secondary": "#b90b09",
@@ -43,8 +45,8 @@
         "position": { "top": 12, "left": 198 },
         "type": "jhs",
         "colors": {
-          "primary": "#ccc",
-          "secondary": "#aaa",
+          "primary": "#bbb",
+          "secondary": "#888",
           "tick": "#fff"
         }
       },
@@ -55,7 +57,7 @@
         "type": "jhs",
         "colors": {
           "primary": "#0000ff",
-          "secondary": "#01099d",
+          "secondary": "#010374",
           "tick": "#fff"
         }
       },
@@ -66,7 +68,7 @@
         "type": "jhs",
         "colors": {
           "primary": "#0000ff",
-          "secondary": "#01099d",
+          "secondary": "#010374",
           "tick": "#fff"
         }
       },
@@ -77,7 +79,7 @@
         "type": "jhs",
         "colors": {
           "primary": "#0000ff",
-          "secondary": "#01099d",
+          "secondary": "#010374",
           "tick": "#fff"
         }
       },
@@ -88,7 +90,7 @@
         "type": "jhs",
         "colors": {
           "primary": "#0000ff",
-          "secondary": "#01099d",
+          "secondary": "#010374",
           "tick": "#fff"
         }
       },
@@ -99,7 +101,7 @@
         "type": "jhs",
         "colors": {
           "primary": "#0000ff",
-          "secondary": "#01099d",
+          "secondary": "#010374",
           "tick": "#fff"
         }
       },
@@ -110,13 +112,21 @@
         "type": "jhs",
         "colors": {
           "primary": "#0000ff",
-          "secondary": "#01099d",
+          "secondary": "#010374",
           "tick": "#fff"
         }
       }
     ],
     "leds": [
-      { "id": "on_led", "size": 48, "position": { "top": 335, "left": 77 } }
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": { "top": 335, "left": 77 },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff"
+        }
+      }
     ],
     "switches": [
       {

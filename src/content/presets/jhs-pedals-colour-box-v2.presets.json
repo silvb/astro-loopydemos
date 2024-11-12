@@ -3,21 +3,93 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "low_mid_focus",
+      "label": "Low Mid Focus",
       "settings": {
-        "master": 5,
+        "master": 2,
         "pre": 5,
         "step": 5,
-        "hipass": 5,
-        "treble": 5,
-        "middle": 5,
-        "bass": 5,
-        "treble_shift": 5,
-        "mid_shift": 5,
-        "bass_shift": 5,
+        "hipass": 7,
+        "treble": 3.5,
+        "middle": 10,
+        "bass": 10,
+        "treble_shift": 4.8,
+        "mid_shift": 3,
+        "bass_shift": 10,
         "hipass_toggle": 1,
+        "hi_lo": 3
+      }
+    },
+    {
+      "id": "clean_sheen",
+      "label": "Clean Sheen",
+      "settings": {
+        "master": 6,
+        "pre": 5,
+        "step": 2,
+        "hipass": 6,
+        "treble": 6.5,
+        "middle": 7.5,
+        "bass": 2.5,
+        "treble_shift": 4,
+        "mid_shift": 3,
+        "bass_shift": 2.8,
+        "hipass_toggle": 1,
+        "hi_lo": 3
+      }
+    },
+    {
+      "id": "di_fuzz",
+      "label": "Look Ma, No Amp!",
+      "settings": {
+        "master": 4,
+        "pre": 6,
+        "step": 3,
+        "hipass": 0,
+        "treble": 4,
+        "middle": 6,
+        "bass": 2,
+        "treble_shift": 6.5,
+        "mid_shift": 9,
+        "bass_shift": 2,
+        "hipass_toggle": 3,
         "hi_lo": 1
+      }
+    },
+    {
+      "id": "juicy_overdrive",
+      "label": "Juicy Drive",
+      "settings": {
+        "master": 5,
+        "pre": 6,
+        "step": 4,
+        "hipass": 0,
+        "treble": 7,
+        "middle": 6,
+        "bass": 2,
+        "treble_shift": 5,
+        "mid_shift": 7.3,
+        "bass_shift": 1.8,
+        "hipass_toggle": 3,
+        "hi_lo": 3
+      }
+    },
+    {
+      "id": "reactive_fuzz",
+      "label": "Reactive Fuzz",
+      "settings": {
+        "master": 4,
+        "pre": 8.5,
+        "step": 5,
+        "hipass": 0,
+        "hipass_toggle": 3,
+        "treble": 5,
+        "treble_shift": 5,
+        "middle": 6,
+        "mid_shift": 7,
+        "bass": 6,
+        "bass_shift": 6,
+        "hi_lo": 3
       }
     },
     {
