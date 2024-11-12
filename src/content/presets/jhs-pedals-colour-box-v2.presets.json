@@ -1,0 +1,45 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": {
+        "master": 5,
+        "pre": 5,
+        "step": 5,
+        "hipass": 5,
+        "treble": 5,
+        "middle": 5,
+        "bass": 5,
+        "treble_shift": 5,
+        "mid_shift": 5,
+        "bass_shift": 5,
+        "hipass_toggle": 1,
+        "hi_lo": 1
+      }
+    },
+    {
+      "id": "master_knob",
+      "label": "Master",
+      "isSweep": true,
+      "target": "master",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "pre": 5,
+        "step": 5,
+        "hipass": 5,
+        "treble": 5,
+        "middle": 5,
+        "bass": 5,
+        "treble_shift": 5,
+        "mid_shift": 5,
+        "bass_shift": 5,
+        "hipass_toggle": 1,
+        "hi_lo": 1
+      }
+    }
+  ]
+}
