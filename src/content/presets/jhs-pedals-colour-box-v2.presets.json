@@ -1,6 +1,6 @@
 {
   "hasBackingTrack": true,
-  "volume": 0.65,
+  "volume": 0.7,
   "presets": [
     {
       "id": "low_mid_focus",
@@ -125,27 +125,6 @@
         "pre": 5,
         "hipass": 0,
         "hipass_toggle": 3,
-        "treble": 5,
-        "treble_shift": 5,
-        "middle": 5,
-        "mid_shift": 5,
-        "bass": 5,
-        "bass_shift": 5,
-        "hi_lo": 3
-      }
-    },
-    {
-      "id": "hipass_toggle",
-      "label": "Hi Pass On/Off",
-      "isSweep": true,
-      "target": "hipass_toggle",
-      "initialValue": 3,
-      "values": [1, 3],
-      "settings": {
-        "master": 5,
-        "pre": 5,
-        "step": 5,
-        "hipass": 8,
         "treble": 5,
         "treble_shift": 5,
         "middle": 5,
