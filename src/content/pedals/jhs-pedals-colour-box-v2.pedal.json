@@ -1,0 +1,152 @@
+{
+  "width": 280,
+  "height": 408,
+  "name": "jhs-pedals-colour-box-v2",
+  "controls": {
+    "knobs": [
+      {
+        "id": "master",
+        "size": 56,
+        "position": { "top": 12, "left": 34 },
+        "type": "jhs",
+        "colors": {
+          "primary": "#ff0000",
+          "secondary": "#b90b09",
+          "tick": "#fff"
+        }
+      },
+      {
+        "id": "pre",
+        "size": 56,
+        "position": { "top": 12, "left": 88 },
+        "type": "jhs",
+        "colors": {
+          "primary": "#ff0000",
+          "secondary": "#b90b09",
+          "tick": "#fff"
+        }
+      },
+      {
+        "id": "step",
+        "size": 56,
+        "position": { "top": 12, "left": 142 },
+        "type": "jhs",
+        "isRotary": true,
+        "rotaryAngles": [-150, -110, -80, -40, 0],
+        "colors": {
+          "primary": "#ff0000",
+          "secondary": "#b90b09",
+          "tick": "#fff"
+        }
+      },
+      {
+        "id": "hipass",
+        "size": 56,
+        "position": { "top": 12, "left": 198 },
+        "type": "jhs",
+        "colors": {
+          "primary": "#bbb",
+          "secondary": "#888",
+          "tick": "#fff"
+        }
+      },
+      {
+        "id": "treble",
+        "size": 56,
+        "position": { "top": 90, "left": 33 },
+        "type": "jhs",
+        "colors": {
+          "primary": "#0000ff",
+          "secondary": "#010374",
+          "tick": "#fff"
+        }
+      },
+      {
+        "id": "middle",
+        "size": 56,
+        "position": { "top": 90, "left": 88 },
+        "type": "jhs",
+        "colors": {
+          "primary": "#0000ff",
+          "secondary": "#010374",
+          "tick": "#fff"
+        }
+      },
+      {
+        "id": "bass",
+        "size": 56,
+        "position": { "top": 90, "left": 142 },
+        "type": "jhs",
+        "colors": {
+          "primary": "#0000ff",
+          "secondary": "#010374",
+          "tick": "#fff"
+        }
+      },
+      {
+        "id": "treble_shift",
+        "size": 56,
+        "position": { "top": 163, "left": 33 },
+        "type": "jhs",
+        "colors": {
+          "primary": "#0000ff",
+          "secondary": "#010374",
+          "tick": "#fff"
+        }
+      },
+      {
+        "id": "mid_shift",
+        "size": 56,
+        "position": { "top": 163, "left": 88 },
+        "type": "jhs",
+        "colors": {
+          "primary": "#0000ff",
+          "secondary": "#010374",
+          "tick": "#fff"
+        }
+      },
+      {
+        "id": "bass_shift",
+        "size": 56,
+        "position": { "top": 163, "left": 142 },
+        "type": "jhs",
+        "colors": {
+          "primary": "#0000ff",
+          "secondary": "#010374",
+          "tick": "#fff"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": { "top": 335, "left": 77 },
+        "colors": {
+          "off": "#d2e1e9a1",
+          "on": "#d4f9ff"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 337, "left": 122 }
+      },
+      {
+        "id": "hipass_toggle",
+        "type": "toggle",
+        "size": 32,
+        "position": { "top": 99, "left": 210 }
+      },
+      {
+        "id": "hi_lo",
+        "type": "toggle",
+        "size": 32,
+        "position": { "top": 178, "left": 210 }
+      }
+    ]
+  }
+}

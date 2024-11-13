@@ -1,0 +1,243 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.7,
+  "presets": [
+    {
+      "id": "low_mid_focus",
+      "label": "Low Mid Focus",
+      "settings": {
+        "master": 2,
+        "pre": 5,
+        "step": 5,
+        "hipass": 7,
+        "treble": 3.5,
+        "middle": 10,
+        "bass": 10,
+        "treble_shift": 4.8,
+        "mid_shift": 3,
+        "bass_shift": 10,
+        "hipass_toggle": 1,
+        "hi_lo": 3
+      }
+    },
+    {
+      "id": "clean_sheen",
+      "label": "Clean Sheen",
+      "settings": {
+        "master": 6,
+        "pre": 5,
+        "step": 2,
+        "hipass": 6,
+        "treble": 6.5,
+        "middle": 7.5,
+        "bass": 2.5,
+        "treble_shift": 4,
+        "mid_shift": 3,
+        "bass_shift": 2.8,
+        "hipass_toggle": 1,
+        "hi_lo": 3
+      }
+    },
+    {
+      "id": "di_fuzz",
+      "label": "Look Ma, No Amp!",
+      "settings": {
+        "master": 4,
+        "pre": 6,
+        "step": 3,
+        "hipass": 0,
+        "treble": 4,
+        "middle": 6,
+        "bass": 2,
+        "treble_shift": 6.5,
+        "mid_shift": 9,
+        "bass_shift": 2,
+        "hipass_toggle": 3,
+        "hi_lo": 1
+      }
+    },
+    {
+      "id": "juicy_overdrive",
+      "label": "Juicy Drive",
+      "settings": {
+        "master": 5,
+        "pre": 6,
+        "step": 4,
+        "hipass": 0,
+        "treble": 7,
+        "middle": 6,
+        "bass": 2,
+        "treble_shift": 5,
+        "mid_shift": 7.3,
+        "bass_shift": 1.8,
+        "hipass_toggle": 3,
+        "hi_lo": 3
+      }
+    },
+    {
+      "id": "reactive_fuzz",
+      "label": "Reactive Fuzz",
+      "settings": {
+        "master": 4,
+        "pre": 8.5,
+        "step": 5,
+        "hipass": 0,
+        "hipass_toggle": 3,
+        "treble": 5,
+        "treble_shift": 5,
+        "middle": 6,
+        "mid_shift": 7,
+        "bass": 6,
+        "bass_shift": 6,
+        "hi_lo": 3
+      }
+    },
+    {
+      "id": "pre_knob",
+      "label": "Gain Range",
+      "isSweep": true,
+      "target": "pre",
+      "initialValue": 1,
+      "values": [1, 2, 4, 6, 8, 10],
+      "settings": {
+        "master": 4,
+        "step": 5,
+        "hipass": 0,
+        "hipass_toggle": 3,
+        "treble": 5,
+        "treble_shift": 5,
+        "middle": 5,
+        "mid_shift": 5,
+        "bass": 5,
+        "bass_shift": 5,
+        "hi_lo": 3
+      }
+    },
+    {
+      "id": "step_knob",
+      "label": "Steps",
+      "isSweep": true,
+      "target": "step",
+      "initialValue": 1,
+      "values": [1, 2, 3, 4, 5],
+      "settings": {
+        "master": 4,
+        "pre": 5,
+        "hipass": 0,
+        "hipass_toggle": 3,
+        "treble": 5,
+        "treble_shift": 5,
+        "middle": 5,
+        "mid_shift": 5,
+        "bass": 5,
+        "bass_shift": 5,
+        "hi_lo": 3
+      }
+    },
+    {
+      "id": "hipass_toggle",
+      "label": "Hi Pass On/Off",
+      "isSweep": true,
+      "target": "hipass_toggle",
+      "initialValue": 3,
+      "values": [1, 3],
+      "settings": {
+        "master": 5,
+        "pre": 5,
+        "step": 5,
+        "hipass": 8,
+        "treble": 5,
+        "treble_shift": 5,
+        "middle": 5,
+        "mid_shift": 5,
+        "bass": 5,
+        "bass_shift": 5,
+        "hi_lo": 3
+      }
+    },
+    {
+      "id": "hilo_switch",
+      "label": "Hi/Lo",
+      "isSweep": true,
+      "target": "hi_lo",
+      "initialValue": 3,
+      "values": [1, 3],
+      "settings": {
+        "master": 5,
+        "pre": 3,
+        "step": 3,
+        "hipass": 0,
+        "treble": 5,
+        "treble_shift": 5,
+        "middle": 5,
+        "mid_shift": 5,
+        "bass": 5,
+        "bass_shift": 5,
+        "hipass_toggle": 3
+      }
+    },
+    {
+      "id": "treble_shift_knob",
+      "label": "Treble Shift",
+      "isSweep": true,
+      "target": "treble_shift",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "master": 5,
+        "pre": 5,
+        "step": 4,
+        "hipass": 0,
+        "hipass_toggle": 3,
+        "treble": 10,
+        "middle": 5,
+        "mid_shift": 5,
+        "bass": 5,
+        "bass_shift": 5,
+        "hi_lo": 3
+      }
+    },
+    {
+      "id": "mid_shift_knob",
+      "label": "Mid Shift",
+      "isSweep": true,
+      "target": "mid_shift",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "master": 5,
+        "pre": 5,
+        "step": 4,
+        "hipass": 0,
+        "hipass_toggle": 3,
+        "treble": 5,
+        "middle": 10,
+        "treble_shift": 5,
+        "bass": 5,
+        "bass_shift": 5,
+        "hi_lo": 3
+      }
+    },
+    {
+      "id": "bass_shift_knob",
+      "label": "Bass Shift",
+      "isSweep": true,
+      "target": "bass_shift",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "master": 5,
+        "pre": 5,
+        "step": 4,
+        "hipass": 0,
+        "hipass_toggle": 3,
+        "treble": 5,
+        "middle": 5,
+        "mid_shift": 5,
+        "treble_shift": 5,
+        "bass": 10,
+        "hi_lo": 3
+      }
+    }
+  ]
+}
