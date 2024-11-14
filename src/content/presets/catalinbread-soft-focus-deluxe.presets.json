@@ -1,0 +1,40 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "secondaryCircuitSlug": "chimey_drive_goosed",
+      "secondaryCircuitOnlySlug": "dist_only_7",
+      "secondaryCircuitId": "dist_circuit",
+      "settings": {
+        "prgm": 5,
+        "mix": 5,
+        "mod": 5,
+        "verb": 5,
+        "dly": 5,
+        "time": 5,
+        "dst_lvl": 5,
+        "para_series": 1
+      }
+    },
+    {
+      "id": "prgm_knob",
+      "label": "Prgm",
+      "isSweep": true,
+      "target": "prgm",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "mix": 5,
+        "mod": 5,
+        "verb": 5,
+        "dly": 5,
+        "time": 5,
+        "dst_lvl": 5,
+        "para_series": 1
+      }
+    }
+  ]
+}

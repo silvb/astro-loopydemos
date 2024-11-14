@@ -1,0 +1,88 @@
+{
+  "name": "catalinbread-soft-focus-deluxe",
+  "enclosure": "landscape",
+  "controls": {
+    "knobs": [
+      {
+        "id": "prgm",
+        "size": 40,
+        "position": { "top": 37, "left": 16 },
+        "type": "simpledot"
+      },
+      {
+        "id": "mix",
+        "size": 40,
+        "position": { "top": 37, "left": 70 },
+        "type": "simpledot"
+      },
+      {
+        "id": "mod",
+        "size": 40,
+        "position": { "top": 37, "left": 127 },
+        "type": "simpledot"
+      },
+      {
+        "id": "verb",
+        "size": 40,
+        "position": { "top": 37, "left": 186 },
+        "type": "simpledot"
+      },
+      {
+        "id": "dly",
+        "size": 40,
+        "position": { "top": 37, "left": 243 },
+        "type": "simpledot"
+      },
+      {
+        "id": "time",
+        "size": 40,
+        "position": { "top": 37, "left": 297 },
+        "type": "simpledot"
+      },
+      {
+        "id": "dst_lvl",
+        "size": 40,
+        "position": { "top": 133, "left": 14 },
+        "type": "simpledot"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 36,
+        "position": { "top": 186, "left": 215 },
+        "colors": { "on": "#d000f5" }
+      },
+      {
+        "id": "dist_led",
+        "size": 32,
+        "position": { "top": 187, "left": 100 },
+        "secondaryCircuitId": "dist_circuit",
+        "colors": {
+          "on": "#65ff4b"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 218, "left": 262 }
+      },
+      {
+        "id": "dist_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 219, "left": 42 },
+        "secondaryCircuitId": "dist_circuit"
+      },
+      {
+        "id": "para_series",
+        "type": "toggle",
+        "size": 32,
+        "position": { "top": 136, "left": 299 }
+      }
+    ]
+  }
+}
