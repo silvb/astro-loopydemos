@@ -1,0 +1,186 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.7,
+  "presets": [
+    {
+      "id": "standard",
+      "label": "Standard Soft Focus",
+      "secondaryCircuitSlug": "standard_dist",
+      "secondaryCircuitOnlySlug": "dist_10_only",
+      "secondaryCircuitId": "dist_circuit",
+      "initialSecondaryCircuits": ["dist_circuit"],
+      "settings": {
+        "prgm": 1,
+        "mix": 8.5,
+        "mod": 5,
+        "verb": 8,
+        "dly": 8,
+        "time": 8,
+        "dst_lvl": 10,
+        "para_series": 1
+      }
+    },
+    {
+      "id": "long_tails",
+      "label": "Long Reverb Tails",
+      "secondaryCircuitSlug": "long_tails_dist",
+      "secondaryCircuitOnlySlug": "dist_10_only",
+      "secondaryCircuitId": "dist_circuit",
+      "initialSecondaryCircuits": ["dist_circuit"],
+      "settings": {
+        "prgm": 2,
+        "mix": 8.5,
+        "mod": 5,
+        "verb": 8,
+        "dly": 8,
+        "time": 8,
+        "dst_lvl": 10,
+        "para_series": 1
+      }
+    },
+    {
+      "id": "deep_mod",
+      "label": "Deep Modulation Warble",
+      "secondaryCircuitSlug": "deep_mod_dist",
+      "secondaryCircuitOnlySlug": "dist_10_only",
+      "secondaryCircuitId": "dist_circuit",
+      "initialSecondaryCircuits": ["dist_circuit"],
+      "settings": {
+        "prgm": 3,
+        "mix": 8.5,
+        "mod": 8.5,
+        "verb": 8,
+        "dly": 8,
+        "time": 8,
+        "dst_lvl": 10,
+        "para_series": 1
+      }
+    },
+    {
+      "id": "shimmer",
+      "label": "Shimmer Soft Focus",
+      "secondaryCircuitSlug": "shimmer_dist",
+      "secondaryCircuitOnlySlug": "dist_10_only",
+      "secondaryCircuitId": "dist_circuit",
+      "initialSecondaryCircuits": ["dist_circuit"],
+      "settings": {
+        "prgm": 4,
+        "mix": 8.5,
+        "mod": 5,
+        "verb": 8,
+        "dly": 8,
+        "time": 8,
+        "dst_lvl": 10,
+        "para_series": 1
+      }
+    },
+    {
+      "id": "pitch_delay",
+      "label": "Pitch Delay",
+      "secondaryCircuitSlug": "pitch_delay_dist",
+      "secondaryCircuitOnlySlug": "dist_10_only",
+      "secondaryCircuitId": "dist_circuit",
+      "initialSecondaryCircuits": ["dist_circuit"],
+      "settings": {
+        "prgm": 5,
+        "mix": 8.5,
+        "mod": 5,
+        "verb": 4,
+        "dly": 9,
+        "time": 8,
+        "dst_lvl": 10,
+        "para_series": 1
+      }
+    },
+    {
+      "id": "lush_swell",
+      "label": "Lush Swell",
+      "secondaryCircuitSlug": "lush_swell_dist",
+      "secondaryCircuitOnlySlug": "dist_10_only",
+      "secondaryCircuitId": "dist_circuit",
+      "initialSecondaryCircuits": ["dist_circuit"],
+      "settings": {
+        "prgm": 6,
+        "mix": 9,
+        "mod": 8,
+        "verb": 8.5,
+        "dly": 8,
+        "time": 10,
+        "dst_lvl": 10,
+        "para_series": 1
+      }
+    },
+    {
+      "id": "para_series_toggle",
+      "secondaryCircuitSlug": "para_series_toggle_dist",
+      "secondaryCircuitOnlySlug": "dist_10_only",
+      "secondaryCircuitId": "dist_circuit",
+      "initialSecondaryCircuits": ["dist_circuit"],
+      "label": "Parallel/Series",
+      "isSweep": true,
+      "target": "para_series",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "prgm": 1,
+        "mix": 8,
+        "mod": 5,
+        "verb": 8,
+        "dly": 5,
+        "time": 8,
+        "dst_lvl": 10
+      }
+    },
+    {
+      "id": "mod_knob",
+      "label": "Mod",
+      "isSweep": true,
+      "target": "mod",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "prgm": 3,
+        "mix": 8.5,
+        "verb": 8.5,
+        "dly": 5,
+        "time": 8,
+        "dst_lvl": 5,
+        "para_series": 1
+      }
+    },
+    {
+      "id": "verb_knob",
+      "label": "Verb",
+      "isSweep": true,
+      "target": "verb",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "prgm": 2,
+        "mix": 8.5,
+        "mod": 5,
+        "dly": 5,
+        "time": 8,
+        "dst_lvl": 5,
+        "para_series": 1
+      }
+    },
+    {
+      "id": "time_knob",
+      "label": "Time",
+      "isSweep": true,
+      "target": "time",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "prgm": 1,
+        "mix": 8.5,
+        "mod": 5,
+        "verb": 0,
+        "dly": 8,
+        "dst_lvl": 5,
+        "para_series": 1
+      }
+    }
+  ]
+}
