@@ -7,6 +7,8 @@
         "id": "prgm",
         "size": 40,
         "position": { "top": 37, "left": 16 },
+        "isRotary": true,
+        "rotaryAngles": [-40, 10, 60, 110, 160, 220],
         "type": "simpledot"
       },
       {
@@ -51,7 +53,7 @@
         "id": "on_led",
         "size": 36,
         "position": { "top": 186, "left": 215 },
-        "colors": { "on": "#d000f5" }
+        "colors": { "on": "#d900fe" }
       },
       {
         "id": "dist_led",
