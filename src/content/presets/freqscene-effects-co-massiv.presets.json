@@ -1,0 +1,41 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "secondaryCircuitSlug": "static_preset_boosted",
+      "secondaryCircuitOnlySlug": "boost_only_7",
+      "initialSecondaryCircuits": ["boost"],
+      "secondaryCircuitId": "boost",
+      "label": "Static Preset",
+      "settings": {
+        "bass": 5,
+        "middle": 5,
+        "treble": 5,
+        "gain": 5,
+        "boost": 1,
+        "volume": 5,
+        "clip": 1,
+        "order": 1
+      }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "middle": 5,
+        "treble": 5,
+        "gain": 5,
+        "boost": 1,
+        "volume": 5,
+        "clip": 1,
+        "order": 1
+      }
+    }
+  ]
+}
