@@ -8,6 +8,8 @@ tags:
   - low gain
   - internal boost
   - preamp
+  - mid gain drive
+  - transparent overdrive
 externalLinks:
   builderLink: https://twilightpulseaudioworks.bigcartel.com/
 ---

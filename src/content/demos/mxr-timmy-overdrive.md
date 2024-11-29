@@ -4,15 +4,15 @@ model: Timmy Overdrive
 slug: mxr-timmy-overdrive
 type: none
 isSponsored: true
-date: 2024-10-22
+date: 2024-11-18
 tags:
   - transparent overdrive
   - timmy
   - mid gain drive
 externalLinks:
-  perfectCircuit: mxr-timmy-overdrive
-  builderLink: ...
-  sweetwater: ...
+  thomann: mxr_custom_shop_timmy_csp027
+  builderLink: https://www.jimdunlop.com/mxr-timmy-overdrive/
+  sweetwater: https://sweetwater.sjv.io/NknDdV
 ---
 
 Write some copy about the Timmy Overdrive by MXR.

@@ -5,6 +5,8 @@ type: demo
 date: 2021-05-09
 tags:
   - jfet
+  - mid gain drive
+  - transparent overdrive
 relatedSlugs:
   - smallsound-bigsound-mini
   - earthquaker-devices-plumes

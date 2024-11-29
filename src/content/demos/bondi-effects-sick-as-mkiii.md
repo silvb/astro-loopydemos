@@ -7,6 +7,8 @@ date: 2022-09-26
 tags:
   - klon
   - low gain
+  - mid gain drive
+  - trasparent overdrive
 externalLinks:
   reverb: bondi-effects-sick-as-mkiii
   builderLink: https://www.bondieffects.com/products/sick-as-overdrive-mkiii
