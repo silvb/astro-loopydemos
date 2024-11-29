@@ -3,20 +3,74 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "secondaryCircuitSlug": "static_preset_boosted",
-      "secondaryCircuitOnlySlug": "boost_only_7",
+      "id": "punch",
+      "secondaryCircuitSlug": "punch_boosted",
+      "secondaryCircuitOnlySlug": "boost_clip_only_8",
       "initialSecondaryCircuits": ["boost"],
       "secondaryCircuitId": "boost",
-      "label": "Static Preset",
+      "label": "Punch",
       "settings": {
-        "bass": 5,
+        "bass": 6,
+        "middle": 6,
+        "treble": 5.5,
+        "gain": 7,
+        "boost": 8,
+        "volume": 6.5,
+        "clip": 3,
+        "order": 1
+      }
+    },
+    {
+      "id": "heavy",
+      "secondaryCircuitSlug": "heavy_boosted",
+      "secondaryCircuitOnlySlug": "boost_clip_only_10",
+      "initialSecondaryCircuits": ["boost"],
+      "secondaryCircuitId": "boost",
+      "label": "Heavy",
+      "settings": {
+        "bass": 8,
         "middle": 5,
-        "treble": 5,
+        "treble": 8,
+        "gain": 10,
+        "boost": 10,
+        "volume": 6.5,
+        "clip": 3,
+        "order": 1
+      }
+    },
+    {
+      "id": "warm",
+      "secondaryCircuitSlug": "warm_boosted",
+      "secondaryCircuitOnlySlug": "boost_clean_only_5",
+      "initialSecondaryCircuits": ["boost"],
+      "secondaryCircuitId": "boost",
+      "label": "Warm",
+      "settings": {
+        "bass": 9,
+        "middle": 5,
+        "treble": 0,
         "gain": 5,
-        "boost": 1,
-        "volume": 5,
+        "boost": 5,
+        "volume": 6.5,
         "clip": 1,
+        "order": 1
+      }
+    },
+    {
+      "id": "scooped",
+      "secondaryCircuitSlug": "scooped_boosted",
+      "secondaryCircuitOnlySlug": "boost_clip_only_8",
+      "initialSecondaryCircuits": ["boost"],
+      "secondaryCircuitId": "boost",
+      "label": "Scooped",
+      "settings": {
+        "bass": 10,
+        "middle": 1.5,
+        "treble": 2,
+        "gain": 8,
+        "boost": 8,
+        "volume": 6.5,
+        "clip": 3,
         "order": 1
       }
     },
