@@ -80,13 +80,118 @@
       "isSweep": true,
       "target": "bass",
       "initialValue": 0,
-      "values": [0, 2, 4, 6, 8, 10],
+      "values": [0, 3, 7, 10],
       "settings": {
         "middle": 5,
         "treble": 5,
+        "gain": 8,
+        "boost": 5,
+        "volume": 6.5,
+        "clip": 1,
+        "order": 1
+      }
+    },
+    {
+      "id": "middle_knob",
+      "label": "Middle",
+      "isSweep": true,
+      "target": "middle",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "bass": 5,
+        "treble": 5,
+        "gain": 8,
+        "boost": 5,
+        "volume": 6.5,
+        "clip": 1,
+        "order": 1
+      }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble",
+      "isSweep": true,
+      "target": "treble",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "bass": 5,
+        "middle": 5,
+        "gain": 8,
+        "boost": 5,
+        "volume": 6.5,
+        "clip": 1,
+        "order": 1
+      }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "bass": 5,
+        "treble": 5,
+        "middle": 5,
+        "boost": 5,
+        "volume": 6.5,
+        "clip": 1,
+        "order": 1
+      }
+    },
+    {
+      "id": "clip_toggle",
+      "label": "Clean // Clip",
+      "isSweep": true,
+      "target": "clip",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "bass": 8,
+        "middle": 8,
+        "treble": 9,
+        "gain": 0,
+        "boost": 10,
+        "boost_led": true,
+        "volume": 6.5,
+        "order": 1
+      }
+    },
+    {
+      "id": "order_toggle",
+      "label": ">> // <<",
+      "isSweep": true,
+      "target": "order",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "bass": 5,
+        "treble": 5,
+        "middle": 5,
         "gain": 5,
-        "boost": 1,
+        "boost": 6.5,
+        "boost_led": true,
         "volume": 5,
+        "clip": 1
+      }
+    },
+    {
+      "id": "boost_knob",
+      "label": "Boost",
+      "isSweep": true,
+      "target": "boost",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "bass": 5,
+        "treble": 5,
+        "middle": 5,
+        "gain": 7,
+        "boost_led": true,
+        "volume": 6.5,
         "clip": 1,
         "order": 1
       }
