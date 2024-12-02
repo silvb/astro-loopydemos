@@ -68,13 +68,13 @@
         "id": "clip",
         "type": "toggle",
         "size": 32,
-        "position": { "top": 132, "left": 140 }
+        "position": { "top": 130, "left": 140 }
       },
       {
         "id": "order",
         "type": "toggle",
         "size": 32,
-        "position": { "top": 132, "left": 180 }
+        "position": { "top": 131, "left": 180 }
       }
     ]
   }
