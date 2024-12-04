@@ -1,0 +1,81 @@
+{
+  "name": "freqscene-effects-co.-massiv",
+  "width": 350,
+  "height": 280,
+  "controls": {
+    "knobs": [
+      {
+        "id": "bass",
+        "size": 60,
+        "position": { "top": 32, "left": 21 },
+        "type": "bakelit"
+      },
+      {
+        "id": "middle",
+        "size": 60,
+        "position": { "top": 32, "left": 104 },
+        "type": "bakelit"
+      },
+      {
+        "id": "treble",
+        "size": 60,
+        "position": { "top": 32, "left": 186 },
+        "type": "bakelit"
+      },
+      {
+        "id": "gain",
+        "size": 60,
+        "position": { "top": 32, "left": 269 },
+        "type": "bakelit"
+      },
+      {
+        "id": "boost",
+        "size": 72,
+        "position": { "top": 112, "left": 57 },
+        "type": "bakelit"
+      },
+      {
+        "id": "volume",
+        "size": 72,
+        "position": { "top": 112, "left": 222 },
+        "type": "bakelit"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 40, "position": { "top": 172, "left": 273 } },
+      {
+        "id": "boost_led",
+        "secondaryCircuitId": "boost",
+        "size": 40,
+        "position": { "top": 172, "left": 38 }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 211, "left": 270 }
+      },
+      {
+        "id": "boost_switch",
+        "secondaryCircuitId": "boost",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 211, "left": 34 }
+      },
+      {
+        "id": "clip",
+        "type": "toggle",
+        "size": 32,
+        "position": { "top": 130, "left": 140 }
+      },
+      {
+        "id": "order",
+        "type": "toggle",
+        "size": 32,
+        "position": { "top": 131, "left": 180 }
+      }
+    ]
+  }
+}

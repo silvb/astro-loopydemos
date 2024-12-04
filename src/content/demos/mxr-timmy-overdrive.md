@@ -10,9 +10,9 @@ tags:
   - timmy
   - mid gain drive
 externalLinks:
-  perfectCircuit: mxr-timmy-overdrive
-  builderLink: ...
-  sweetwater: ...
+  thomann: mxr_custom_shop_timmy_csp027
+  builderLink: https://www.jimdunlop.com/mxr-timmy-overdrive/
+  sweetwater: https://sweetwater.sjv.io/NknDdV
 ---
 
 Write some copy about the Timmy Overdrive by MXR.
