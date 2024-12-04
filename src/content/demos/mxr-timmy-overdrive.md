@@ -2,9 +2,9 @@
 builder: MXR
 model: Timmy Overdrive
 slug: mxr-timmy-overdrive
-type: none
+type: demo
 isSponsored: true
-date: 2024-10-22
+date: 2024-12-05
 tags:
   - transparent overdrive
   - timmy
