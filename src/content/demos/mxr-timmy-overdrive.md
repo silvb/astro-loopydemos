@@ -4,7 +4,7 @@ model: Timmy Overdrive
 slug: mxr-timmy-overdrive
 type: demo
 isSponsored: true
-date: 2024-12-05
+date: 2024-12-07
 tags:
   - transparent overdrive
   - timmy
@@ -15,7 +15,17 @@ externalLinks:
   sweetwater: https://sweetwater.sjv.io/NknDdV
 ---
 
-Write some copy about the Timmy Overdrive by MXR.
+MXR did a great service to us pedal nerds by bringing Paul Cochrane's Timmy circuit to the masses.
+
+It is a low to medium gain overdrive and it often get's mentioned when throwing out buzzwords like "transparent overdrive".
+
+It has a powerful EQ section to really make it anything but transparent.
+
+But the way the Timmy shapes your guitar tone feels very organic and musical at all ranges of the controls.
+
+You can coax a lot of different sounds out of this tiny pedal. From cleanish boost, to fuzzy drive, edge of breakup or just a touch of sparkle to cut through a mix – the Timmy can get you there.
+
+The **CLIP** toggle gives you 3 different clipping configurations – varying from mild saturation, heavier compression and a more open, high headroom feel.
 
 ### Signal Chain
 
