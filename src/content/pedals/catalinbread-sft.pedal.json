@@ -1,40 +1,42 @@
 {
   "name": "catalinbread-sft",
+  "width": 185,
+  "height": 325,
   "controls": {
     "knobs": [
       {
         "id": "treble",
-        "size": 44,
+        "size": 40,
         "position": {
           "left": 26,
-          "top": 30
+          "top": 29
         },
         "type": "simpledot"
       },
       {
         "id": "bass",
-        "size": 44,
+        "size": 40,
         "position": {
-          "left": 129,
+          "left": 120,
           "top": 30
         },
         "type": "simpledot"
       },
       {
         "id": "volume",
-        "size": 44,
+        "size": 40,
         "position": {
-          "left": 27,
-          "top": 92
+          "left": 26,
+          "top": 87
         },
         "type": "simpledot"
       },
       {
         "id": "gain",
-        "size": 44,
+        "size": 40,
         "position": {
-          "left": 129,
-          "top": 92
+          "left": 119,
+          "top": 88
         },
         "type": "simpledot"
       }
@@ -42,10 +44,10 @@
     "leds": [
       {
         "id": "on_led",
-        "size": 70,
+        "size": 64,
         "position": {
-          "left": 65,
-          "top": 97
+          "left": 61,
+          "top": 91
         },
         "dependency": {
           "source": "mode",
@@ -72,19 +74,19 @@
       {
         "id": "bypass_switch",
         "type": "stomp",
-        "size": 50,
+        "size": 48,
         "position": {
-          "left": 75,
-          "top": 209
+          "left": 69,
+          "top": 194
         }
       },
       {
         "id": "mode",
         "type": "pushbutton",
-        "size": 36,
+        "size": 32,
         "position": {
-          "left": 81,
-          "top": 34
+          "left": 76,
+          "top": 33
         }
       }
     ]

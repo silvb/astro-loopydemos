@@ -1,0 +1,33 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "meaty_crunch",
+      "label": "Meaty Crunch",
+      "settings": {
+        "vol": 3,
+        "drive": 5,
+        "clean_blend": 4,
+        "tone": 7,
+        "clean_tone": 6,
+        "od_fuzz": 1
+      }
+    },
+    {
+      "id": "vol_knob",
+      "label": "Vol",
+      "isSweep": true,
+      "target": "vol",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "drive": 5,
+        "clean_blend": 5,
+        "tone": 5,
+        "clean_tone": 5,
+        "od_fuzz": 1
+      }
+    }
+  ]
+}
