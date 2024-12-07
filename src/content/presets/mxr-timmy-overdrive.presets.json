@@ -1,11 +1,35 @@
 {
   "hasBackingTrack": true,
-  "volume": 0.65,
+  "volume": 0.55,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
-      "settings": { "bass": 5, "gain": 5, "volume": 5, "treble": 5, "clip": 1 }
+      "id": "gentle_presence",
+      "label": "Gentle Presence",
+      "settings": { "bass": 2, "gain": 7, "volume": 4, "treble": 7, "clip": 1 }
+    },
+    {
+      "id": "fuzzy_drive",
+      "label": "Fuzzy Drive",
+      "settings": { "bass": 3, "gain": 10, "volume": 5, "treble": 7, "clip": 2 }
+    },
+    {
+      "id": "slight_compression",
+      "label": "Slight Compression",
+      "settings": { "bass": 4, "gain": 4, "volume": 6, "treble": 6, "clip": 3 }
+    },
+    {
+      "id": "smooth_clarity",
+      "label": "Smooth Clarity",
+      "settings": { "bass": 0, "gain": 5, "volume": 5, "treble": 8, "clip": 1 }
+    },
+    {
+      "id": "clip_toggle",
+      "label": "Clip",
+      "isSweep": true,
+      "target": "clip",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": { "gain": 8, "volume": 5, "treble": 7, "bass": 3 }
     },
     {
       "id": "bass_knob",
@@ -14,7 +38,25 @@
       "target": "bass",
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
-      "settings": { "gain": 5, "volume": 5, "treble": 5, "clip": 1 }
+      "settings": { "gain": 5, "volume": 5, "treble": 7, "clip": 2 }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble",
+      "isSweep": true,
+      "target": "treble",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "gain": 8, "volume": 5, "bass": 3, "clip": 1 }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 2,
+      "values": [2, 4, 6, 8, 10],
+      "settings": { "bass": 3, "volume": 5, "treble": 7, "clip": 1 }
     }
   ]
 }
