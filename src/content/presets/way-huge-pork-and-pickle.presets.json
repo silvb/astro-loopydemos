@@ -15,18 +15,129 @@
       }
     },
     {
-      "id": "vol_knob",
-      "label": "Vol",
-      "isSweep": true,
-      "target": "vol",
-      "initialValue": 0,
-      "values": [0, 2, 4, 6, 8, 10],
+      "id": "searing_fuzz",
+      "label": "Searing Fuzz",
       "settings": {
-        "drive": 5,
+        "vol": 5,
+        "drive": 8,
+        "clean_blend": 8,
+        "tone": 8,
+        "clean_tone": 3,
+        "od_fuzz": 3
+      }
+    },
+    {
+      "id": "cleanish_drive",
+      "label": "Cleanish Drive",
+      "settings": {
+        "vol": 4,
+        "drive": 0,
+        "clean_blend": 10,
+        "tone": 10,
+        "clean_tone": 10,
+        "od_fuzz": 1
+      }
+    },
+    {
+      "id": "synthy_fuzz",
+      "label": "Synthy Fuzz",
+      "settings": {
+        "vol": 5,
+        "drive": 10,
         "clean_blend": 5,
-        "tone": 5,
+        "tone": 10,
+        "clean_tone": 2,
+        "od_fuzz": 3
+      }
+    },
+    {
+      "id": "od_fuzz_toggle",
+      "label": "OD vs Fuzz",
+      "isSweep": true,
+      "target": "od_fuzz",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "vol": 5,
+        "drive": 10,
+        "clean_blend": 5,
+        "tone": 7,
+        "clean_tone": 5
+      }
+    },
+    {
+      "id": "od_gain_range",
+      "label": "OD Gain Range",
+      "isSweep": true,
+      "target": "drive",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "vol": 5,
+        "clean_blend": 0,
+        "tone": 7,
         "clean_tone": 5,
         "od_fuzz": 1
+      }
+    },
+    {
+      "id": "fuzz_gain_range",
+      "label": "Fuzz Gain Range",
+      "isSweep": true,
+      "target": "drive",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "vol": 5,
+        "clean_blend": 5,
+        "tone": 7,
+        "clean_tone": 7,
+        "od_fuzz": 3
+      }
+    },
+    {
+      "id": "clean_blend_knob",
+      "label": "Clean Blend",
+      "isSweep": true,
+      "target": "clean_blend",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "vol": 4,
+        "drive": 8,
+        "tone": 8,
+        "clean_tone": 5,
+        "od_fuzz": 3
+      }
+    },
+    {
+      "id": "clean_tone_knob",
+      "label": "Clean Tone",
+      "isSweep": true,
+      "target": "clean_tone",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "vol": 4,
+        "drive": 0,
+        "tone": 5,
+        "clean_blend": 10,
+        "od_fuzz": 1
+      }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "vol": 4,
+        "drive": 8,
+        "clean_blend": 3,
+        "clean_tone": 5,
+        "od_fuzz": 3
       }
     }
   ]

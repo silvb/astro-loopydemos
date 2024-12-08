@@ -1,6 +1,6 @@
 ---
 builder: Way Huge
-model: Pork and Pickle
+model: Pork & Pickle
 slug: way-huge-pork-and-pickle
 type: demo
 isSponsored: true
@@ -8,6 +8,7 @@ date: 2024-12-08
 tags:
   - bass overdrive
   - bass distortion
+  - bass fuzz
 externalLinks:
   thomann: ...
   builderLink: ...
