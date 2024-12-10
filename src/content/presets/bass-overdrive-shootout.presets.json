@@ -15,6 +15,47 @@
             "gain": 4,
             "mode": 1
           }
+        },
+        {
+          "id": "colourbox_thump",
+          "pedalSlug": "jhs-pedals-colour-box-v2",
+          "settings": {
+            "master": 4,
+            "pre": 6.5,
+            "step": 3,
+            "hipass": 0,
+            "treble": 8,
+            "middle": 6,
+            "bass": 6.5,
+            "treble_shift": 2,
+            "mid_shift": 6.5,
+            "bass_shift": 1.5,
+            "hipass_toggle": 3,
+            "hi_lo": 3
+          }
+        },
+        {
+          "id": "sft_thump",
+          "pedalSlug": "catalinbread-sft",
+          "settings": {
+            "treble": 8,
+            "bass": 5,
+            "volume": 5,
+            "gain": 3,
+            "mode": 1
+          }
+        },
+        {
+          "id": "porkpickle_thump",
+          "pedalSlug": "way-huge-pork-and-pickle",
+          "settings": {
+            "vol": 3,
+            "drive": 6,
+            "clean_blend": 3,
+            "tone": 8,
+            "clean_tone": 7,
+            "od_fuzz": 1
+          }
         }
       ]
     },
@@ -30,6 +71,47 @@
             "tone": 8,
             "gain": 7,
             "mode": 2
+          }
+        },
+        {
+          "id": "colourbox_bite",
+          "pedalSlug": "jhs-pedals-colour-box-v2",
+          "settings": {
+            "master": 2,
+            "pre": 7,
+            "step": 3,
+            "hipass": 0,
+            "treble": 6.5,
+            "middle": 8,
+            "bass": 7,
+            "treble_shift": 2,
+            "mid_shift": 6.5,
+            "bass_shift": 4,
+            "hipass_toggle": 3,
+            "hi_lo": 1
+          }
+        },
+        {
+          "id": "sft_bite",
+          "pedalSlug": "catalinbread-sft",
+          "settings": {
+            "treble": 7,
+            "bass": 6,
+            "volume": 5,
+            "gain": 2,
+            "mode": 2
+          }
+        },
+        {
+          "id": "porkpickle_bite",
+          "pedalSlug": "way-huge-pork-and-pickle",
+          "settings": {
+            "vol": 2,
+            "drive": 9,
+            "clean_blend": 7,
+            "tone": 8,
+            "clean_tone": 3,
+            "od_fuzz": 3
           }
         }
       ]

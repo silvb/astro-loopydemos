@@ -91,7 +91,7 @@ const shuffledCtaLabels = ctaLabels
         </a>
       )
     }
-    {
+    <!-- {
       perfectCircuit && (
         <a
           class="link-button link-none"
@@ -103,7 +103,7 @@ const shuffledCtaLabels = ctaLabels
           <span class="whitespace-nowrap text-sm">{shuffledCtaLabels[2]}</span>
         </a>
       )
-    }
+    } -->
     {
       soundShoppe && (
         <a
@@ -123,7 +123,8 @@ const shuffledCtaLabels = ctaLabels
       )
     }
     {
-      (sweetwater || thomann || perfectCircuit) && (
+      (sweetwater || thomann) && (
+        // (sweetwater || thomann || perfectCircuit) && (
         <p class="m-0 text-xs italic text-loopydemos-subdued">
           Buy through these links and support Loopy Demos
           <br /> at no extra cost to you.
