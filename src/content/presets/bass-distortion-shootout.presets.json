@@ -50,6 +50,47 @@
           }
         },
         {
+          "id": "colourbox_growl",
+          "pedalSlug": "jhs-pedals-colour-box-v2",
+          "settings": {
+            "master": 2,
+            "pre": 7,
+            "step": 3,
+            "hipass": 0,
+            "treble": 6.5,
+            "middle": 8,
+            "bass": 7,
+            "treble_shift": 2,
+            "mid_shift": 6.5,
+            "bass_shift": 4,
+            "hipass_toggle": 3,
+            "hi_lo": 1
+          }
+        },
+        {
+          "id": "sft_growl",
+          "pedalSlug": "catalinbread-sft",
+          "settings": {
+            "treble": 7,
+            "bass": 6,
+            "volume": 4,
+            "gain": 2,
+            "mode": 2
+          }
+        },
+        {
+          "id": "porkpickle_growl",
+          "pedalSlug": "way-huge-pork-and-pickle",
+          "settings": {
+            "vol": 2,
+            "drive": 10,
+            "clean_blend": 6,
+            "tone": 6,
+            "clean_tone": 4,
+            "od_fuzz": 3
+          }
+        },
+        {
           "id": "surprise_growl",
           "pedalSlug": "fairfield-circuitry-unpleasant-surprise",
           "settings": {
