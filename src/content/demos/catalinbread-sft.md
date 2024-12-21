@@ -2,7 +2,7 @@
 builder: Catalinbread
 model: SFT
 type: demo
-date: 2021-04-20
+date: 2024-12-21
 tags:
   - amp in a box
   - ampeg
