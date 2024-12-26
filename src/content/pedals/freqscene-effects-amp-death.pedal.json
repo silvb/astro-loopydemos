@@ -1,0 +1,36 @@
+{
+  "name": "freqscene-effects-amp-death",
+  "controls": {
+    "knobs": [
+      {
+        "id": "texture",
+        "size": 118,
+        "position": { "top": 41, "left": 42 },
+        "type": "simple"
+      },
+      {
+        "id": "level",
+        "size": 24,
+        "position": { "top": 198, "left": 34 },
+        "type": "simple"
+      },
+      {
+        "id": "freq",
+        "size": 24,
+        "position": { "top": 198, "left": 142 },
+        "type": "simple"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 48, "position": { "top": 263, "left": 132 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 275, "left": 78 }
+      }
+    ]
+  }
+}
