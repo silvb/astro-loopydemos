@@ -10,7 +10,7 @@ tags:
   - lofi drive
   - velcro fuzz
 externalLinks:
-  builderLink: https://www.freqscene.com/product/amp-death
+  builderLink: https://www.freqscene.com/product/ad-1
 ---
 
 The Amp Death by Freqscene Effects is a gated fuzz and overdrive. It unapologetically adds texture and gritty-ness to your signal – absent of any subtlety.
