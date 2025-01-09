@@ -1,0 +1,1 @@
+{"hasBackingTrack":true,"volume":0.65,"presets":[{"id":"static_preset","label":"Static Preset","settings":{"heat":5,"range":5,"boost":5,"attn":5}},{"id":"heat_knob","label":"Heat","isSweep":true,"target":"heat","initialValue":0,"values":[0,2,4,6,8,10],"settings":{"range":5,"boost":5,"attn":5}}]}
