@@ -1,1 +1,57 @@
-{"hasBackingTrack":true,"volume":0.65,"presets":[{"id":"static_preset","label":"Static Preset","settings":{"heat":5,"range":5,"boost":5,"attn":5}},{"id":"heat_knob","label":"Heat","isSweep":true,"target":"heat","initialValue":0,"values":[0,2,4,6,8,10],"settings":{"range":5,"boost":5,"attn":5}}]}
+{
+  "hasBackingTrack": true,
+  "volume": 0.5,
+  "presets": [
+    {
+      "id": "hefty_bite",
+      "label": "Hefty Bite",
+      "settings": { "heat": 7, "range": 3.5, "boost": 5, "attn": 8.5 }
+    },
+    {
+      "id": "chime_boost",
+      "label": "Chime Boost",
+      "settings": { "heat": 5, "range": 7, "boost": 8, "attn": 4 }
+    },
+    {
+      "id": "cutting_focus",
+      "label": "Cutting Focus",
+      "settings": { "heat": 10, "range": 7.6, "boost": 10, "attn": 8 }
+    },
+    {
+      "id": "heat_knob",
+      "label": "Heat",
+      "isSweep": true,
+      "target": "heat",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "range": 5, "boost": 5, "attn": 5 }
+    },
+    {
+      "id": "range_knob",
+      "label": "Range",
+      "isSweep": true,
+      "target": "range",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "heat": 5, "boost": 5, "attn": 8 }
+    },
+    {
+      "id": "boost_knob",
+      "label": "Boost",
+      "isSweep": true,
+      "target": "boost",
+      "initialValue": 1,
+      "values": [1, 2, 5, 8, 10],
+      "settings": { "heat": 0, "range": 7, "attn": 7 }
+    },
+    {
+      "id": "attn_knob",
+      "label": "Attn",
+      "isSweep": true,
+      "target": "attn",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "heat": 10, "boost": 7, "range": 5 }
+    }
+  ]
+}

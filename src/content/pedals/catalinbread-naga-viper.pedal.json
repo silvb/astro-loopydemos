@@ -9,7 +9,7 @@
         "size": 40,
         "position": {
           "left": 26,
-          "top": 29
+          "top": 31
         },
         "type": "simpledot"
       },
@@ -17,8 +17,8 @@
         "id": "range",
         "size": 40,
         "position": {
-          "left": 120,
-          "top": 30
+          "left": 119,
+          "top": 31
         },
         "type": "simpledot"
       },
@@ -27,7 +27,7 @@
         "size": 40,
         "position": {
           "left": 26,
-          "top": 87
+          "top": 90
         },
         "type": "simpledot"
       },
@@ -36,7 +36,7 @@
         "size": 40,
         "position": {
           "left": 119,
-          "top": 88
+          "top": 90
         },
         "type": "simpledot"
       }
@@ -47,7 +47,7 @@
         "size": 64,
         "position": {
           "left": 61,
-          "top": 91
+          "top": 89
         }
       }
     ],
@@ -57,8 +57,8 @@
         "type": "stomp",
         "size": 48,
         "position": {
-          "left": 69,
-          "top": 194
+          "left": 68,
+          "top": 196
         }
       }
     ]
