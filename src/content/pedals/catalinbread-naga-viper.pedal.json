@@ -1,0 +1,66 @@
+{
+  "name": "catalinbread-naga-viper",
+  "width": 185,
+  "height": 325,
+  "controls": {
+    "knobs": [
+      {
+        "id": "heat",
+        "size": 40,
+        "position": {
+          "left": 26,
+          "top": 31
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "range",
+        "size": 40,
+        "position": {
+          "left": 119,
+          "top": 31
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "boost",
+        "size": 40,
+        "position": {
+          "left": 26,
+          "top": 90
+        },
+        "type": "simpledot"
+      },
+      {
+        "id": "attn",
+        "size": 40,
+        "position": {
+          "left": 119,
+          "top": 90
+        },
+        "type": "simpledot"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 64,
+        "position": {
+          "left": 61,
+          "top": 89
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": {
+          "left": 68,
+          "top": 196
+        }
+      }
+    ]
+  }
+}
