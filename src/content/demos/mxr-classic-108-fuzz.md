@@ -2,20 +2,24 @@
 builder: MXR
 model: Classic 108 Fuzz
 slug: mxr-classic-108-fuzz
-type: none
+type: demo
 isSponsored: true
-date: 2024-10-22
+date: 2025-04-03
 tags:
   - fuzz face
   - classic fuzz
   - 70s fuzz
 externalLinks:
-  perfectCircuit: mxr-classic-108-fuzz
-  builderLink: ...
-  sweetwater: ...
+  builderLink: https://www.jimdunlop.com/mxr-classic-108-fuzz-mini/
+  sweetwater: https://sweetwater.sjv.io/Mm0x4q
+  thomann: dunlop_mxr_m296_classic_108_fuzz_mini
 ---
 
-Write some copy about the Classic 108 Fuzz by MXR.
+The Classic 108 Fuzz by MXR shows that you need the tiniest setup to create a massive sounding guitar track.
+
+The 108 is a faithful recreation of the 2-transistor Fuzz Face circuit. It offers an added buffer toggle to put it anywhere in your signal chain.
+
+You get modern reliability, small foot print and vintage sound.
 
 ### Signal Chain
 
