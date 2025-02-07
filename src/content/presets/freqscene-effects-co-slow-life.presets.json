@@ -3,14 +3,36 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "slow_swell",
+      "label": "Slow Swell",
       "settings": {
-        "attack": 5,
+        "attack": 10,
+        "compress": 10,
+        "sensi": 3,
+        "range": 10,
+        "volume": 10
+      }
+    },
+    {
+      "id": "quick_bloom",
+      "label": "Quick Bloom",
+      "settings": {
+        "attack": 3.5,
         "compress": 5,
-        "sensi": 5,
-        "range": 5,
-        "volume": 5
+        "sensi": 3,
+        "range": 3,
+        "volume": 10
+      }
+    },
+    {
+      "id": "just_comp",
+      "label": "Just Compressor",
+      "settings": {
+        "attack": 0,
+        "compress": 10,
+        "sensi": 10,
+        "range": 0,
+        "volume": 10
       }
     },
     {
@@ -20,7 +42,16 @@
       "target": "attack",
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
-      "settings": { "compress": 5, "sensi": 5, "range": 5, "volume": 5 }
+      "settings": { "compress": 10, "sensi": 3, "range": 10, "volume": 10 }
+    },
+    {
+      "id": "compress_knob",
+      "label": "Compress",
+      "isSweep": true,
+      "target": "compress",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "attack": 10, "sensi": 3, "range": 10, "volume": 10 }
     }
   ]
 }
