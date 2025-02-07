@@ -1,0 +1,26 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": {
+        "attack": 5,
+        "compress": 5,
+        "sensi": 5,
+        "range": 5,
+        "volume": 5
+      }
+    },
+    {
+      "id": "attack_knob",
+      "label": "Attack",
+      "isSweep": true,
+      "target": "attack",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "compress": 5, "sensi": 5, "range": 5, "volume": 5 }
+    }
+  ]
+}

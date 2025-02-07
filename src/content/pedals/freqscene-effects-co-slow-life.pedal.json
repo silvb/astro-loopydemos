@@ -1,0 +1,48 @@
+{
+  "name": "freqscene-effects-co-slow-life",
+  "controls": {
+    "knobs": [
+      {
+        "id": "attack",
+        "size": 54,
+        "position": { "top": 58, "left": 39 },
+        "type": "bakelit"
+      },
+      {
+        "id": "compress",
+        "size": 54,
+        "position": { "top": 161, "left": 39 },
+        "type": "bakelit"
+      },
+      {
+        "id": "sensi",
+        "size": 40,
+        "position": { "top": 46, "left": 126 },
+        "type": "knurled"
+      },
+      {
+        "id": "range",
+        "size": 40,
+        "position": { "top": 109, "left": 126 },
+        "type": "knurled"
+      },
+      {
+        "id": "volume",
+        "size": 40,
+        "position": { "top": 170, "left": 126 },
+        "type": "knurled"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 36, "position": { "top": 282, "left": 47 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 278, "left": 120 }
+      }
+    ]
+  }
+}
