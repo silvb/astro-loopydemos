@@ -4,7 +4,7 @@ model: Classic 108 Fuzz
 slug: mxr-classic-108-fuzz
 type: demo
 isSponsored: true
-date: 2025-04-03
+date: 2025-02-04
 tags:
   - fuzz face
   - classic fuzz
