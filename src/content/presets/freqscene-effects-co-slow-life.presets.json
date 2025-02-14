@@ -52,6 +52,15 @@
       "initialValue": 0,
       "values": [0, 2, 5, 8, 10],
       "settings": { "attack": 10, "sensi": 3, "range": 10, "volume": 10 }
+    },
+    {
+      "id": "range_knob",
+      "label": "Range",
+      "isSweep": true,
+      "target": "range",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "attack": 10, "sensi": 3, "compress": 10, "volume": 10 }
     }
   ]
 }
