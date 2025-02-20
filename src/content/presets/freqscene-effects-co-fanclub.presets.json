@@ -1,0 +1,20 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": { "type": 4, "vol": 5 }
+    },
+    {
+      "id": "type_knob",
+      "label": "Type",
+      "isSweep": true,
+      "target": "type",
+      "initialValue": 1,
+      "values": [1, 2, 3, 4],
+      "settings": { "vol": 10 }
+    }
+  ]
+}

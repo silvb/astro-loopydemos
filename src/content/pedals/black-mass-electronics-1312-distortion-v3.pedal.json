@@ -52,12 +52,12 @@
           "top": 96
         },
         "type": "brutalist",
-        "isRotary": true,
         "colors": {
           "primary": "#D0E8FE",
           "tick": "black",
           "secondary": "#C0CBD2"
         },
+        "isRotary": true,
         "rotaryAngles": [0, 45, 90, 135, 180, 225, 270, 315]
       }
     ],
