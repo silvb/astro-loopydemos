@@ -1,0 +1,33 @@
+{
+  "name": "freqscene-effects-co-fanclub",
+  "imageSrcSlug": "freqscene-effects-co-fanclub-no-knob",
+  "controls": {
+    "knobs": [
+      {
+        "id": "type",
+        "size": 120,
+        "position": { "top": 53, "left": 89 },
+        "type": "fanclub",
+        "isRotary": true,
+        "rotaryAngles": [-150, -105, -65, -25]
+      },
+      {
+        "id": "vol",
+        "size": 24,
+        "position": { "top": 177, "left": 44 },
+        "type": "simple"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 36, "position": { "top": 208, "left": 83 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 272, "left": 77 }
+      }
+    ]
+  }
+}

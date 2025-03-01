@@ -162,15 +162,17 @@ const siteUrl = isDev
             </li>
           )}
         </ul>
-        {// externalLinks.perfectCircuit ||
-        (externalLinks.sweetwater || externalLinks.thomann) && (
-          <p>
-            <i>
-              *Affiliate link: Buy something and support Loopy Demos at no extra
-              cost to you!
-            </i>
-          </p>
-        )}
+        {
+          // externalLinks.perfectCircuit ||
+          (externalLinks.sweetwater || externalLinks.thomann) && (
+            <p>
+              <i>
+                *Affiliate link: Buy something and support Loopy Demos at no
+                extra cost to you!
+              </i>
+            </p>
+          )
+        }
       </>
     )
   }

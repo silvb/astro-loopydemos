@@ -1,0 +1,35 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "tape_boost",
+      "label": "Echoplex Preamp",
+      "settings": { "type": 4, "vol": 10 }
+    },
+    {
+      "id": "linear_boost",
+      "label": "Linear Boost",
+      "settings": { "type": 3, "vol": 10 }
+    },
+    {
+      "id": "treble_boost",
+      "label": "Treble Boost",
+      "settings": { "type": 2, "vol": 6.5 }
+    },
+    {
+      "id": "electro_boost",
+      "label": "Electra Overdrive",
+      "settings": { "type": 1, "vol": 7 }
+    },
+    {
+      "id": "type_knob",
+      "label": "Type",
+      "isSweep": true,
+      "target": "type",
+      "initialValue": 1,
+      "values": [1, 2, 3, 4],
+      "settings": { "vol": 10 }
+    }
+  ]
+}
