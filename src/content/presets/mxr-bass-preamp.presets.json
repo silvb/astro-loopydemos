@@ -3,32 +3,106 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "gnarly_drive",
+      "label": "Gnarly Drive",
+      "settings": {
+        "output": 4,
+        "mid_freq": 4,
+        "input": 10,
+        "bass": 7,
+        "mid": 9,
+        "treble": 7,
+        "pre_post": 2
+      }
+    },
+    {
+      "id": "buttery_preamp",
+      "label": "Buttery Preamp",
+      "settings": {
+        "output": 4,
+        "mid_freq": 2,
+        "input": 7,
+        "bass": 6,
+        "mid": 6,
+        "treble": 5,
+        "pre_post": 1
+      }
+    },
+    {
+      "id": "gentle_mix",
+      "label": "Gentle Mix",
       "settings": {
         "output": 5,
-        "mid_freq": 5,
-        "input": 5,
+        "mid_freq": 7.5,
+        "input": 7,
+        "bass": 7,
+        "mid": 3,
+        "treble": 7,
+        "pre_post": 1
+      }
+    },
+    {
+      "id": "mid_freq_knob",
+      "label": "Mid Frequency",
+      "isSweep": true,
+      "target": "mid_freq",
+      "initialValue": 0,
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "settings": {
+        "output": 5,
+        "input": 7,
         "bass": 5,
-        "mid": 5,
+        "mid": 10,
         "treble": 5,
         "pre_post": 2
       }
     },
     {
-      "id": "output_knob",
-      "label": "Output",
+      "id": "bass_knob",
+      "label": "Bass",
       "isSweep": true,
-      "target": "output",
+      "target": "bass",
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
       "settings": {
-        "mid_freq": 5,
-        "input": 5,
-        "bass": 5,
-        "mid": 5,
+        "output": 5,
+        "mid_freq": 1,
+        "input": 7,
+        "mid": 6.5,
         "treble": 5,
-        "pre_post": 1
+        "pre_post": 2
+      }
+    },
+    {
+      "id": "mid_knob",
+      "label": "Mid",
+      "isSweep": true,
+      "target": "mid",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "output": 5,
+        "input": 7,
+        "bass": 5,
+        "mid_freq": 1,
+        "treble": 5,
+        "pre_post": 2
+      }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble",
+      "isSweep": true,
+      "target": "treble",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "output": 5,
+        "mid_freq": 1,
+        "input": 7,
+        "bass": 6,
+        "mid": 6.5,
+        "pre_post": 2
       }
     }
   ]
