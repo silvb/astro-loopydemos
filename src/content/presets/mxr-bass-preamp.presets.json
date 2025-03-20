@@ -1,0 +1,35 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": {
+        "output": 5,
+        "mid_freq": 5,
+        "input": 5,
+        "bass": 5,
+        "mid": 5,
+        "treble": 5,
+        "pre_post": 2
+      }
+    },
+    {
+      "id": "output_knob",
+      "label": "Output",
+      "isSweep": true,
+      "target": "output",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "mid_freq": 5,
+        "input": 5,
+        "bass": 5,
+        "mid": 5,
+        "treble": 5,
+        "pre_post": 1
+      }
+    }
+  ]
+}
