@@ -1,0 +1,68 @@
+{
+  "name": "mxr-bass-preamp",
+  "width": 185,
+  "height": 325,
+  "controls": {
+    "knobs": [
+      {
+        "id": "output",
+        "size": 48,
+        "position": { "top": 23, "left": 14 },
+        "type": "jhs"
+      },
+      {
+        "id": "mid_freq",
+        "size": 48,
+        "position": { "top": 23, "left": 69 },
+        "type": "jhs"
+      },
+      {
+        "id": "input",
+        "size": 48,
+        "position": { "top": 23, "left": 125 },
+        "type": "jhs"
+      },
+      {
+        "id": "bass",
+        "size": 48,
+        "position": { "top": 85, "left": 14 },
+        "type": "jhs"
+      },
+      {
+        "id": "mid",
+        "size": 48,
+        "position": { "top": 85, "left": 69 },
+        "type": "jhs"
+      },
+      {
+        "id": "treble",
+        "size": 48,
+        "position": { "top": 85, "left": 125 },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 40,
+        "position": { "top": 169, "left": 73 },
+        "colors": { "off": "#d2e1e9a1", "on": "#0050ff" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 206, "left": 69 }
+      },
+      {
+        "id": "pre_post",
+        "type": "pushbutton",
+        "size": 28,
+        "position": { "top": 60, "left": 107 },
+        "colors": { "primary": "#c4d2d1", "secondary": "#fff" }
+      }
+    ]
+  }
+}
