@@ -75,7 +75,7 @@ export const Switch: Component<SwitchProps> = props => {
           />
         </Match>
         <Match when={props.type === "pushbutton"}>
-          <PushButton size={props.size} state={state()} />
+          <PushButton size={props.size} colors={props.colors} state={state()} />
         </Match>
         <Match when={props.type === "slide"}>
           <SlideSwitch

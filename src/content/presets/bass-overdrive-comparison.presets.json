@@ -1,5 +1,5 @@
 {
-  "volume": 1,
+  "volume": 0.75,
   "hasBackingTrack": true,
   "presets": [
     {
@@ -55,6 +55,19 @@
             "tone": 8,
             "clean_tone": 7,
             "od_fuzz": 1
+          }
+        },
+        {
+          "id": "mxrpreamp_thump",
+          "pedalSlug": "mxr-bass-preamp",
+          "settings": {
+            "output": 5,
+            "mid_freq": 1,
+            "input": 7,
+            "bass": 7,
+            "mid": 7,
+            "treble": 7,
+            "pre_post": 2
           }
         }
       ]
@@ -112,6 +125,19 @@
             "tone": 8,
             "clean_tone": 3,
             "od_fuzz": 3
+          }
+        },
+        {
+          "id": "mxrpreamp_bite",
+          "pedalSlug": "mxr-bass-preamp",
+          "settings": {
+            "output": 5,
+            "mid_freq": 3,
+            "input": 10,
+            "bass": 6,
+            "mid": 10,
+            "treble": 8,
+            "pre_post": 2
           }
         }
       ]
