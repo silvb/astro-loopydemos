@@ -6,62 +6,69 @@
     "knobs": [
       {
         "id": "tact",
-        "size": 48,
-        "position": { "top": 64, "left": 64 },
-        "type": "emptyhead"
+        "size": 80,
+        "position": { "top": 234, "left": 59 },
+        "type": "emptyheadlarge"
       },
       {
         "id": "crosstalk",
-        "size": 48,
-        "position": { "top": 64, "left": 64 },
+        "size": 60,
+        "position": { "top": 151, "left": 34 },
         "type": "emptyhead"
       },
       {
         "id": "topic_a",
-        "size": 48,
-        "position": { "top": 64, "left": 64 },
+        "size": 60,
+        "position": { "top": 58, "left": 35 },
         "type": "emptyhead"
       },
       {
         "id": "intensity_a",
-        "size": 48,
-        "position": { "top": 64, "left": 64 },
+        "size": 60,
+        "position": { "top": 120, "left": 100 },
         "type": "emptyhead"
       },
       {
         "id": "intensity_b",
-        "size": 48,
-        "position": { "top": 64, "left": 64 },
+        "size": 60,
+        "position": { "top": 29, "left": 102 },
         "type": "emptyhead"
       },
       {
         "id": "concentration",
-        "size": 64,
-        "position": { "top": 64, "left": 214 },
+        "size": 60,
+        "position": { "top": 143, "left": 214 },
         "type": "emptyhead"
       }
     ],
     "leds": [
-      { "id": "on_led", "size": 32, "position": { "top": 64, "left": 64 } }
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": { "top": 298, "left": 155 },
+        "colors": {
+          "on": "#ff0"
+        }
+      }
     ],
     "switches": [
       {
         "id": "bypass_switch",
         "type": "stomp",
         "size": 48,
-        "position": { "top": 64, "left": 64 }
+        "position": { "top": 289, "left": 197 }
       },
       {
         "id": "subject_matter",
         "type": "toggle",
-        "size": 32,
-        "position": { "top": 64, "left": 64 }
+        "size": 28,
+        "position": { "top": 140, "left": 172 }
       },
       {
         "id": "confusion",
         "type": "toggle",
-        "size": 32,
-        "position": { "top": 64, "left": 64 }
+        "size": 28,
+        "position": { "top": 55, "left": 172 }
       }
     ]
   }

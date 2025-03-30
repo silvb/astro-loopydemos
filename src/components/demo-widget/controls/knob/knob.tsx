@@ -23,6 +23,7 @@ import { SimpleDotKnob } from "./simple-dot-knob"
 import { SimpleKnob } from "./simple-knob"
 import { WalrusAudioKnob } from "./walrus-audio-knob"
 import { EmptyHeadKnob } from "./empty-head"
+import { EmptyHeadLargeKnob } from "./empty-head-large"
 
 interface KnobProps extends KnobType {
   pedalSlug: string
@@ -103,6 +104,9 @@ export const Knob: Component<KnobProps> = props => {
         </Match>
         <Match when={props.type === "emptyhead"}>
           <EmptyHeadKnob {...sizeAndColorProps} />
+        </Match>
+        <Match when={props.type === "emptyheadlarge"}>
+          <EmptyHeadLargeKnob {...sizeAndColorProps} />
         </Match>
       </Switch>
     </KnobStateContainer>
