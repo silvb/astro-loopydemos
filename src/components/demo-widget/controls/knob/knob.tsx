@@ -22,6 +22,7 @@ import { RoundChickenHeadKnob } from "./round-chicken-head-knob"
 import { SimpleDotKnob } from "./simple-dot-knob"
 import { SimpleKnob } from "./simple-knob"
 import { WalrusAudioKnob } from "./walrus-audio-knob"
+import { EmptyHeadKnob } from "./empty-head"
 
 interface KnobProps extends KnobType {
   pedalSlug: string
@@ -99,6 +100,9 @@ export const Knob: Component<KnobProps> = props => {
         </Match>
         <Match when={props.type === "fanclub"}>
           <FanclubKnob size={props.size} />
+        </Match>
+        <Match when={props.type === "emptyhead"}>
+          <EmptyHeadKnob {...sizeAndColorProps} />
         </Match>
       </Switch>
     </KnobStateContainer>
