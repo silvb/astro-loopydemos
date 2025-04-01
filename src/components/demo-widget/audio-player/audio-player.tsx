@@ -1,8 +1,8 @@
-import { PlayButton } from "./play-button"
-import { AudioPlayerDisplay } from "./audio-player-display"
+import type { Component } from "solid-js"
 import { AudioPlayerController } from "./audio-player-controller"
+import { AudioPlayerDisplay } from "./audio-player-display"
 import { BackingTrackToggle } from "./backing-track-toggle"
-import { type Component } from "solid-js"
+import { PlayButton } from "./play-button"
 
 interface AudioPlayerProps {
   slug: string

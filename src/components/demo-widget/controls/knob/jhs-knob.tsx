@@ -1,5 +1,5 @@
 import type { Knob } from "@types"
-import { mergeProps, type Component } from "solid-js"
+import { type Component, mergeProps } from "solid-js"
 
 type JhsKnobProps = Pick<Knob, "colors" | "size">
 
@@ -12,7 +12,7 @@ export const JhsKnob: Component<JhsKnobProps> = props => {
         tick: "#FFFDFE",
       },
     },
-    props
+    props,
   )
   return (
     <svg
@@ -21,6 +21,7 @@ export const JhsKnob: Component<JhsKnobProps> = props => {
       height={mergedProps.size}
       viewBox="0 0 120 120"
     >
+      <title>Knob</title>
       <g fill="none">
         <circle
           cx="60"
@@ -29,14 +30,14 @@ export const JhsKnob: Component<JhsKnobProps> = props => {
           fill={mergedProps.colors.primary}
           stroke-width="4"
           stroke={mergedProps.colors.secondary}
-        ></circle>
+        />
         <path
           fill={mergedProps.colors.primary}
           stroke={mergedProps.colors.secondary}
           stroke-width="4"
           d="M104.37701,29.5816271 L115.312765,54.8801148 L131.754021,77 L115.312765,99.1198852 L104.37701,124.418373 L77,121.23977 L49.6229896,124.418373 L38.687235,99.1198852 L22.2459793,77 L38.687235,54.8801148 L49.6229896,29.5816271 L77,32.7602296 L104.37701,29.5816271 Z"
           transform="rotate(30 60 60) translate(-17 -16.073)"
-        ></path>
+        />
         <rect
           width="8"
           height="40"
@@ -45,7 +46,7 @@ export const JhsKnob: Component<JhsKnobProps> = props => {
           fill={mergedProps.colors.tick}
           rx="4"
           ry="4"
-        ></rect>
+        />
       </g>
     </svg>
   )

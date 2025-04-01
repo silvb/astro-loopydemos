@@ -1,5 +1,5 @@
 import type { Knob } from "@types"
-import { mergeProps, type Component } from "solid-js"
+import { type Component, mergeProps } from "solid-js"
 
 type ObneKnobProps = Pick<Knob, "colors" | "size">
 
@@ -13,7 +13,7 @@ export const ObneKnob: Component<ObneKnobProps> = props => {
         edge: "#111",
       },
     },
-    props
+    props,
   )
 
   return (
@@ -23,20 +23,16 @@ export const ObneKnob: Component<ObneKnobProps> = props => {
       height={mergedProps.size}
       viewBox="0 0 256 256"
     >
+      <title>Knob</title>
       <g fill="none">
-        <circle
-          cx="128"
-          cy="128"
-          r="120"
-          fill={mergedProps.colors.primary}
-        ></circle>
+        <circle cx="128" cy="128" r="120" fill={mergedProps.colors.primary} />
         <circle
           cx="128"
           cy="128"
           r="118"
           stroke={mergedProps.colors.edge}
           stroke-width="20"
-        ></circle>
+        />
         <circle
           cx="128"
           cy="128"
@@ -46,14 +42,14 @@ export const ObneKnob: Component<ObneKnobProps> = props => {
           stroke-linecap="square"
           stroke-width="8"
           transform="rotate(15 128 128)"
-        ></circle>
+        />
         <circle
           cx="128"
           cy="128"
           r="107"
           stroke={mergedProps.colors.secondary}
           stroke-width="12"
-        ></circle>
+        />
         <rect
           width="20"
           height="64"
@@ -61,7 +57,7 @@ export const ObneKnob: Component<ObneKnobProps> = props => {
           y="26"
           fill={mergedProps.colors.tick}
           rx="4"
-        ></rect>
+        />
       </g>
     </svg>
   )

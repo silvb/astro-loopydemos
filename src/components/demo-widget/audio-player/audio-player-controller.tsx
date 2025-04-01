@@ -1,4 +1,4 @@
-import { createEffect, type Component } from "solid-js"
+import { type Component, createEffect } from "solid-js"
 import { useDemoState } from "../demo-state-store"
 import {
   fetchAudioBuffer,
@@ -57,7 +57,7 @@ export const AudioPlayerController: Component<
       activePedals(),
       pedalsOn(),
       secondaryCircuitsOn(),
-      activePreset()
+      activePreset(),
     )
 
     if (isPlaying()) {
@@ -77,7 +77,7 @@ export const AudioPlayerController: Component<
           currentBuffer.buffer = await fetchAudioBuffer(
             presetId,
             props.slug,
-            audioContext
+            audioContext,
           )
         } catch (error) {
           errorHandler(error, props.slug, presetId)
@@ -110,7 +110,7 @@ export const AudioPlayerController: Component<
             backingTackBuffer = await fetchAudioBuffer(
               BACKING_TRACK,
               props.slug,
-              audioContext
+              audioContext,
             )
           } catch (error) {
             errorHandler(error, props.slug, BACKING_TRACK)
@@ -129,7 +129,7 @@ export const AudioPlayerController: Component<
           backingTrackAudioSource.connect(audioContext.destination)
           backingTrackAudioSource.start(
             0,
-            audioContext.currentTime % trackLength
+            audioContext.currentTime % trackLength,
           )
         }
       }

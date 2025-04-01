@@ -1,6 +1,6 @@
 import { useDemoState } from "@components/demo-widget/demo-state-store"
 import { throttle } from "radash"
-import { type Component } from "solid-js"
+import type { Component } from "solid-js"
 import { FaderFace } from "./fader-face"
 
 import type { Slider as SliderType } from "@types"

@@ -1,6 +1,6 @@
 import { useDemoState } from "@components/demo-widget/demo-state-store"
-import { type ParentComponent, createEffect, createSignal } from "solid-js"
 import { throttle } from "radash"
+import { type ParentComponent, createEffect, createSignal } from "solid-js"
 
 interface DragSweepControlProps {
   id: string
@@ -21,7 +21,7 @@ export const DragSweepControl: ParentComponent<
     (sweepSetting()[props.id] ||
       activePreset()?.initialValue ||
       activePreset()?.chain?.find(p => p.isSweep)?.initialValue) ??
-      0
+      0,
   )
 
   createEffect(() => {

@@ -1,17 +1,17 @@
+import type { getImage } from "astro:assets"
 import type { CollectionEntry } from "astro:content"
-import { z } from "astro:content"
-import {
+import type { z } from "astro:content"
+import type {
   controlElementSchema,
+  knobSchema,
   labelSchema,
+  ledSchema,
   postTypeEnum,
+  presetSchema,
   settingsValueSchema,
   sliderSchema,
-  type knobSchema,
-  type ledSchema,
-  type presetSchema,
-  type switchSchema,
+  switchSchema,
 } from "./content/config"
-import { getImage } from "astro:assets"
 
 export interface PedalProps {
   slug: CollectionEntry<"demos">["slug"]

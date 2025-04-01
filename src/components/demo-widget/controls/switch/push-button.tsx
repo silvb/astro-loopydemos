@@ -12,7 +12,7 @@ export const PushButton: Component<PushButtonProps> = props => {
       state: 1,
       colors: { primary: "#222", secondary: "#555" },
     },
-    props
+    props,
   )
   return (
     <svg
@@ -21,18 +21,19 @@ export const PushButton: Component<PushButtonProps> = props => {
       height={mergedProps.size}
       viewBox="0 0 64 64"
     >
+      <title>Push Button</title>
       <g fill="none">
         <rect
           x="8"
-          y={mergedProps.state === 1 ? `20` : `28`}
+          y={mergedProps.state === 1 ? "20" : "28"}
           width="48"
-          height={mergedProps.state === 1 ? `18` : `10`}
+          height={mergedProps.state === 1 ? "18" : "10"}
           fill={mergedProps.colors.primary}
         />
         <circle cx="32" cy="40" r="24" fill={mergedProps.colors.primary} />
         <circle
           cx="32"
-          cy={mergedProps.state === 1 ? `24` : `32`}
+          cy={mergedProps.state === 1 ? "24" : "32"}
           r="23"
           fill={mergedProps.colors.primary}
           stroke-width="2"

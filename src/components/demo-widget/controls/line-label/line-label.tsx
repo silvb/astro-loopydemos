@@ -1,7 +1,7 @@
 import { useDemoState } from "@components/demo-widget/demo-state-store"
-import { type Component } from "solid-js"
-import styles from "./line-label.module.css"
 import type { LineLabel as LineLabelType } from "@types"
+import type { Component } from "solid-js"
+import styles from "./line-label.module.css"
 
 interface LineLabelProps extends LineLabelType {
   pedalSlug: string
@@ -17,11 +17,11 @@ export const LineLabel: Component<LineLabelProps> = props => {
 
   const width = Math.max(
     Math.abs(props.position.left - props.labelPosition.left),
-    LINE_CAP_RADIUS * 2
+    LINE_CAP_RADIUS * 2,
   )
   const height = Math.max(
     Math.abs(props.position.top - props.labelPosition.top),
-    LINE_CAP_RADIUS * 2
+    LINE_CAP_RADIUS * 2,
   )
 
   const isRightAligned = props.position.left <= props.labelPosition.left
@@ -30,10 +30,10 @@ export const LineLabel: Component<LineLabelProps> = props => {
   const startX = isRightAligned ? LINE_CAP_RADIUS : width - LINE_CAP_RADIUS
   const startY = isTopDown ? LINE_CAP_RADIUS : height - LINE_CAP_RADIUS
 
-  let endX = isRightAligned ? width - LINE_CAP_RADIUS : LINE_CAP_RADIUS
-  let endY = isTopDown ? height - LINE_CAP_RADIUS : LINE_CAP_RADIUS
+  const endX = isRightAligned ? width - LINE_CAP_RADIUS : LINE_CAP_RADIUS
+  const endY = isTopDown ? height - LINE_CAP_RADIUS : LINE_CAP_RADIUS
 
-  let bendX = width / 2
+  const bendX = width / 2
 
   return (
     <div class={setting() && !activePreset()?.noLabels ? "" : "hidden"}>
@@ -51,6 +51,7 @@ export const LineLabel: Component<LineLabelProps> = props => {
           viewBox={`0 0 ${width} ${height}`}
           class="drop-shadow-md"
         >
+          <title>Line Label</title>
           <g fill="none" fill-rule="evenodd">
             <polyline
               fill="none"
@@ -60,21 +61,21 @@ export const LineLabel: Component<LineLabelProps> = props => {
               stroke-linejoin="round"
               stroke-width="2"
               points={`${startX} ${startY} ${bendX} ${endY} ${endX} ${endY}`}
-            ></polyline>
+            />
             <circle
               class="fill-loopydemos-text-themed"
               cx={startX}
               cy={startY}
               r={LINE_CAP_RADIUS}
               fill={props.color}
-            ></circle>
+            />
             <circle
               class="fill-loopydemos-text-themed"
               cx={endX}
               cy={endY}
               r={LINE_CAP_RADIUS}
               fill={props.color}
-            ></circle>
+            />
           </g>
         </svg>
         <span

@@ -1,7 +1,7 @@
 export const getImageSrcFromSlug = (slug: string, isSeo?: boolean) => {
   if (isSeo) {
     const images = import.meta.glob<{ default: ImageMetadata }>(
-      "/src/images/seo-preview/*.{jpeg,jpg}"
+      "/src/images/seo-preview/*.{jpeg,jpg}",
     )
 
     const imageSrc =
@@ -15,7 +15,7 @@ export const getImageSrcFromSlug = (slug: string, isSeo?: boolean) => {
   }
 
   const images = import.meta.glob<{ default: ImageMetadata }>(
-    "/src/images/*.{jpeg,jpg,png,webp}"
+    "/src/images/*.{jpeg,jpg,png,webp}",
   )
 
   const imageSrc =

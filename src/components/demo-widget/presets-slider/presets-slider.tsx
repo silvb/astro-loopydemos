@@ -1,7 +1,7 @@
+import type { Preset } from "@types"
+import type { Component } from "solid-js"
 // import { Icon } from "astro-icon/components"
 import { PresetButton } from "./preset-button"
-import type { Preset } from "@types"
-import { type Component } from "solid-js"
 
 interface PresetsSliderProps {
   presets: Preset[]

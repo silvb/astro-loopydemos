@@ -1,21 +1,21 @@
+import { getImage } from "astro:assets"
+import { type CollectionEntry, getEntry } from "astro:content"
 import {
   LANDSCAPE_DEFAULT_ENCLOSURE,
   POTRAIT_DEFAULT_ENCLOSURE,
 } from "@constants/sizes"
 import type { StaticPedalData } from "@types"
-import { getImage } from "astro:assets"
-import { type CollectionEntry, getEntry } from "astro:content"
 import { getImageSrcFromSlug } from "./get-image-src-from-slug"
 
 export const getStaticPedalData = async (
-  pedals: string[]
+  pedals: string[],
 ): Promise<StaticPedalData[]> => {
-  let staticPedalData: StaticPedalData[] = []
+  const staticPedalData: StaticPedalData[] = []
 
   for (const pedalSlug of pedals) {
     const pedalData: CollectionEntry<"pedals"> = await getEntry(
       "pedals",
-      `${pedalSlug as CollectionEntry<"demos">["slug"]}.pedal`
+      `${pedalSlug as CollectionEntry<"demos">["slug"]}.pedal`,
     )
 
     if (!pedalData) {

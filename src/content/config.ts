@@ -28,7 +28,7 @@ export const dependencySchema = z.object({
       sourceValue: z.number().or(z.boolean()),
       targetValue: settingsValueSchema.optional(),
       colors: ledColorsSchema.optional(),
-    })
+    }),
   ),
 })
 
@@ -221,7 +221,7 @@ export const basePresetSchema = z.object({
         secondaryCircuitOnlySlug: z.string().optional(),
         initialSecondaryCircuits: z.array(z.string()).optional(),
         settings: settingsSchema.optional(),
-      })
+      }),
     )
     .optional(),
   isSweep: z.literal(undefined),

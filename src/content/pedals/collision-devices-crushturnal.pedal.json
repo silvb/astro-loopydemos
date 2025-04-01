@@ -157,7 +157,7 @@
           "on": "#7bfcff"
         }
       },
-      { 
+      {
         "id": "sequencer_led",
         "size": 32,
         "secondaryCircuitId": "sequencer",

@@ -15,7 +15,7 @@ const { metaImage, description, title, date, isBlogPost, noIndex } = Astro.props
 const formattedDate = date?.toISOString().split("T")[0]
 
 const isDev = import.meta.env.DEV
-const vercelPreviewBranchUrl = "https://" + import.meta.env.VERCEL_BRANCH_URL
+const vercelPreviewBranchUrl = `https://${import.meta.env.VERCEL_BRANCH_URL}`
 const isVercelPreview = import.meta.env.VERCEL_ENV === "preview"
 
 const siteUrl = isDev
@@ -143,36 +143,36 @@ const metaDescription = description || SITE_DESCRIPTION
 
 const metaTags = [
   {
-    name: `description`,
+    name: "description",
     content: metaDescription,
   },
   {
-    property: `og:title`,
+    property: "og:title",
     content: title || "Loopy Demos",
   },
   { property: "og:url", content: `${siteUrl}${pathname}` },
   {
-    property: `og:description`,
+    property: "og:description",
     content: metaDescription,
   },
   {
-    property: `og:type`,
-    content: `website`,
+    property: "og:type",
+    content: "website",
   },
   {
-    name: `twitter:card`,
-    content: `summary`,
+    name: "twitter:card",
+    content: "summary",
   },
   {
-    name: `twitter:creator`,
+    name: "twitter:creator",
     content: "Silvio Schmidt",
   },
   {
-    name: `twitter:title`,
+    name: "twitter:title",
     content: title,
   },
   {
-    name: `twitter:description`,
+    name: "twitter:description",
     content: metaDescription,
   },
   {

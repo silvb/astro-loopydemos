@@ -1,5 +1,5 @@
 import type { Knob } from "@types"
-import { mergeProps, type Component } from "solid-js"
+import { type Component, mergeProps } from "solid-js"
 
 type CbaKnobProps = Pick<Knob, "colors" | "size">
 
@@ -10,7 +10,7 @@ export const CbaKnob: Component<CbaKnobProps> = props => {
         primary: "#E58075",
       },
     },
-    props
+    props,
   )
 
   const uniqueKnobId = Math.random().toString(36).substring(7)
@@ -23,6 +23,7 @@ export const CbaKnob: Component<CbaKnobProps> = props => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
+      <title>Knob</title>
       <g fill="none">
         <circle
           cx="213"
@@ -30,7 +31,7 @@ export const CbaKnob: Component<CbaKnobProps> = props => {
           r="150"
           transform="rotate(45 213 212.361)"
           fill={`url(#${uniqueKnobId}-lin-gradient1)`}
-        ></circle>
+        />
         <circle
           cx="213"
           cy="212.254"
@@ -38,7 +39,7 @@ export const CbaKnob: Component<CbaKnobProps> = props => {
           stroke="#6A6A6A"
           stroke-width="6"
           stroke-dasharray="5 10"
-        ></circle>
+        />
         <circle
           cx="213"
           cy="212.355"
@@ -46,9 +47,9 @@ export const CbaKnob: Component<CbaKnobProps> = props => {
           transform="rotate(-45 213 212.355)"
           stroke={`url(#${uniqueKnobId}-lin-gradient2)`}
           stroke-width="40"
-        ></circle>
-        <path fill="#fff" d="M199 82h28v130h-28z"></path>
-        <path fill={mergedProps.colors.primary} d="M199 57h28v25h-28z"></path>
+        />
+        <path fill="#fff" d="M199 82h28v130h-28z" />
+        <path fill={mergedProps.colors.primary} d="M199 57h28v25h-28z" />
         <defs>
           <linearGradient
             id={`${uniqueKnobId}-lin-gradient1`}
@@ -58,8 +59,8 @@ export const CbaKnob: Component<CbaKnobProps> = props => {
             y2="362.361"
             gradientUnits="userSpaceOnUse"
           >
-            <stop offset=".49" stop-color="#575757"></stop>
-            <stop offset="1" stop-color="#EFEFEF"></stop>
+            <stop offset=".49" stop-color="#575757" />
+            <stop offset="1" stop-color="#EFEFEF" />
           </linearGradient>
           <linearGradient
             id={`${uniqueKnobId}-lin-gradient2`}
@@ -69,9 +70,9 @@ export const CbaKnob: Component<CbaKnobProps> = props => {
             y2="362.355"
             gradientUnits="userSpaceOnUse"
           >
-            <stop stop-color="#7D7D7D"></stop>
-            <stop offset=".516" stop-color="#fff"></stop>
-            <stop offset="1" stop-color="#838383"></stop>
+            <stop stop-color="#7D7D7D" />
+            <stop offset=".516" stop-color="#fff" />
+            <stop offset="1" stop-color="#838383" />
           </linearGradient>
         </defs>
       </g>

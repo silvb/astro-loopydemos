@@ -1,7 +1,7 @@
-import { Show, type Component } from "solid-js"
-import { getDisplayText } from "./get-display-text"
+import { type Component, Show } from "solid-js"
 import { useDemoState } from "../demo-state-store"
 import { AudioPlayerVisualizer } from "./audio-player-visualizer"
+import { getDisplayText } from "./get-display-text"
 
 export const AudioPlayerDisplay: Component = () => {
   const {
@@ -35,7 +35,7 @@ export const AudioPlayerDisplay: Component = () => {
               false,
               isLoading(),
               isAnyPedalOn(),
-              hasErrors()
+              hasErrors(),
             )}
           </span>
         }

@@ -1,9 +1,7 @@
 import type { Component } from "solid-js"
 import { useDemoState } from "../demo-state-store"
 
-interface BackingTrackToggleProps {}
-
-export const BackingTrackToggle: Component<BackingTrackToggleProps> = () => {
+export const BackingTrackToggle: Component = () => {
   const { isBackingTrackMuted, setIsBackingTrackMuted } = useDemoState()
   const uniqueToggleId = `backing-track-toggle-${Math.random().toString(36).slice(2)}`
   return (

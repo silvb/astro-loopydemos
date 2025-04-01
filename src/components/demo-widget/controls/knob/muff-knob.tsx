@@ -1,5 +1,5 @@
 import type { Knob } from "@types"
-import { type Component } from "solid-js"
+import type { Component } from "solid-js"
 
 type SimpleKnobProps = Pick<Knob, "size">
 
@@ -11,6 +11,7 @@ export const MuffKnob: Component<SimpleKnobProps> = props => (
     fill="none"
     xmlns="http://www.w3.org/2000/svg"
   >
+    <title>Knob</title>
     <g>
       <circle
         cx="136"

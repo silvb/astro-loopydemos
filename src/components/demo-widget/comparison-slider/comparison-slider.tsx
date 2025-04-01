@@ -1,7 +1,7 @@
-import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
-import { ComparisonPedalSelect } from "../comparison-slider/comparison-pedal-select"
-import type { Component } from "solid-js"
 import type { StaticPedalData } from "@types"
+import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
+import type { Component } from "solid-js"
+import { ComparisonPedalSelect } from "../comparison-slider/comparison-pedal-select"
 import { useDemoState } from "../demo-state-store"
 
 type PedalData = Pick<StaticPedalData, "slug" | "imgSrc" | "imgSrcSet">

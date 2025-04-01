@@ -1,5 +1,5 @@
 import type { Switch, SwitchState } from "@types"
-import { mergeProps, type Component } from "solid-js"
+import { type Component, mergeProps } from "solid-js"
 
 interface ThreewaySwitchProps
   extends Pick<Switch, "size" | "orientation" | "colors"> {
@@ -14,7 +14,7 @@ export const ThreewaySwitch: Component<ThreewaySwitchProps> = props => {
       orientation: "horizontal",
       colors: { primary: "#312e2f" },
     },
-    props
+    props,
   )
 
   return (
@@ -24,6 +24,7 @@ export const ThreewaySwitch: Component<ThreewaySwitchProps> = props => {
       height={mergedProps.size}
       viewBox="0 0 64 64"
     >
+      <title>Threeway Switch</title>
       <g
         fill="none"
         transform={`rotate(${mergedProps.orientation === "vertical" ? -90 : 0} 32 32)`}

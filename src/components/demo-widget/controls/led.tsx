@@ -1,6 +1,6 @@
 import { useDemoState } from "@components/demo-widget/demo-state-store"
 import type { Led as LedType } from "@types"
-import { type Component, Switch, Match, Show, mergeProps } from "solid-js"
+import { type Component, Match, Show, Switch, mergeProps } from "solid-js"
 
 const MOOD_COLORS = {
   on: "greenyellow",
@@ -27,14 +27,14 @@ export const Led: Component<LedProps> = props => {
       colors: isMood ? MOOD_COLORS : { ...DEFAULT_COLORS, ...props.colors },
       type: "round",
     },
-    props
+    props,
   )
 
   const mergedDynamicColors = () => {
     if (!props.dependency) return mergedProps.colors
     const dependencyColors = props.dependency?.values?.find(
       ({ sourceValue }) =>
-        sourceValue === getSetting(props.pedalSlug, props.dependency?.source)
+        sourceValue === getSetting(props.pedalSlug, props.dependency?.source),
     )?.colors
 
     return { ...mergedProps.colors, ...dependencyColors }
@@ -75,6 +75,7 @@ export const Led: Component<LedProps> = props => {
           id={uniqueOnLedId}
           class="z-10"
         >
+          <title>LED</title>
           <Show
             when={isMood}
             fallback={

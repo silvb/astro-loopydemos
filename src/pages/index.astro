@@ -1,9 +1,9 @@
 ---
+import { type CollectionEntry, getCollection } from "astro:content"
 import DemoPreviewCard from "@components/demo-preview-card.astro"
 import LinkButton from "@components/link-button.astro"
 import PostPreviewCard from "@components/post-preview-card.astro"
 import DefaultLayout from "@layouts/default-layout.astro"
-import { type CollectionEntry, getCollection } from "astro:content"
 
 const allDemos: CollectionEntry<"demos">[] = await getCollection("demos")
 const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")

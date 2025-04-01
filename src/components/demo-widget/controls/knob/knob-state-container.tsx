@@ -1,7 +1,7 @@
 import { useDemoState } from "@components/demo-widget/demo-state-store"
-import { Show, type ParentComponent } from "solid-js"
-import { DragSweepControl } from "./drag-sweep-control"
+import { type ParentComponent, Show } from "solid-js"
 import { SweepIndicator } from "../sweep-indicator"
+import { DragSweepControl } from "./drag-sweep-control"
 
 interface KnobStateContainerProps {
   id: string

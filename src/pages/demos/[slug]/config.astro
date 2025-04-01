@@ -1,12 +1,12 @@
 ---
-import DefaultLayout from "@layouts/default-layout.astro"
-import type { GetStaticPaths, InferGetStaticPropsType } from "astro"
-import { getCollection, type CollectionEntry, getEntry } from "astro:content"
-import SEO from "@layouts/seo.astro"
+import { type CollectionEntry, getCollection, getEntry } from "astro:content"
 import { EmbedConfig } from "@components/embed-config"
-import { getStaticPedalData } from "@utils/get-static-pedal-data"
-import { getPedalsFromPresets } from "@utils/get-pedals-from-presets"
 import { EMBED_HEIGHT_OFFSET } from "@constants/sizes"
+import DefaultLayout from "@layouts/default-layout.astro"
+import SEO from "@layouts/seo.astro"
+import { getPedalsFromPresets } from "@utils/get-pedals-from-presets"
+import { getStaticPedalData } from "@utils/get-static-pedal-data"
+import type { GetStaticPaths, InferGetStaticPropsType } from "astro"
 
 export const getStaticPaths = (async () => {
   const allDemos: CollectionEntry<"demos">[] = await getCollection("demos")
@@ -25,7 +25,7 @@ const title = `${model} - ${builder}: Embed Widget Configurator`
 const frameTitle = `${model} - ${builder} | Loopy Demos`
 
 const isDev = import.meta.env.DEV
-const vercelPreviewBranchUrl = "https://" + import.meta.env.VERCEL_BRANCH_URL
+const vercelPreviewBranchUrl = `https://${import.meta.env.VERCEL_BRANCH_URL}`
 const isVercelPreview = import.meta.env.VERCEL_ENV === "preview"
 
 const siteUrl = isDev
@@ -38,7 +38,7 @@ const {
   data: { presets },
 }: CollectionEntry<"presets"> = await getEntry(
   "presets",
-  `${slug as CollectionEntry<"demos">["slug"]}.presets`
+  `${slug as CollectionEntry<"demos">["slug"]}.presets`,
 )
 
 const pedalsInDemo = [...new Set([...getPedalsFromPresets(presets), slug])]

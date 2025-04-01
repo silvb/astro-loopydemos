@@ -1,5 +1,5 @@
 import type { CBASwitchSate } from "@types"
-import { For, mergeProps, type Component } from "solid-js"
+import { type Component, For, mergeProps } from "solid-js"
 
 interface CBADipSwitchesProps {
   state: CBASwitchSate
@@ -37,21 +37,21 @@ export const CBADipSwitches: Component<CBADipSwitchesProps> = props => {
         false,
       ],
     },
-    props
+    props,
   )
 
   const dipInlineStyle = {
-    "--width": 6 + "px",
-    "--height": 12 + "px",
-    "--nippleWidth": 5 + "px",
-    "--nippleHeight": 6 + "px",
+    "--width": `${6}px`,
+    "--height": `${12}px`,
+    "--nippleWidth": `${5}px`,
+    "--nippleHeight": `${6}px`,
   }
   return (
     <div
       class="box-border flex bg-[#aa232f] px-0.5 py-0"
       style={{
-        width: DIMENSIONS.width + "px",
-        height: DIMENSIONS.height + "px",
+        width: `${DIMENSIONS.width}px`,
+        height: `${DIMENSIONS.height}px`,
       }}
     >
       <div class={dipRowClass}>

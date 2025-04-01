@@ -1,5 +1,5 @@
 import type { Knob } from "@types"
-import { mergeProps, type Component } from "solid-js"
+import { type Component, mergeProps } from "solid-js"
 
 type SimpleKnobProps = Pick<Knob, "colors" | "size">
 
@@ -11,7 +11,7 @@ export const SimpleKnob: Component<SimpleKnobProps> = props => {
         tick: "#FFFDFE",
       },
     },
-    props
+    props,
   )
   return (
     <svg
@@ -20,6 +20,7 @@ export const SimpleKnob: Component<SimpleKnobProps> = props => {
       height={mergedProps.size}
       viewBox="0 0 120 120"
     >
+      <title>Knob</title>
       <g fill="none">
         <circle
           cx="60"
@@ -27,7 +28,7 @@ export const SimpleKnob: Component<SimpleKnobProps> = props => {
           r="60"
           fill={mergedProps.colors.primary}
           stroke-width="4"
-        ></circle>
+        />
         <rect
           width="8"
           height="40"
@@ -36,7 +37,7 @@ export const SimpleKnob: Component<SimpleKnobProps> = props => {
           fill={mergedProps.colors.tick}
           rx="4"
           ry="4"
-        ></rect>
+        />
       </g>
     </svg>
   )
