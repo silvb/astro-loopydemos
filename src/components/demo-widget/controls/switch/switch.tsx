@@ -1,15 +1,15 @@
-import type { CBASwitchSate, SwitchState, Switch as SwitchType } from "@types"
-import { ToggleSwitch } from "./toggle-switch"
-import { Match, Switch as RenderSwitch, Show, type Component } from "solid-js"
 import { useDemoState } from "@components/demo-widget/demo-state-store"
-import { ThreewaySwitch } from "./threeway-switch"
-import { RockerSwitch } from "./rocker-switch"
-import { PushButton } from "./push-button"
-import { SlideSwitch } from "./slide-switch"
-import { CBADipSwitches } from "./cba-dip-switches"
-import { StompSwitch } from "./stomp-switch"
-import { SweepIndicator } from "../sweep-indicator"
+import type { CBASwitchSate, SwitchState, Switch as SwitchType } from "@types"
+import { type Component, Match, Switch as RenderSwitch, Show } from "solid-js"
 import { MomentaryIndicator } from "../momentary-indicator"
+import { SweepIndicator } from "../sweep-indicator"
+import { CBADipSwitches } from "./cba-dip-switches"
+import { PushButton } from "./push-button"
+import { RockerSwitch } from "./rocker-switch"
+import { SlideSwitch } from "./slide-switch"
+import { StompSwitch } from "./stomp-switch"
+import { ThreewaySwitch } from "./threeway-switch"
+import { ToggleSwitch } from "./toggle-switch"
 
 interface SwitchProps extends SwitchType {
   pedalSlug: string
@@ -35,6 +35,7 @@ export const Switch: Component<SwitchProps> = props => {
       <Show when={isSweepTarget(props.id, props.pedalSlug)}>
         <SweepIndicator size={props.size} color={props.highlightColor} />
         <button
+          type="button"
           class="absolute left-0 top-0 z-10 h-full w-full"
           style={{ width: `${props.size}px`, height: `${props.size}px` }}
           onClick={() => {
@@ -45,10 +46,10 @@ export const Switch: Component<SwitchProps> = props => {
             const nextIndex = (currIndex + 1) % numSweepValues
             selectSweepSetting(
               props.id,
-              activePreset()?.values?.[nextIndex] ?? 1
+              activePreset()?.values?.[nextIndex] ?? 1,
             )
           }}
-        ></button>
+        />
       </Show>
       <RenderSwitch>
         <Match when={props.type === "toggle"}>
@@ -94,10 +95,10 @@ export const Switch: Component<SwitchProps> = props => {
               [
                 activePreset()?.secondaryCircuitId,
                 activePreset()?.comparison?.find(
-                  compPreset => compPreset.pedalSlug === props.pedalSlug
+                  compPreset => compPreset.pedalSlug === props.pedalSlug,
                 )?.secondaryCircuitId,
                 activePreset()?.chain?.find(
-                  chainItem => chainItem.pedalSlug === props.pedalSlug
+                  chainItem => chainItem.pedalSlug === props.pedalSlug,
                 )?.secondaryCircuitId,
               ].includes(props.secondaryCircuitId)
             }
@@ -112,7 +113,7 @@ export const Switch: Component<SwitchProps> = props => {
               isMomentary={props.isMomentary}
               isOn={Boolean(
                 props.secondaryCircuitId &&
-                  secondaryCircuitsOn().includes(props.secondaryCircuitId)
+                  secondaryCircuitsOn().includes(props.secondaryCircuitId),
               )}
               onClick={() => {
                 if (props.id === "bypass_switch") {

@@ -1,5 +1,5 @@
 import type { Knob } from "@types"
-import { mergeProps, type Component } from "solid-js"
+import { type Component, mergeProps } from "solid-js"
 
 type ChickenHeadKnobProps = Pick<Knob, "colors" | "size">
 
@@ -12,7 +12,7 @@ export const ChickenHeadKnob: Component<ChickenHeadKnobProps> = props => {
         secondary: "black",
       },
     },
-    props
+    props,
   )
 
   return (
@@ -22,6 +22,7 @@ export const ChickenHeadKnob: Component<ChickenHeadKnobProps> = props => {
       height={mergedProps.size}
       viewBox="0 0 120 120"
     >
+      <title>Knob</title>
       <g fill="none">
         <circle
           cx="60"
@@ -29,21 +30,21 @@ export const ChickenHeadKnob: Component<ChickenHeadKnobProps> = props => {
           r="60"
           fill={mergedProps.colors.secondary}
           stroke-width="4"
-        ></circle>
+        />
         <circle
           cx="60"
           cy="60"
           r="36"
           fill={mergedProps.colors.primary}
           stroke-width="4"
-        ></circle>
+        />
         <polygon
           points="60,5 35,105 85,105"
           fill={mergedProps.colors.primary}
           stroke-width="4"
           stroke-linejoin="round"
           stroke={mergedProps.colors.primary}
-        ></polygon>
+        />
         <rect
           width="4"
           height="48"
@@ -52,7 +53,7 @@ export const ChickenHeadKnob: Component<ChickenHeadKnobProps> = props => {
           fill={mergedProps.colors.tick}
           rx="2"
           ry="2"
-        ></rect>
+        />
       </g>
     </svg>
   )

@@ -29,10 +29,10 @@ export const StompSwitch: Component<StompSwitchProps> = props => {
       id={props.id}
       class="relative m-0"
       onMouseDown={() => {
-        setIsDown(props.isMomentary ? (props.isOn ? false : true) : true)
+        setIsDown(props.isMomentary ? !props.isOn : true)
       }}
       onTouchStart={() => {
-        setIsDown(props.isMomentary ? (props.isOn ? false : true) : true)
+        setIsDown(props.isMomentary ? !props.isOn : true)
       }}
       onMouseUp={() => {
         if (!props.isMomentary) setIsDown(false)
@@ -49,6 +49,7 @@ export const StompSwitch: Component<StompSwitchProps> = props => {
         viewBox="0 0 52 52"
         class="pointer-events-none select-none"
       >
+        <title>{props["aria-label"]}</title>
         <defs>
           <radialGradient id={`${uniqueStompId}-gradient1`}>
             <stop

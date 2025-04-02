@@ -1,27 +1,27 @@
 import type { Knob as KnobType } from "@types"
-import { SimpleKnob } from "./simple-knob"
-import { CbaKnob } from "./cba-knob"
-import { BrutalistKnob } from "./brutalist-knob"
-import { ChickenHeadKnob } from "./chicken-head-knob"
-import { SimpleDotKnob } from "./simple-dot-knob"
-import { DaviesKnob } from "./davies-knob"
-import { FairfieldKnob } from "./fairfield-knob"
-import { GojiraKnob } from "./gojira-knob"
-import { OffsetKnob } from "./offset-knob"
-import { JhsKnob } from "./jhs-knob"
-import { ObneKnob } from "./obne-knob"
+import { type Component, Match, Switch, splitProps } from "solid-js"
 import { ArrowKnob } from "./arrow-knob"
 import { BakelitKnob } from "./bakelit-knob"
-import { WalrusAudioKnob } from "./walrus-audio-knob"
+import { BrutalistKnob } from "./brutalist-knob"
+import { CbaKnob } from "./cba-knob"
+import { ChickenHeadKnob } from "./chicken-head-knob"
+import { DaviesKnob } from "./davies-knob"
+import { FairfieldKnob } from "./fairfield-knob"
+import { FanclubKnob } from "./fanclub-knob"
 import { FlbKnob } from "./flb-knob"
+import { GojiraKnob } from "./gojira-knob"
+import { JhsKnob } from "./jhs-knob"
 import { Joystick } from "./joystick"
+import { KnobStateContainer } from "./knob-state-container"
 import { KnurledKnob } from "./knurled-knob"
 import { LichtlaermAudioKnob } from "./lichtlaerm-audio-knob"
-import { RoundChickenHeadKnob } from "./round-chicken-head-knob"
-import { KnobStateContainer } from "./knob-state-container"
-import { Match, splitProps, Switch, type Component } from "solid-js"
 import { MuffKnob } from "./muff-knob"
-import { FanclubKnob } from "./fanclub-knob"
+import { ObneKnob } from "./obne-knob"
+import { OffsetKnob } from "./offset-knob"
+import { RoundChickenHeadKnob } from "./round-chicken-head-knob"
+import { SimpleDotKnob } from "./simple-dot-knob"
+import { SimpleKnob } from "./simple-knob"
+import { WalrusAudioKnob } from "./walrus-audio-knob"
 
 interface KnobProps extends KnobType {
   pedalSlug: string
@@ -31,7 +31,7 @@ export const Knob: Component<KnobProps> = props => {
   const [stateContainerProps, sizeAndColorProps, _] = splitProps(
     props,
     ["id", "isRotary", "rotaryAngles", "size", "pedalSlug", "highlightColor"],
-    ["colors", "size"]
+    ["colors", "size"],
   )
 
   return (

@@ -1,10 +1,10 @@
 ---
-import { getEntry, type CollectionEntry } from "astro:content"
+import { type CollectionEntry, getEntry } from "astro:content"
 
 import { getPedalsFromPresets } from "@utils/get-pedals-from-presets"
+import { getStaticPedalData } from "@utils/get-static-pedal-data"
 import { DemoWidgetContainer } from "./demo-widget-container"
 import LoadingSkeleton from "./loading-skeleton.astro"
-import { getStaticPedalData } from "@utils/get-static-pedal-data"
 
 interface Props {
   presetSlug: string
@@ -16,7 +16,7 @@ const {
   data: { presets, hasBackingTrack, volume, mainPedal },
 }: CollectionEntry<"presets"> = await getEntry(
   "presets",
-  `${presetSlug as CollectionEntry<"demos">["slug"]}.presets`
+  `${presetSlug as CollectionEntry<"demos">["slug"]}.presets`,
 )
 
 let pedals = [...new Set(getPedalsFromPresets(presets))]

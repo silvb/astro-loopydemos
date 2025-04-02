@@ -1,6 +1,6 @@
-import { createSignal, type Component } from "solid-js"
-import { PhCopyIcon } from "./icons/ph-copy-icon"
+import { type Component, createSignal } from "solid-js"
 import { PhCheckIcon } from "./icons/ph-check-icon"
+import { PhCopyIcon } from "./icons/ph-copy-icon"
 
 type EmbedCodeProps =
   | {

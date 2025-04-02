@@ -1,4 +1,4 @@
-import { Match, mergeProps, Switch, type Component } from "solid-js"
+import { type Component, Match, Switch, mergeProps } from "solid-js"
 
 interface FaderFaceProps {
   size?: number
@@ -10,7 +10,7 @@ interface FaderFaceProps {
 export const FaderFace: Component<FaderFaceProps> = props => {
   const mergedProps = mergeProps(
     { size: 64, tickColor: "#d0c6ac", faceColor: "#4d4d4d", type: "walrus" },
-    props
+    props,
   )
 
   return (
@@ -22,6 +22,7 @@ export const FaderFace: Component<FaderFaceProps> = props => {
           height={mergedProps.size}
           viewBox="0 0 96 64"
         >
+          <title>Fader Face</title>
           <g fill="none">
             <rect
               x={0}
@@ -64,6 +65,7 @@ export const FaderFace: Component<FaderFaceProps> = props => {
           height={mergedProps.size}
           viewBox="0 0 96 64"
         >
+          <title>Fader Face</title>
           <g fill="none">
             <rect
               x={16}

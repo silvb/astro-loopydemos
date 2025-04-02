@@ -1,14 +1,14 @@
 import type { Switch, SwitchState } from "@types"
-import { mergeProps, type Component } from "solid-js"
+import { type Component, mergeProps } from "solid-js"
 
 function adjustBrightness(hex: string, brightness: number) {
   // Remove the hash at the start if it's there
-  hex = hex.replace(/^#/, "")
+  const hexWithoutHash = hex.replace(/^#/, "")
 
   // Parse the r, g, b values
-  const r = parseInt(hex.substring(0, 2), 16)
-  const g = parseInt(hex.substring(2, 4), 16)
-  const b = parseInt(hex.substring(4, 6), 16)
+  const r = Number.parseInt(hexWithoutHash.substring(0, 2), 16)
+  const g = Number.parseInt(hexWithoutHash.substring(2, 4), 16)
+  const b = Number.parseInt(hexWithoutHash.substring(4, 6), 16)
 
   // Calculate new values for r, g, b
   const rAdjust = Math.min(Math.max(0, r * brightness), 255)
@@ -37,7 +37,7 @@ export const RockerSwitch: Component<RockerSwitchProps> = props => {
       orientation: "horizontal",
       colors: { primary: "#f74709" },
     },
-    props
+    props,
   )
 
   const a = 64
@@ -60,6 +60,7 @@ export const RockerSwitch: Component<RockerSwitchProps> = props => {
       height={height}
       viewBox={`0 0 ${viewboxWidth} ${viewboxHeight}`}
     >
+      <title>Rocker Switch</title>
       <g
         fill="none"
         transform={`rotate(${

@@ -1,19 +1,19 @@
 import { Knob } from "@components/demo-widget/controls/knob"
-import { AbsolutePosition } from "@components/demo-widget/pedal/absolute-position"
-import { Switch } from "@components/demo-widget/controls/switch"
 import { Led } from "@components/demo-widget/controls/led"
-import { PedalStateContainer } from "./pedal-state-container"
-import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
 import { LineLabel } from "@components/demo-widget/controls/line-label"
 import { Slider } from "@components/demo-widget/controls/slider"
+import { Switch } from "@components/demo-widget/controls/switch"
+import { AbsolutePosition } from "@components/demo-widget/pedal/absolute-position"
+import type { StaticPedalData } from "@types"
+import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
 import {
   type Component,
-  Switch as RenderSwitch,
   Match,
+  Switch as RenderSwitch,
   createSignal,
 } from "solid-js"
-import type { StaticPedalData } from "@types"
 import { DarkFatherControls } from "../controls/dark-father-controls"
+import { PedalStateContainer } from "./pedal-state-container"
 
 type PedalProps = StaticPedalData
 

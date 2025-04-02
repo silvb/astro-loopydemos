@@ -9,5 +9,5 @@ export const MomentaryIndicator: Component<MomentaryIndicatorProps> = props => (
   <div
     class={styles["momentary-indicator"]}
     style={{ "--size": `${props.size}px` }}
-  ></div>
+  />
 )

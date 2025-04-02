@@ -105,7 +105,6 @@
         "shift": 5,
         "teeter": 5,
         "wobble": 7,
-        "wobble_label": "effect: auto whammy",
         "totter": 10,
         "shift_label": "speed",
         "teeter_label": "octave blend",

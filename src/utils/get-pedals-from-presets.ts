@@ -8,7 +8,7 @@ export const getPedalsFromPresets = (presets: Preset[]): string[] => [
         ...(chain?.map(({ pedalSlug }) => pedalSlug) ?? []),
         ...(comparison?.map(({ pedalSlug }) => pedalSlug) ?? []),
       ],
-      [] as string[]
-    )
+      [] as string[],
+    ),
   ),
 ]

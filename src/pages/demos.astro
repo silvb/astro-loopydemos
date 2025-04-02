@@ -1,7 +1,7 @@
 ---
-import Layout from "@layouts/default-layout.astro"
+import { type CollectionEntry, getCollection } from "astro:content"
 import DemoPreviewCard from "@components/demo-preview-card.astro"
-import { getCollection, type CollectionEntry } from "astro:content"
+import Layout from "@layouts/default-layout.astro"
 
 const allDemos: CollectionEntry<"demos">[] = await getCollection("demos")
 ---

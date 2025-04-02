@@ -1,8 +1,8 @@
-import type { Preset } from "@types"
-import { onMount, Show, type Component } from "solid-js"
-import { useDemoState } from "../demo-state-store"
 import { PhFadersIcon } from "@components/icons/ph-faders-icon"
 import { PhSpinnerIcon } from "@components/icons/ph-spinner-icon"
+import type { Preset } from "@types"
+import { type Component, Show, onMount } from "solid-js"
+import { useDemoState } from "../demo-state-store"
 
 type PresetButtonProps = Pick<Preset, "id" | "isSweep" | "label">
 
@@ -40,6 +40,7 @@ export const PresetButton: Component<PresetButtonProps> = props => {
     <button
       id={props.id}
       ref={buttonEl}
+      type="button"
       onClick={() => {
         selectPreset(props.id)
         buttonEl.scrollIntoView({

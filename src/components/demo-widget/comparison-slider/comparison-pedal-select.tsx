@@ -1,4 +1,4 @@
-import { type ParentComponent } from "solid-js"
+import type { ParentComponent } from "solid-js"
 import { useDemoState } from "../demo-state-store"
 
 interface ComparisonPedalSelectProps {
@@ -12,6 +12,7 @@ export const ComparisonPedalSelect: ParentComponent<
 
   return (
     <button
+      type="button"
       onClick={() => {
         setActivePedals([props.pedalSlug])
       }}
@@ -20,7 +21,7 @@ export const ComparisonPedalSelect: ParentComponent<
         "bg-loopydemos-secondary border-[1px] rounded-md border-loopydemos-highlight-primary":
           activePedals().includes(props.pedalSlug),
         "bg-loopydemos-secondary opacity-30": !activePedals().includes(
-          props.pedalSlug
+          props.pedalSlug,
         ),
       }}
     >

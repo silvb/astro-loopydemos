@@ -1,5 +1,5 @@
 import type { ControlElement } from "@types"
-import { mergeProps, type Component } from "solid-js"
+import { type Component, mergeProps } from "solid-js"
 import styles from "./sweep-indicator.module.css"
 
 interface SweepIndicatorProps {

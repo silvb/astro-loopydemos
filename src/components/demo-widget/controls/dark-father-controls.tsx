@@ -1,6 +1,6 @@
 import type { Component } from "solid-js"
-import { AbsolutePosition } from "../pedal/absolute-position"
 import { useDemoState } from "../demo-state-store"
+import { AbsolutePosition } from "../pedal/absolute-position"
 
 const NAME = "vvco-pedals-dark-father-preamp"
 
@@ -28,7 +28,7 @@ const PushButton: Component<PushButtonProps> = props => {
         "--width": `${props.width}px`,
         "--height": `${props.height}px`,
       }}
-    ></div>
+    />
   )
 }
 
@@ -36,7 +36,7 @@ const BigFader: Component<{ id: string }> = props => {
   const { getSetting } = useDemoState()
   return (
     <div class="flex h-[242px] w-[25px] content-center bg-[#0d0f0a]">
-      <div class="mx-auto h-full w-[6px] rounded-sm border border-[gray]"></div>
+      <div class="mx-auto h-full w-[6px] rounded-sm border border-[gray]" />
       <div
         class="absolute bottom-[-18px] z-10 h-9 w-full transition-transform"
         style={{
@@ -49,6 +49,7 @@ const BigFader: Component<{ id: string }> = props => {
           height={36}
           viewBox="0 0 25 36"
         >
+          <title>Fader Handle</title>
           <g fill="none">
             <rect
               stroke="gray"
@@ -148,6 +149,7 @@ export const DarkFatherControls: Component = () => {
           viewBox="0 0 70 100"
           id="eq-section-svg"
         >
+          <title>EQ Section</title>
           <defs>
             <radialGradient id="dark-father-eq-section-on-gradient">
               <stop offset="5%" stop-color="mintcream" />

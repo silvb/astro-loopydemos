@@ -1,6 +1,6 @@
 import { useDemoState } from "@components/demo-widget/demo-state-store"
 import type { Knob } from "@types"
-import { type Component } from "solid-js"
+import type { Component } from "solid-js"
 
 const VIEWBOX_SIZE = 912
 const STICK_RADIUS = 72
@@ -42,14 +42,9 @@ export const Joystick: Component<Pick<Knob, "id" | "size">> = props => {
       fill="none"
       xmlns="http://www.w3.org/2000/svg"
     >
-      <circle cx="456" cy="456" r="456" fill="#2E2E2E"></circle>
-      <circle
-        cx="456"
-        cy="456"
-        r="328"
-        stroke="#232323"
-        stroke-width="4"
-      ></circle>
+      <title>Joystick</title>
+      <circle cx="456" cy="456" r="456" fill="#2E2E2E" />
+      <circle cx="456" cy="456" r="328" stroke="#232323" stroke-width="4" />
       <circle
         cx="456"
         cy="456"
@@ -57,7 +52,7 @@ export const Joystick: Component<Pick<Knob, "id" | "size">> = props => {
         fill={`url(#${uniqueId}-paint0_radial_1_23)`}
         stroke="#232323"
         stroke-width="4"
-      ></circle>
+      />
       <circle
         cx="738"
         cy="178"
@@ -65,7 +60,7 @@ export const Joystick: Component<Pick<Knob, "id" | "size">> = props => {
         fill="#292929"
         stroke="#232323"
         stroke-width="4"
-      ></circle>
+      />
       <line
         x1="728.828"
         y1="167.087"
@@ -74,7 +69,7 @@ export const Joystick: Component<Pick<Knob, "id" | "size">> = props => {
         stroke="#4A4949"
         stroke-width="4"
         stroke-linecap="round"
-      ></line>
+      />
       <line
         x1="728"
         y1="186.799"
@@ -83,7 +78,7 @@ export const Joystick: Component<Pick<Knob, "id" | "size">> = props => {
         stroke="#4A4949"
         stroke-width="4"
         stroke-linecap="round"
-      ></line>
+      />
       <circle
         cx="181"
         cy="179"
@@ -91,7 +86,7 @@ export const Joystick: Component<Pick<Knob, "id" | "size">> = props => {
         fill="#292929"
         stroke="#232323"
         stroke-width="4"
-      ></circle>
+      />
       <line
         x1="171.828"
         y1="168.087"
@@ -100,7 +95,7 @@ export const Joystick: Component<Pick<Knob, "id" | "size">> = props => {
         stroke="#4A4949"
         stroke-width="4"
         stroke-linecap="round"
-      ></line>
+      />
       <line
         x1="171"
         y1="187.799"
@@ -109,7 +104,7 @@ export const Joystick: Component<Pick<Knob, "id" | "size">> = props => {
         stroke="#4A4949"
         stroke-width="4"
         stroke-linecap="round"
-      ></line>
+      />
       <circle
         cx="173"
         cy="732"
@@ -117,7 +112,7 @@ export const Joystick: Component<Pick<Knob, "id" | "size">> = props => {
         fill="#292929"
         stroke="#232323"
         stroke-width="4"
-      ></circle>
+      />
       <line
         x1="163.828"
         y1="721.087"
@@ -126,7 +121,7 @@ export const Joystick: Component<Pick<Knob, "id" | "size">> = props => {
         stroke="#4A4949"
         stroke-width="4"
         stroke-linecap="round"
-      ></line>
+      />
       <line
         x1="163"
         y1="740.799"
@@ -135,7 +130,7 @@ export const Joystick: Component<Pick<Knob, "id" | "size">> = props => {
         stroke="#4A4949"
         stroke-width="4"
         stroke-linecap="round"
-      ></line>
+      />
       <circle
         cx="727"
         cy="742"
@@ -143,7 +138,7 @@ export const Joystick: Component<Pick<Knob, "id" | "size">> = props => {
         fill="#292929"
         stroke="#232323"
         stroke-width="4"
-      ></circle>
+      />
       <line
         x1="717.828"
         y1="731.087"
@@ -152,7 +147,7 @@ export const Joystick: Component<Pick<Knob, "id" | "size">> = props => {
         stroke="#4A4949"
         stroke-width="4"
         stroke-linecap="round"
-      ></line>
+      />
       <line
         x1="717"
         y1="750.799"
@@ -161,7 +156,7 @@ export const Joystick: Component<Pick<Knob, "id" | "size">> = props => {
         stroke="#4A4949"
         stroke-width="4"
         stroke-linecap="round"
-      ></line>
+      />
       <circle
         cx={stickCoords().x}
         cy={stickCoords().y}
@@ -169,7 +164,7 @@ export const Joystick: Component<Pick<Knob, "id" | "size">> = props => {
         fill={`url(#${uniqueId}-stick_head_radial)`}
         class="stroke-loopydemos-highlight-primary"
         stroke-width="16"
-      ></circle>
+      />
       <defs>
         <radialGradient
           id={`${uniqueId}-paint0_radial_1_23`}
@@ -179,12 +174,12 @@ export const Joystick: Component<Pick<Knob, "id" | "size">> = props => {
           gradientUnits="userSpaceOnUse"
           gradientTransform="translate(456 456) rotate(90) scale(280)"
         >
-          <stop stop-color="#6C6C6C" stop-opacity="0"></stop>
-          <stop offset="1" stop-color="#1E1E1E"></stop>
+          <stop stop-color="#6C6C6C" stop-opacity="0" />
+          <stop offset="1" stop-color="#1E1E1E" />
         </radialGradient>
         <radialGradient id={`${uniqueId}-stick_head_radial`}>
-          <stop stop-color="#767676"></stop>
-          <stop stop-color="#232323" offset="1"></stop>
+          <stop stop-color="#767676" />
+          <stop stop-color="#232323" offset="1" />
         </radialGradient>
       </defs>
     </svg>

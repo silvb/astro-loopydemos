@@ -1,5 +1,5 @@
 import type { Knob } from "@types"
-import { mergeProps, type Component } from "solid-js"
+import { type Component, mergeProps } from "solid-js"
 import styles from "./gradients.module.css"
 
 type FlbKnobProps = Pick<Knob, "size" | "colors">
@@ -12,7 +12,7 @@ export const FlbKnob: Component<FlbKnobProps> = props => {
         secondary: "#8a8a8a",
       },
     },
-    props
+    props,
   )
 
   const uniqueKnobId = Math.random().toString(36).substring(7)
@@ -31,9 +31,10 @@ export const FlbKnob: Component<FlbKnobProps> = props => {
         height={mergedProps.size}
         viewBox="0 0 64 64"
       >
+        <title>Knob</title>
         <defs>
           <mask id={`${uniqueKnobId}-cut-off-rect`}>
-            <rect x={0} y={0} height={24} width={64} fill="#fff"></rect>
+            <rect x={0} y={0} height={24} width={64} fill="#fff" />
           </mask>
         </defs>
         <g fill="none">
@@ -43,13 +44,8 @@ export const FlbKnob: Component<FlbKnobProps> = props => {
             r="32"
             fill={mergedProps.colors.secondary}
             mask={`url(#${uniqueKnobId}-cut-off-rect)`}
-          ></circle>
-          <circle
-            r="5"
-            cx="31"
-            cy="12"
-            fill={mergedProps.colors.primary}
-          ></circle>
+          />
+          <circle r="5" cx="31" cy="12" fill={mergedProps.colors.primary} />
         </g>
       </svg>
     </div>

@@ -1,5 +1,5 @@
-import { createEffect, createSignal, on, type Component } from "solid-js"
 import { COLORS } from "@constants/colors"
+import { type Component, createEffect, createSignal, on } from "solid-js"
 import { createStore } from "solid-js/store"
 import { EmbedCode } from "./embed-code"
 
@@ -16,10 +16,10 @@ export const EmbedConfig: Component<EmbedConfigProps> = props => {
   const [height, setHeight] = createSignal(props.minHeight)
   const [width, setWidth] = createSignal(400)
   const [colors, setColors] = createStore({
-    primary: COLORS["primary"],
-    secondary: COLORS["secondary"],
-    text: COLORS["text"],
-    background: COLORS["background"],
+    primary: COLORS.primary,
+    secondary: COLORS.secondary,
+    text: COLORS.text,
+    background: COLORS.background,
     "highlight-primary": COLORS["highlight-primary"],
     "highlight-secondary": COLORS["highlight-secondary"],
     "highlight-tertiary": COLORS["highlight-tertiary"],
@@ -58,7 +58,7 @@ export const EmbedConfig: Component<EmbedConfigProps> = props => {
       <div
         class="size-10 cursor-pointer rounded-full border-4 border-loopydemos-background"
         style={{ "background-color": colors[props.color] }}
-      ></div>
+      />
     </label>
   )
 
@@ -72,9 +72,9 @@ export const EmbedConfig: Component<EmbedConfigProps> = props => {
               type="number"
               value={width()}
               min={MIN_WIDTH}
-              onChange={e => setWidth(parseInt(e.currentTarget.value))}
+              onChange={e => setWidth(Number.parseInt(e.currentTarget.value))}
               class="min-w-40 rounded-md bg-loopydemos-background p-2"
-            ></input>
+            />
             {width() < MIN_WIDTH && (
               <span class="text-sm italic text-loopydemos-red">{`This will look ugly on your site. Best to keep the width above ${MIN_WIDTH}px.`}</span>
             )}
@@ -87,9 +87,9 @@ export const EmbedConfig: Component<EmbedConfigProps> = props => {
               type="number"
               value={height()}
               min={props.minHeight}
-              onChange={e => setHeight(parseInt(e.currentTarget.value))}
+              onChange={e => setHeight(Number.parseInt(e.currentTarget.value))}
               class="min-w-40 rounded-md bg-loopydemos-background p-2"
-            ></input>
+            />
             {height() < props.minHeight && (
               <span class="text-sm italic text-loopydemos-red">{`This will look ugly on your site. Best to keep the height above ${props.minHeight}px.`}</span>
             )}
@@ -120,7 +120,7 @@ export const EmbedConfig: Component<EmbedConfigProps> = props => {
           title={props.title}
           loading="lazy"
           style={{ "border-radius": "12px", border: 0 }}
-        ></iframe>
+        />
       </div>
     </div>
   )

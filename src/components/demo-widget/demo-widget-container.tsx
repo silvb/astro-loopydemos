@@ -1,11 +1,11 @@
-import { onMount, type Component } from "solid-js"
-import { DemoStateProvider } from "./demo-state-store"
 import type { Preset, StaticPedalData } from "@types"
+import { type Component, onMount } from "solid-js"
 import { AudioPlayer } from "./audio-player"
 import { ComparisonSlider } from "./comparison-slider"
+import { DemoStateProvider } from "./demo-state-store"
+import { Pedal } from "./pedal"
 import { PresetsSlider } from "./presets-slider"
 import { ScaleFactor } from "./scale-factor"
-import { Pedal } from "./pedal"
 
 interface DemoWidgetContainerProps {
   presets: Preset[]
@@ -22,7 +22,7 @@ export const DemoWidgetContainer: Component<
 > = props => {
   onMount(() => {
     const loadingSkeletonEl = document.getElementById(
-      `loading-skeleton-${props.presetSlug}`
+      `loading-skeleton-${props.presetSlug}`,
     )
 
     if (loadingSkeletonEl) {
@@ -48,7 +48,7 @@ export const DemoWidgetContainer: Component<
                 slug,
                 imgSrc: thumbnailSrc,
                 imgSrcSet: thumbnailSrcSet,
-              })
+              }),
             )}
           />
         )}

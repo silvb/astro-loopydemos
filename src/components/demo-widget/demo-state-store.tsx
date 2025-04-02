@@ -1,12 +1,12 @@
 import type { ControlElement, Preset, SettingsValue } from "@types"
+import { debounce } from "radash"
 import {
-  createSignal,
-  createEffect,
-  createContext,
   type ParentComponent,
+  createContext,
+  createEffect,
+  createSignal,
   useContext,
 } from "solid-js"
-import { debounce } from "radash"
 
 const findClosestValue = (value: number, valueArray: number[]) =>
   valueArray.reduce((acc, curr) => {
@@ -24,15 +24,15 @@ interface DemoStateProviderProps {
 export const useDemoStateValue = (props: DemoStateProviderProps) => {
   const [mainPedal, setMainPedal] = createSignal<string>(props.pedals[0])
   const [activePresetId, selectPreset] = createSignal<string | undefined>(
-    undefined
+    undefined,
   )
   const [presets, setPresets] = createSignal<Preset[]>(props.presets)
   const [sweepSetting, setSweepSetting] = createSignal<Record<string, number>>(
-    {}
+    {},
   )
   const [pedalsOn, setPedalsOn] = createSignal<string[]>(props.pedals)
   const [secondaryCircuitsOn, setSecondaryCircuitsOn] = createSignal<string[]>(
-    []
+    [],
   )
   const [isPlaying, setIsPlaying] = createSignal(false)
   const [activePedals, setActivePedals] = createSignal<string[]>([])
@@ -48,7 +48,7 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
 
   const selectNextPreset = () => {
     const presetIndex = presets().findIndex(
-      preset => preset.id === activePresetId()
+      preset => preset.id === activePresetId(),
     )
 
     const nextPresetIndex =
@@ -59,7 +59,7 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
 
   const selectPreviousPreset = () => {
     const presetIndex = presets().findIndex(
-      preset => preset.id === activePresetId()
+      preset => preset.id === activePresetId(),
     )
 
     const previousPresetIndex =
@@ -110,7 +110,7 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
   const getSetting = (
     pedalSlug: string,
     id?: string,
-    dependency?: ControlElement["dependency"]
+    dependency?: ControlElement["dependency"],
   ): SettingsValue | undefined => {
     if (!id) return
 
@@ -126,7 +126,8 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
         ?.settings?.[id] ??
       activePreset()?.settings?.[id] ??
       dependency?.values?.find(
-        ({ sourceValue }) => sourceValue === getSetting(slug, dependency.source)
+        ({ sourceValue }) =>
+          sourceValue === getSetting(slug, dependency.source),
       )?.targetValue
     )
   }
@@ -166,7 +167,7 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
 
     if (activePreset()?.comparison) {
       const pedalsInComparison = activePreset()?.comparison?.map(
-        item => item.pedalSlug
+        item => item.pedalSlug,
       )
       if (!pedalsInComparison?.includes(activePedals()[0]))
         setActivePedals([pedalsInComparison?.[0] || ""])
@@ -176,7 +177,7 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
     setActivePedals(
       activePreset()?.chain?.map(chainElement => chainElement.pedalSlug) || [
         mainPedal(),
-      ]
+      ],
     )
   })
 

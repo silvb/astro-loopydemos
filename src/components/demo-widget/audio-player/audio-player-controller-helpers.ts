@@ -1,5 +1,5 @@
 import type { Preset } from "@types"
-import { CLEAN_TONE, MEDIA_ROOT_URL, BACKING_TRACK } from "./constants"
+import { BACKING_TRACK, CLEAN_TONE, MEDIA_ROOT_URL } from "./constants"
 
 export const getMediaUrl = (id: string, slug: string) => {
   switch (id) {
@@ -15,7 +15,7 @@ export const getMediaUrl = (id: string, slug: string) => {
 export const fetchAudioBuffer = async (
   id: string,
   slug: string,
-  audioContext: AudioContext
+  audioContext: AudioContext,
 ) => {
   const url = getMediaUrl(id, slug)
   const response = await fetch(url)
@@ -33,7 +33,7 @@ export const addSweepValue = (
   target?: string,
   sweepSetting?: Record<string, number>,
   initialValue?: number,
-  isSweep?: boolean
+  isSweep?: boolean,
 ) => {
   if (!isSweep) return id
 
@@ -46,7 +46,7 @@ export const getPresetIdChain = (
   pedalsOn: string[],
   sweepSetting: Record<string, number>,
   secondaryCircuitsOn: string[],
-  activePedals: string[]
+  activePedals: string[],
 ) => {
   // if there are no active pedals turned on and no secondary circuits are active, return clean tone
   if (
@@ -60,41 +60,39 @@ export const getPresetIdChain = (
 
   // if the preset has a chain of multiple pedals, we need to check each pedal for sweeps
   // and secondary circuits and concatenate all active pedals that are turned on
-  presetId +=
-    "_chain_" +
-    preset.chain
-      ?.filter(
-        pedal =>
-          pedalsOn.includes(pedal.pedalSlug) ||
-          secondaryCircuitsOn.includes(pedal.secondaryCircuitId ?? "")
-      )
-      .map(pedal => {
-        let pedalId = pedal.id
-        if (pedalsOn.includes(pedal.pedalSlug)) {
-          // if there is a secondary circuit that is engaged, replace id with secondary circuit slug
-          if (
-            pedal.secondaryCircuitId &&
-            secondaryCircuitsOn.includes(pedal.secondaryCircuitId)
-          ) {
-            pedalId = pedal.secondaryCircuitSlug ?? ""
-          }
-        } else {
-          // if it's turned off, it has a secondary circuit (we checked in the filter)
-          pedalId = pedal.secondaryCircuitOnlySlug ?? ""
+  presetId += `_chain_${preset.chain
+    ?.filter(
+      pedal =>
+        pedalsOn.includes(pedal.pedalSlug) ||
+        secondaryCircuitsOn.includes(pedal.secondaryCircuitId ?? ""),
+    )
+    .map(pedal => {
+      let pedalId = pedal.id
+      if (pedalsOn.includes(pedal.pedalSlug)) {
+        // if there is a secondary circuit that is engaged, replace id with secondary circuit slug
+        if (
+          pedal.secondaryCircuitId &&
+          secondaryCircuitsOn.includes(pedal.secondaryCircuitId)
+        ) {
+          pedalId = pedal.secondaryCircuitSlug ?? ""
         }
+      } else {
+        // if it's turned off, it has a secondary circuit (we checked in the filter)
+        pedalId = pedal.secondaryCircuitOnlySlug ?? ""
+      }
 
-        // if there is a sweep, concatenate the sweep value
-        pedalId = addSweepValue(
-          pedalId,
-          pedal.target,
-          sweepSetting,
-          pedal.initialValue,
-          pedal.isSweep
-        )
+      // if there is a sweep, concatenate the sweep value
+      pedalId = addSweepValue(
+        pedalId,
+        pedal.target,
+        sweepSetting,
+        pedal.initialValue,
+        pedal.isSweep,
+      )
 
-        return pedalId
-      })
-      .join("_")
+      return pedalId
+    })
+    .join("_")}`
 
   return presetId
 }
@@ -104,7 +102,7 @@ export const getAudioPresetId = (
   activePedals: string[],
   pedalsOn: string[],
   secondaryCircuitsOn: string[],
-  activePreset?: Preset
+  activePreset?: Preset,
 ): string => {
   if (!activePreset) return CLEAN_TONE
 
@@ -120,7 +118,7 @@ export const getAudioPresetId = (
   if (activePreset.comparison)
     return (
       activePreset.comparison.find(compPreset =>
-        activePedals.includes(compPreset.pedalSlug)
+        activePedals.includes(compPreset.pedalSlug),
       )?.id || CLEAN_TONE
     )
 
@@ -130,14 +128,14 @@ export const getAudioPresetId = (
       pedalsOn,
       sweepSetting,
       secondaryCircuitsOn,
-      activePedals
+      activePedals,
     )
 
   let presetId = activePreset.id
 
   if (activePreset.secondaryCircuitId) {
     const secondaryCircuitIsOn = secondaryCircuitsOn.includes(
-      activePreset.secondaryCircuitId
+      activePreset.secondaryCircuitId,
     )
 
     const mainCircuitIsOn = activePedals.some(pedal => pedalsOn.includes(pedal))
@@ -152,6 +150,6 @@ export const getAudioPresetId = (
   }
 
   return activePreset.isSweep
-    ? presetId + "_" + sweepSetting[activePreset.target]
+    ? `${presetId}_${sweepSetting[activePreset.target]}`
     : presetId
 }

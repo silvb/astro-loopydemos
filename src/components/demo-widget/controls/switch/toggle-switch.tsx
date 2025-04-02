@@ -1,5 +1,5 @@
 import type { Switch, SwitchState } from "@types"
-import { Show, type Component } from "solid-js"
+import { type Component, Show } from "solid-js"
 
 interface ToggleSwitchProps extends Pick<Switch, "size" | "orientation"> {
   state: SwitchState
@@ -13,16 +13,17 @@ export const ToggleSwitch: Component<ToggleSwitchProps> = props => (
     viewBox="0 0 78 78"
     class="absolute left-0 top-0"
   >
+    <title>Toggle Switch</title>
     <g
       fill="none"
       transform={`rotate(${props.orientation === "horizontal" ? -90 : 0} 39 39)`}
     >
-      <circle cx="39" cy="39" r="35" fill="lightslategray"></circle>
+      <circle cx="39" cy="39" r="35" fill="lightslategray" />
       <polygon
         fill="silver"
         points="38 13.073 59.651 25.573 59.651 50.573 38 63.073 16.349 50.573 16.349 25.573"
         transform="translate(1 1), rotate(90 38 38)"
-      ></polygon>
+      />
       <circle
         cx="39"
         cy="39"
@@ -30,7 +31,7 @@ export const ToggleSwitch: Component<ToggleSwitchProps> = props => (
         fill="#221C20"
         stroke="aliceblue"
         stroke-width="4"
-      ></circle>
+      />
       <Show
         when={[1, 3].includes(props.state)}
         fallback={

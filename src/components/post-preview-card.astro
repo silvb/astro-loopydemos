@@ -1,11 +1,11 @@
 ---
+import { Image } from "astro:assets"
+import { type CollectionEntry, getEntry } from "astro:content"
 import DateTag from "@components/date-tag.astro"
 import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
 import { getImageSrcFromSlug } from "@utils/get-image-src-from-slug"
 import { getPedalsFromPresets } from "@utils/get-pedals-from-presets"
 import { Icon } from "astro-icon/components"
-import { Image } from "astro:assets"
-import { getEntry, type CollectionEntry } from "astro:content"
 
 interface Props
   extends Pick<
@@ -19,7 +19,7 @@ const { title, excerpt, date, slug, tags } = Astro.props
 
 const presetsFromPost: CollectionEntry<"presets"> = await getEntry(
   "presets",
-  `${slug as CollectionEntry<"demos">["slug"]}.presets`
+  `${slug as CollectionEntry<"demos">["slug"]}.presets`,
 )
 
 let hasTeaser = true

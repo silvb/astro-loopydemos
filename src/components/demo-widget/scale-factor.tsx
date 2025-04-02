@@ -1,9 +1,9 @@
 import {
+  type ParentComponent,
   createEffect,
   createSignal,
   onCleanup,
   onMount,
-  type ParentComponent,
 } from "solid-js"
 import { useDemoState } from "./demo-state-store"
 
@@ -20,7 +20,7 @@ export const ScaleFactor: ParentComponent = props => {
   createEffect(() => {
     const currentCompoundWidth = activePedals().reduce(
       (acc, curr) => acc + (widthTab()[curr] ?? 0),
-      0
+      0,
     )
 
     setScale(Math.min(1, containerWidth() / currentCompoundWidth))

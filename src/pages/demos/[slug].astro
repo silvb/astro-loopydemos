@@ -1,4 +1,5 @@
 ---
+import { type CollectionEntry, getCollection, getEntry } from "astro:content"
 import DemoPreviewCard from "@components/demo-preview-card.astro"
 import { EmbedCode } from "@components/embed-code"
 import PostPreviewCard from "@components/post-preview-card.astro"
@@ -7,7 +8,6 @@ import DemoLayout from "@layouts/demo-layout.astro"
 import { getPedalsFromPresets } from "@utils/get-pedals-from-presets"
 import { getStaticPedalData } from "@utils/get-static-pedal-data"
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro"
-import { getEntry, getCollection, type CollectionEntry } from "astro:content"
 
 export const getStaticPaths = (async () => {
   const allDemos: CollectionEntry<"demos">[] = await getCollection("demos")
@@ -44,7 +44,7 @@ const {
   data: { presets },
 }: CollectionEntry<"presets"> = await getEntry(
   "presets",
-  `${slug as CollectionEntry<"demos">["slug"]}.presets`
+  `${slug as CollectionEntry<"demos">["slug"]}.presets`,
 )
 
 const pedalsInDemo = [...new Set([...getPedalsFromPresets(presets), slug])]
@@ -63,17 +63,17 @@ const relatedDemos = allDemos
       demo.data.tags?.some((tag: string) => tags?.includes(tag)) ||
       relatedSlugs?.includes(demo.slug) ||
       demo.data.relatedSlugs?.includes(slug) ||
-      pedalsInDemo.includes(demo.slug)
+      pedalsInDemo.includes(demo.slug),
   )
 
 const relatedPosts = allPosts.filter(
   post =>
     post.data.tags?.some((tag: string) => tags?.includes(tag)) ||
-    post.data.relatedSlugs?.includes(slug)
+    post.data.relatedSlugs?.includes(slug),
 )
 
 const isDev = import.meta.env.DEV
-const vercelPreviewBranchUrl = "https://" + import.meta.env.VERCEL_BRANCH_URL
+const vercelPreviewBranchUrl = `https://${import.meta.env.VERCEL_BRANCH_URL}`
 const isVercelPreview = import.meta.env.VERCEL_ENV === "preview"
 
 const siteUrl = isDev

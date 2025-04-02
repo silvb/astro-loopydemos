@@ -1,5 +1,5 @@
 import type { Knob } from "@types"
-import { mergeProps, type Component } from "solid-js"
+import { type Component, mergeProps } from "solid-js"
 import styles from "./gradients.module.css"
 
 type WalrusAudioKnobProps = Pick<Knob, "size" | "colors">
@@ -14,7 +14,7 @@ export const WalrusAudioKnob: Component<WalrusAudioKnobProps> = props => {
         tick: "#FFF",
       },
     },
-    props
+    props,
   )
   return (
     <div
@@ -31,6 +31,7 @@ export const WalrusAudioKnob: Component<WalrusAudioKnobProps> = props => {
         height={mergedProps.size}
         viewBox="0 0 64 64"
       >
+        <title>Knob</title>
         <g fill="none">
           <circle
             cx="32"
@@ -38,14 +39,14 @@ export const WalrusAudioKnob: Component<WalrusAudioKnobProps> = props => {
             r="30"
             stroke={mergedProps.colors.edge}
             stroke-width="4"
-          ></circle>
+          />
           <rect
             width="3"
             height="28"
             x="31"
             y="4"
             fill={mergedProps.colors.tick}
-          ></rect>
+          />
         </g>
       </svg>
     </div>

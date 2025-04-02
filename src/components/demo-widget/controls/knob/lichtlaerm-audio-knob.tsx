@@ -1,5 +1,5 @@
 import type { Knob } from "@types"
-import { mergeProps, type Component } from "solid-js"
+import { type Component, mergeProps } from "solid-js"
 import styles from "./gradients.module.css"
 
 type LichtlaermAudioKnobProps = Pick<Knob, "size" | "colors">
@@ -16,7 +16,7 @@ export const LichtlaermAudioKnob: Component<
         tick: "#FFF",
       },
     },
-    props
+    props,
   )
   return (
     <div
@@ -33,6 +33,7 @@ export const LichtlaermAudioKnob: Component<
         height={mergedProps.size}
         viewBox="0 0 64 64"
       >
+        <title>Knob</title>
         <g fill="none">
           <circle
             cx="32"
@@ -40,12 +41,12 @@ export const LichtlaermAudioKnob: Component<
             r="30"
             stroke={mergedProps.colors.edge}
             stroke-width="4"
-          ></circle>
+          />
           <path
             d="M32.4642 3.50689L37.8637 17.0056C38.0624 17.5022 37.4477 17.9218 37.0575 17.5561L33.0259 13.7764C32.4489 13.2355 31.5511 13.2355 30.9741 13.7764L26.9425 17.556C26.5523 17.9218 25.9377 17.5022 26.1363 17.0056L31.5358 3.50689L31.0715 3.32119L31.5358 3.50689C31.7034 3.08782 32.2966 3.08781 32.4642 3.50689Z"
             fill="#D9D9D9"
             stroke-linejoin="round"
-          ></path>
+          />
         </g>
       </svg>
     </div>

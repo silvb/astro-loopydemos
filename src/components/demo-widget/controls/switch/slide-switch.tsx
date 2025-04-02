@@ -1,5 +1,5 @@
 import type { Switch, SwitchState } from "@types"
-import { type Component } from "solid-js"
+import type { Component } from "solid-js"
 
 interface SlideSwitchProps extends Pick<Switch, "size" | "orientation"> {
   state: SwitchState
@@ -14,6 +14,7 @@ export const SlideSwitch: Component<SlideSwitchProps> = props => {
       height={props.size}
       viewBox="0 0 64 64"
     >
+      <title>Slide Switch</title>
       <defs>
         <radialGradient id={`${uniqueId}-shinyGradient`}>
           <stop offset="10%" stop-color="aliceblue" />
