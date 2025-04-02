@@ -3,48 +3,127 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "env_trem",
+      "label": "Envelope Tremolo",
       "settings": {
-        "tact": 5,
-        "crosstalk": 5,
-        "topic_a": 5,
-        "intensity_a": 5,
-        "intensity_b": 5,
-        "concentration": 5,
-        "subject_matter": 1,
-        "confusion": 1
-      }
-    },
-    {
-      "id": "second_preset",
-      "label": "Second Preset",
-      "settings": {
-        "tact": 4,
-        "crosstalk": 6,
-        "topic_a": 3,
-        "intensity_a": 9,
-        "intensity_b": 3,
-        "concentration": 6,
+        "topic_a": 0,
+        "intensity_a": 0,
+        "confusion": 1,
+        "crosstalk": 7,
+        "intensity_b": 9,
         "subject_matter": 3,
-        "confusion": 1
+        "concentration": 3,
+        "tact": 6.5
       }
     },
     {
-      "id": "tact_knob",
-      "label": "Tact",
+      "id": "classic_trem",
+      "label": "Classic Tremolo",
+      "settings": {
+        "topic_a": 0,
+        "intensity_a": 0,
+        "confusion": 1,
+        "crosstalk": 3,
+        "intensity_b": 9,
+        "subject_matter": 1,
+        "concentration": 0,
+        "tact": 6.5
+      }
+    },
+    {
+      "id": "square_wave_trem",
+      "label": "Square Wave Chopper",
+      "settings": {
+        "topic_a": 8,
+        "intensity_a": 9.5,
+        "confusion": 1,
+        "crosstalk": 0,
+        "intensity_b": 0,
+        "subject_matter": 1,
+        "concentration": 0,
+        "tact": 6.5
+      }
+    },
+    {
+      "id": "random_trem",
+      "label": "Random Tremolo",
+      "settings": {
+        "topic_a": 0,
+        "intensity_a": 10,
+        "confusion": 3,
+        "crosstalk": 0,
+        "intensity_b": 0,
+        "subject_matter": 1,
+        "concentration": 0,
+        "tact": 7
+      }
+    },
+    {
+      "id": "intensity_a_knob",
+      "label": "Intensity A",
       "isSweep": true,
-      "target": "tact",
+      "target": "intensity_a",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "topic_a": 0,
+        "confusion": 3,
+        "crosstalk": 7,
+        "intensity_b": 9.5,
+        "subject_matter": 3,
+        "concentration": 5,
+        "tact": 8
+      }
+    },
+    {
+      "id": "intensity_b_knob",
+      "label": "Intensity B",
+      "isSweep": true,
+      "target": "intensity_b",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "topic_a": 9,
+        "intensity_a": 7.5,
+        "confusion": 1,
+        "crosstalk": 2,
+        "subject_matter": 1,
+        "concentration": 0,
+        "tact": 8
+      }
+    },
+    {
+      "id": "subject_matter_toggle",
+      "label": "Subject Matter",
+      "isSweep": true,
+      "target": "subject_matter",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "topic_a": 0,
+        "intensity_a": 0,
+        "confusion": 1,
+        "crosstalk": 8.5,
+        "intensity_b": 10,
+        "concentration": 4,
+        "tact": 8
+      }
+    },
+    {
+      "id": "concentration_knob",
+      "label": "Concentration",
+      "isSweep": true,
+      "target": "concentration",
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
       "settings": {
-        "crosstalk": 5,
-        "topic_a": 5,
-        "intensity_a": 5,
-        "intensity_b": 5,
-        "concentration": 5,
-        "subject_matter": 1,
-        "confusion": 1
+        "topic_a": 0,
+        "intensity_a": 0,
+        "confusion": 1,
+        "crosstalk": 8.5,
+        "intensity_b": 10,
+        "subject_matter": 3,
+        "tact": 6.5
       }
     }
   ]

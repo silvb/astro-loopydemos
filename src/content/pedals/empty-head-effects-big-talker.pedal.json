@@ -23,13 +23,13 @@
         "type": "emptyhead"
       },
       {
-        "id": "intensity_a",
+        "id": "intensity_b",
         "size": 60,
         "position": { "top": 120, "left": 100 },
         "type": "emptyhead"
       },
       {
-        "id": "intensity_b",
+        "id": "intensity_a",
         "size": 60,
         "position": { "top": 29, "left": 102 },
         "type": "emptyhead"
