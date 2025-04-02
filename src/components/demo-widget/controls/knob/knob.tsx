@@ -6,6 +6,8 @@ import { BrutalistKnob } from "./brutalist-knob"
 import { CbaKnob } from "./cba-knob"
 import { ChickenHeadKnob } from "./chicken-head-knob"
 import { DaviesKnob } from "./davies-knob"
+import { EmptyHeadKnob } from "./empty-head"
+import { EmptyHeadLargeKnob } from "./empty-head-large"
 import { FairfieldKnob } from "./fairfield-knob"
 import { FanclubKnob } from "./fanclub-knob"
 import { FlbKnob } from "./flb-knob"
@@ -22,8 +24,6 @@ import { RoundChickenHeadKnob } from "./round-chicken-head-knob"
 import { SimpleDotKnob } from "./simple-dot-knob"
 import { SimpleKnob } from "./simple-knob"
 import { WalrusAudioKnob } from "./walrus-audio-knob"
-import { EmptyHeadKnob } from "./empty-head"
-import { EmptyHeadLargeKnob } from "./empty-head-large"
 
 interface KnobProps extends KnobType {
   pedalSlug: string
