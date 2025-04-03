@@ -6,6 +6,8 @@ import { BrutalistKnob } from "./brutalist-knob"
 import { CbaKnob } from "./cba-knob"
 import { ChickenHeadKnob } from "./chicken-head-knob"
 import { DaviesKnob } from "./davies-knob"
+import { EmptyHeadKnob } from "./empty-head"
+import { EmptyHeadLargeKnob } from "./empty-head-large"
 import { FairfieldKnob } from "./fairfield-knob"
 import { FanclubKnob } from "./fanclub-knob"
 import { FlbKnob } from "./flb-knob"
@@ -99,6 +101,12 @@ export const Knob: Component<KnobProps> = props => {
         </Match>
         <Match when={props.type === "fanclub"}>
           <FanclubKnob size={props.size} />
+        </Match>
+        <Match when={props.type === "emptyhead"}>
+          <EmptyHeadKnob {...sizeAndColorProps} />
+        </Match>
+        <Match when={props.type === "emptyheadlarge"}>
+          <EmptyHeadLargeKnob {...sizeAndColorProps} />
         </Match>
       </Switch>
     </KnobStateContainer>
