@@ -1,6 +1,6 @@
 ---
 builder: MXR
-model: Dyna Comp
+model: M102 Dyna Comp
 slug: mxr-dyna-comp
 type: demo
 isSponsored: true

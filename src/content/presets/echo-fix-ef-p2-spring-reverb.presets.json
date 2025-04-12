@@ -1,0 +1,31 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": {
+        "spring_drive": 5,
+        "bass": 5,
+        "treble": 5,
+        "reverb_volume": 5,
+        "direct_led": true
+      }
+    },
+    {
+      "id": "spring_drive_knob",
+      "label": "Spring_drive",
+      "isSweep": true,
+      "target": "spring_drive",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "bass": 5,
+        "treble": 5,
+        "reverb_volume": 5,
+        "direct_led": true
+      }
+    }
+  ]
+}
