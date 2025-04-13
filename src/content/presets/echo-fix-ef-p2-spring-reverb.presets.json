@@ -3,8 +3,8 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "default",
+      "label": "Default",
       "settings": {
         "spring_drive": 5,
         "bass": 5,
@@ -14,8 +14,52 @@
       }
     },
     {
+      "id": "spring_rumble",
+      "label": "Spring Rumble",
+      "settings": {
+        "spring_drive": 8,
+        "bass": 8,
+        "treble": 3,
+        "reverb_volume": 4,
+        "direct_led": true
+      }
+    },
+    {
+      "id": "subtle_verb",
+      "label": "Subtle Verb",
+      "settings": {
+        "spring_drive": 2,
+        "bass": 5,
+        "treble": 7,
+        "reverb_volume": 5,
+        "direct_led": true
+      }
+    },
+    {
+      "id": "verb_only",
+      "label": "Reverb Only",
+      "settings": {
+        "spring_drive": 5,
+        "bass": 3,
+        "treble": 4,
+        "reverb_volume": 6,
+        "direct_led": false
+      }
+    },
+    {
+      "id": "dynamic_whip",
+      "label": "Dynamic Whip",
+      "settings": {
+        "spring_drive": 2,
+        "bass": 3,
+        "treble": 10,
+        "reverb_volume": 10,
+        "direct_led": true
+      }
+    },
+    {
       "id": "spring_drive_knob",
-      "label": "Spring_drive",
+      "label": "Spring Drive",
       "isSweep": true,
       "target": "spring_drive",
       "initialValue": 0,
@@ -23,7 +67,35 @@
       "settings": {
         "bass": 5,
         "treble": 5,
-        "reverb_volume": 5,
+        "reverb_volume": 7,
+        "direct_led": true
+      }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "spring_drive": 5,
+        "treble": 5,
+        "reverb_volume": 10,
+        "direct_led": true
+      }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble",
+      "isSweep": true,
+      "target": "treble",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "spring_drive": 5,
+        "bass": 5,
+        "reverb_volume": 10,
         "direct_led": true
       }
     }
