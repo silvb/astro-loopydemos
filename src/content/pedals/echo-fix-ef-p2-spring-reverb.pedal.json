@@ -1,0 +1,45 @@
+{
+  "name": "echo-fix-ef-p2-spring-reverb",
+  "width": 400,
+  "height": 360,
+  "controls": {
+    "knobs": [
+      {
+        "id": "spring_drive",
+        "size": 54,
+        "position": { "top": 41, "left": 44 },
+        "type": "simple"
+      },
+      {
+        "id": "bass",
+        "size": 54,
+        "position": { "top": 41, "left": 130 },
+        "type": "simple"
+      },
+      {
+        "id": "treble",
+        "size": 54,
+        "position": { "top": 41, "left": 215 },
+        "type": "simple"
+      },
+      {
+        "id": "reverb_volume",
+        "size": 54,
+        "position": { "top": 41, "left": 300 },
+        "type": "simple"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 32, "position": { "top": 251, "left": 315 } },
+      { "id": "direct_led", "size": 32, "position": { "top": 251, "left": 51 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 274, "left": 306 }
+      }
+    ]
+  }
+}

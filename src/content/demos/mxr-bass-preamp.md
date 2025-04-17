@@ -1,6 +1,6 @@
 ---
 builder: MXR
-model: Bass Preamp
+model: M81 Bass Preamp
 slug: mxr-bass-preamp
 type: demo
 isSponsored: true

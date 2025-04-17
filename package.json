@@ -9,7 +9,7 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint": "biome check --write --unsafe",
-    "create-demo": "node scripts/create-demo.cjs && node scripts/create-seo-images.cjs",
+    "create-demo": "node scripts/create-demo.cjs && node scripts/create-seo-images.cjs && npm run lint",
     "create-seo-images": "node scripts/create-seo-images.cjs"
   },
   "dependencies": {
