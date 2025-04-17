@@ -4,7 +4,7 @@ model: EF-P2 Spring Reverb
 slug: echo-fix-ef-p2-spring-reverb
 type: demo
 isSponsored: true
-date: 2025-04-12
+date: 2025-04-17
 tags:
   - spring reverb
   - reverb
