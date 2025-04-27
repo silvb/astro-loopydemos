@@ -1,47 +1,49 @@
 {
+  "width": 270,
+  "height": 350,
   "name": "freqscene-effects-co-coil",
   "controls": {
     "knobs": [
       {
         "id": "wet",
-        "size": 48,
-        "position": { "top": 64, "left": 64 },
+        "size": 54,
+        "position": { "top": 120, "left": 20 },
         "type": "bakelit"
       },
       {
         "id": "bite",
-        "size": 48,
-        "position": { "top": 64, "left": 64 },
+        "size": 54,
+        "position": { "top": 120, "left": 196 },
         "type": "bakelit"
       },
       {
         "id": "feedback",
-        "size": 48,
-        "position": { "top": 64, "left": 64 },
+        "size": 54,
+        "position": { "top": 190, "left": 20 },
         "type": "bakelit"
       },
       {
         "id": "freq",
-        "size": 48,
-        "position": { "top": 64, "left": 64 },
-        "type": "bakelit"
+        "size": 24,
+        "position": { "top": 193, "left": 201 },
+        "type": "simple"
       },
       {
         "id": "amp",
-        "size": 48,
-        "position": { "top": 64, "left": 64 },
-        "type": "bakelit"
+        "size": 24,
+        "position": { "top": 230, "left": 201 },
+        "type": "simple"
       }
     ],
     "leds": [
-      { "id": "on_led", "size": 32, "position": { "top": 64, "left": 64 } }
+      { "id": "on_led", "size": 40, "position": { "top": 256, "left": 202 } }
     ],
     "switches": [
       {
         "id": "bypass_switch",
         "type": "stomp",
         "size": 48,
-        "position": { "top": 64, "left": 64 }
+        "position": { "top": 293, "left": 200 }
       }
     ]
   }
