@@ -36,7 +36,12 @@
       }
     ],
     "leds": [
-      { "id": "on_led", "size": 40, "position": { "top": 256, "left": 202 } }
+      { "id": "on_led", "size": 40, "position": { "top": 256, "left": 202 } },
+      {
+        "id": "kill_dry_led",
+        "size": 40,
+        "position": { "top": 256, "left": 28 }
+      }
     ],
     "switches": [
       {

@@ -3,9 +3,36 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
-      "settings": { "wet": 5, "bite": 5, "feedback": 5, "freq": 5, "amp": 5 }
+      "id": "ambient_dirt",
+      "label": "Ambient Dirt",
+      "settings": { "wet": 7, "bite": 7, "feedback": 7, "freq": 7, "amp": 10 }
+    },
+    {
+      "id": "beefy_slapback",
+      "label": "Beefy Slapback",
+      "settings": { "wet": 6, "bite": 5, "feedback": 0, "freq": 2, "amp": 10 }
+    },
+    {
+      "id": "clangy_coil",
+      "label": "Clangy Coil",
+      "settings": { "wet": 7, "bite": 1, "feedback": 8, "freq": 10, "amp": 10 }
+    },
+    {
+      "id": "fuzzy_verb",
+      "label": "Fuzzy Verb",
+      "settings": { "wet": 8, "bite": 10, "feedback": 2, "freq": 5, "amp": 10 }
+    },
+    {
+      "id": "kill_dry",
+      "label": "Kill Dry",
+      "settings": {
+        "wet": 10,
+        "bite": 5,
+        "feedback": 2,
+        "freq": 2,
+        "amp": 10,
+        "kill_dry_led": true
+      }
     },
     {
       "id": "wet_knob",
@@ -14,7 +41,34 @@
       "target": "wet",
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
-      "settings": { "bite": 5, "feedback": 5, "freq": 5, "amp": 5 }
+      "settings": { "bite": 5, "feedback": 5, "freq": 5, "amp": 10 }
+    },
+    {
+      "id": "bite_knob",
+      "label": "Bite",
+      "isSweep": true,
+      "target": "bite",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "wet": 5, "feedback": 5, "freq": 5, "amp": 10 }
+    },
+    {
+      "id": "feedback_knob",
+      "label": "∞",
+      "isSweep": true,
+      "target": "feedback",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "wet": 8, "bite": 2, "freq": 3, "amp": 10 }
+    },
+    {
+      "id": "freq_knob",
+      "label": "Freq",
+      "isSweep": true,
+      "target": "freq",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "wet": 6.5, "bite": 2, "feedback": 3, "amp": 10 }
     }
   ]
 }
