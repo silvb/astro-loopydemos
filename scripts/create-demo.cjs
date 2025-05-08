@@ -10,6 +10,7 @@ const createMdxContent = ({
   model,
   tags,
   pickup,
+  guitar,
   isSponsored = false,
   date,
 }) => `---
@@ -31,7 +32,7 @@ Write some copy about the ${model} by ${builder}.
 
 ### Signal Chain
 
-- Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (${pickup})
+- ${guitar} (${pickup})
 - ${model}
 - [Mixwave Benson Chimera Plugin*](https://sweetwater.sjv.io/B0N2PL)
 - A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)
@@ -107,6 +108,7 @@ const getDefaultControls = ({ knobs = [], toggles = [], slug = "" }) => ({
       model,
       isSponsored,
       hasBackingTrack,
+      guitar,
       pickup,
       tags,
       knobs,
@@ -135,6 +137,12 @@ const getDefaultControls = ({ knobs = [], toggles = [], slug = "" }) => ({
         message: "Did you record a backing track?",
         enabled: "Yep",
         disabled: "Nope",
+      },
+      {
+        type: "select",
+        name: "guitar",
+        message: "Which guitar did you play?",
+        choices: ["Squier Classic Vibe Jazzmaster with Wide Range Humbucker in the bridge position", "Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups", "Fidelity Guitars Stellarosa with Mojo Lipstick Pickups", "Eiphone SG Special with Mojo Pickups Gold Foil in the neck, Mojotron in the bridge position", "Gretsch Electromatic with Blacktop Filtertrons"],
       },
       {
         type: "select",
@@ -171,6 +179,7 @@ const getDefaultControls = ({ knobs = [], toggles = [], slug = "" }) => ({
         model,
         tags,
         pickup,
+        guitar,
         date,
       }),
       err => {
