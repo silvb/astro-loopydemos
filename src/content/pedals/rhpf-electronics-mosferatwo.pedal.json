@@ -1,0 +1,81 @@
+{
+  "name": "rhpf-electronics-mosferatwo",
+  "controls": {
+    "knobs": [
+      {
+        "id": "drive",
+        "size": 48,
+        "position": { "top": 28, "left": 16 },
+        "type": "davies",
+        "colors": {
+          "primary": "aliceblue",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "level",
+        "size": 48,
+        "position": { "top": 29, "left": 137 },
+        "type": "davies",
+        "colors": {
+          "primary": "aliceblue",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "focus",
+        "size": 48,
+        "position": { "top": 59, "left": 77 },
+        "type": "davies",
+        "colors": {
+          "primary": "aliceblue",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "heat",
+        "size": 24,
+        "position": { "top": 99, "left": 29 },
+        "type": "simple"
+      },
+      {
+        "id": "bite",
+        "size": 24,
+        "position": { "top": 99, "left": 149 },
+        "type": "simple"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "position": { "top": 164, "left": 85 },
+        "colors": {
+          "on": "#fb5b00"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 279, "left": 76 }
+      },
+      {
+        "id": "heat_freq",
+        "orientation": "horizontal",
+        "type": "toggle",
+        "size": 24,
+        "position": { "top": 138, "left": 30 }
+      },
+      {
+        "id": "bite_freq",
+        "orientation": "horizontal",
+        "type": "toggle",
+        "size": 24,
+        "position": { "top": 138, "left": 150 }
+      }
+    ]
+  }
+}
