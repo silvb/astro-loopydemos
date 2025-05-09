@@ -33,7 +33,7 @@
         }
       },
       {
-        "id": "heat",
+        "id": "heart",
         "size": 24,
         "position": { "top": 99, "left": 29 },
         "type": "simple"
@@ -63,7 +63,7 @@
         "position": { "top": 279, "left": 76 }
       },
       {
-        "id": "heat_freq",
+        "id": "heart_freq",
         "orientation": "horizontal",
         "type": "toggle",
         "size": 24,

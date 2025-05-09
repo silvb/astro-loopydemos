@@ -1,18 +1,57 @@
 {
   "hasBackingTrack": true,
-  "volume": 0.65,
+  "volume": 0.75,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "crunching_stoner",
+      "label": "Crunching Stoner",
       "settings": {
-        "drive": 5,
-        "focus": 5,
-        "level": 5,
-        "heat": 5,
+        "drive": 10,
+        "focus": 7,
+        "level": 7,
+        "heart": 8,
+        "bite": 7,
+        "heart_freq": 3,
+        "bite_freq": 3
+      }
+    },
+    {
+      "id": "stank_face_filter",
+      "label": "Stank Face Filter",
+      "settings": {
+        "drive": 7,
+        "focus": 4,
+        "level": 7,
+        "heart": 10,
         "bite": 5,
-        "heat_freq": 1,
+        "heart_freq": 3,
         "bite_freq": 1
+      }
+    },
+    {
+      "id": "soft_distortion",
+      "label": "Soft Distortion",
+      "settings": {
+        "drive": 6,
+        "focus": 2,
+        "level": 8,
+        "heart": 0,
+        "bite": 10,
+        "heart_freq": 3,
+        "bite_freq": 1
+      }
+    },
+    {
+      "id": "heavy_stuff",
+      "label": "Heavy Stuff",
+      "settings": {
+        "drive": 8,
+        "focus": 10,
+        "level": 7,
+        "heart": 10,
+        "bite": 10,
+        "heart_freq": 1,
+        "bite_freq": 3
       }
     },
     {
@@ -24,11 +63,91 @@
       "values": [0, 2, 4, 6, 8, 10],
       "settings": {
         "focus": 5,
-        "level": 5,
-        "heat": 5,
-        "bite": 5,
-        "heat_freq": 1,
+        "level": 7,
+        "heart": 6,
+        "bite": 6,
+        "heart_freq": 3,
         "bite_freq": 1
+      }
+    },
+    {
+      "id": "focus_knob",
+      "label": "Focus",
+      "isSweep": true,
+      "target": "focus",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "drive": 7,
+        "level": 7,
+        "heart": 6,
+        "bite": 6,
+        "heart_freq": 3,
+        "bite_freq": 1
+      }
+    },
+    {
+      "id": "heart_120_knob",
+      "label": "Heart 120Hz",
+      "isSweep": true,
+      "target": "heart",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "drive": 7,
+        "focus": 4,
+        "level": 7,
+        "bite": 6,
+        "heart_freq": 1,
+        "bite_freq": 1
+      }
+    },
+    {
+      "id": "heart_320_knob",
+      "label": "Heart 320Hz",
+      "isSweep": true,
+      "target": "heart",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "drive": 7,
+        "focus": 4,
+        "level": 7,
+        "bite": 6,
+        "heart_freq": 3,
+        "bite_freq": 1
+      }
+    },
+    {
+      "id": "bite_1k_knob",
+      "label": "Bite 1kHz",
+      "isSweep": true,
+      "target": "bite",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "drive": 7,
+        "focus": 4,
+        "level": 7,
+        "heart": 6,
+        "heart_freq": 3,
+        "bite_freq": 1
+      }
+    },
+    {
+      "id": "bite_5k_knob",
+      "label": "Bite 5kHz",
+      "isSweep": true,
+      "target": "bite",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "drive": 7,
+        "focus": 4,
+        "level": 7,
+        "heart": 6,
+        "heart_freq": 3,
+        "bite_freq": 3
       }
     }
   ]

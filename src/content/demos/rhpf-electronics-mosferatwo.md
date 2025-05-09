@@ -11,9 +11,7 @@ tags:
   - stoner rock
   - qotsa
 externalLinks:
-  thomann: ...
-  builderLink: ...
-  sweetwater: ...
+  builderLink: https://rhpfelectronics.com/product/mosferatwo-by-rhpf-electronics-mosfet-overdrive-pedal/
 ---
 
 Write some copy about the Mosferatwo by RhPf Electronics.
