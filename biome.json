@@ -16,7 +16,8 @@
       "**/*.tsx",
       "**/*.json",
       "**/*.md",
-      "**/*.mdx"
+      "**/*.mdx",
+      "**/*.cjs"
     ]
   },
   "formatter": {
@@ -38,6 +39,9 @@
       },
       "performance": {
         "noAccumulatingSpread": "off"
+      },
+      "complexity": {
+        "noForEach": "off"
       }
     }
   },

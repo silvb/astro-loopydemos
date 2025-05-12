@@ -25,11 +25,13 @@ const siteUrl = isDev
     : import.meta.env.SITE
 const pathname = Astro.url.pathname
 
+const defaultMetaImage = `${siteUrl}/og-image.jpg`
+
 const SITE_DESCRIPTION = "Loopy Demos: Interactive guitar pedal and gear demos"
 const WEBSITE_ID = `${siteUrl}/#website`
 const ORGANIZATION_ID = `${siteUrl}/#organization`
 const AUTHOR_ID = `${siteUrl}/about/#author`
-const metaImageUrl = metaImage ? `${siteUrl}${metaImage}` : undefined
+const metaImageUrl = metaImage ? `${siteUrl}${metaImage}` : defaultMetaImage
 const webpageId = `${siteUrl}${pathname}/#webpage`
 
 const blogStructuredData: Graph["@graph"] = [
@@ -189,15 +191,15 @@ const metaTags = [
   },
   {
     name: "og:image",
-    content: siteUrl + metaImage,
+    content: metaImageUrl,
   },
   {
     name: "image",
-    content: siteUrl + metaImage,
+    content: metaImageUrl,
   },
   {
     name: "twitter:image",
-    content: siteUrl + metaImage,
+    content: metaImageUrl,
   },
 ]
 

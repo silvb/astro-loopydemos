@@ -9,8 +9,9 @@
     "preview": "astro preview",
     "astro": "astro",
     "lint": "biome check --write --unsafe",
-    "create-demo": "node scripts/create-demo.cjs && node scripts/create-seo-images.cjs && npm run lint",
-    "create-seo-images": "node scripts/create-seo-images.cjs"
+    "create-demo": "node scripts/create-demo.cjs && npm run lint && npm run create-seo-images && npm run create-meta-images",
+    "create-seo-images": "node scripts/create-seo-images.cjs",
+    "create-meta-images": "node scripts/create-meta-images.cjs"
   },
   "dependencies": {
     "@astrojs/check": "^0.7.0",
@@ -37,6 +38,7 @@
   "devDependencies": {
     "@biomejs/biome": "1.9.4",
     "@iconify-json/ph": "^1.1.13",
-    "enquirer": "^2.4.1"
+    "enquirer": "^2.4.1",
+    "gray-matter": "^4.0.3"
   }
 }
