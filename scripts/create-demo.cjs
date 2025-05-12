@@ -1,4 +1,4 @@
-const fs = require("fs")
+const fs = require("node:fs")
 const { prompt } = require("enquirer")
 
 const capitalizeString = (string = "") =>
@@ -97,7 +97,6 @@ const getDefaultControls = ({ knobs = [], toggles = [], slug = "" }) => ({
     ],
   },
 })
-
 ;(async function main() {
   try {
     const now = new Date()
@@ -142,7 +141,13 @@ const getDefaultControls = ({ knobs = [], toggles = [], slug = "" }) => ({
         type: "select",
         name: "guitar",
         message: "Which guitar did you play?",
-        choices: ["Squier Classic Vibe Jazzmaster with Wide Range Humbucker in the bridge position", "Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups", "Fidelity Guitars Stellarosa with Mojo Lipstick Pickups", "Eiphone SG Special with Mojo Pickups Gold Foil in the neck, Mojotron in the bridge position", "Gretsch Electromatic with Blacktop Filtertrons"],
+        choices: [
+          "Squier Classic Vibe Jazzmaster with Wide Range Humbucker in the bridge position",
+          "Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups",
+          "Fidelity Guitars Stellarosa with Mojo Lipstick Pickups",
+          "Eiphone SG Special with Mojo Pickups Gold Foil in the neck, Mojotron in the bridge position",
+          "Gretsch Electromatic with Blacktop Filtertrons",
+        ],
       },
       {
         type: "select",
@@ -184,7 +189,7 @@ const getDefaultControls = ({ knobs = [], toggles = [], slug = "" }) => ({
       }),
       err => {
         if (err) return console.error(err)
-      }
+      },
     )
 
     fs.writeFile(
@@ -192,7 +197,7 @@ const getDefaultControls = ({ knobs = [], toggles = [], slug = "" }) => ({
       JSON.stringify(getdefaultPresets({ knobs, toggles, hasBackingTrack })),
       err => {
         if (err) return console.error(err)
-      }
+      },
     )
 
     fs.writeFile(
@@ -200,7 +205,7 @@ const getDefaultControls = ({ knobs = [], toggles = [], slug = "" }) => ({
       JSON.stringify(getDefaultControls({ knobs, toggles, slug })),
       err => {
         if (err) console.error(err)
-      }
+      },
     )
   } catch (e) {
     console.error(e)

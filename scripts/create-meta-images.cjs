@@ -1,0 +1,58 @@
+const fs = require("node:fs")
+const path = require("node:path")
+const matter = require("gray-matter")
+const { execSync } = require("node:child_process")
+
+const imageSourcePath = "src/images"
+const targetDirectoryPath = "src/images/seo-preview"
+const imageExtensions = [".png", ".webp"]
+const fillColor = "#252253"
+const fontColor = "#8958ff"
+const demoSourcePath = "src/content/demos"
+const presetSource = "src/content/presets"
+
+const recentDemos = fs
+  .readdirSync(demoSourcePath)
+  .sort((a, b) => {
+    const aDate = new Date(
+      matter(fs.readFileSync(path.join(demoSourcePath, a))).data.date,
+    )
+    const bDate = new Date(
+      matter(fs.readFileSync(path.join(demoSourcePath, b))).data.date,
+    )
+    return bDate - aDate
+  })
+  .slice(0, 6)
+  .map(demoFile => {
+    let imageSrc = path.join(imageSourcePath, `${demoFile.split(".md")[0]}.png`)
+
+    if (!fs.existsSync(imageSrc)) {
+      imageSrc = path.join(imageSourcePath, `${demoFile.split(".md")[0]}.webp`)
+    }
+
+    return {
+      slug: demoFile.split(".md")[0],
+      imageSrc,
+    }
+  })
+
+console.log({ recentDemos })
+
+const pedalImagePaths = recentDemos.map(demo => demo.imageSrc).join(" ")
+
+const montageCmd = `montage ${pedalImagePaths} \
+  -geometry 300x300+30+30 \
+  -tile 3x2 \
+  -background '${fillColor}' \
+  public/og-image.jpg`
+
+const convertCmd = `magick public/og-image.jpg \
+  -brightness-contrast -20 \
+ -font Erica-One -pointsize 130 -fill "rgba(0, 0, 0, 0.7)" -gravity center -annotate +5-70 "LOOPY DEMOS" \
+ -font Erica-One -pointsize 130 -fill "${fontColor}" -gravity center -annotate +0-75 "LOOPY DEMOS" \
+ -font Anton-SC-Regular -pointsize 48 -fill "rgba(0, 0, 0, 0.7)" -gravity center -annotate +4+54 "Twist the knobs. Hear the difference." \
+ -font Anton-SC-Regular -pointsize 48 -fill "${fontColor}" -gravity center -annotate +0+50 "Twist the knobs. Hear the difference." \
+  public/og-image.jpg`
+
+execSync(montageCmd)
+execSync(convertCmd)

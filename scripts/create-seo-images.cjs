@@ -1,7 +1,6 @@
-const fs = require("fs")
-const path = require("path")
-// const matter = require("gray-matter")
-const { execSync } = require("child_process")
+const fs = require("node:fs")
+const path = require("node:path")
+const { execSync } = require("node:child_process")
 
 const imageSourcePath = "src/images"
 const targetDirectoryPath = "src/images/seo-preview"
@@ -12,7 +11,7 @@ const presetSource = "src/content/presets"
 
 const convertImage = (imagePath, outputPath) => {
   const identifyOutput = execSync(
-    `identify -format "%w %h" ${imagePath}`
+    `identify -format "%w %h" ${imagePath}`,
   ).toString()
   const imageName = imagePath.split("/").pop().split(".")[0]
   const [width, height] = identifyOutput.split(" ").map(Number)
@@ -33,7 +32,7 @@ fs.readdirSync(imageSourcePath)
     const imageWithoutExtension = image.split(".")[0]
     const outputPath = path.join(
       targetDirectoryPath,
-      `${imageWithoutExtension}.jpeg`
+      `${imageWithoutExtension}.jpeg`,
     )
 
     try {
@@ -47,11 +46,11 @@ fs.readdirSync(postSourcePath).forEach(post => {
   const slug = post.split(".md")[0]
   console.log(slug)
 
-  const possibleImagePath = path.join(imageSourcePath, slug + ".png")
+  const possibleImagePath = path.join(imageSourcePath, `${slug}.png`)
 
   if (fs.existsSync(possibleImagePath)) return
 
-  const presetPath = path.join(presetSource, slug + ".presets.json")
+  const presetPath = path.join(presetSource, `${slug}.presets.json`)
   const presetData = JSON.parse(fs.readFileSync(presetPath))
 
   const pedals =
@@ -59,14 +58,14 @@ fs.readdirSync(postSourcePath).forEach(post => {
     presetData.presets[0]?.chain?.map(chainEl => chainEl.pedalSlug)
 
   const pedalImagePaths = pedals.map(pedal =>
-    path.join(targetDirectoryPath, pedal + ".jpeg")
+    path.join(targetDirectoryPath, `${pedal}.jpeg`),
   )
 
   const gridSize = Math.ceil(Math.sqrt(pedalImagePaths.length))
   const outputPathRaw = path.join(targetDirectoryPath, `${slug}_raw.png`)
   const outputPath = path.join(targetDirectoryPath, `${slug}.jpeg`)
   const montageCmd = `montage ${pedalImagePaths.join(
-    " "
+    " ",
   )} -tile ${gridSize}x${gridSize} -geometry +0+0 -background '${fillColor}' "${outputPathRaw}"`
 
   execSync(montageCmd)
