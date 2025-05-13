@@ -40,9 +40,6 @@
       "performance": {
         "noAccumulatingSpread": "off"
       },
-      "complexity": {
-        "noForEach": "off"
-      },
       "nursery": {
         "useSortedClasses": "error"
       },
