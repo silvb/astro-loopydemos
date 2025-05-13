@@ -16,9 +16,9 @@ export const BackingTrackToggle: Component = () => {
       />
       <label
         for={uniqueToggleId}
-        class="relative block h-6 w-12 cursor-pointer rounded-full bg-loopydemos-highlight-secondary-themed transition-colors peer-checked:bg-loopydemos-subdued-themed peer-checked:[&>div]:-translate-x-6"
+        class="peer-checked:[&>div]:-translate-x-6 relative block h-6 w-12 cursor-pointer rounded-full bg-loopydemos-highlight-secondary-themed transition-colors peer-checked:bg-loopydemos-subdued-themed"
       >
-        <div class="absolute right-[0.125rem] top-1/2 size-5 -translate-y-1/2 rounded-full bg-loopydemos-secondary-themed transition-transform" />
+        <div class="-translate-y-1/2 absolute top-1/2 right-[0.125rem] size-5 rounded-full bg-loopydemos-secondary-themed transition-transform" />
       </label>
     </div>
   )

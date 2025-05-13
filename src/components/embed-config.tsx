@@ -76,7 +76,7 @@ export const EmbedConfig: Component<EmbedConfigProps> = props => {
               class="min-w-40 rounded-md bg-loopydemos-background p-2"
             />
             {width() < MIN_WIDTH && (
-              <span class="text-sm italic text-loopydemos-red">{`This will look ugly on your site. Best to keep the width above ${MIN_WIDTH}px.`}</span>
+              <span class="text-loopydemos-red text-sm italic">{`This will look ugly on your site. Best to keep the width above ${MIN_WIDTH}px.`}</span>
             )}
           </div>
         </label>
@@ -91,7 +91,7 @@ export const EmbedConfig: Component<EmbedConfigProps> = props => {
               class="min-w-40 rounded-md bg-loopydemos-background p-2"
             />
             {height() < props.minHeight && (
-              <span class="text-sm italic text-loopydemos-red">{`This will look ugly on your site. Best to keep the height above ${props.minHeight}px.`}</span>
+              <span class="text-loopydemos-red text-sm italic">{`This will look ugly on your site. Best to keep the height above ${props.minHeight}px.`}</span>
             )}
           </div>
         </label>

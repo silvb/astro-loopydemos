@@ -25,7 +25,7 @@ export const AudioPlayerDisplay: Component = () => {
         when={showVisualizer()}
         fallback={
           <span
-            class="px-2 text-center font-pixel text-xs text-loopydemos-highlight-primary-themed [word-spacing:-0.1em] sm:text-xs md:text-sm"
+            class="px-2 text-center font-pixel text-loopydemos-highlight-primary-themed text-xs [word-spacing:-0.1em] sm:text-xs md:text-sm"
             classList={{
               "text-loopydemos-red": hasErrors(),
             }}

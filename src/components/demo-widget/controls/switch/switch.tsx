@@ -36,7 +36,7 @@ export const Switch: Component<SwitchProps> = props => {
         <SweepIndicator size={props.size} color={props.highlightColor} />
         <button
           type="button"
-          class="absolute left-0 top-0 z-10 h-full w-full"
+          class="absolute top-0 left-0 z-10 h-full w-full"
           style={{ width: `${props.size}px`, height: `${props.size}px` }}
           onClick={() => {
             const numSweepValues = activePreset()?.values?.length ?? 0

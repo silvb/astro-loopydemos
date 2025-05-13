@@ -37,7 +37,7 @@ export const Pedal: Component<PedalProps> = props => {
           onLoad={() => setIsImgLoaded(true)}
         />
         <div
-          class="absolute size-full bg-contain bg-center bg-no-repeat blur-sm transition-opacity duration-500"
+          class="absolute size-full bg-center bg-contain bg-no-repeat blur-sm transition-opacity duration-500"
           classList={{
             "opacity-0": isImgLoaded(),
             "opacity-100": !isImgLoaded(),

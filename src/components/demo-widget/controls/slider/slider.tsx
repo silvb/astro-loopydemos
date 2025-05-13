@@ -93,7 +93,7 @@ export const Slider: Component<SliderProps> = props => {
             height: `${props.size.height}px`,
             left: `${handlePosition()}%`,
           }}
-          class="absolute top-1/2 flex -translate-x-1/2 -translate-y-1/2 items-center transition-[left]"
+          class="-translate-x-1/2 -translate-y-1/2 absolute top-1/2 flex items-center transition-[left]"
         >
           <FaderFace
             type={props.faderType}

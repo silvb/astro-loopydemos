@@ -36,7 +36,7 @@ export const EmbedCode: Component<EmbedCodeProps> = props => {
         <code>{embedCode()}</code>
       </pre>
       <button
-        class="flex items-center gap-2 whitespace-nowrap rounded-lg bg-loopydemos-highlight-tertiary px-4 py-2 text-base font-black text-loopydemos-background"
+        class="flex items-center gap-2 whitespace-nowrap rounded-lg bg-loopydemos-highlight-tertiary px-4 py-2 font-black text-base text-loopydemos-background"
         type="button"
         onClick={() => {
           navigator.clipboard.writeText(embedCode())

@@ -79,7 +79,7 @@ export const LineLabel: Component<LineLabelProps> = props => {
           </g>
         </svg>
         <span
-          class={`${styles["line-label"]} text-xs text-loopydemos-text-themed`}
+          class={`${styles["line-label"]} text-loopydemos-text-themed text-xs`}
           classList={{
             [styles["long-width"]]: props.isLong,
             [styles["right-aligned"]]: isRightAligned,
