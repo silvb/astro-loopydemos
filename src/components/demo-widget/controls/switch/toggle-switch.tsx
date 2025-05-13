@@ -11,7 +11,7 @@ export const ToggleSwitch: Component<ToggleSwitchProps> = props => (
     width={props.size}
     height={props.size}
     viewBox="0 0 78 78"
-    class="absolute left-0 top-0"
+    class="absolute top-0 left-0"
   >
     <title>Toggle Switch</title>
     <g
