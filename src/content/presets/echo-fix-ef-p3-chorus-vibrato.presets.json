@@ -1,0 +1,26 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": {
+        "resonance": 5,
+        "waveshape": 5,
+        "rate": 5,
+        "depth": 5,
+        "direct_led": true
+      }
+    },
+    {
+      "id": "resonance_knob",
+      "label": "Resonance",
+      "isSweep": true,
+      "target": "resonance",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "waveshape": 5, "rate": 5, "depth": 5 }
+    }
+  ]
+}

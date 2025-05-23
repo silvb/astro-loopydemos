@@ -1,0 +1,86 @@
+{
+  "name": "echo-fix-ef-p3-chorus-vibrato",
+  "width": 360,
+  "height": 360,
+  "controls": {
+    "knobs": [
+      {
+        "id": "resonance",
+        "size": 54,
+        "position": { "top": 41, "left": 110 },
+        "type": "simple"
+      },
+      {
+        "id": "waveshape",
+        "size": 54,
+        "position": { "top": 41, "left": 196 },
+        "type": "simple"
+      },
+      {
+        "id": "rate",
+        "size": 54,
+        "position": { "top": 128, "left": 66 },
+        "type": "simple"
+      },
+      {
+        "id": "depth",
+        "size": 54,
+        "position": { "top": 128, "left": 239 },
+        "type": "simple"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "position": { "top": 253, "left": 250 },
+        "colors": {
+          "on": "#d4f9ff",
+          "off": "#333333aa"
+        }
+      },
+      {
+        "id": "direct_led",
+        "size": 32,
+        "position": { "top": 254, "left": 78 },
+        "colors": {
+          "on": "#d4f9ff",
+          "off": "#333333aa"
+        }
+      },
+      {
+        "id": "rate_led",
+        "isBlinking": true,
+        "size": 64,
+        "colors": {
+          "on": "#629dffaa"
+        },
+        "position": { "top": 122, "left": 147 },
+        "dependency": {
+          "source": "rate",
+          "values": [
+            { "sourceValue": 0, "targetValue": 1430 },
+            { "sourceValue": 1, "targetValue": 1280 },
+            { "sourceValue": 2, "targetValue": 1130 },
+            { "sourceValue": 3, "targetValue": 1030 },
+            { "sourceValue": 4, "targetValue": 930 },
+            { "sourceValue": 5, "targetValue": 830 },
+            { "sourceValue": 6, "targetValue": 730 },
+            { "sourceValue": 7, "targetValue": 630 },
+            { "sourceValue": 8, "targetValue": 530 },
+            { "sourceValue": 9, "targetValue": 480 },
+            { "sourceValue": 10, "targetValue": 455 }
+          ]
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 278, "left": 242 }
+      }
+    ]
+  }
+}
