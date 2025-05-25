@@ -1,31 +1,31 @@
 {
   "name": "echo-fix-ef-p3-chorus-vibrato",
-  "width": 360,
+  "width": 280,
   "height": 360,
   "controls": {
     "knobs": [
       {
         "id": "resonance",
         "size": 54,
-        "position": { "top": 41, "left": 110 },
+        "position": { "top": 41, "left": 70 },
         "type": "simple"
       },
       {
         "id": "waveshape",
         "size": 54,
-        "position": { "top": 41, "left": 196 },
+        "position": { "top": 41, "left": 156 },
         "type": "simple"
       },
       {
         "id": "rate",
         "size": 54,
-        "position": { "top": 128, "left": 66 },
+        "position": { "top": 128, "left": 26 },
         "type": "simple"
       },
       {
         "id": "depth",
         "size": 54,
-        "position": { "top": 128, "left": 239 },
+        "position": { "top": 128, "left": 199 },
         "type": "simple"
       }
     ],
@@ -33,7 +33,7 @@
       {
         "id": "on_led",
         "size": 32,
-        "position": { "top": 253, "left": 250 },
+        "position": { "top": 253, "left": 210 },
         "colors": {
           "on": "#d4f9ff",
           "off": "#333333aa"
@@ -42,7 +42,7 @@
       {
         "id": "direct_led",
         "size": 32,
-        "position": { "top": 254, "left": 78 },
+        "position": { "top": 254, "left": 38 },
         "colors": {
           "on": "#d4f9ff",
           "off": "#333333aa"
@@ -55,21 +55,21 @@
         "colors": {
           "on": "#629dffaa"
         },
-        "position": { "top": 122, "left": 147 },
+        "position": { "top": 122, "left": 107 },
         "dependency": {
           "source": "rate",
           "values": [
-            { "sourceValue": 0, "targetValue": 1430 },
-            { "sourceValue": 1, "targetValue": 1280 },
-            { "sourceValue": 2, "targetValue": 1130 },
-            { "sourceValue": 3, "targetValue": 1030 },
-            { "sourceValue": 4, "targetValue": 930 },
-            { "sourceValue": 5, "targetValue": 830 },
-            { "sourceValue": 6, "targetValue": 730 },
-            { "sourceValue": 7, "targetValue": 630 },
-            { "sourceValue": 8, "targetValue": 530 },
-            { "sourceValue": 9, "targetValue": 480 },
-            { "sourceValue": 10, "targetValue": 455 }
+            { "sourceValue": 0, "targetValue": 1200 },
+            { "sourceValue": 1, "targetValue": 1050 },
+            { "sourceValue": 2, "targetValue": 900 },
+            { "sourceValue": 3, "targetValue": 800 },
+            { "sourceValue": 4, "targetValue": 700 },
+            { "sourceValue": 5, "targetValue": 600 },
+            { "sourceValue": 6, "targetValue": 500 },
+            { "sourceValue": 7, "targetValue": 400 },
+            { "sourceValue": 8, "targetValue": 300 },
+            { "sourceValue": 9, "targetValue": 250 },
+            { "sourceValue": 10, "targetValue": 225 }
           ]
         }
       }
@@ -79,7 +79,7 @@
         "id": "bypass_switch",
         "type": "stomp",
         "size": 48,
-        "position": { "top": 278, "left": 242 }
+        "position": { "top": 278, "left": 202 }
       }
     ]
   }
