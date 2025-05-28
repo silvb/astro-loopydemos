@@ -31,7 +31,11 @@
     ],
     "leds": [
       { "id": "on_led", "size": 32, "position": { "top": 251, "left": 315 } },
-      { "id": "direct_led", "size": 32, "position": { "top": 251, "left": 51 } }
+      {
+        "id": "direct_led",
+        "size": 32,
+        "position": { "top": 251, "left": 51 }
+      }
     ],
     "switches": [
       {
