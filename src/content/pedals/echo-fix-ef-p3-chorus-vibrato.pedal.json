@@ -41,6 +41,7 @@
       },
       {
         "id": "direct_led",
+        "secondaryCircuitId": "direct",
         "size": 32,
         "position": { "top": 254, "left": 38 },
         "colors": {
@@ -80,6 +81,13 @@
         "type": "stomp",
         "size": 48,
         "position": { "top": 278, "left": 202 }
+      },
+      {
+        "id": "direct_switch",
+        "type": "stomp",
+        "secondaryCircuitId": "direct",
+        "size": 48,
+        "position": { "top": 278, "left": 30 }
       }
     ]
   }

@@ -5,50 +5,63 @@
     {
       "id": "spacey_chorus",
       "label": "Spacey Chorus",
+      "secondaryCircuitSlug": "spacey_chorus_direct",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitId": "direct",
+      "initialSecondaryCircuits": ["direct"],
       "settings": {
         "resonance": 0,
         "waveshape": 3,
         "rate": 0,
-        "depth": 10,
-        "direct_led": true
+        "depth": 10
       }
     },
     {
       "id": "tape_vibrato",
       "label": "Tape Vibrato",
+      "secondaryCircuitSlug": "tape_vibrato_direct",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitId": "direct",
       "settings": {
         "resonance": 4,
         "waveshape": 8,
         "rate": 2,
-        "depth": 6,
-        "direct_led": false
+        "depth": 6
       }
     },
     {
       "id": "ghostly_warble",
       "label": "Ghostly Warble",
+      "secondaryCircuitSlug": "ghostly_warble_direct",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitId": "direct",
       "settings": {
         "resonance": 9.5,
         "waveshape": 1.5,
         "rate": 10,
-        "depth": 2,
-        "direct_led": false
+        "depth": 2
       }
     },
     {
       "id": "watery_chorus",
       "label": "Watery Chorus",
+      "secondaryCircuitSlug": "watery_chorus_direct",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitId": "direct",
+      "initialSecondaryCircuits": ["direct"],
       "settings": {
         "resonance": 10,
         "waveshape": 5,
         "rate": 5,
-        "depth": 3,
-        "direct_led": true
+        "depth": 3
       }
     },
     {
       "id": "resonance_knob",
       "label": "Resonance",
+      "secondaryCircuitSlug": "resonance_knob_direct",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitId": "direct",
       "isSweep": true,
       "target": "resonance",
       "initialValue": 0,
@@ -58,11 +71,38 @@
     {
       "id": "rate_knob",
       "label": "Rate",
+      "secondaryCircuitSlug": "rate_knob_direct",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitId": "direct",
       "isSweep": true,
       "target": "rate",
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
       "settings": { "waveshape": 5, "resonance": 5, "depth": 5 }
+    },
+    {
+      "id": "waveshape_knob",
+      "label": "Waveshape",
+      "secondaryCircuitSlug": "waveshape_knob_direct",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitId": "direct",
+      "isSweep": true,
+      "target": "waveshape",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "rate": 5, "resonance": 5, "depth": 5 }
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth",
+      "secondaryCircuitSlug": "depth_knob_direct",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitId": "direct",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "rate": 5, "resonance": 5, "waveshape": 5 }
     }
   ]
 }
