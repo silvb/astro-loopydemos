@@ -1,0 +1,20 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": { "drive": 5, "level": 5, "low": 5, "mid": 5, "hi": 5 }
+    },
+    {
+      "id": "drive_knob",
+      "label": "Drive",
+      "isSweep": true,
+      "target": "drive",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "level": 5, "low": 5, "mid": 5, "hi": 5 }
+    }
+  ]
+}
