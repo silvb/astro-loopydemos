@@ -1,0 +1,75 @@
+{
+  "name": "rhpf-electronics-mosghoul",
+  "controls": {
+    "knobs": [
+      {
+        "id": "drive",
+        "size": 48,
+        "position": { "top": 22, "left": 14 },
+        "type": "davies",
+        "colors": {
+          "primary": "aliceblue",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "level",
+        "size": 48,
+        "position": { "top": 22, "left": 139 },
+        "type": "davies",
+        "colors": {
+          "primary": "aliceblue",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "low",
+        "size": 48,
+        "position": { "top": 84, "left": 15 },
+        "type": "davies",
+        "colors": {
+          "primary": "aliceblue",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "mid",
+        "size": 48,
+        "position": { "top": 54, "left": 77 },
+        "type": "davies",
+        "colors": {
+          "primary": "aliceblue",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "hi",
+        "size": 48,
+        "position": { "top": 84, "left": 138 },
+        "type": "davies",
+        "colors": {
+          "primary": "aliceblue",
+          "tick": "black"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "position": { "top": 168, "left": 96 },
+        "colors": {
+          "on": "#65ff4b"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 278, "left": 76 }
+      }
+    ]
+  }
+}
