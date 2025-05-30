@@ -12,7 +12,15 @@ externalLinks:
   builderLink: https://rhpfelectronics.com/product/mosghoul-by-rhpf-electronics-mosfet-distortion-pedal/
 ---
 
-Write some copy about the Mosghoul by RhPf Electronics.
+The Mo(s)ghoul by RhPf Electronics is a MOSFET distortion pedal made for guitarists seeking a high-gain, thick and textured distortion sound.
+
+This pedal is designed to provide a wide range of distortion tones, from subtle overdrive to full-on fuzz, making it versatile for various musical styles.
+
+It features a simple control layout with drive, level and a 3-band EQ, allowing for easy adjustments to your tone.
+
+Mo(s)ghoul is is highly responsive to your playing dynamics, making it suitable for both overdrive and distorted tones.
+
+The **MID** is my favorite control on this pedal. It lets you boost the mids around 500Hz or cut them around 800Hz, which is a great feature for shaping your sound to cut through the mix or to create a more scooped tone.
 
 ### Signal Chain
 
