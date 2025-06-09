@@ -1,0 +1,30 @@
+{
+  "name": "reasons-to-live-books-stoner",
+  "controls": {
+    "knobs": [
+      {
+        "id": "suffering",
+        "size": 56,
+        "position": { "top": 34, "left": 24 },
+        "type": "bakelit"
+      },
+      {
+        "id": "longing",
+        "size": 56,
+        "position": { "top": 34, "left": 120 },
+        "type": "bakelit"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 36, "position": { "top": 280, "left": 36 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 274, "left": 122 }
+      }
+    ]
+  }
+}
