@@ -1,0 +1,76 @@
+{
+  "name": "rhpf-electronics-twin-peak-eiger-moench",
+  "controls": {
+    "knobs": [
+      {
+        "id": "echo_one",
+        "size": 52,
+        "position": { "top": 25, "left": 13 },
+        "type": "davies",
+        "colors": {
+          "primary": "aliceblue",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "echo_two",
+        "size": 52,
+        "position": { "top": 25, "left": 136 },
+        "type": "davies",
+        "colors": {
+          "primary": "aliceblue",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "rate_one",
+        "size": 52,
+        "position": { "top": 85, "left": 14 },
+        "type": "davies",
+        "colors": {
+          "primary": "aliceblue",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "rate_two",
+        "size": 52,
+        "position": { "top": 85, "left": 134 },
+        "type": "davies",
+        "colors": {
+          "primary": "aliceblue",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "level",
+        "size": 24,
+        "position": { "top": 118, "left": 88 },
+        "type": "simple"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 36,
+        "position": { "top": 163, "left": 82 },
+        "colors": { "on": "#0056fe" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 282, "left": 77 }
+      },
+      {
+        "id": "mode",
+        "type": "toggle",
+        "orientation": "horizontal",
+        "size": 32,
+        "position": { "top": 291, "left": 143 }
+      }
+    ]
+  }
+}
