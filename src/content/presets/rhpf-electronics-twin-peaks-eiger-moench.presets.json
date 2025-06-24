@@ -1,0 +1,102 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "delay_cascade",
+      "label": "Delay Cascade",
+      "settings": {
+        "echo_one": 10,
+        "echo_two": 10,
+        "rate_one": 4,
+        "rate_two": 6.5,
+        "level": 10,
+        "mode": 1
+      }
+    },
+    {
+      "id": "double_slap",
+      "label": "Double Slapback",
+      "settings": {
+        "echo_one": 7,
+        "echo_two": 7,
+        "rate_one": 0,
+        "rate_two": 2,
+        "level": 10,
+        "mode": 3
+      }
+    },
+    {
+      "id": "sympathetic_feedback",
+      "label": "Sympathetic Feedback",
+      "settings": {
+        "echo_one": 10,
+        "echo_two": 10,
+        "rate_one": 2,
+        "rate_two": 2,
+        "level": 10,
+        "mode": 1
+      }
+    },
+    {
+      "id": "feedback_toggle",
+      "label": "Cascading vs. Parallel",
+      "isSweep": true,
+      "target": "mode",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "echo_one": 5,
+        "echo_two": 10,
+        "rate_one": 2,
+        "rate_two": 8,
+        "level": 10
+      }
+    },
+    {
+      "id": "echo_one_knob",
+      "label": "Echo",
+      "isSweep": true,
+      "target": "echo_one",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "rate_one": 6,
+        "echo_two": 0,
+        "rate_two": 0,
+        "level": 10,
+        "mode": 3
+      }
+    },
+    {
+      "id": "rate_one_knob",
+      "label": "Rate",
+      "isSweep": true,
+      "target": "rate_one",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "echo_one": 10,
+        "echo_two": 0,
+        "rate_two": 0,
+        "level": 10,
+        "mode": 3
+      }
+    },
+    {
+      "id": "echo_two_knob",
+      "label": "Cascading Echo",
+      "isSweep": true,
+      "target": "echo_two",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "echo_one": 5,
+        "rate_one": 2,
+        "rate_two": 10,
+        "level": 10,
+        "mode": 1
+      }
+    }
+  ]
+}
