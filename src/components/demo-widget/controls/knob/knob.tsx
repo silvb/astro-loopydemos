@@ -20,6 +20,7 @@ import { LichtlaermAudioKnob } from "./lichtlaerm-audio-knob"
 import { MuffKnob } from "./muff-knob"
 import { ObneKnob } from "./obne-knob"
 import { OffsetKnob } from "./offset-knob"
+import { OrangeKnob } from "./orange-knob"
 import { RoundChickenHeadKnob } from "./round-chicken-head-knob"
 import { SimpleDotKnob } from "./simple-dot-knob"
 import { SimpleKnob } from "./simple-knob"
@@ -107,6 +108,9 @@ export const Knob: Component<KnobProps> = props => {
         </Match>
         <Match when={props.type === "emptyheadlarge"}>
           <EmptyHeadLargeKnob {...sizeAndColorProps} />
+        </Match>
+        <Match when={props.type === "orange"}>
+          <OrangeKnob {...sizeAndColorProps} />
         </Match>
       </Switch>
     </KnobStateContainer>

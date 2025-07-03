@@ -73,6 +73,7 @@ const knobTypeEnum = z.enum([
   "fanclub",
   "emptyhead",
   "emptyheadlarge",
+  "orange",
 ])
 
 const switchTypeEnum = z.enum([
