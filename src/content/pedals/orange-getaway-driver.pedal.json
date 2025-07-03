@@ -1,25 +1,25 @@
 {
   "name": "orange-getaway-driver",
   "width": 300,
-  "height": 350,
+  "height": 380,
   "controls": {
     "knobs": [
       {
         "id": "vol",
-        "size": 54,
-        "position": { "top": 43, "left": 53 },
+        "size": 60,
+        "position": { "top": 46, "left": 43 },
         "type": "orange"
       },
       {
         "id": "bite",
-        "size": 54,
-        "position": { "top": 79, "left": 124 },
+        "size": 60,
+        "position": { "top": 85, "left": 121 },
         "type": "orange"
       },
       {
         "id": "gain",
-        "size": 54,
-        "position": { "top": 42, "left": 193 },
+        "size": 60,
+        "position": { "top": 45, "left": 197 },
         "type": "orange"
       }
     ],
@@ -27,7 +27,7 @@
       {
         "id": "on_led",
         "size": 40,
-        "position": { "top": 22, "left": 131 },
+        "position": { "top": 26, "left": 130 },
         "colors": { "on": "#008efc" }
       }
     ],
@@ -35,8 +35,8 @@
       {
         "id": "bypass_switch",
         "type": "stomp",
-        "size": 48,
-        "position": { "top": 269, "left": 127 }
+        "size": 50,
+        "position": { "top": 293, "left": 126 }
       }
     ]
   }

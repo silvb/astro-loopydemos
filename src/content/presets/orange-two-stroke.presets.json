@@ -1,0 +1,20 @@
+{
+  "hasBackingTrack": false,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": { "hi": 5, "lo": 5, "oil": 5, "freq_lo": 5, "freq_hi": 5 }
+    },
+    {
+      "id": "hi_knob",
+      "label": "Hi",
+      "isSweep": true,
+      "target": "hi",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "lo": 5, "oil": 5, "freq_lo": 5, "freq_hi": 5 }
+    }
+  ]
+}
