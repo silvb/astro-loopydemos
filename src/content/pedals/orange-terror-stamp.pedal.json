@@ -1,0 +1,65 @@
+{
+  "name": "orange-terror-stamp",
+  "width": 395,
+  "height": 300,
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume_1",
+        "size": 60,
+        "position": { "top": 93, "left": 45 },
+        "type": "orange",
+        "colors": {
+          "primary": "#322b2b",
+          "secondary": "#483f41",
+          "edge": "#000",
+          "tick": "#fff"
+        }
+      },
+      {
+        "id": "volume_2",
+        "size": 60,
+        "position": { "top": 93, "left": 130 },
+        "type": "orange",
+        "colors": {
+          "primary": "#322b2b",
+          "secondary": "#483f41",
+          "edge": "#000",
+          "tick": "#fff"
+        }
+      },
+      {
+        "id": "shape",
+        "size": 60,
+        "position": { "top": 93, "left": 216 },
+        "type": "orange",
+        "colors": {
+          "primary": "#322b2b",
+          "secondary": "#483f41",
+          "edge": "#000",
+          "tick": "#fff"
+        }
+      },
+      {
+        "id": "gain",
+        "size": 60,
+        "position": { "top": 93, "left": 303 },
+        "type": "orange",
+        "colors": {
+          "primary": "#322b2b",
+          "secondary": "#483f41",
+          "edge": "#000",
+          "tick": "#fff"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "vol_1_led",
+        "size": 32,
+        "position": { "top": 149, "left": 58 },
+        "colors": { "on": "#f80" }
+      }
+    ]
+  }
+}

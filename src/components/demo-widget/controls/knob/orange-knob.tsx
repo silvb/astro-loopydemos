@@ -8,7 +8,7 @@ export const OrangeKnob: Component<OrangeKnobProps> = props => {
   const mergedProps = mergeProps(
     {
       colors: {
-        primary: "#dedede",
+        primary: "#e8e8e8",
         secondary: "#fff",
         tick: "#000",
         edge: "#E0E0E0",
