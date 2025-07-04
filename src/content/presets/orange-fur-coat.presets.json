@@ -1,0 +1,21 @@
+{
+  "hasBackingTrack": false,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "secondaryCircuitId": "octave",
+      "settings": { "vol": 5, "fuzz": 5, "eq": 5, "octave": 1 }
+    },
+    {
+      "id": "vol_knob",
+      "label": "Vol",
+      "isSweep": true,
+      "target": "vol",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "fuzz": 5, "eq": 5, "octave": 1 }
+    }
+  ]
+}

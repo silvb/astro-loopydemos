@@ -1,4 +1,3 @@
-
 ---
 builder: Orange
 model: Acoustic Pedal
