@@ -1,0 +1,55 @@
+{
+  "name": "orange-the-amp-detonator",
+  "width": 300,
+  "height": 380,
+  "controls": {
+    "knobs": [],
+    "leds": [
+      { "id": "on_led", "size": 48, "position": { "top": 24, "left": 124 } },
+      {
+        "id": "b_led",
+        "secondaryCircuitId": "ab",
+        "size": 48,
+        "colors": {
+          "on": "springgreen"
+        },
+        "position": { "top": 24, "left": 124 }
+      },
+      {
+        "id": "both_led",
+        "secondaryCircuitId": "both",
+        "size": 48,
+        "colors": {
+          "on": "cornflowerblue"
+        },
+        "position": { "top": 24, "left": 124 }
+      }
+    ],
+    "switches": [
+      {
+        "id": "ab_stomp",
+        "secondaryCircuitId": "ab",
+        "type": "stomp",
+        "size": 52,
+        "position": { "top": 292, "left": 37 }
+      },
+      {
+        "id": "both_stomp",
+        "secondaryCircuitId": "both",
+        "type": "stomp",
+        "size": 52,
+        "position": { "top": 292, "left": 209 }
+      },
+      {
+        "id": "phase",
+        "type": "pushbutton",
+        "colors": {
+          "primary": "antiquewhite",
+          "secondary": "gainsboro"
+        },
+        "size": 32,
+        "position": { "top": 56, "left": 57 }
+      }
+    ]
+  }
+}

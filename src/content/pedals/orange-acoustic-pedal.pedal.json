@@ -1,0 +1,96 @@
+{
+  "name": "orange-acoustic-pedal",
+  "width": 300,
+  "height": 380,
+  "controls": {
+    "knobs": [
+      {
+        "id": "bass",
+        "size": 54,
+        "position": { "top": 82, "left": 51 },
+        "type": "orange",
+        "colors": {
+          "primary": "#322b2b",
+          "secondary": "#483f41",
+          "edge": "#000",
+          "tick": "#fff"
+        }
+      },
+      {
+        "id": "middle",
+        "size": 54,
+        "position": { "top": 139, "left": 123 },
+        "type": "orange",
+        "colors": {
+          "primary": "#322b2b",
+          "secondary": "#483f41",
+          "edge": "#000",
+          "tick": "#fff"
+        }
+      },
+      {
+        "id": "treble",
+        "size": 54,
+        "position": { "top": 82, "left": 197 },
+        "type": "orange",
+        "colors": {
+          "primary": "#322b2b",
+          "secondary": "#483f41",
+          "edge": "#000",
+          "tick": "#fff"
+        }
+      },
+      {
+        "id": "notch",
+        "size": 54,
+        "position": { "top": 198, "left": 51 },
+        "type": "orange",
+        "colors": {
+          "primary": "#322b2b",
+          "secondary": "#483f41",
+          "edge": "#000",
+          "tick": "#fff"
+        }
+      },
+      {
+        "id": "q_factor",
+        "size": 54,
+        "position": { "top": 197, "left": 196 },
+        "type": "orange",
+        "colors": {
+          "primary": "#322b2b",
+          "secondary": "#483f41",
+          "edge": "#000",
+          "tick": "#fff"
+        }
+      },
+      {
+        "id": "volume",
+        "size": 80,
+        "position": { "top": 266, "left": 110 },
+        "type": "orange",
+        "colors": {
+          "primary": "#322b2b",
+          "secondary": "#483f41",
+          "edge": "#000",
+          "tick": "#fff"
+        }
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 42, "position": { "top": 208, "left": 130 } }
+    ],
+    "switches": [
+      {
+        "id": "phase",
+        "type": "pushbutton",
+        "colors": {
+          "primary": "antiquewhite",
+          "secondary": "gainsboro"
+        },
+        "size": 36,
+        "position": { "top": 79, "left": 133 }
+      }
+    ]
+  }
+}
