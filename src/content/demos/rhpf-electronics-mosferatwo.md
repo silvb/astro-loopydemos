@@ -11,7 +11,7 @@ tags:
   - stoner rock
   - qotsa
 externalLinks:
-  builderLink: https://rhpfelectronics.com/product/mosferatwo-by-rhpf-electronics-mosfet-overdrive-pedal/
+  builderLink: https://rhpfelectronics.com/product/mosferatwo-by-rhpf-electronics-mosfet-overdrive-pedal/?Partner=loopydemos
 ---
 
 The Mosferatwo by RhPf Electronics is a MOSFET based overdrive and distortion pedal.

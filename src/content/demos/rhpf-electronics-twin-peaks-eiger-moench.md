@@ -9,7 +9,7 @@ tags:
   - delay
   - dual delay
 externalLinks:
-  builderLink: https://rhpfelectronics.com/product/twin-peaks-eiger-monch-by-rhpf-electronics-dual-parallel-delay-pedal/
+  builderLink: https://rhpfelectronics.com/product/twin-peaks-eiger-monch-by-rhpf-electronics-dual-parallel-delay-pedal/?Partner=loopydemos
 ---
 
 The Twin Peaks Eiger-Mönch by RhPf Electronics is a dual delay pedal with a clever twist.

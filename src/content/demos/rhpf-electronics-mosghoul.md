@@ -9,7 +9,7 @@ tags:
   - distortion
   - MOSFET distortion
 externalLinks:
-  builderLink: https://rhpfelectronics.com/product/mosghoul-by-rhpf-electronics-mosfet-distortion-pedal/
+  builderLink: https://rhpfelectronics.com/product/mosghoul-by-rhpf-electronics-mosfet-distortion-pedal/?Partner=loopydemos
 ---
 
 The Mo(s)ghoul by RhPf Electronics is a MOSFET distortion pedal made for guitarists seeking a high-gain, thick and textured distortion sound.
