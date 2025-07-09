@@ -1,0 +1,110 @@
+{
+  "name": "orange-guitar-butler",
+  "width": 560,
+  "height": 510,
+  "controls": {
+    "knobs": [
+      {
+        "id": "punch",
+        "size": 48,
+        "position": { "top": 167, "left": 66 },
+        "type": "jhs"
+      },
+      {
+        "id": "vol_1",
+        "size": 48,
+        "position": { "top": 168, "left": 128 },
+        "type": "jhs"
+      },
+      {
+        "id": "vol_2",
+        "size": 48,
+        "position": { "top": 168, "left": 191 },
+        "type": "jhs"
+      },
+      {
+        "id": "hi_a",
+        "size": 48,
+        "position": { "top": 167, "left": 254 },
+        "type": "jhs"
+      },
+      {
+        "id": "mid_a",
+        "size": 48,
+        "position": { "top": 168, "left": 317 },
+        "type": "jhs"
+      },
+      {
+        "id": "bass_a",
+        "size": 48,
+        "position": { "top": 168, "left": 380 },
+        "type": "jhs"
+      },
+      {
+        "id": "gain_a",
+        "size": 48,
+        "position": { "top": 168, "left": 443 },
+        "type": "jhs"
+      },
+      {
+        "id": "hi_b",
+        "size": 68,
+        "position": { "top": 256, "left": 120 },
+        "type": "jhs"
+      },
+      {
+        "id": "mid_b",
+        "size": 68,
+        "position": { "top": 256, "left": 202 },
+        "type": "jhs"
+      },
+      {
+        "id": "bass_b",
+        "size": 68,
+        "position": { "top": 256, "left": 288 },
+        "type": "jhs"
+      },
+      {
+        "id": "gain_b",
+        "size": 68,
+        "position": { "top": 256, "left": 370 },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "vol_1_led",
+        "size": 32,
+        "position": { "top": 157, "left": 163 }
+      },
+      {
+        "id": "vol_2_led",
+        "size": 32,
+        "position": { "top": 157, "left": 225 },
+        "colors": { "on": "#008efc" }
+      },
+      {
+        "id": "on_led",
+        "size": 32,
+        "position": { "top": 193, "left": 489 },
+        "colors": { "on": "#0f0" }
+      },
+      {
+        "id": "channel_b_led",
+        "secondaryCircuitId": "channel_b",
+        "size": 32,
+        "position": { "top": 288, "left": 489 },
+        "colors": { "on": "#e3fb00" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "secondaryCircuitId": "channel_b",
+        "type": "stomp",
+        "size": 52,
+        "position": { "top": 441, "left": 410 }
+      }
+    ]
+  }
+}

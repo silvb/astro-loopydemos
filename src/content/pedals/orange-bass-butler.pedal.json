@@ -1,0 +1,72 @@
+{
+  "name": "orange-bass-butler",
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol_a",
+        "size": 48,
+        "position": { "top": 64, "left": 64 },
+        "type": "bakelit"
+      },
+      {
+        "id": "hi_a",
+        "size": 48,
+        "position": { "top": 64, "left": 64 },
+        "type": "bakelit"
+      },
+      {
+        "id": "mid_a",
+        "size": 48,
+        "position": { "top": 64, "left": 64 },
+        "type": "bakelit"
+      },
+      {
+        "id": "bass_a",
+        "size": 48,
+        "position": { "top": 64, "left": 64 },
+        "type": "bakelit"
+      },
+      {
+        "id": "gain_a",
+        "size": 48,
+        "position": { "top": 64, "left": 64 },
+        "type": "bakelit"
+      },
+      {
+        "id": "vol_b",
+        "size": 48,
+        "position": { "top": 64, "left": 64 },
+        "type": "bakelit"
+      },
+      {
+        "id": "hi_b",
+        "size": 48,
+        "position": { "top": 64, "left": 64 },
+        "type": "bakelit"
+      },
+      {
+        "id": "bass_b",
+        "size": 48,
+        "position": { "top": 64, "left": 64 },
+        "type": "bakelit"
+      },
+      {
+        "id": "comp",
+        "size": 48,
+        "position": { "top": 64, "left": 64 },
+        "type": "bakelit"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 32, "position": { "top": 64, "left": 64 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 64, "left": 64 }
+      }
+    ]
+  }
+}
