@@ -5,6 +5,7 @@
     {
       "id": "static_preset",
       "label": "Static Preset",
+      "secondaryCircuitId": "channel_b",
       "settings": {
         "vol_a": 5,
         "hi_a": 5,

@@ -14,6 +14,7 @@ export const PresetButton: Component<PresetButtonProps> = props => {
     pedalsOn,
     addPedalsOn,
     isLoading,
+    secondaryCircuitsOn,
   } = useDemoState()
   let buttonEl!: HTMLButtonElement
 
@@ -34,7 +35,8 @@ export const PresetButton: Component<PresetButtonProps> = props => {
   const isLoadingAndActive = () => isLoading() && activePresetId() === props.id
   const isActive = () =>
     activePresetId() === props.id &&
-    activePedals().some(activePedal => pedalsOn().includes(activePedal))
+    (activePedals().some(activePedal => pedalsOn().includes(activePedal)) ||
+      secondaryCircuitsOn().length > 0)
 
   return (
     <button

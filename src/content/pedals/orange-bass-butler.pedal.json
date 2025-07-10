@@ -1,71 +1,140 @@
 {
   "name": "orange-bass-butler",
+  "width": 560,
+  "height": 510,
   "controls": {
     "knobs": [
       {
         "id": "vol_a",
-        "size": 48,
-        "position": { "top": 64, "left": 64 },
-        "type": "bakelit"
+        "size": 56,
+        "position": { "top": 129, "left": 89 },
+        "type": "orange",
+        "colors": {
+          "primary": "#322b2b",
+          "secondary": "#483f41",
+          "edge": "#000",
+          "tick": "#fff"
+        }
       },
       {
         "id": "hi_a",
-        "size": 48,
-        "position": { "top": 64, "left": 64 },
-        "type": "bakelit"
+        "size": 56,
+        "position": { "top": 129, "left": 171 },
+        "type": "orange",
+        "colors": {
+          "primary": "#322b2b",
+          "secondary": "#483f41",
+          "edge": "#000",
+          "tick": "#fff"
+        }
       },
       {
         "id": "mid_a",
-        "size": 48,
-        "position": { "top": 64, "left": 64 },
-        "type": "bakelit"
+        "size": 56,
+        "position": { "top": 129, "left": 252 },
+        "type": "orange",
+        "colors": {
+          "primary": "#322b2b",
+          "secondary": "#483f41",
+          "edge": "#000",
+          "tick": "#fff"
+        }
       },
       {
         "id": "bass_a",
-        "size": 48,
-        "position": { "top": 64, "left": 64 },
-        "type": "bakelit"
+        "size": 56,
+        "position": { "top": 129, "left": 333 },
+        "type": "orange",
+        "colors": {
+          "primary": "#322b2b",
+          "secondary": "#483f41",
+          "edge": "#000",
+          "tick": "#fff"
+        }
       },
       {
         "id": "gain_a",
-        "size": 48,
-        "position": { "top": 64, "left": 64 },
-        "type": "bakelit"
+        "size": 56,
+        "position": { "top": 129, "left": 413 },
+        "type": "orange",
+        "colors": {
+          "primary": "#322b2b",
+          "secondary": "#483f41",
+          "edge": "#000",
+          "tick": "#fff"
+        }
       },
       {
         "id": "vol_b",
-        "size": 48,
-        "position": { "top": 64, "left": 64 },
-        "type": "bakelit"
+        "size": 90,
+        "position": { "top": 205, "left": 83 },
+        "type": "orange",
+        "colors": {
+          "primary": "#322b2b",
+          "secondary": "#483f41",
+          "edge": "#000",
+          "tick": "#fff"
+        }
       },
       {
         "id": "hi_b",
-        "size": 48,
-        "position": { "top": 64, "left": 64 },
-        "type": "bakelit"
+        "size": 90,
+        "position": { "top": 205, "left": 183 },
+        "type": "orange",
+        "colors": {
+          "primary": "#322b2b",
+          "secondary": "#483f41",
+          "edge": "#000",
+          "tick": "#fff"
+        }
       },
       {
         "id": "bass_b",
-        "size": 48,
-        "position": { "top": 64, "left": 64 },
-        "type": "bakelit"
+        "size": 90,
+        "position": { "top": 205, "left": 284 },
+        "type": "orange",
+        "colors": {
+          "primary": "#322b2b",
+          "secondary": "#483f41",
+          "edge": "#000",
+          "tick": "#fff"
+        }
       },
       {
         "id": "comp",
-        "size": 48,
-        "position": { "top": 64, "left": 64 },
-        "type": "bakelit"
+        "size": 90,
+        "position": { "top": 205, "left": 385 },
+        "type": "orange",
+        "colors": {
+          "primary": "#322b2b",
+          "secondary": "#483f41",
+          "edge": "#000",
+          "tick": "#fff"
+        }
       }
     ],
     "leds": [
-      { "id": "on_led", "size": 32, "position": { "top": 64, "left": 64 } }
+      {
+        "id": "on_led",
+        "size": 72,
+        "position": { "top": 341, "left": 244 },
+        "colors": { "on": "#008efc" }
+      },
+      {
+        "id": "channel_b_led",
+        "size": 72,
+        "position": { "top": 341, "left": 244 },
+        "secondaryCircuitId": "channel_b",
+        "colors": { "on": "#0f0" }
+      }
     ],
     "switches": [
       {
         "id": "bypass_switch",
+        "secondaryCircuitId": "channel_b",
         "type": "stomp",
-        "size": 48,
-        "position": { "top": 64, "left": 64 }
+        "size": 56,
+        "position": { "top": 438, "left": 252 }
       }
     ]
   }
