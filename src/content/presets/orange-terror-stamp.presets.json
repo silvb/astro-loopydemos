@@ -3,14 +3,47 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "sweet_drive",
+      "label": "Sweet Drive",
       "settings": {
-        "volume_1": 5,
+        "volume_1": 7,
         "volume_2": 5,
-        "shape": 5,
-        "gain": 5,
+        "shape": 2,
+        "gain": 4,
         "vol_1_led": true
+      }
+    },
+    {
+      "id": "sweet_drive_cabsim",
+      "label": "Sweet Drive 🎧",
+      "settings": {
+        "volume_1": 7,
+        "volume_2": 5,
+        "shape": 2,
+        "gain": 4,
+        "vol_2_led": true
+      }
+    },
+    {
+      "id": "tube_distortion",
+      "label": "Tube Distortion",
+      "settings": {
+        "volume_1": 6,
+        "volume_2": 4,
+        "shape": 6,
+        "gain": 8,
+        "vol_1_led": true
+      }
+    },
+    {
+      "id": "tube_distortion_cabsim",
+      "label": "Tube Distortion 🎧",
+      "settings": {
+        "volume_1": 6,
+        "volume_2": 4,
+        "shape": 6,
+        "gain": 8,
+        "vol_2_led": true
       }
     },
     {

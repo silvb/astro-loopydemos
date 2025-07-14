@@ -59,6 +59,12 @@
         "size": 32,
         "position": { "top": 149, "left": 58 },
         "colors": { "on": "#f80" }
+      },
+      {
+        "id": "vol_2_led",
+        "size": 32,
+        "position": { "top": 149, "left": 144 },
+        "colors": { "on": "#f80" }
       }
     ]
   }
