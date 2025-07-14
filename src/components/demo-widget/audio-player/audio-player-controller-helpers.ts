@@ -37,7 +37,8 @@ export const addSweepValue = (
 ) => {
   if (!isSweep) return id
 
-  const level = !sweepSetting?.[target!] ? initialValue : sweepSetting[target!]
+  const level = sweepSetting?.[target!] ?? initialValue
+
   return `${id}_${level}`
 }
 

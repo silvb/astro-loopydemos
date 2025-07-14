@@ -155,12 +155,19 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
   })
 
   createEffect(() => {
-    if (!activePreset()?.isSweep) {
-      setSweepSetting({})
+    if (activePreset()?.isSweep) {
+      setSweepSetting(prev =>
+        activePreset()?.target
+          ? {
+              [activePreset()!.target || ""]:
+                prev[activePreset()!.target!] ||
+                activePreset()?.initialValue ||
+                0,
+            }
+          : {},
+      )
     } else {
-      setSweepSetting({
-        [activePreset()?.target || ""]: activePreset()?.initialValue || 0,
-      })
+      setSweepSetting({})
     }
 
     setSecondaryCircuitsOn(activePreset()?.initialSecondaryCircuits || [])
