@@ -16,7 +16,13 @@ externalLinks:
   sweetwater: https://sweetwater.sjv.io/vPmM2W
 ---
 
-Write some copy about the Getaway Driver by Orange.
+The Orange Getaway Driver nails that cranked '70s amp vibe in a simple overdrive pedal. Three knobs – Volume, Gain, and Bite – and you're good to go. The Bite control brings in more treble as you turn it up, plus there's an internal button to tame brightness on overly bright amps.
+
+The JFET-based circuit runs in Class A like a tube amp, giving it that responsive feel. Dig in hard and it gets grittier, back off and it cleans up beautifully. At 9V you get EL84 character, at 12V it opens up with EL34-style grunt and headroom.
+
+The dual outputs are surprisingly useful. Main output is a transparent buffer, while the second has a cab sim based on Orange's vintage G12H30 speakers. It won't replace a proper IR loader, but it's handy for recording or headphone practice.
+
+The Getaway Driver excels as an always-on overdrive that adds Orange color to any amp and stacks well with other pedals.
 
 ### Signal Chain
 
