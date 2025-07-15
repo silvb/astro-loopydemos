@@ -6,7 +6,6 @@
       "id": "punch",
       "secondaryCircuitSlug": "punch_boosted",
       "secondaryCircuitOnlySlug": "boost_clip_only_8",
-      "initialSecondaryCircuits": ["boost"],
       "secondaryCircuitId": "boost",
       "label": "Punch",
       "settings": {
@@ -24,7 +23,6 @@
       "id": "heavy",
       "secondaryCircuitSlug": "heavy_boosted",
       "secondaryCircuitOnlySlug": "boost_clip_only_10",
-      "initialSecondaryCircuits": ["boost"],
       "secondaryCircuitId": "boost",
       "label": "Heavy",
       "settings": {
@@ -42,7 +40,6 @@
       "id": "warm",
       "secondaryCircuitSlug": "warm_boosted",
       "secondaryCircuitOnlySlug": "boost_clean_only_5",
-      "initialSecondaryCircuits": ["boost"],
       "secondaryCircuitId": "boost",
       "label": "Warm",
       "settings": {
@@ -60,7 +57,6 @@
       "id": "scooped",
       "secondaryCircuitSlug": "scooped_boosted",
       "secondaryCircuitOnlySlug": "boost_clip_only_8",
-      "initialSecondaryCircuits": ["boost"],
       "secondaryCircuitId": "boost",
       "label": "Scooped",
       "settings": {
