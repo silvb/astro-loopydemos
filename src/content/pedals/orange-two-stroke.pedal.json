@@ -35,7 +35,7 @@
         "type": "orange"
       },
       {
-        "id": "freq_lo",
+        "id": "freq_hi",
         "size": 60,
         "position": { "top": 131, "left": 66 },
         "colors": {
@@ -47,7 +47,7 @@
         "type": "orange"
       },
       {
-        "id": "freq_hi",
+        "id": "freq_lo",
         "size": 60,
         "position": { "top": 129, "left": 178 },
         "colors": {

@@ -33,6 +33,16 @@
       "settings": { "vol": 4, "bite": 6, "gain": 10 }
     },
     {
+      "id": "el84_tube",
+      "label": "EL 84 Breakup (9V)",
+      "settings": { "vol": 4, "bite": 10, "gain": 5 }
+    },
+    {
+      "id": "el34_tube",
+      "label": "EL 34 Breakup (12V)",
+      "settings": { "vol": 4, "bite": 10, "gain": 5 }
+    },
+    {
       "id": "bite_knob",
       "label": "Bite",
       "isSweep": true,
