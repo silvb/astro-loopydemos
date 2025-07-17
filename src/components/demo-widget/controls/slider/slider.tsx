@@ -33,7 +33,7 @@ export const Slider: Component<SliderProps> = props => {
         : downEvent.touches[0].clientX
 
     const moveValue = ((downX - rectLeft) / width) * 10
-    selectSweepSetting(props.id, moveValue)
+    selectSweepSetting(moveValue)
 
     const handleDrag = (moveEvent: typeof downEvent) => {
       moveEvent.preventDefault()
@@ -44,7 +44,7 @@ export const Slider: Component<SliderProps> = props => {
           : moveEvent.touches[0].clientX
 
       const moveValue = ((downX - rectLeft) / width) * 10
-      selectSweepSetting(props.id, moveValue)
+      selectSweepSetting(moveValue)
     }
 
     const throttledHandleDrag = throttle({ interval: 100 }, handleDrag)

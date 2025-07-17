@@ -1,0 +1,71 @@
+{
+  "hasBackingTrack": false,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "stoner_boost",
+      "label": "Stoner Boost",
+      "settings": { "hi": 7, "lo": 8, "oil": 10, "freq_hi": 0.5, "freq_lo": 3 }
+    },
+    {
+      "id": "smooth_honk",
+      "label": "Smooth Honk",
+      "settings": { "hi": 2, "lo": 9, "oil": 0, "freq_hi": 7.5, "freq_lo": 6.5 }
+    },
+    {
+      "id": "treble_boost",
+      "label": "Treble Boost",
+      "settings": { "hi": 6, "lo": 2, "oil": 10, "freq_hi": 3, "freq_lo": 0 }
+    },
+    {
+      "id": "pultec_trick",
+      "label": "Pultec Trick",
+      "settings": { "hi": 0, "lo": 10, "oil": 7, "freq_hi": 2, "freq_lo": 8 }
+    },
+    {
+      "id": "oil_knob",
+      "label": "Oil",
+      "isSweep": true,
+      "target": "oil",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "lo": 5, "hi": 5, "freq_lo": 5, "freq_hi": 5 }
+    },
+    {
+      "id": "hi_boost",
+      "label": "Hi Boost",
+      "isSweep": true,
+      "target": "freq_hi",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 9, 10],
+      "settings": { "lo": 5, "hi": 10, "oil": 3, "freq_lo": 5 }
+    },
+    {
+      "id": "hi_cut",
+      "label": "Hi Cut",
+      "isSweep": true,
+      "target": "freq_hi",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "lo": 5, "hi": 0, "oil": 3, "freq_lo": 5 }
+    },
+    {
+      "id": "lo_boost",
+      "label": "Lo Boost",
+      "isSweep": true,
+      "target": "freq_lo",
+      "initialValue": 0,
+      "values": [0, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "settings": { "lo": 10, "hi": 5, "oil": 3, "freq_hi": 5 }
+    },
+    {
+      "id": "lo_cut",
+      "label": "Lo Cut",
+      "isSweep": true,
+      "target": "freq_lo",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "lo": 10, "hi": 5, "oil": 3, "freq_hi": 5 }
+    }
+  ]
+}

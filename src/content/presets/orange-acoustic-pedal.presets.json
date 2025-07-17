@@ -1,0 +1,35 @@
+{
+  "hasBackingTrack": false,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": {
+        "bass": 5,
+        "middle": 5,
+        "treble": 5,
+        "notch": 5,
+        "q_factor": 5,
+        "volume": 5,
+        "phase": 1
+      }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "middle": 5,
+        "treble": 5,
+        "notch": 5,
+        "q_factor": 5,
+        "volume": 5,
+        "phase": 1
+      }
+    }
+  ]
+}

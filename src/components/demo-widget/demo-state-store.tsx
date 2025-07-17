@@ -2,8 +2,10 @@ import type { ControlElement, Preset, SettingsValue } from "@types"
 import { debounce } from "radash"
 import {
   type ParentComponent,
+  batch,
   createContext,
   createEffect,
+  createMemo,
   createSignal,
   useContext,
 } from "solid-js"
@@ -43,8 +45,19 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
 
   const setIsLoadingDebounced = debounce({ delay: 200 }, setIsLoading)
 
+  const addSweepSetting = (target: string, value: number) => {
+    setSweepSetting(prev => ({
+      ...prev,
+      [target]: value,
+    }))
+  }
+
   const activePreset = () =>
     presets().find(preset => preset.id === activePresetId())
+
+  // Memoized version for expensive computations
+  const memoizedActivePreset = createMemo(() => activePreset())
+  const memoizedActivePedals = createMemo(() => activePedals())
 
   const selectNextPreset = () => {
     const presetIndex = presets().findIndex(
@@ -68,23 +81,37 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
     selectPreset(presets()[previousPresetIndex].id)
   }
 
-  const selectSweepSetting = (id: string, value: number) => {
+  const selectSweepSetting = (value?: number) => {
     if (
-      !activePreset()?.isSweep &&
-      !activePreset()?.chain?.some(p => p.isSweep)
-    )
+      !activePreset() ||
+      (!activePreset()?.isSweep && !activePreset()?.chain?.some(p => p.isSweep))
+    ) {
+      setSweepSetting({})
       return
+    }
+
+    const target =
+      activePreset()?.target ||
+      activePreset()?.chain?.find(p => p.isSweep)?.target
+
+    if (!target) {
+      setSweepSetting({})
+      return
+    }
 
     const values =
       activePreset()?.values ||
       activePreset()?.chain?.find(p => p.isSweep)?.values ||
       []
 
-    const closestValue = findClosestValue(value, values)
+    const currentValue =
+      (value ?? sweepSetting()[target]) || activePreset()?.initialValue || 0
 
-    if (closestValue === sweepSetting()[id]) return
+    const closestValue = findClosestValue(currentValue, values)
 
-    setSweepSetting({ [id]: closestValue })
+    if (closestValue === sweepSetting()[target]) return
+
+    addSweepSetting(target, closestValue)
   }
 
   const toggleBypass = (pedalSlug: string) => {
@@ -150,41 +177,44 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
     return target === id
   }
 
+  // Initialize first preset when presets are available
   createEffect(() => {
-    addPedalsOn(activePedals())
-  })
-
-  createEffect(() => {
-    if (!activePreset()?.isSweep) {
-      setSweepSetting({})
-    } else {
-      setSweepSetting({
-        [activePreset()?.target || ""]: activePreset()?.initialValue || 0,
-      })
-    }
-
-    setSecondaryCircuitsOn(activePreset()?.initialSecondaryCircuits || [])
-
-    if (activePreset()?.comparison) {
-      const pedalsInComparison = activePreset()?.comparison?.map(
-        item => item.pedalSlug,
-      )
-      if (!pedalsInComparison?.includes(activePedals()[0]))
-        setActivePedals([pedalsInComparison?.[0] || ""])
-      return
-    }
-
-    setActivePedals(
-      activePreset()?.chain?.map(chainElement => chainElement.pedalSlug) || [
-        mainPedal(),
-      ],
-    )
-  })
-
-  createEffect(() => {
-    if (presets().length > 0) {
+    if (presets().length > 0 && !activePresetId()) {
       selectPreset(presets()[0].id)
     }
+  })
+
+  // Batch all preset-related state updates
+  createEffect(() => {
+    const preset = memoizedActivePreset()
+    if (!preset) return
+
+    batch(() => {
+      // Critical: sweep setting must be updated first and synchronously
+      selectSweepSetting()
+
+      // Secondary state updates
+      setSecondaryCircuitsOn(preset.initialSecondaryCircuits || [])
+
+      let newActivePedals: string[]
+      if (preset.comparison) {
+        const pedalsInComparison = preset.comparison.map(item => item.pedalSlug)
+        if (!pedalsInComparison.includes(memoizedActivePedals()[0])) {
+          newActivePedals = [pedalsInComparison[0] || ""]
+          setActivePedals(newActivePedals)
+        } else {
+          newActivePedals = memoizedActivePedals()
+        }
+      } else {
+        newActivePedals = preset.chain?.map(
+          chainElement => chainElement.pedalSlug,
+        ) || [mainPedal()]
+        setActivePedals(newActivePedals)
+      }
+
+      // Batch the pedals on update with the active pedals update
+      addPedalsOn(newActivePedals)
+    })
   })
 
   return {

@@ -1,0 +1,40 @@
+{
+  "hasBackingTrack": false,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "secondaryCircuitId": "channel_b",
+      "settings": {
+        "vol_a": 5,
+        "hi_a": 5,
+        "mid_a": 5,
+        "bass_a": 5,
+        "gain_a": 5,
+        "vol_b": 5,
+        "hi_b": 5,
+        "bass_b": 5,
+        "comp": 5
+      }
+    },
+    {
+      "id": "vol_a_knob",
+      "label": "Vol_a",
+      "isSweep": true,
+      "target": "vol_a",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "hi_a": 5,
+        "mid_a": 5,
+        "bass_a": 5,
+        "gain_a": 5,
+        "vol_b": 5,
+        "hi_b": 5,
+        "bass_b": 5,
+        "comp": 5
+      }
+    }
+  ]
+}
