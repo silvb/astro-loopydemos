@@ -91,7 +91,7 @@
       "label": "Gain",
       "isSweep": true,
       "target": "gain",
-      "initialValue": 1,
+      "initialValue": 4,
       "values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
       "settings": {
         "volume_1": 7,
@@ -105,7 +105,7 @@
       "label": "Gain 🎧",
       "isSweep": true,
       "target": "gain",
-      "initialValue": 1,
+      "initialValue": 4,
       "values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
       "settings": {
         "volume_1": 7,

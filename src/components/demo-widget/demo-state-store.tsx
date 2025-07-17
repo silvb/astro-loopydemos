@@ -146,7 +146,6 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
     const slug = pedalSlug
 
     return (
-      sweepSetting()?.[id] ??
       activePreset()?.chain?.find(chainItem => chainItem.pedalSlug === slug)
         ?.settings?.[id] ??
       activePreset()?.comparison?.find(compItem => compItem.pedalSlug === slug)
@@ -155,7 +154,8 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
       dependency?.values?.find(
         ({ sourceValue }) =>
           sourceValue === getSetting(slug, dependency.source),
-      )?.targetValue
+      )?.targetValue ??
+      sweepSetting()?.[id]
     )
   }
 

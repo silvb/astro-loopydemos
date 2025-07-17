@@ -28,5 +28,5 @@ The Getaway Driver excels as an always-on overdrive that adds Orange color to an
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (bridge pickup)
 - Getaway Driver
-- [Mixwave Benson Chimera Plugin*](https://sweetwater.sjv.io/B0N2PL)
+- [Mixwave Benson Chimera Plugin*](https://sweetwater.sjv.io/B0N2PL) (bypassed when using the Cab Sim 🎧)
 - A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)

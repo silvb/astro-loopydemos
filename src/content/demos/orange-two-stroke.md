@@ -32,6 +32,6 @@ For players who want both clean boost and precise EQ control in one pedal, the T
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (bridge pickup)
 - Two Stroke
-- [Orange Terror Stamp](/demos/orange-terror-stamp/) set to clean. All the dirt you hear in the demo is coming from boosting this thing
-- [Mixwave Benson Chimera Plugin*](https://sweetwater.sjv.io/B0N2PL) (bypassed when using the Cab Sim 🎧)
+- [Orange Terror Stamp](/demos/orange-terror-stamp/) set to clean. All the dirt you hear in the demo is coming from boosting this thing.
+- [Mixwave Benson Chimera Plugin*](https://sweetwater.sjv.io/B0N2PL)
 - A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)
