@@ -39,6 +39,33 @@
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 9, 10],
       "settings": { "lo": 5, "hi": 10, "oil": 3, "freq_lo": 5 }
+    },
+    {
+      "id": "hi_cut",
+      "label": "Hi Cut",
+      "isSweep": true,
+      "target": "freq_hi",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "lo": 5, "hi": 0, "oil": 3, "freq_lo": 5 }
+    },
+    {
+      "id": "lo_boost",
+      "label": "Lo Boost",
+      "isSweep": true,
+      "target": "freq_lo",
+      "initialValue": 0,
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "settings": { "lo": 10, "hi": 5, "oil": 3, "freq_hi": 5 }
+    },
+    {
+      "id": "lo_cut",
+      "label": "Lo Cut",
+      "isSweep": true,
+      "target": "freq_lo",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "lo": 10, "hi": 5, "oil": 3, "freq_hi": 5 }
     }
   ]
 }
