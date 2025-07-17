@@ -84,8 +84,7 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
   const selectSweepSetting = (value?: number) => {
     if (
       !activePreset() ||
-      (!activePreset()?.isSweep &&
-        !activePreset()?.chain?.some(p => p.isSweep))
+      (!activePreset()?.isSweep && !activePreset()?.chain?.some(p => p.isSweep))
     ) {
       setSweepSetting({})
       return

@@ -49,7 +49,7 @@ export const AudioPlayerController: Component<
     setHasErrors(true)
   }
 
-  createEffect(() => {
+  createEffect(async () => {
     const muteBackingTrack = isBackingTrackMuted()
     const presetId = getAudioPresetId(
       sweepSetting(),
@@ -60,111 +60,113 @@ export const AudioPlayerController: Component<
     )
 
     if (isPlaying()) {
-      (async () => {
-        try {
-          if (!audioContext) {
-            audioContext = new AudioContext()
+      try {
+        if (!audioContext) {
+          audioContext = new AudioContext()
+        }
+
+        if (audioContext.state === "suspended") {
+          await audioContext.resume()
+        }
+
+        // Preload commonly used buffers on first play (but not current preset)
+        if (!hasPreloaded && audioContext) {
+          hasPreloaded = true
+          const commonPresetIds = ["clean"]
+
+          // Only preload backing track if this demo has one
+          if (props.hasBackingTrack) {
+            commonPresetIds.push("backing_track")
           }
 
-          if (audioContext.state === "suspended") {
-            await audioContext.resume()
-          }
+          preloadAudioBuffers(commonPresetIds, props.slug, audioContext).catch(
+            error => console.warn("Preloading failed:", error),
+          )
+        }
 
-          // Preload commonly used buffers on first play (but not current preset)
-          if (!hasPreloaded && audioContext) {
-            hasPreloaded = true
-            const commonPresetIds = ["clean"]
-            
-            // Only preload backing track if this demo has one
-            if (props.hasBackingTrack) {
-              commonPresetIds.push("backing_track")
-            }
-            
-            preloadAudioBuffers(commonPresetIds, props.slug, audioContext)
-              .catch(error => console.warn("Preloading failed:", error))
-          }
+        let currentAudioBuffer: AudioBuffer | null = null
 
-          let currentAudioBuffer: AudioBuffer | null = null
-          
-          if (currentBuffer.id !== presetId) {
-            currentBuffer.id = presetId ?? null
-            setIsLoading(true)
+        if (currentBuffer.id !== presetId) {
+          currentBuffer.id = presetId ?? null
+          setIsLoading(true)
 
-            try {
-              currentAudioBuffer = await fetchAudioBuffer(
-                presetId,
-                props.slug,
-                audioContext,
-              )
-            } catch (error) {
-              errorHandler(error, props.slug, presetId)
-            } finally {
-              setIsLoading(false)
-            }
-          } else {
-            // Get from cache since we know it's the same preset
+          try {
             currentAudioBuffer = await fetchAudioBuffer(
               presetId,
               props.slug,
               audioContext,
             )
+          } catch (error) {
+            errorHandler(error, props.slug, presetId)
+          } finally {
+            setIsLoading(false)
           }
-
-          if (trackLength === 0 && currentAudioBuffer) {
-            trackLength =
-              currentAudioBuffer.length / currentAudioBuffer.sampleRate
-          }
-
-          if (currentAudioBuffer) {
-            currentPlayingAudioSource?.stop()
-            currentPlayingAudioSource?.disconnect()
-            currentPlayingAudioSource = audioContext.createBufferSource()
-            currentPlayingAudioSource.buffer = currentAudioBuffer
-            currentPlayingAudioSource.loop = true
-
-            const gainNode = audioContext.createGain()
-            gainNode.gain.value = props.volume ?? 1
-            currentPlayingAudioSource.connect(gainNode)
-            gainNode.connect(audioContext.destination)
-
-            currentPlayingAudioSource.start(0, audioContext.currentTime % trackLength)
-          }
-
-          if (props.hasBackingTrack) {
-            let backingTrackBuffer: AudioBuffer | null = null
-            
-            setIsLoading(true)
-            try {
-              backingTrackBuffer = await fetchAudioBuffer(
-                BACKING_TRACK,
-                props.slug,
-                audioContext,
-              )
-            } catch (error) {
-              errorHandler(error, props.slug, BACKING_TRACK)
-            } finally {
-              setIsLoading(false)
-            }
-
-            backingTrackAudioSource?.stop()
-            backingTrackAudioSource?.disconnect()
-
-            if (!muteBackingTrack && backingTrackBuffer) {
-              backingTrackAudioSource = audioContext.createBufferSource()
-              backingTrackAudioSource.buffer = backingTrackBuffer
-              backingTrackAudioSource.loop = true
-
-              backingTrackAudioSource.connect(audioContext.destination)
-              backingTrackAudioSource.start(
-                0,
-                audioContext.currentTime % trackLength,
-              )
-            }
-          }
-        } catch (error) {
-          errorHandler(error, props.slug, presetId)
+        } else {
+          // Get from cache since we know it's the same preset
+          currentAudioBuffer = await fetchAudioBuffer(
+            presetId,
+            props.slug,
+            audioContext,
+          )
         }
-      })()
+
+        if (trackLength === 0 && currentAudioBuffer) {
+          trackLength =
+            currentAudioBuffer.length / currentAudioBuffer.sampleRate
+        }
+
+        if (currentAudioBuffer) {
+          currentPlayingAudioSource?.stop()
+          currentPlayingAudioSource?.disconnect()
+          currentPlayingAudioSource = audioContext.createBufferSource()
+          currentPlayingAudioSource.buffer = currentAudioBuffer
+          currentPlayingAudioSource.loop = true
+
+          const gainNode = audioContext.createGain()
+          gainNode.gain.value = props.volume ?? 1
+          currentPlayingAudioSource.connect(gainNode)
+          gainNode.connect(audioContext.destination)
+
+          currentPlayingAudioSource.start(
+            0,
+            audioContext.currentTime % trackLength,
+          )
+        }
+
+        if (props.hasBackingTrack) {
+          let backingTrackBuffer: AudioBuffer | null = null
+
+          setIsLoading(true)
+          try {
+            backingTrackBuffer = await fetchAudioBuffer(
+              BACKING_TRACK,
+              props.slug,
+              audioContext,
+            )
+          } catch (error) {
+            errorHandler(error, props.slug, BACKING_TRACK)
+          } finally {
+            setIsLoading(false)
+          }
+
+          backingTrackAudioSource?.stop()
+          backingTrackAudioSource?.disconnect()
+
+          if (!muteBackingTrack && backingTrackBuffer) {
+            backingTrackAudioSource = audioContext.createBufferSource()
+            backingTrackAudioSource.buffer = backingTrackBuffer
+            backingTrackAudioSource.loop = true
+
+            backingTrackAudioSource.connect(audioContext.destination)
+            backingTrackAudioSource.start(
+              0,
+              audioContext.currentTime % trackLength,
+            )
+          }
+        }
+      } catch (error) {
+        errorHandler(error, props.slug, presetId)
+      }
     } else {
       audioContext?.suspend()
     }

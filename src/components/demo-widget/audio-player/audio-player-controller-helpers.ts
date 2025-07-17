@@ -1,6 +1,6 @@
 import type { Preset } from "@types"
-import { BACKING_TRACK, CLEAN_TONE, MEDIA_ROOT_URL } from "./constants"
 import { audioBufferCache } from "./audio-buffer-cache"
+import { BACKING_TRACK, CLEAN_TONE, MEDIA_ROOT_URL } from "./constants"
 
 export const getMediaUrl = (id: string, slug: string) => {
   switch (id) {
@@ -19,7 +19,7 @@ export const fetchAudioBuffer = async (
   audioContext: AudioContext,
 ) => {
   const cacheKey = `${slug}:${id}`
-  
+
   // Check cache first
   const cachedBuffer = audioBufferCache.get(cacheKey)
   if (cachedBuffer) {
@@ -43,16 +43,16 @@ export const fetchAudioBuffer = async (
 
     const buffer = await response.arrayBuffer()
     const audioBuffer = await audioContext.decodeAudioData(buffer)
-    
+
     // Cache the decoded audio buffer
     audioBufferCache.set(cacheKey, audioBuffer)
-    
+
     return audioBuffer
   })()
 
   // Track the pending request
   audioBufferCache.setPending(cacheKey, fetchPromise)
-  
+
   return fetchPromise
 }
 
@@ -64,13 +64,13 @@ export const preloadAudioBuffers = async (
   slug: string,
   audioContext: AudioContext,
 ) => {
-  const promises = presetIds.map(id => 
+  const promises = presetIds.map(id =>
     fetchAudioBuffer(id, slug, audioContext).catch(error => {
       console.warn(`Failed to preload audio buffer ${id}:`, error)
       return null
-    })
+    }),
   )
-  
+
   return Promise.allSettled(promises)
 }
 

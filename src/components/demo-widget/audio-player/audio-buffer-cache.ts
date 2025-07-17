@@ -48,24 +48,24 @@ class AudioBufferCache {
 
   get(key: string): AudioBuffer | null {
     this.cleanup()
-    
+
     const item = this.cache.get(key)
     if (!item) return null
 
     // Update timestamp for LRU
     item.timestamp = Date.now()
     this.cache.set(key, item)
-    
+
     return item.buffer
   }
 
   set(key: string, buffer: AudioBuffer): void {
     this.cleanup()
     this.evictLRU()
-    
+
     this.cache.set(key, {
       buffer,
-      timestamp: Date.now()
+      timestamp: Date.now(),
     })
   }
 
@@ -98,7 +98,7 @@ class AudioBufferCache {
    */
   setPending(key: string, promise: Promise<AudioBuffer>): void {
     this.pendingRequests.set(key, promise)
-    
+
     // Clean up when promise resolves/rejects
     promise.finally(() => {
       this.pendingRequests.delete(key)
