@@ -1,5 +1,6 @@
 import type { Preset } from "@types"
 import { BACKING_TRACK, CLEAN_TONE, MEDIA_ROOT_URL } from "./constants"
+import { audioBufferCache } from "./audio-buffer-cache"
 
 export const getMediaUrl = (id: string, slug: string) => {
   switch (id) {
@@ -17,15 +18,67 @@ export const fetchAudioBuffer = async (
   slug: string,
   audioContext: AudioContext,
 ) => {
-  const url = getMediaUrl(id, slug)
-  const response = await fetch(url)
-
-  if (!response.ok) {
-    throw new Error(`Failed to fetch audio buffer: ${response.statusText}`)
+  const cacheKey = `${slug}:${id}`
+  
+  // Check cache first
+  const cachedBuffer = audioBufferCache.get(cacheKey)
+  if (cachedBuffer) {
+    return cachedBuffer
   }
 
-  const buffer = await response.arrayBuffer()
-  return audioContext.decodeAudioData(buffer)
+  // Check if request is already pending
+  const pendingRequest = audioBufferCache.getPending(cacheKey)
+  if (pendingRequest) {
+    return pendingRequest
+  }
+
+  // Create new fetch promise
+  const fetchPromise = (async () => {
+    const url = getMediaUrl(id, slug)
+    const response = await fetch(url)
+
+    if (!response.ok) {
+      throw new Error(`Failed to fetch audio buffer: ${response.statusText}`)
+    }
+
+    const buffer = await response.arrayBuffer()
+    const audioBuffer = await audioContext.decodeAudioData(buffer)
+    
+    // Cache the decoded audio buffer
+    audioBufferCache.set(cacheKey, audioBuffer)
+    
+    return audioBuffer
+  })()
+
+  // Track the pending request
+  audioBufferCache.setPending(cacheKey, fetchPromise)
+  
+  return fetchPromise
+}
+
+/**
+ * Preload audio buffers for better performance
+ */
+export const preloadAudioBuffers = async (
+  presetIds: string[],
+  slug: string,
+  audioContext: AudioContext,
+) => {
+  const promises = presetIds.map(id => 
+    fetchAudioBuffer(id, slug, audioContext).catch(error => {
+      console.warn(`Failed to preload audio buffer ${id}:`, error)
+      return null
+    })
+  )
+  
+  return Promise.allSettled(promises)
+}
+
+/**
+ * Clear audio buffer cache (useful for memory management)
+ */
+export const clearAudioBufferCache = () => {
+  audioBufferCache.clear()
 }
 
 export const addSweepValue = (
