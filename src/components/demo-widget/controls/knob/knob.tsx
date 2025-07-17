@@ -1,33 +1,114 @@
-import type { Knob as KnobType } from "@types"
-import { type Component, Match, Switch, splitProps } from "solid-js"
-import { ArrowKnob } from "./arrow-knob"
-import { BakelitKnob } from "./bakelit-knob"
-import { BrutalistKnob } from "./brutalist-knob"
-import { CbaKnob } from "./cba-knob"
-import { ChickenHeadKnob } from "./chicken-head-knob"
-import { DaviesKnob } from "./davies-knob"
-import { EmptyHeadKnob } from "./empty-head"
-import { EmptyHeadLargeKnob } from "./empty-head-large"
-import { FairfieldKnob } from "./fairfield-knob"
-import { FanclubKnob } from "./fanclub-knob"
-import { FlbKnob } from "./flb-knob"
-import { GojiraKnob } from "./gojira-knob"
-import { JhsKnob } from "./jhs-knob"
-import { Joystick } from "./joystick"
+import type { Knob as KnobData } from "@types"
+import {
+  type Component,
+  type JSX,
+  Suspense,
+  createResource,
+  splitProps,
+} from "solid-js"
 import { KnobStateContainer } from "./knob-state-container"
-import { KnurledKnob } from "./knurled-knob"
-import { LichtlaermAudioKnob } from "./lichtlaerm-audio-knob"
-import { MuffKnob } from "./muff-knob"
-import { ObneKnob } from "./obne-knob"
-import { OffsetKnob } from "./offset-knob"
-import { OrangeKnob } from "./orange-knob"
-import { RoundChickenHeadKnob } from "./round-chicken-head-knob"
-import { SimpleDotKnob } from "./simple-dot-knob"
-import { SimpleKnob } from "./simple-knob"
-import { WalrusAudioKnob } from "./walrus-audio-knob"
 
-interface KnobProps extends KnobType {
+interface KnobProps extends KnobData {
   pedalSlug: string
+}
+
+const knobComponentImports = {
+  arrow: () => import("./arrow-knob").then(m => m.ArrowKnob),
+  bakelit: () => import("./bakelit-knob").then(m => m.BakelitKnob),
+  brutalist: () => import("./brutalist-knob").then(m => m.BrutalistKnob),
+  cba: () => import("./cba-knob").then(m => m.CbaKnob),
+  chicken: () => import("./chicken-head-knob").then(m => m.ChickenHeadKnob),
+  davies: () => import("./davies-knob").then(m => m.DaviesKnob),
+  emptyhead: () => import("./empty-head").then(m => m.EmptyHeadKnob),
+  emptyheadlarge: () =>
+    import("./empty-head-large").then(m => m.EmptyHeadLargeKnob),
+  fairfield: () => import("./fairfield-knob").then(m => m.FairfieldKnob),
+  fanclub: () => import("./fanclub-knob").then(m => m.FanclubKnob),
+  flb: () => import("./flb-knob").then(m => m.FlbKnob),
+  gojira: () => import("./gojira-knob").then(m => m.GojiraKnob),
+  jhs: () => import("./jhs-knob").then(m => m.JhsKnob),
+  joystick: () => import("./joystick").then(m => m.Joystick),
+  knurled: () => import("./knurled-knob").then(m => m.KnurledKnob),
+  lichtlaerm: () =>
+    import("./lichtlaerm-audio-knob").then(m => m.LichtlaermAudioKnob),
+  muff: () => import("./muff-knob").then(m => m.MuffKnob),
+  obne: () => import("./obne-knob").then(m => m.ObneKnob),
+  offset: () => import("./offset-knob").then(m => m.OffsetKnob),
+  orange: () => import("./orange-knob").then(m => m.OrangeKnob),
+  roundchicken: () =>
+    import("./round-chicken-head-knob").then(m => m.RoundChickenHeadKnob),
+  simple: () => import("./simple-knob").then(m => m.SimpleKnob),
+  simpledot: () => import("./simple-dot-knob").then(m => m.SimpleDotKnob),
+  walrus: () => import("./walrus-audio-knob").then(m => m.WalrusAudioKnob),
+} as const
+
+type KnobComponentType = keyof typeof knobComponentImports
+
+// Create individual render functions for each knob type to avoid union type issues
+const renderArrowKnob = (
+  Component: Component<{ size: number }>,
+  size: number,
+) => <Component size={size} />
+
+const renderJoystickKnob = (
+  Component: Component<{ id: string; size: number }>,
+  id: string,
+  size: number,
+) => <Component id={id} size={size} />
+
+const renderColoredKnob = (
+  Component: Component<Pick<KnobData, "colors" | "size">>,
+  props: Pick<KnobData, "colors" | "size">,
+) => <Component {...props} />
+
+const DynamicKnobComponent: Component<{
+  type: KnobComponentType
+  sizeAndColorProps: Pick<KnobData, "colors" | "size">
+  id: string
+  size: number
+}> = props => {
+  const [knobElement] = createResource(
+    () => props.type,
+    async (type: KnobComponentType): Promise<JSX.Element> => {
+      const KnobComponent = await knobComponentImports[type]()
+
+      // Use specific render functions to avoid union type issues
+      switch (type) {
+        case "arrow":
+        case "offset":
+        case "muff":
+        case "fanclub":
+          return renderArrowKnob(
+            KnobComponent as Component<{ size: number }>,
+            props.size,
+          )
+        case "joystick":
+          return renderJoystickKnob(
+            KnobComponent as Component<{ id: string; size: number }>,
+            props.id,
+            props.size,
+          )
+        default:
+          return renderColoredKnob(
+            KnobComponent as Component<Pick<KnobData, "colors" | "size">>,
+            props.sizeAndColorProps,
+          )
+      }
+    },
+  )
+
+  return (
+    <Suspense
+      fallback={
+        <div
+          class="animate-pulse rounded-full bg-gray-300"
+          style={{ width: "40px", height: "40px" }}
+        />
+      }
+    >
+      {knobElement()}
+    </Suspense>
+  )
 }
 
 export const Knob: Component<KnobProps> = props => {
@@ -39,80 +120,12 @@ export const Knob: Component<KnobProps> = props => {
 
   return (
     <KnobStateContainer {...stateContainerProps}>
-      <Switch>
-        <Match when={props.type === "arrow"}>
-          <ArrowKnob size={props.size} />
-        </Match>
-        <Match when={props.type === "bakelit"}>
-          <BakelitKnob {...sizeAndColorProps} />
-        </Match>
-        <Match when={props.type === "brutalist"}>
-          <BrutalistKnob {...sizeAndColorProps} />
-        </Match>
-        <Match when={props.type === "cba"}>
-          <CbaKnob {...sizeAndColorProps} />
-        </Match>
-        <Match when={props.type === "chicken"}>
-          <ChickenHeadKnob {...sizeAndColorProps} />
-        </Match>
-        <Match when={props.type === "davies"}>
-          <DaviesKnob {...sizeAndColorProps} />
-        </Match>
-        <Match when={props.type === "fairfield"}>
-          <FairfieldKnob {...sizeAndColorProps} />
-        </Match>
-        <Match when={props.type === "flb"}>
-          <FlbKnob {...sizeAndColorProps} />
-        </Match>
-        <Match when={props.type === "gojira"}>
-          <GojiraKnob {...sizeAndColorProps} />
-        </Match>
-        <Match when={props.type === "jhs"}>
-          <JhsKnob {...sizeAndColorProps} />
-        </Match>
-        <Match when={props.type === "joystick"}>
-          <Joystick id={props.id} size={props.size} />
-        </Match>
-        <Match when={props.type === "knurled"}>
-          <KnurledKnob {...sizeAndColorProps} />
-        </Match>
-        <Match when={props.type === "lichtlaerm"}>
-          <LichtlaermAudioKnob {...sizeAndColorProps} />
-        </Match>
-        <Match when={props.type === "obne"}>
-          <ObneKnob {...sizeAndColorProps} />
-        </Match>
-        <Match when={props.type === "offset"}>
-          <OffsetKnob size={props.size} />
-        </Match>
-        <Match when={props.type === "roundchicken"}>
-          <RoundChickenHeadKnob {...sizeAndColorProps} />
-        </Match>
-        <Match when={props.type === "simple"}>
-          <SimpleKnob {...sizeAndColorProps} />
-        </Match>
-        <Match when={props.type === "simpledot"}>
-          <SimpleDotKnob {...sizeAndColorProps} />
-        </Match>
-        <Match when={props.type === "walrus"}>
-          <WalrusAudioKnob {...sizeAndColorProps} />
-        </Match>
-        <Match when={props.type === "muff"}>
-          <MuffKnob size={props.size} />
-        </Match>
-        <Match when={props.type === "fanclub"}>
-          <FanclubKnob size={props.size} />
-        </Match>
-        <Match when={props.type === "emptyhead"}>
-          <EmptyHeadKnob {...sizeAndColorProps} />
-        </Match>
-        <Match when={props.type === "emptyheadlarge"}>
-          <EmptyHeadLargeKnob {...sizeAndColorProps} />
-        </Match>
-        <Match when={props.type === "orange"}>
-          <OrangeKnob {...sizeAndColorProps} />
-        </Match>
-      </Switch>
+      <DynamicKnobComponent
+        type={props.type as KnobComponentType}
+        sizeAndColorProps={sizeAndColorProps}
+        id={props.id!}
+        size={props.size!}
+      />
     </KnobStateContainer>
   )
 }

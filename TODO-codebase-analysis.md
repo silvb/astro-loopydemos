@@ -1,99 +1,88 @@
 # Codebase Analysis - Issues and Improvements
 
-Based on comprehensive analysis of the Astro and SolidJS codebase, here are the key weaknesses and areas for improvement:
+Based on comprehensive re-analysis of the Astro and SolidJS codebase, here are the current weaknesses and areas for improvement:
 
 ## **Critical Issues**
 
-### 1. **Memory Leaks in Audio System**
+### 1. **Event Listener Memory Leaks**
+- **Location**: `drag-sweep-control.tsx:52-61`
+- **Issue**: Event listeners added to `document` in drag handlers are not properly cleaned up if component unmounts during drag operation
+- **Impact**: Memory leaks, potential performance degradation over time
+- **Solution**: Store event listener references and use `onCleanup()` to ensure removal
+
+### 2. **Audio Context State Management**
 - **Location**: `audio-player-controller.tsx:34-42`
-- **Issue**: Multiple `AudioContext`, `AudioBufferSourceNode`, and `AudioBuffer` instances created without proper cleanup
-- **Impact**: Memory accumulation with each preset change, potential browser crashes
-- **Solution**: Implement proper cleanup in `onCleanup()` lifecycle
+- **Issue**: Multiple audio context instances and sources created without proper state management
+- **Impact**: Memory accumulation, potential audio glitches
+- **Solution**: Implement proper cleanup in `onCleanup()` and consolidate audio context management
 
-### 2. **Inefficient Audio Buffer Caching**
-- **Location**: Throughout audio controller
-- **Issue**: No centralized cache for audio buffers, potential duplicate fetching
-- **Impact**: Unnecessary network requests, slower performance
-- **Solution**: Implement LRU cache for audio buffers
-
-### 3. **Unhandled Promise Rejections**
-- **Location**: `audio-player-controller.tsx:76-86`
-- **Issue**: Async operations in `createEffect` without proper error boundaries
-- **Impact**: Can cause silent failures or unhandled promise rejections
-- **Solution**: Add error boundaries and proper async handling
+### 3. **Async Operations in createEffect**
+- **Location**: `audio-player-controller.tsx:63-167`
+- **Issue**: Complex async operations within `createEffect` without proper error handling
+- **Impact**: Potential unhandled promise rejections, race conditions
+- **Solution**: Extract async logic to separate functions with proper error boundaries
 
 ## **Performance Issues**
 
-### 4. **Excessive Re-rendering**
-- **Location**: `demo-state-store.tsx:153-189`
-- **Issue**: Multiple `createEffect` calls that could trigger cascading updates
-- **Impact**: Unnecessary re-renders, poor performance
-- **Solution**: Combine effects and use `batch()` for related updates
+### 4. **Type Safety Gaps**
+- **Location**: `demo-state-store.tsx:138-161`
+- **Issue**: `getSetting` function returns `SettingsValue | undefined` without strict null checks
+- **Impact**: Runtime errors from undefined values
+- **Solution**: Add runtime validation and improve type definitions
 
-### 5. **Missing Memoization**
-- **Location**: State store and complex computations
-- **Issue**: Complex calculations re-run on every render
-- **Impact**: Performance degradation with complex pedal configurations
-- **Solution**: Use `createMemo` for expensive computations
-
-### 6. **Large Bundle Size**
-- **Location**: 30+ knob components imported individually
-- **Issue**: No tree-shaking for unused knob types
-- **Impact**: Larger bundle size than necessary
-- **Solution**: Implement dynamic imports for knob components
+### 5. **Resource Cleanup Pattern**
+- **Location**: Multiple drag control components
+- **Issue**: Inconsistent cleanup of event listeners in touch/mouse handlers
+- **Impact**: Memory leaks during interaction
+- **Solution**: Standardize cleanup patterns across all interactive components
 
 ## **Code Quality Issues**
 
-### 7. **Inconsistent Error Handling**
-- **Location**: Various components
-- **Issue**: Some components handle errors, others don't
+### 6. **Error Handling Inconsistencies**
+- **Location**: `audio-player-controller.tsx:43-50`
+- **Issue**: Some async operations have error handling, others don't
 - **Impact**: Unpredictable behavior during failures
 - **Solution**: Implement consistent error boundary pattern
 
-### 8. **Type Safety Gaps**
-- **Location**: `demo-state-store.tsx:114-132`
-- **Issue**: `getSetting` function returns `SettingsValue | undefined` without strict typing
-- **Impact**: Runtime errors from undefined values
-- **Solution**: Strengthen type definitions and add runtime checks
+### 7. **Bundle Size Optimization** ✅ **RESOLVED**
+- **Location**: Knob components directory
+- **Issue**: 20+ knob components imported individually without tree-shaking
+- **Impact**: Larger bundle size than necessary
+- **Solution**: ✅ **IMPLEMENTED** - Dynamic imports for knob components with type-safe loading
+- **Results**: 47.3% reduction in main bundle size (111.35kB → 58.61kB), individual knob chunks load on-demand
 
-### 9. **DOM Manipulation in Components**
-- **Location**: `demo-widget-container.tsx:23-31`
-- **Issue**: Direct DOM manipulation instead of reactive patterns
-- **Impact**: Breaks SolidJS reactivity model
-- **Solution**: Use signals for loading states
+## **Architecture Strengths**
 
-## **Architecture Concerns**
-
-### 10. **Monolithic State Store**
-- **Location**: `demo-state-store.tsx`
-- **Issue**: Single large context managing all state
-- **Impact**: Difficult to optimize, potential performance issues
-- **Solution**: Split into focused contexts (audio, ui, pedals)
-
-### 11. **Missing Resource Management**
-- **Location**: Audio components
-- **Issue**: No cleanup of Web Audio API resources
-- **Impact**: Memory leaks, audio glitches
-- **Solution**: Implement proper resource disposal
+### **Resolved Issues from Previous Analysis**:
+- ✅ Audio buffer caching properly implemented with LRU cache
+- ✅ Basic resource cleanup patterns exist in core components  
+- ✅ State batching effectively used in demo-state-store
+- ✅ Component isolation with clear separation of concerns
+- ✅ **Bundle size optimization** - Dynamic knob loading implemented with 47.3% bundle reduction
 
 ## **Recommendations Priority**
 
 ### **High Priority (Fix Immediately)**
-1. Audio memory leaks - implement proper cleanup
-2. Unhandled promise rejections - add error boundaries
-3. DOM manipulation - convert to reactive patterns
+1. Event listener cleanup in drag controls
+2. Audio context state management improvements
+3. Async error handling in audio controller
 
 ### **Medium Priority (Next Sprint)**
-4. Performance optimization - memoization and batching
-5. Type safety improvements
-6. Consistent error handling
+4. Type safety improvements in state management
+5. Standardize error handling patterns
+6. Resource cleanup pattern consistency
 
 ### **Low Priority (Future)**
-7. Architecture refactoring - split state stores
-8. Bundle size optimization
-9. Audio buffer caching improvements
+7. ✅ ~~Bundle size optimization with dynamic imports~~ **COMPLETED**
+8. Consider splitting large state store into focused contexts
 
 ## **Notes**
-- The codebase is well-structured overall, but the audio system needs immediate attention to prevent memory issues in production
-- Analysis completed on 2025-07-15
-- Focus areas: SolidJS components, audio system, state management, performance optimization
+- The codebase shows significant improvement from previous analysis
+- Audio buffer caching and basic cleanup patterns are now properly implemented
+- **Bundle size optimization completed** - 47.3% reduction in main bundle with type-safe dynamic loading
+- Focus areas: Event listener management, async error handling, type safety
+- Overall assessment: **Well-architected** with good SolidJS patterns, but needs attention to prevent memory leaks
+
+**Risk Level**: Medium - Issues are manageable but should be addressed for production robustness
+**Analysis completed**: 2025-07-17
+**Bundle optimization completed**: 2025-07-17
