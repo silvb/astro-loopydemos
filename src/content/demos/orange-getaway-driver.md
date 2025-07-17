@@ -4,7 +4,7 @@ model: Getaway Driver
 slug: orange-getaway-driver
 type: demo
 isSponsored: true
-date: 2025-07-03
+date: 2025-07-17
 tags:
   - 70s amp
   - amp in a box

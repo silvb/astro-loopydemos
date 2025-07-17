@@ -2,7 +2,7 @@
 builder: Orange
 model: Fur Coat
 slug: orange-fur-coat
-type: demo
+type: none
 isSponsored: true
 date: 2025-07-04
 tags:

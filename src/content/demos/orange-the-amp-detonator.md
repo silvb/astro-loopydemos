@@ -2,7 +2,7 @@
 builder: Orange
 model: The Amp Detonator
 slug: orange-the-amp-detonator
-type: demo
+type: none
 isSponsored: true
 date: 2025-07-04
 tags:

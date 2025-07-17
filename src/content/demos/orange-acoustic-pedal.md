@@ -2,7 +2,7 @@
 builder: Orange
 model: Acoustic Pedal
 slug: orange-acoustic-pedal
-type: demo
+type: none
 isSponsored: true
 date: 2025-07-04
 tags:

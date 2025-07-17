@@ -2,7 +2,7 @@
 builder: Orange
 model: Bass Butler
 slug: orange-bass-butler
-type: demo
+type: none
 isSponsored: true
 date: 2025-07-06
 tags:

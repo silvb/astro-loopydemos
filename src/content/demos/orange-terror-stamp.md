@@ -4,7 +4,7 @@ model: Terror Stamp
 slug: orange-terror-stamp
 type: demo
 isSponsored: true
-date: 2025-07-03
+date: 2025-07-17
 tags:
   - amp
   - amp in a box
@@ -29,5 +29,5 @@ The Terror Stamp wants to be driven – if you need pristine cleans, look elsewh
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (bridge pickup)
 - Terror Stamp
-- [Mixwave Benson Chimera Plugin*](https://sweetwater.sjv.io/B0N2PL)
+- [Mixwave Benson Chimera Plugin*](https://sweetwater.sjv.io/B0N2PL) (bypassed when using the Cab Sim 🎧)
 - A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)
