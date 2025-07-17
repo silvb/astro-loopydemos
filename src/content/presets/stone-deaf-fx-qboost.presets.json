@@ -75,7 +75,7 @@
           "isSweep": true,
           "target": "preamp",
           "initialValue": 4,
-          "values": [0, 2, 4, 6, 8, 10],
+          "values": [2, 4, 6, 8, 10],
           "settings": { "mode": 2 }
         }
       ]
@@ -94,8 +94,8 @@
       "label": "Vintage Preamp Sweep",
       "isSweep": true,
       "target": "preamp",
-      "initialValue": 4,
-      "values": [0, 2, 4, 6, 8, 10],
+      "initialValue": 2,
+      "values": [2, 4, 6, 8, 10],
       "settings": { "mode": 1 }
     },
     {
