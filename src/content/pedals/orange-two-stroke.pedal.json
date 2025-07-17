@@ -31,7 +31,7 @@
       {
         "id": "oil",
         "size": 60,
-        "position": { "top": 84, "left": 124 },
+        "position": { "top": 87, "left": 122 },
         "type": "orange"
       },
       {
@@ -72,7 +72,7 @@
         "id": "bypass_switch",
         "type": "stomp",
         "size": 50,
-        "position": { "top": 294, "left": 124 }
+        "position": { "top": 293, "left": 125 }
       }
     ]
   }

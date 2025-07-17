@@ -25,7 +25,7 @@ export const DragSweepControl: ParentComponent<
   )
 
   createEffect(() => {
-    selectSweepSetting(props.id, level())
+    selectSweepSetting(level())
   })
 
   const startDrag = (downEvent: MouseEvent | TouchEvent) => {

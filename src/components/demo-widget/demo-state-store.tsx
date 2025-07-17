@@ -43,6 +43,13 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
 
   const setIsLoadingDebounced = debounce({ delay: 200 }, setIsLoading)
 
+  const addSweepSetting = (target: string, value: number) => {
+    setSweepSetting(prev => ({
+      ...prev,
+      [target]: value,
+    }))
+  }
+
   const activePreset = () =>
     presets().find(preset => preset.id === activePresetId())
 
@@ -68,23 +75,33 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
     selectPreset(presets()[previousPresetIndex].id)
   }
 
-  const selectSweepSetting = (id: string, value: number) => {
+  const selectSweepSetting = (value?: number) => {
     if (
+      !activePreset() &&
       !activePreset()?.isSweep &&
       !activePreset()?.chain?.some(p => p.isSweep)
     )
       return
+
+    const target =
+      activePreset()?.target ||
+      activePreset()?.chain?.find(p => p.isSweep)?.target
+
+    if (!target) return
 
     const values =
       activePreset()?.values ||
       activePreset()?.chain?.find(p => p.isSweep)?.values ||
       []
 
-    const closestValue = findClosestValue(value, values)
+    const currentValue =
+      (value ?? sweepSetting()[target]) || activePreset()?.initialValue || 0
 
-    if (closestValue === sweepSetting()[id]) return
+    const closestValue = findClosestValue(currentValue, values)
 
-    setSweepSetting({ [id]: closestValue })
+    if (closestValue === sweepSetting()[target]) return
+
+    addSweepSetting(target, closestValue)
   }
 
   const toggleBypass = (pedalSlug: string) => {
@@ -155,20 +172,7 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
   })
 
   createEffect(() => {
-    if (activePreset()?.isSweep) {
-      setSweepSetting(prev =>
-        activePreset()?.target
-          ? {
-              [activePreset()!.target || ""]:
-                prev[activePreset()!.target!] ||
-                activePreset()?.initialValue ||
-                0,
-            }
-          : {},
-      )
-    } else {
-      setSweepSetting({})
-    }
+    selectSweepSetting()
 
     setSecondaryCircuitsOn(activePreset()?.initialSecondaryCircuits || [])
 
