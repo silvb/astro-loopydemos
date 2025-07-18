@@ -7,13 +7,9 @@ import { getStaticPedalData } from "@utils/get-static-pedal-data"
 type Props = Pick<PedalProps, "builder" | "model" | "slug">
 const { builder, model, slug } = Astro.props
 
-// Get actual pedal dimensions to maintain proper aspect ratio
+// Get actual pedal dimensions - responsive handled automatically
 const staticPedalData = await getStaticPedalData([slug])
 const { width: pedalWidth, height: pedalHeight } = staticPedalData[0]
-
-// Calculate height for 200px width while maintaining aspect ratio
-const displayWidth = 200
-const displayHeight = Math.round((pedalHeight / pedalWidth) * displayWidth)
 ---
 
 <article
@@ -27,8 +23,8 @@ const displayHeight = Math.round((pedalHeight / pedalWidth) * displayWidth)
     <Image
       src={getImageSrcFromSlug(slug)}
       alt={`${model} - ${builder}`}
-      width={displayWidth}
-      height={displayHeight}
+      width={pedalWidth}
+      height={pedalHeight}
       format="avif"
       class="max-h-full w-auto"
     />

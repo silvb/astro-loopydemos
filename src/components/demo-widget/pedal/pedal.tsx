@@ -38,7 +38,6 @@ export const Pedal: Component<PedalProps> = props => {
           alt={getImageAltFromSlug(props.slug)}
           class="absolute size-full object-contain"
           loading="eager"
-          style="object-fit: contain;"
           onLoad={() => setIsImgLoaded(true)}
         />
         <div
