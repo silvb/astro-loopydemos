@@ -10,6 +10,12 @@ import sitemap from "@astrojs/sitemap"
 // https://astro.build/config
 export default defineConfig({
   site: "https://loopydemos.com",
+  image: {
+    // Enable responsive images globally
+    responsiveStyles: true,
+    layout: "constrained",
+    objectFit: "contain",
+  },
   integrations: [
     tailwind({
       nesting: true,
