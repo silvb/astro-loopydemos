@@ -73,6 +73,7 @@ const shortenedExcerpt =
               width={teaserDimensions.width}
               height={teaserDimensions.height}
               class="h-auto w-36 object-contain object-top sm:w-56"
+              fit="contain"
               format="avif"
             />
           ) : (
@@ -84,7 +85,8 @@ const shortenedExcerpt =
                     height={pedalDimensions[index].height}
                     src={getImageSrcFromSlug(pedal)}
                     alt={getImageAltFromSlug(pedal)}
-                    class="object-contain max-h-full"
+                    class="max-h-full"
+                    fit="contain"
                     format="avif"
                   />
                 </div>
