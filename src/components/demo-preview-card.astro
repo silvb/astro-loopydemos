@@ -19,6 +19,7 @@ const { builder, model, slug } = Astro.props
       src={getImageSrcFromSlug(slug)}
       alt={`${model} - ${builder}`}
       width={200}
+      format="avif"
       class="h-full w-full object-contain"
     />
     <div

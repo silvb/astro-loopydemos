@@ -35,22 +35,38 @@ export const getStaticPedalData = async (
         ? LANDSCAPE_DEFAULT_ENCLOSURE.height
         : POTRAIT_DEFAULT_ENCLOSURE.height)
 
+    // Generate responsive breakpoints based on enclosure size
+    const responsiveWidths = [
+      Math.round(enclosureWidth * 0.5),  // Mobile/small screens
+      Math.round(enclosureWidth * 1),    // Tablet
+      Math.round(enclosureWidth * 1.5),  // Desktop
+      Math.round(enclosureWidth * 2),    // High-DPI displays
+    ]
+
     const { src: imgSrc, srcSet: imgSrcSet } = await getImage({
       src: getImageSrcFromSlug(imageSrcSlug ?? pedalSlug),
-      width: enclosureWidth * 2,
+      widths: responsiveWidths,
       quality: "high",
+      format: "avif",
     })
 
     const { src: thumbnailSrc, srcSet: thumbnailSrcSet } = await getImage({
       src: getImageSrcFromSlug(imageSrcSlug ?? pedalSlug),
       widths: [94, 54],
+      format: "avif",
     })
 
     const { src: tinySrc } = await getImage({
       src: getImageSrcFromSlug(imageSrcSlug ?? pedalSlug),
       width: 100,
       quality: "low",
+      format: "avif",
     })
+
+    // Generate contextual sizes based on pedal dimensions
+    const sizes = enclosureWidth > 300 
+      ? "(max-width: 768px) 50vw, (max-width: 1200px) 33vw, 25vw"
+      : "(max-width: 768px) 80vw, (max-width: 1200px) 50vw, 33vw"
 
     staticPedalData.push({
       width: enclosureWidth,
@@ -61,6 +77,7 @@ export const getStaticPedalData = async (
       thumbnailSrc,
       thumbnailSrcSet,
       tinySrc,
+      sizes,
       controls,
       isOneOff,
     })

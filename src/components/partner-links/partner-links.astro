@@ -2,7 +2,6 @@
 import { Image } from "astro:assets"
 import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
 import { getImageSrcFromSlug } from "@utils/get-image-src-from-slug"
-import PerfectCircuitLogo from "./perfect-circuit-logo.astro"
 import soundShoppeLogo from "./sound-shoppe-logo.png"
 import sweetwaterLogo from "./sweetwater-logo.webp"
 import thomannLogo from "./thomann-logo.svg"
@@ -15,7 +14,7 @@ interface Props {
   soundShoppe?: string
 }
 
-const { slug, sweetwater, thomann, perfectCircuit, soundShoppe } = Astro.props
+const { slug, sweetwater, thomann, soundShoppe } = Astro.props
 
 const ctaLabels = [
   "Treat yo' self",
@@ -52,6 +51,7 @@ const shuffledCtaLabels = ctaLabels
       class="h-full w-full max-w-40 object-contain"
       src={getImageSrcFromSlug(slug)}
       alt={getImageAltFromSlug(slug)}
+      format="avif"
     />
   </div>
   <div class="flex flex-col items-stretch justify-center gap-2">
@@ -68,6 +68,7 @@ const shuffledCtaLabels = ctaLabels
             width={112}
             src={sweetwaterLogo}
             alt="sweetwater logo"
+            format="avif"
           />
           <span class="whitespace-nowrap text-sm">{shuffledCtaLabels[0]}</span>
         </a>
@@ -86,6 +87,7 @@ const shuffledCtaLabels = ctaLabels
             width={112}
             src={thomannLogo}
             alt="thomann logo"
+            format="avif"
           />
           <span class="whitespace-nowrap text-sm">{shuffledCtaLabels[1]}</span>
         </a>
@@ -117,6 +119,7 @@ const shuffledCtaLabels = ctaLabels
             width={112}
             src={soundShoppeLogo}
             alt="sound shoppe nyc logo"
+            format="avif"
           />
           <span class="whitespace-nowrap text-sm">{shuffledCtaLabels[3]}</span>
         </a>

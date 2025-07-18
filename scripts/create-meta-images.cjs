@@ -4,12 +4,9 @@ const matter = require("gray-matter")
 const { execSync } = require("node:child_process")
 
 const imageSourcePath = "src/images"
-const targetDirectoryPath = "src/images/seo-preview"
-const imageExtensions = [".png", ".webp"]
 const fillColor = "#252253"
 const fontColor = "#8958ff"
 const demoSourcePath = "src/content/demos"
-const presetSource = "src/content/presets"
 
 const recentDemos = fs
   .readdirSync(demoSourcePath)

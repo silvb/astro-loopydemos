@@ -49,6 +49,7 @@ export interface StaticPedalData {
   imgSrcSet: GetImageResult["srcSet"]
   thumbnailSrc: GetImageResult["src"]
   thumbnailSrcSet: GetImageResult["srcSet"]
+  sizes: string
   width: number
   height: number
   controls: CollectionEntry<"pedals">["data"]["controls"]
