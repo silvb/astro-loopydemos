@@ -45,11 +45,12 @@ const shuffledCtaLabels = ctaLabels
 <div
   class="scroll-animation my-4 flex w-fit flex-col items-center gap-4 rounded-lg border-4 border-dashed border-loopydemos-primary bg-loopydemos-secondary p-4 sm:flex-row"
 >
-  <div class="h-40 w-auto px-4">
+  <div class="h-40 w-auto px-4 flex items-center">
     <Image
       width="168"
-      class="h-full w-full max-w-40"
+      class="max-h-full w-full max-w-40"
       fit="contain"
+      layout="constrained"
       src={getImageSrcFromSlug(slug)}
       alt={getImageAltFromSlug(slug)}
       format="avif"
@@ -70,6 +71,8 @@ const shuffledCtaLabels = ctaLabels
             src={sweetwaterLogo}
             alt="sweetwater logo"
             format="avif"
+            fit="contain"
+            layout="constrained"
           />
           <span class="whitespace-nowrap text-sm">{shuffledCtaLabels[0]}</span>
         </a>
@@ -89,6 +92,8 @@ const shuffledCtaLabels = ctaLabels
             src={thomannLogo}
             alt="thomann logo"
             format="avif"
+            fit="contain"
+            layout="constrained"
           />
           <span class="whitespace-nowrap text-sm">{shuffledCtaLabels[1]}</span>
         </a>
