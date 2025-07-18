@@ -33,6 +33,8 @@ export const Pedal: Component<PedalProps> = props => {
           src={props.imgSrc}
           srcSet={props.imgSrcSet.attribute}
           sizes={props.sizes}
+          width={props.width}
+          height={props.height}
           alt={getImageAltFromSlug(props.slug)}
           class="absolute size-full object-contain"
           loading="eager"
