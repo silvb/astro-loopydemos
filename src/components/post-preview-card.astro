@@ -5,6 +5,7 @@ import DateTag from "@components/date-tag.astro"
 import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
 import { getImageSrcFromSlug } from "@utils/get-image-src-from-slug"
 import { getPedalsFromPresets } from "@utils/get-pedals-from-presets"
+import { getStaticPedalData } from "@utils/get-static-pedal-data"
 import { Icon } from "astro-icon/components"
 
 interface Props
@@ -25,12 +26,20 @@ const presetsFromPost: CollectionEntry<"presets"> | undefined = await getEntry(
 let hasTeaser = true
 let pedals: string[] = []
 let collageGridElementSize = "5rem"
+let teaserDimensions = { width: 224, height: 224 } // Default 1:1 for teaser images
+let pedalDimensions: { width: number, height: number }[] = []
 
 if (presetsFromPost) {
   pedals = getPedalsFromPresets(presetsFromPost.data.presets)
 
   if (pedals.length > 0) {
     hasTeaser = false
+    // Get actual pedal dimensions for collage
+    const staticPedalData = await getStaticPedalData(pedals)
+    pedalDimensions = staticPedalData.map(({ width, height }) => ({
+      width: 108,
+      height: Math.round((height / width) * 108)
+    }))
   }
 
   if (pedals.length > 4) {
@@ -61,15 +70,17 @@ const shortenedExcerpt =
             <Image
               src={getImageSrcFromSlug(slug)}
               alt={title}
-              width={224}
+              width={teaserDimensions.width}
+              height={teaserDimensions.height}
               class="h-auto w-36 object-contain object-top sm:w-56"
               format="avif"
             />
           ) : (
             <div class="pedal-collage-grid h-auto w-36 sm:w-56">
-              {pedals.map(pedal => (
+              {pedals.map((pedal, index) => (
                 <Image
-                  width={108}
+                  width={pedalDimensions[index].width}
+                  height={pedalDimensions[index].height}
                   src={getImageSrcFromSlug(pedal)}
                   alt={getImageAltFromSlug(pedal)}
                   class="h-full object-contain"
