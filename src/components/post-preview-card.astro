@@ -26,8 +26,8 @@ const presetsFromPost: CollectionEntry<"presets"> | undefined = await getEntry(
 let hasTeaser = true
 let pedals: string[] = []
 let collageGridElementSize = "5rem"
-let teaserDimensions = { width: 224, height: 224 } // Default 1:1 for teaser images
-let pedalDimensions: { width: number, height: number }[] = []
+const teaserDimensions = { width: 224, height: 224 } // Default 1:1 for teaser images
+let pedalDimensions: { width: number; height: number }[] = []
 
 if (presetsFromPost) {
   pedals = getPedalsFromPresets(presetsFromPost.data.presets)
@@ -38,7 +38,7 @@ if (presetsFromPost) {
     const staticPedalData = await getStaticPedalData(pedals)
     pedalDimensions = staticPedalData.map(({ width, height }) => ({
       width: 108,
-      height: Math.round((height / width) * 108)
+      height: Math.round((height / width) * 108),
     }))
   }
 
@@ -78,14 +78,16 @@ const shortenedExcerpt =
           ) : (
             <div class="pedal-collage-grid h-auto w-36 sm:w-56">
               {pedals.map((pedal, index) => (
-                <Image
-                  width={pedalDimensions[index].width}
-                  height={pedalDimensions[index].height}
-                  src={getImageSrcFromSlug(pedal)}
-                  alt={getImageAltFromSlug(pedal)}
-                  class="h-full object-contain"
-                  format="avif"
-                />
+                <div class="flex h-full items-center justify-center">
+                  <Image
+                    width={pedalDimensions[index].width}
+                    height={pedalDimensions[index].height}
+                    src={getImageSrcFromSlug(pedal)}
+                    alt={getImageAltFromSlug(pedal)}
+                    class="object-contain max-h-full"
+                    format="avif"
+                  />
+                </div>
               ))}
             </div>
           )
