@@ -13,7 +13,7 @@ export const getStaticPedalData = async (
   const staticPedalData: StaticPedalData[] = []
 
   for (const pedalSlug of pedals) {
-    const pedalData: CollectionEntry<"pedals"> = await getEntry(
+    const pedalData: CollectionEntry<"pedals"> | undefined = await getEntry(
       "pedals",
       `${pedalSlug as CollectionEntry<"demos">["slug"]}.pedal`,
     )

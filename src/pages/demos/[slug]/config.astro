@@ -34,12 +34,18 @@ const siteUrl = isDev
     ? vercelPreviewBranchUrl
     : import.meta.env.SITE
 
-const {
-  data: { presets },
-}: CollectionEntry<"presets"> = await getEntry(
+const presetsEntry: CollectionEntry<"presets"> | undefined = await getEntry(
   "presets",
   `${slug as CollectionEntry<"demos">["slug"]}.presets`,
 )
+
+if (!presetsEntry) {
+  throw new Error(`Presets not found for slug: ${slug}`)
+}
+
+const {
+  data: { presets },
+} = presetsEntry
 
 const pedalsInDemo = [...new Set([...getPedalsFromPresets(presets), slug])]
 

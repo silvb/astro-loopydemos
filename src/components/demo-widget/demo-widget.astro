@@ -12,12 +12,18 @@ interface Props {
 
 const { presetSlug } = Astro.props
 
-const {
-  data: { presets, hasBackingTrack, volume, mainPedal },
-}: CollectionEntry<"presets"> = await getEntry(
+const presetsEntry: CollectionEntry<"presets"> | undefined = await getEntry(
   "presets",
   `${presetSlug as CollectionEntry<"demos">["slug"]}.presets`,
 )
+
+if (!presetsEntry) {
+  throw new Error(`Presets not found for slug: ${presetSlug}`)
+}
+
+const {
+  data: { presets, hasBackingTrack, volume, mainPedal },
+} = presetsEntry
 
 let pedals = [...new Set(getPedalsFromPresets(presets))]
 

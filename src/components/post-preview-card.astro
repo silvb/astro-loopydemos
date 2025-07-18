@@ -17,7 +17,7 @@ interface Props
 
 const { title, excerpt, date, slug, tags } = Astro.props
 
-const presetsFromPost: CollectionEntry<"presets"> = await getEntry(
+const presetsFromPost: CollectionEntry<"presets"> | undefined = await getEntry(
   "presets",
   `${slug as CollectionEntry<"demos">["slug"]}.presets`,
 )
