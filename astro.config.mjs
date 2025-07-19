@@ -4,12 +4,18 @@ import icon from "astro-icon"
 import rehypeExternalLinks from "rehype-external-links"
 import solidJs from "@astrojs/solid-js"
 import mdx from "@astrojs/mdx"
-import vercel from "@astrojs/vercel/static"
+import vercel from "@astrojs/vercel"
 import sitemap from "@astrojs/sitemap"
 
 // https://astro.build/config
 export default defineConfig({
   site: "https://loopydemos.com",
+  image: {
+    // Enable responsive images globally
+    responsiveStyles: true,
+    layout: "constrained",
+    objectFit: "contain",
+  },
   integrations: [
     tailwind({
       nesting: true,

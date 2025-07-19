@@ -2,9 +2,14 @@
 import { Image } from "astro:assets"
 import type { PedalProps } from "@types"
 import { getImageSrcFromSlug } from "@utils/get-image-src-from-slug"
+import { getStaticPedalData } from "@utils/get-static-pedal-data"
 
 type Props = Pick<PedalProps, "builder" | "model" | "slug">
 const { builder, model, slug } = Astro.props
+
+// Get actual pedal dimensions - responsive handled automatically
+const staticPedalData = await getStaticPedalData([slug])
+const { width: pedalWidth, height: pedalHeight } = staticPedalData[0]
 ---
 
 <article
@@ -12,14 +17,16 @@ const { builder, model, slug } = Astro.props
   class="relative box-border flex h-full items-center justify-center rounded-lg bg-loopydemos-primary p-4"
 >
   <a
-    class="link-none inline-block h-full w-full max-w-[200px]"
+    class="link-none h-full w-full max-w-[200px] flex items-center justify-center"
     href={`/demos/${slug}`}
   >
     <Image
       src={getImageSrcFromSlug(slug)}
       alt={`${model} - ${builder}`}
-      width={200}
-      class="h-full w-full object-contain"
+      width={pedalWidth}
+      height={pedalHeight}
+      format="avif"
+      class="max-h-full w-auto"
     />
     <div
       class="absolute left-0 top-0 z-10 box-border flex h-full w-full flex-col items-center justify-center break-words rounded-lg bg-loopydemos-secondary/90 p-4 text-center font-display font-black tracking-wide text-loopydemos-highlight-secondary opacity-0 transition-opacity hover:opacity-100"

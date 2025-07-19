@@ -1,6 +1,5 @@
 import type { Knob } from "@types"
 import { type Component, mergeProps } from "solid-js"
-import type { colors } from "tailwindcss/defaultTheme"
 
 type OrangeKnobProps = Pick<Knob, "colors" | "size">
 

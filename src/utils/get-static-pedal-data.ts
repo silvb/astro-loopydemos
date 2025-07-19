@@ -13,7 +13,7 @@ export const getStaticPedalData = async (
   const staticPedalData: StaticPedalData[] = []
 
   for (const pedalSlug of pedals) {
-    const pedalData: CollectionEntry<"pedals"> = await getEntry(
+    const pedalData: CollectionEntry<"pedals"> | undefined = await getEntry(
       "pedals",
       `${pedalSlug as CollectionEntry<"demos">["slug"]}.pedal`,
     )
@@ -35,22 +35,48 @@ export const getStaticPedalData = async (
         ? LANDSCAPE_DEFAULT_ENCLOSURE.height
         : POTRAIT_DEFAULT_ENCLOSURE.height)
 
+    // Use Astro's automatic responsive breakpoint generation
     const { src: imgSrc, srcSet: imgSrcSet } = await getImage({
       src: getImageSrcFromSlug(imageSrcSlug ?? pedalSlug),
-      width: enclosureWidth * 2,
+      width: enclosureWidth,
+      height: enclosureHeight,
       quality: "high",
+      format: "avif",
+      // Let Astro automatically generate responsive breakpoints
+      breakpoints: {
+        count: 4,
+        minWidth: Math.round(enclosureWidth * 0.5),
+        maxWidth: Math.round(enclosureWidth * 2),
+      },
     })
 
+    // Smart thumbnail generation with automatic breakpoints
+    const thumbnailBaseWidth = 94
+    const thumbnailBaseHeight = Math.round((enclosureHeight / enclosureWidth) * thumbnailBaseWidth)
+    
     const { src: thumbnailSrc, srcSet: thumbnailSrcSet } = await getImage({
       src: getImageSrcFromSlug(imageSrcSlug ?? pedalSlug),
-      widths: [94, 54],
+      width: thumbnailBaseWidth,
+      height: thumbnailBaseHeight,
+      format: "avif",
+      // Generate responsive thumbnails for high-DPI displays
+      breakpoints: {
+        count: 2,
+        minWidth: thumbnailBaseWidth,
+        maxWidth: thumbnailBaseWidth * 2,
+      },
     })
 
     const { src: tinySrc } = await getImage({
       src: getImageSrcFromSlug(imageSrcSlug ?? pedalSlug),
       width: 100,
       quality: "low",
+      format: "avif",
     })
+
+    // Use Astro's automatic sizes calculation for constrained layout
+    // This matches the container behavior where pedals are displayed
+    const sizes = `(max-width: 768px) 100vw, (max-width: 1200px) 50vw, ${enclosureWidth}px`
 
     staticPedalData.push({
       width: enclosureWidth,
@@ -61,6 +87,7 @@ export const getStaticPedalData = async (
       thumbnailSrc,
       thumbnailSrcSet,
       tinySrc,
+      sizes,
       controls,
       isOneOff,
     })
