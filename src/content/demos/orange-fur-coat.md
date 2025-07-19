@@ -2,9 +2,9 @@
 builder: Orange
 model: Fur Coat
 slug: orange-fur-coat
-type: none
+type: demo
 isSponsored: true
-date: 2025-07-04
+date: 2025-07-19
 tags:
   - fuzz
   - vintage fuzz

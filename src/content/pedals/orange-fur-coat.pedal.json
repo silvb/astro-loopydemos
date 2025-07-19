@@ -40,7 +40,9 @@
         "id": "octave_led",
         "size": 28,
         "secondaryCircuitId": "octave",
-        "position": { "top": 40, "left": 137 }
+        "requiresMainCircuitForSecondary": true,
+        "position": { "top": 40, "left": 137 },
+        "colors": { "on": "#f00" }
       }
     ],
     "switches": [

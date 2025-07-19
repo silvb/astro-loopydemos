@@ -1,6 +1,13 @@
 import { useDemoState } from "@components/demo-widget/demo-state-store"
 import type { Led as LedType } from "@types"
-import { type Component, Match, Show, Switch, mergeProps } from "solid-js"
+import {
+  type Component,
+  Match,
+  Show,
+  Switch,
+  createEffect,
+  mergeProps,
+} from "solid-js"
 
 const MOOD_COLORS = {
   on: "greenyellow",
@@ -42,13 +49,32 @@ export const Led: Component<LedProps> = props => {
 
   const setting = () => getSetting(props.pedalSlug, props.id, props.dependency)
 
-  const isOn = () =>
-    props.id === "on_led" || props.isOnIndicator
-      ? pedalsOn().includes(props.pedalSlug) && setting() !== false
-      : Boolean(isMood ? typeof setting() !== "number" : setting()) ||
-        (props.secondaryCircuitId &&
-          secondaryCircuitsOn().includes(props.secondaryCircuitId)) ||
-        (props.isBlinking && !props.offOverride && !isMood)
+  const isOn = () => {
+    // Main power LED
+    if (props.id === "on_led" || props.isOnIndicator) {
+      return pedalsOn().includes(props.pedalSlug) && setting() !== false
+    }
+
+    // Setting-based LED
+    const hasSettingValue = Boolean(
+      isMood ? typeof setting() !== "number" : setting()
+    )
+
+    // Secondary circuit LED
+    const hasSecondaryCircuit = 
+      props.secondaryCircuitId &&
+      secondaryCircuitsOn().includes(props.secondaryCircuitId)
+
+    const secondaryCircuitOn = hasSecondaryCircuit &&
+      (props.requiresMainCircuitForSecondary 
+        ? pedalsOn().includes(props.pedalSlug)
+        : true)
+
+    // Blinking LED
+    const isBlinkingOn = props.isBlinking && !props.offOverride && !isMood
+
+    return hasSettingValue || secondaryCircuitOn || isBlinkingOn
+  }
 
   const blinkTime = () => (setting() || props.defaultTime) ?? 0
 
