@@ -41,5 +41,6 @@
     "@iconify-json/ph": "^1.1.13",
     "enquirer": "^2.4.1",
     "gray-matter": "^4.0.3"
-  }
+  },
+  "packageManager": "pnpm@10.13.1"
 }
