@@ -39,7 +39,7 @@
       {
         "id": "octave_led",
         "size": 28,
-        "secondaryCircuitId": "octave",
+        "secondaryCircuitId": "octave_circuit",
         "requiresMainCircuitForSecondary": true,
         "position": { "top": 40, "left": 137 },
         "colors": { "on": "#f00" }
@@ -53,9 +53,9 @@
         "position": { "top": 296, "left": 212 }
       },
       {
-        "id": "octave",
+        "id": "octave_stomp",
         "type": "stomp",
-        "secondaryCircuitId": "octave",
+        "secondaryCircuitId": "octave_circuit",
         "size": 48,
         "position": { "top": 298, "left": 41 }
       }

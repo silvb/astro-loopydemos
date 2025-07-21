@@ -184,15 +184,20 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
     }
   })
 
-  // Batch all preset-related state updates
+  // Update sweep settings when preset changes
   createEffect(() => {
     const preset = memoizedActivePreset()
     if (!preset) return
+    selectSweepSetting()
+  })
+
+  // Batch preset-related state updates only when preset ID changes
+  createEffect(() => {
+    const presetId = activePresetId()
+    const preset = memoizedActivePreset()
+    if (!preset || !presetId) return
 
     batch(() => {
-      // Critical: sweep setting must be updated first and synchronously
-      selectSweepSetting()
-
       // Secondary state updates
       setSecondaryCircuitsOn(preset.initialSecondaryCircuits || [])
 

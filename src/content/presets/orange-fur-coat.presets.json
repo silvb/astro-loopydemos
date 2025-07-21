@@ -3,19 +3,61 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
-      "secondaryCircuitId": "octave",
-      "settings": { "vol": 5, "fuzz": 5, "eq": 5, "octave": 1 }
+      "id": "gated_ripper",
+      "label": "Gated Ripper",
+      "secondaryCircuitId": "octave_circuit",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitSlug": "gated_ripper_octave",
+      "settings": { "vol": 7, "fuzz": 7, "eq": 6, "octave": 2 }
     },
     {
-      "id": "vol_knob",
-      "label": "Vol",
+      "id": "smooth_fuzz",
+      "label": "Smooth Fuzz",
+      "secondaryCircuitId": "octave_circuit",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitSlug": "smooth_fuzz_octave",
+      "settings": { "vol": 8, "fuzz": 0, "eq": 4, "octave": 7 }
+    },
+    {
+      "id": "cutting_velcro",
+      "label": "Cutting Velcro",
+      "secondaryCircuitId": "octave_circuit",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitSlug": "cutting_velcro_octave",
+      "settings": { "vol": 8, "fuzz": 9, "eq": 8, "octave": 0 }
+    },
+    {
+      "id": "fuzz_knob",
+      "label": "Fuzz",
       "isSweep": true,
-      "target": "vol",
+      "target": "fuzz",
+      "secondaryCircuitId": "octave_circuit",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitSlug": "fuzz_knob_octave",
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
-      "settings": { "fuzz": 5, "eq": 5, "octave": 1 }
+      "settings": { "vol": 7, "eq": 5, "octave": 5 }
+    },
+    {
+      "id": "eq_knob",
+      "label": "EQ",
+      "isSweep": true,
+      "target": "eq",
+      "secondaryCircuitId": "octave_circuit",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitSlug": "eq_knob_octave",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "vol": 7, "fuzz": 5, "octave": 5 }
+    },
+    {
+      "id": "octave_knob",
+      "label": "Octave",
+      "isSweep": true,
+      "target": "octave",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": { "vol": 7, "fuzz": 2, "eq": 5, "octave_led": true }
     }
   ]
 }

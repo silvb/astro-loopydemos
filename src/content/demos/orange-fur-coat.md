@@ -4,7 +4,7 @@ model: Fur Coat
 slug: orange-fur-coat
 type: demo
 isSponsored: true
-date: 2025-07-19
+date: 2025-07-21
 tags:
   - fuzz
   - vintage fuzz
