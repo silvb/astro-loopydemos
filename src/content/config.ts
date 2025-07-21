@@ -102,6 +102,7 @@ export const ledSchema = controlElementSchema.extend({
   offOverride: z.boolean().optional(),
   blinkOffset: z.number().optional(),
   defaultTime: z.number().optional(),
+  requiresMainCircuitForSecondary: z.boolean().optional(),
 })
 
 export const sliderSchema = z.object({
