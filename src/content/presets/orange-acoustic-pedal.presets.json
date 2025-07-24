@@ -61,18 +61,108 @@
       ]
     },
     {
+      "id": "tamed_eq",
+      "label": "Tamed EQ",
+      "settings": {
+        "bass": 3,
+        "middle": 1.5,
+        "treble": 2.5,
+        "notch": 7.5,
+        "q_factor": 2.5,
+        "volume": 5,
+        "phase": 1
+      }
+    },
+    {
+      "id": "mellow",
+      "label": "Mellow",
+      "settings": {
+        "bass": 5,
+        "middle": 0,
+        "treble": 0,
+        "notch": 9.5,
+        "q_factor": 6,
+        "volume": 4,
+        "phase": 1
+      }
+    },
+    {
       "id": "bass_knob",
       "label": "Bass",
       "isSweep": true,
       "target": "bass",
       "initialValue": 0,
-      "values": [0, 2, 4, 6, 8, 10],
+      "values": [0, 2, 4, 5, 6, 8, 10],
       "settings": {
         "middle": 5,
         "treble": 5,
         "notch": 5,
         "q_factor": 5,
-        "volume": 5,
+        "volume": 4,
+        "phase": 1
+      }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble",
+      "isSweep": true,
+      "target": "treble",
+      "initialValue": 0,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "settings": {
+        "middle": 5,
+        "bass": 5,
+        "notch": 5,
+        "q_factor": 5,
+        "volume": 4,
+        "phase": 1
+      }
+    },
+    {
+      "id": "middle_knob",
+      "label": "Middle",
+      "isSweep": true,
+      "target": "middle",
+      "initialValue": 0,
+      "values": [0, 2, 4, 5, 6, 8, 10],
+      "settings": {
+        "bass": 5,
+        "treble": 5,
+        "notch": 5,
+        "q_factor": 5,
+        "volume": 4,
+        "phase": 1
+      }
+    },
+    {
+      "id": "notch_knob",
+      "label": "Notch",
+      "isSweep": true,
+      "target": "notch",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "bass": 5,
+        "treble": 5,
+        "middle": 10,
+        "q_factor": 5,
+        "volume": 4,
+        "phase": 1
+      }
+    },
+    {
+      "id": "q_factor_knob",
+      "label": "Q Factor",
+      "isSweep": true,
+      "target": "q_factor",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "bass": 5,
+        "treble": 5,
+        "middle": 10,
+        "notch": 5,
+        "volume": 4,
         "phase": 1
       }
     }
