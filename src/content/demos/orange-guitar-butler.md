@@ -2,7 +2,7 @@
 builder: Orange
 model: Guitar Butler
 slug: orange-guitar-butler
-type: none
+type: demo
 isSponsored: true
 date: 2025-07-25
 tags:
