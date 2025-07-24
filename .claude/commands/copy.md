@@ -15,10 +15,10 @@ You are tasked with writing copy for a guitar pedal demo. The user will provide 
 Based on the existing content, follow these style principles:
 
 ### Tone & Voice
-- **Conversational and personal** - Use "I" statements and personal experiences
+- **Conversational and personal** - Use "I" statements and personal experiences.
 - **Honest and balanced** - Include both positives and limitations
 - **Technically informed but accessible** - Explain technical details in relatable terms
-- **Enthusiastic but not sales-y** - Show genuine appreciation without being promotional
+- **Enthusiastic but not sales-y** - Show genuine appreciation without being promotional. But keep it humble and don't overhype.
 
 ### Structure
 - **4 paragraphs maximum** - Keep it concise and punchy
@@ -26,6 +26,7 @@ Based on the existing content, follow these style principles:
 - **Technical details in context** - Explain how features affect the sound/experience
 - **Practical insights** - Include usage tips, settings, or gotchas
 - **Conclude with assessment** - Who it's for and what it excels at
+- **Do not quote actual prices** - The price can change, so avoid mentioning it directly
 
 ### Language Patterns
 - Use contractions and casual language
@@ -59,7 +60,6 @@ Based on the existing content, follow these style principles:
 - **Power considerations** - Voltage switching, current draw
 - **I/O features** - Multiple outputs, effects loops, bypass types
 - **Build quality** - Size, weight, durability observations
-- **Price/value context** - Used market, alternatives, bang for buck
 
 ## Process
 
