@@ -38,10 +38,39 @@ const isComparison = presets.some(({ comparison }) => Boolean(comparison))
 const staticPedalData = await getStaticPedalData(pedals)
 
 const maxHeight = Math.max(...staticPedalData.map(({ height }) => height))
+
+// Calculate the largest height from the first preset
+const firstPreset = presets[0]
+let firstPresetPedalSlugs: string[]
+
+if (firstPreset?.comparison) {
+  firstPresetPedalSlugs = [
+    firstPreset.comparison[0]?.pedalSlug || mainPedal || presetSlug,
+  ]
+} else if (firstPreset?.chain) {
+  firstPresetPedalSlugs = firstPreset.chain.map(item => item.pedalSlug)
+} else {
+  firstPresetPedalSlugs = [mainPedal || presetSlug]
+}
+
+const firstPresetPedalData = staticPedalData.filter(pedal =>
+  firstPresetPedalSlugs.includes(pedal.slug),
+)
+
+const firstPresetHeight =
+  firstPresetPedalData.length > 0
+    ? Math.max(...firstPresetPedalData.map(pedal => pedal.height))
+    : maxHeight
+
+const firstPresetWidth = firstPresetPedalData.reduce(
+  (acc, pedal) => acc + pedal.width,
+  0,
+)
 ---
 
 <LoadingSkeleton
-  pedalHeight={maxHeight}
+  pedalWidth={firstPresetWidth}
+  pedalHeight={firstPresetHeight}
   hasMultiplePresets={presets.length > 1}
   {presetSlug}
   {hasBackingTrack}

@@ -58,13 +58,8 @@ export const DemoWidgetContainer: Component<
             <PresetsSlider presets={props.presets} />
           )}
         </div>
-        <ScaleFactor>
-          <div
-            class="mt-8 flex items-start justify-center"
-            style={{
-              height: `${props.maxHeight}px`,
-            }}
-          >
+        <ScaleFactor height={props.maxHeight}>
+          <div class="mt-8 flex items-start justify-center">
             {props.staticPedalData.map(pedalData => (
               <Pedal {...pedalData} />
             ))}
