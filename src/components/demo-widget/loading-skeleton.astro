@@ -1,6 +1,7 @@
 ---
 interface Props {
   pedalHeight: number
+  pedalWidth: number
   presetSlug: string
   hasMultiplePresets: boolean
   hasBackingTrack?: boolean
@@ -9,6 +10,7 @@ interface Props {
 
 const {
   pedalHeight,
+  pedalWidth,
   presetSlug,
   hasBackingTrack,
   isComparison,
@@ -50,12 +52,16 @@ const {
       )
     }
   </div>
-  <div
-    class="mt-8 flex items-start justify-center"
+  <div 
+    class="mt-8 w-full flex justify-center"
     style={{
-      height: `${pedalHeight}px`,
-    }}
-  >
-    <div class="h-full w-1/2 rounded-lg bg-loopydemos-secondary-themed"></div>
+      "container-type": "inline-size",
+      }}>
+    <div 
+      class="rounded-lg bg-loopydemos-secondary-themed" 
+      style={{
+        width: `min(${pedalWidth}px, 100cqw)`,
+        "aspect-ratio": `${pedalWidth} / ${pedalHeight}`,
+        }}></div>
   </div>
 </div>

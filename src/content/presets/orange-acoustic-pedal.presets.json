@@ -3,17 +3,62 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "full_bodied",
+      "label": "Full Bodied",
       "settings": {
-        "bass": 5,
-        "middle": 5,
-        "treble": 5,
-        "notch": 5,
-        "q_factor": 5,
-        "volume": 5,
+        "bass": 8,
+        "middle": 7,
+        "treble": 3,
+        "notch": 7,
+        "q_factor": 4,
+        "volume": 2,
         "phase": 1
       }
+    },
+    {
+      "id": "bypassed",
+      "label": "Bypassed",
+      "settings": {
+        "bass": 8,
+        "middle": 7,
+        "treble": 3,
+        "notch": 7,
+        "q_factor": 4,
+        "volume": 2,
+        "phase": 1,
+        "on_led": false
+      }
+    },
+    {
+      "id": "fx_loop",
+      "label": "FX Loop",
+      "chain": [
+        {
+          "pedalSlug": "freqscene-effects-co-koldwave",
+          "id": "koldwave",
+          "settings": {
+            "speed": 4,
+            "depth": 4,
+            "warp": 2.5,
+            "amp": 2,
+            "freq": 4.5,
+            "mode": 3
+          }
+        },
+        {
+          "pedalSlug": "orange-acoustic-pedal",
+          "id": "acoustic",
+          "settings": {
+            "bass": 8,
+            "middle": 7,
+            "treble": 3,
+            "notch": 7,
+            "q_factor": 4,
+            "volume": 2,
+            "phase": 1
+          }
+        }
+      ]
     },
     {
       "id": "bass_knob",
