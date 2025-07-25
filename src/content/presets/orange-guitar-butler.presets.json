@@ -3,9 +3,10 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "clean_dirty_a",
+      "label": "Clean // Dirty",
       "secondaryCircuitId": "channel_b",
+      "secondaryCircuitOnlySlug": "clean_dirty_b",
       "settings": {
         "punch": 5,
         "vol_1": 5,

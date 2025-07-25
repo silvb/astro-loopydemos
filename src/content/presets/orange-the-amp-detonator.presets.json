@@ -3,22 +3,25 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "a_vs_b_switch",
+      "id": "a_vs_b_switch_b",
       "label": "A / B",
       "secondaryCircuitId": "ab",
-      "settings": { "phase": 1 }
-    },
-    {
-      "id": "a_vs_both_switch",
-      "label": "A / Both",
-      "secondaryCircuitId": "both",
+      "secondaryCircuitSlug": "a_vs_b_switch",
       "settings": { "phase": 1 }
     },
     {
       "id": "b_vs_both_switch",
-      "label": "B / Both",
+      "label": "A / Both",
+      "secondaryCircuitSlug": "b_vs_both_switch_both",
       "secondaryCircuitId": "both",
       "initialSecondaryCircuits": ["ab"],
+      "settings": { "phase": 1 }
+    },
+    {
+      "id": "a_vs_both_switch",
+      "label": "B / Both",
+      "secondaryCircuitSlug": "a_vs_both_switch_both",
+      "secondaryCircuitId": "both",
       "settings": { "phase": 1 }
     },
     {

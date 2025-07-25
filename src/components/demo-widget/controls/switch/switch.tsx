@@ -20,6 +20,7 @@ export const Switch: Component<SwitchProps> = props => {
     getSetting,
     toggleBypass,
     toggleSecondaryCircuit,
+    togglePrimarySecondaryCircuit,
     secondaryCircuitsOn,
     activePreset,
     activePedals,
@@ -113,6 +114,13 @@ export const Switch: Component<SwitchProps> = props => {
                   secondaryCircuitsOn().includes(props.secondaryCircuitId),
               )}
               onClick={() => {
+                if (props.id === "bypass_switch" && props.secondaryCircuitId) {
+                  togglePrimarySecondaryCircuit(
+                    props.secondaryCircuitId,
+                    props.pedalSlug,
+                  )
+                  return
+                }
                 if (props.id === "bypass_switch") {
                   toggleBypass(props.pedalSlug)
                 }

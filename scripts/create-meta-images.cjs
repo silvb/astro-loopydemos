@@ -19,6 +19,12 @@ const recentDemos = fs
     )
     return bDate - aDate
   })
+  .filter(demoFile => {
+    const type = matter(fs.readFileSync(path.join(demoSourcePath, demoFile)))
+      .data.type
+
+    return type === "demo"
+  })
   .slice(0, 6)
   .map(demoFile => {
     let imageSrc = path.join(imageSourcePath, `${demoFile.split(".md")[0]}.png`)

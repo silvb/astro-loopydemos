@@ -222,6 +222,16 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
     })
   })
 
+  const togglePrimarySecondaryCircuit = (
+    circuitId: string,
+    pedalSlug: string,
+  ) => {
+    batch(() => {
+      toggleSecondaryCircuit(circuitId)
+      toggleBypass(pedalSlug)
+    })
+  }
+
   return {
     activePedals,
     activePreset,
@@ -233,6 +243,7 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
     setPresets,
     sweepSetting,
     toggleBypass,
+    togglePrimarySecondaryCircuit,
     setMainPedal,
     secondaryCircuitsOn,
     toggleSecondaryCircuit,
