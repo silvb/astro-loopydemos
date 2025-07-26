@@ -1,8 +1,8 @@
 ---
 builder: Orange
 model: Bass Butler
-slug: orange-bass-butler
-type: none
+slug: orange-the-bass-butler
+type: demo
 isSponsored: true
 date: 2025-07-27
 tags:
