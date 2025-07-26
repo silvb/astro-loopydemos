@@ -45,7 +45,7 @@ Based on the existing content, follow these style principles:
 
 ### Examples of Good Opening Lines
 - "The [Pedal Name] nails that [specific tone/era] in a [simple/compact] [pedal type]"
-- "I love the [Pedal Name] because it just [does specific thing really well]"
+- "I enjoy the [Pedal Name] because it just [does specific thing really well]"
 - "[Pedal Name] is one of those pedals that [specific quality/behavior]"
 
 ### Common Technical Elements to Address
