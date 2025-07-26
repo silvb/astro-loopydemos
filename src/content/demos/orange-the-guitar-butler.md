@@ -1,10 +1,10 @@
 ---
 builder: Orange
-model: Guitar Butler
-slug: orange-guitar-butler
-type: none
+model: The Guitar Butler
+slug: orange-the-guitar-butler
+type: demo
 isSponsored: true
-date: 2025-07-25
+date: 2025-07-26
 tags:
   - preamp
   - dual channel

@@ -1,5 +1,5 @@
 {
-  "name": "orange-guitar-butler",
+  "name": "orange-the-guitar-butler",
   "width": 560,
   "height": 510,
   "controls": {
@@ -86,21 +86,21 @@
       {
         "id": "on_led",
         "size": 32,
-        "position": { "top": 193, "left": 489 },
-        "colors": { "on": "#0f0" }
+        "position": { "top": 288, "left": 489 },
+        "colors": { "on": "#e3fb00" }
       },
       {
         "id": "channel_b_led",
-        "secondaryCircuitId": "channel_b",
+        "secondaryCircuitId": "channel_dirty",
         "size": 32,
-        "position": { "top": 288, "left": 489 },
-        "colors": { "on": "#e3fb00" }
+        "position": { "top": 193, "left": 489 },
+        "colors": { "on": "#0f0" }
       }
     ],
     "switches": [
       {
         "id": "bypass_switch",
-        "secondaryCircuitId": "channel_b",
+        "secondaryCircuitId": "channel_dirty",
         "type": "stomp",
         "size": 52,
         "position": { "top": 441, "left": 410 }

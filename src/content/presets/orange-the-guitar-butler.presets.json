@@ -1,0 +1,294 @@
+{
+  "hasBackingTrack": false,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "clean_dirty_clean",
+      "label": "Amp Out → Amp",
+      "secondaryCircuitId": "channel_dirty",
+      "secondaryCircuitOnlySlug": "clean_dirty_dirty",
+      "settings": {
+        "punch": 5,
+        "vol_1": 3.5,
+        "vol_2": 3.5,
+        "hi_a": 5,
+        "mid_a": 7,
+        "bass_a": 3,
+        "gain_a": 5,
+        "hi_b": 4,
+        "mid_b": 6.5,
+        "bass_b": 8,
+        "gain_b": 5,
+        "vol_1_led": true
+      }
+    },
+    {
+      "id": "clean_dirty_clean_no_amp",
+      "label": "Amp Out → Power Amp + Cab",
+      "secondaryCircuitId": "channel_dirty",
+      "secondaryCircuitOnlySlug": "clean_dirty_dirty_no_amp",
+      "settings": {
+        "punch": 5,
+        "vol_1": 3.5,
+        "vol_2": 3.5,
+        "hi_a": 5,
+        "mid_a": 7,
+        "bass_a": 3,
+        "gain_a": 5,
+        "hi_b": 4,
+        "mid_b": 6.5,
+        "bass_b": 8,
+        "gain_b": 5,
+        "vol_1_led": true
+      }
+    },
+    {
+      "id": "clean_dirty_clean_di",
+      "label": "Balanced Out → DI",
+      "secondaryCircuitId": "channel_dirty",
+      "secondaryCircuitOnlySlug": "clean_dirty_dirty_di",
+      "settings": {
+        "punch": 5,
+        "vol_1": 3.5,
+        "vol_2": 3.5,
+        "hi_a": 5,
+        "mid_a": 7,
+        "bass_a": 3,
+        "gain_a": 5,
+        "hi_b": 4,
+        "mid_b": 6.5,
+        "bass_b": 8,
+        "gain_b": 5,
+        "vol_1_led": true
+      }
+    },
+    {
+      "id": "pedal_platform",
+      "label": "Pedal Platform (Amp Out → Power Amp + Cab)",
+      "chain": [
+        {
+          "pedalSlug": "orange-the-guitar-butler",
+          "id": "butler",
+          "settings": {
+            "punch": 5,
+            "vol_1": 3.5,
+            "vol_2": 3.5,
+            "hi_a": 5,
+            "mid_a": 7,
+            "bass_a": 3,
+            "gain_a": 5,
+            "hi_b": 3.5,
+            "mid_b": 7,
+            "bass_b": 6,
+            "gain_b": 3,
+            "vol_1_led": true
+          }
+        },
+        {
+          "pedalSlug": "orange-getaway-driver",
+          "id": "driver",
+          "settings": { "vol": 4, "bite": 5, "gain": 5 }
+        }
+      ]
+    },
+    {
+      "id": "punch_knob",
+      "label": "Presence 🤜",
+      "isSweep": true,
+      "target": "punch",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "vol_1": 3.5,
+        "vol_2": 3.5,
+        "hi_a": 5,
+        "mid_a": 5,
+        "bass_a": 5,
+        "gain_a": 3,
+        "hi_b": 5,
+        "mid_b": 5,
+        "bass_b": 5,
+        "gain_b": 5,
+        "channel_b_led": true,
+        "on_led": false,
+        "vol_1_led": true
+      }
+    },
+    {
+      "id": "hi_a_knob",
+      "label": "Hi (Dirty Channel)",
+      "isSweep": true,
+      "target": "hi_a",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "punch": 5,
+        "vol_1": 3.5,
+        "vol_2": 3.5,
+        "mid_a": 5,
+        "bass_a": 5,
+        "gain_a": 3,
+        "hi_b": 5,
+        "mid_b": 5,
+        "bass_b": 5,
+        "gain_b": 5,
+        "channel_b_led": true,
+        "on_led": false,
+        "vol_1_led": true
+      }
+    },
+    {
+      "id": "mid_a_knob",
+      "label": "Mid (Dirty Channel)",
+      "isSweep": true,
+      "target": "mid_a",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "punch": 5,
+        "vol_1": 3.5,
+        "vol_2": 3.5,
+        "hi_a": 5,
+        "bass_a": 5,
+        "gain_a": 3,
+        "hi_b": 5,
+        "mid_b": 5,
+        "bass_b": 5,
+        "gain_b": 5,
+        "channel_b_led": true,
+        "on_led": false,
+        "vol_1_led": true
+      }
+    },
+    {
+      "id": "bass_a_knob",
+      "label": "Low (Dirty Channel)",
+      "isSweep": true,
+      "target": "bass_a",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "punch": 5,
+        "vol_1": 3.5,
+        "vol_2": 3.5,
+        "hi_a": 5,
+        "mid_a": 5,
+        "gain_a": 3,
+        "hi_b": 5,
+        "mid_b": 5,
+        "bass_b": 5,
+        "gain_b": 5,
+        "channel_b_led": true,
+        "on_led": false,
+        "vol_1_led": true
+      }
+    },
+    {
+      "id": "gain_a_knob",
+      "label": "Gain (Dirty Channel)",
+      "isSweep": true,
+      "target": "gain_a",
+      "initialValue": 1,
+      "values": [1, 2, 4, 6, 8, 10],
+      "settings": {
+        "punch": 5,
+        "vol_1": 3.5,
+        "vol_2": 3.5,
+        "hi_a": 5,
+        "mid_a": 5,
+        "bass_a": 5,
+        "hi_b": 5,
+        "mid_b": 5,
+        "bass_b": 5,
+        "gain_b": 5,
+        "channel_b_led": true,
+        "on_led": false,
+        "vol_1_led": true
+      }
+    },
+    {
+      "id": "hi_b_knob",
+      "label": "Hi (Clean Channel)",
+      "isSweep": true,
+      "target": "hi_b",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "punch": 5,
+        "vol_1": 3.5,
+        "vol_2": 3.5,
+        "hi_a": 5,
+        "mid_a": 5,
+        "bass_a": 5,
+        "gain_a": 5,
+        "mid_b": 5,
+        "bass_b": 5,
+        "gain_b": 4,
+        "vol_1_led": true
+      }
+    },
+    {
+      "id": "mid_b_knob",
+      "label": "Mid (Clean Channel)",
+      "isSweep": true,
+      "target": "mid_b",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "punch": 5,
+        "vol_1": 3.5,
+        "vol_2": 3.5,
+        "hi_a": 5,
+        "mid_a": 5,
+        "bass_a": 5,
+        "gain_a": 5,
+        "hi_b": 5,
+        "bass_b": 5,
+        "gain_b": 4,
+        "vol_1_led": true
+      }
+    },
+    {
+      "id": "bass_b_knob",
+      "label": "Low (Clean Channel)",
+      "isSweep": true,
+      "target": "bass_b",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "punch": 5,
+        "vol_1": 3.5,
+        "vol_2": 3.5,
+        "hi_a": 5,
+        "mid_a": 5,
+        "bass_a": 5,
+        "gain_a": 5,
+        "hi_b": 5,
+        "mid_b": 5,
+        "gain_b": 4,
+        "vol_1_led": true
+      }
+    },
+    {
+      "id": "gain_b_knob",
+      "label": "Gain (Clean Channel)",
+      "isSweep": true,
+      "target": "gain_b",
+      "initialValue": 2,
+      "values": [2, 4, 6, 8, 10],
+      "settings": {
+        "punch": 5,
+        "vol_1": 3.5,
+        "vol_2": 3.5,
+        "hi_a": 5,
+        "mid_a": 5,
+        "bass_a": 5,
+        "gain_a": 5,
+        "hi_b": 5,
+        "mid_b": 5,
+        "bass_b": 5,
+        "vol_1_led": true
+      }
+    }
+  ]
+}
