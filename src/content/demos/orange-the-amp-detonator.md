@@ -28,5 +28,5 @@ For an ABY switcher that actually works without compromise, the Amp Detonator de
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (bridge pickup)
 - The Amp Detonator
 - **A**: [Orange Terror Stamp](/demos/orange-terror-stamp) set to medium gain into [Mixwave Benson Chimera Plugin*](https://sweetwater.sjv.io/B0N2PL) (cab sim only)
-- **B**: [Mixwave Benson Chimera Plugin*](https://sweetwater.sjv.io/B0N2PL) with the [Benson Preamp](/demos/benson-preamp) internally set to dirty, beefy sound.
+- **B**: [Mixwave Benson Chimera Plugin*](https://sweetwater.sjv.io/B0N2PL) with the Benson Preamp internally set to a dirty, beefy sound.
 - A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)
