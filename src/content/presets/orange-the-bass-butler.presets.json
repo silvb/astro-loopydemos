@@ -136,13 +136,73 @@
       "values": [0, 2, 4, 6, 8, 10],
       "settings": {
         "vol_a": 5,
+        "mid_a": 5,
+        "bass_a": 5,
+        "gain_a": 6,
+        "vol_b": 3,
+        "hi_b": 4,
+        "bass_b": 6,
+        "comp": 7,
+        "channel_b_led": true,
+        "on_led": false
+      }
+    },
+    {
+      "id": "mid_a_knob",
+      "label": "Middle Dirty",
+      "isSweep": true,
+      "target": "mid_a",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "vol_a": 5,
+        "hi_a": 5,
+        "bass_a": 5,
+        "gain_a": 6,
+        "vol_b": 3,
+        "hi_b": 4,
+        "bass_b": 6,
+        "comp": 7,
+        "channel_b_led": true,
+        "on_led": false
+      }
+    },
+    {
+      "id": "bass_a_knob",
+      "label": "Low Dirty",
+      "isSweep": true,
+      "target": "bass_a",
+      "initialValue": 0,
+      "values": [0, 3, 7, 10],
+      "settings": {
+        "vol_a": 5,
+        "hi_a": 5,
+        "mid_a": 5,
+        "gain_a": 6,
+        "vol_b": 3,
+        "hi_b": 4,
+        "bass_b": 6,
+        "comp": 7,
+        "channel_b_led": true,
+        "on_led": false
+      }
+    },
+    {
+      "id": "gain_a_knob",
+      "label": "Gain Dirty",
+      "isSweep": true,
+      "target": "gain_a",
+      "initialValue": 2,
+      "values": [2, 4, 5, 6, 8, 10],
+      "settings": {
+        "vol_a": 5,
         "hi_a": 5,
         "mid_a": 5,
         "bass_a": 5,
-        "gain_a": 5,
-        "vol_b": 5,
-        "hi_b": 5,
-        "bass_b": 5,
+        "vol_b": 3,
+        "hi_b": 4,
+        "bass_b": 6,
+        "comp": 7,
         "channel_b_led": true,
         "on_led": false
       }
