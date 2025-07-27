@@ -24,7 +24,7 @@ I love how the Bass Butler doesn't just give you a bass preamp with some dirt â€
 
 ### Signal Chain
 
-- Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (bridge pickup)
+- [JMJ Fender Mustang\*](https://sweetwater.sjv.io/R5A6bg), [La Bella Flats\*](https://sweetwater.sjv.io/WqZN6Z), played with pick, tone 100%
 - Bass Butler
-- [Mixwave Benson Chimera Plugin*](https://sweetwater.sjv.io/B0N2PL)
+- [Bogren Digital Bassknob STD](https://bogrendigital.com/collections/ampknob/products/bassknob-std) set to clean (bypassed for the DI sounds)
 - A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)
