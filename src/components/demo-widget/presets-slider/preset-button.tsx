@@ -1,7 +1,7 @@
 import { PhFadersIcon } from "@components/icons/ph-faders-icon"
 import { PhSpinnerIcon } from "@components/icons/ph-spinner-icon"
 import type { Preset } from "@types"
-import { type Component, Show, onMount } from "solid-js"
+import { type Component, onMount, Show } from "solid-js"
 import { useDemoState } from "../demo-state-store"
 
 type PresetButtonProps = Pick<Preset, "id" | "isSweep" | "label">

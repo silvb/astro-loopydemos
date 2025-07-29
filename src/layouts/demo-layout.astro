@@ -1,10 +1,10 @@
 ---
-import { Image, getImage } from "astro:assets"
+import { getImage, Image } from "astro:assets"
 import DemoWidget from "@components/demo-widget"
 import type { PostType } from "@types"
 import {
-  type ImageSrc,
   getImageSrcFromSlug,
+  type ImageSrc,
 } from "@utils/get-image-src-from-slug"
 import { Icon } from "astro-icon/components"
 import DateTag from "../components/date-tag.astro"

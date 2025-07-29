@@ -1,9 +1,9 @@
 import { useDemoState } from "@components/demo-widget/demo-state-store"
+import type { Slider as SliderType } from "@types"
 import { throttle } from "radash"
 import type { Component } from "solid-js"
 import { FaderFace } from "./fader-face"
 
-import type { Slider as SliderType } from "@types"
 interface SliderProps extends SliderType {
   pedalSlug: string
 }
@@ -63,7 +63,7 @@ export const Slider: Component<SliderProps> = props => {
   }
 
   return (
-    <div
+    <button
       id={props.id}
       class="center flex touch-none place-items-center rounded-md"
       style={{
@@ -72,6 +72,8 @@ export const Slider: Component<SliderProps> = props => {
         "background-color": props.colors?.enclosure ?? "#333",
         transform: `rotate(${props.tilt}deg)`,
       }}
+      type="button"
+      disabled={!isSweepTarget(props.id, props.pedalSlug)}
       onMouseDown={startDrag}
       onTouchStart={startDrag}
     >
@@ -103,6 +105,6 @@ export const Slider: Component<SliderProps> = props => {
           />
         </div>
       </div>
-    </div>
+    </button>
   )
 }

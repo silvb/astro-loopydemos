@@ -1,9 +1,9 @@
 import type { Knob as KnobData } from "@types"
 import {
   type Component,
+  createResource,
   type JSX,
   Suspense,
-  createResource,
   splitProps,
 } from "solid-js"
 import { Joystick } from "./joystick"

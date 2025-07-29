@@ -4,8 +4,8 @@ import DemoPreviewCard from "@components/demo-preview-card.astro"
 import PostPreviewCard from "@components/post-preview-card.astro"
 import DemoLayout from "@layouts/demo-layout.astro"
 import {
-  type ImageSrc,
   getImageSrcFromSlug,
+  type ImageSrc,
 } from "@utils/get-image-src-from-slug"
 import { getPedalsFromPresets } from "@utils/get-pedals-from-presets"
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro"
@@ -51,7 +51,7 @@ const relatedPosts = allPosts
   .filter(post => post.slug !== slug)
   .filter(post => post.data.tags?.some(tag => tags?.includes(tag)))
 
-let coverImage: ImageSrc | undefined = undefined
+let coverImage: ImageSrc | undefined
 
 if (type === "freeform") {
   coverImage = getImageSrcFromSlug(slug)

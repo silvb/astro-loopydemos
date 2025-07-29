@@ -1,4 +1,4 @@
-import { type Component, Match, Switch, mergeProps } from "solid-js"
+import { type Component, Match, mergeProps, Switch } from "solid-js"
 
 interface FaderFaceProps {
   size?: number

@@ -1,6 +1,5 @@
 import type { getImage } from "astro:assets"
-import type { CollectionEntry } from "astro:content"
-import type { z } from "astro:content"
+import type { CollectionEntry, z } from "astro:content"
 import type {
   controlElementSchema,
   knobSchema,

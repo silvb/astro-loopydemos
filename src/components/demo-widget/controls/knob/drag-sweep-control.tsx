@@ -1,6 +1,6 @@
 import { useDemoState } from "@components/demo-widget/demo-state-store"
 import { throttle } from "radash"
-import { type ParentComponent, createEffect, createSignal } from "solid-js"
+import { createEffect, createSignal, type ParentComponent } from "solid-js"
 
 interface DragSweepControlProps {
   id: string
@@ -62,12 +62,13 @@ export const DragSweepControl: ParentComponent<
   }
 
   return (
-    <div
-      class="relative touch-none"
+    <button
+      type="button"
+      class="relative block touch-none"
       onMouseDown={startDrag}
       onTouchStart={startDrag}
     >
       {props.children}
-    </div>
+    </button>
   )
 }

@@ -1,4 +1,4 @@
-import { type ParentComponent, createEffect } from "solid-js"
+import { createEffect, type ParentComponent } from "solid-js"
 import { useDemoState } from "../demo-state-store"
 
 interface PedalStateContainerProps {

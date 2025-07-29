@@ -8,9 +8,9 @@ import type { StaticPedalData } from "@types"
 import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
 import {
   type Component,
+  createSignal,
   Match,
   Switch as RenderSwitch,
-  createSignal,
 } from "solid-js"
 import { DarkFatherControls } from "../controls/dark-father-controls"
 import { PedalStateContainer } from "./pedal-state-container"

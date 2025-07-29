@@ -3,10 +3,10 @@ import { PhPlayIcon } from "@components/icons/ph-play-icon"
 import { PhSpinnerIcon } from "@components/icons/ph-spinner-icon"
 import {
   type Component,
-  Show,
   createSignal,
   onCleanup,
   onMount,
+  Show,
 } from "solid-js"
 import { useDemoState } from "../demo-state-store"
 

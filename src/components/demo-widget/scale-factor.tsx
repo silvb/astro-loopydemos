@@ -1,9 +1,9 @@
 import {
-  type ParentComponent,
   createEffect,
   createSignal,
   onCleanup,
   onMount,
+  type ParentComponent,
 } from "solid-js"
 import { useDemoState } from "./demo-state-store"
 
