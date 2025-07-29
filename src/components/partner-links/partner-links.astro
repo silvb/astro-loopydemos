@@ -14,7 +14,12 @@ interface Props {
   soundShoppe?: string
 }
 
-const { slug, sweetwater: propSweetwater, thomann: propThomann, soundShoppe: propSoundShoppe } = Astro.props
+const {
+  slug,
+  sweetwater: propSweetwater,
+  thomann: propThomann,
+  soundShoppe: propSoundShoppe,
+} = Astro.props
 
 // Try to get demo data from content collection
 const demos = await getCollection("demos")

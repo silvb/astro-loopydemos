@@ -3,10 +3,9 @@ import { type CollectionEntry, getCollection, getEntry } from "astro:content"
 import DemoPreviewCard from "@components/demo-preview-card.astro"
 import PostPreviewCard from "@components/post-preview-card.astro"
 import DemoLayout from "@layouts/demo-layout.astro"
+import { getImageSrcFromSlug } from "@utils/get-image-src-from-slug"
 import { getPedalsFromPresets } from "@utils/get-pedals-from-presets"
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro"
-import { getImageSrcFromSlug } from "@utils/get-image-src-from-slug"
-import { getImage } from "astro:assets"
 
 export const getStaticPaths = (async () => {
   const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
