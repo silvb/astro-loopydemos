@@ -10,7 +10,6 @@ tags:
   - marshall
   - distortion
 externalLinks:
-  reverb: jptr-fx-katastrophe
   builderLink: https://jptrfx.com/products/jptr-fx-katastrophe-sludgefest-dominator-distorion-pre-amp
 ---
 
