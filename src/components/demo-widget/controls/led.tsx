@@ -57,16 +57,17 @@ export const Led: Component<LedProps> = props => {
 
     // Setting-based LED
     const hasSettingValue = Boolean(
-      isMood ? typeof setting() !== "number" : setting()
+      isMood ? typeof setting() !== "number" : setting(),
     )
 
     // Secondary circuit LED
-    const hasSecondaryCircuit = 
+    const hasSecondaryCircuit =
       props.secondaryCircuitId &&
       secondaryCircuitsOn().includes(props.secondaryCircuitId)
 
-    const secondaryCircuitOn = hasSecondaryCircuit &&
-      (props.requiresMainCircuitForSecondary 
+    const secondaryCircuitOn =
+      hasSecondaryCircuit &&
+      (props.requiresMainCircuitForSecondary
         ? pedalsOn().includes(props.pedalSlug)
         : true)
 

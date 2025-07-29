@@ -52,8 +52,10 @@ export const getStaticPedalData = async (
 
     // Smart thumbnail generation with automatic breakpoints
     const thumbnailBaseWidth = 94
-    const thumbnailBaseHeight = Math.round((enclosureHeight / enclosureWidth) * thumbnailBaseWidth)
-    
+    const thumbnailBaseHeight = Math.round(
+      (enclosureHeight / enclosureWidth) * thumbnailBaseWidth,
+    )
+
     const { src: thumbnailSrc, srcSet: thumbnailSrcSet } = await getImage({
       src: getImageSrcFromSlug(imageSrcSlug ?? pedalSlug),
       width: thumbnailBaseWidth,
