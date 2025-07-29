@@ -5,6 +5,8 @@ import PostPreviewCard from "@components/post-preview-card.astro"
 import DemoLayout from "@layouts/demo-layout.astro"
 import { getPedalsFromPresets } from "@utils/get-pedals-from-presets"
 import type { GetStaticPaths, InferGetStaticPropsType } from "astro"
+import { getImageSrcFromSlug } from "@utils/get-image-src-from-slug"
+import { getImage } from "astro:assets"
 
 export const getStaticPaths = (async () => {
   const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
@@ -46,9 +48,11 @@ const relatedDemos = allDemos.filter(
 const relatedPosts = allPosts
   .filter(post => post.slug !== slug)
   .filter(post => post.data.tags?.some(tag => tags?.includes(tag)))
+
+const coverImage = getImageSrcFromSlug(slug)
 ---
 
-<DemoLayout {slug} {title} {date} {type} {excerpt} noIndex={type === "none"}>
+<DemoLayout {slug} {title} {date} {type} {excerpt} {coverImage} noIndex={type === "none"}>
   <Content />
   {
     relatedDemos.length > 0 && (

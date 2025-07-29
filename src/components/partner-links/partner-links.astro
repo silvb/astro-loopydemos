@@ -1,5 +1,6 @@
 ---
 import { Image } from "astro:assets"
+import { getCollection } from "astro:content"
 import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
 import { getImageSrcFromSlug } from "@utils/get-image-src-from-slug"
 import soundShoppeLogo from "./sound-shoppe-logo.png"
@@ -10,11 +11,19 @@ interface Props {
   slug: string
   sweetwater?: string
   thomann?: string
-  perfectCircuit?: string
   soundShoppe?: string
 }
 
-const { slug, sweetwater, thomann, soundShoppe } = Astro.props
+const { slug, sweetwater: propSweetwater, thomann: propThomann, soundShoppe: propSoundShoppe } = Astro.props
+
+// Try to get demo data from content collection
+const demos = await getCollection("demos")
+const demo = demos.find(d => d.slug === slug)
+
+// Use demo data if available, otherwise fall back to props
+const sweetwater = demo?.data.externalLinks?.sweetwater ?? propSweetwater
+const thomann = demo?.data.externalLinks?.thomann ?? propThomann
+const soundShoppe = demo?.data.externalLinks?.soundShoppe ?? propSoundShoppe
 
 const ctaLabels = [
   "Treat yo' self",
@@ -93,19 +102,6 @@ const shuffledCtaLabels = ctaLabels
         </a>
       )
     }
-    <!-- {
-      perfectCircuit && (
-        <a
-          class="link-button link-none"
-          href={`https://link.perfectcircuit.com/t/v1/8-12626-329078-9759?url=https%3A%2F%2Fwww.perfectcircuit.com%2F${perfectCircuit}.html`}
-          target="_blank"
-          rel="noopener"
-        >
-          <PerfectCircuitLogo class="max-w-24 rounded-lg border-2 border-loopydemos-background bg-white p-2" />
-          <span class="whitespace-nowrap text-sm">{shuffledCtaLabels[2]}</span>
-        </a>
-      )
-    } -->
     {
       soundShoppe && (
         <a
@@ -127,7 +123,6 @@ const shuffledCtaLabels = ctaLabels
     }
     {
       (sweetwater || thomann) && (
-        // (sweetwater || thomann || perfectCircuit) && (
         <p class="m-0 text-xs italic text-loopydemos-subdued">
           Buy through these links and support Loopy Demos
           <br /> at no extra cost to you.

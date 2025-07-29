@@ -10,6 +10,8 @@ const { builder, model, slug } = Astro.props
 // Get actual pedal dimensions - responsive handled automatically
 const staticPedalData = await getStaticPedalData([slug])
 const { width: pedalWidth, height: pedalHeight } = staticPedalData[0]
+
+const imageSrc = getImageSrcFromSlug(slug)
 ---
 
 <article
@@ -21,7 +23,7 @@ const { width: pedalWidth, height: pedalHeight } = staticPedalData[0]
     href={`/demos/${slug}`}
   >
     <Image
-      src={getImageSrcFromSlug(slug)}
+      src={imageSrc}
       alt={`${model} - ${builder}`}
       width={pedalWidth}
       height={pedalHeight}
