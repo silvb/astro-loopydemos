@@ -27,3 +27,5 @@ export const getImageSrcFromSlug = (slug: string, isSeo?: boolean) => {
 
   return imageSrc()
 }
+
+export type ImageSrc = ReturnType<typeof getImageSrcFromSlug>

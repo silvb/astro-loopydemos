@@ -1,8 +1,11 @@
 ---
-import { getImage } from "astro:assets"
+import { Image, getImage } from "astro:assets"
 import DemoWidget from "@components/demo-widget"
 import type { PostType } from "@types"
-import { getImageSrcFromSlug } from "@utils/get-image-src-from-slug"
+import {
+  type ImageSrc,
+  getImageSrcFromSlug,
+} from "@utils/get-image-src-from-slug"
 import { Icon } from "astro-icon/components"
 import DateTag from "../components/date-tag.astro"
 import DefaultLayout from "./default-layout.astro"
@@ -15,9 +18,10 @@ interface Props {
   type: PostType
   excerpt?: string
   noIndex?: boolean
+  coverImage?: ImageSrc
 }
 
-const { slug, title, date, type, excerpt, noIndex } = Astro.props
+const { slug, title, date, type, excerpt, noIndex, coverImage } = Astro.props
 
 const metaImage = await getImage({
   src: getImageSrcFromSlug(slug, true),
@@ -45,6 +49,17 @@ const metaImage = await getImage({
     </span>
   </a>
   <h2>{title}</h2>
+  {
+    coverImage && (
+      <Image
+        class="my-3 rounded-lg max-w-md w-full"
+        width={896}
+        src={coverImage}
+        alt={title}
+        loading="eager"
+      />
+    )
+  }
   <div class="mb-3">
     <DateTag {date} />
   </div>

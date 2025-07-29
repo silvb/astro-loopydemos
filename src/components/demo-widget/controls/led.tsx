@@ -72,8 +72,11 @@ export const Led: Component<LedProps> = props => {
 
   const blinkTime = () => (setting() || props.defaultTime) ?? 0
 
+  const randomId = Math.random().toString(36).substring(7)
   const uniqueOnLedId =
-    props.id === "on_led" ? `${props.id}-${props.pedalSlug}` : props.id
+    props.id === "on_led"
+      ? `${props.id}-${props.pedalSlug}-${randomId}`
+      : `${props.id}-${randomId}`
 
   return (
     <Show when={activePedals().includes(props.pedalSlug)}>

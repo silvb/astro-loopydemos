@@ -1,7 +1,13 @@
 import { PhPauseIcon } from "@components/icons/ph-pause-icon"
 import { PhPlayIcon } from "@components/icons/ph-play-icon"
 import { PhSpinnerIcon } from "@components/icons/ph-spinner-icon"
-import { type Component, Show, onCleanup, onMount } from "solid-js"
+import {
+  type Component,
+  Show,
+  createSignal,
+  onCleanup,
+  onMount,
+} from "solid-js"
 import { useDemoState } from "../demo-state-store"
 
 export const PlayButton: Component = () => {
@@ -15,11 +21,23 @@ export const PlayButton: Component = () => {
     setIsBackingTrackMuted,
   } = useDemoState()
 
+  const [isInViewport, setIsInViewport] = createSignal(false)
+  let buttonRef: HTMLButtonElement | undefined
+
   const handleShortcut = (e: KeyboardEvent) => {
     if (e.code === "Space") {
       e.preventDefault()
-      setIsPlaying(!isPlaying())
+      if (!isInViewport() && isPlaying()) {
+        setIsPlaying(false)
+        return
+      }
+      if (isInViewport()) {
+        setIsPlaying(!isPlaying())
+      }
+      return
     }
+
+    if (!isInViewport()) return
 
     if (e.code === "KeyK") {
       e.preventDefault()
@@ -39,6 +57,20 @@ export const PlayButton: Component = () => {
 
   onMount(() => {
     document.addEventListener("keydown", handleShortcut)
+
+    if (buttonRef) {
+      const observer = new IntersectionObserver(
+        entries => {
+          setIsInViewport(entries[0].isIntersecting)
+        },
+        { threshold: 0.1 },
+      )
+      observer.observe(buttonRef)
+
+      onCleanup(() => {
+        observer.disconnect()
+      })
+    }
   })
 
   onCleanup(() => {
@@ -47,6 +79,7 @@ export const PlayButton: Component = () => {
 
   return (
     <button
+      ref={buttonRef}
       onClick={() => setIsPlaying(!isPlaying())}
       class="h-full basis-12 text-[3rem] text-loopydemos-highlight-tertiary-themed"
       type="button"
