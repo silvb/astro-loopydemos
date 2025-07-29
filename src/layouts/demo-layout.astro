@@ -2,13 +2,14 @@
 import { Image, getImage } from "astro:assets"
 import DemoWidget from "@components/demo-widget"
 import type { PostType } from "@types"
-import { getImageSrcFromSlug } from "@utils/get-image-src-from-slug"
+import {
+  type ImageSrc,
+  getImageSrcFromSlug,
+} from "@utils/get-image-src-from-slug"
 import { Icon } from "astro-icon/components"
 import DateTag from "../components/date-tag.astro"
 import DefaultLayout from "./default-layout.astro"
 import SEO from "./seo.astro"
-
-type ImageSrc = ReturnType<typeof getImageSrcFromSlug>
 
 interface Props {
   title: string
