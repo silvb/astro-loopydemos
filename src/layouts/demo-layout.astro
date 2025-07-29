@@ -48,13 +48,17 @@ const metaImage = await getImage({
     </span>
   </a>
   <h2>{title}</h2>
-  {coverImage && <Image
-    class="my-3 rounded-lg max-w-md w-full"
-    width={896}
-    src={coverImage}
-    alt={title}
-    loading="eager"
-  />}
+  {
+    coverImage && (
+      <Image
+        class="my-3 rounded-lg max-w-md w-full"
+        width={896}
+        src={coverImage}
+        alt={title}
+        loading="eager"
+      />
+    )
+  }
   <div class="mb-3">
     <DateTag {date} />
   </div>
