@@ -1,8 +1,8 @@
 import { COLORS } from "@constants/colors"
+import { EMBED_HEIGHT_OFFSET, EMBED_MIN_WIDTH } from "@constants/sizes"
 import { type Component, createEffect, createSignal, on } from "solid-js"
 import { createStore } from "solid-js/store"
 import { EmbedCode } from "./embed-code"
-import { EMBED_HEIGHT_OFFSET, EMBED_MIN_WIDTH } from "@constants/sizes"
 
 interface EmbedConfigProps {
   siteUrl: string
