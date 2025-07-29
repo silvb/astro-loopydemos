@@ -1,13 +1,6 @@
 import { useDemoState } from "@components/demo-widget/demo-state-store"
 import type { Led as LedType } from "@types"
-import {
-  type Component,
-  Match,
-  Show,
-  Switch,
-  createEffect,
-  mergeProps,
-} from "solid-js"
+import { type Component, Match, Show, Switch, mergeProps } from "solid-js"
 
 const MOOD_COLORS = {
   on: "greenyellow",

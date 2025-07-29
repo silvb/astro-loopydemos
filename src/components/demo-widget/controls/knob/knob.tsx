@@ -6,6 +6,7 @@ import {
   createResource,
   splitProps,
 } from "solid-js"
+import { Joystick } from "./joystick"
 import { KnobStateContainer } from "./knob-state-container"
 
 interface KnobProps extends KnobData {
@@ -27,7 +28,6 @@ const knobComponentImports = {
   flb: () => import("./flb-knob").then(m => m.FlbKnob),
   gojira: () => import("./gojira-knob").then(m => m.GojiraKnob),
   jhs: () => import("./jhs-knob").then(m => m.JhsKnob),
-  joystick: () => import("./joystick").then(m => m.Joystick),
   knurled: () => import("./knurled-knob").then(m => m.KnurledKnob),
   lichtlaerm: () =>
     import("./lichtlaerm-audio-knob").then(m => m.LichtlaermAudioKnob),
@@ -42,19 +42,13 @@ const knobComponentImports = {
   walrus: () => import("./walrus-audio-knob").then(m => m.WalrusAudioKnob),
 } as const
 
-type KnobComponentType = keyof typeof knobComponentImports
+type KnobComponentType = keyof typeof knobComponentImports | "joystick"
 
 // Create individual render functions for each knob type to avoid union type issues
 const renderArrowKnob = (
   Component: Component<{ size: number }>,
   size: number,
 ) => <Component size={size} />
-
-const renderJoystickKnob = (
-  Component: Component<{ id: string; size: number }>,
-  id: string,
-  size: number,
-) => <Component id={id} size={size} />
 
 const renderColoredKnob = (
   Component: Component<Pick<KnobData, "colors" | "size">>,
@@ -67,9 +61,16 @@ const DynamicKnobComponent: Component<{
   id: string
   size: number
 }> = props => {
+  // Handle joystick statically - no dynamic import needed
+  if (props.type === "joystick") {
+    return <Joystick id={props.id} size={props.size} />
+  }
+
   const [knobElement] = createResource(
-    () => props.type,
-    async (type: KnobComponentType): Promise<JSX.Element> => {
+    () => props.type as Exclude<KnobComponentType, "joystick">,
+    async (
+      type: Exclude<KnobComponentType, "joystick">,
+    ): Promise<JSX.Element> => {
       const KnobComponent = await knobComponentImports[type]()
 
       // Use specific render functions to avoid union type issues
@@ -80,12 +81,6 @@ const DynamicKnobComponent: Component<{
         case "fanclub":
           return renderArrowKnob(
             KnobComponent as Component<{ size: number }>,
-            props.size,
-          )
-        case "joystick":
-          return renderJoystickKnob(
-            KnobComponent as Component<{ id: string; size: number }>,
-            props.id,
             props.size,
           )
         default:

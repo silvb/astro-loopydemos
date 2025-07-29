@@ -6,13 +6,13 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 | Command | Description |
 | --- | --- |
-| `npm run dev` | Start development server at localhost:4321 |
-| `npm run build` | Build production site (includes type checking) |
-| `npm run preview` | Preview production build locally |
-| `npm run lint` | Run Biome linter and formatter with auto-fix |
-| `npm run create-demo` | Create new demo (runs lint, SEO images, meta images) |
-| `npm run create-seo-images` | Generate SEO images for content |
-| `npm run create-meta-images` | Generate meta images for content |
+| `pnpm run dev` | Start development server at localhost:4321 |
+| `pnpm run build` | Build production site (includes type checking) |
+| `pnpm run preview` | Preview production build locally |
+| `pnpm run lint` | Run Biome linter and formatter with auto-fix |
+| `pnpm run create-demo` | Create new demo (runs lint, SEO images, meta images) |
+| `pnpm run create-seo-images` | Generate SEO images for content |
+| `pnpm run create-meta-images` | Generate meta images for content |
 
 ## Architecture Overview
 
@@ -78,6 +78,7 @@ The build process includes:
 - Preset configurations support both single settings and sweep animations
 - External links automatically open in new tabs via rehype plugin
 - Site generates sitemap automatically
+- Pre-commit hook automatically runs `pnpm run lint` before every commit
 
 ## Content Writing Workflow
 
