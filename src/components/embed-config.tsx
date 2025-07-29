@@ -2,19 +2,30 @@ import { COLORS } from "@constants/colors"
 import { type Component, createEffect, createSignal, on } from "solid-js"
 import { createStore } from "solid-js/store"
 import { EmbedCode } from "./embed-code"
+import { EMBED_HEIGHT_OFFSET, EMBED_MIN_WIDTH } from "@constants/sizes"
 
 interface EmbedConfigProps {
   siteUrl: string
   title: string
   slug: string
-  minHeight: number
+  pedalHeight: number
+  pedalWidth: number
 }
 
-const MIN_WIDTH = 320
-
 export const EmbedConfig: Component<EmbedConfigProps> = props => {
-  const [height, setHeight] = createSignal(props.minHeight)
-  const [width, setWidth] = createSignal(400)
+  const [width, setWidth] = createSignal(
+    Math.max(props.pedalWidth, EMBED_MIN_WIDTH),
+  )
+  const relativeMinHeight = () =>
+    Math.min(
+      props.pedalHeight + EMBED_HEIGHT_OFFSET,
+
+      Math.ceil(
+        width() * (props.pedalHeight / props.pedalWidth) + EMBED_HEIGHT_OFFSET,
+      ),
+    )
+
+  const [height, setHeight] = createSignal(relativeMinHeight())
   const [colors, setColors] = createStore({
     primary: COLORS.primary,
     secondary: COLORS.secondary,
@@ -71,12 +82,12 @@ export const EmbedConfig: Component<EmbedConfigProps> = props => {
             <input
               type="number"
               value={width()}
-              min={MIN_WIDTH}
+              min={EMBED_MIN_WIDTH}
               onChange={e => setWidth(Number.parseInt(e.currentTarget.value))}
               class="min-w-40 rounded-md bg-loopydemos-background p-2"
             />
-            {width() < MIN_WIDTH && (
-              <span class="text-loopydemos-red text-sm italic">{`This will look ugly on your site. Best to keep the width above ${MIN_WIDTH}px.`}</span>
+            {width() < EMBED_MIN_WIDTH && (
+              <span class="text-loopydemos-red text-sm italic">{`This will look ugly on your site. Best to keep the width above ${EMBED_MIN_WIDTH}px.`}</span>
             )}
           </div>
         </label>
@@ -86,12 +97,12 @@ export const EmbedConfig: Component<EmbedConfigProps> = props => {
             <input
               type="number"
               value={height()}
-              min={props.minHeight}
+              min={relativeMinHeight()}
               onChange={e => setHeight(Number.parseInt(e.currentTarget.value))}
               class="min-w-40 rounded-md bg-loopydemos-background p-2"
             />
-            {height() < props.minHeight && (
-              <span class="text-loopydemos-red text-sm italic">{`This will look ugly on your site. Best to keep the height above ${props.minHeight}px.`}</span>
+            {height() < relativeMinHeight() && (
+              <span class="text-loopydemos-red text-sm italic">{`This will look ugly on your site. Best to keep the height above ${relativeMinHeight()}px.`}</span>
             )}
           </div>
         </label>

@@ -51,9 +51,8 @@ const pedalsInDemo = [...new Set([...getPedalsFromPresets(presets), slug])]
 
 const staticPedalData = await getStaticPedalData(pedalsInDemo)
 
-const maxHeight = Math.max(...staticPedalData.map(({ height }) => height))
-
-const minHeight = EMBED_HEIGHT_OFFSET + maxHeight
+const pedalHeight = Math.max(...staticPedalData.map(({ height }) => height))
+const pedalWidth = Math.max(...staticPedalData.map(({ width }) => width))
 ---
 
 <DefaultLayout {title}>
@@ -63,6 +62,7 @@ const minHeight = EMBED_HEIGHT_OFFSET + maxHeight
     {slug}
     title={frameTitle}
     {siteUrl}
-    {minHeight}
+    {pedalHeight}
+    {pedalWidth}
   />
 </DefaultLayout>

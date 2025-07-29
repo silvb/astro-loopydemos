@@ -8,9 +8,10 @@ import LoadingSkeleton from "./loading-skeleton.astro"
 
 interface Props {
   presetSlug: string
+  noMargin?: boolean
 }
 
-const { presetSlug } = Astro.props
+const { presetSlug, noMargin = false } = Astro.props
 
 const presetsEntry: CollectionEntry<"presets"> | undefined = await getEntry(
   "presets",
@@ -72,12 +73,14 @@ const firstPresetWidth = firstPresetPedalData.reduce(
   pedalWidth={firstPresetWidth}
   pedalHeight={firstPresetHeight}
   hasMultiplePresets={presets.length > 1}
+  {noMargin}
   {presetSlug}
   {hasBackingTrack}
   {isComparison}
 />
 <DemoWidgetContainer
   client:only="solid-js"
+  {noMargin}
   {presets}
   {staticPedalData}
   {isComparison}

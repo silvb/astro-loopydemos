@@ -15,6 +15,7 @@ interface DemoWidgetContainerProps {
   presetSlug: string
   volume?: number
   maxHeight: number
+  noMargin?: boolean
 }
 
 export const DemoWidgetContainer: Component<
@@ -59,7 +60,12 @@ export const DemoWidgetContainer: Component<
           )}
         </div>
         <ScaleFactor height={props.maxHeight}>
-          <div class="mt-8 flex items-start justify-center">
+          <div
+            class="mt-8 flex items-start justify-center"
+            classList={{
+              "mb-20": !props.noMargin,
+            }}
+          >
             {props.staticPedalData.map(pedalData => (
               <Pedal {...pedalData} />
             ))}

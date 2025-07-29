@@ -6,6 +6,7 @@ interface Props {
   hasMultiplePresets: boolean
   hasBackingTrack?: boolean
   isComparison?: boolean
+  noMargin?: boolean
 }
 
 const {
@@ -15,10 +16,11 @@ const {
   hasBackingTrack,
   isComparison,
   hasMultiplePresets,
+  noMargin,
 } = Astro.props
 ---
 
-<div id={`loading-skeleton-${presetSlug}`}>
+<div id={`loading-skeleton-${presetSlug}`} class={noMargin ? "mb-0" : "mb-20"}>
   <div class="flex flex-col gap-4">
     <div>
       <div class="h-16 w-full rounded-xl bg-loopydemos-secondary-themed"></div>
