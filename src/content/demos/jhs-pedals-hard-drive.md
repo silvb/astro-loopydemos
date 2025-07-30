@@ -12,7 +12,6 @@ tags:
 externalLinks:
   sweetwater: https://sweetwater.sjv.io/6e0jEE
   thomann: jhs_pedals_hard_drive_distortion_tan
-  perfectCircuit: jhs-hard-drive
   builderLink: https://jhspedals.info/collections/all-products/products/hard-drive
 ---
 

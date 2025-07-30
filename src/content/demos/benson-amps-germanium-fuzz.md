@@ -8,7 +8,7 @@ tags:
   - fuzz
   - fuzz face
 externalLinks:
-  reverb: benson-amps-germanium-fuzz
+  thomann: benson_germanium_fuzz
   builderLink: https://www.bensonamps.com/guitarpedals/germaniumfuzz
   sweetwater: https://sweetwater.sjv.io/ZQoNd0
 ---
