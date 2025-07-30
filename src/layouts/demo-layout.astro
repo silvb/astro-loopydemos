@@ -27,13 +27,20 @@ const metaImage = await getImage({
   src: getImageSrcFromSlug(slug, true),
   format: "jpeg",
 })
+
+const coverImageSrc = coverImage
+  ? await getImage({
+      src: coverImage,
+      format: "jpeg",
+    })
+  : undefined
 ---
 
 <DefaultLayout {title}>
   <SEO
     slot="head"
     {title}
-    metaImage={metaImage.src}
+    metaImage={coverImageSrc?.src || metaImage.src}
     isBlogPost
     {date}
     {noIndex}

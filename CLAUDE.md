@@ -96,3 +96,14 @@ When the `/copy` command is used with a pedal name (e.g., `/copy orange fur coat
 - **Technically informed but accessible** - Explain technical details in relatable terms
 - **4 paragraphs maximum** - Keep it concise and punchy
 - **Structure**: Hook + technical details + practical usage + bottom line assessment
+
+## Monetization Guidelines
+
+### Discontinued Pedals
+Do not feature or promote discontinued pedals in new content for monetization purposes. These pedals should be excluded from:
+- New blog posts and guides
+- Affiliate link recommendations  
+- Featured product sections
+
+**Currently discontinued pedals:**
+- Walrus Audio M1 (discontinued 2024)
