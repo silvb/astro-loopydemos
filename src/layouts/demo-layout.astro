@@ -23,24 +23,22 @@ interface Props {
 
 const { slug, title, date, type, excerpt, noIndex, coverImage } = Astro.props
 
-const metaImage = await getImage({
-  src: getImageSrcFromSlug(slug, true),
-  format: "jpeg",
-})
-
-const coverImageSrc = coverImage
+const metaImage = coverImage
   ? await getImage({
       src: coverImage,
       format: "jpeg",
     })
-  : undefined
+  : await getImage({
+      src: getImageSrcFromSlug(slug, true),
+      format: "jpeg",
+    })
 ---
 
 <DefaultLayout {title}>
   <SEO
     slot="head"
     {title}
-    metaImage={coverImageSrc?.src || metaImage.src}
+    metaImage={metaImage.src}
     isBlogPost
     {date}
     {noIndex}
