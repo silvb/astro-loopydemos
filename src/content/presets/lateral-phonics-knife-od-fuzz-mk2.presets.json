@@ -1,0 +1,54 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "warm_gain",
+      "label": "Warm Gain",
+      "secondaryCircuitId": "fuzz",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitSlug": "warm_gain_fuzz",
+      "settings": { "vol": 6, "shape": 8, "attack": 4 }
+    },
+    {
+      "id": "cutting_drive",
+      "label": "Cutting Drive",
+      "secondaryCircuitId": "fuzz",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitSlug": "cutting_drive_fuzz",
+      "settings": { "vol": 6, "shape": 2, "attack": 9 }
+    },
+    {
+      "id": "transparent_saturation",
+      "label": "Transparent Saturation",
+      "secondaryCircuitId": "fuzz",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitSlug": "transparent_saturation_fuzz",
+      "settings": { "vol": 6, "shape": 5, "attack": 5 }
+    },
+    {
+      "id": "attack_knob",
+      "label": "Attack",
+      "isSweep": true,
+      "target": "attack",
+      "secondaryCircuitId": "fuzz",
+      "secondaryCircuitSlug": "attack_knob_fuzz",
+      "secondaryCircuitOnlySlug": "clean",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "volume": 6, "shape": 5 }
+    },
+    {
+      "id": "shape_knob",
+      "label": "Shape",
+      "isSweep": true,
+      "target": "shape",
+      "secondaryCircuitId": "fuzz",
+      "secondaryCircuitSlug": "shape_knob_fuzz",
+      "secondaryCircuitOnlySlug": "clean",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "volume": 6, "attack": 5 }
+    }
+  ]
+}
