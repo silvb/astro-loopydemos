@@ -4,7 +4,7 @@ model: Knife OD & Fuzz Mk2
 slug: lateral-phonics-knife-od-fuzz-mk2
 type: demo
 isSponsored: true
-date: 2025-08-07
+date: 2025-08-08
 tags:
   - overdrive
   - fuzz
