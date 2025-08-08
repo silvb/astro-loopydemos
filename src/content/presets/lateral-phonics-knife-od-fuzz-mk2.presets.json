@@ -1,0 +1,31 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "secondaryCircuitId": "fuzz",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitSlug": "static_preset_fuzz",
+      "settings": { "vol": 5, "shape": 5, "attack": 5 }
+    },
+    {
+      "id": "static_preset_2",
+      "label": "Static Preset",
+      "secondaryCircuitId": "fuzz",
+      "secondaryCircuitOnlySlug": "clean",
+      "secondaryCircuitSlug": "static_preset_fuzz",
+      "settings": { "vol": 6, "shape": 10, "attack": 7 }
+    },
+    {
+      "id": "vol_knob",
+      "label": "Vol",
+      "isSweep": true,
+      "target": "vol",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "shape": 5, "attack": 5 }
+    }
+  ]
+}

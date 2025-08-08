@@ -31,6 +31,7 @@ const knobComponentImports = {
   knurled: () => import("./knurled-knob").then(m => m.KnurledKnob),
   lichtlaerm: () =>
     import("./lichtlaerm-audio-knob").then(m => m.LichtlaermAudioKnob),
+  marconi: () => import("./marconi-knob").then(m => m.MarconiKnob),
   muff: () => import("./muff-knob").then(m => m.MuffKnob),
   obne: () => import("./obne-knob").then(m => m.ObneKnob),
   offset: () => import("./offset-knob").then(m => m.OffsetKnob),

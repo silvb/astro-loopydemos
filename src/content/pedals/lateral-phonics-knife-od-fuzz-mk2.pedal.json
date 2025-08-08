@@ -1,0 +1,66 @@
+{
+  "name": "lateral-phonics-knife-od-fuzz-mk2",
+  "imageSrcSlug": "lateral-phonics-knife-od-fuzz-mk2-no-knobs",
+  "width": 185,
+  "height": 300,
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol",
+        "size": 70,
+        "position": { "top": 14, "left": 21 },
+        "type": "marconi",
+        "colors": {
+          "primary": "#333",
+          "tick": "#d9d9d9"
+        }
+      },
+      {
+        "id": "shape",
+        "size": 70,
+        "position": { "top": 14, "left": 98 },
+        "type": "marconi",
+        "colors": {
+          "primary": "#333",
+          "tick": "#d9d9d9"
+        }
+      },
+      {
+        "id": "attack",
+        "size": 70,
+        "position": { "top": 93, "left": 98 },
+        "type": "marconi"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "colors": { "on": "springgreen" },
+        "position": { "top": 183, "left": 115 }
+      },
+      {
+        "id": "fuzz_led",
+        "secondaryCircuitId": "fuzz",
+        "requiresMainCircuitForSecondary": true,
+        "size": 32,
+        "position": { "top": 183, "left": 115 }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 239, "left": 23 }
+      },
+      {
+        "id": "fuzz_switch",
+        "secondaryCircuitId": "fuzz",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 239, "left": 112 }
+      }
+    ]
+  }
+}
