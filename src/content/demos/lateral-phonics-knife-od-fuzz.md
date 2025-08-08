@@ -1,7 +1,7 @@
 ---
 builder: Lateral Phonics
-model: Knife OD & Fuzz Mk2
-slug: lateral-phonics-knife-od-fuzz-mk2
+model: Knife OD & Fuzz
+slug: lateral-phonics-knife-od-fuzz
 type: demo
 isSponsored: true
 date: 2025-08-08
@@ -14,7 +14,7 @@ externalLinks:
   builderLink: https://lateralphonics.com/pedals/knife/
 ---
 
-The Knife OD Fuzz Mk2 nails that classic Fuzz Face lineage while delivering way more usability than vintage circuits. Lateral Phonics built this around BJT transistor clipping with no diodes, capturing early Tone Bender essence but optimizing every setting to sound musical.
+The Knife OD Fuzz nails that classic Fuzz Face lineage while delivering way more usability than vintage circuits. Lateral Phonics built this around BJT transistor clipping with no diodes, capturing early Tone Bender essence but optimizing every setting to sound musical.
 
 What sets the Knife apart is its incredible range. At low settings, it's a clean boost with immense headroom. Crank the **ATTACK** knob to medium for rich saturation and vintage overdrive with ripped-speaker textures. Keep going and it morphs into musical asymmetrical fuzzy overdrive, finally unleashing thick, sustaining fuzz at maximum. The **SHAPE** knob is a pre-clipping frequency sculptor – brighten in the left position or warm things up turning right.
 
@@ -25,6 +25,6 @@ I'm impressed by how musical this sounds at every setting – no dead zones or h
 ### Signal Chain
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (bridge pickup)
-- Knife OD Fuzz Mk2
+- Knife OD Fuzz
 - [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)
 - A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)
