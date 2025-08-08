@@ -36,7 +36,7 @@
       "secondaryCircuitOnlySlug": "clean",
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
-      "settings": { "volume": 6, "shape": 5 }
+      "settings": { "vol": 6, "shape": 5 }
     },
     {
       "id": "shape_knob",
@@ -48,7 +48,7 @@
       "secondaryCircuitOnlySlug": "clean",
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
-      "settings": { "volume": 6, "attack": 5 }
+      "settings": { "vol": 6, "attack": 5 }
     }
   ]
 }
