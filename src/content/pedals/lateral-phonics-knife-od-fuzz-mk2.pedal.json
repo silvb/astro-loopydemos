@@ -44,6 +44,7 @@
         "secondaryCircuitId": "fuzz",
         "requiresMainCircuitForSecondary": true,
         "size": 32,
+        "colors": { "on": "red" },
         "position": { "top": 183, "left": 115 }
       }
     ],
