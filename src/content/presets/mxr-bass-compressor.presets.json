@@ -1,0 +1,26 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": {
+        "release": 5,
+        "attack": 5,
+        "output": 5,
+        "ratio": 4,
+        "input": 5
+      }
+    },
+    {
+      "id": "release_knob",
+      "label": "Release",
+      "isSweep": true,
+      "target": "release",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "attack": 5, "output": 5, "ratio": 5, "input": 5 }
+    }
+  ]
+}

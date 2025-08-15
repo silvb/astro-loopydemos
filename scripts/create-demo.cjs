@@ -147,6 +147,7 @@ const getDefaultControls = ({ knobs = [], toggles = [], slug = "" }) => ({
           "Fidelity Guitars Stellarosa with Mojo Lipstick Pickups",
           "Eiphone SG Special with Mojo Pickups Gold Foil in the neck, Mojotron in the bridge position",
           "Gretsch Electromatic with Blacktop Filtertrons",
+          "[JMJ Fender Mustang\*](https://sweetwater.sjv.io/R5A6bg), [La Bella Flats\*](https://sweetwater.sjv.io/WqZN6Z) and Curtis Novak Fat Mustang pickups, played with [0.60mm Dunlop Tortex Triangle pick\*](https://sweetwater.sjv.io/7akO2A)",
         ],
       },
       {
