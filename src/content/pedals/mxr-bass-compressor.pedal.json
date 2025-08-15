@@ -1,0 +1,57 @@
+{
+  "name": "mxr-bass-compressor",
+  "width": 185,
+  "height": 300,
+  "controls": {
+    "knobs": [
+      {
+        "id": "release",
+        "size": 44,
+        "position": { "top": 15, "left": 16 },
+        "type": "jhs"
+      },
+      {
+        "id": "attack",
+        "size": 44,
+        "position": { "top": 15, "left": 121 },
+        "type": "jhs"
+      },
+      {
+        "id": "output",
+        "size": 44,
+        "position": { "top": 75, "left": 16 },
+        "type": "jhs"
+      },
+      {
+        "id": "ratio",
+        "size": 44,
+        "position": { "top": 61, "left": 69 },
+        "isRotary": true,
+        "rotaryAngles": [-45, -15, 15, 45],
+        "type": "jhs"
+      },
+      {
+        "id": "input",
+        "size": 44,
+        "position": { "top": 75, "left": 121 },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 40,
+        "position": { "top": 154, "left": 72 },
+        "colors": { "on": "#ffdd00" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 190, "left": 68 }
+      }
+    ]
+  }
+}

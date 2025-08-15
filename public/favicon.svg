@@ -1,14 +1,14 @@
 <svg
   xmlns="http://www.w3.org/2000/svg"
-  width="64"
+  width="96"
   height="96"
-  viewBox="0 0 48 64"
+  viewBox="0 0 64 64"
 >
   <g fill="none">
     <rect
       width="44"
       height="60"
-      x="2"
+      x="10"
       y="2"
       stroke="#8958ff"
       stroke-width="2"
@@ -21,92 +21,92 @@
       stroke-width="2"
       r="6"
       fill="none"
-      cx="14"
+      cx="22"
       cy="14"
     ></circle>
     <line
-      x1="14"
+      x1="22"
       y1="8"
-      x2="14"
+      x2="22"
       y2="14"
       stroke="#8958ff"
       stroke-width="2"
       stroke-linecap="round"
-      transform="rotate(-30 14 14)"
+      transform="rotate(-30 22 14)"
     ></line>
     <circle
       stroke="#ff46d5"
       stroke-width="2"
       r="6"
       fill="none"
-      cx="32"
+      cx="40"
       cy="14"
     ></circle>
     <line
-      x1="32"
+      x1="40"
       y1="8"
-      x2="32"
+      x2="40"
       y2="14"
       stroke="#ff46d5"
       stroke-width="2"
       stroke-linecap="round"
-      transform="rotate(60 32 14)"
+      transform="rotate(60 40 14)"
     ></line>
     <line
-      x1="14"
+      x1="22"
       y1="26"
-      x2="14"
+      x2="22"
       y2="42"
       stroke="#8958ff"
       stroke-width="2"
       stroke-linecap="round"
     ></line>
     <line
-      x1="12"
+      x1="20"
       y1="28"
-      x2="16"
+      x2="24"
       y2="28"
       stroke="#f8f859"
       stroke-width="2"
       stroke-linecap="round"
     ></line>
     <line
-      x1="23"
+      x1="31"
       y1="26"
-      x2="23"
+      x2="31"
       y2="42"
       stroke="#8958ff"
       stroke-width="2"
       stroke-linecap="round"
     ></line>
     <line
-      x1="21"
+      x1="29"
       y1="38"
-      x2="25"
+      x2="33"
       y2="38"
       stroke="#f8f859"
       stroke-width="2"
       stroke-linecap="round"
     ></line>
     <line
-      x1="32"
+      x1="40"
       y1="26"
-      x2="32"
+      x2="40"
       y2="42"
       stroke="#8958ff"
       stroke-width="2"
       stroke-linecap="round"
     ></line>
     <line
-      x1="30"
+      x1="38"
       y1="32"
-      x2="34"
+      x2="42"
       y2="32"
       stroke="#f8f859"
       stroke-width="2"
       stroke-linecap="round"
     ></line>
-    <circle r="4" cx="16" cy="52" fill="#5cf5f5"></circle>
-    <circle r="4" cx="32" cy="52" fill="#8958ff"></circle>
+    <circle r="4" cx="24" cy="52" fill="#5cf5f5"></circle>
+    <circle r="4" cx="40" cy="52" fill="#8958ff"></circle>
   </g>
 </svg>
