@@ -1,0 +1,49 @@
+{
+  "name": "lateral-phonics-deadman-fuzz-mk2",
+  "imageSrcSlug": "lateral-phonics-deadman-fuzz-mk2-no-knobs",
+  "width": 260,
+  "height": 350,
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 90,
+        "position": { "top": 40, "left": 14 },
+        "type": "chicken",
+        "colors": {
+          "primary": "#1c1c1c",
+          "tick": "#f3f3f3",
+          "secondary": "#ffffff00"
+        }
+      },
+      {
+        "id": "low_cut",
+        "size": 90,
+        "position": { "top": 40, "left": 161 },
+        "type": "chicken",
+        "colors": {
+          "primary": "#1c1c1c",
+          "tick": "#f3f3f3",
+          "secondary": "#ffffff00"
+        }
+      },
+      {
+        "id": "fuzz",
+        "size": 120,
+        "position": { "top": 91, "left": 70 },
+        "type": "fender"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 32, "position": { "top": 286, "left": 51 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 279, "left": 108 }
+      }
+    ]
+  }
+}

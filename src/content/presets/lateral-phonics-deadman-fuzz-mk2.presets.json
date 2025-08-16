@@ -1,0 +1,20 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": { "volume": 5, "low_cut": 5, "fuzz": 5 }
+    },
+    {
+      "id": "volume_knob",
+      "label": "Volume",
+      "isSweep": true,
+      "target": "volume",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "low_cut": 5, "fuzz": 5 }
+    }
+  ]
+}

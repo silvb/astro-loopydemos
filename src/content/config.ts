@@ -75,6 +75,7 @@ const knobTypeEnum = z.enum([
   "emptyheadlarge",
   "marconi",
   "orange",
+  "fender",
 ])
 
 const switchTypeEnum = z.enum([
