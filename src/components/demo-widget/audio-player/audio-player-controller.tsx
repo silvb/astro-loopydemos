@@ -39,6 +39,7 @@ export const AudioPlayerController: Component<
   let backingTrackAudioSource: AudioBufferSourceNode | null = null
   let trackLength = 0
   let hasPreloaded = false
+  let audioStartTime = 0
 
   const errorHandler = (error: unknown, slug: string, id: string) => {
     console.error("Error fetching audio buffer", {
@@ -127,10 +128,13 @@ export const AudioPlayerController: Component<
           currentPlayingAudioSource.connect(gainNode)
           gainNode.connect(audioContext.destination)
 
-          currentPlayingAudioSource.start(
-            0,
-            audioContext.currentTime % trackLength,
-          )
+          // Set audio start time when first preset starts playing
+          if (audioStartTime === 0) {
+            audioStartTime = audioContext.currentTime
+          }
+
+          const elapsedTime = audioContext.currentTime - audioStartTime
+          currentPlayingAudioSource.start(0, elapsedTime % trackLength)
         }
 
         if (props.hasBackingTrack) {
@@ -158,10 +162,9 @@ export const AudioPlayerController: Component<
             backingTrackAudioSource.loop = true
 
             backingTrackAudioSource.connect(audioContext.destination)
-            backingTrackAudioSource.start(
-              0,
-              audioContext.currentTime % trackLength,
-            )
+
+            const elapsedTime = audioContext.currentTime - audioStartTime
+            backingTrackAudioSource.start(0, elapsedTime % trackLength)
           }
         }
       } catch (error) {
@@ -169,6 +172,8 @@ export const AudioPlayerController: Component<
       }
     } else {
       audioContext?.suspend()
+      // Reset audio start time when stopping
+      audioStartTime = 0
     }
   })
 
