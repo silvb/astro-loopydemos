@@ -41,6 +41,7 @@ const knobComponentImports = {
   simple: () => import("./simple-knob").then(m => m.SimpleKnob),
   simpledot: () => import("./simple-dot-knob").then(m => m.SimpleDotKnob),
   walrus: () => import("./walrus-audio-knob").then(m => m.WalrusAudioKnob),
+  fender: () => import("./fender-knob").then(m => m.FenderKnob),
 } as const
 
 type KnobComponentType = keyof typeof knobComponentImports | "joystick"
