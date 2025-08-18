@@ -35,7 +35,7 @@ export const ChickenHeadKnob: Component<ChickenHeadKnobProps> = props => {
         <circle
           cx="60"
           cy="60"
-          r="32"
+          r="36"
           fill={mergedProps.colors.primary}
           stroke-width="1"
           stroke={mergedProps.colors.edge}
@@ -43,20 +43,20 @@ export const ChickenHeadKnob: Component<ChickenHeadKnobProps> = props => {
         <circle
           cx="60"
           cy="60"
-          r="16"
+          r="18"
           fill={mergedProps.colors.primary}
           stroke-width="1"
           stroke={mergedProps.colors.edge}
         />
         <polygon
-          points="61,5 59,5 39,100 81,100"
+          points="60,5 39,110 81,110"
           fill={mergedProps.colors.primary}
           stroke-width="1"
           stroke-linejoin="round"
           stroke={mergedProps.colors.edge}
         />
         <polygon
-          points="62,5 58,5 42,105 78,105"
+          points="63,5 57,5 43,115 77,115"
           fill={mergedProps.colors.primary}
           stroke-width="1"
           stroke-linejoin="round"
