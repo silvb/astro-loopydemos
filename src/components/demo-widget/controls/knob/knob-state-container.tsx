@@ -35,7 +35,7 @@ export const KnobStateContainer: ParentComponent<
           when={isSweepTarget(props.id, props.pedalSlug)}
           fallback={props.children}
         >
-          <DragSweepControl id={props.id}>
+          <DragSweepControl id={props.id} size={props.size}>
             <SweepIndicator color={props.highlightColor} size={props.size} />
             {props.children}
           </DragSweepControl>

@@ -7,30 +7,32 @@
     "knobs": [
       {
         "id": "volume",
-        "size": 90,
-        "position": { "top": 40, "left": 14 },
+        "size": 104,
+        "position": { "top": 32, "left": 7 },
         "type": "chicken",
         "colors": {
           "primary": "#1c1c1c",
           "tick": "#f3f3f3",
-          "secondary": "#ffffff00"
+          "secondary": "#ffffff00",
+          "edge": "#4b4b4b"
         }
       },
       {
         "id": "low_cut",
-        "size": 90,
-        "position": { "top": 40, "left": 161 },
+        "size": 104,
+        "position": { "top": 32, "left": 153 },
         "type": "chicken",
         "colors": {
           "primary": "#1c1c1c",
           "tick": "#f3f3f3",
-          "secondary": "#ffffff00"
+          "secondary": "#ffffff00",
+          "edge": "#4b4b4b"
         }
       },
       {
         "id": "fuzz",
-        "size": 120,
-        "position": { "top": 91, "left": 70 },
+        "size": 88,
+        "position": { "top": 106, "left": 86 },
         "type": "fender"
       }
     ],

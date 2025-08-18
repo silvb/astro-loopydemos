@@ -4,6 +4,7 @@ import { createEffect, createSignal, type ParentComponent } from "solid-js"
 
 interface DragSweepControlProps {
   id: string
+  size: number
 }
 
 const getNextLevel = (startLevel: number, startY: number, clientY: number) => {
@@ -65,6 +66,7 @@ export const DragSweepControl: ParentComponent<
     <button
       type="button"
       class="relative block touch-none"
+      style={{ width: `${props.size}px`, height: `${props.size}px` }}
       onMouseDown={startDrag}
       onTouchStart={startDrag}
     >

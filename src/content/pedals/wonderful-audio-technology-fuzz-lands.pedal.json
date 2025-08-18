@@ -8,7 +8,8 @@
         "colors": {
           "primary": "oldlace",
           "secondary": "#5b4035",
-          "tick": "black"
+          "tick": "black",
+          "edge": "#bbb"
         },
         "position": {
           "left": 14,
@@ -27,7 +28,8 @@
         "colors": {
           "primary": "oldlace",
           "secondary": "#5b4035",
-          "tick": "black"
+          "tick": "black",
+          "edge": "#bbb"
         }
       }
     ],

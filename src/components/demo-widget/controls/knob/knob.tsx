@@ -98,8 +98,8 @@ const DynamicKnobComponent: Component<{
     <Suspense
       fallback={
         <div
-          class="animate-pulse rounded-full bg-gray-300"
-          style={{ width: "40px", height: "40px" }}
+          class="animate-pulse rounded-full bg-gray-800"
+          style={{ width: `${props.size}px`, height: `${props.size}px` }}
         />
       }
     >

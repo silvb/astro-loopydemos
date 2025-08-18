@@ -13,7 +13,8 @@
         "colors": {
           "tick": "#1F1B1C",
           "primary": "#FFFDFE",
-          "secondary": "#2B1A19"
+          "secondary": "#2B1A19",
+          "edge": "#bcc3c2"
         }
       },
       {
@@ -27,7 +28,8 @@
         "colors": {
           "tick": "#1F1B1C",
           "primary": "#FFFDFE",
-          "secondary": "#2B1A19"
+          "secondary": "#2B1A19",
+          "edge": "#bcc3c2"
         }
       },
       {
@@ -41,7 +43,8 @@
         "colors": {
           "tick": "#1F1B1C",
           "primary": "#FFFDFE",
-          "secondary": "#2B1A19"
+          "secondary": "#2B1A19",
+          "edge": "#bcc3c2"
         }
       }
     ],

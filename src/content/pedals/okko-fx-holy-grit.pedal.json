@@ -13,7 +13,8 @@
         "colors": {
           "tick": "ghostwhite",
           "primary": "black",
-          "secondary": "#741B1D"
+          "secondary": "#741B1D",
+          "edge": "#4b4b4b"
         }
       },
       {
@@ -27,7 +28,8 @@
         "colors": {
           "tick": "ghostwhite",
           "primary": "black",
-          "secondary": "#A01513"
+          "secondary": "#A01513",
+          "edge": "#4b4b4b"
         }
       },
       {
@@ -41,7 +43,8 @@
         "colors": {
           "tick": "ghostwhite",
           "primary": "black",
-          "secondary": "#A01513"
+          "secondary": "#A01513",
+          "edge": "#4b4b4b"
         }
       },
       {
@@ -55,7 +58,8 @@
         "colors": {
           "tick": "ghostwhite",
           "primary": "black",
-          "secondary": "#A01513"
+          "secondary": "#A01513",
+          "edge": "#4b4b4b"
         }
       }
     ],

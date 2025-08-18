@@ -10,6 +10,7 @@ export const ChickenHeadKnob: Component<ChickenHeadKnobProps> = props => {
         tick: "#1F1B1C",
         primary: "#FFFDFE",
         secondary: "black",
+        edge: "#1F1B1C",
       },
     },
     props,
@@ -34,22 +35,38 @@ export const ChickenHeadKnob: Component<ChickenHeadKnobProps> = props => {
         <circle
           cx="60"
           cy="60"
-          r="36"
+          r="32"
           fill={mergedProps.colors.primary}
-          stroke-width="4"
+          stroke-width="1"
+          stroke={mergedProps.colors.edge}
+        />
+        <circle
+          cx="60"
+          cy="60"
+          r="16"
+          fill={mergedProps.colors.primary}
+          stroke-width="1"
+          stroke={mergedProps.colors.edge}
         />
         <polygon
-          points="60,5 35,105 85,105"
+          points="61,5 59,5 39,100 81,100"
           fill={mergedProps.colors.primary}
-          stroke-width="4"
+          stroke-width="1"
           stroke-linejoin="round"
-          stroke={mergedProps.colors.primary}
+          stroke={mergedProps.colors.edge}
+        />
+        <polygon
+          points="62,5 58,5 42,105 78,105"
+          fill={mergedProps.colors.primary}
+          stroke-width="1"
+          stroke-linejoin="round"
+          stroke={mergedProps.colors.edge}
         />
         <rect
-          width="4"
-          height="48"
-          x="58"
-          y="2"
+          width="2"
+          height="24"
+          x="59"
+          y="5"
           fill={mergedProps.colors.tick}
           rx="2"
           ry="2"
