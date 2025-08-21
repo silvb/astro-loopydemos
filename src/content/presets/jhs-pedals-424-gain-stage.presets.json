@@ -1,0 +1,78 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "chain_with_amp",
+      "label": "424 + Amp",
+      "chain": [
+        {
+          "pedalSlug": "benson-chimera",
+          "id": "chimera",
+          "settings": {
+            "volume": 3,
+            "treble": 5,
+            "bass": 5,
+            "bright_switch": 3
+          }
+        },
+        {
+          "pedalSlug": "jhs-pedals-424-gain-stage",
+          "id": "424_gain_stage",
+          "settings": {
+            "volume": 6,
+            "gain_2": 7,
+            "gain_1": 4,
+            "bass": 6,
+            "treble": 7
+          }
+        }
+      ]
+    },
+    {
+      "id": "di_grit",
+      "label": "DI Grit",
+      "settings": {
+        "volume": 1.5,
+        "gain_2": 7.5,
+        "gain_1": 8.5,
+        "bass": 4,
+        "treble": 6
+      }
+    },
+    {
+      "id": "chain_with_phaser",
+      "label": "424 + Small Stone",
+      "chain": [
+        {
+          "pedalSlug": "jhs-pedals-424-gain-stage",
+          "id": "424_gain_stage",
+          "settings": {
+            "volume": 6,
+            "gain_2": 7,
+            "gain_1": 4,
+            "bass": 6,
+            "treble": 7
+          }
+        },
+        {
+          "pedalSlug": "ehx-small-stone-phase-shifter",
+          "id": "small_stone",
+          "settings": {
+            "color": 3,
+            "rate": 7
+          }
+        }
+      ]
+    },
+    {
+      "id": "volume_knob",
+      "label": "Volume",
+      "isSweep": true,
+      "target": "volume",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "gain_2": 5, "gain_1": 5, "bass": 5, "treble": 5 }
+    }
+  ]
+}

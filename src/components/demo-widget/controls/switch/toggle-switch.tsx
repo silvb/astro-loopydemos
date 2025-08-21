@@ -1,11 +1,12 @@
 import type { Switch, SwitchState } from "@types"
 import { type Component, Show } from "solid-js"
 
-interface ToggleSwitchProps extends Pick<Switch, "size" | "orientation"> {
+interface ToggleSwitchDisplayProps
+  extends Pick<Switch, "size" | "orientation"> {
   state: SwitchState
 }
 
-export const ToggleSwitch: Component<ToggleSwitchProps> = props => (
+const ToggleSwitchDisplay: Component<ToggleSwitchDisplayProps> = props => (
   <svg
     xmlns="http://www.w3.org/2000/svg"
     width={props.size}
@@ -54,4 +55,16 @@ export const ToggleSwitch: Component<ToggleSwitchProps> = props => (
       </Show>
     </g>
   </svg>
+)
+
+interface ToggleSwitchProps extends ToggleSwitchDisplayProps {
+  onClick?: () => void
+}
+
+export const ToggleSwitch: Component<ToggleSwitchProps> = props => (
+  <Show when={props.onClick} fallback={<ToggleSwitchDisplay {...props} />}>
+    <button type="button" onClick={props.onClick}>
+      <ToggleSwitchDisplay {...props} />
+    </button>
+  </Show>
 )

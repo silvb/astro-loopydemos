@@ -1,0 +1,78 @@
+{
+  "name": "jhs-pedals-424-gain-stage",
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 60,
+        "position": { "top": 19, "left": 14 },
+        "type": "jhs",
+        "colors": {
+          "primary": "#5c5c5a",
+          "secondary": "#8f8f8d",
+          "tick": "#f54511"
+        }
+      },
+      {
+        "id": "gain_2",
+        "size": 60,
+        "position": { "top": 19, "left": 74 },
+        "type": "jhs",
+        "colors": {
+          "primary": "#5c5c5a",
+          "secondary": "#8f8f8d",
+          "tick": "#f54511"
+        }
+      },
+      {
+        "id": "gain_1",
+        "size": 60,
+        "position": { "top": 19, "left": 132 },
+        "type": "jhs",
+        "colors": {
+          "primary": "#5c5c5a",
+          "secondary": "#8f8f8d",
+          "tick": "#f54511"
+        }
+      },
+      {
+        "id": "bass",
+        "size": 60,
+        "position": { "top": 98, "left": 14 },
+        "type": "jhs",
+        "colors": {
+          "primary": "#5c5c5a",
+          "secondary": "#8f8f8d",
+          "tick": "#f54511"
+        }
+      },
+      {
+        "id": "treble",
+        "size": 60,
+        "position": { "top": 98, "left": 132 },
+        "type": "jhs",
+        "colors": {
+          "primary": "#5c5c5a",
+          "secondary": "#8f8f8d",
+          "tick": "#f54511"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": { "top": 283, "left": 133 },
+        "colors": { "on": "#f60" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 282, "left": 77 }
+      }
+    ]
+  }
+}

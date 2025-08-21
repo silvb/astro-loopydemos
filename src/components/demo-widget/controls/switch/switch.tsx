@@ -26,10 +26,15 @@ export const Switch: Component<SwitchProps> = props => {
     activePedals,
     isSweepTarget,
     selectSweepSetting,
+    pedalsOn,
   } = useDemoState()
 
   const state = () =>
-    (getSetting(props.pedalSlug, props.id) ?? 1) as SwitchState
+    props.id === "bypass_switch"
+      ? pedalsOn().includes(props.pedalSlug)
+        ? 1
+        : 3
+      : ((getSetting(props.pedalSlug, props.id) ?? 1) as SwitchState)
 
   return (
     <Show when={activePedals().includes(props.pedalSlug)}>
@@ -55,6 +60,13 @@ export const Switch: Component<SwitchProps> = props => {
             size={props.size}
             orientation={props.orientation}
             state={state()}
+            onClick={
+              props.id === "bypass_switch"
+                ? () => {
+                    toggleBypass(props.pedalSlug)
+                  }
+                : undefined
+            }
           />
         </Match>
         <Match when={props.type === "threeway"}>

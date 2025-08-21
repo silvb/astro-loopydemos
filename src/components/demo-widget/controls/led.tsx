@@ -9,7 +9,7 @@ const MOOD_COLORS = {
 
 const DEFAULT_COLORS = {
   on: "#f73333",
-  off: "#545454aa",
+  off: "#282929aa",
 }
 
 interface LedProps extends LedType {
