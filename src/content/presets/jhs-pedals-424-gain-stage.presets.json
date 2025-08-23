@@ -1,7 +1,51 @@
 {
   "hasBackingTrack": true,
-  "volume": 0.65,
+  "volume": 0.5,
   "presets": [
+    {
+      "id": "di_grit",
+      "label": "DI Grit",
+      "settings": {
+        "volume": 1.5,
+        "gain_2": 7.5,
+        "gain_1": 8.5,
+        "bass": 4,
+        "treble": 6
+      }
+    },
+    {
+      "id": "maxed_out",
+      "label": "Maxed Out",
+      "settings": {
+        "volume": 2,
+        "gain_2": 10,
+        "gain_1": 10,
+        "bass": 10,
+        "treble": 10
+      }
+    },
+    {
+      "id": "garage_recording",
+      "label": "Garage Recording",
+      "settings": {
+        "volume": 4,
+        "gain_2": 6.5,
+        "gain_1": 8,
+        "bass": 1,
+        "treble": 3
+      }
+    },
+    {
+      "id": "clean_volume",
+      "label": "Clean Volume",
+      "settings": {
+        "volume": 10,
+        "gain_2": 5,
+        "gain_1": 5,
+        "bass": 5,
+        "treble": 5
+      }
+    },
     {
       "id": "fuzz_with_amp",
       "label": "Fuzz + Amp",
@@ -57,28 +101,6 @@
       ]
     },
     {
-      "id": "di_grit",
-      "label": "DI Grit",
-      "settings": {
-        "volume": 1.5,
-        "gain_2": 7.5,
-        "gain_1": 8.5,
-        "bass": 4,
-        "treble": 6
-      }
-    },
-    {
-      "id": "garage_recording",
-      "label": "Garage Recording",
-      "settings": {
-        "volume": 4,
-        "gain_2": 6.5,
-        "gain_1": 8,
-        "bass": 1,
-        "treble": 3
-      }
-    },
-    {
       "id": "psych_stack",
       "label": "Physchedelic Stack",
       "chain": [
@@ -112,12 +134,40 @@
       ]
     },
     {
+      "id": "gain_stacked",
+      "label": "Gain Staging",
+      "chain": [
+        {
+          "pedalSlug": "jhs-pedals-424-gain-stage",
+          "id": "424",
+          "settings": {
+            "volume": 3,
+            "gain_2": 7,
+            "gain_1": 8,
+            "bass": 6,
+            "treble": 6
+          }
+        },
+        {
+          "pedalSlug": "twilight-pulse-audioworks-konstante",
+          "id": "konstante",
+          "settings": {
+            "loud": 6,
+            "gain": 5,
+            "freq": 3,
+            "pre": 5,
+            "ord": 3
+          }
+        }
+      ]
+    },
+    {
       "id": "eighties_mixtape",
       "label": "80s Mixtape",
       "chain": [
         {
           "pedalSlug": "jhs-pedals-424-gain-stage",
-          "id": "424_gain_stage",
+          "id": "424",
           "settings": {
             "volume": 3,
             "gain_2": 7,
@@ -145,25 +195,42 @@
         }
       ]
     },
+
     {
-      "id": "clean_volume",
-      "label": "Clean Volume",
-      "settings": {
-        "volume": 10,
-        "gain_2": 5,
-        "gain_1": 5,
-        "bass": 5,
-        "treble": 5
-      }
+      "id": "gain_2_knob",
+      "label": "Gain 2",
+      "isSweep": true,
+      "target": "gain_2",
+      "initialValue": 2,
+      "values": [2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "settings": { "volume": 5, "gain_1": 7, "bass": 5, "treble": 5 }
     },
     {
-      "id": "volume_knob",
-      "label": "Volume",
+      "id": "gain_1_knob",
+      "label": "Gain 1",
       "isSweep": true,
-      "target": "volume",
+      "target": "gain_1",
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
-      "settings": { "gain_2": 5, "gain_1": 5, "bass": 5, "treble": 5 }
+      "settings": { "volume": 4, "gain_2": 8, "bass": 5, "treble": 5 }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "volume": 5, "gain_2": 7, "gain_1": 8, "treble": 5 }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble",
+      "isSweep": true,
+      "target": "treble",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "volume": 5, "gain_2": 7, "gain_1": 8, "bass ": 5 }
     }
   ]
 }

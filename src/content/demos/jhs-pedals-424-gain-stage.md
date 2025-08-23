@@ -4,7 +4,7 @@ model: 424 Gain Stage
 slug: jhs-pedals-424-gain-stage
 type: demo
 isSponsored: true
-date: 2025-08-21
+date: 2025-08-23
 tags:
   - tascam
   - cassette recorder
