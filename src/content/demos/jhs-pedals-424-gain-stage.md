@@ -29,5 +29,4 @@ If you're chasing those Mac DeMarco, Steve Lacy, or modern indie vibes, this ped
 
 - Fidelity Guitars Stellarosa with Mojo Lipstick Pickups (both pickups in series)
 - 424 Gain Stage
-- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)
-- A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL) for the fuzz/overdrive + amp preset
