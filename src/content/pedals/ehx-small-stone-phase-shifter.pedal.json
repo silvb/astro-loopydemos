@@ -1,0 +1,49 @@
+{
+  "name": "ehx-small-stone-phase-shifter",
+  "width": 250,
+  "height": 380,
+  "controls": {
+    "knobs": [
+      {
+        "id": "rate",
+        "size": 78,
+        "position": {
+          "left": 87,
+          "top": 35
+        },
+        "type": "simple"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 36,
+        "position": {
+          "left": 170,
+          "top": 62
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "color",
+        "size": 40,
+        "position": {
+          "left": 42,
+          "top": 57
+        },
+        "type": "threeway",
+        "orientation": "vertical"
+      },
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": {
+          "left": 101,
+          "top": 252
+        }
+      }
+    ]
+  }
+}

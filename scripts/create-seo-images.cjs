@@ -5,7 +5,7 @@ const { execSync } = require("node:child_process")
 const imageSourcePath = "src/images"
 const targetDirectoryPath = "src/images/seo-preview"
 const imageExtensions = [".png", ".webp"]
-const fillColor = "#8958ff"
+const fillColor = "#252253"
 const postSourcePath = "src/content/posts"
 const presetSource = "src/content/presets"
 

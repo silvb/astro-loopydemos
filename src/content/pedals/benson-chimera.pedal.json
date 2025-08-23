@@ -1,0 +1,44 @@
+{
+  "name": "benson-chimera",
+  "width": 700,
+  "height": 335,
+  "controls": {
+    "knobs": [
+      {
+        "id": "volume",
+        "size": 44,
+        "position": { "top": 232, "left": 101 },
+        "type": "jhs"
+      },
+      {
+        "id": "treble",
+        "size": 44,
+        "position": { "top": 232, "left": 164 },
+        "type": "jhs"
+      },
+      {
+        "id": "bass",
+        "size": 44,
+        "position": { "top": 232, "left": 228 },
+        "type": "jhs"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 60, "position": { "top": 223, "left": 593 } }
+    ],
+    "switches": [
+      {
+        "id": "bright_switch",
+        "type": "toggle",
+        "size": 24,
+        "position": { "top": 241, "left": 290 }
+      },
+      {
+        "id": "bypass_switch",
+        "type": "toggle",
+        "size": 32,
+        "position": { "top": 238, "left": 576 }
+      }
+    ]
+  }
+}
