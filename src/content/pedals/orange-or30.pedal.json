@@ -1,0 +1,67 @@
+{
+  "name": "orange-or30",
+  "height": 360,
+  "width": 700,
+  "controls": {
+    "knobs": [
+      {
+        "id": "presence",
+        "size": 36,
+        "position": { "top": 229, "left": 219 },
+        "type": "orange"
+      },
+      {
+        "id": "fs_vol",
+        "size": 36,
+        "position": { "top": 229, "left": 263 },
+        "type": "orange"
+      },
+      {
+        "id": "vol",
+        "size": 36,
+        "position": { "top": 229, "left": 307 },
+        "type": "orange"
+      },
+      {
+        "id": "treble",
+        "size": 24,
+        "position": { "top": 235, "left": 350 },
+        "type": "orange"
+      },
+      {
+        "id": "mids",
+        "size": 24,
+        "position": { "top": 235, "left": 383 },
+        "type": "orange"
+      },
+      {
+        "id": "bass",
+        "size": 24,
+        "position": { "top": 235, "left": 415 },
+        "type": "orange"
+      },
+      {
+        "id": "gain",
+        "size": 36,
+        "position": { "top": 229, "left": 447 },
+        "type": "orange"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": { "top": 222, "left": 171 },
+        "colors": { "on": "#f80" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bright_switch",
+        "type": "toggle",
+        "size": 20,
+        "position": { "top": 224, "left": 489 }
+      }
+    ]
+  }
+}

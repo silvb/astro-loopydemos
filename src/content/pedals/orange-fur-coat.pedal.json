@@ -8,25 +8,49 @@
         "id": "vol",
         "size": 56,
         "position": { "top": 49, "left": 49 },
-        "type": "orange"
+        "type": "orange",
+        "colors": {
+          "primary": "#e8e8e8",
+          "secondary": "#fff",
+          "tick": "#000",
+          "edge": "#E0E0E0"
+        }
       },
       {
         "id": "fuzz",
         "size": 56,
         "position": { "top": 49, "left": 202 },
-        "type": "orange"
+        "type": "orange",
+        "colors": {
+          "primary": "#e8e8e8",
+          "secondary": "#fff",
+          "tick": "#000",
+          "edge": "#E0E0E0"
+        }
       },
       {
         "id": "eq",
         "size": 56,
         "position": { "top": 131, "left": 69 },
-        "type": "orange"
+        "type": "orange",
+        "colors": {
+          "primary": "#e8e8e8",
+          "secondary": "#fff",
+          "tick": "#000",
+          "edge": "#E0E0E0"
+        }
       },
       {
         "id": "octave",
         "size": 56,
         "position": { "top": 131, "left": 181 },
-        "type": "orange"
+        "type": "orange",
+        "colors": {
+          "primary": "#e8e8e8",
+          "secondary": "#fff",
+          "tick": "#000",
+          "edge": "#E0E0E0"
+        }
       }
     ],
     "leds": [

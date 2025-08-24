@@ -1,0 +1,109 @@
+{
+  "name": "orange-dual-baby-100",
+  "width": 700,
+  "height": 180,
+  "controls": {
+    "knobs": [
+      {
+        "id": "gain_a",
+        "size": 48,
+        "position": { "top": 24, "left": 74 },
+        "type": "orange"
+      },
+      {
+        "id": "vol_a",
+        "size": 48,
+        "position": { "top": 24, "left": 139 },
+        "type": "orange"
+      },
+      {
+        "id": "presence_a",
+        "size": 48,
+        "position": { "top": 24, "left": 204 },
+        "type": "orange"
+      },
+      {
+        "id": "bass_a",
+        "size": 48,
+        "position": { "top": 86, "left": 106 },
+        "type": "orange"
+      },
+      {
+        "id": "middle_a",
+        "size": 48,
+        "position": { "top": 86, "left": 172 },
+        "type": "orange"
+      },
+      {
+        "id": "treble_a",
+        "size": 48,
+        "position": { "top": 86, "left": 237 },
+        "type": "orange"
+      },
+      {
+        "id": "gain_b",
+        "size": 48,
+        "position": { "top": 24, "left": 307 },
+        "type": "orange"
+      },
+      {
+        "id": "vol_b",
+        "size": 48,
+        "position": { "top": 24, "left": 373 },
+        "type": "orange"
+      },
+      {
+        "id": "presence_b",
+        "size": 48,
+        "position": { "top": 24, "left": 438 },
+        "type": "orange"
+      },
+      {
+        "id": "bass_b",
+        "size": 48,
+        "position": { "top": 86, "left": 340 },
+        "type": "orange"
+      },
+      {
+        "id": "middle_b",
+        "size": 48,
+        "position": { "top": 86, "left": 405 },
+        "type": "orange"
+      },
+      {
+        "id": "treble_b",
+        "size": 48,
+        "position": { "top": 86, "left": 471 },
+        "type": "orange"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 80,
+        "position": { "top": 32, "left": 514 },
+        "colors": { "on": "#f80" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "tubby_a",
+        "type": "toggle",
+        "size": 24,
+        "position": { "top": 81, "left": 59 }
+      },
+      {
+        "id": "tight_b",
+        "type": "toggle",
+        "size": 24,
+        "position": { "top": 81, "left": 294 }
+      },
+      {
+        "id": "channel",
+        "type": "toggle",
+        "size": 44,
+        "position": { "top": 51, "left": 585 }
+      }
+    ]
+  }
+}

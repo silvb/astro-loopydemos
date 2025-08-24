@@ -1,0 +1,53 @@
+{
+  "hasBackingTrack": false,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": {
+        "gain_a": 5,
+        "vol_a": 5,
+        "presence_a": 5,
+        "bass_a": 5,
+        "middle_a": 5,
+        "treble_a": 5,
+        "gain_b": 5,
+        "vol_b": 5,
+        "presence_b": 5,
+        "bass_b": 5,
+        "middle_b": 5,
+        "treble_b": 5,
+        "tubby_a": 1,
+        "tight_b": 1,
+        "channel": 1,
+        "bypass_switch": 1
+      }
+    },
+    {
+      "id": "gain_a_knob",
+      "label": "Gain_a",
+      "isSweep": true,
+      "target": "gain_a",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "vol_a": 5,
+        "presence_a": 5,
+        "bass_a": 5,
+        "middle_a": 5,
+        "treble_a": 5,
+        "gain_b": 5,
+        "vol_b": 5,
+        "presence_b": 5,
+        "bass_b": 5,
+        "middle_b": 5,
+        "treble_b": 5,
+        "tubby_a": 1,
+        "tight_b": 1,
+        "channel": 1,
+        "bypass_switch": 1
+      }
+    }
+  ]
+}

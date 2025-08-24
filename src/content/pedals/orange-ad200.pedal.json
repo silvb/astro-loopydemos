@@ -1,0 +1,55 @@
+{
+  "name": "orange-ad200",
+  "height": 342,
+  "width": 700,
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol",
+        "size": 52,
+        "position": { "top": 207, "left": 242 },
+        "type": "orange"
+      },
+      {
+        "id": "treble",
+        "size": 28,
+        "position": { "top": 219, "left": 317 },
+        "type": "orange"
+      },
+      {
+        "id": "mids",
+        "size": 28,
+        "position": { "top": 219, "left": 367 },
+        "type": "orange"
+      },
+      {
+        "id": "bass",
+        "size": 28,
+        "position": { "top": 219, "left": 417 },
+        "type": "orange"
+      },
+      {
+        "id": "gain",
+        "size": 52,
+        "position": { "top": 207, "left": 468 },
+        "type": "orange"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": { "top": 203, "left": 180 },
+        "colors": { "on": "#f80" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "clean_switch",
+        "type": "toggle",
+        "size": 20,
+        "position": { "top": 216, "left": 447 }
+      }
+    ]
+  }
+}

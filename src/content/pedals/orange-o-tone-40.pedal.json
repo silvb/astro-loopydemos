@@ -1,0 +1,59 @@
+{
+  "name": "orange-o-tone-40",
+  "imageSrcSlug": "orange-o-tone-40-controls",
+  "width": 700,
+  "height": 375,
+  "controls": {
+    "knobs": [
+      {
+        "id": "reverb",
+        "size": 48,
+        "position": { "top": 49, "left": 217 },
+        "type": "orange"
+      },
+      {
+        "id": "tremolo_depth",
+        "size": 32,
+        "position": { "top": 56, "left": 272 },
+        "type": "orange"
+      },
+      {
+        "id": "tremolo_speed",
+        "size": 32,
+        "position": { "top": 56, "left": 311 },
+        "type": "orange"
+      },
+      {
+        "id": "bass",
+        "size": 32,
+        "position": { "top": 56, "left": 351 },
+        "type": "orange"
+      },
+      {
+        "id": "mids",
+        "size": 32,
+        "position": { "top": 56, "left": 390 },
+        "type": "orange"
+      },
+      {
+        "id": "treble",
+        "size": 32,
+        "position": { "top": 56, "left": 429 },
+        "type": "orange"
+      },
+      {
+        "id": "volume",
+        "size": 48,
+        "position": { "top": 49, "left": 469 },
+        "type": "orange"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "position": { "top": 41, "left": 125 }
+      }
+    ]
+  }
+}

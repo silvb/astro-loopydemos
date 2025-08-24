@@ -1,0 +1,91 @@
+{
+  "name": "orange-tour-baby-100",
+  "width": 700,
+  "height": 180,
+  "controls": {
+    "knobs": [
+      {
+        "id": "comp_clean",
+        "size": 48,
+        "position": { "top": 24, "left": 70 },
+        "type": "orange"
+      },
+      {
+        "id": "vol_clean",
+        "size": 48,
+        "position": { "top": 24, "left": 193 },
+        "type": "orange"
+      },
+      {
+        "id": "bass_clean",
+        "size": 48,
+        "position": { "top": 86, "left": 102 },
+        "type": "orange"
+      },
+      {
+        "id": "treble_clean",
+        "size": 48,
+        "position": { "top": 86, "left": 160 },
+        "type": "orange"
+      },
+      {
+        "id": "gain_dirty",
+        "size": 48,
+        "position": { "top": 24, "left": 263 },
+        "type": "orange"
+      },
+      {
+        "id": "vol_dirty",
+        "size": 48,
+        "position": { "top": 24, "left": 328 },
+        "type": "orange"
+      },
+      {
+        "id": "fs_vol_dirty",
+        "size": 48,
+        "position": { "top": 24, "left": 394 },
+        "type": "orange"
+      },
+      {
+        "id": "presence_dirty",
+        "size": 48,
+        "position": { "top": 24, "left": 459 },
+        "type": "orange"
+      },
+      {
+        "id": "bass_dirty",
+        "size": 48,
+        "position": { "top": 86, "left": 296 },
+        "type": "orange"
+      },
+      {
+        "id": "middle_dirty",
+        "size": 48,
+        "position": { "top": 86, "left": 361 },
+        "type": "orange"
+      },
+      {
+        "id": "treble_dirty",
+        "size": 48,
+        "position": { "top": 86, "left": 426 },
+        "type": "orange"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 80,
+        "position": { "top": 32, "left": 510 },
+        "colors": { "on": "#f80" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "dirty_clean",
+        "type": "toggle",
+        "size": 44,
+        "position": { "top": 52, "left": 580 }
+      }
+    ]
+  }
+}

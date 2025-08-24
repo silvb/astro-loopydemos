@@ -1,0 +1,37 @@
+{
+  "hasBackingTrack": false,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": {
+        "presence": 5,
+        "fs_vol": 5,
+        "vol": 5,
+        "treble": 5,
+        "mids": 5,
+        "bass": 5,
+        "gain": 5,
+        "bypass_switch": 1
+      }
+    },
+    {
+      "id": "presence_knob",
+      "label": "Presence",
+      "isSweep": true,
+      "target": "presence",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "fs_vol": 5,
+        "vol": 5,
+        "treble": 5,
+        "mids": 5,
+        "bass": 5,
+        "gain": 5,
+        "bypass_switch": 1
+      }
+    }
+  ]
+}
