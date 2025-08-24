@@ -1,0 +1,33 @@
+{
+  "hasBackingTrack": false,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": {
+        "vol": 5,
+        "treble": 5,
+        "mids": 5,
+        "bass": 5,
+        "gain": 5,
+        "clean_switch": 1
+      }
+    },
+    {
+      "id": "vol_knob",
+      "label": "Vol",
+      "isSweep": true,
+      "target": "vol",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "treble": 5,
+        "mids": 5,
+        "bass": 5,
+        "gain": 5,
+        "clean_switch": 1
+      }
+    }
+  ]
+}

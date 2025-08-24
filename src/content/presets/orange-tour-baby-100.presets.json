@@ -1,0 +1,47 @@
+{
+  "hasBackingTrack": false,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": {
+        "comp_clean": 5,
+        "vol_clean": 5,
+        "bass_clean": 5,
+        "treble_clean": 5,
+        "gain_dirty": 5,
+        "vol_dirty": 5,
+        "fs_vol_dirty": 5,
+        "presence_dirty": 5,
+        "bass_dirty": 5,
+        "middle_dirty": 5,
+        "treble_dirty": 5,
+        "dirty_clean": 1,
+        "bypass_switch": 1
+      }
+    },
+    {
+      "id": "comp_clean_knob",
+      "label": "Comp_clean",
+      "isSweep": true,
+      "target": "comp_clean",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "vol_clean": 5,
+        "bass_clean": 5,
+        "treble_clean": 5,
+        "gain_dirty": 5,
+        "vol_dirty": 5,
+        "fs_vol_dirty": 5,
+        "presence_dirty": 5,
+        "bass_dirty": 5,
+        "middle_dirty": 5,
+        "treble_dirty": 5,
+        "dirty_clean": 1,
+        "bypass_switch": 1
+      }
+    }
+  ]
+}
