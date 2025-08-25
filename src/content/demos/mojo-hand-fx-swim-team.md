@@ -14,7 +14,7 @@ relatedSlugs:
   - walrus-audio-julia-v2
   - walrus-audio-polychrome
 externalLinks:
-  reverb: mojo-hand-fx-swim-team
+  deathcloud: https://collabs.shop/phjwbl
   builderLink: https://mojohandfx.com/products/swim-team
 ---
 

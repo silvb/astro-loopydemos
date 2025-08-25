@@ -10,6 +10,7 @@ tags:
 externalLinks:
   reverb: interstellar-audio-machines-octonaut-hyperdrive
   builderLink: https://interstellaraudiomachines.com/products/octonaut-hyperdrive
+  deathcloud: https://collabs.shop/g4v2ey
 ---
 
 The Octonaut Hyperdrive by Interstellar Audio Machines is a cool drive pedal for that transparent but focused sound to push your amp into sweet, creamy gain.

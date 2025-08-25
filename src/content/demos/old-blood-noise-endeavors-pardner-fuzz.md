@@ -13,7 +13,7 @@ externalLinks:
   perfectCircuit: old-blood-noise-pardner
   builderLink: https://oldbloodnoise.com/pedals/p/pardner-fuzz
   thomann: old_blood_noise_endeavors_pardner_fuzz_synth
-  deathcloud: https://deathcloud.com/products/obne-pardner
+  deathcloud: https://collabs.shop/uftzwy
 ---
 
 The Pardner Fuzz by Old Blood Noise Endeavors is a beautiful fuzz unit that goes beyond the standard ways of smashing your sound.

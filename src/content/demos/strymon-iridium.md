@@ -11,7 +11,7 @@ relatedSlugs:
   - strymon-iridium-bass-ownhammer-ir
 externalLinks:
   thomann: strymon_iridium_amp_ir_cab
-  reverb: strymon-iridium
+  deathcloud: https://collabs.shop/s4il3q
   builderLink: https://www.strymon.net/product/iridium/
   perfectCircuit: strymon-iridium
   sweetwater: https://sweetwater.sjv.io/oqxONo

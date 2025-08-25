@@ -14,7 +14,7 @@ externalLinks:
   perfectCircuit: old-blood-noise-beam-splitter
   builderLink: https://oldbloodnoise.com/pedals/p/beam-splitter
   thomann: old_blood_noise_endeavors_beam_splitter_distortion
-  deathcloud: https://deathcloud.com/products/obne-beam-splitter
+  deathcloud: https://collabs.shop/b64xji
 ---
 
 The Beam Splitter by Old Blood Noise Endeavors is distortion, overdrive, dual delay, chorus, double and triple tracker in one beautifully designed pedal.

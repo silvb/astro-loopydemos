@@ -14,6 +14,7 @@ externalLinks:
   perfectCircuit: old-blood-noise-alpha-haunt
   builderLink: https://oldbloodnoise.com/pedals/p/alpha-haunt-fuzz
   thomann: old_blood_noise_endeavors_alpha_haunt_21_fuzz
+  deathcloud: https://collabs.shop/91y7qa
 ---
 
 The Alpha Haunt by Old Blood Noise Endeavors is a silicon high gain gated fuzz pedal.
