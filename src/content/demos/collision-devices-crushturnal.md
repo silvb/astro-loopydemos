@@ -14,6 +14,7 @@ externalLinks:
   perfectCircuit: collision-devices-crushturnal
   builderLink: https://collisiondevices.com/shop/p/crushturnal
   thomann: collision_devices_black_hole_crushturnal
+  deathcloud: https://deathcloud.com/products/collision-devices-crushturnal-pedal
 ---
 
 The Crushturnal by Collision Devices is an epic ambient texture and soundscape machine.

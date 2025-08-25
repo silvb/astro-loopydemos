@@ -3,6 +3,7 @@ import { Image } from "astro:assets"
 import { getCollection } from "astro:content"
 import { getImageAltFromSlug } from "@utils/get-image-alt-from-slug"
 import { getImageSrcFromSlug } from "@utils/get-image-src-from-slug"
+import deathcloudLogo from "./deathcloud-logo.svg"
 import soundShoppeLogo from "./sound-shoppe-logo.png"
 import sweetwaterLogo from "./sweetwater-logo.webp"
 import thomannLogo from "./thomann-logo.svg"
@@ -12,6 +13,7 @@ interface Props {
   sweetwater?: string
   thomann?: string
   soundShoppe?: string
+  deathcloud?: string
 }
 
 const {
@@ -19,6 +21,7 @@ const {
   sweetwater: propSweetwater,
   thomann: propThomann,
   soundShoppe: propSoundShoppe,
+  deathcloud: propDeathCloud,
 } = Astro.props
 
 // Try to get demo data from content collection
@@ -29,6 +32,7 @@ const demo = demos.find(d => d.slug === slug)
 const sweetwater = demo?.data.externalLinks?.sweetwater ?? propSweetwater
 const thomann = demo?.data.externalLinks?.thomann ?? propThomann
 const soundShoppe = demo?.data.externalLinks?.soundShoppe ?? propSoundShoppe
+const deathcloud = demo?.data.externalLinks?.deathcloud ?? propDeathCloud
 
 const ctaLabels = [
   "Treat yo' self",
@@ -69,6 +73,20 @@ const shuffledCtaLabels = ctaLabels
     />
   </div>
   <div class="flex flex-col items-stretch justify-center gap-2">
+    {
+      deathcloud && (
+        <a class="link-button link-none" href={deathcloud}>
+          <Image
+            class="h-auto max-w-20 rounded-lg bg-black p-1"
+            width={112}
+            src={deathcloudLogo}
+            alt="deathcloud logo"
+            format="avif"
+          />
+          <span class="whitespace-nowrap text-sm">{shuffledCtaLabels[2]}</span>
+        </a>
+      )
+    }
     {
       sweetwater && (
         <a
@@ -127,7 +145,7 @@ const shuffledCtaLabels = ctaLabels
       )
     }
     {
-      (sweetwater || thomann) && (
+      (sweetwater || thomann || deathcloud) && (
         <p class="m-0 text-xs italic text-loopydemos-subdued">
           Buy through these links and support Loopy Demos
           <br /> at no extra cost to you.

@@ -16,6 +16,7 @@ externalLinks:
   perfectCircuit: old-blood-noise-bl-44-reverse
   builderLink: https://oldbloodnoise.com/pedals/p/bl-44-reverse
   thomann: old_blood_noise_endeavors_bl_44_reverse
+  deathcloud: https://deathcloud.com/products/obne-reverse-bl-44-pedal
 ---
 
 The BL-44 Reverse by Old Blood Noise Endeavors is a reverse delay pedal that can create a wide range of sounds, from subtle reverse echoes to glitchy, lo-fi textures.
