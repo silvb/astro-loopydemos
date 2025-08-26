@@ -13,7 +13,7 @@ relatedSlugs:
   - overdrive-shootout
 externalLinks:
   thomann: earthquaker_devices_devices_plumes_signal_shredder
-  reverb: earthquaker-devices-plumes
+  deathcloud: https://collabs.shop/v8b5zg
   builderLink: https://www.earthquakerdevices.com/plumes
   perfectCircuit: earthquaker-devices-plumes
   sweetwater: https://sweetwater.sjv.io/EKLyEW

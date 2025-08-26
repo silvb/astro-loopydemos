@@ -16,6 +16,7 @@ externalLinks:
   perfectCircuit: old-blood-noise-excess-v2
   builderLink: https://oldbloodnoise.com/pedals/p/excess-v2
   thomann: old_blood_noise_endeavors_excess_v2_dist._modulator
+  deathcloud: https://collabs.shop/tefivy
 ---
 
 The Excess V2 by Old Blood Noise Endeavors is wild combination of crunchy, rodent-inspired distortion and a colorful selection of modulation effects.

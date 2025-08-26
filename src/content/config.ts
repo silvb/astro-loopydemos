@@ -173,6 +173,7 @@ const demos = defineCollection({
         sweetwater: z.string().optional(),
         soundShoppe: z.string().optional(),
         reverb: z.string().optional(),
+        deathcloud: z.string().optional(),
       })
       .optional(),
     relatedSlugs: z.array(z.string()).optional(),

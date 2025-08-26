@@ -14,7 +14,7 @@ relatedSlugs:
   - walrus-audio-lore
   - walrus-audio-melee
 externalLinks:
-  reverb: mojo-hand-fx-octaverse
+  deathcloud: https://collabs.shop/kzvs9p
   builderLink: https://mojohandfx.com/collections/delay-reverb/products/octaverse-reverse-octave-delay
 ---
 

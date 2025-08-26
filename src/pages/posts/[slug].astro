@@ -63,7 +63,7 @@ if (type === "freeform") {
   {
     relatedDemos.length > 0 && (
       <>
-        <h3>Related Pedals</h3>
+        <h3>Discover More In-depth Demos</h3>
         <div class="grid auto-rows-[200px] grid-cols-3-min-repeat gap-2">
           {relatedDemos
             .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
@@ -85,7 +85,7 @@ if (type === "freeform") {
   {
     relatedPosts.length > 0 && (
       <>
-        <h3>Related Posts</h3>
+        <h3>Similar Articles</h3>
         <div>
           {relatedPosts
             .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())

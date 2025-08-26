@@ -13,6 +13,7 @@ externalLinks:
   builderLink: https://www.earthquakerdevices.com/blumes
   sweetwater: https://sweetwater.sjv.io/rQ9MXd
   thomann: earthquaker_devices_blumes_low_signal_shredder
+  deathcloud: https://collabs.shop/8dxscw
 ---
 
 The EarthQuaker Devices Blumes is a rock-solid bass overdrive with enough sonic options to fit it into any recording situation.

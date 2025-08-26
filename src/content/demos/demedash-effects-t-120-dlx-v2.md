@@ -9,7 +9,7 @@ tags:
   - analog delay
   - bucket brigade
 externalLinks:
-  reverb: demedash-effects-t-120-dlx-v2
+  deathcloud: https://collabs.shop/q0merx
   builderLink: https://www.demedasheffects.com/store/p/t120dlx
   soundShoppe: t-120-videotape-echo-v2-deluxe
 ---

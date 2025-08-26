@@ -13,6 +13,7 @@ relatedSlugs:
   - catalinbread-topanga
 externalLinks:
   builderLink: https://interstellaraudiomachines.com/collections/pedals/products/fuzzsquatch-fuzzdrive
+  deathcloud: https://collabs.shop/ehrhpn
 ---
 
 The Fuzzsquatch Fuzzdrive by Interstellar Audio Machines is a great version of an Op-amp Big Muff.
