@@ -24,5 +24,6 @@ What really sets the Deadman apart is its dynamic response and clarity. While it
 
 - Fidelity Guitars Stellarosa with Mojo Lipstick Pickups (bridge pickup)
 - Deadman Fuzz Mk2
+- Lateral Phonics Seamark Reverb
 - [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)
 - A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)
