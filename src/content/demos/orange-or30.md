@@ -2,9 +2,9 @@
 builder: Orange
 model: OR30
 slug: orange-or30
-type: none
+type: demo
 isSponsored: true
-date: 2025-08-24
+date: 2025-08-28
 tags:
   - tube amp
   - amp
