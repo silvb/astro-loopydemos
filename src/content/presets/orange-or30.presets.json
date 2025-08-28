@@ -292,6 +292,44 @@
         "on_switch": 3,
         "play_switch": 3
       }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 2,
+      "values": [2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "settings": {
+        "presence": 7,
+        "fs_vol": 0,
+        "vol": 2,
+        "treble": 5,
+        "mids": 4,
+        "bass": 7,
+        "bright_switch": 2,
+        "on_switch": 3,
+        "play_switch": 3
+      }
+    },
+    {
+      "id": "bright_switch_toggle",
+      "label": "Bright Switch",
+      "isSweep": true,
+      "target": "bright_switch",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "presence": 7,
+        "fs_vol": 0,
+        "vol": 5,
+        "treble": 5,
+        "mids": 5,
+        "bass": 7,
+        "gain": 4,
+        "on_switch": 3,
+        "play_switch": 3
+      }
     }
   ]
 }
