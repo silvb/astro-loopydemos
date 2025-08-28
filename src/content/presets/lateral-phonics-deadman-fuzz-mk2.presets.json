@@ -5,7 +5,7 @@
     {
       "id": "open_drive",
       "label": "Open Drive",
-      "settings": { "volume": 6, "low_cut": 0, "fuzz": 5 }
+      "settings": { "volume": 5, "low_cut": 0, "fuzz": 5 }
     },
     {
       "id": "tight_fuzz",
@@ -15,7 +15,7 @@
     {
       "id": "dirty_boost",
       "label": "Dirty Boost",
-      "settings": { "volume": 7, "low_cut": 3, "fuzz": 0 }
+      "settings": { "volume": 10, "low_cut": 3, "fuzz": 0 }
     },
     {
       "id": "fuzz_knob",
@@ -24,7 +24,7 @@
       "target": "fuzz",
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
-      "settings": { "low_cut": 0, "volume": 6 }
+      "settings": { "low_cut": 0, "volume": 5 }
     },
     {
       "id": "low_cut_knob",
@@ -33,7 +33,7 @@
       "target": "low_cut",
       "initialValue": 0,
       "values": [0, 3, 7, 10],
-      "settings": { "fuzz": 3, "volume": 5 }
+      "settings": { "fuzz": 5, "volume": 5 }
     }
   ]
 }
