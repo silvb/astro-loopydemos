@@ -185,20 +185,110 @@
       ]
     },
     {
+      "id": "mean_gain_stack",
+      "label": "Mean Gain Stack",
+      "chain": [
+        {
+          "pedalSlug": "orange-or30",
+          "id": "or30",
+          "settings": {
+            "presence": 7,
+            "fs_vol": 0,
+            "vol": 2.2,
+            "treble": 6,
+            "mids": 5,
+            "bass": 7,
+            "gain": 5,
+            "bright_switch": 2,
+            "on_switch": 3,
+            "play_switch": 3
+          }
+        },
+        {
+          "pedalSlug": "orange-terror-stamp",
+          "id": "terror",
+          "settings": {
+            "volume_1": 5,
+            "volume_2": 5,
+            "shape": 3,
+            "gain": 7,
+            "vol_1_led": true
+          }
+        }
+      ]
+    },
+    {
       "id": "presence_knob",
       "label": "Presence",
       "isSweep": true,
       "target": "presence",
       "initialValue": 0,
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "settings": {
+        "fs_vol": 0,
+        "vol": 2,
+        "treble": 5,
+        "mids": 4,
+        "bass": 7,
+        "gain": 6,
+        "bright_switch": 2,
+        "on_switch": 3,
+        "play_switch": 3
+      }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble",
+      "isSweep": true,
+      "target": "treble",
+      "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
       "settings": {
-        "fs_vol": 5,
-        "vol": 5,
-        "treble": 5,
+        "fs_vol": 0,
+        "vol": 2,
+        "presence": 7,
         "mids": 5,
         "bass": 5,
-        "gain": 5,
-        "bypass_switch": 1,
+        "gain": 6,
+        "bright_switch": 2,
+        "on_switch": 3,
+        "play_switch": 3
+      }
+    },
+    {
+      "id": "mids_knob",
+      "label": "Mids",
+      "isSweep": true,
+      "target": "mids",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "fs_vol": 0,
+        "vol": 2,
+        "presence": 7,
+        "treble": 5,
+        "bass": 5,
+        "gain": 6,
+        "bright_switch": 2,
+        "on_switch": 3,
+        "play_switch": 3
+      }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "fs_vol": 0,
+        "vol": 2,
+        "presence": 7,
+        "treble": 5,
+        "mids": 5,
+        "gain": 6,
+        "bright_switch": 2,
         "on_switch": 3,
         "play_switch": 3
       }
