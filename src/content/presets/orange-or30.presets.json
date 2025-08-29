@@ -68,7 +68,7 @@
     },
     {
       "id": "clean_and_drive",
-      "label": "Clean and Drive",
+      "label": "Clean Platform and Drive",
       "chain": [
         {
           "pedalSlug": "orange-or30",
@@ -125,7 +125,7 @@
     },
     {
       "id": "with_overdrive",
-      "label": "With Overdrive",
+      "label": "Edge of Breakup Stacked with Overdrive",
       "chain": [
         {
           "pedalSlug": "orange-or30",
@@ -152,7 +152,7 @@
     },
     {
       "id": "with_fuzz",
-      "label": "With Fuzz",
+      "label": "Wall of Fuzz",
       "chain": [
         {
           "pedalSlug": "orange-or30",
