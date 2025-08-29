@@ -147,7 +147,11 @@ export const Switch: Component<SwitchProps> = props => {
                 !secondaryCircuitsOn().includes(props.secondaryCircuitId)
               }
             >
-              <SweepIndicator size={props.size} color={props.highlightColor} />
+              <SweepIndicator
+                size={props.size}
+                color={props.highlightColor}
+                isStomp={props.type === "stomp"}
+              />
             </Show>
             <Show
               when={

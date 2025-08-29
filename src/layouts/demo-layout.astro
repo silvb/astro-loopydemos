@@ -54,6 +54,9 @@ const metaImage = coverImage
     </span>
   </a>
   <h2>{title}</h2>
+  <div class="mb-3">
+    <DateTag {date} />
+  </div>
   {
     coverImage && (
       <Image
@@ -65,9 +68,6 @@ const metaImage = coverImage
       />
     )
   }
-  <div class="mb-3">
-    <DateTag {date} />
-  </div>
   {type !== "freeform" && <DemoWidget presetSlug={slug} />}
   <section>
     <slot />

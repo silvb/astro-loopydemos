@@ -20,10 +20,15 @@ type PedalProps = StaticPedalData
 export const Pedal: Component<PedalProps> = props => {
   const [isImgLoaded, setIsImgLoaded] = createSignal(false)
   return (
-    <PedalStateContainer slug={props.slug} enclosureWidth={props.width}>
+    <PedalStateContainer
+      slug={props.slug}
+      enclosureWidth={props.width}
+      isAmp={props.isAmp}
+    >
       <div
         id={props.slug}
         class="relative box-border select-none"
+        classList={{ "mx-auto": props.isAmp }}
         style={{
           width: `${props.width}px`,
           height: `${props.height}px`,

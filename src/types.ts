@@ -53,4 +53,5 @@ export interface StaticPedalData {
   height: number
   controls: CollectionEntry<"pedals">["data"]["controls"]
   isOneOff: CollectionEntry<"pedals">["data"]["isOneOff"]
+  isAmp: CollectionEntry<"pedals">["data"]["isAmp"]
 }
