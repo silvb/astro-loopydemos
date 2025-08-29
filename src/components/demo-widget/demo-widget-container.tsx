@@ -58,19 +58,26 @@ export const DemoWidgetContainer: Component<
           {props.presets.length > 1 && (
             <PresetsSlider presets={props.presets} />
           )}
+          <ScaleFactor height={props.maxHeight}>
+            <div class="mt-8 overflow-x-scroll">
+              {props.staticPedalData
+                .filter(pedalData => pedalData.isAmp)
+                .map(pedalData => (
+                  <Pedal {...pedalData} />
+                ))}
+            </div>
+            <div
+              class="flex items-start justify-center"
+              classList={{ "mb-20": !props.noMargin }}
+            >
+              {props.staticPedalData
+                .filter(pedalData => !pedalData.isAmp)
+                .map(pedalData => (
+                  <Pedal {...pedalData} />
+                ))}
+            </div>
+          </ScaleFactor>
         </div>
-        <ScaleFactor height={props.maxHeight}>
-          <div
-            class="mt-8 flex items-start justify-center"
-            classList={{
-              "mb-20": !props.noMargin,
-            }}
-          >
-            {props.staticPedalData.map(pedalData => (
-              <Pedal {...pedalData} />
-            ))}
-          </div>
-        </ScaleFactor>
       </DemoStateProvider>
     </>
   )

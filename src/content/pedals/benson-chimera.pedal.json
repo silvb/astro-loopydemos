@@ -2,6 +2,7 @@
   "name": "benson-chimera",
   "width": 700,
   "height": 335,
+  "isAmp": true,
   "controls": {
     "knobs": [
       {

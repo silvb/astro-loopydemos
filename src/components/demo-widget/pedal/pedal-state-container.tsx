@@ -4,6 +4,7 @@ import { useDemoState } from "../demo-state-store"
 interface PedalStateContainerProps {
   slug: string
   enclosureWidth: number
+  isAmp?: boolean
 }
 
 export const PedalStateContainer: ParentComponent<
@@ -16,7 +17,9 @@ export const PedalStateContainer: ParentComponent<
   const isVisibleWithOthers = () => activePedals().length > 1 && !isHidden()
 
   createEffect(() => {
-    setWidthTab(prev => ({ ...prev, [props.slug]: props.enclosureWidth }))
+    if (!props.isAmp) {
+      setWidthTab(prev => ({ ...prev, [props.slug]: props.enclosureWidth }))
+    }
   })
 
   return (

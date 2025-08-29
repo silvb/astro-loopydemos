@@ -265,6 +265,7 @@ const pedals = defineCollection({
     name: z.string(),
     imageSrcSlug: z.string().optional(),
     isOneOff: z.boolean().optional(),
+    isAmp: z.boolean().optional(),
     enclosure: z.enum(["portrait", "landscape"]).optional(),
     width: z.number().optional(),
     height: z.number().optional(),

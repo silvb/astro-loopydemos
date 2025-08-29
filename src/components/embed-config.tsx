@@ -14,7 +14,7 @@ interface EmbedConfigProps {
 
 export const EmbedConfig: Component<EmbedConfigProps> = props => {
   const [width, setWidth] = createSignal(
-    Math.max(props.pedalWidth, EMBED_MIN_WIDTH),
+    Math.max(props.pedalWidth + 32, EMBED_MIN_WIDTH),
   )
   const relativeMinHeight = () =>
     Math.min(

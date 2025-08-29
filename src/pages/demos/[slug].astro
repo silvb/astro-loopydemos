@@ -207,7 +207,7 @@ const siteUrl = isDev
             .sort(demo => (relatedSlugs?.includes(demo.slug) ? -1 : 1))
             .sort(demo => (pedalsInDemo.includes(demo.slug) ? -1 : 1))
             .filter(demo => demo.data.type === "demo")
-            .slice(0, 8)
+            .slice(0, 10)
             .map(demo => (
               <DemoPreviewCard
                 slug={demo.slug}

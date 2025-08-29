@@ -1,16 +1,28 @@
 import type { ControlElement } from "@types"
-import { type Component, mergeProps } from "solid-js"
+import { type Component, mergeProps, onMount } from "solid-js"
 import styles from "./sweep-indicator.module.css"
 
 interface SweepIndicatorProps {
   size: number
   color: ControlElement["highlightColor"]
+  isStomp?: boolean
 }
 
 export const SweepIndicator: Component<SweepIndicatorProps> = props => {
   const mergedProps = mergeProps({ color: "secondary" }, props)
+  let scrollEl!: HTMLDivElement
+
+  onMount(() => {
+    if (props.isStomp) return
+    scrollEl.scrollIntoView({
+      behavior: "smooth",
+      block: "nearest",
+      inline: "center",
+    })
+  })
   return (
     <div
+      ref={scrollEl}
       class={styles["sweep-indicator"]}
       classList={{
         "border-loopydemos-highlight-primary-themed":

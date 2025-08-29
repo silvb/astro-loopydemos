@@ -22,8 +22,15 @@ export const getStaticPedalData = async (
       throw new Error(`Pedal not found: ${pedalSlug}`)
     }
 
-    const { controls, width, height, enclosure, imageSrcSlug, isOneOff } =
-      pedalData.data
+    const {
+      controls,
+      width,
+      height,
+      enclosure,
+      imageSrcSlug,
+      isOneOff,
+      isAmp,
+    } = pedalData.data
     const enclosureWidth =
       width ||
       (enclosure === "landscape"
@@ -92,6 +99,7 @@ export const getStaticPedalData = async (
       sizes,
       controls,
       isOneOff,
+      isAmp,
     })
   }
 
