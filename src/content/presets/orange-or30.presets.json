@@ -38,7 +38,7 @@
       "id": "fat_gain",
       "label": "Fat Gain",
       "settings": {
-        "presence": 7,
+        "presence": 5,
         "fs_vol": 0,
         "vol": 2,
         "treble": 6,
@@ -54,9 +54,9 @@
       "id": "clean_platform",
       "label": "Clean Platform",
       "settings": {
-        "presence": 7,
+        "presence": 6,
         "fs_vol": 0,
-        "vol": 7,
+        "vol": 4,
         "treble": 7,
         "mids": 3,
         "bass": 7,
@@ -74,9 +74,9 @@
           "pedalSlug": "orange-or30",
           "id": "or30",
           "settings": {
-            "presence": 7,
+            "presence": 6,
             "fs_vol": 0,
-            "vol": 3.5,
+            "vol": 4,
             "treble": 7,
             "mids": 3,
             "bass": 7,
@@ -101,12 +101,12 @@
           "pedalSlug": "orange-or30",
           "id": "or30",
           "settings": {
-            "presence": 7,
+            "presence": 5,
             "fs_vol": 0,
             "vol": 3,
             "treble": 6,
             "mids": 4,
-            "bass": 7,
+            "bass": 8,
             "gain": 4,
             "bright_switch": 2,
             "on_switch": 3,
@@ -158,13 +158,13 @@
           "pedalSlug": "orange-or30",
           "id": "or30",
           "settings": {
-            "presence": 7,
+            "presence": 6,
             "fs_vol": 0,
-            "vol": 2.2,
+            "vol": 2,
             "treble": 7,
-            "mids": 6,
-            "bass": 8,
-            "gain": 7,
+            "mids": 7,
+            "bass": 6,
+            "gain": 6,
             "bright_switch": 2,
             "on_switch": 3,
             "play_switch": 3
@@ -179,7 +179,7 @@
             "tone": 4,
             "mid_range": 6,
             "rumble": 10,
-            "presence": 7
+            "presence": 6
           }
         }
       ]
