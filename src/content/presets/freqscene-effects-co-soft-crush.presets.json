@@ -1,0 +1,108 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": {
+        "fuzz_gain": 5,
+        "fuzz_freq": 5,
+        "fuzz_mix": 5,
+        "od_gain": 5,
+        "od_freq": 5,
+        "od_mix": 5
+      }
+    },
+    {
+      "id": "fuzz_gain_knob",
+      "label": "Fuzz Gain",
+      "isSweep": true,
+      "target": "fuzz_gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "fuzz_freq": 5,
+        "fuzz_mix": 5,
+        "od_gain": 5,
+        "od_freq": 5,
+        "od_mix": 5
+      }
+    },
+    {
+      "id": "fuzz_freq_knob",
+      "label": "Fuzz Freq",
+      "isSweep": true,
+      "target": "fuzz_freq",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "fuzz_gain": 5,
+        "fuzz_mix": 5,
+        "od_gain": 5,
+        "od_freq": 5,
+        "od_mix": 5
+      }
+    },
+    {
+      "id": "fuzz_mix_knob",
+      "label": "Fuzz Mix",
+      "isSweep": true,
+      "target": "fuzz_mix",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "fuzz_freq": 5,
+        "fuzz_gain": 5,
+        "od_gain": 5,
+        "od_freq": 5,
+        "od_mix": 5
+      }
+    },
+    {
+      "id": "od_gain_knob",
+      "label": "OD Gain",
+      "isSweep": true,
+      "target": "od_gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "fuzz_freq": 5,
+        "fuzz_mix": 5,
+        "fuzz_gain": 5,
+        "od_freq": 5,
+        "od_mix": 5
+      }
+    },
+    {
+      "id": "od_freq_knob",
+      "label": "Od Freq",
+      "isSweep": true,
+      "target": "od_freq",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "fuzz_freq": 5,
+        "fuzz_mix": 5,
+        "od_gain": 5,
+        "fuzz_gain": 5,
+        "od_mix": 5
+      }
+    },
+    {
+      "id": "od_mix_knob",
+      "label": "Od Mix",
+      "isSweep": true,
+      "target": "od_mix",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "fuzz_freq": 5,
+        "fuzz_mix": 5,
+        "od_gain": 5,
+        "fuzz_gain": 5,
+        "od_freq": 5
+      }
+    }
+  ]
+}
