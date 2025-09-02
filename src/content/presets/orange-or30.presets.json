@@ -51,22 +51,6 @@
       }
     },
     {
-      "id": "clean_platform",
-      "label": "Clean Platform",
-      "settings": {
-        "presence": 6,
-        "fs_vol": 0,
-        "vol": 4,
-        "treble": 7,
-        "mids": 3,
-        "bass": 7,
-        "gain": 3.5,
-        "bright_switch": 2,
-        "on_switch": 3,
-        "play_switch": 3
-      }
-    },
-    {
       "id": "clean_and_drive",
       "label": "Clean Platform and Drive",
       "chain": [
