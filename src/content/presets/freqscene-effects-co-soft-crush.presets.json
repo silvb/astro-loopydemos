@@ -3,15 +3,51 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "cutting_crush",
+      "label": "Cutting Crush",
+      "settings": {
+        "fuzz_gain": 10,
+        "fuzz_freq": 4,
+        "fuzz_mix": 6,
+        "od_gain": 4,
+        "od_freq": 4,
+        "od_mix": 5
+      }
+    },
+    {
+      "id": "scratchy_amp",
+      "label": "Scratchy Amp",
       "settings": {
         "fuzz_gain": 5,
-        "fuzz_freq": 5,
-        "fuzz_mix": 5,
-        "od_gain": 5,
+        "fuzz_freq": 2,
+        "fuzz_mix": 4,
+        "od_gain": 8,
+        "od_freq": 8,
+        "od_mix": 6
+      }
+    },
+    {
+      "id": "fat_overdrive",
+      "label": "Fat Overdrive",
+      "settings": {
+        "fuzz_gain": 2,
+        "fuzz_freq": 0,
+        "fuzz_mix": 6,
+        "od_gain": 8,
+        "od_freq": 4,
+        "od_mix": 8
+      }
+    },
+    {
+      "id": "wirey_distortion",
+      "label": "Wirey Distortion",
+      "settings": {
+        "fuzz_gain": 6,
+        "fuzz_freq": 6,
+        "fuzz_mix": 6,
+        "od_gain": 2,
         "od_freq": 5,
-        "od_mix": 5
+        "od_mix": 6
       }
     },
     {
