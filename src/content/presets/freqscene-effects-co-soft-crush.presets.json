@@ -98,12 +98,12 @@
       "isSweep": true,
       "target": "fuzz_mix",
       "initialValue": 0,
-      "values": [0, 2, 4, 6, 8, 10],
+      "values": [0, 2, 4, 5, 6, 8],
       "settings": {
-        "fuzz_freq": 5,
-        "fuzz_gain": 5,
-        "od_gain": 5,
-        "od_freq": 5,
+        "fuzz_gain": 8,
+        "fuzz_freq": 6,
+        "od_gain": 2,
+        "od_freq": 2,
         "od_mix": 5
       }
     },
@@ -113,12 +113,12 @@
       "isSweep": true,
       "target": "od_gain",
       "initialValue": 0,
-      "values": [0, 2, 4, 6, 8, 10],
+      "values": [0, 2, 5, 8, 10],
       "settings": {
-        "fuzz_freq": 5,
-        "fuzz_mix": 5,
         "fuzz_gain": 5,
-        "od_freq": 5,
+        "fuzz_freq": 5,
+        "fuzz_mix": 2,
+        "od_freq": 3,
         "od_mix": 5
       }
     },
@@ -130,10 +130,10 @@
       "initialValue": 0,
       "values": [0, 2, 5, 8, 10],
       "settings": {
-        "fuzz_freq": 5,
-        "fuzz_mix": 5,
-        "od_gain": 5,
         "fuzz_gain": 5,
+        "fuzz_freq": 5,
+        "fuzz_mix": 2,
+        "od_gain": 5,
         "od_mix": 5
       }
     },
@@ -143,13 +143,13 @@
       "isSweep": true,
       "target": "od_mix",
       "initialValue": 0,
-      "values": [0, 2, 4, 6, 8, 10],
+      "values": [0, 2, 4, 5, 6, 8],
       "settings": {
         "fuzz_freq": 5,
         "fuzz_mix": 5,
-        "od_gain": 5,
         "fuzz_gain": 5,
-        "od_freq": 5
+        "od_gain": 5,
+        "od_freq": 10
       }
     }
   ]
