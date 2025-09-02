@@ -51,6 +51,18 @@
       }
     },
     {
+      "id": "glitchy_drive",
+      "label": "Glitchy Drive",
+      "settings": {
+        "fuzz_gain": 4,
+        "fuzz_freq": 6,
+        "fuzz_mix": 6,
+        "od_gain": 5,
+        "od_freq": 0,
+        "od_mix": 6
+      }
+    },
+    {
       "id": "fuzz_gain_knob",
       "label": "Fuzz Gain",
       "isSweep": true,
@@ -59,10 +71,10 @@
       "values": [0, 2, 4, 6, 8, 10],
       "settings": {
         "fuzz_freq": 5,
-        "fuzz_mix": 5,
+        "fuzz_mix": 6,
         "od_gain": 5,
         "od_freq": 5,
-        "od_mix": 5
+        "od_mix": 4
       }
     },
     {
@@ -71,13 +83,13 @@
       "isSweep": true,
       "target": "fuzz_freq",
       "initialValue": 0,
-      "values": [0, 2, 4, 6, 8, 10],
+      "values": [0, 2, 5, 8, 10],
       "settings": {
         "fuzz_gain": 5,
-        "fuzz_mix": 5,
+        "fuzz_mix": 6,
         "od_gain": 5,
         "od_freq": 5,
-        "od_mix": 5
+        "od_mix": 4
       }
     },
     {
@@ -116,7 +128,7 @@
       "isSweep": true,
       "target": "od_freq",
       "initialValue": 0,
-      "values": [0, 2, 4, 6, 8, 10],
+      "values": [0, 2, 5, 8, 10],
       "settings": {
         "fuzz_freq": 5,
         "fuzz_mix": 5,
