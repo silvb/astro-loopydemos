@@ -1,5 +1,8 @@
-const fs = require("node:fs")
-const { prompt } = require("enquirer")
+import fs from "node:fs"
+import pkg from "enquirer"
+const { prompt } = pkg
+import {convertImage, imageSourcePath} from './utils.mjs'
+import path from "node:path"
 
 const capitalizeString = (string = "") =>
   string.slice(0, 1).toUpperCase() + string.slice(1)
@@ -175,39 +178,50 @@ const getDefaultControls = ({ knobs = [], toggles = [], slug = "" }) => ({
 
     const slug = `${builder}-${model}`.toLowerCase().replace(/ /g, "-")
 
-    fs.writeFile(
-      `src/content/demos/${slug}.md`,
-      createMdxContent({
-        builder,
-        slug,
-        isSponsored,
-        hasBackingTrack,
-        model,
-        tags,
-        pickup,
-        guitar,
-        date,
-      }),
-      err => {
-        if (err) return console.error(err)
-      },
-    )
+    // fs.writeFile(
+    //   `src/content/demos/${slug}.md`,
+    //   createMdxContent({
+    //     builder,
+    //     slug,
+    //     isSponsored,
+    //     hasBackingTrack,
+    //     model,
+    //     tags,
+    //     pickup,
+    //     guitar,
+    //     date,
+    //   }),
+    //   err => {
+    //     if (err) return console.error(err)
+    //   },
+    // )
 
-    fs.writeFile(
-      `src/content/presets/${slug}.presets.json`,
-      JSON.stringify(getdefaultPresets({ knobs, toggles, hasBackingTrack })),
-      err => {
-        if (err) return console.error(err)
-      },
-    )
+    // fs.writeFile(
+    //   `src/content/presets/${slug}.presets.json`,
+    //   JSON.stringify(getdefaultPresets({ knobs, toggles, hasBackingTrack })),
+    //   err => {
+    //     if (err) return console.error(err)
+    //   },
+    // )
 
-    fs.writeFile(
-      `src/content/pedals/${slug}.pedal.json`,
-      JSON.stringify(getDefaultControls({ knobs, toggles, slug })),
-      err => {
-        if (err) console.error(err)
-      },
-    )
+    // fs.writeFile(
+    //   `src/content/pedals/${slug}.pedal.json`,
+    //   JSON.stringify(getDefaultControls({ knobs, toggles, slug })),
+    //   err => {
+    //     if (err) console.error(err)
+    //   },
+    // )
+
+    const image = fs.readdirSync(imageSourcePath).find(file => file.split(".")[0] === slug)
+
+    const imagePath = path.join(imageSourcePath, image)
+        const imageWithoutExtension = image.split(".")[0]
+        const outputPath = path.join(
+          imageSourcePath,
+          'seo-preview',
+          `${imageWithoutExtension}.jpeg`,
+        )
+    convertImage(imagePath, outputPath)
   } catch (e) {
     console.error(e)
   }
