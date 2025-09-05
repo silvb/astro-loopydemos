@@ -1,10 +1,10 @@
 ---
 builder: MXR
-model: M282 Dyna Comp Bass
+model: Dyna Comp Bass
 slug: mxr-dyna-comp-bass
 type: demo
 isSponsored: true
-date: 2025-09-05
+date: 2025-09-06
 tags:
   - compressor
   - dyna comp
