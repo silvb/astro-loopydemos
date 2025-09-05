@@ -172,8 +172,6 @@ export const AudioPlayerController: Component<
       }
     } else {
       audioContext?.suspend()
-      // Reset audio start time when stopping
-      audioStartTime = 0
     }
   })
 
