@@ -1,0 +1,92 @@
+{
+  "name": "freqscene-effects-co-soft-crush",
+  "width": 280,
+  "height": 350,
+  "controls": {
+    "knobs": [
+      {
+        "id": "fuzz_gain",
+        "size": 80,
+        "position": { "top": 35, "left": 17 },
+        "type": "fairfield",
+        "colors": {
+          "primary": "#2c2729",
+          "secondary": "#ffffff00",
+          "tick": "#2c2729",
+          "edge": "#bbb"
+        }
+      },
+      {
+        "id": "fuzz_freq",
+        "size": 80,
+        "position": { "top": 35, "left": 100 },
+        "type": "fairfield",
+        "colors": {
+          "primary": "#2c2729",
+          "secondary": "#ffffff00",
+          "tick": "#2c2729",
+          "edge": "#bbb"
+        }
+      },
+      {
+        "id": "fuzz_mix",
+        "size": 80,
+        "position": { "top": 35, "left": 184 },
+        "type": "fairfield",
+        "colors": {
+          "primary": "#2c2729",
+          "secondary": "#ffffff00",
+          "tick": "#2c2729",
+          "edge": "#bbb"
+        }
+      },
+      {
+        "id": "od_gain",
+        "size": 80,
+        "position": { "top": 126, "left": 17 },
+        "type": "fairfield",
+        "colors": {
+          "primary": "#2c2729",
+          "secondary": "#ffffff00",
+          "tick": "#2c2729",
+          "edge": "#bbb"
+        }
+      },
+      {
+        "id": "od_freq",
+        "size": 80,
+        "position": { "top": 127, "left": 100 },
+        "type": "fairfield",
+        "colors": {
+          "primary": "#2c2729",
+          "secondary": "#ffffff00",
+          "tick": "#2c2729",
+          "edge": "#bbb"
+        }
+      },
+      {
+        "id": "od_mix",
+        "size": 80,
+        "position": { "top": 127, "left": 183 },
+        "type": "fairfield",
+        "colors": {
+          "primary": "#2c2729",
+          "secondary": "#ffffff00",
+          "tick": "#2c2729",
+          "edge": "#bbb"
+        }
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 32, "position": { "top": 102, "left": 84 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 252, "left": 157 }
+      }
+    ]
+  }
+}

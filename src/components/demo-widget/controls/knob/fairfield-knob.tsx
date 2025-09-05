@@ -10,6 +10,7 @@ export const FairfieldKnob: Component<FairfieldKnobProps> = props => {
         primary: "#1F1B1C",
         secondary: "#A6A6A6",
         tick: "#1F1B1C",
+        edge: "#1F1B1C",
       },
     },
     props,
@@ -24,9 +25,30 @@ export const FairfieldKnob: Component<FairfieldKnobProps> = props => {
       <title>Knob</title>
       <g fill="none">
         <circle cx="60" cy="60" r="60" fill={mergedProps.colors.secondary} />
-        <circle cx="60" cy="60" r="42" fill={mergedProps.colors.primary} />
-        <polygon points="40,24 60,6 80,24" fill={mergedProps.colors.primary} />
-        <polygon points="48,20 60,1 72,20" fill={mergedProps.colors.primary} />
+        <circle
+          cx="60"
+          cy="60"
+          r="42"
+          fill={mergedProps.colors.primary}
+          stroke-width={2}
+          stroke={mergedProps.colors.edge}
+        />
+        <polygon
+          points="40,24 60,6 80,24"
+          fill={mergedProps.colors.primary}
+          stroke-width={2}
+          stroke={mergedProps.colors.edge}
+        />
+        <polygon
+          points="48,20 60,1 72,20"
+          fill={mergedProps.colors.primary}
+          stroke-width={2}
+          stroke={mergedProps.colors.edge}
+        />
+        <polygon
+          points="37,26 53,14 67,14 83,26"
+          fill={mergedProps.colors.primary}
+        />
         <rect
           width="4"
           height="30"

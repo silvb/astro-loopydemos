@@ -11,7 +11,7 @@ tags:
   - lofi
 externalLinks:
   perfectCircuit: freqscene-effects-co-koldwave
-  builderLink: https://www.freqscene.com/
+  builderLink: https://www.freqscene.com/product/koldwave-analog-chorus
 ---
 
 The Koldwave by Freqscene Effects Co. is a real gem of chorus/vibrato pedal.

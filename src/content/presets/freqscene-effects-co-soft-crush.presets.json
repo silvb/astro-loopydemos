@@ -1,0 +1,156 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "cutting_crush",
+      "label": "Cutting Crush",
+      "settings": {
+        "fuzz_gain": 10,
+        "fuzz_freq": 4,
+        "fuzz_mix": 6,
+        "od_gain": 4,
+        "od_freq": 4,
+        "od_mix": 5
+      }
+    },
+    {
+      "id": "scratchy_amp",
+      "label": "Scratchy Amp",
+      "settings": {
+        "fuzz_gain": 5,
+        "fuzz_freq": 2,
+        "fuzz_mix": 4,
+        "od_gain": 8,
+        "od_freq": 8,
+        "od_mix": 6
+      }
+    },
+    {
+      "id": "fat_overdrive",
+      "label": "Fat Overdrive",
+      "settings": {
+        "fuzz_gain": 2,
+        "fuzz_freq": 0,
+        "fuzz_mix": 6,
+        "od_gain": 8,
+        "od_freq": 4,
+        "od_mix": 8
+      }
+    },
+    {
+      "id": "wirey_distortion",
+      "label": "Wirey Distortion",
+      "settings": {
+        "fuzz_gain": 6,
+        "fuzz_freq": 6,
+        "fuzz_mix": 6,
+        "od_gain": 2,
+        "od_freq": 5,
+        "od_mix": 6
+      }
+    },
+    {
+      "id": "glitchy_drive",
+      "label": "Glitchy Drive",
+      "settings": {
+        "fuzz_gain": 4,
+        "fuzz_freq": 6,
+        "fuzz_mix": 6,
+        "od_gain": 5,
+        "od_freq": 0,
+        "od_mix": 6
+      }
+    },
+    {
+      "id": "fuzz_gain_knob",
+      "label": "Fuzz Gain",
+      "isSweep": true,
+      "target": "fuzz_gain",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "fuzz_freq": 5,
+        "fuzz_mix": 6,
+        "od_gain": 5,
+        "od_freq": 5,
+        "od_mix": 4
+      }
+    },
+    {
+      "id": "fuzz_freq_knob",
+      "label": "Fuzz Freq",
+      "isSweep": true,
+      "target": "fuzz_freq",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "fuzz_gain": 5,
+        "fuzz_mix": 6,
+        "od_gain": 5,
+        "od_freq": 5,
+        "od_mix": 4
+      }
+    },
+    {
+      "id": "fuzz_mix_knob",
+      "label": "Fuzz Mix",
+      "isSweep": true,
+      "target": "fuzz_mix",
+      "initialValue": 0,
+      "values": [0, 2, 4, 5, 6, 8],
+      "settings": {
+        "fuzz_gain": 8,
+        "fuzz_freq": 6,
+        "od_gain": 2,
+        "od_freq": 2,
+        "od_mix": 5
+      }
+    },
+    {
+      "id": "od_gain_knob",
+      "label": "OD Gain",
+      "isSweep": true,
+      "target": "od_gain",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "fuzz_gain": 5,
+        "fuzz_freq": 5,
+        "fuzz_mix": 2,
+        "od_freq": 3,
+        "od_mix": 5
+      }
+    },
+    {
+      "id": "od_freq_knob",
+      "label": "Od Freq",
+      "isSweep": true,
+      "target": "od_freq",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "fuzz_gain": 5,
+        "fuzz_freq": 5,
+        "fuzz_mix": 2,
+        "od_gain": 5,
+        "od_mix": 5
+      }
+    },
+    {
+      "id": "od_mix_knob",
+      "label": "Od Mix",
+      "isSweep": true,
+      "target": "od_mix",
+      "initialValue": 0,
+      "values": [0, 2, 4, 5, 6, 8],
+      "settings": {
+        "fuzz_freq": 5,
+        "fuzz_mix": 5,
+        "fuzz_gain": 5,
+        "od_gain": 5,
+        "od_freq": 10
+      }
+    }
+  ]
+}
