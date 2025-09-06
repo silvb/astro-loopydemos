@@ -105,7 +105,10 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
       []
 
     const currentValue =
-      (value ?? sweepSetting()[target]) || activePreset()?.initialValue || 0
+      (value ?? sweepSetting()[target]) ||
+      activePreset()?.chain?.find(p => p.isSweep)?.initialValue ||
+      activePreset()?.initialValue ||
+      0
 
     const closestValue = findClosestValue(currentValue, values)
 
