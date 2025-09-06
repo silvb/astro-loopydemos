@@ -1,0 +1,33 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": {
+        "treble": 5,
+        "threshold": 5,
+        "bass": 5,
+        "volume": 5,
+        "saturation": 1,
+        "headroom": 1
+      }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble",
+      "isSweep": true,
+      "target": "treble",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "threshold": 5,
+        "bass": 5,
+        "volume": 5,
+        "saturation": 1,
+        "headroom": 1
+      }
+    }
+  ]
+}
