@@ -45,12 +45,18 @@ export const Switch: Component<SwitchProps> = props => {
           class="absolute top-0 left-0 z-10 h-full w-full"
           style={{ width: `${props.size}px`, height: `${props.size}px` }}
           onClick={() => {
-            const numSweepValues = activePreset()?.values?.length ?? 0
+            const sweepValues = (
+              activePreset()?.chain?.find(
+                p => p.pedalSlug === props.pedalSlug,
+              ) || activePreset()
+            )?.values
+            const numSweepValues = sweepValues?.length ?? 0
+
             const currIndex =
-              activePreset()?.values?.findIndex(value => value === state()) ?? 0
+              sweepValues?.findIndex(value => value === state()) ?? 0
 
             const nextIndex = (currIndex + 1) % numSweepValues
-            selectSweepSetting(activePreset()?.values?.[nextIndex] ?? 1)
+            selectSweepSetting(sweepValues?.[nextIndex] ?? 1)
           }}
         />
       </Show>
