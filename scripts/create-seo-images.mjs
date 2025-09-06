@@ -1,29 +1,12 @@
-const fs = require("node:fs")
-const path = require("node:path")
-const { execSync } = require("node:child_process")
+import fs from "node:fs"
+import path from "node:path"
+import { execSync } from "node:child_process"
+import { convertImage, imageSourcePath, fillColor } from "./utils.mjs"
 
-const imageSourcePath = "src/images"
 const targetDirectoryPath = "src/images/seo-preview"
 const imageExtensions = [".png", ".webp"]
-const fillColor = "#252253"
 const postSourcePath = "src/content/posts"
 const presetSource = "src/content/presets"
-
-const convertImage = (imagePath, outputPath) => {
-  const identifyOutput = execSync(
-    `identify -format "%w %h" ${imagePath}`,
-  ).toString()
-  const imageName = imagePath.split("/").pop().split(".")[0]
-  const [width, height] = identifyOutput.split(" ").map(Number)
-  const longestSide = Math.max(width, height)
-  const extendLength = longestSide + 60
-
-  const convertCmd = `magick -size ${extendLength}x${extendLength} xc:${fillColor} "${imagePath}" -gravity center -composite -resize 800x800 "${outputPath}"`
-
-  execSync(convertCmd)
-
-  console.log(`Processed ${imageName}`)
-}
 
 fs.readdirSync(imageSourcePath)
   .filter(file => imageExtensions.includes(path.extname(file).toLowerCase()))

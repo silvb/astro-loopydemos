@@ -1,10 +1,9 @@
-const fs = require("node:fs")
-const path = require("node:path")
-const matter = require("gray-matter")
-const { execSync } = require("node:child_process")
+import fs from "node:fs"
+import path from "node:path"
+import matter from "gray-matter"
+import { execSync } from "node:child_process"
+import { imageSourcePath, fillColor } from "./utils.mjs"
 
-const imageSourcePath = "src/images"
-const fillColor = "#252253"
 const fontColor = "#8958ff"
 const demoSourcePath = "src/content/demos"
 
@@ -39,8 +38,6 @@ const recentDemos = fs
     }
   })
 
-console.log({ recentDemos })
-
 const pedalImagePaths = recentDemos.map(demo => demo.imageSrc).join(" ")
 
 const montageCmd = `montage ${pedalImagePaths} \
@@ -59,3 +56,5 @@ const convertCmd = `magick public/og-image.jpg \
 
 execSync(montageCmd)
 execSync(convertCmd)
+
+console.log("SEO image created at public/og-image.jpg")

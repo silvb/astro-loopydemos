@@ -1,0 +1,74 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "juicy_boost",
+      "label": "Juicy Boost",
+      "settings": { "clean": 5, "sens": 9, "output": 7, "tone": 7, "attack": 2 }
+    },
+    {
+      "id": "subtle_comp",
+      "label": "Subtle Comp",
+      "settings": { "clean": 4, "sens": 8, "output": 7, "tone": 5, "attack": 1 }
+    },
+    {
+      "id": "hidden_distortion",
+      "label": "Hidden Distortion",
+      "settings": {
+        "clean": 2,
+        "sens": 10,
+        "output": 7,
+        "tone": 10,
+        "attack": 2
+      }
+    },
+    {
+      "id": "squishy_sub",
+      "label": "Squishy Sub",
+      "settings": {
+        "clean": 0,
+        "sens": 8,
+        "output": 6,
+        "tone": 3,
+        "attack": 2
+      }
+    },
+    {
+      "id": "clean_knob",
+      "label": "Clean",
+      "isSweep": true,
+      "target": "clean",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "sens": 10, "output": 6.5, "tone": 5, "attack": 1 }
+    },
+    {
+      "id": "sens_knob",
+      "label": "Sens",
+      "isSweep": true,
+      "target": "sens",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "clean": 2, "output": 7, "tone": 5, "attack": 1 }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 0,
+      "values": [0, 2, 4, 5, 6, 8, 9, 10],
+      "settings": { "clean": 3, "output": 6, "sens": 8, "attack": 2 }
+    },
+    {
+      "id": "attack_button",
+      "label": "Attack",
+      "isSweep": true,
+      "target": "attack",
+      "initialValue": 1,
+      "values": [1, 2],
+      "settings": { "clean": 5, "output": 7, "sens": 8, "tone": 7 }
+    }
+  ]
+}
