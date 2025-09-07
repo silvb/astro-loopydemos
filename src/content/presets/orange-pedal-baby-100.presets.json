@@ -4,7 +4,7 @@
   "presets": [
     {
       "id": "mini_board",
-      "label": "Mini Board",
+      "label": "Ambient Board",
       "chain": [
         {
           "pedalSlug": "orange-pedal-baby-100",
@@ -13,7 +13,7 @@
             "bass": 5,
             "treble": 5,
             "volume": 2,
-            "bypass_switch": 1
+            "on_switch": 3
           }
         },
         {
@@ -57,9 +57,124 @@
       ]
     },
     {
-      "id": "static_preset",
-      "label": "Static Preset",
-      "settings": { "bass": 5, "treble": 5, "volume": 5, "bypass_switch": 1 }
+      "id": "gain_board",
+      "label": "Gain Board",
+      "chain": [
+        {
+          "pedalSlug": "orange-pedal-baby-100",
+          "id": "baby",
+          "settings": {
+            "bass": 6,
+            "treble": 3,
+            "volume": 7,
+            "on_switch": 3
+          }
+        },
+        {
+          "pedalSlug": "boss-dm-2w-delay",
+          "id": "dm2w",
+          "settings": { "rate": 4, "echo": 5, "intensity": 7, "mode": 1 }
+        },
+        {
+          "pedalSlug": "freqscene-effects-co-massiv",
+          "id": "massiv",
+          "secondaryCircuitSlug": "massiv_boosted",
+          "secondaryCircuitOnlySlug": "massiv_boost_only",
+          "secondaryCircuitId": "boost",
+          "settings": {
+            "bass": 4,
+            "middle": 6,
+            "treble": 4,
+            "gain": 4,
+            "boost": 5,
+            "volume": 7,
+            "clip": 1,
+            "order": 1
+          }
+        },
+        {
+          "pedalSlug": "ehx-nano-big-muff-rams-head",
+          "id": "muff",
+          "settings": {
+            "volume": 8,
+            "tone": 6.5,
+            "sustain": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "psych_board",
+      "label": "Psych Board",
+      "chain": [
+        {
+          "pedalSlug": "orange-pedal-baby-100",
+          "id": "baby",
+          "settings": {
+            "bass": 6,
+            "treble": 3,
+            "volume": 7,
+            "on_switch": 3
+          }
+        },
+        {
+          "pedalSlug": "jhs-pedals-424-gain-stage",
+          "id": "424",
+          "settings": {
+            "volume": 1.8,
+            "gain_2": 6,
+            "gain_1": 7,
+            "bass": 6,
+            "treble": 6
+          }
+        },
+        {
+          "pedalSlug": "boss-dm-2w-delay",
+          "id": "dm2w",
+          "settings": { "rate": 2, "echo": 3, "intensity": 6, "mode": 1 }
+        },
+        {
+          "pedalSlug": "ehx-small-stone-phase-shifter",
+          "id": "phaser",
+          "settings": {
+            "color": 3,
+            "rate": 7
+          }
+        }
+      ]
+    },
+    {
+      "id": "shoegaze",
+      "label": "Shoegaze Board",
+      "chain": [
+        {
+          "pedalSlug": "orange-pedal-baby-100",
+          "id": "baby",
+          "settings": {
+            "bass": 5,
+            "treble": 5,
+            "volume": 5,
+            "on_switch": 3
+          }
+        },
+        {
+          "pedalSlug": "freqscene-effects-co-soft-crush",
+          "id": "crush",
+          "settings": {
+            "fuzz_gain": 5,
+            "fuzz_freq": 4,
+            "fuzz_mix": 6,
+            "od_gain": 5,
+            "od_freq": 3,
+            "od_mix": 3.5
+          }
+        },
+        {
+          "pedalSlug": "catalinbread-sinkhole",
+          "id": "sinkhole",
+          "settings": { "fdbck": 2, "mod": 5, "verb": 8, "mix": 7, "vol": 2.3 }
+        }
+      ]
     },
     {
       "id": "bass_knob",
@@ -68,7 +183,25 @@
       "target": "bass",
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
-      "settings": { "treble": 5, "volume": 5, "bypass_switch": 1 }
+      "settings": { "treble": 5, "volume": 5, "on_switch": 3 }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble",
+      "isSweep": true,
+      "target": "treble",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "bass": 5, "volume": 5, "on_switch": 3 }
+    },
+    {
+      "id": "volume_knob",
+      "label": "Volume",
+      "isSweep": true,
+      "target": "volume",
+      "initialValue": 2,
+      "values": [2, 5, 8, 10],
+      "settings": { "bass": 5, "treble": 5, "on_switch": 3 }
     }
   ]
 }

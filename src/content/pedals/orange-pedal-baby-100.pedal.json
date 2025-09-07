@@ -31,6 +31,14 @@
         "position": { "top": 51, "left": 370 },
         "colors": { "on": "#f80" }
       }
+    ],
+    "switches": [
+      {
+        "id": "on_switch",
+        "type": "toggle",
+        "size": 44,
+        "position": { "top": 68, "left": 625 }
+      }
     ]
   }
 }
