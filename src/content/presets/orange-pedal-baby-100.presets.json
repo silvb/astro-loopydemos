@@ -3,6 +3,60 @@
   "volume": 0.65,
   "presets": [
     {
+      "id": "mini_board",
+      "label": "Mini Board",
+      "chain": [
+        {
+          "pedalSlug": "orange-pedal-baby-100",
+          "id": "baby",
+          "settings": {
+            "bass": 5,
+            "treble": 5,
+            "volume": 2,
+            "bypass_switch": 1
+          }
+        },
+        {
+          "pedalSlug": "jhs-pedals-3-series-hall-reverb",
+          "id": "hall",
+          "settings": {
+            "verb": 4,
+            "dampen": 7,
+            "decay": 7,
+            "modulate": 3
+          }
+        },
+        {
+          "pedalSlug": "boss-dm-2w-delay",
+          "id": "dm2w",
+          "settings": { "rate": 5.5, "echo": 6, "intensity": 2, "mode": 2 }
+        },
+        {
+          "pedalSlug": "freqscene-effects-co-koldwave",
+          "id": "koldwave",
+          "settings": {
+            "speed": 5,
+            "depth": 7,
+            "warp": 2.5,
+            "amp": 0,
+            "freq": 0,
+            "mode": 3
+          }
+        },
+        {
+          "pedalSlug": "orange-terror-stamp",
+          "id": "terror",
+          "settings": {
+            "volume_1": 5,
+            "volume_2": 5,
+            "shape": 3,
+            "gain": 4,
+            "vol_1_led": true
+          }
+        }
+      ]
+    },
+    {
       "id": "static_preset",
       "label": "Static Preset",
       "settings": { "bass": 5, "treble": 5, "volume": 5, "bypass_switch": 1 }

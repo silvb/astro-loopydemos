@@ -2,6 +2,7 @@
   "name": "orange-pedal-baby-100",
   "width": 700,
   "height": 180,
+  "isAmp": true,
   "controls": {
     "knobs": [
       {
