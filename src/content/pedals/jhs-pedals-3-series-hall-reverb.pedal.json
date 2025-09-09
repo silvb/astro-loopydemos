@@ -1,0 +1,66 @@
+{
+  "name": "jhs-pedals-3-series-hall-reverb",
+  "width": 185,
+  "height": 325,
+  "controls": {
+    "knobs": [
+      {
+        "id": "verb",
+        "size": 50,
+        "position": {
+          "left": 13,
+          "top": 49
+        },
+        "type": "simple"
+      },
+      {
+        "id": "dampen",
+        "size": 50,
+        "position": {
+          "left": 69,
+          "top": 49
+        },
+        "type": "simple"
+      },
+      {
+        "id": "decay",
+        "size": 50,
+        "position": {
+          "left": 123,
+          "top": 49
+        },
+        "type": "simple"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": {
+          "left": 121,
+          "top": 243
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": {
+          "left": 70,
+          "top": 246
+        }
+      },
+      {
+        "id": "modulate",
+        "type": "toggle",
+        "size": 32,
+        "position": {
+          "left": 133,
+          "top": 116
+        }
+      }
+    ]
+  }
+}

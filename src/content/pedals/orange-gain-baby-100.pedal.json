@@ -2,6 +2,7 @@
   "name": "orange-gain-baby-100",
   "width": 700,
   "height": 180,
+  "isAmp": true,
   "controls": {
     "knobs": [
       {
@@ -87,10 +88,16 @@
         "position": { "top": 84, "left": 252 }
       },
       {
-        "id": "dirty_clean",
+        "id": "on_switch",
         "type": "toggle",
         "size": 44,
         "position": { "top": 50, "left": 634 }
+      },
+      {
+        "id": "dirty_clean",
+        "type": "toggle",
+        "size": 44,
+        "position": { "top": 50, "left": 579 }
       }
     ]
   }

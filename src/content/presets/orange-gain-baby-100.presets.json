@@ -3,32 +3,158 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "chunky_gain",
+      "label": "Chunky Gain",
+      "settings": {
+        "comp_clean": 5,
+        "vol_clean": 5,
+        "bass_clean": 5,
+        "treble_clean": 5,
+        "gain_dirty": 8,
+        "vol_dirty": 2,
+        "fs_vol_dirty": 0,
+        "presence_dirty": 5,
+        "bass_dirty": 6,
+        "middle_dirty": 8,
+        "treble_dirty": 6,
+        "tight_dirty": 1,
+        "dirty_clean": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "edgy_breakup",
+      "label": "Edgy Breakup",
+      "settings": {
+        "comp_clean": 5,
+        "vol_clean": 5,
+        "bass_clean": 5,
+        "treble_clean": 5,
+        "gain_dirty": 1,
+        "vol_dirty": 3.5,
+        "fs_vol_dirty": 0,
+        "presence_dirty": 4,
+        "bass_dirty": 6,
+        "middle_dirty": 6,
+        "treble_dirty": 3,
+        "tight_dirty": 1,
+        "dirty_clean": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "all_at_noon",
+      "label": "All at Noon",
       "settings": {
         "comp_clean": 5,
         "vol_clean": 5,
         "bass_clean": 5,
         "treble_clean": 5,
         "gain_dirty": 5,
-        "vol_dirty": 5,
-        "fs_vol_dirty": 5,
+        "vol_dirty": 2,
+        "fs_vol_dirty": 0,
         "presence_dirty": 5,
         "bass_dirty": 5,
         "middle_dirty": 5,
         "treble_dirty": 5,
         "tight_dirty": 1,
         "dirty_clean": 1,
-        "bypass_switch": 1
+        "on_switch": 3
       }
     },
     {
+      "id": "dry_clean",
+      "label": "Dry Clean",
+      "settings": {
+        "comp_clean": 2,
+        "vol_clean": 3,
+        "bass_clean": 3,
+        "treble_clean": 6,
+        "gain_dirty": 5,
+        "vol_dirty": 2,
+        "fs_vol_dirty": 0,
+        "presence_dirty": 5,
+        "bass_dirty": 5,
+        "middle_dirty": 5,
+        "treble_dirty": 5,
+        "tight_dirty": 1,
+        "dirty_clean": 3,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "squeezed_funk",
+      "label": "Squeezed Funk",
+      "settings": {
+        "comp_clean": 8,
+        "vol_clean": 1.8,
+        "bass_clean": 2,
+        "treble_clean": 4,
+        "gain_dirty": 5,
+        "vol_dirty": 2,
+        "fs_vol_dirty": 0,
+        "presence_dirty": 5,
+        "bass_dirty": 5,
+        "middle_dirty": 5,
+        "treble_dirty": 5,
+        "tight_dirty": 1,
+        "dirty_clean": 3,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "gain_platform",
+      "label": "Gain Platform",
+      "chain": [
+        {
+          "pedalSlug": "orange-gain-baby-100",
+          "id": "amp",
+          "isSweep": true,
+          "target": "dirty_clean",
+          "values": [1, 3],
+          "initialValue": 3,
+          "settings": {
+            "comp_clean": 1,
+            "vol_clean": 4,
+            "bass_clean": 6,
+            "treble_clean": 4,
+            "gain_dirty": 3,
+            "vol_dirty": 2,
+            "fs_vol_dirty": 0,
+            "presence_dirty": 6,
+            "bass_dirty": 6,
+            "middle_dirty": 6,
+            "treble_dirty": 5,
+            "tight_dirty": 1,
+            "on_switch": 3
+          }
+        },
+        {
+          "pedalSlug": "freqscene-effects-co-massiv",
+          "id": "massiv",
+          "secondaryCircuitSlug": "massiv_boosted",
+          "secondaryCircuitOnlySlug": "boost_only",
+          "secondaryCircuitId": "boost",
+          "settings": {
+            "bass": 3,
+            "middle": 5,
+            "treble": 7,
+            "gain": 6,
+            "boost": 8,
+            "volume": 7,
+            "clip": 3,
+            "order": 3
+          }
+        }
+      ]
+    },
+    {
       "id": "comp_clean_knob",
-      "label": "Comp_clean",
+      "label": "Comp",
       "isSweep": true,
       "target": "comp_clean",
       "initialValue": 0,
-      "values": [0, 2, 4, 6, 8, 10],
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
       "settings": {
         "vol_clean": 5,
         "bass_clean": 5,
@@ -41,8 +167,168 @@
         "middle_dirty": 5,
         "treble_dirty": 5,
         "tight_dirty": 1,
+        "dirty_clean": 3,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "bass_clean_knob",
+      "label": "Bass Clean",
+      "isSweep": true,
+      "target": "bass_clean",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "vol_clean": 3.5,
+        "comp_clean": 2,
+        "treble_clean": 5,
+        "gain_dirty": 5,
+        "vol_dirty": 5,
+        "fs_vol_dirty": 5,
+        "presence_dirty": 5,
+        "bass_dirty": 5,
+        "middle_dirty": 5,
+        "treble_dirty": 5,
+        "tight_dirty": 1,
+        "dirty_clean": 3,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "treble_clean_knob",
+      "label": "Treble Clean",
+      "isSweep": true,
+      "target": "treble_clean",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "vol_clean": 3,
+        "comp_clean": 2,
+        "bass_clean": 5,
+        "gain_dirty": 5,
+        "vol_dirty": 5,
+        "fs_vol_dirty": 0,
+        "presence_dirty": 5,
+        "bass_dirty": 5,
+        "middle_dirty": 5,
+        "treble_dirty": 5,
+        "tight_dirty": 1,
+        "dirty_clean": 3,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "gain_dirty_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain_dirty",
+      "initialValue": 1,
+      "values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "settings": {
+        "vol_dirty": 2,
+        "fs_vol_dirty": 0,
+        "presence_dirty": 5,
+        "bass_dirty": 6,
+        "middle_dirty": 7,
+        "treble_dirty": 6,
+        "tight_dirty": 1,
         "dirty_clean": 1,
-        "bypass_switch": 1
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "presence_dirty_knob",
+      "label": "Presence",
+      "isSweep": true,
+      "target": "presence_dirty",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "vol_dirty": 2,
+        "fs_vol_dirty": 0,
+        "gain_dirty": 7,
+        "bass_dirty": 6,
+        "middle_dirty": 7,
+        "treble_dirty": 6,
+        "tight_dirty": 1,
+        "dirty_clean": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "tight_dirty_toggle",
+      "label": "Tight",
+      "isSweep": true,
+      "target": "tight_dirty",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "vol_dirty": 2,
+        "fs_vol_dirty": 0,
+        "gain_dirty": 6,
+        "presence_dirty": 5,
+        "bass_dirty": 8,
+        "middle_dirty": 6,
+        "treble_dirty": 5,
+        "dirty_clean": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "bass_dirty_knob",
+      "label": "Bass Dirty",
+      "isSweep": true,
+      "target": "bass_dirty",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "vol_dirty": 2,
+        "fs_vol_dirty": 0,
+        "gain_dirty": 5,
+        "presence_dirty": 5,
+        "middle_dirty": 5,
+        "treble_dirty": 5,
+        "tight_dirty": 1,
+        "dirty_clean": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "middle_dirty_knob",
+      "label": "Middle Dirty",
+      "isSweep": true,
+      "target": "middle_dirty",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "vol_dirty": 2,
+        "fs_vol_dirty": 0,
+        "gain_dirty": 5,
+        "presence_dirty": 5,
+        "bass_dirty": 5,
+        "treble_dirty": 5,
+        "tight_dirty": 1,
+        "dirty_clean": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "treble_dirty_knob",
+      "label": "Treble Dirty",
+      "isSweep": true,
+      "target": "treble_dirty",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "vol_dirty": 2,
+        "fs_vol_dirty": 0,
+        "gain_dirty": 5,
+        "presence_dirty": 5,
+        "bass_dirty": 5,
+        "middle_dirty": 5,
+        "tight_dirty": 1,
+        "dirty_clean": 1,
+        "on_switch": 3
       }
     }
   ]

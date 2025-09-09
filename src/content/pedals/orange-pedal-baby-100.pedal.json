@@ -2,6 +2,7 @@
   "name": "orange-pedal-baby-100",
   "width": 700,
   "height": 180,
+  "isAmp": true,
   "controls": {
     "knobs": [
       {
@@ -29,6 +30,14 @@
         "size": 80,
         "position": { "top": 51, "left": 370 },
         "colors": { "on": "#f80" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "on_switch",
+        "type": "toggle",
+        "size": 44,
+        "position": { "top": 68, "left": 625 }
       }
     ]
   }
