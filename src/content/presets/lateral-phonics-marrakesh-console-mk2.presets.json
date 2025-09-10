@@ -1,0 +1,147 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "chewy_drive",
+      "label": "Chewy Drive",
+      "settings": {
+        "treble": 6,
+        "threshold": 2,
+        "bass": 7,
+        "volume": 6,
+        "saturation": 2,
+        "headroom": 3,
+        "treble_label": "Treble",
+        "threshold_label": "Threshold",
+        "bass_label": "Bass",
+        "volume_label": "Volume",
+        "saturation_label": "Saturation",
+        "headroom_label": "Headroom"
+      }
+    },
+    {
+      "id": "fuzz_console",
+      "label": "Fuzz Console",
+      "settings": {
+        "treble": 3,
+        "threshold": 0,
+        "bass": 10,
+        "volume": 6,
+        "saturation": 3,
+        "headroom": 1
+      }
+    },
+    {
+      "id": "clean_boost",
+      "label": "Clean Boost",
+      "settings": {
+        "treble": 6,
+        "threshold": 7,
+        "bass": 6,
+        "volume": 9,
+        "saturation": 2,
+        "headroom": 3
+      }
+    },
+    {
+      "id": "character_di",
+      "label": "DI with Character",
+      "settings": {
+        "treble": 7,
+        "threshold": 2,
+        "bass": 8,
+        "volume": 6.5,
+        "saturation": 3,
+        "headroom": 1
+      }
+    },
+    {
+      "id": "di_fuzz",
+      "label": "DI Fuzz",
+      "settings": {
+        "treble": 4,
+        "threshold": 0,
+        "bass": 10,
+        "volume": 6.5,
+        "saturation": 1,
+        "headroom": 3
+      }
+    },
+    {
+      "id": "saturation_toggle",
+      "label": "Saturation",
+      "isSweep": true,
+      "target": "saturation",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": {
+        "threshold": 0,
+        "bass": 5,
+        "volume": 5,
+        "treble": 1,
+        "headroom": 1
+      }
+    },
+    {
+      "id": "headroom_toggle",
+      "label": "Headroom",
+      "isSweep": true,
+      "target": "headroom",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "threshold": 0,
+        "bass": 5,
+        "volume": 5,
+        "treble": 1,
+        "saturation": 2
+      }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble",
+      "isSweep": true,
+      "target": "treble",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "threshold": 1,
+        "bass": 5,
+        "volume": 6,
+        "saturation": 3,
+        "headroom": 1
+      }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "threshold": 1,
+        "treble": 5,
+        "volume": 6,
+        "saturation": 3,
+        "headroom": 1
+      }
+    },
+    {
+      "id": "threshold_knob",
+      "label": "Threshold",
+      "isSweep": true,
+      "target": "threshold",
+      "initialValue": 0,
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "settings": {
+        "bass": 5,
+        "treble": 5,
+        "volume": 6,
+        "saturation": 3,
+        "headroom": 1
+      }
+    }
+  ]
+}

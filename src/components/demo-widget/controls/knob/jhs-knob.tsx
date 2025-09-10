@@ -28,25 +28,28 @@ export const JhsKnob: Component<JhsKnobProps> = props => {
           cy="60"
           r="56"
           fill={mergedProps.colors.primary}
-          stroke-width="4"
+          stroke-width="3"
           stroke={mergedProps.colors.secondary}
         />
-        <path
-          fill={mergedProps.colors.primary}
-          stroke={mergedProps.colors.secondary}
-          stroke-width="4"
-          d="M104.37701,29.5816271 L115.312765,54.8801148 L131.754021,77 L115.312765,99.1198852 L104.37701,124.418373 L77,121.23977 L49.6229896,124.418373 L38.687235,99.1198852 L22.2459793,77 L38.687235,54.8801148 L49.6229896,29.5816271 L77,32.7602296 L104.37701,29.5816271 Z"
-          transform="rotate(30 60 60) translate(-17 -16.073)"
-        />
+        <g transform="scale(0.85)" transform-origin="60 60">
+          <path
+            fill={mergedProps.colors.primary}
+            stroke={mergedProps.colors.secondary}
+            stroke-width="3"
+            d="M104.37701,29.5816271 L115.312765,54.8801148 L131.754021,77 L115.312765,99.1198852 L104.37701,124.418373 L77,121.23977 L49.6229896,124.418373 L38.687235,99.1198852 L22.2459793,77 L38.687235,54.8801148 L49.6229896,29.5816271 L77,32.7602296 L104.37701,29.5816271 Z"
+            transform="rotate(30 60 60) translate(-17 -16.073)"
+          />
+        </g>
         <rect
-          width="8"
-          height="40"
-          x="56"
+          width="4"
+          height="36"
+          x="58"
           y="16"
           fill={mergedProps.colors.tick}
           rx="4"
           ry="4"
         />
+        <circle cx="60" cy="10" r="4" fill={mergedProps.colors.tick} />
       </g>
     </svg>
   )
