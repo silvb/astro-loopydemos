@@ -31,15 +31,14 @@ export const JhsKnob: Component<JhsKnobProps> = props => {
           stroke-width="3"
           stroke={mergedProps.colors.secondary}
         />
-        <g transform="scale(0.85)" transform-origin="60 60">
-          <path
-            fill={mergedProps.colors.primary}
-            stroke={mergedProps.colors.secondary}
-            stroke-width="3"
-            d="M104.37701,29.5816271 L115.312765,54.8801148 L131.754021,77 L115.312765,99.1198852 L104.37701,124.418373 L77,121.23977 L49.6229896,124.418373 L38.687235,99.1198852 L22.2459793,77 L38.687235,54.8801148 L49.6229896,29.5816271 L77,32.7602296 L104.37701,29.5816271 Z"
-            transform="rotate(30 60 60) translate(-17 -16.073)"
-          />
-        </g>
+        <path
+          fill={mergedProps.colors.primary}
+          stroke={mergedProps.colors.secondary}
+          stroke-width="3"
+          d="M104.37701,29.5816271 L115.312765,54.8801148 L131.754021,77 L115.312765,99.1198852 L104.37701,124.418373 L77,121.23977 L49.6229896,124.418373 L38.687235,99.1198852 L22.2459793,77 L38.687235,54.8801148 L49.6229896,29.5816271 L77,32.7602296 L104.37701,29.5816271 Z"
+          transform-origin="60 60"
+          transform="scale(0.85) rotate(30) translate(-17 -16.073)"
+        />
         <rect
           width="4"
           height="36"
