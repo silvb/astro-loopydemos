@@ -53,6 +53,54 @@
         "size": 36,
         "position": { "top": 161, "left": 193 }
       }
+    ],
+    "labels": [
+      {
+        "id": "treble_label",
+        "position": { "left": 40, "top": 80 },
+        "labelPosition": { "left": 0, "top": 60 }
+      },
+      {
+        "id": "threshold_label",
+        "position": { "left": 181, "top": 56 },
+        "labelPosition": { "left": 280, "top": 29 }
+      },
+      {
+        "id": "bass_label",
+        "position": { "left": 243, "top": 76 },
+        "labelPosition": { "left": 280, "top": 60 }
+      },
+      {
+        "id": "volume_label",
+        "position": { "left": 170, "top": 140 },
+        "labelPosition": { "left": 280, "top": 140 }
+      },
+      {
+        "id": "saturation_label",
+        "position": { "left": 58, "top": 170 },
+        "labelPosition": { "left": 0, "top": 140 },
+        "dependency": {
+          "source": "saturation",
+          "values": [
+            { "sourceValue": 1, "targetValue": "Hard saturation" },
+            { "sourceValue": 2, "targetValue": "No additional saturation" },
+            { "sourceValue": 3, "targetValue": "Soft saturation" }
+          ]
+        }
+      },
+      {
+        "id": "headroom_label",
+        "position": { "left": 224, "top": 185 },
+        "labelPosition": { "left": 280, "top": 205 },
+        "dependency": {
+          "source": "headroom",
+          "values": [
+            { "sourceValue": 1, "targetValue": "9V headroom" },
+            { "sourceValue": 2, "targetValue": "Standby (off)" },
+            { "sourceValue": 3, "targetValue": "28V headroom" }
+          ]
+        }
+      }
     ]
   }
 }
