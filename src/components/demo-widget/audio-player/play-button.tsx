@@ -8,6 +8,7 @@ import {
   onMount,
   Show,
 } from "solid-js"
+import { isIOSDevice, unmuteIOSAudio } from "../../../utils/ios-audio-unmute"
 import { useDemoState } from "../demo-state-store"
 
 export const PlayButton: Component = () => {
@@ -24,7 +25,7 @@ export const PlayButton: Component = () => {
   const [isInViewport, setIsInViewport] = createSignal(false)
   let buttonRef: HTMLButtonElement | undefined
 
-  const handleShortcut = (e: KeyboardEvent) => {
+  const handleShortcut = async (e: KeyboardEvent) => {
     if (e.code === "Space") {
       e.preventDefault()
       if (!isInViewport() && isPlaying()) {
@@ -32,6 +33,14 @@ export const PlayButton: Component = () => {
         return
       }
       if (isInViewport()) {
+        // On iOS devices, unmute audio before starting playback via keyboard
+        if (isIOSDevice() && !isPlaying()) {
+          try {
+            await unmuteIOSAudio()
+          } catch (error) {
+            console.warn("Failed to unmute iOS audio:", error)
+          }
+        }
         setIsPlaying(!isPlaying())
       }
       return
@@ -77,10 +86,23 @@ export const PlayButton: Component = () => {
     document.removeEventListener("keydown", handleShortcut)
   })
 
+  const handlePlayButtonClick = async () => {
+    // On iOS devices, unmute audio before starting playback
+    if (isIOSDevice() && !isPlaying()) {
+      try {
+        await unmuteIOSAudio()
+      } catch (error) {
+        console.warn("Failed to unmute iOS audio:", error)
+      }
+    }
+
+    setIsPlaying(!isPlaying())
+  }
+
   return (
     <button
       ref={buttonRef}
-      onClick={() => setIsPlaying(!isPlaying())}
+      onClick={handlePlayButtonClick}
       class="h-full basis-12 text-[3rem] text-loopydemos-highlight-tertiary-themed"
       type="button"
     >
