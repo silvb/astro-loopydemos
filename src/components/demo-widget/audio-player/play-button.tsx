@@ -8,6 +8,7 @@ import {
   onMount,
   Show,
 } from "solid-js"
+import unmuteIosAudio from "unmute-ios-audio"
 import { useDemoState } from "../demo-state-store"
 
 export const PlayButton: Component = () => {
@@ -77,10 +78,16 @@ export const PlayButton: Component = () => {
     document.removeEventListener("keydown", handleShortcut)
   })
 
+  const handlePlayClick = () => {
+    // Call unmuteIosAudio on every play button click to ensure iOS audio unlock
+    unmuteIosAudio()
+    setIsPlaying(!isPlaying())
+  }
+
   return (
     <button
       ref={buttonRef}
-      onClick={() => setIsPlaying(!isPlaying())}
+      onClick={handlePlayClick}
       class="h-full basis-12 text-[3rem] text-loopydemos-highlight-tertiary-themed"
       type="button"
     >
