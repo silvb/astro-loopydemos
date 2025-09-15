@@ -1,4 +1,5 @@
-import { type Component, createEffect, onCleanup } from "solid-js"
+import { type Component, createEffect, onCleanup, onMount } from "solid-js"
+import unmuteIosAudio from "unmute-ios-audio"
 import { useDemoState } from "../demo-state-store"
 import {
   fetchAudioBuffer,
@@ -31,6 +32,7 @@ export const AudioPlayerController: Component<
     activePedals,
     secondaryCircuitsOn,
   } = useDemoState()
+
   let audioContext: AudioContext | null = null
   let currentPlayingAudioSource: AudioBufferSourceNode | null = null
   const currentBuffer: CurrentBuffer = {
@@ -173,6 +175,10 @@ export const AudioPlayerController: Component<
     } else {
       audioContext?.suspend()
     }
+  })
+
+  onMount(() => {
+    unmuteIosAudio()
   })
 
   onCleanup(() => {
