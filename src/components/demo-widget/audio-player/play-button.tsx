@@ -77,14 +77,12 @@ export const PlayButton: Component = () => {
     document.removeEventListener("keydown", handleShortcut)
   })
 
-  const handlePlayClick = () => {
-    setIsPlaying(!isPlaying())
-  }
-
   return (
     <button
       ref={buttonRef}
-      onClick={handlePlayClick}
+      onClick={() => {
+        setIsPlaying(!isPlaying())
+      }}
       class="h-full basis-12 text-[3rem] text-loopydemos-highlight-tertiary-themed"
       type="button"
     >

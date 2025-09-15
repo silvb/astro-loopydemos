@@ -71,9 +71,6 @@ importers:
       typescript:
         specifier: ^5.5.2
         version: 5.8.3
-      unmute-ios-audio:
-        specifier: ^3.3.0
-        version: 3.3.0
     devDependencies:
       '@biomejs/biome':
         specifier: 2.0.6
@@ -2870,9 +2867,6 @@ packages:
 
   unist-util-visit@5.0.0:
     resolution: {integrity: sha512-MR04uvD+07cwl/yhVuVWAtw+3GOR/knlL55Nd/wAdblk27GCVt3lqpTivy/tkJcZoNPzTwS1Y+KMojlLDhoTzg==}
-
-  unmute-ios-audio@3.3.0:
-    resolution: {integrity: sha512-MmoCOrsS2gn3wLT2tT+hF56Q4V4kksIKn2LHrwAtX6umzQwQHDWSh1slMzH+0WuxTZ62s3w8/wsfIII1FQ7ACg==}
 
   unstorage@1.16.1:
     resolution: {integrity: sha512-gdpZ3guLDhz+zWIlYP1UwQ259tG5T5vYRzDaHMkQ1bBY1SQPutvZnrRjTFaWUUpseErJIgAZS51h6NOcZVZiqQ==}
@@ -6641,8 +6635,6 @@ snapshots:
       '@types/unist': 3.0.3
       unist-util-is: 6.0.0
       unist-util-visit-parents: 6.0.1
-
-  unmute-ios-audio@3.3.0: {}
 
   unstorage@1.16.1:
     dependencies:
