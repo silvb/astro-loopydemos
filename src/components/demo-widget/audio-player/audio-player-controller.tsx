@@ -1,4 +1,4 @@
-import { type Component, createEffect, onCleanup } from "solid-js"
+import { type Component, createEffect, onCleanup, onMount } from "solid-js"
 import { useDemoState } from "../demo-state-store"
 import {
   fetchAudioBuffer,
@@ -31,6 +31,7 @@ export const AudioPlayerController: Component<
     activePedals,
     secondaryCircuitsOn,
   } = useDemoState()
+
   let audioContext: AudioContext | null = null
   let currentPlayingAudioSource: AudioBufferSourceNode | null = null
   const currentBuffer: CurrentBuffer = {
@@ -172,6 +173,19 @@ export const AudioPlayerController: Component<
       }
     } else {
       audioContext?.suspend()
+    }
+  })
+
+  onMount(() => {
+    // Set audio session to playback mode for iOS silent mode compatibility
+    try {
+      // biome-ignore lint/suspicious/noExplicitAny: experimental API, only works in Mac/iOS Safari
+      if ("audioSession" in navigator && (navigator as any).audioSession) {
+        // biome-ignore lint/suspicious/noExplicitAny: experimental API, only works in Mac/iOS Safari
+        ;(navigator as any).audioSession.type = "playback"
+      }
+    } catch (error) {
+      console.warn("AudioSession API not available:", error)
     }
   })
 

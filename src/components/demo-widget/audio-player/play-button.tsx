@@ -80,7 +80,9 @@ export const PlayButton: Component = () => {
   return (
     <button
       ref={buttonRef}
-      onClick={() => setIsPlaying(!isPlaying())}
+      onClick={() => {
+        setIsPlaying(!isPlaying())
+      }}
       class="h-full basis-12 text-[3rem] text-loopydemos-highlight-tertiary-themed"
       type="button"
     >
