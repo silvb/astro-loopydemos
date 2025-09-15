@@ -8,7 +8,6 @@ import {
   onMount,
   Show,
 } from "solid-js"
-import unmuteIosAudio from "unmute-ios-audio"
 import { useDemoState } from "../demo-state-store"
 
 export const PlayButton: Component = () => {
@@ -79,8 +78,6 @@ export const PlayButton: Component = () => {
   })
 
   const handlePlayClick = () => {
-    // Call unmuteIosAudio on every play button click to ensure iOS audio unlock
-    unmuteIosAudio()
     setIsPlaying(!isPlaying())
   }
 

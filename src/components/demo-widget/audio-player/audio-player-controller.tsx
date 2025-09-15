@@ -1,5 +1,4 @@
 import { type Component, createEffect, onCleanup, onMount } from "solid-js"
-import unmuteIosAudio from "unmute-ios-audio"
 import { useDemoState } from "../demo-state-store"
 import {
   fetchAudioBuffer,
@@ -178,7 +177,16 @@ export const AudioPlayerController: Component<
   })
 
   onMount(() => {
-    unmuteIosAudio()
+    // Set audio session to playback mode for iOS silent mode compatibility
+    try {
+      // biome-ignore lint/suspicious/noExplicitAny: experimental API, only works in Mac/iOS Safari
+      if ("audioSession" in navigator && (navigator as any).audioSession) {
+        // biome-ignore lint/suspicious/noExplicitAny: experimental API, only works in Mac/iOS Safari
+        ;(navigator as any).audioSession.type = "playback"
+      }
+    } catch (error) {
+      console.warn("AudioSession API not available:", error)
+    }
   })
 
   onCleanup(() => {
