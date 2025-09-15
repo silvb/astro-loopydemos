@@ -2,18 +2,18 @@
 builder: Orange
 model: Tour Baby 100
 slug: orange-tour-baby-100
-type: none
+type: demo
 isSponsored: true
-date: 2025-08-24
+date: 2025-09-15
 tags:
   - amp
   - british amp
   - dual channel
   - pedal platform
 externalLinks:
-  thomann: ...
-  builderLink: ...
-  sweetwater: ...
+  thomann: orange_tour_baby_100
+  builderLink: https://orangeamps.com/tour-baby-100/
+  sweetwater: https://sweetwater.sjv.io/bOJL4m
 ---
 
 Write some copy about the Tour Baby 100 by Orange.

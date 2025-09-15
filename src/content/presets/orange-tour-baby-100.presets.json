@@ -3,22 +3,25 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
+      "id": "clean_and_dirty",
+      "isSweep": true,
+      "target": "Clean & Dirty",
+      "initialValue": 1,
+      "values": [1, 3],
       "label": "Static Preset",
       "settings": {
-        "comp_clean": 5,
-        "vol_clean": 5,
-        "bass_clean": 5,
-        "treble_clean": 5,
-        "gain_dirty": 5,
-        "vol_dirty": 5,
-        "fs_vol_dirty": 5,
-        "presence_dirty": 5,
-        "bass_dirty": 5,
-        "middle_dirty": 5,
+        "comp_clean": 6,
+        "vol_clean": 6,
+        "bass_clean": 4,
+        "treble_clean": 7,
+        "gain_dirty": 6,
+        "vol_dirty": 7,
+        "fs_vol_dirty": 0,
+        "presence_dirty": 8,
+        "bass_dirty": 4,
+        "middle_dirty": 7,
         "treble_dirty": 5,
-        "dirty_clean": 1,
-        "bypass_switch": 1
+        "on_switch": 3
       }
     },
     {
@@ -40,7 +43,7 @@
         "middle_dirty": 5,
         "treble_dirty": 5,
         "dirty_clean": 1,
-        "bypass_switch": 1
+        "on_switch": 3
       }
     }
   ]
