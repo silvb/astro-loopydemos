@@ -2,6 +2,7 @@
   "name": "orange-tour-baby-100",
   "width": 700,
   "height": 180,
+  "isAmp": true,
   "controls": {
     "knobs": [
       {
@@ -84,7 +85,13 @@
         "id": "dirty_clean",
         "type": "toggle",
         "size": 44,
-        "position": { "top": 52, "left": 580 }
+        "position": { "top": 51, "left": 579 }
+      },
+      {
+        "id": "on_switch",
+        "type": "toggle",
+        "size": 44,
+        "position": { "top": 51, "left": 634 }
       }
     ]
   }

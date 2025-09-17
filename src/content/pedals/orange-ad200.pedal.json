@@ -2,6 +2,7 @@
   "name": "orange-ad200",
   "height": 342,
   "width": 700,
+  "isAmp": true,
   "controls": {
     "knobs": [
       {
