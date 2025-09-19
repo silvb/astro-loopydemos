@@ -4,8 +4,8 @@
     "knobs": [
       {
         "id": "low_boost",
-        "size": 56,
-        "position": { "top": 16, "left": 10 },
+        "size": 50,
+        "position": { "top": 19, "left": 12 },
         "type": "davies",
         "colors": {
           "primary": "aliceblue",
@@ -20,8 +20,8 @@
       },
       {
         "id": "mid_boost",
-        "size": 56,
-        "position": { "top": 100, "left": 72 },
+        "size": 50,
+        "position": { "top": 100, "left": 74 },
         "type": "davies",
         "colors": {
           "primary": "aliceblue",
@@ -36,8 +36,8 @@
       },
       {
         "id": "hi_boost",
-        "size": 56,
-        "position": { "top": 16, "left": 131 },
+        "size": 50,
+        "position": { "top": 20, "left": 135 },
         "type": "davies",
         "colors": {
           "primary": "aliceblue",

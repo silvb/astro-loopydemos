@@ -3,10 +3,80 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "amp_tickler",
+      "label": "Amp Tickler",
       "settings": {
         "low_boost": 5,
+        "low_freq": 6,
+        "mid_boost": 8,
+        "mid_freq": 7,
+        "hi_boost": 6,
+        "hi_freq": 5
+      }
+    },
+    {
+      "id": "woolly_boost",
+      "label": "Woolly Boost",
+      "settings": {
+        "low_boost": 8,
+        "low_freq": 6,
+        "mid_boost": 6,
+        "mid_freq": 5,
+        "hi_boost": 6,
+        "hi_freq": 5
+      }
+    },
+    {
+      "id": "fat_treble_boost",
+      "label": "Fat Treble Boost",
+      "settings": {
+        "low_boost": 5,
+        "low_freq": 0,
+        "mid_boost": 8,
+        "mid_freq": 5,
+        "hi_boost": 7,
+        "hi_freq": 8
+      }
+    },
+    {
+      "id": "drive_stack",
+      "label": "Drive Stack",
+      "chain": [
+        {
+          "pedalSlug": "rhpf-electronics-mosferatwo",
+          "id": "drive",
+          "settings": {
+            "drive": 6,
+            "focus": 8,
+            "level": 7,
+            "heart": 8,
+            "bite": 5,
+            "heart_freq": 3,
+            "bite_freq": 3
+          }
+        },
+        {
+          "pedalSlug": "rhpf-electronics-tri-hormonic-phalanx",
+          "id": "boost",
+          "settings": {
+            "low_boost": 4,
+            "low_freq": 6,
+            "mid_boost": 10,
+            "mid_freq": 8,
+            "hi_boost": 7,
+            "hi_freq": 6
+          }
+        }
+      ]
+    },
+    {
+      "id": "low_boost_knob",
+      "label": "IGF-1 Drive",
+      "isSweep": true,
+      "target": "low_boost",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
         "low_freq": 5,
         "mid_boost": 5,
         "mid_freq": 5,
@@ -15,18 +85,78 @@
       }
     },
     {
-      "id": "low_boost_knob",
-      "label": "Low_boost",
+      "id": "low_freq_knob",
+      "label": "IGF-1 Level",
       "isSweep": true,
-      "target": "low_boost",
+      "target": "low_freq",
       "initialValue": 0,
-      "values": [0, 2, 4, 6, 8, 10],
+      "values": [0, 2, 5, 8, 10],
       "settings": {
-        "low_freq": 5,
+        "low_boost": 5,
         "mid_boost": 5,
         "mid_freq": 5,
         "hi_boost": 5,
         "hi_freq": 5
+      }
+    },
+    {
+      "id": "mid_boost_knob",
+      "label": "GH Drive",
+      "isSweep": true,
+      "target": "mid_boost",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "low_freq": 5,
+        "low_boost": 5,
+        "mid_freq": 5,
+        "hi_boost": 5,
+        "hi_freq": 5
+      }
+    },
+    {
+      "id": "mid_freq_knob",
+      "label": "GH Level",
+      "isSweep": true,
+      "target": "mid_freq",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "low_boost": 5,
+        "mid_boost": 5,
+        "low_freq": 5,
+        "hi_boost": 5,
+        "hi_freq": 5
+      }
+    },
+    {
+      "id": "hi_boost_knob",
+      "label": "ACTH Drive",
+      "isSweep": true,
+      "target": "hi_boost",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "low_freq": 5,
+        "low_boost": 5,
+        "mid_freq": 5,
+        "mid_boost": 5,
+        "hi_freq": 5
+      }
+    },
+    {
+      "id": "hi_freq_knob",
+      "label": "ACTH Level",
+      "isSweep": true,
+      "target": "hi_freq",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "low_boost": 5,
+        "mid_boost": 5,
+        "low_freq": 5,
+        "hi_boost": 5,
+        "mid_freq": 5
       }
     }
   ]
