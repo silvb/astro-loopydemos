@@ -1,0 +1,33 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": {
+        "low_boost": 5,
+        "low_freq": 5,
+        "mid_boost": 5,
+        "mid_freq": 5,
+        "hi_boost": 5,
+        "hi_freq": 5
+      }
+    },
+    {
+      "id": "low_boost_knob",
+      "label": "Low_boost",
+      "isSweep": true,
+      "target": "low_boost",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "low_freq": 5,
+        "mid_boost": 5,
+        "mid_freq": 5,
+        "hi_boost": 5,
+        "hi_freq": 5
+      }
+    }
+  ]
+}

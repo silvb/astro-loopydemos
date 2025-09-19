@@ -1,0 +1,74 @@
+{
+  "name": "rhpf-electronics-tri-hormonic-phalanx",
+  "controls": {
+    "knobs": [
+      {
+        "id": "low_boost",
+        "size": 56,
+        "position": { "top": 16, "left": 10 },
+        "type": "davies",
+        "colors": {
+          "primary": "aliceblue",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "low_freq",
+        "size": 28,
+        "position": { "top": 94, "left": 24 },
+        "type": "simple"
+      },
+      {
+        "id": "mid_boost",
+        "size": 56,
+        "position": { "top": 100, "left": 72 },
+        "type": "davies",
+        "colors": {
+          "primary": "aliceblue",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "mid_freq",
+        "size": 28,
+        "position": { "top": 61, "left": 85 },
+        "type": "simple"
+      },
+      {
+        "id": "hi_boost",
+        "size": 56,
+        "position": { "top": 16, "left": 131 },
+        "type": "davies",
+        "colors": {
+          "primary": "aliceblue",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "hi_freq",
+        "size": 28,
+        "position": { "top": 94, "left": 147 },
+        "type": "simple"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "position": { "top": 161, "left": 85 },
+        "colors": {
+          "on": "#c8fffa",
+          "off": "#8f8f8f"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 277, "left": 77 }
+      }
+    ]
+  }
+}
