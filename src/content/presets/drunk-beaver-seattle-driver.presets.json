@@ -1,0 +1,33 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": {
+        "fat": 5,
+        "muscle": 5,
+        "air": 5,
+        "exhaust": 5,
+        "vacuum": 5,
+        "power": 5
+      }
+    },
+    {
+      "id": "fat_knob",
+      "label": "Fat",
+      "isSweep": true,
+      "target": "fat",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "muscle": 5,
+        "air": 5,
+        "exhaust": 5,
+        "vacuum": 5,
+        "power": 5
+      }
+    }
+  ]
+}

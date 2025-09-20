@@ -1,0 +1,59 @@
+{
+  "name": "drunk-beaver-seattle-driver",
+  "controls": {
+    "knobs": [
+      {
+        "id": "fat",
+        "size": 48,
+        "position": { "top": 31, "left": 15 },
+        "type": "walrus"
+      },
+      {
+        "id": "muscle",
+        "size": 48,
+        "position": { "top": 31, "left": 76 },
+        "type": "walrus"
+      },
+      {
+        "id": "air",
+        "size": 48,
+        "position": { "top": 31, "left": 137 },
+        "type": "walrus"
+      },
+      {
+        "id": "exhaust",
+        "size": 48,
+        "position": { "top": 115, "left": 15 },
+        "type": "walrus"
+      },
+      {
+        "id": "vacuum",
+        "size": 48,
+        "position": { "top": 115, "left": 76 },
+        "type": "walrus"
+      },
+      {
+        "id": "power",
+        "size": 48,
+        "position": { "top": 115, "left": 136 },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 51,
+        "position": { "top": 282, "left": 18 },
+        "colors": { "on": "#008efc" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 284, "left": 75 }
+      }
+    ]
+  }
+}
