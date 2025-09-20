@@ -5,7 +5,7 @@
       {
         "id": "echo_one",
         "size": 52,
-        "position": { "top": 25, "left": 13 },
+        "position": { "top": 30, "left": 15 },
         "type": "davies",
         "colors": {
           "primary": "aliceblue",
@@ -15,7 +15,7 @@
       {
         "id": "echo_two",
         "size": 52,
-        "position": { "top": 25, "left": 136 },
+        "position": { "top": 30, "left": 134 },
         "type": "davies",
         "colors": {
           "primary": "aliceblue",
@@ -25,7 +25,7 @@
       {
         "id": "rate_one",
         "size": 52,
-        "position": { "top": 85, "left": 14 },
+        "position": { "top": 89, "left": 15 },
         "type": "davies",
         "colors": {
           "primary": "aliceblue",
@@ -35,7 +35,7 @@
       {
         "id": "rate_two",
         "size": 52,
-        "position": { "top": 85, "left": 134 },
+        "position": { "top": 89, "left": 134 },
         "type": "davies",
         "colors": {
           "primary": "aliceblue",
@@ -52,8 +52,8 @@
     "leds": [
       {
         "id": "on_led",
-        "size": 36,
-        "position": { "top": 163, "left": 82 },
+        "size": 32,
+        "position": { "top": 167, "left": 85 },
         "colors": { "on": "#0056fe" }
       }
     ],

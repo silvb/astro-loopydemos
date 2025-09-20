@@ -4,8 +4,8 @@
     "knobs": [
       {
         "id": "low_boost",
-        "size": 50,
-        "position": { "top": 19, "left": 12 },
+        "size": 52,
+        "position": { "top": 32, "left": 15 },
         "type": "davies",
         "colors": {
           "primary": "aliceblue",
@@ -14,14 +14,14 @@
       },
       {
         "id": "low_freq",
-        "size": 28,
-        "position": { "top": 94, "left": 24 },
+        "size": 24,
+        "position": { "top": 104, "left": 29 },
         "type": "simple"
       },
       {
         "id": "mid_boost",
-        "size": 50,
-        "position": { "top": 100, "left": 74 },
+        "size": 52,
+        "position": { "top": 105, "left": 74 },
         "type": "davies",
         "colors": {
           "primary": "aliceblue",
@@ -30,14 +30,14 @@
       },
       {
         "id": "mid_freq",
-        "size": 28,
-        "position": { "top": 61, "left": 85 },
+        "size": 24,
+        "position": { "top": 71, "left": 88 },
         "type": "simple"
       },
       {
         "id": "hi_boost",
-        "size": 50,
-        "position": { "top": 20, "left": 135 },
+        "size": 52,
+        "position": { "top": 32, "left": 133 },
         "type": "davies",
         "colors": {
           "primary": "aliceblue",
@@ -46,8 +46,8 @@
       },
       {
         "id": "hi_freq",
-        "size": 28,
-        "position": { "top": 94, "left": 147 },
+        "size": 24,
+        "position": { "top": 104, "left": 147 },
         "type": "simple"
       }
     ],
@@ -55,7 +55,7 @@
       {
         "id": "on_led",
         "size": 32,
-        "position": { "top": 161, "left": 85 },
+        "position": { "top": 167, "left": 84 },
         "colors": {
           "on": "#c8fffa",
           "off": "#8f8f8f"
@@ -67,7 +67,7 @@
         "id": "bypass_switch",
         "type": "stomp",
         "size": 48,
-        "position": { "top": 277, "left": 77 }
+        "position": { "top": 277, "left": 75 }
       }
     ]
   }

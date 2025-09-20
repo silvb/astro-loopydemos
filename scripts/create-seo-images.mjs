@@ -34,6 +34,7 @@ fs.readdirSync(postSourcePath).forEach(post => {
   if (fs.existsSync(possibleImagePath)) return
 
   const presetPath = path.join(presetSource, `${slug}.presets.json`)
+  if (!fs.existsSync(presetPath)) return
   const presetData = JSON.parse(fs.readFileSync(presetPath))
 
   const pedals =

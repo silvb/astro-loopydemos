@@ -4,8 +4,8 @@
     "knobs": [
       {
         "id": "drive",
-        "size": 48,
-        "position": { "top": 28, "left": 16 },
+        "size": 52,
+        "position": { "top": 30, "left": 16 },
         "type": "davies",
         "colors": {
           "primary": "aliceblue",
@@ -14,8 +14,8 @@
       },
       {
         "id": "level",
-        "size": 48,
-        "position": { "top": 29, "left": 137 },
+        "size": 52,
+        "position": { "top": 30, "left": 134 },
         "type": "davies",
         "colors": {
           "primary": "aliceblue",
@@ -24,8 +24,8 @@
       },
       {
         "id": "focus",
-        "size": 48,
-        "position": { "top": 59, "left": 77 },
+        "size": 52,
+        "position": { "top": 60, "left": 75 },
         "type": "davies",
         "colors": {
           "primary": "aliceblue",
@@ -41,15 +41,15 @@
       {
         "id": "bite",
         "size": 24,
-        "position": { "top": 99, "left": 149 },
+        "position": { "top": 99, "left": 147 },
         "type": "simple"
       }
     ],
     "leds": [
       {
         "id": "on_led",
-        "size": 32,
-        "position": { "top": 164, "left": 85 },
+        "size": 30,
+        "position": { "top": 167, "left": 85 },
         "colors": {
           "on": "#fb5b00"
         }
@@ -66,15 +66,15 @@
         "id": "heart_freq",
         "orientation": "horizontal",
         "type": "toggle",
-        "size": 24,
-        "position": { "top": 138, "left": 30 }
+        "size": 32,
+        "position": { "top": 138, "left": 27 }
       },
       {
         "id": "bite_freq",
         "orientation": "horizontal",
         "type": "toggle",
-        "size": 24,
-        "position": { "top": 138, "left": 150 }
+        "size": 32,
+        "position": { "top": 138, "left": 141 }
       }
     ]
   }

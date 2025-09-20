@@ -4,8 +4,8 @@
     "knobs": [
       {
         "id": "drive",
-        "size": 48,
-        "position": { "top": 22, "left": 14 },
+        "size": 52,
+        "position": { "top": 30, "left": 14 },
         "type": "davies",
         "colors": {
           "primary": "aliceblue",
@@ -14,8 +14,8 @@
       },
       {
         "id": "level",
-        "size": 48,
-        "position": { "top": 22, "left": 139 },
+        "size": 52,
+        "position": { "top": 30, "left": 133 },
         "type": "davies",
         "colors": {
           "primary": "aliceblue",
@@ -24,8 +24,8 @@
       },
       {
         "id": "low",
-        "size": 48,
-        "position": { "top": 84, "left": 15 },
+        "size": 52,
+        "position": { "top": 88, "left": 14 },
         "type": "davies",
         "colors": {
           "primary": "aliceblue",
@@ -34,8 +34,8 @@
       },
       {
         "id": "mid",
-        "size": 48,
-        "position": { "top": 54, "left": 77 },
+        "size": 52,
+        "position": { "top": 58, "left": 74 },
         "type": "davies",
         "colors": {
           "primary": "aliceblue",
@@ -44,8 +44,8 @@
       },
       {
         "id": "hi",
-        "size": 48,
-        "position": { "top": 84, "left": 138 },
+        "size": 52,
+        "position": { "top": 88, "left": 133 },
         "type": "davies",
         "colors": {
           "primary": "aliceblue",
@@ -56,8 +56,8 @@
     "leds": [
       {
         "id": "on_led",
-        "size": 32,
-        "position": { "top": 168, "left": 96 },
+        "size": 30,
+        "position": { "top": 174, "left": 99 },
         "colors": {
           "on": "#65ff4b"
         }
