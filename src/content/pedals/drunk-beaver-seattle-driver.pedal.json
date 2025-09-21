@@ -4,39 +4,39 @@
     "knobs": [
       {
         "id": "fat",
-        "size": 48,
-        "position": { "top": 31, "left": 15 },
-        "type": "walrus"
+        "size": 52,
+        "position": { "top": 29, "left": 13 },
+        "type": "beaver"
       },
       {
         "id": "muscle",
-        "size": 48,
-        "position": { "top": 31, "left": 76 },
-        "type": "walrus"
+        "size": 52,
+        "position": { "top": 29, "left": 74 },
+        "type": "beaver"
       },
       {
         "id": "air",
-        "size": 48,
-        "position": { "top": 31, "left": 137 },
-        "type": "walrus"
+        "size": 52,
+        "position": { "top": 29, "left": 135 },
+        "type": "beaver"
       },
       {
         "id": "exhaust",
-        "size": 48,
-        "position": { "top": 115, "left": 15 },
-        "type": "walrus"
+        "size": 52,
+        "position": { "top": 113, "left": 13 },
+        "type": "beaver"
       },
       {
         "id": "vacuum",
-        "size": 48,
-        "position": { "top": 115, "left": 76 },
-        "type": "walrus"
+        "size": 52,
+        "position": { "top": 113, "left": 74 },
+        "type": "beaver"
       },
       {
         "id": "power",
-        "size": 48,
-        "position": { "top": 115, "left": 136 },
-        "type": "walrus"
+        "size": 52,
+        "position": { "top": 113, "left": 134 },
+        "type": "beaver"
       }
     ],
     "leds": [

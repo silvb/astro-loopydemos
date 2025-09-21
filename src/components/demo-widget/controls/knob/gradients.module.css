@@ -127,3 +127,33 @@
     z-index: -1;
   }
 }
+
+.beaver-knob {
+  z-index: 0;
+  position: relative;
+  width: var(--size);
+  height: var(--size);
+
+  &:before {
+    position: absolute;
+    content: " ";
+    width: calc(var(--size) - 4px);
+    height: calc(var(--size) - 4px);
+    top: 2px;
+    left: 2px;
+    background: conic-gradient(
+      from 120deg,
+      var(--secondaryColor),
+      var(--primaryColor),
+      var(--primaryColor),
+      var(--secondaryColor),
+      var(--primaryColor),
+      var(--secondaryColor),
+      var(--primaryColor),
+      var(--primaryColor),
+      var(--secondaryColor)
+    );
+    border-radius: 50%;
+    z-index: -1;
+  }
+}

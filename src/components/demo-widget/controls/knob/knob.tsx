@@ -15,6 +15,7 @@ interface KnobProps extends KnobData {
 
 const knobComponentImports = {
   arrow: () => import("./arrow-knob").then(m => m.ArrowKnob),
+  beaver: () => import("./beaver-knob").then(m => m.BeaverKnob),
   bakelit: () => import("./bakelit-knob").then(m => m.BakelitKnob),
   brutalist: () => import("./brutalist-knob").then(m => m.BrutalistKnob),
   cba: () => import("./cba-knob").then(m => m.CbaKnob),
