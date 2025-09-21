@@ -92,7 +92,37 @@
         "muscle": 2,
         "exhaust": 7,
         "vacuum": 2,
-        "power": 8
+        "power": 5
+      }
+    },
+    {
+      "id": "vacuum_knob",
+      "label": "Vacuum",
+      "isSweep": true,
+      "target": "vacuum",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "fat": 6,
+        "muscle": 3,
+        "air": 7,
+        "exhaust": 7,
+        "power": 5
+      }
+    },
+    {
+      "id": "power_knob",
+      "label": "Power",
+      "isSweep": true,
+      "target": "power",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "fat": 6,
+        "muscle": 3,
+        "air": 7,
+        "exhaust": 7,
+        "vacuum": 5
       }
     }
   ]

@@ -6,37 +6,43 @@
         "id": "fat",
         "size": 52,
         "position": { "top": 29, "left": 13 },
-        "type": "beaver"
+        "type": "beaver",
+        "highlightColor": "primary"
       },
       {
         "id": "muscle",
         "size": 52,
         "position": { "top": 29, "left": 74 },
-        "type": "beaver"
+        "type": "beaver",
+        "highlightColor": "primary"
       },
       {
         "id": "air",
         "size": 52,
         "position": { "top": 29, "left": 135 },
-        "type": "beaver"
+        "type": "beaver",
+        "highlightColor": "primary"
       },
       {
         "id": "exhaust",
         "size": 52,
         "position": { "top": 113, "left": 13 },
-        "type": "beaver"
+        "type": "beaver",
+        "highlightColor": "primary"
       },
       {
         "id": "vacuum",
         "size": 52,
         "position": { "top": 113, "left": 74 },
-        "type": "beaver"
+        "type": "beaver",
+        "highlightColor": "primary"
       },
       {
         "id": "power",
         "size": 52,
         "position": { "top": 113, "left": 134 },
-        "type": "beaver"
+        "type": "beaver",
+        "highlightColor": "primary"
       }
     ],
     "leds": [
