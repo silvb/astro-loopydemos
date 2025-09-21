@@ -1,0 +1,99 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "fat_distortion",
+      "label": "Fat Distortion",
+      "settings": {
+        "fat": 7,
+        "muscle": 3.5,
+        "air": 2,
+        "exhaust": 8,
+        "vacuum": 2,
+        "power": 10
+      }
+    },
+    {
+      "id": "space_needle_cut",
+      "label": "Space Needle Cut",
+      "settings": {
+        "fat": 3.5,
+        "muscle": 8,
+        "air": 6,
+        "exhaust": 7,
+        "vacuum": 5,
+        "power": 6
+      }
+    },
+    {
+      "id": "scooped_octave",
+      "label": "Scooped Octave",
+      "settings": {
+        "fat": 5,
+        "muscle": 0,
+        "air": 8,
+        "exhaust": 7,
+        "vacuum": 8,
+        "power": 10
+      }
+    },
+    {
+      "id": "edgy_drive",
+      "label": "Edgy Drive",
+      "settings": {
+        "fat": 4,
+        "muscle": 8,
+        "air": 4,
+        "exhaust": 7,
+        "vacuum": 0,
+        "power": 2
+      }
+    },
+    {
+      "id": "fat_knob",
+      "label": "Fat",
+      "isSweep": true,
+      "target": "fat",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "muscle": 2,
+        "air": 4,
+        "exhaust": 7,
+        "vacuum": 2,
+        "power": 8
+      }
+    },
+    {
+      "id": "muscle_knob",
+      "label": "Muscle",
+      "isSweep": true,
+      "target": "muscle",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "fat": 5,
+        "air": 2,
+        "exhaust": 7,
+        "vacuum": 2,
+        "power": 8
+      }
+    },
+    {
+      "id": "air_knob",
+      "label": "Air",
+      "isSweep": true,
+      "target": "air",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": {
+        "fat": 5,
+        "muscle": 2,
+        "exhaust": 7,
+        "vacuum": 2,
+        "power": 8
+      }
+    }
+  ]
+}
