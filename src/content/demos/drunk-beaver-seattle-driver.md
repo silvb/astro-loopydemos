@@ -11,16 +11,14 @@ tags:
   - big muff
   - distortion
 externalLinks:
-  thomann: ...
-  builderLink: ...
-  sweetwater: ...
+  builderLink: https://drunk-beaver.rocks/products/seattle-driver
 ---
 
 Write some copy about the Seattle Driver by Drunk Beaver.
 
 ### Signal Chain
 
-- Squier Classic Vibe Jazzmaster with Wide Range Humbucker in the bridge position (bridge pickup)
+- Fender Duo Sonic (single coils) in the bridge position
 - Seattle Driver
-- [Mixwave Benson Chimera Plugin*](https://sweetwater.sjv.io/B0N2PL)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)
 - A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)
