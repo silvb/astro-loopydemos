@@ -10,7 +10,7 @@
     "astro": "astro",
     "lint": "biome check --write --unsafe",
     "lint:precommit": "biome check",
-    "create-demo": "node scripts/create-demo.mjs && pnpm run lint",
+    "create-demo": "node scripts/create-demo.mjs && pnpm run lint && pnpm run create-meta-images",
     "create-seo-images": "node scripts/create-seo-images.mjs",
     "create-meta-images": "node scripts/create-meta-images.mjs"
   },

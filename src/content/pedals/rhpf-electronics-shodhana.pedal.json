@@ -1,0 +1,46 @@
+{
+  "name": "rhpf-electronics-shodhana",
+  "controls": {
+    "knobs": [
+      {
+        "id": "drive",
+        "size": 48,
+        "position": { "top": 32, "left": 17 },
+        "type": "davies",
+        "colors": {
+          "primary": "aliceblue",
+          "tick": "black"
+        }
+      },
+      {
+        "id": "level",
+        "size": 48,
+        "position": { "top": 32, "left": 136 },
+        "type": "davies",
+        "colors": {
+          "primary": "aliceblue",
+          "tick": "black"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 30,
+        "position": { "top": 168, "left": 85 },
+        "colors": {
+          "on": "#f1f88b",
+          "off": "#2f4f2f77"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 278, "left": 76 }
+      }
+    ]
+  }
+}
