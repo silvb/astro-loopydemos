@@ -1,8 +1,8 @@
 import fs from "node:fs"
 import pkg from "enquirer"
-const { prompt } = pkg
-import {convertImage, imageSourcePath} from './utils.mjs'
+import { convertImage, imageSourcePath } from './utils.mjs'
 import path from "node:path"
+const { prompt } = pkg
 
 const capitalizeString = (string = "") =>
   string.slice(0, 1).toUpperCase() + string.slice(1)
@@ -145,7 +145,7 @@ const getDefaultControls = ({ knobs = [], toggles = [], slug = "" }) => ({
         name: "guitar",
         message: "Which guitar did you play?",
         choices: [
-          "Squier Classic Vibe Jazzmaster with Wide Range Humbucker in the bridge position",
+          "Squier Classic Vibe Jazzmaster",
           "Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups",
           "Fidelity Guitars Stellarosa with Mojo Lipstick Pickups",
           "Eiphone SG Special with Mojo Pickups Gold Foil in the neck, Mojotron in the bridge position",
