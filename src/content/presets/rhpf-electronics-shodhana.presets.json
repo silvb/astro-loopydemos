@@ -18,6 +18,30 @@
       "settings": { "drive": 8, "level": 4 }
     },
     {
+      "id": "gain_stack",
+      "label": "Gain Stack",
+      "chain": [
+        {
+          "pedalSlug": "rhpf-electronics-mosferatwo",
+          "id": "mosferatwo",
+          "settings": {
+            "drive": 7,
+            "focus": 7,
+            "level": 7,
+            "heart": 6,
+            "bite": 8,
+            "heart_freq": 3,
+            "bite_freq": 3
+          }
+        },
+        {
+          "pedalSlug": "rhpf-electronics-shodhana",
+          "id": "shodhana",
+          "settings": { "drive": 8, "level": 4 }
+        }
+      ]
+    },
+    {
       "id": "drive_knob",
       "label": "Drive",
       "isSweep": true,
