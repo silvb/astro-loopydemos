@@ -1,0 +1,61 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "bright_spring",
+      "label": "Bright Spring",
+      "settings": { "mix": 3, "level": 5, "impact": 7, "tone": 9 }
+    },
+    {
+      "id": "dark_feedback",
+      "label": "Dark Feedback",
+      "settings": { "mix": 6, "level": 6, "impact": 9, "tone": 2 }
+    },
+    {
+      "id": "subtle_atmosphere",
+      "label": "Subtle Atmosphere",
+      "settings": { "mix": 5, "level": 5, "impact": 5, "tone": 5 }
+    },
+    {
+      "id": "clean_drip",
+      "label": "Clean Drip",
+      "settings": { "mix": 8, "level": 4, "impact": 0, "tone": 7 }
+    },
+    {
+      "id": "grainy_verb",
+      "label": "Grainy Verb",
+      "secondaryCircuitId": "splash_circuit",
+      "secondaryCircuitSlug": "grainy_verb_splash",
+      "secondaryCircuitOnlySlug": "clean",
+      "settings": { "mix": 7.5, "level": 6, "impact": 2, "tone": 4 }
+    },
+    {
+      "id": "mix_knob",
+      "label": "Amount",
+      "isSweep": true,
+      "target": "mix",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "level": 5, "impact": 5, "tone": 5 }
+    },
+    {
+      "id": "impact_knob",
+      "label": "Impact",
+      "isSweep": true,
+      "target": "impact",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "level": 5, "mix": 7, "tone": 5 }
+    },
+    {
+      "id": "tone_knob",
+      "label": "Tone",
+      "isSweep": true,
+      "target": "tone",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "level": 5, "mix": 8, "impact": 0 }
+    }
+  ]
+}

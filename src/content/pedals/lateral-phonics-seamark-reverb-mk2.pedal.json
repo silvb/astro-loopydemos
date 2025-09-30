@@ -1,0 +1,88 @@
+{
+  "name": "lateral-phonics-seamark-reverb-mk2",
+  "width": 400,
+  "height": 280,
+  "controls": {
+    "knobs": [
+      {
+        "id": "mix",
+        "size": 60,
+        "position": { "top": 35, "left": 234 },
+        "type": "brutalist",
+        "colors": {
+          "primary": "#212121",
+          "tick": "#fff",
+          "secondary": "#212121",
+          "edge": "#444"
+        }
+      },
+      {
+        "id": "level",
+        "size": 60,
+        "position": { "top": 35, "left": 320 },
+        "type": "brutalist",
+        "colors": {
+          "primary": "#212121",
+          "tick": "#fff",
+          "secondary": "#212121",
+          "edge": "#444"
+        }
+      },
+      {
+        "id": "impact",
+        "size": 60,
+        "position": { "top": 115, "left": 234 },
+        "type": "brutalist",
+        "colors": {
+          "primary": "#212121",
+          "tick": "#fff",
+          "secondary": "#212121",
+          "edge": "#444"
+        }
+      },
+      {
+        "id": "tone",
+        "size": 60,
+        "position": { "top": 115, "left": 320 },
+        "type": "brutalist",
+        "colors": {
+          "primary": "#212121",
+          "tick": "#fff",
+          "secondary": "#212121",
+          "edge": "#444"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "position": { "top": 51, "left": 84 },
+        "colors": { "on": "#bcfff9", "off": "#00000099" }
+      },
+      {
+        "id": "splash_led",
+        "secondaryCircuitId": "splash_circuit",
+        "requiresMainCircuitForSecondary": true,
+        "size": 40,
+        "position": { "top": 47, "left": 80 },
+        "colors": { "on": "#bcfff9" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 211, "left": 281 }
+      },
+      {
+        "id": "splash",
+        "type": "stomp",
+        "secondaryCircuitId": "splash_circuit",
+        "size": 48,
+        "position": { "top": 211, "left": 79 }
+      }
+    ]
+  }
+}
