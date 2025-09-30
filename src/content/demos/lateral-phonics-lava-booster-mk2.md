@@ -4,7 +4,7 @@ model: Lava Booster Mk2
 slug: lateral-phonics-lava-booster-mk2
 type: demo
 isSponsored: true
-date: 2025-09-26
+date: 2025-09-30
 tags:
   - boost
   - dirty boost
