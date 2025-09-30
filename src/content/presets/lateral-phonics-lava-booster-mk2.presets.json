@@ -1,0 +1,79 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "just_boost",
+      "label": "Just Boost",
+      "settings": { "boost": 8 }
+    },
+    {
+      "id": "knife_boost",
+      "label": "Into Knife OD",
+      "chain": [
+        {
+          "pedalSlug": "lateral-phonics-knife-od-fuzz",
+          "id": "knife",
+          "secondaryCircuitId": "fuzz",
+          "secondaryCircuitOnlySlug": "clean",
+          "secondaryCircuitSlug": "knife_fuzz",
+          "settings": { "vol": 6, "shape": 2, "attack": 7 }
+        },
+        {
+          "pedalSlug": "lateral-phonics-lava-booster-mk2",
+          "id": "lava",
+          "settings": { "boost": 8 }
+        }
+      ]
+    },
+    {
+      "id": "deadman_boost",
+      "label": "Into Deadman Fuzz",
+      "chain": [
+        {
+          "pedalSlug": "lateral-phonics-deadman-fuzz-mk2",
+          "id": "deadman",
+          "settings": { "volume": 6, "low_cut": 2, "fuzz": 4 }
+        },
+        {
+          "pedalSlug": "lateral-phonics-lava-booster-mk2",
+          "id": "lava",
+          "settings": { "boost": 8 }
+        }
+      ]
+    },
+    {
+      "id": "marrakesh_boost",
+      "label": "Into Marrakesh Console",
+      "noLabels": true,
+      "chain": [
+        {
+          "pedalSlug": "lateral-phonics-marrakesh-console-mk2",
+          "id": "marrakesh",
+          "settings": {
+            "treble": 7,
+            "threshold": 0,
+            "bass": 6,
+            "volume": 6,
+            "saturation": 1,
+            "headroom": 3
+          }
+        },
+        {
+          "pedalSlug": "lateral-phonics-lava-booster-mk2",
+          "id": "lava",
+          "settings": { "boost": 10 }
+        }
+      ]
+    },
+    {
+      "id": "boost_knob",
+      "label": "Boost",
+      "isSweep": true,
+      "target": "boost",
+      "initialValue": 0,
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "settings": {}
+    }
+  ]
+}
