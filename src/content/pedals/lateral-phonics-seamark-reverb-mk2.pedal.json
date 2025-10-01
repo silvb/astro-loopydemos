@@ -83,6 +83,33 @@
         "size": 48,
         "position": { "top": 211, "left": 79 }
       }
+    ],
+    "labels": [
+      {
+        "id": "mix_label",
+        "position": { "left": 240, "top": 80 },
+        "labelPosition": { "left": -5, "top": 40 }
+      },
+      {
+        "id": "level_label",
+        "position": { "left": 377, "top": 56 },
+        "labelPosition": { "left": 405, "top": 109 }
+      },
+      {
+        "id": "impact_label",
+        "position": { "left": 238, "top": 140 },
+        "labelPosition": { "left": -5, "top": 110 }
+      },
+      {
+        "id": "tone_label",
+        "position": { "left": 370, "top": 130 },
+        "labelPosition": { "left": 405, "top": 180 }
+      },
+      {
+        "id": "splash_label",
+        "position": { "left": 80, "top": 230 },
+        "labelPosition": { "left": -5, "top": 180 }
+      }
     ]
   }
 }

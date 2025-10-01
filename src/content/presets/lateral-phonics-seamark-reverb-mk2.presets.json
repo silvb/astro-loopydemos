@@ -5,7 +5,17 @@
     {
       "id": "bright_spring",
       "label": "Bright Spring",
-      "settings": { "mix": 3, "level": 5, "impact": 7, "tone": 9 }
+      "settings": {
+        "mix": 3,
+        "level": 5,
+        "impact": 7,
+        "tone": 9,
+        "mix_label": "Amount",
+        "level_label": "Level",
+        "impact_label": "Impact",
+        "tone_label": "Tone",
+        "splash_label": "Splash Button"
+      }
     },
     {
       "id": "dark_feedback",
@@ -28,7 +38,14 @@
       "secondaryCircuitId": "splash_circuit",
       "secondaryCircuitSlug": "grainy_verb_splash",
       "secondaryCircuitOnlySlug": "clean",
-      "settings": { "mix": 7.5, "level": 6, "impact": 2, "tone": 4 }
+      "settings": {
+        "mix": 7.5,
+        "level": 6,
+        "impact": 2,
+        "tone": 4,
+        "impact_label": "Impact",
+        "splash_label": "Splash: sets Impact to maximum"
+      }
     },
     {
       "id": "mix_knob",
