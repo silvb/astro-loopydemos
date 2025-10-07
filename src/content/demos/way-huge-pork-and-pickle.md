@@ -25,6 +25,6 @@ Both the OD and the Fuzz side can give you a very robust, full-bodied bass tone 
 
 - [JMJ Fender Mustang\*](https://sweetwater.sjv.io/R5A6bg), [La Bella Flats\*](https://sweetwater.sjv.io/WqZN6Z) and Curtis Novak Fat Mustang pickups, played with [0.73mm Dunlop Tortex pick\*](https://sweetwater.sjv.io/gOO5r2)
 - Pork & Pickle
-- [Bogren Digital Bassknob STD](https://bogrendigital.com/collections/ampknob/products/bassknob-std) set to clean
+- [Bogren Digital Bassknob STD\*](https://www.thomann.de/intl/bogren_digital_bassknob_std.htm?offid=1&affid=3396) set to clean
 - [UAD Pultec EQP-1A\*](https://sweetwater.sjv.io/GmxWGn) to shape some mids (makes the bass stand out a little more against the drums and it's easier to hear differences between the pedals)
 - Some more EQ with the stock Logic Pro X Channel EQ to make the bass sit well in the mix

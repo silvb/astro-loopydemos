@@ -30,4 +30,4 @@ Instead, the Blumes is just well-voiced for bass from the get-go. It let's throu
 
 - [JMJ Fender Mustang\*](https://sweetwater.sjv.io/R5A6bg), [La Bella Flats\*](https://sweetwater.sjv.io/WqZN6Z), played with pick, tone 100%
 - Blumes
-- [Bogren Digital Bassknob STD](https://bogrendigital.com/collections/ampknob/products/bassknob-std) set to clean
+- [Bogren Digital Bassknob STD\*](https://www.thomann.de/intl/bogren_digital_bassknob_std.htm?offid=1&affid=3396) set to clean

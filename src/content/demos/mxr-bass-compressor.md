@@ -26,5 +26,4 @@ The M87 really shines when you need professional results without the learning cu
 
 - [JMJ Fender Mustang\*](https://sweetwater.sjv.io/R5A6bg), [La Bella Flats\*](https://sweetwater.sjv.io/WqZN6Z) and Curtis Novak Fat Mustang pickups, played with [0.60mm Dunlop Tortex Triangle pick\*](https://sweetwater.sjv.io/7akO2A)
 - Bass Compressor
-- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)
-- A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)
+- [Bogren Digital Bassknob STD\*](https://www.thomann.de/intl/bogren_digital_bassknob_std.htm?offid=1&affid=3396)

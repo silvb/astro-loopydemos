@@ -22,4 +22,4 @@ Whilst being a simple distortion box, the Basstorion has a versatile range from 
 
 - Greco Jazz Bass with Maxon pickups
 - Basstortion
-- [Bogren Digital Bassknob STD](https://bogrendigital.com/collections/ampknob/products/bassknob-std) set to clean
+- [Bogren Digital Bassknob STD\*](https://www.thomann.de/intl/bogren_digital_bassknob_std.htm?offid=1&affid=3396) set to clean

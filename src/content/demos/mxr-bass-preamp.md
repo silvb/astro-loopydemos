@@ -25,4 +25,4 @@ In a pinch, you can easily survive your gig with just your bass, this pedal and 
 
 - [JMJ Fender Mustang\*](https://sweetwater.sjv.io/R5A6bg), [La Bella Flats\*](https://sweetwater.sjv.io/WqZN6Z), played with fingers, tone 100%
 - Bass Preamp
-- [Bogren Digital Bassknob STD](https://bogrendigital.com/collections/ampknob/products/bassknob-std) set to clean
+- [Bogren Digital Bassknob STD\*](https://www.thomann.de/intl/bogren_digital_bassknob_std.htm?offid=1&affid=3396) set to clean
