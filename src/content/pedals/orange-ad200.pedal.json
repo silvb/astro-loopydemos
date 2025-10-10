@@ -9,31 +9,36 @@
         "id": "vol",
         "size": 52,
         "position": { "top": 207, "left": 242 },
-        "type": "orange"
+        "type": "orange",
+        "highlightColor": "primary"
       },
       {
         "id": "treble",
         "size": 28,
         "position": { "top": 219, "left": 317 },
-        "type": "orange"
+        "type": "orange",
+        "highlightColor": "primary"
       },
       {
         "id": "mids",
         "size": 28,
         "position": { "top": 219, "left": 367 },
-        "type": "orange"
+        "type": "orange",
+        "highlightColor": "primary"
       },
       {
         "id": "bass",
         "size": 28,
         "position": { "top": 219, "left": 417 },
-        "type": "orange"
+        "type": "orange",
+        "highlightColor": "primary"
       },
       {
         "id": "gain",
         "size": 52,
         "position": { "top": 207, "left": 468 },
-        "type": "orange"
+        "type": "orange",
+        "highlightColor": "primary"
       }
     ],
     "leds": [
@@ -49,7 +54,20 @@
         "id": "clean_switch",
         "type": "toggle",
         "size": 20,
-        "position": { "top": 216, "left": 447 }
+        "position": { "top": 216, "left": 447 },
+        "highlightColor": "primary"
+      },
+      {
+        "id": "on_switch",
+        "type": "toggle",
+        "size": 28,
+        "position": { "top": 214, "left": 124 }
+      },
+      {
+        "id": "play_switch",
+        "type": "toggle",
+        "size": 28,
+        "position": { "top": 214, "left": 158 }
       }
     ]
   }
