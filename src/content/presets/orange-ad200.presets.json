@@ -3,6 +3,20 @@
   "volume": 0.65,
   "presets": [
     {
+      "id": "edgy_punch",
+      "label": "Edgy Punch",
+      "settings": {
+        "vol": 6,
+        "treble": 9,
+        "mids": 4,
+        "bass": 7,
+        "gain": 7,
+        "clean_switch": 1,
+        "on_switch": 3,
+        "play_switch": 3
+      }
+    },
+    {
       "id": "hard_rock",
       "label": "Hard Rock",
       "settings": {
@@ -39,20 +53,6 @@
         "mids": 2,
         "bass": 7,
         "gain": 6,
-        "clean_switch": 1,
-        "on_switch": 3,
-        "play_switch": 3
-      }
-    },
-    {
-      "id": "edgy_punch",
-      "label": "Edgy Punch",
-      "settings": {
-        "vol": 6,
-        "treble": 9,
-        "mids": 4,
-        "bass": 7,
-        "gain": 7,
         "clean_switch": 1,
         "on_switch": 3,
         "play_switch": 3
