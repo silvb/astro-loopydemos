@@ -3,32 +3,173 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "hard_rock",
+      "label": "Hard Rock",
       "settings": {
         "vol": 5,
-        "treble": 5,
-        "mids": 5,
-        "bass": 5,
-        "gain": 5,
+        "treble": 8,
+        "mids": 7,
+        "bass": 7,
+        "gain": 8,
+        "clean_switch": 3,
+        "on_switch": 3,
+        "play_switch": 3
+      }
+    },
+    {
+      "id": "vintage_tube",
+      "label": "Vintage Tube",
+      "settings": {
+        "vol": 5,
+        "treble": 8,
+        "mids": 4,
+        "bass": 8,
+        "gain": 6,
+        "clean_switch": 3,
+        "on_switch": 3,
+        "play_switch": 3
+      }
+    },
+    {
+      "id": "clean_warmth",
+      "label": "Clean Warmth",
+      "settings": {
+        "vol": 7,
+        "treble": 10,
+        "mids": 2,
+        "bass": 7,
+        "gain": 6,
         "clean_switch": 1,
         "on_switch": 3,
         "play_switch": 3
       }
     },
     {
-      "id": "vol_knob",
-      "label": "Vol",
+      "id": "edgy_punch",
+      "label": "Edgy Punch",
+      "settings": {
+        "vol": 6,
+        "treble": 9,
+        "mids": 4,
+        "bass": 7,
+        "gain": 7,
+        "clean_switch": 1,
+        "on_switch": 3,
+        "play_switch": 3
+      }
+    },
+    {
+      "id": "smooth_clean",
+      "label": "Smooth Clean",
+      "settings": {
+        "vol": 8,
+        "treble": 7,
+        "mids": 4,
+        "bass": 8,
+        "gain": 3,
+        "clean_switch": 1,
+        "on_switch": 3,
+        "play_switch": 3
+      }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble",
       "isSweep": true,
-      "target": "vol",
+      "target": "treble",
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
       "settings": {
+        "vol": 5,
+        "mids": 4,
+        "bass": 6,
+        "gain": 7,
+        "clean_switch": 3,
+        "on_switch": 3,
+        "play_switch": 3
+      }
+    },
+    {
+      "id": "mids_knob",
+      "label": "Mids",
+      "isSweep": true,
+      "target": "mids",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "vol": 5,
+        "treble": 5,
+        "bass": 6,
+        "gain": 6,
+        "clean_switch": 3,
+        "on_switch": 3,
+        "play_switch": 3
+      }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "vol": 5,
         "treble": 5,
         "mids": 5,
-        "bass": 5,
-        "gain": 5,
+        "gain": 6,
         "clean_switch": 1,
+        "on_switch": 3,
+        "play_switch": 3
+      }
+    },
+    {
+      "id": "clean_toggle",
+      "label": "Clean Switch",
+      "isSweep": true,
+      "target": "clean_switch",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "vol": 5,
+        "treble": 9,
+        "mids": 5,
+        "bass": 7,
+        "gain": 8,
+        "on_switch": 3,
+        "play_switch": 3
+      }
+    },
+    {
+      "id": "clean_gain_knob",
+      "label": "Clean Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 1,
+      "values": [1, 2, 4, 6, 8, 10],
+      "settings": {
+        "vol": 5,
+        "treble": 7,
+        "mids": 7,
+        "bass": 7,
+        "clean_switch": 1,
+        "on_switch": 3,
+        "play_switch": 3
+      }
+    },
+    {
+      "id": "dirty_gain_knob",
+      "label": "Dirty Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 1,
+      "values": [1, 2, 4, 6, 8, 10],
+      "settings": {
+        "vol": 5,
+        "treble": 7,
+        "mids": 7,
+        "bass": 7,
+        "clean_switch": 3,
         "on_switch": 3,
         "play_switch": 3
       }
