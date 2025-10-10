@@ -2,25 +2,25 @@
 builder: Orange
 model: AD200
 slug: orange-ad200
-type: none
+type: demo
 isSponsored: true
-date: 2025-08-24
+date: 2025-10-10
 tags:
   - bass amp
   - tube amp
   - amp head
   - amp
 externalLinks:
-  thomann: ...
-  builderLink: ...
-  sweetwater: ...
+  thomann: orange_ad200
+  builderLink: https://orangeamps.com/products/bass-guitar-amps/bass-valve-systems/ad200/
+  sweetwater: https://sweetwater.sjv.io/N9Lvm1
 ---
 
 Write some copy about the AD200 by Orange.
 
 ### Signal Chain
 
-- [JMJ Fender Mustang*](https://sweetwater.sjv.io/R5A6bg), [La Bella Flats*](https://sweetwater.sjv.io/WqZN6Z) and Curtis Novak Fat Mustang pickups, played with [0.60mm Dunlop Tortex Triangle pick*](https://sweetwater.sjv.io/7akO2A) (neck pickup)
+- Squier Bronco with roundwounds, played with a pick
 - AD200
-- [Mixwave Benson Chimera Plugin*](https://sweetwater.sjv.io/B0N2PL)
-- A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)
+- [Two Notes Torpedo Captor X8\*](https://sweetwater.sjv.io/yq56M2) with [Science Amps IRs for Bass](https://www.scienceamps.com/irs.html)
+- [UAD Pultec EQP-1A plugin\*](https://www.thomann.de/de/universal_audio_pultec_passive_eq_coll._native.htm?offid=1&affid=3396) for a bit of low-end boost

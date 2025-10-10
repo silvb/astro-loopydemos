@@ -50,6 +50,18 @@
         "type": "toggle",
         "size": 20,
         "position": { "top": 216, "left": 447 }
+      },
+      {
+        "id": "on_switch",
+        "type": "toggle",
+        "size": 28,
+        "position": { "top": 214, "left": 124 }
+      },
+      {
+        "id": "play_switch",
+        "type": "toggle",
+        "size": 28,
+        "position": { "top": 214, "left": 158 }
       }
     ]
   }

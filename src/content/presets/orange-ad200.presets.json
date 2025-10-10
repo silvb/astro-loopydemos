@@ -11,7 +11,9 @@
         "mids": 5,
         "bass": 5,
         "gain": 5,
-        "clean_switch": 1
+        "clean_switch": 1,
+        "on_switch": 3,
+        "play_switch": 3
       }
     },
     {
@@ -26,7 +28,9 @@
         "mids": 5,
         "bass": 5,
         "gain": 5,
-        "clean_switch": 1
+        "clean_switch": 1,
+        "on_switch": 3,
+        "play_switch": 3
       }
     }
   ]
