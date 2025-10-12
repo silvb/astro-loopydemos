@@ -214,6 +214,7 @@
         "gain_a": 7,
         "presence_a": 6,
         "bass_a": 7,
+        "treble_a": 6,
         "middle_a": 4,
         "gain_b": 5,
         "vol_b": 5,
@@ -221,7 +222,6 @@
         "bass_b": 5,
         "middle_b": 5,
         "treble_b": 5,
-        "tubby_a": 3,
         "tight_b": 1,
         "channel": 3,
         "on_switch": 3
@@ -357,8 +357,8 @@
       "label": "Tight",
       "isSweep": true,
       "target": "tight_b",
-      "initialValue": 0,
-      "values": [0, 2, 5, 8, 10],
+      "initialValue": 1,
+      "values": [1, 3],
       "settings": {
         "vol_a": 5,
         "gain_a": 5,
