@@ -69,29 +69,10 @@ const DynamicKnobComponent: Component<{
     return <Joystick id={props.id} size={props.size} />
   }
 
-  const [knobElement] = createResource(
+  const [knobComponent] = createResource(
     () => props.type as Exclude<KnobComponentType, "joystick">,
-    async (
-      type: Exclude<KnobComponentType, "joystick">,
-    ): Promise<JSX.Element> => {
-      const KnobComponent = await knobComponentImports[type]()
-
-      // Use specific render functions to avoid union type issues
-      switch (type) {
-        case "arrow":
-        case "offset":
-        case "muff":
-        case "fanclub":
-          return renderArrowKnob(
-            KnobComponent as Component<{ size: number }>,
-            props.size,
-          )
-        default:
-          return renderColoredKnob(
-            KnobComponent as Component<Pick<KnobData, "colors" | "size">>,
-            props.sizeAndColorProps,
-          )
-      }
+    async (type: Exclude<KnobComponentType, "joystick">) => {
+      return await knobComponentImports[type]()
     },
   )
 
@@ -104,7 +85,27 @@ const DynamicKnobComponent: Component<{
         />
       }
     >
-      {knobElement()}
+      {(() => {
+        const KnobComponent = knobComponent()
+        if (!KnobComponent) return null
+
+        // Use specific render functions to avoid union type issues
+        switch (props.type) {
+          case "arrow":
+          case "offset":
+          case "muff":
+          case "fanclub":
+            return renderArrowKnob(
+              KnobComponent as Component<{ size: number }>,
+              props.size,
+            )
+          default:
+            return renderColoredKnob(
+              KnobComponent as Component<Pick<KnobData, "colors" | "size">>,
+              props.sizeAndColorProps,
+            )
+        }
+      })()}
     </Suspense>
   )
 }

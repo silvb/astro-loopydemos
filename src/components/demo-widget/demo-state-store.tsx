@@ -7,6 +7,7 @@ import {
   createMemo,
   createSignal,
   type ParentComponent,
+  untrack,
   useContext,
 } from "solid-js"
 
@@ -104,15 +105,18 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
       activePreset()?.chain?.find(p => p.isSweep)?.values ||
       []
 
+    // Only use provided value or fallback to initialValue - avoid reading sweepSetting() to prevent loops
     const currentValue =
-      (value ?? sweepSetting()[target]) ||
-      activePreset()?.chain?.find(p => p.isSweep)?.initialValue ||
-      activePreset()?.initialValue ||
+      value ??
+      activePreset()?.chain?.find(p => p.isSweep)?.initialValue ??
+      activePreset()?.initialValue ??
       0
 
     const closestValue = findClosestValue(currentValue, values)
 
-    if (closestValue === sweepSetting()[target]) return
+    // Get current sweep value without creating reactive dependency
+    const currentSweepValue = untrack(() => sweepSetting()[target])
+    if (closestValue === currentSweepValue) return
 
     addSweepSetting(target, closestValue)
   }
@@ -141,12 +145,18 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
     pedalSlug: string,
     id?: string,
     dependency?: ControlElement["dependency"],
+    visited = new Set<string>(),
   ): SettingsValue | undefined => {
     if (!id) return
-
     if (!activePedals().includes(pedalSlug)) return
 
+    // Prevent infinite recursion
+    const key = `${pedalSlug}:${id}`
+    if (visited.has(key)) return undefined
+    
     const slug = pedalSlug
+    const newVisited = new Set(visited)
+    newVisited.add(key)
 
     return (
       activePreset()?.chain?.find(chainItem => chainItem.pedalSlug === slug)
@@ -156,7 +166,7 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
       activePreset()?.settings?.[id] ??
       dependency?.values?.find(
         ({ sourceValue }) =>
-          sourceValue === getSetting(slug, dependency.source),
+          sourceValue === getSetting(slug, dependency.source, undefined, newVisited),
       )?.targetValue ??
       sweepSetting()?.[id]
     )
@@ -187,11 +197,16 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
     }
   })
 
-  // Update sweep settings when preset changes
+  // Update sweep settings when preset changes (but not during initial load)
   createEffect(() => {
     const preset = memoizedActivePreset()
     if (!preset) return
-    selectSweepSetting()
+    
+    // Only update sweep settings if we're not in the initialization phase
+    // and the preset actually has sweep capability
+    if (preset.isSweep || preset.chain?.some(p => p.isSweep)) {
+      selectSweepSetting()
+    }
   })
 
   // Batch preset-related state updates only when preset ID changes

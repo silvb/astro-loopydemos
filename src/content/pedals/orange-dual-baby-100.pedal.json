@@ -104,6 +104,12 @@
         "type": "toggle",
         "size": 44,
         "position": { "top": 51, "left": 585 }
+      },
+      {
+        "id": "on_switch",
+        "type": "toggle",
+        "size": 44,
+        "position": { "top": 50, "left": 634 }
       }
     ]
   }

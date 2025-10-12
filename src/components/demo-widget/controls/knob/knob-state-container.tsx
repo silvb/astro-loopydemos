@@ -1,5 +1,5 @@
 import { useDemoState } from "@components/demo-widget/demo-state-store"
-import { type ParentComponent, Show } from "solid-js"
+import { createMemo, type ParentComponent, Show } from "solid-js"
 import { SweepIndicator } from "../sweep-indicator"
 import { DragSweepControl } from "./drag-sweep-control"
 
@@ -17,10 +17,13 @@ export const KnobStateContainer: ParentComponent<
 > = props => {
   const { getSetting, activePedals, isSweepTarget } = useDemoState()
 
-  const level = () => (getSetting(props.pedalSlug, props.id) as number) ?? 5
+  // Memoize computations to prevent excessive re-evaluation
+  const level = createMemo(() => (getSetting(props.pedalSlug, props.id) as number) ?? 5)
+  const isActive = createMemo(() => activePedals().includes(props.pedalSlug))
+  const isSweepTargetMemo = createMemo(() => isSweepTarget(props.id, props.pedalSlug))
 
   return (
-    <Show when={activePedals().includes(props.pedalSlug)}>
+    <Show when={isActive()}>
       <div
         class="relative origin-center"
         classList={{
@@ -32,7 +35,7 @@ export const KnobStateContainer: ParentComponent<
         }}
       >
         <Show
-          when={isSweepTarget(props.id, props.pedalSlug)}
+          when={isSweepTargetMemo()}
           fallback={props.children}
         >
           <DragSweepControl id={props.id} size={props.size}>
