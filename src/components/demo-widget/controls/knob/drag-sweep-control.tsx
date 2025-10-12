@@ -24,13 +24,18 @@ export const DragSweepControl: ParentComponent<
       activePreset()?.chain?.find(p => p.isSweep)?.initialValue) ??
       0,
   )
+  const [isDragging, setIsDragging] = createSignal(false)
 
   createEffect(() => {
-    selectSweepSetting(level())
+    // Only update sweep setting when actively dragging to prevent initialization loops
+    if (isDragging()) {
+      selectSweepSetting(level())
+    }
   })
 
   const startDrag = (downEvent: MouseEvent | TouchEvent) => {
     downEvent.preventDefault()
+    setIsDragging(true)
 
     const startY =
       downEvent instanceof MouseEvent
@@ -47,17 +52,23 @@ export const DragSweepControl: ParentComponent<
       setLevel(getNextLevel(startLevel, startY, moveY))
     }
 
+    const handleDragEnd = () => {
+      setIsDragging(false)
+    }
+
     const throttledHandleDrag = throttle({ interval: 100 }, handleDrag)
 
     if (downEvent instanceof MouseEvent) {
       document.addEventListener("mousemove", throttledHandleDrag)
       document.addEventListener("mouseup", () => {
         document.removeEventListener("mousemove", throttledHandleDrag)
+        handleDragEnd()
       })
     } else {
       document.addEventListener("touchmove", throttledHandleDrag)
       document.addEventListener("touchend", () => {
         document.removeEventListener("touchmove", throttledHandleDrag)
+        handleDragEnd()
       })
     }
   }
