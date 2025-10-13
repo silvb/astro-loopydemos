@@ -1,6 +1,7 @@
 {
   "name": "orange-o-tone-40",
   "imageSrcSlug": "orange-o-tone-40-controls",
+  "isAmp": true,
   "width": 700,
   "height": 375,
   "controls": {
@@ -9,43 +10,50 @@
         "id": "reverb",
         "size": 48,
         "position": { "top": 49, "left": 217 },
-        "type": "orange"
+        "type": "orange",
+        "highlightColor": "primary"
       },
       {
         "id": "tremolo_depth",
         "size": 32,
         "position": { "top": 56, "left": 272 },
-        "type": "orange"
+        "type": "orange",
+        "highlightColor": "primary"
       },
       {
         "id": "tremolo_speed",
         "size": 32,
         "position": { "top": 56, "left": 311 },
-        "type": "orange"
+        "type": "orange",
+        "highlightColor": "primary"
       },
       {
         "id": "bass",
         "size": 32,
         "position": { "top": 56, "left": 351 },
-        "type": "orange"
+        "type": "orange",
+        "highlightColor": "primary"
       },
       {
         "id": "mids",
         "size": 32,
         "position": { "top": 56, "left": 390 },
-        "type": "orange"
+        "type": "orange",
+        "highlightColor": "primary"
       },
       {
         "id": "treble",
         "size": 32,
         "position": { "top": 56, "left": 429 },
-        "type": "orange"
+        "type": "orange",
+        "highlightColor": "primary"
       },
       {
         "id": "volume",
         "size": 48,
         "position": { "top": 49, "left": 469 },
-        "type": "orange"
+        "type": "orange",
+        "highlightColor": "primary"
       }
     ],
     "leds": [
