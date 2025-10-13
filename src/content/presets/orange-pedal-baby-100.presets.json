@@ -50,8 +50,7 @@
             "volume_1": 5,
             "volume_2": 5,
             "shape": 3,
-            "gain": 4,
-            "vol_1_led": true
+            "gain": 4
           }
         }
       ]

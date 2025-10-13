@@ -8,7 +8,7 @@
       "settings": {
         "presence": 5,
         "fs_vol": 0,
-        "vol": 3.5,
+        "vol": 5,
         "treble": 5,
         "mids": 5,
         "bass": 5,
@@ -22,10 +22,10 @@
       "id": "nice_eq",
       "label": "Nice EQ",
       "settings": {
-        "presence": 6,
+        "presence": 4,
         "fs_vol": 0,
-        "vol": 3.5,
-        "treble": 5,
+        "vol": 5,
+        "treble": 6,
         "mids": 7,
         "bass": 6,
         "gain": 5,
@@ -40,9 +40,9 @@
       "settings": {
         "presence": 5,
         "fs_vol": 0,
-        "vol": 2,
+        "vol": 5,
         "treble": 6,
-        "mids": 8,
+        "mids": 4,
         "bass": 7,
         "gain": 8,
         "bright_switch": 2,
@@ -51,122 +51,20 @@
       }
     },
     {
-      "id": "clean_and_drive",
-      "label": "Clean Platform and Drive",
-      "chain": [
-        {
-          "pedalSlug": "orange-or30",
-          "id": "or30",
-          "settings": {
-            "presence": 6,
-            "fs_vol": 0,
-            "vol": 4,
-            "treble": 7,
-            "mids": 3,
-            "bass": 7,
-            "gain": 3.5,
-            "bright_switch": 2,
-            "on_switch": 3,
-            "play_switch": 3
-          }
-        },
-        {
-          "pedalSlug": "boss-blues-driver-bd-2w",
-          "id": "drive",
-          "settings": { "level": 7, "tone": 4, "gain": 7, "mode": 1 }
-        }
-      ]
-    },
-    {
-      "id": "clean_and_driveboost",
-      "label": "Clean and Drive/Boost",
-      "chain": [
-        {
-          "pedalSlug": "orange-or30",
-          "id": "or30",
-          "settings": {
-            "presence": 5,
-            "fs_vol": 0,
-            "vol": 3,
-            "treble": 6,
-            "mids": 4,
-            "bass": 8,
-            "gain": 4,
-            "bright_switch": 2,
-            "on_switch": 3,
-            "play_switch": 3
-          }
-        },
-        {
-          "pedalSlug": "twilight-pulse-audioworks-konstante",
-          "id": "konstante",
-          "secondaryCircuitOnlySlug": "pre_only",
-          "secondaryCircuitSlug": "konstante_pre",
-          "secondaryCircuitId": "pre_circuit",
-          "settings": { "loud": 8, "gain": 6, "freq": 2, "pre": 10, "ord": 1 }
-        }
-      ]
-    },
-    {
-      "id": "with_overdrive",
-      "label": "Edge of Breakup Stacked with Overdrive",
-      "chain": [
-        {
-          "pedalSlug": "orange-or30",
-          "id": "or30",
-          "settings": {
-            "presence": 7.8,
-            "fs_vol": 0,
-            "vol": 2.5,
-            "treble": 5,
-            "mids": 3,
-            "bass": 7,
-            "gain": 5,
-            "bright_switch": 2,
-            "on_switch": 3,
-            "play_switch": 3
-          }
-        },
-        {
-          "pedalSlug": "boss-blues-driver-bd-2w",
-          "id": "drive",
-          "settings": { "level": 6, "tone": 5, "gain": 5, "mode": 1 }
-        }
-      ]
-    },
-    {
-      "id": "with_fuzz",
-      "label": "Wall of Fuzz",
-      "chain": [
-        {
-          "pedalSlug": "orange-or30",
-          "id": "or30",
-          "settings": {
-            "presence": 6,
-            "fs_vol": 0,
-            "vol": 2,
-            "treble": 7,
-            "mids": 7,
-            "bass": 6,
-            "gain": 6,
-            "bright_switch": 2,
-            "on_switch": 3,
-            "play_switch": 3
-          }
-        },
-        {
-          "pedalSlug": "okko-fx-bfgrmwb",
-          "id": "fuzz",
-          "settings": {
-            "distortion": 10,
-            "volume": 8,
-            "tone": 4,
-            "mid_range": 6,
-            "rumble": 10,
-            "presence": 6
-          }
-        }
-      ]
+      "id": "clean_platform",
+      "label": "Clean Platform",
+      "settings": {
+        "presence": 5,
+        "fs_vol": 0,
+        "vol": 8,
+        "treble": 6,
+        "mids": 2,
+        "bass": 7,
+        "gain": 3.5,
+        "bright_switch": 2,
+        "on_switch": 3,
+        "play_switch": 3
+      }
     },
     {
       "id": "mean_gain_stack",
@@ -176,9 +74,9 @@
           "pedalSlug": "orange-or30",
           "id": "or30",
           "settings": {
-            "presence": 7,
+            "presence": 5,
             "fs_vol": 0,
-            "vol": 2.2,
+            "vol": 5,
             "treble": 6,
             "mids": 5,
             "bass": 7,
@@ -191,12 +89,13 @@
         {
           "pedalSlug": "orange-terror-stamp",
           "id": "terror",
+          "secondaryCircuitId": "vol_two",
+          "secondaryCircuitOnlySlug": "terror_vol_two",
           "settings": {
-            "volume_1": 5,
-            "volume_2": 5,
+            "volume_1": 6,
+            "volume_2": 10,
             "shape": 3,
-            "gain": 7,
-            "vol_1_led": true
+            "gain": 4
           }
         }
       ]
@@ -210,7 +109,7 @@
       "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
       "settings": {
         "fs_vol": 0,
-        "vol": 2,
+        "vol": 5,
         "treble": 5,
         "mids": 4,
         "bass": 7,
@@ -229,8 +128,8 @@
       "values": [0, 2, 4, 6, 8, 10],
       "settings": {
         "fs_vol": 0,
-        "vol": 2,
-        "presence": 7,
+        "vol": 5,
+        "presence": 5,
         "mids": 5,
         "bass": 5,
         "gain": 6,
@@ -248,8 +147,8 @@
       "values": [0, 2, 4, 6, 8, 10],
       "settings": {
         "fs_vol": 0,
-        "vol": 2,
-        "presence": 7,
+        "vol": 5,
+        "presence": 5,
         "treble": 5,
         "bass": 5,
         "gain": 6,
@@ -267,8 +166,8 @@
       "values": [0, 2, 4, 6, 8, 10],
       "settings": {
         "fs_vol": 0,
-        "vol": 2,
-        "presence": 7,
+        "vol": 5,
+        "presence": 5,
         "treble": 5,
         "mids": 5,
         "gain": 6,
@@ -285,12 +184,12 @@
       "initialValue": 2,
       "values": [2, 3, 4, 5, 6, 7, 8, 9, 10],
       "settings": {
-        "presence": 7,
+        "presence": 6,
         "fs_vol": 0,
-        "vol": 2,
-        "treble": 5,
+        "vol": 5,
+        "treble": 4,
         "mids": 4,
-        "bass": 7,
+        "bass": 6,
         "bright_switch": 2,
         "on_switch": 3,
         "play_switch": 3
@@ -304,13 +203,13 @@
       "initialValue": 1,
       "values": [1, 2, 3],
       "settings": {
-        "presence": 7,
+        "presence": 4,
         "fs_vol": 0,
         "vol": 5,
-        "treble": 5,
-        "mids": 5,
-        "bass": 7,
-        "gain": 4,
+        "treble": 4,
+        "mids": 4,
+        "bass": 5,
+        "gain": 5,
         "on_switch": 3,
         "play_switch": 3
       }
