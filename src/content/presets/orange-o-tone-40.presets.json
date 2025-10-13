@@ -3,16 +3,126 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "sweet_clean",
+      "label": "Sweet Clean (Line-out + IR)",
       "settings": {
-        "reverb": 5,
-        "tremolo_depth": 5,
-        "tremolo_speed": 5,
-        "bass": 5,
-        "mids": 5,
-        "treble": 5,
-        "volume": 5
+        "reverb": 3,
+        "tremolo_depth": 0,
+        "tremolo_speed": 0,
+        "bass": 6,
+        "mids": 4,
+        "treble": 6,
+        "volume": 3
+      }
+    },
+    {
+      "id": "sweet_clean_mic",
+      "label": "Sweet Clean (🎤)",
+      "settings": {
+        "reverb": 3,
+        "tremolo_depth": 0,
+        "tremolo_speed": 0,
+        "bass": 6,
+        "mids": 4,
+        "treble": 6,
+        "volume": 4
+      }
+    },
+    {
+      "id": "sweet_clean_headphones",
+      "label": "Sweet Clean (🎧)",
+      "settings": {
+        "reverb": 3,
+        "tremolo_depth": 0,
+        "tremolo_speed": 0,
+        "bass": 6,
+        "mids": 4,
+        "treble": 6,
+        "volume": 2
+      }
+    },
+    {
+      "id": "with_drive",
+      "label": "With Drive (IR)",
+      "chain": [
+        {
+          "pedalSlug": "orange-o-tone-40",
+          "id": "otone",
+          "settings": {
+            "reverb": 5,
+            "tremolo_depth": 0,
+            "tremolo_speed": 0,
+            "bass": 7,
+            "mids": 7,
+            "treble": 5,
+            "volume": 2
+          }
+        },
+        {
+          "pedalSlug": "orange-terror-stamp",
+          "id": "terror",
+          "settings": {
+            "volume_1": 7,
+            "volume_2": 5,
+            "shape": 2,
+            "gain": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "with_drive_mic",
+      "label": "With Drive (🎤)",
+      "chain": [
+        {
+          "pedalSlug": "orange-o-tone-40",
+          "id": "otone",
+          "settings": {
+            "reverb": 5,
+            "tremolo_depth": 0,
+            "tremolo_speed": 0,
+            "bass": 7,
+            "mids": 7,
+            "treble": 5,
+            "volume": 2
+          }
+        },
+        {
+          "pedalSlug": "orange-terror-stamp",
+          "id": "terror",
+          "settings": {
+            "volume_1": 7,
+            "volume_2": 5,
+            "shape": 2,
+            "gain": 4
+          }
+        }
+      ]
+    },
+    {
+      "id": "ambient_vibe",
+      "label": "Ambient Vibe",
+      "settings": {
+        "reverb": 7,
+        "tremolo_depth": 6,
+        "tremolo_speed": 3,
+        "bass": 7,
+        "mids": 6,
+        "treble": 6,
+        "volume": 3
+      }
+    },
+    {
+      "id": "chill_surf",
+      "label": "Chill Surf",
+      "settings": {
+        "reverb": 10,
+        "tremolo_depth": 0,
+        "tremolo_speed": 0,
+        "bass": 8,
+        "mids": 2,
+        "treble": 9,
+        "volume": 3
       }
     },
     {
@@ -23,12 +133,92 @@
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
       "settings": {
-        "tremolo_depth": 5,
-        "tremolo_speed": 5,
-        "bass": 5,
+        "tremolo_depth": 0,
+        "tremolo_speed": 0,
+        "bass": 6,
+        "mids": 4,
+        "treble": 6,
+        "volume": 3
+      }
+    },
+    {
+      "id": "tremolo_depth_knob",
+      "label": "Tremolo Depth",
+      "isSweep": true,
+      "target": "tremolo_depth",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "reverb": 0,
+        "tremolo_speed": 8,
+        "bass": 6,
+        "mids": 4,
+        "treble": 6,
+        "volume": 3
+      }
+    },
+    {
+      "id": "tremolo_speed_knob",
+      "label": "Tremolo Speed",
+      "isSweep": true,
+      "target": "tremolo_speed",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "reverb": 0,
+        "tremolo_depth": 7,
+        "bass": 6,
+        "mids": 4,
+        "treble": 6,
+        "volume": 3
+      }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "reverb": 3,
+        "tremolo_speed": 0,
+        "tremolo_depth": 0,
         "mids": 5,
         "treble": 5,
-        "volume": 5
+        "volume": 3
+      }
+    },
+    {
+      "id": "mids_knob",
+      "label": "Mids",
+      "isSweep": true,
+      "target": "mids",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "reverb": 3,
+        "tremolo_speed": 0,
+        "tremolo_depth": 0,
+        "bass": 5,
+        "treble": 5,
+        "volume": 3
+      }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble",
+      "isSweep": true,
+      "target": "treble",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "reverb": 3,
+        "tremolo_speed": 0,
+        "tremolo_depth": 0,
+        "bass": 5,
+        "mids": 5,
+        "volume": 3
       }
     }
   ]
