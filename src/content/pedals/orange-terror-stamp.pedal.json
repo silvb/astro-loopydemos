@@ -55,7 +55,7 @@
     ],
     "leds": [
       {
-        "id": "vol_1_led",
+        "id": "on_led",
         "size": 32,
         "position": { "top": 149, "left": 58 },
         "colors": { "on": "#f80" }
@@ -64,7 +64,17 @@
         "id": "vol_2_led",
         "size": 32,
         "position": { "top": 149, "left": 144 },
-        "colors": { "on": "#f80" }
+        "colors": { "on": "#f80" },
+        "secondaryCircuitId": "vol_two"
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "secondaryCircuitId": "vol_two",
+        "size": 48,
+        "position": { "top": 220, "left": 180 },
+        "type": "stomp"
       }
     ]
   }
