@@ -1,0 +1,54 @@
+{
+  "name": "color-audio-cassette-preamp",
+  "controls": {
+    "knobs": [
+      {
+        "id": "gain",
+        "size": 44,
+        "position": { "top": 27, "left": 20 },
+        "type": "walrus"
+      },
+      {
+        "id": "lpf",
+        "size": 44,
+        "position": { "top": 27, "left": 77 },
+        "type": "walrus"
+      },
+      {
+        "id": "level",
+        "size": 44,
+        "position": { "top": 27, "left": 137 },
+        "type": "walrus"
+      },
+      {
+        "id": "bass",
+        "size": 44,
+        "position": { "top": 102, "left": 21 },
+        "type": "walrus"
+      },
+      {
+        "id": "treble",
+        "size": 44,
+        "position": { "top": 102, "left": 135 },
+        "type": "walrus"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 44, "position": { "top": 277, "left": 133 } }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 276, "left": 77 }
+      },
+      {
+        "id": "hpf",
+        "type": "toggle",
+        "size": 32,
+        "position": { "top": 108, "left": 86 }
+      }
+    ]
+  }
+}

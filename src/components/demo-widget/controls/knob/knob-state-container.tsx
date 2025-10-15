@@ -18,9 +18,13 @@ export const KnobStateContainer: ParentComponent<
   const { getSetting, activePedals, isSweepTarget } = useDemoState()
 
   // Memoize computations to prevent excessive re-evaluation
-  const level = createMemo(() => (getSetting(props.pedalSlug, props.id) as number) ?? 5)
+  const level = createMemo(
+    () => (getSetting(props.pedalSlug, props.id) as number) ?? 5,
+  )
   const isActive = createMemo(() => activePedals().includes(props.pedalSlug))
-  const isSweepTargetMemo = createMemo(() => isSweepTarget(props.id, props.pedalSlug))
+  const isSweepTargetMemo = createMemo(() =>
+    isSweepTarget(props.id, props.pedalSlug),
+  )
 
   return (
     <Show when={isActive()}>
@@ -34,10 +38,7 @@ export const KnobStateContainer: ParentComponent<
           transform: `rotate(${props.isRotary ? props.rotaryAngles?.[level() - 1] : 30 * level() - 150}deg)`,
         }}
       >
-        <Show
-          when={isSweepTargetMemo()}
-          fallback={props.children}
-        >
+        <Show when={isSweepTargetMemo()} fallback={props.children}>
           <DragSweepControl id={props.id} size={props.size}>
             <SweepIndicator color={props.highlightColor} size={props.size} />
             {props.children}
