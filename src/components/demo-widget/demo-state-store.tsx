@@ -153,7 +153,7 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
     // Prevent infinite recursion
     const key = `${pedalSlug}:${id}`
     if (visited.has(key)) return undefined
-    
+
     const slug = pedalSlug
     const newVisited = new Set(visited)
     newVisited.add(key)
@@ -166,7 +166,8 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
       activePreset()?.settings?.[id] ??
       dependency?.values?.find(
         ({ sourceValue }) =>
-          sourceValue === getSetting(slug, dependency.source, undefined, newVisited),
+          sourceValue ===
+          getSetting(slug, dependency.source, undefined, newVisited),
       )?.targetValue ??
       sweepSetting()?.[id]
     )
@@ -201,7 +202,7 @@ export const useDemoStateValue = (props: DemoStateProviderProps) => {
   createEffect(() => {
     const preset = memoizedActivePreset()
     if (!preset) return
-    
+
     // Only update sweep settings if we're not in the initialization phase
     // and the preset actually has sweep capability
     if (preset.isSweep || preset.chain?.some(p => p.isSweep)) {

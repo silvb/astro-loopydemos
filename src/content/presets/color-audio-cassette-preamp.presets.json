@@ -1,0 +1,120 @@
+{
+  "hasBackingTrack": true,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "di_saturation",
+      "label": "DI Saturation",
+      "settings": {
+        "gain": 8,
+        "lpf": 5,
+        "level": 6.5,
+        "bass": 6,
+        "treble": 6,
+        "hpf": 3
+      }
+    },
+    {
+      "id": "almost_clean",
+      "label": "Almost Clean",
+      "settings": {
+        "gain": 4,
+        "lpf": 8,
+        "level": 7,
+        "bass": 8,
+        "treble": 8,
+        "hpf": 2
+      }
+    },
+    {
+      "id": "lofi",
+      "label": "Lo-Fi",
+      "chain": [
+        {
+          "id": "preamp",
+          "pedalSlug": "color-audio-cassette-preamp",
+          "settings": {
+            "gain": 5,
+            "lpf": 6,
+            "level": 7,
+            "bass": 6,
+            "treble": 4,
+            "hpf": 2
+          }
+        },
+        {
+          "id": "water",
+          "pedalSlug": "fairfield-circuitry-shallow-water",
+          "settings": {
+            "rate": 8,
+            "lpg": 3,
+            "damp": 1,
+            "mix": 10,
+            "depth": 5,
+            "vol": 2.5
+          }
+        },
+        {
+          "id": "hall",
+          "pedalSlug": "jhs-pedals-3-series-hall-reverb",
+          "settings": {
+            "verb": 3,
+            "dampen": 8,
+            "decay": 5,
+            "modulate": 3
+          }
+        },
+        {
+          "id": "comp",
+          "pedalSlug": "mxr-dyna-comp",
+          "settings": { "output": 8.5, "sens": 7 }
+        }
+      ]
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 0,
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "settings": { "lpf": 7, "level": 6, "bass": 4, "treble": 7.5, "hpf": 3 }
+    },
+    {
+      "id": "lpf_knob",
+      "label": "LPF",
+      "isSweep": true,
+      "target": "lpf",
+      "initialValue": 0,
+      "values": [0, 2, 5, 8, 10],
+      "settings": { "gain": 8, "level": 6, "bass": 5, "treble": 5, "hpf": 3 }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "gain": 5, "level": 6, "lpf": 8, "treble": 5, "hpf": 3 }
+    },
+    {
+      "id": "treble_knob",
+      "label": "Treble",
+      "isSweep": true,
+      "target": "treble",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "gain": 5, "level": 6, "lpf": 8, "bass": 5, "hpf": 3 }
+    },
+    {
+      "id": "hpf_toggle",
+      "label": "HPF",
+      "isSweep": true,
+      "target": "hpf",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": { "gain": 7, "level": 6, "lpf": 7, "bass": 7, "treble": 7 }
+    }
+  ]
+}
