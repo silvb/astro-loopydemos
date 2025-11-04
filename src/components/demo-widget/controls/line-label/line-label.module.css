@@ -1,5 +1,3 @@
-@tailwind components;
-
 .line-label-container {
   z-index: 30;
   pointer-events: none;

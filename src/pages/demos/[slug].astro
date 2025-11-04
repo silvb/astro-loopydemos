@@ -42,7 +42,7 @@ const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
 
 const presetsEntry: CollectionEntry<"presets"> | undefined = await getEntry(
   "presets",
-  `${slug as CollectionEntry<"demos">["slug"]}.presets`,
+  `${slug as CollectionEntry<"demos">["slug"]}.presets`
 )
 
 if (!presetsEntry) {
@@ -69,13 +69,13 @@ const relatedDemos = allDemos
       demo.data.tags?.some((tag: string) => tags?.includes(tag)) ||
       relatedSlugs?.includes(demo.slug) ||
       demo.data.relatedSlugs?.includes(slug) ||
-      pedalsInDemo.includes(demo.slug),
+      pedalsInDemo.includes(demo.slug)
   )
 
 const relatedPosts = allPosts.filter(
   post =>
     post.data.tags?.some((tag: string) => tags?.includes(tag)) ||
-    post.data.relatedSlugs?.includes(slug),
+    post.data.relatedSlugs?.includes(slug)
 )
 
 const isDev = import.meta.env.DEV
@@ -117,10 +117,10 @@ const siteUrl = isDev
                   href={externalLinks.deathcloud}
                   target="_blank"
                   rel="noopener"
-                  >
+                >
                   DeathCloud*
-                </a>
-                {' '} will ship it right away if you're in the US.
+                </a>{" "}
+                will ship it right away if you're in the US.
               </span>
             </li>
           )}

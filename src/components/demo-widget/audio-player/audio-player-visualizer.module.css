@@ -1,5 +1,3 @@
-@tailwind components;
-
 .animate-warp {
   animation: warp var(--duration) ease-out infinite alternate;
   animation-delay: var(--delay);

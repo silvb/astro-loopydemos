@@ -7,10 +7,10 @@ const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
 const latestItem = [...allDemos, ...allPosts]
   .filter(item => ["freeform", "post", "demo"].includes(item.data.type))
   .sort(
-    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime(),
+    (a, b) => new Date(b.data.date).getTime() - new Date(a.data.date).getTime()
   )[0]
 
 return Astro.rewrite(
-  `/${latestItem.data.type === "demo" ? "demos" : "posts"}/${latestItem.slug}`,
+  `/${latestItem.data.type === "demo" ? "demos" : "posts"}/${latestItem.slug}`
 )
 ---

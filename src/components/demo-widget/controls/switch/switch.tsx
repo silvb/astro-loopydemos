@@ -52,8 +52,7 @@ export const Switch: Component<SwitchProps> = props => {
             )?.values
             const numSweepValues = sweepValues?.length ?? 0
 
-            const currIndex =
-              sweepValues?.findIndex(value => value === state()) ?? 0
+            const currIndex = sweepValues?.indexOf(state()) ?? 0
 
             const nextIndex = (currIndex + 1) % numSweepValues
             selectSweepSetting(sweepValues?.[nextIndex] ?? 1)

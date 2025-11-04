@@ -48,7 +48,7 @@ const { slug } = Astro.props
       .join("")
 
     if (urlParams.has(paramName)) {
-      root.style.setProperty(varName, "#" + urlParams.get(paramName))
+      root.style.setProperty(varName, `#${urlParams.get(paramName)}`)
     }
   }
 

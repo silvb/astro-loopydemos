@@ -29,7 +29,7 @@ const allPosts: CollectionEntry<"posts">[] = await getCollection("posts")
 
 const presetsEntry: CollectionEntry<"presets"> | undefined = await getEntry(
   "presets",
-  `${slug as CollectionEntry<"demos">["slug"]}.presets`,
+  `${slug as CollectionEntry<"demos">["slug"]}.presets`
 )
 
 let relatedPedals: string[] = []
@@ -44,7 +44,7 @@ const relatedDemos = allDemos.filter(
     demo.data.tags?.some(tag => tags?.includes(tag)) ||
     relatedSlugs?.includes(demo.slug) ||
     demo.data.relatedSlugs?.includes(slug) ||
-    relatedPedals.includes(demo.slug),
+    relatedPedals.includes(demo.slug)
 )
 
 const relatedPosts = allPosts
@@ -58,7 +58,15 @@ if (type === "freeform") {
 }
 ---
 
-<DemoLayout {slug} {title} {date} {type} {excerpt} {coverImage} noIndex={type === "none"}>
+<DemoLayout
+  {slug}
+  {title}
+  {date}
+  {type}
+  {excerpt}
+  {coverImage}
+  noIndex={type === "none"}
+>
   <Content />
   {
     relatedDemos.length > 0 && (
