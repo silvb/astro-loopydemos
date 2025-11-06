@@ -35,7 +35,7 @@ const siteUrl = isDev
 
 const presetsEntry: CollectionEntry<"presets"> | undefined = await getEntry(
   "presets",
-  `${slug as CollectionEntry<"demos">["slug"]}.presets`,
+  `${slug as CollectionEntry<"demos">["slug"]}.presets`
 )
 
 if (!presetsEntry) {

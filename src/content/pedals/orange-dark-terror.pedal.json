@@ -1,0 +1,50 @@
+{
+  "name": "orange-dark-terror",
+  "isAmp": true,
+  "width": 700,
+  "height": 428,
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol",
+        "size": 64,
+        "position": { "top": 308, "left": 282 },
+        "type": "orange"
+      },
+      {
+        "id": "shape",
+        "size": 48,
+        "position": { "top": 315, "left": 384 },
+        "type": "orange"
+      },
+      {
+        "id": "gain",
+        "size": 64,
+        "position": { "top": 307, "left": 469 },
+        "type": "orange"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": { "top": 318, "left": 187 },
+        "colors": { "on": "#f80" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "on_switch",
+        "type": "toggle",
+        "size": 44,
+        "position": { "top": 319, "left": 51 }
+      },
+      {
+        "id": "output",
+        "type": "toggle",
+        "size": 44,
+        "position": { "top": 319, "left": 109 }
+      }
+    ]
+  }
+}

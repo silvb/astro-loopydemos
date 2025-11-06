@@ -15,7 +15,7 @@ const { presetSlug, noMargin = false } = Astro.props
 
 const presetsEntry: CollectionEntry<"presets"> | undefined = await getEntry(
   "presets",
-  `${presetSlug as CollectionEntry<"demos">["slug"]}.presets`,
+  `${presetSlug as CollectionEntry<"demos">["slug"]}.presets`
 )
 
 if (!presetsEntry) {
@@ -55,7 +55,7 @@ if (firstPreset?.comparison) {
 }
 
 const firstPresetPedalData = staticPedalData.filter(pedal =>
-  firstPresetPedalSlugs.includes(pedal.slug),
+  firstPresetPedalSlugs.includes(pedal.slug)
 )
 
 const firstPresetHeight =
@@ -65,7 +65,7 @@ const firstPresetHeight =
 
 const firstPresetWidth = firstPresetPedalData.reduce(
   (acc, pedal) => acc + pedal.width,
-  0,
+  0
 )
 ---
 

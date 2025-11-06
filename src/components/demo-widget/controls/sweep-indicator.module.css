@@ -1,5 +1,3 @@
-@tailwind components;
-
 .sweep-indicator {
   @apply pointer-events-none absolute left-0 top-0 z-0 box-border rounded-full border-dashed content-none;
   border-width: calc(var(--size) / 12);

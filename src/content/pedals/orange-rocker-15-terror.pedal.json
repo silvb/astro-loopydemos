@@ -1,0 +1,74 @@
+{
+  "name": "orange-rocker-15-terror",
+  "isAmp": true,
+  "width": 700,
+  "height": 360,
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol_dirt",
+        "size": 56,
+        "position": { "top": 257, "left": 248 },
+        "type": "orange"
+      },
+      {
+        "id": "hi",
+        "size": 40,
+        "position": { "top": 265, "left": 315 },
+        "type": "orange"
+      },
+      {
+        "id": "mid",
+        "size": 40,
+        "position": { "top": 265, "left": 363 },
+        "type": "orange"
+      },
+      {
+        "id": "bass",
+        "size": 40,
+        "position": { "top": 265, "left": 411 },
+        "type": "orange"
+      },
+      {
+        "id": "gain",
+        "size": 56,
+        "position": { "top": 257, "left": 458 },
+        "type": "orange"
+      },
+      {
+        "id": "vol_natural",
+        "size": 56,
+        "position": { "top": 257, "left": 533 },
+        "type": "orange"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": { "top": 260, "left": 186 },
+        "colors": { "on": "#f80" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "on_switch",
+        "type": "toggle",
+        "size": 40,
+        "position": { "top": 265, "left": 60 }
+      },
+      {
+        "id": "full_half",
+        "type": "toggle",
+        "size": 40,
+        "position": { "top": 265, "left": 101 }
+      },
+      {
+        "id": "dirt_natural",
+        "type": "toggle",
+        "size": 40,
+        "position": { "top": 265, "left": 144 }
+      }
+    ]
+  }
+}

@@ -83,7 +83,9 @@ export const EmbedConfig: Component<EmbedConfigProps> = props => {
               type="number"
               value={width()}
               min={EMBED_MIN_WIDTH}
-              onChange={e => setWidth(Number.parseInt(e.currentTarget.value))}
+              onChange={e =>
+                setWidth(Number.parseInt(e.currentTarget.value, 10))
+              }
               class="min-w-40 rounded-md bg-loopydemos-background p-2"
             />
             {width() < EMBED_MIN_WIDTH && (
@@ -98,7 +100,9 @@ export const EmbedConfig: Component<EmbedConfigProps> = props => {
               type="number"
               value={height()}
               min={relativeMinHeight()}
-              onChange={e => setHeight(Number.parseInt(e.currentTarget.value))}
+              onChange={e =>
+                setHeight(Number.parseInt(e.currentTarget.value, 10))
+              }
               class="min-w-40 rounded-md bg-loopydemos-background p-2"
             />
             {height() < relativeMinHeight() && (

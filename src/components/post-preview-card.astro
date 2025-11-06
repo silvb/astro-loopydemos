@@ -20,7 +20,7 @@ const { title, excerpt, date, slug, tags } = Astro.props
 
 const presetsFromPost: CollectionEntry<"presets"> | undefined = await getEntry(
   "presets",
-  `${slug as CollectionEntry<"demos">["slug"]}.presets`,
+  `${slug as CollectionEntry<"demos">["slug"]}.presets`
 )
 
 let hasTeaser = true
@@ -110,7 +110,7 @@ const shortenedExcerpt =
           </span>
           <div class="flex flex-wrap justify-end gap-1">
             {
-              tags?.map((tag) => (
+              tags?.map(tag => (
                 <span class="whitespace-nowrap rounded-md bg-loopydemos-secondary px-2 py-2 text-sm text-loopydemos-subdued">
                   {tag}
                 </span>
@@ -123,7 +123,7 @@ const shortenedExcerpt =
     <div class="flex items-center justify-between gap-4 sm:hidden">
       <div class="flex flex-wrap gap-1">
         {
-          tags?.map((tag) => (
+          tags?.map(tag => (
             <span class="whitespace-nowrap rounded-md bg-loopydemos-secondary px-2 py-2 text-sm text-loopydemos-subdued">
               {tag}
             </span>

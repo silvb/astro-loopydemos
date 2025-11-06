@@ -1,5 +1,5 @@
 {
-  "$schema": "https://biomejs.dev/schemas/2.0.6/schema.json",
+  "$schema": "https://biomejs.dev/schemas/2.3.3/schema.json",
   "vcs": {
     "enabled": false,
     "clientKind": "git",
@@ -8,7 +8,6 @@
   "files": {
     "ignoreUnknown": false,
     "includes": [
-      "**/*.astro",
       "**/*.js",
       "**/*.jsx",
       "**/*.ts",
@@ -19,6 +18,7 @@
       "**/*.md",
       "**/*.mdx",
       "**/*.cjs",
+      "!**/*.astro",
       "!**/node_modules",
       "!**/dist",
       "!**/.astro",
@@ -67,6 +67,10 @@
       "includes": ["**/*.astro"],
       "linter": {
         "rules": {
+          "style": {
+            "useConst": "off",
+            "useImportType": "off"
+          },
           "correctness": {
             "noUnusedImports": "off",
             "noUnusedVariables": "off"
@@ -80,6 +84,14 @@
       "quoteStyle": "double",
       "semicolons": "asNeeded",
       "arrowParentheses": "asNeeded"
+    }
+  },
+  "html": {
+    "experimentalFullSupportEnabled": true
+  },
+  "css": {
+    "parser": {
+      "tailwindDirectives": true
     }
   }
 }

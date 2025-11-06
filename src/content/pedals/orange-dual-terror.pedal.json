@@ -1,0 +1,74 @@
+{
+  "name": "orange-dual-terror",
+  "isAmp": true,
+  "width": 700,
+  "height": 409,
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol_fat",
+        "size": 52,
+        "position": { "top": 309, "left": 189 },
+        "type": "orange"
+      },
+      {
+        "id": "tone_fat",
+        "size": 40,
+        "position": { "top": 314, "left": 256 },
+        "type": "orange"
+      },
+      {
+        "id": "gain_fat",
+        "size": 52,
+        "position": { "top": 308, "left": 311 },
+        "type": "orange"
+      },
+      {
+        "id": "vol_tiny",
+        "size": 52,
+        "position": { "top": 308, "left": 386 },
+        "type": "orange"
+      },
+      {
+        "id": "tone_tiny",
+        "size": 40,
+        "position": { "top": 314, "left": 453 },
+        "type": "orange"
+      },
+      {
+        "id": "gain_tiny",
+        "size": 52,
+        "position": { "top": 308, "left": 509 },
+        "type": "orange"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": { "top": 311, "left": 128 },
+        "colors": { "on": "#f80" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "on_switch",
+        "type": "toggle",
+        "size": 36,
+        "position": { "top": 316, "left": 32 }
+      },
+      {
+        "id": "full_half",
+        "type": "toggle",
+        "size": 36,
+        "position": { "top": 316, "left": 73 }
+      },
+      {
+        "id": "fat_tiny",
+        "type": "toggle",
+        "size": 36,
+        "position": { "top": 319, "left": 632 }
+      }
+    ]
+  }
+}
