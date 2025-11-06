@@ -1,0 +1,51 @@
+{
+  "name": "orange-king-comp",
+  "width": 300,
+  "height": 380,
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol",
+        "size": 60,
+        "position": { "top": 48, "left": 44 },
+        "type": "orange"
+      },
+      {
+        "id": "comp",
+        "size": 60,
+        "position": { "top": 49, "left": 198 },
+        "type": "orange"
+      },
+      {
+        "id": "rel",
+        "size": 60,
+        "position": { "top": 129, "left": 63 },
+        "type": "orange"
+      },
+      {
+        "id": "atk",
+        "size": 60,
+        "position": { "top": 129, "left": 179 },
+        "type": "orange"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": { "top": 24, "left": 126 },
+        "colors": {
+          "on": "#00a4fa"
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 50,
+        "position": { "top": 297, "left": 127 }
+      }
+    ]
+  }
+}

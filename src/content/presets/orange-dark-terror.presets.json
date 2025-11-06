@@ -1,0 +1,26 @@
+{
+  "hasBackingTrack": false,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": {
+        "vol": 5,
+        "shape": 5,
+        "gain": 5,
+        "output": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "vol_knob",
+      "label": "Vol",
+      "isSweep": true,
+      "target": "vol",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "shape": 5, "gain": 5, "output": 1, "on_switch": 3 }
+    }
+  ]
+}

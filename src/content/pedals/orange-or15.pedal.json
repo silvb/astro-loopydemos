@@ -1,0 +1,62 @@
+{
+  "name": "orange-or15",
+  "isAmp": true,
+  "width": 700,
+  "height": 360,
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol",
+        "size": 48,
+        "position": { "top": 228, "left": 267 },
+        "type": "orange"
+      },
+      {
+        "id": "hi",
+        "size": 36,
+        "position": { "top": 234, "left": 329 },
+        "type": "orange"
+      },
+      {
+        "id": "mid",
+        "size": 36,
+        "position": { "top": 234, "left": 376 },
+        "type": "orange"
+      },
+      {
+        "id": "bass",
+        "size": 36,
+        "position": { "top": 234, "left": 425 },
+        "type": "orange"
+      },
+      {
+        "id": "gain",
+        "size": 48,
+        "position": { "top": 228, "left": 473 },
+        "type": "orange"
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": { "top": 228, "left": 210 },
+        "colors": { "on": "#f80" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "on_switch",
+        "type": "toggle",
+        "size": 36,
+        "position": { "top": 233, "left": 122 }
+      },
+      {
+        "id": "headroom",
+        "type": "toggle",
+        "size": 36,
+        "position": { "top": 233, "left": 160 }
+      }
+    ]
+  }
+}

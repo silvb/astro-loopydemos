@@ -1,0 +1,39 @@
+{
+  "hasBackingTrack": false,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": {
+        "vol_fat": 5,
+        "tone_fat": 5,
+        "gain_fat": 5,
+        "vol_tiny": 5,
+        "tone_tiny": 5,
+        "gain_tiny": 5,
+        "full_half": 1,
+        "fat_tiny": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "vol_fat_knob",
+      "label": "Vol_fat",
+      "isSweep": true,
+      "target": "vol_fat",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "tone_fat": 5,
+        "gain_fat": 5,
+        "vol_tiny": 5,
+        "tone_tiny": 5,
+        "gain_tiny": 5,
+        "full_half": 1,
+        "fat_tiny": 1,
+        "on_switch": 3
+      }
+    }
+  ]
+}

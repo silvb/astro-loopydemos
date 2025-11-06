@@ -1,0 +1,39 @@
+{
+  "hasBackingTrack": false,
+  "volume": 0.65,
+  "presets": [
+    {
+      "id": "static_preset",
+      "label": "Static Preset",
+      "settings": {
+        "vol_dirt": 5,
+        "hi": 5,
+        "mid": 5,
+        "bass": 5,
+        "gain": 5,
+        "vol_natural": 5,
+        "full_half": 1,
+        "dirt_natural": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "vol_dirt_knob",
+      "label": "Vol_dirt",
+      "isSweep": true,
+      "target": "vol_dirt",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "hi": 5,
+        "mid": 5,
+        "bass": 5,
+        "gain": 5,
+        "vol_natural": 5,
+        "full_half": 1,
+        "dirt_natural": 1,
+        "on_switch": 3
+      }
+    }
+  ]
+}

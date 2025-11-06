@@ -1,0 +1,86 @@
+{
+  "name": "orange-little-bass-thing",
+  "isAmp": true,
+  "width": 700,
+  "height": 212,
+  "controls": {
+    "knobs": [
+      {
+        "id": "vol",
+        "size": 72,
+        "position": { "top": 72, "left": 119 },
+        "type": "orange"
+      },
+      {
+        "id": "comp",
+        "size": 72,
+        "position": { "top": 72, "left": 206 },
+        "type": "orange"
+      },
+      {
+        "id": "hi",
+        "size": 48,
+        "position": { "top": 83, "left": 346 },
+        "type": "orange",
+        "colors": {
+          "primary": "#e8e8e8",
+          "secondary": "#fff",
+          "tick": "#000",
+          "edge": "#E0E0E0"
+        }
+      },
+      {
+        "id": "mid_freq",
+        "size": 48,
+        "position": { "top": 83, "left": 407 },
+        "type": "orange",
+        "colors": {
+          "primary": "#e8e8e8",
+          "secondary": "#fff",
+          "tick": "#000",
+          "edge": "#E0E0E0"
+        }
+      },
+      {
+        "id": "mid_band",
+        "size": 48,
+        "position": { "top": 83, "left": 467 },
+        "type": "orange",
+        "colors": {
+          "primary": "#e8e8e8",
+          "secondary": "#fff",
+          "tick": "#000",
+          "edge": "#E0E0E0"
+        }
+      },
+      {
+        "id": "bass",
+        "size": 48,
+        "position": { "top": 83, "left": 528 },
+        "type": "orange",
+        "colors": {
+          "primary": "#e8e8e8",
+          "secondary": "#fff",
+          "tick": "#000",
+          "edge": "#E0E0E0"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 48,
+        "position": { "top": 81, "left": 285 },
+        "colors": { "on": "#f80" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "pad_switch",
+        "type": "toggle",
+        "size": 32,
+        "position": { "top": 52, "left": 631 }
+      }
+    ]
+  }
+}
