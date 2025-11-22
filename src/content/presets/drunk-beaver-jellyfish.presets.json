@@ -3,9 +3,106 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "classic_chorus",
+      "label": "Classic Chorus",
       "settings": { "rate": 5, "depth": 5, "color": 5, "mix": 5, "range": 1 }
+    },
+    {
+      "id": "spooky_vibes",
+      "label": "Spooky Vibes",
+      "settings": { "rate": 8, "depth": 10, "color": 8, "mix": 6, "range": 2 }
+    },
+    {
+      "id": "wild_detune",
+      "label": "Wild Detune",
+      "settings": { "rate": 6, "depth": 7, "color": 10, "mix": 10, "range": 3 }
+    },
+    {
+      "id": "grunge_combo",
+      "label": "Grunge Combo",
+      "chain": [
+        {
+          "pedalSlug": "drunk-beaver-jellyfish",
+          "id": "jelly",
+          "settings": {
+            "rate": 4,
+            "depth": 10,
+            "color": 7,
+            "mix": 5,
+            "range": 1
+          }
+        },
+        {
+          "pedalSlug": "drunk-beaver-seattle-driver",
+          "id": "seattle",
+          "settings": {
+            "fat": 5,
+            "muscle": 6,
+            "air": 5,
+            "exhaust": 7,
+            "vacuum": 4,
+            "power": 10
+          }
+        }
+      ]
+    },
+    {
+      "id": "freak_scene",
+      "label": "Freak Scene",
+      "chain": [
+        {
+          "pedalSlug": "drunk-beaver-jellyfish",
+          "id": "jelly",
+          "settings": {
+            "rate": 3,
+            "depth": 8,
+            "color": 10,
+            "mix": 6,
+            "range": 2
+          }
+        },
+        {
+          "pedalSlug": "drunk-beaver-seattle-driver",
+          "id": "seattle",
+          "settings": {
+            "fat": 10,
+            "muscle": 2,
+            "air": 4,
+            "exhaust": 7,
+            "vacuum": 2,
+            "power": 5
+          }
+        }
+      ]
+    },
+    {
+      "id": "wobbly_filth",
+      "label": "Wobbly Filth",
+      "chain": [
+        {
+          "pedalSlug": "drunk-beaver-jellyfish",
+          "id": "jelly",
+          "settings": {
+            "rate": 8,
+            "depth": 7,
+            "color": 5,
+            "mix": 10,
+            "range": 3
+          }
+        },
+        {
+          "pedalSlug": "drunk-beaver-seattle-driver",
+          "id": "seattle",
+          "settings": {
+            "fat": 4,
+            "muscle": 4,
+            "air": 7,
+            "exhaust": 7,
+            "vacuum": 0,
+            "power": 0
+          }
+        }
+      ]
     },
     {
       "id": "rate_knob",

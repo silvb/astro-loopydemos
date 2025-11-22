@@ -36,6 +36,22 @@
         "position": { "top": 232, "left": 17 },
         "colors": {
           "on": "#00a4fa"
+        },
+        "dependency": {
+          "source": "rate",
+          "values": [
+            { "sourceValue": 0, "targetValue": 3500 },
+            { "sourceValue": 1, "targetValue": 2500 },
+            { "sourceValue": 2, "targetValue": 1500 },
+            { "sourceValue": 3, "targetValue": 1000 },
+            { "sourceValue": 4, "targetValue": 750 },
+            { "sourceValue": 5, "targetValue": 500 },
+            { "sourceValue": 6, "targetValue": 300 },
+            { "sourceValue": 7, "targetValue": 200 },
+            { "sourceValue": 8, "targetValue": 150 },
+            { "sourceValue": 9, "targetValue": 125 },
+            { "sourceValue": 10, "targetValue": 100 }
+          ]
         }
       }
     ],
