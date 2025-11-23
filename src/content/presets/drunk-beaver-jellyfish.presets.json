@@ -111,7 +111,43 @@
       "target": "rate",
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
-      "settings": { "depth": 5, "color": 5, "mix": 5, "range": 1 }
+      "settings": { "depth": 8, "color": 10, "mix": 7, "range": 1 }
+    },
+    {
+      "id": "depth_knob",
+      "label": "Depth",
+      "isSweep": true,
+      "target": "depth",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "rate": 7, "color": 10, "mix": 7, "range": 3 }
+    },
+    {
+      "id": "color_knob",
+      "label": "Color",
+      "isSweep": true,
+      "target": "color",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "rate": 7, "depth": 8, "mix": 5, "range": 1 }
+    },
+    {
+      "id": "mix_knob",
+      "label": "Mix",
+      "isSweep": true,
+      "target": "mix",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "rate": 7, "depth": 7, "color": 8, "range": 1 }
+    },
+    {
+      "id": "range_toggle",
+      "label": "Range",
+      "isSweep": true,
+      "target": "range",
+      "initialValue": 1,
+      "values": [1, 2, 3],
+      "settings": { "rate": 7, "depth": 7, "color": 8, "mix": 6 }
     }
   ]
 }
