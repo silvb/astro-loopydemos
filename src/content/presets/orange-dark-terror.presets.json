@@ -3,24 +3,64 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "medium_chug",
+      "label": "Medium Chug",
       "settings": {
-        "vol": 5,
-        "shape": 5,
+        "vol": 8,
+        "shape": 4,
         "gain": 5,
         "output": 1,
         "on_switch": 3
       }
     },
     {
-      "id": "vol_knob",
-      "label": "Vol",
+      "id": "cleanish_platform",
+      "label": "Cleanish Platform",
+      "settings": {
+        "vol": 9,
+        "shape": 2,
+        "gain": 2,
+        "output": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "ripper",
+      "label": "Ripper",
+      "settings": {
+        "vol": 8,
+        "shape": 5,
+        "gain": 10,
+        "output": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "output_toggle",
+      "label": "15W / 7W",
       "isSweep": true,
-      "target": "vol",
+      "target": "output",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": { "shape": 3, "gain": 7, "volume": 8, "on_switch": 3 }
+    },
+    {
+      "id": "shape_knob",
+      "label": "Shape",
+      "isSweep": true,
+      "target": "shape",
       "initialValue": 0,
-      "values": [0, 2, 4, 6, 8, 10],
-      "settings": { "shape": 5, "gain": 5, "output": 1, "on_switch": 3 }
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "settings": { "volume": 8, "gain": 5, "output": 1, "on_switch": 3 }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 1,
+      "values": [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "settings": { "volume": 8, "shape": 5, "output": 1, "on_switch": 3 }
     }
   ]
 }
