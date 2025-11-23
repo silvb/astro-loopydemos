@@ -1,0 +1,73 @@
+{
+  "name": "drunk-beaver-jellyfish",
+  "controls": {
+    "knobs": [
+      {
+        "id": "rate",
+        "size": 54,
+        "position": { "top": 27, "left": 8 },
+        "type": "beaver"
+      },
+      {
+        "id": "depth",
+        "size": 54,
+        "position": { "top": 27, "left": 69 },
+        "type": "beaver"
+      },
+      {
+        "id": "color",
+        "size": 54,
+        "position": { "top": 27, "left": 132 },
+        "type": "beaver"
+      },
+      {
+        "id": "mix",
+        "size": 54,
+        "position": { "top": 129, "left": 133 },
+        "type": "beaver"
+      }
+    ],
+    "leds": [
+      { "id": "on_led", "size": 48, "position": { "top": 282, "left": 134 } },
+      {
+        "id": "rate_led",
+        "isBlinking": true,
+        "size": 48,
+        "position": { "top": 232, "left": 17 },
+        "colors": {
+          "on": "#00a4fa"
+        },
+        "dependency": {
+          "source": "rate",
+          "values": [
+            { "sourceValue": 0, "targetValue": 3500 },
+            { "sourceValue": 1, "targetValue": 2500 },
+            { "sourceValue": 2, "targetValue": 1500 },
+            { "sourceValue": 3, "targetValue": 1000 },
+            { "sourceValue": 4, "targetValue": 750 },
+            { "sourceValue": 5, "targetValue": 500 },
+            { "sourceValue": 6, "targetValue": 300 },
+            { "sourceValue": 7, "targetValue": 200 },
+            { "sourceValue": 8, "targetValue": 150 },
+            { "sourceValue": 9, "targetValue": 125 },
+            { "sourceValue": 10, "targetValue": 100 }
+          ]
+        }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 52,
+        "position": { "top": 283, "left": 73 }
+      },
+      {
+        "id": "range",
+        "type": "toggle",
+        "size": 32,
+        "position": { "top": 135, "left": 24 }
+      }
+    ]
+  }
+}
