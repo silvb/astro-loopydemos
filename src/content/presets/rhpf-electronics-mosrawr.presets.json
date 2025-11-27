@@ -3,9 +3,29 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
-      "settings": { "rawr": 5, "level": 5, "low": 5, "bite": 5, "hi": 5 }
+      "id": "stoner_mids",
+      "label": "Stoner Mids",
+      "settings": { "rawr": 8, "level": 5, "low": 7, "bite": 7, "hi": 6 }
+    },
+    {
+      "id": "glitch_fest",
+      "label": "Glitch Fest",
+      "settings": { "rawr": 1.5, "level": 5, "low": 10, "bite": 10, "hi": 8 }
+    },
+    {
+      "id": "pawn_shop_drive",
+      "label": "Pawn Shop Drive",
+      "settings": { "rawr": 5, "level": 5, "low": 2, "bite": 2, "hi": 2 }
+    },
+    {
+      "id": "dying_amp",
+      "label": "Dying Amp",
+      "settings": { "rawr": 1.5, "level": 5, "low": 5, "bite": 4, "hi": 8 }
+    },
+    {
+      "id": "faux_octave",
+      "label": "Faux Octave",
+      "settings": { "rawr": 10, "level": 5, "low": 8, "bite": 1, "hi": 7 }
     },
     {
       "id": "rawr_knob",
@@ -13,8 +33,26 @@
       "isSweep": true,
       "target": "rawr",
       "initialValue": 0,
+      "values": [0, 1, 2, 3, 4, 5, 6, 8, 10],
+      "settings": { "level": 5, "low": 5, "bite": 7, "hi": 5 }
+    },
+    {
+      "id": "low_knob",
+      "label": "Low",
+      "isSweep": true,
+      "target": "low",
+      "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
-      "settings": { "level": 5, "low": 5, "bite": 5, "hi": 5 }
+      "settings": { "level": 5, "rawr": 8, "bite": 7, "hi": 5 }
+    },
+    {
+      "id": "hi_knob",
+      "label": "Hi",
+      "isSweep": true,
+      "target": "hi",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": { "level": 5, "rawr": 8, "bite": 7, "low": 5 }
     }
   ]
 }

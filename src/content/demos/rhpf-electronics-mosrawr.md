@@ -13,9 +13,7 @@ tags:
   - qotsa
   - midpushed
 externalLinks:
-  thomann: ...
-  builderLink: ...
-  sweetwater: ...
+  builderLink: https://rhpfelectronics.com/product/mosrawr-velcro-roar-fuzz/?Partner=loopydemos
 ---
 
 Write some copy about the Mosrawr by RhPf Electronics.
@@ -24,5 +22,5 @@ Write some copy about the Mosrawr by RhPf Electronics.
 
 - Fidelity Guitars Stellarosa Lite II with Lollar Firebird pickups (bridge pickup)
 - Mosrawr
-- [Mixwave Benson Chimera Plugin*](https://sweetwater.sjv.io/B0N2PL)
+- [Mixwave Benson Chimera Plugin\*](https://sweetwater.sjv.io/B0N2PL)
 - A bit of room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)
