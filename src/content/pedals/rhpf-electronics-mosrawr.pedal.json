@@ -1,0 +1,73 @@
+{
+  "name": "rhpf-electronics-mosrawr",
+  "controls": {
+    "knobs": [
+      {
+        "id": "rawr",
+        "size": 52,
+        "position": { "top": 31, "left": 16 },
+        "type": "davies",
+        "colors": {
+          "primary": "#ff00bb",
+          "tick": "white"
+        }
+      },
+      {
+        "id": "level",
+        "size": 52,
+        "position": { "top": 31, "left": 132 },
+        "type": "davies",
+        "colors": {
+          "primary": "#ff00bb",
+          "tick": "white"
+        }
+      },
+      {
+        "id": "low",
+        "size": 52,
+        "position": { "top": 90, "left": 16 },
+        "type": "davies",
+        "colors": {
+          "primary": "#ff00bb",
+          "tick": "white"
+        }
+      },
+      {
+        "id": "bite",
+        "size": 52,
+        "position": { "top": 59, "left": 73 },
+        "type": "davies",
+        "colors": {
+          "primary": "#ff00bb",
+          "tick": "white"
+        }
+      },
+      {
+        "id": "hi",
+        "size": 52,
+        "position": { "top": 90, "left": 132 },
+        "type": "davies",
+        "colors": {
+          "primary": "#ff00bb",
+          "tick": "white"
+        }
+      }
+    ],
+    "leds": [
+      {
+        "id": "on_led",
+        "size": 32,
+        "position": { "top": 127, "left": 73 },
+        "colors": { "on": "#ff01ce", "off": "#330033" }
+      }
+    ],
+    "switches": [
+      {
+        "id": "bypass_switch",
+        "type": "stomp",
+        "size": 48,
+        "position": { "top": 283, "left": 78 }
+      }
+    ]
+  }
+}
