@@ -20,7 +20,7 @@ I'm excited to introduce you to the MOSRAWR, a fuzz pedal that RhPf Electronics,
 
 Claudi designed the beautiful artwork that juxtaposes the fierce nature of the fuzz with her unique, whimsical style that gives you the feeling of having had too much cotton candy at the fair.
 
-Thomas from RhPf Electronics handled the circuit design. We used the [Mosferatwo](/demos/rhpf-electronics-mosferatwo) as a basis and modified it heavily to create a fuzz that has a unique texture and feel.
+Thomas from RhPf Electronics handled the circuit design. We used the [Mo(s)ghoul](/demos/rhpf-electronics-mosghoul) as a basis and modified it heavily to create a fuzz that has a unique texture and feel.
 
 The whole thing developed by Thomas sending me prototypes to try out and us talking about frequency responses, gain staging and finding that sweet spot between musicality and lo-fi aggression.
 
