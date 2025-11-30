@@ -3,11 +3,69 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "roaring",
+      "label": "Roaring",
       "settings": {
-        "vol": 5,
-        "hi": 5,
+        "vol": 7,
+        "hi": 3,
+        "mid": 3,
+        "bass": 6,
+        "gain": 7,
+        "headroom": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "sweet_clean",
+      "label": "Sweet Clean",
+      "settings": {
+        "vol": 8,
+        "hi": 4,
+        "mid": 2,
+        "bass": 7,
+        "gain": 3,
+        "headroom": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "cutting_breakup",
+      "label": "Cutting Breakup",
+      "settings": {
+        "vol": 7,
+        "hi": 1,
+        "mid": 6,
+        "bass": 7,
+        "gain": 4,
+        "headroom": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "headroom_toggle",
+      "label": "Headroom",
+      "isSweep": true,
+      "target": "headroom",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "vol": 7,
+        "hi": 2,
+        "mid": 4,
+        "bass": 5,
+        "gain": 5,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "hi_knob",
+      "label": "Treble",
+      "isSweep": true,
+      "target": "hi",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "vol": 7,
         "mid": 5,
         "bass": 5,
         "gain": 5,
@@ -16,17 +74,49 @@
       }
     },
     {
-      "id": "vol_knob",
-      "label": "Vol",
+      "id": "mid_knob",
+      "label": "Mids",
       "isSweep": true,
-      "target": "vol",
+      "target": "mid",
       "initialValue": 0,
       "values": [0, 2, 4, 6, 8, 10],
       "settings": {
+        "vol": 7,
         "hi": 5,
-        "mid": 5,
         "bass": 5,
         "gain": 5,
+        "headroom": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "bass_knob",
+      "label": "Bass",
+      "isSweep": true,
+      "target": "bass",
+      "initialValue": 0,
+      "values": [0, 2, 4, 6, 8, 10],
+      "settings": {
+        "vol": 7,
+        "hi": 5,
+        "mid": 5,
+        "gain": 5,
+        "headroom": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "gain_knob",
+      "label": "Gain",
+      "isSweep": true,
+      "target": "gain",
+      "initialValue": 2,
+      "values": [2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "settings": {
+        "vol": 7,
+        "hi": 3,
+        "mid": 4,
+        "bass": 6,
         "headroom": 1,
         "on_switch": 3
       }
