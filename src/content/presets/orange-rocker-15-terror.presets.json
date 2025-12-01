@@ -3,6 +3,66 @@
   "volume": 0.65,
   "presets": [
     {
+      "id": "15_watts",
+      "label": "15 W (Headroom)",
+      "settings": {
+        "vol_dirt": 8,
+        "hi": 2,
+        "mid": 7,
+        "bass": 5,
+        "gain": 7,
+        "vol_natural": 5,
+        "full_half": 3,
+        "dirt_natural": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "7_watts",
+      "label": "7 W (Headroom)",
+      "settings": {
+        "vol_dirt": 8,
+        "hi": 2,
+        "mid": 7,
+        "bass": 5,
+        "gain": 7,
+        "vol_natural": 5,
+        "full_half": 1,
+        "dirt_natural": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "1_watt",
+      "label": "1 W (Bedroom)",
+      "settings": {
+        "vol_dirt": 8,
+        "hi": 2,
+        "mid": 7,
+        "bass": 5,
+        "gain": 7,
+        "vol_natural": 5,
+        "full_half": 3,
+        "dirt_natural": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "half_watt",
+      "label": "0.5 W (Bedroom)",
+      "settings": {
+        "vol_dirt": 8,
+        "hi": 2,
+        "mid": 7,
+        "bass": 5,
+        "gain": 7,
+        "vol_natural": 5,
+        "full_half": 1,
+        "dirt_natural": 1,
+        "on_switch": 3
+      }
+    },
+    {
       "id": "higain_cleanish",
       "label": "High Gain & Cleanish",
       "isSweep": true,
@@ -71,66 +131,6 @@
         "gain": 6,
         "vol_natural": 9,
         "full_half": 3,
-        "on_switch": 3
-      }
-    },
-    {
-      "id": "15_watts",
-      "label": "15 W (Headroom)",
-      "settings": {
-        "vol_dirt": 8,
-        "hi": 2,
-        "mid": 7,
-        "bass": 5,
-        "gain": 7,
-        "vol_natural": 5,
-        "full_half": 3,
-        "dirt_natural": 1,
-        "on_switch": 3
-      }
-    },
-    {
-      "id": "7_watts",
-      "label": "7 W (Headroom)",
-      "settings": {
-        "vol_dirt": 8,
-        "hi": 2,
-        "mid": 7,
-        "bass": 5,
-        "gain": 7,
-        "vol_natural": 5,
-        "full_half": 1,
-        "dirt_natural": 1,
-        "on_switch": 3
-      }
-    },
-    {
-      "id": "1_watt",
-      "label": "1 W (Bedroom)",
-      "settings": {
-        "vol_dirt": 8,
-        "hi": 2,
-        "mid": 7,
-        "bass": 5,
-        "gain": 7,
-        "vol_natural": 5,
-        "full_half": 3,
-        "dirt_natural": 1,
-        "on_switch": 3
-      }
-    },
-    {
-      "id": "half_watt",
-      "label": "0.5 W (Bedroom)",
-      "settings": {
-        "vol_dirt": 8,
-        "hi": 2,
-        "mid": 7,
-        "bass": 5,
-        "gain": 7,
-        "vol_natural": 5,
-        "full_half": 1,
-        "dirt_natural": 1,
         "on_switch": 3
       }
     },

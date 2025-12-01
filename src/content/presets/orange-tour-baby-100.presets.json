@@ -3,6 +3,25 @@
   "volume": 0.65,
   "presets": [
     {
+      "id": "presence_dirty_knob_4",
+      "label": "Warm Gain",
+      "settings": {
+        "vol_clean": 5,
+        "comp_clean": 5,
+        "bass_clean": 5,
+        "treble_clean": 5,
+        "vol_dirty": 7,
+        "fs_vol_dirty": 0,
+        "presence_dirty": 4,
+        "gain_dirty": 5,
+        "bass_dirty": 5,
+        "middle_dirty": 5,
+        "treble_dirty": 5,
+        "dirty_clean": 1,
+        "on_switch": 3
+      }
+    },
+    {
       "id": "clean_and_dirty",
       "label": "Clean & Dirty",
       "isSweep": true,
@@ -174,7 +193,7 @@
         "bass_dirty": 5,
         "middle_dirty": 5,
         "treble_dirty": 5,
-        "dirty_clean": 3,
+        "dirty_clean": 1,
         "on_switch": 3
       }
     },
@@ -196,7 +215,7 @@
         "bass_dirty": 5,
         "middle_dirty": 5,
         "treble_dirty": 5,
-        "dirty_clean": 3,
+        "dirty_clean": 1,
         "on_switch": 3
       }
     },
@@ -218,7 +237,7 @@
         "presence_dirty": 5,
         "middle_dirty": 5,
         "treble_dirty": 5,
-        "dirty_clean": 3,
+        "dirty_clean": 1,
         "on_switch": 3
       }
     },
@@ -240,7 +259,7 @@
         "presence_dirty": 5,
         "bass_dirty": 5,
         "treble_dirty": 5,
-        "dirty_clean": 3,
+        "dirty_clean": 1,
         "on_switch": 3
       }
     },
@@ -262,7 +281,7 @@
         "presence_dirty": 5,
         "bass_dirty": 5,
         "middle_dirty": 5,
-        "dirty_clean": 3,
+        "dirty_clean": 1,
         "on_switch": 3
       }
     }

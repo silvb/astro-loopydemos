@@ -3,6 +3,28 @@
   "volume": 0.65,
   "presets": [
     {
+      "id": "presence_b_4",
+      "label": "Medium Chunk",
+      "settings": {
+        "vol_a": 5,
+        "gain_a": 5,
+        "presence_a": 5,
+        "bass_a": 5,
+        "middle_a": 5,
+        "treble_a": 5,
+        "vol_b": 5,
+        "gain_b": 5,
+        "presence_b": 4,
+        "bass_b": 4,
+        "middle_b": 6,
+        "treble_b": 6,
+        "tubby_a": 3,
+        "tight_b": 1,
+        "channel": 1,
+        "on_switch": 3
+      }
+    },
+    {
       "id": "soft_heavy",
       "label": "Soft & Heavy",
       "isSweep": true,
