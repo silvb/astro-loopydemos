@@ -3,11 +3,11 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "neutral",
+      "label": "Neutral",
       "settings": {
-        "vol": 5,
-        "comp": 5,
+        "vol": 2,
+        "comp": 0,
         "hi": 5,
         "mid_freq": 5,
         "mid_band": 5,
@@ -16,18 +16,60 @@
       }
     },
     {
-      "id": "vol_knob",
-      "label": "Vol",
-      "isSweep": true,
-      "target": "vol",
-      "initialValue": 0,
-      "values": [0, 2, 4, 6, 8, 10],
+      "id": "scooped_compressed",
+      "label": "Scooped & Compressed",
       "settings": {
-        "comp": 5,
+        "vol": 1.5,
+        "comp": 7,
+        "hi": 6.5,
+        "mid_band": 3,
+        "mid_freq": 3,
+        "bass": 6,
+        "pad_switch": 1
+      }
+    },
+    {
+      "id": "thick_mids",
+      "label": "Thick Mids",
+      "settings": {
+        "vol": 1.5,
+        "comp": 4,
+        "hi": 6,
+        "mid_band": 6,
+        "mid_freq": 7,
+        "bass": 8.5,
+        "pad_switch": 1
+      }
+    },
+    {
+      "id": "comp_knob",
+      "label": "Comp",
+      "isSweep": true,
+      "target": "comp",
+      "initialValue": 0,
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "settings": {
+        "vol": 1.5,
         "hi": 5,
-        "mid_freq": 5,
-        "mid_band": 5,
-        "bass": 5,
+        "mid_band": 3,
+        "mid_freq": 4,
+        "bass": 7,
+        "pad_switch": 1
+      }
+    },
+    {
+      "id": "hi_knob",
+      "label": "Hi",
+      "isSweep": true,
+      "target": "hi",
+      "initialValue": 0,
+      "values": [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+      "settings": {
+        "vol": 2,
+        "comp": 3,
+        "mid_band": 3,
+        "mid_freq": 4,
+        "bass": 7,
         "pad_switch": 1
       }
     }

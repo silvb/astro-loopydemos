@@ -30,7 +30,7 @@
         }
       },
       {
-        "id": "mid_freq",
+        "id": "mid_band",
         "size": 48,
         "position": { "top": 83, "left": 407 },
         "type": "orange",
@@ -42,7 +42,7 @@
         }
       },
       {
-        "id": "mid_band",
+        "id": "mid_freq",
         "size": 48,
         "position": { "top": 83, "left": 467 },
         "type": "orange",
@@ -71,12 +71,13 @@
         "id": "on_led",
         "size": 48,
         "position": { "top": 81, "left": 285 },
-        "colors": { "on": "#f80" }
+        "colors": { "on": "cornflowerblue" }
       }
     ],
     "switches": [
       {
         "id": "pad_switch",
+        "orientation": "horizontal",
         "type": "toggle",
         "size": 32,
         "position": { "top": 52, "left": 631 }
