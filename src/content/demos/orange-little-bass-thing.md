@@ -27,4 +27,4 @@ At this power level and weight, the Little Bass Thing nails the sweet spot betwe
 
 - [JMJ Fender Mustang\*](https://sweetwater.sjv.io/R5A6bg), [La Bella Flats\*](https://sweetwater.sjv.io/WqZN6Z) and Curtis Novak Fat Mustang pickups, played with [0.60mm Dunlop Tortex Triangle pick\*](https://sweetwater.sjv.io/7akO2A)
 - Little Bass Thing
-- Very subtle room-like reverb from the [Valhalla Vintage Verb plugin](https://valhalladsp.com/shop/reverb/valhalla-vintage-verb/)
+- [Science Amps IR for Bass](https://www.scienceamps.com/irs.html) (2x15 3015 RE-20 3inch)
