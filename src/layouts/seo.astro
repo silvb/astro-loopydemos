@@ -204,10 +204,16 @@ const metaTags = [
 ]
 
 if (noIndex) {
-  metaTags.push({
-    name: "robots",
-    content: "noindex",
-  })
+  metaTags.push(
+    {
+      name: "robots",
+      content: "noindex",
+    },
+    {
+      name: "googlebot",
+      content: "noindex,indexifembedded",
+    }
+  )
 }
 ---
 
