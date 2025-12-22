@@ -3,35 +3,140 @@
   "volume": 0.65,
   "presets": [
     {
-      "id": "static_preset",
-      "label": "Static Preset",
+      "id": "fat_crunch",
+      "label": "Fat Crunch",
       "settings": {
-        "vol_fat": 5,
-        "tone_fat": 5,
+        "vol_fat": 8,
+        "tone_fat": 6,
         "gain_fat": 5,
-        "vol_tiny": 5,
-        "tone_tiny": 5,
-        "gain_tiny": 5,
+        "vol_tiny": 0,
+        "tone_tiny": 0,
+        "gain_tiny": 0,
+        "fat_tiny": 3,
         "full_half": 1,
-        "fat_tiny": 1,
         "on_switch": 3
       }
     },
     {
-      "id": "vol_fat_knob",
-      "label": "Vol_fat",
-      "isSweep": true,
-      "target": "vol_fat",
-      "initialValue": 0,
-      "values": [0, 2, 4, 6, 8, 10],
+      "id": "tiny_bite",
+      "label": "Tiny Bite",
       "settings": {
-        "tone_fat": 5,
-        "gain_fat": 5,
-        "vol_tiny": 5,
-        "tone_tiny": 5,
-        "gain_tiny": 5,
-        "full_half": 1,
+        "vol_fat": 0,
+        "tone_fat": 0,
+        "gain_fat": 0,
+        "vol_tiny": 8,
+        "tone_tiny": 7,
+        "gain_tiny": 8,
         "fat_tiny": 1,
+        "full_half": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "tiny_vs_fat",
+      "label": "Tiny vs. Fat",
+      "isSweep": true,
+      "target": "fat_tiny",
+      "initialValue": 1,
+      "values": [1, 3],
+      "settings": {
+        "vol_fat": 8,
+        "tone_fat": 6,
+        "gain_fat": 7,
+        "vol_tiny": 8,
+        "tone_tiny": 6,
+        "gain_tiny": 7,
+        "full_half": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "warm_distortion",
+      "label": "Warm Distortion",
+      "settings": {
+        "vol_fat": 8,
+        "tone_fat": 4,
+        "gain_fat": 9,
+        "vol_tiny": 0,
+        "tone_tiny": 0,
+        "gain_tiny": 0,
+        "fat_tiny": 3,
+        "full_half": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "cleanish",
+      "label": "Cleanish",
+      "settings": {
+        "vol_fat": 0,
+        "tone_fat": 0,
+        "gain_fat": 0,
+        "vol_tiny": 10,
+        "tone_tiny": 3,
+        "gain_tiny": 3,
+        "fat_tiny": 1,
+        "full_half": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "30_watt",
+      "label": "30 W (4 Output Valves)",
+      "settings": {
+        "vol_fat": 8,
+        "tone_fat": 5,
+        "gain_fat": 7,
+        "vol_tiny": 0,
+        "tone_tiny": 0,
+        "gain_tiny": 0,
+        "fat_tiny": 3,
+        "full_half": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "15_watt_2",
+      "label": "15 W (2 Output Valves)",
+      "settings": {
+        "vol_fat": 8,
+        "tone_fat": 5,
+        "gain_fat": 7,
+        "vol_tiny": 0,
+        "tone_tiny": 0,
+        "gain_tiny": 0,
+        "fat_tiny": 3,
+        "full_half": 1,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "15_watt_4",
+      "label": "15 W (4 Output Valves)",
+      "settings": {
+        "vol_fat": 8,
+        "tone_fat": 5,
+        "gain_fat": 7,
+        "vol_tiny": 0,
+        "tone_tiny": 0,
+        "gain_tiny": 0,
+        "fat_tiny": 3,
+        "full_half": 3,
+        "on_switch": 3
+      }
+    },
+    {
+      "id": "7_watt",
+      "label": "7 W (2 Output Valves)",
+      "settings": {
+        "vol_fat": 8,
+        "tone_fat": 5,
+        "gain_fat": 7,
+        "vol_tiny": 0,
+        "tone_tiny": 0,
+        "gain_tiny": 0,
+        "fat_tiny": 3,
+        "full_half": 3,
         "on_switch": 3
       }
     }
